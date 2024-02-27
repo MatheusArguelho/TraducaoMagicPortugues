@@ -22,7 +22,7 @@ Estes scripts em Python permitem que você traduza o texto oracular e o texto de
 
 2. **traducao_set.py**
     - Execute o script `traducao_set.py`.
-    - Digite o código do conjunto de Magic: The Gathering que você deseja traduzir quando solicitado.
+    - Digite o código de 3 digitos da coleção de Magic: The Gathering que você deseja traduzir quando solicitado.
     - O script irá recuperar os dados das cartas da API do Scryfall, traduzir o texto oracular para o português e gerar um arquivo CSV e um arquivo HTML contendo o texto original e traduzido.
     - O arquivo HTML será aberto automaticamente em seu navegador padrão e exibirá o texto traduzido em um formato de tabela estilizada.
 
