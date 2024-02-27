@@ -2,7 +2,7 @@
 
 ## Descrição
 
-Estes scripts em Python permitem que você traduza o texto oracular e o texto de sabor das cartas de Magic: The Gathering do inglês para o português. O script `traducao_individual.py` traduz o texto de uma única carta, enquanto o script `traducao_set.py` traduz o texto de todas as cartas de uma coleção em específico. Ambos os scripts recuperam dados das cartas da API do Scryfall e usam a biblioteca Google Translator para realizar as traduções. O texto traduzido é então exibido junto com o texto original em arquivos HTML.
+Estes scripts em Python permitem que você traduza o texto do oraculo e o flavour text das cartas de Magic: The Gathering do inglês para o português. O script `traducao_individual.py` traduz o texto de uma única carta, enquanto o script `traducao_set.py` traduz o texto de todas as cartas de uma coleção em específico. Ambos os scripts recuperam dados das cartas da API do Scryfall e usam a biblioteca Google Translator para realizar as traduções. O texto traduzido é então exibido junto com o texto original em arquivos HTML.
 
 ## Requisitos
 
