@@ -5,6 +5,7 @@ import csv
 from tqdm import tqdm
 import webbrowser
 
+
 def download_json(url):
     response = requests.get(url)
     if response.status_code == 200:
@@ -17,6 +18,7 @@ def download_json(url):
         print("Failed to download JSON. Status code:", response.status_code)
         return None
 
+
 def process_pages(url):
     json_data = download_json(url)
     if json_data:
@@ -27,7 +29,7 @@ def process_pages(url):
         card_data = []
         for card in json_data["data"]:
             card_data.append({
-                "num": card.get("collector_number", ""),  # Including collector_number
+                "num": card.get("collector_number", ""),
                 "name": card["name"],
                 "oracle_text": card.get("oracle_text", "")
             })
@@ -37,6 +39,7 @@ def process_pages(url):
         return card_data
     else:
         return []
+
 
 try:
     set_code = input("Digite o codigo do set desejado:").lower()
@@ -49,14 +52,12 @@ try:
 
     all_card_data = process_pages(url)
 
-
     df1 = pd.DataFrame(all_card_data)
 
     if not df1.empty:
         df1.index += 1
         df1['oracle_text'] = df1['oracle_text'].fillna(value='DEBUG', inplace=False)
 
-    # Dropping rows containing 'z' in the 'oracle_text' column
     df1 = df1[~df1['num'].str.contains('z')]
 
     texts = df1['oracle_text'].tolist()
@@ -79,8 +80,6 @@ try:
     df1['traduzido'] = translated_texts
 
     df1 = (df1.rename(columns={'num': 'numero', 'name': 'nome', 'oracle_text': 'texto_ingles'}))
-
-    print(df1)
 
     df1.to_csv('traducao.csv', index=False)
 
