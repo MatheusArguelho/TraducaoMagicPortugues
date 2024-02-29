@@ -11,7 +11,6 @@ Estes scripts em Python permitem que você traduza o texto do oraculo e o flavou
 - Biblioteca Deep Translator (`pip install deep-translator`)
 - Biblioteca Requests (`pip install requests`)
 - Biblioteca tqdm (`pip install tqdm`)
-- Biblioteca webbrowser (`pip install webbrowser`)
 
 ## Uso
 
