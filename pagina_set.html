@@ -1,0 +1,29 @@
+<html>
+<head>
+        <meta charset="UTF-8">
+        <title>{set_code}</title>
+        <style>
+            .styled-table {{
+                width: 100%;
+                border-collapse: collapse;
+                border: 1px solid #ddd;
+                font-family: Arial, sans-serif;
+            }}
+            .styled-table th, .styled-table td {{
+                padding: 8px;
+                text-align: left;
+                border-bottom: 1px solid #ddd;
+            }}
+            .styled-table tr:nth-child(even) {{
+                background-color: #f2f2f2;
+            }}
+            .styled-table th {{
+                background-color: #4CAF50;
+                color: white;
+            }}
+        </style>
+    </head>
+    <body>
+    {html_table}
+    </body>
+</html>

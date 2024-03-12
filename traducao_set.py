@@ -109,40 +109,17 @@ try:
         html_table += '  </tr>\n'
     html_table += '</table>'
 
-    html_with_style = f"""
-    <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>{set_code}</title>
-        <style>
-            .styled-table {{
-                width: 100%;
-                border-collapse: collapse;
-                border: 1px solid #ddd;
-                font-family: Arial, sans-serif;
-            }}
-            .styled-table th, .styled-table td {{
-                padding: 8px;
-                text-align: left;
-                border-bottom: 1px solid #ddd;
-            }}
-            .styled-table tr:nth-child(even) {{
-                background-color: #f2f2f2;
-            }}
-            .styled-table th {{
-                background-color: #4CAF50;
-                color: white;
-            }}
-        </style>
-    </head>
-    <body>
-    {html_table}
-    </body>
-    </html>
-    """
+    with open("pagina_set.html", "r", encoding="utf-8") as file:
+        html_content = file.read()
+
+    # Replace placeholders with actual values
+    html_content = html_content.format(
+        set_code=set_code,
+        html_table=html_table
+    )
 
     with open("traducao_set.html", "w", encoding="utf-8") as html_file:
-        html_file.write(html_with_style)
+        html_file.write(html_content)
 
     webbrowser.open("traducao_set.html")
 
