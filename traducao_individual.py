@@ -18,7 +18,7 @@ def download_json(url):
 
 
 def descapitalize_and_replace(text):
-    return text.lower().replace(" ", "+")
+    return text.lower().replace(" ", "+").replace("'", "")
 
 
 original_text = input("Digite a carta desejada: ")
@@ -28,6 +28,7 @@ url = f"https://api.scryfall.com/cards/named?fuzzy={nome}"
 print(url)
 
 data = download_json(url)
+normal_image_url2 = '0'
 
 if data is not None:
     name = data["name"]
@@ -36,6 +37,7 @@ if data is not None:
     except KeyError:
         try:
             normal_image_url = data['card_faces'][0]['image_uris']['normal']
+            normal_image_url2 = data['card_faces'][1]['image_uris']['normal']
         except KeyError:
             normal_image_url = None
             print("Image URI not found. This card might be missing image data.")
@@ -76,7 +78,7 @@ if data is not None:
             body {{
                 background-color: #f4f4f4; 
             }}
-
+    
             .container {{
                 display: flex;
                 align-items: center;
@@ -88,21 +90,21 @@ if data is not None:
                 color: #333; 
                 transition: box-shadow 0.3s; 
             }}
-
+    
             .container:hover {{
                 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
             }}
-
+    
             .text-container {{
                 margin-left: 20px;
             }}
-
+    
             .text-container h2 {{
                 margin-top: 0;
                 color: #555;
                 font-family: Arial, sans-serif; 
             }}
-
+    
             .text-container p {{
                 font-family: Arial, sans-serif;
             }}
@@ -110,16 +112,19 @@ if data is not None:
     </head>
     <body>
         <div class="container">
-            <img src="{normal_image_url}" alt="Card Image">
+            <div class="container">
+                <img src="{normal_image_url}" alt="Card Image">
+                <img src="{normal_image_url2}" alt="">
+            </div>
             <div class="text-container">
                 <h2>Texto em inglês:</h2>
                 <p>{oracle_texto}</p>
                 <p style="font-style: italic;">{flavor_original}</p>
-
+    
                 <h2>Tradução:</h2>
                 <p>{translated}</p>
                 <p style="font-style: italic;">{flavor_translated}</p>
-
+    
             </div>
         </div>
     </body>
