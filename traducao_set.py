@@ -28,10 +28,21 @@ def process_pages(url):
         print("JSON downloaded successfully:")
         card_data = []
         for card in json_data["data"]:
+            try:
+                oracle_texto = card["oracle_text"]
+                #print('2'+oracle_texto)
+            except KeyError:
+                try:
+                    oracle_texto = card['card_faces'][0]['oracle_text'] + '\n' + '----' + '\n' + card['card_faces'][1][
+                        'oracle_text']
+                    #print('1' + oracle_texto)
+                except KeyError:
+                    oracle_texto = ''
+                    print("Oracle not found. This card might be missing image data.")
             card_data.append({
                 "num": card.get("collector_number", ""),
                 "name": card["name"],
-                "oracle_text": card.get("oracle_text", "")
+                "oracle_text": oracle_texto
             })
         next_page = json_data.get("next_page")
         if next_page:
@@ -82,6 +93,7 @@ try:
     df1 = (df1.rename(columns={'num': 'numero', 'name': 'nome', 'oracle_text': 'texto_ingles'}))
 
     df1.to_csv('traducao.csv', index=False)
+    #df1.to_json(f'json_{set_code}.json', orient='records')
 
     with open('traducao.csv', 'r', encoding='utf-8') as csvfile:
         csvreader = csv.reader(csvfile)
