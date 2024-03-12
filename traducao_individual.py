@@ -31,15 +31,33 @@ data = download_json(url)
 
 if data is not None:
     name = data["name"]
-    normal_image_url = data["image_uris"]["normal"]
+    try:
+        normal_image_url = data["image_uris"]["normal"]
+    except KeyError:
+        try:
+            normal_image_url = data['card_faces'][0]['image_uris']['normal']
+        except KeyError:
+            normal_image_url = None
+            print("Image URI not found. This card might be missing image data.")
+
     try:
         oracle_texto = data["oracle_text"]
     except KeyError:
-        oracle_texto = "Oracle text not available"
+        try:
+            oracle_texto = data['card_faces'][0]['oracle_text']
+            oracle_texto = oracle_texto + '\n' + '----' + '\n' + data['card_faces'][1]['oracle_text']
+        except KeyError:
+            oracle_texto = ''
+            print("Oracle not found. This card might be missing image data.")
+
     try:
         flavor_original = data["flavor_text"]
     except KeyError:
-        flavor_original = "Flavour text not available"
+        try:
+            flavor_original = data['card_faces'][0]['flavor_text']
+        except KeyError:
+            flavor_original = ''
+            print("Flavour Text not found. This card might be missing image data.")
 
     translated = GoogleTranslator(source='auto', target='pt').translate(text=oracle_texto)
     flavor_translated = GoogleTranslator(source='auto', target='pt').translate(text=flavor_original)
