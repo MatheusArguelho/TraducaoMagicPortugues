@@ -68,7 +68,7 @@ if data is not None:
     oracle_texto = replace_newline_with_br(oracle_texto)
     translated = replace_newline_with_br(translated)
 
-    #Read the content of the HTML file
+    # Read the content of the HTML file
     with open("pagina_individual.html", "r", encoding="utf-8") as file:
         html_content = file.read()
 
@@ -83,7 +83,7 @@ if data is not None:
         flavor_translated=flavor_translated
     )
 
-    print(translated + '--' + flavor_translated )
+    print(translated + '--' + flavor_translated)
 
     # Writing HTML content to a file named 'output.html'
     with open("traducao_carta.html", "w", encoding="utf-8") as file:
