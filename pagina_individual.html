@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{original_text}</title>
+    <style>
+        body {{
+            background-color: #f4f4f4;
+        }}
+
+        .container {{
+            display: flex;
+            align-items: center;
+            border: 1px solid #ddd;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 20px;
+            background-color: #fff;
+            color: #333;
+            transition: box-shadow 0.3s;
+        }}
+
+        .container:hover {{
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }}
+
+        .text-container {{
+            margin-left: 20px;
+        }}
+
+        .text-container h2 {{
+            margin-top: 0;
+            color: #555;
+            font-family: Arial Unicode MS, Arial, sans-serif;  }}
+
+        .text-container p {{
+            font-family: Arial Unicode MS, Arial, sans-serif;  }}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="container">
+            <img src="{normal_image_url}" alt="Card Image">
+            <img src="{normal_image_url2}" alt="">
+        </div>
+        <div class="text-container">
+            <h2>Texto em inglês:</h2>
+            <p>{oracle_texto}</p>
+            <p style="font-style: italic;">{flavor_original}</p>
+
+            <h2>Tradução:</h2>
+            <p>{translated}</p>
+            <p style="font-style: italic;">{flavor_translated}</p>
+
+        </div>
+    </div>
+</body>
+</html>

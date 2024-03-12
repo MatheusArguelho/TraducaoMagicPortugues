@@ -68,71 +68,25 @@ if data is not None:
     oracle_texto = replace_newline_with_br(oracle_texto)
     translated = replace_newline_with_br(translated)
 
-    # Writing HTML content to a file
-    html_content = f"""
-    <!DOCTYPE html>
-    <html>
-    <head>
-        <title>{original_text}</title>
-        <style>
-            body {{
-                background-color: #f4f4f4; 
-            }}
-    
-            .container {{
-                display: flex;
-                align-items: center;
-                border: 1px solid #ddd; 
-                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
-                padding: 20px;
-                margin: 20px;
-                background-color: #fff; 
-                color: #333; 
-                transition: box-shadow 0.3s; 
-            }}
-    
-            .container:hover {{
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
-            }}
-    
-            .text-container {{
-                margin-left: 20px;
-            }}
-    
-            .text-container h2 {{
-                margin-top: 0;
-                color: #555;
-                font-family: Arial, sans-serif; 
-            }}
-    
-            .text-container p {{
-                font-family: Arial, sans-serif;
-            }}
-        </style>
-    </head>
-    <body>
-        <div class="container">
-            <div class="container">
-                <img src="{normal_image_url}" alt="Card Image">
-                <img src="{normal_image_url2}" alt="">
-            </div>
-            <div class="text-container">
-                <h2>Texto em inglês:</h2>
-                <p>{oracle_texto}</p>
-                <p style="font-style: italic;">{flavor_original}</p>
-    
-                <h2>Tradução:</h2>
-                <p>{translated}</p>
-                <p style="font-style: italic;">{flavor_translated}</p>
-    
-            </div>
-        </div>
-    </body>
-    </html>
-    """
+    #Read the content of the HTML file
+    with open("pagina_individual.html", "r", encoding="utf-8") as file:
+        html_content = file.read()
+
+    # Replace placeholders with actual values
+    html_content = html_content.format(
+        original_text=original_text,
+        normal_image_url=normal_image_url,
+        normal_image_url2=normal_image_url2,
+        oracle_texto=oracle_texto,
+        flavor_original=flavor_original,
+        translated=translated,
+        flavor_translated=flavor_translated
+    )
+
+    print(translated + '--' + flavor_translated )
 
     # Writing HTML content to a file named 'output.html'
-    with open("traducao_carta.html", "w") as file:
+    with open("traducao_carta.html", "w", encoding="utf-8") as file:
         file.write(html_content)
 
     # Automatically open the HTML file in the default web browser
