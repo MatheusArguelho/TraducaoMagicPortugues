@@ -28,8 +28,12 @@ nome = descapitalize_and_replace(original_text)
 
 url = f"https://api.scryfall.com/cards/named?fuzzy={nome}"
 
+print(url)
+
 data = download_json(url)
 normal_image_url2 = '0'
+flavor_original = ''
+flavor_original2 = ''
 
 if data is not None:
     name = data["name"]
@@ -57,7 +61,17 @@ if data is not None:
         flavor_original = data["flavor_text"]
     except KeyError:
         try:
-            flavor_original = data['card_faces'][0]['flavor_text']
+            if 'card_faces' in data:
+                if isinstance(data['card_faces'], list) and len(data['card_faces']) > 0:
+                    if 'flavor_text' in data['card_faces'][0]:
+                        flavor_original = data['card_faces'][0]['flavor_text']
+                    else:
+                        flavor_original = ''
+                        if len(data['card_faces']) > 1 and 'flavor_text' in data['card_faces'][1]:
+                            flavor_original2 = data['card_faces'][1]['flavor_text']
+                        else:
+                            flavor_original2 = ''
+                flavor_original = flavor_original + '\n' + '-' + '\n' + flavor_original2
         except KeyError:
             flavor_original = ''
             print("Flavour Text não encontrado.")
@@ -73,7 +87,6 @@ if data is not None:
     with open("pagina_individual.html", "r", encoding="utf-8") as file:
         html_content = file.read()
 
-    # Replace placeholders with actual values
     html_content = html_content.format(
         original_text=original_text,
         normal_image_url=normal_image_url,
@@ -84,11 +97,9 @@ if data is not None:
         flavor_translated=flavor_translated
     )
 
-    # Writing HTML content to a file named 'output.html'
     with open("traducao_carta.html", "w", encoding="utf-8") as file:
         file.write(html_content)
 
-    # Automatically open the HTML file in the default web browser
     webbrowser.open("traducao_carta.html")
 
     print("Arquivo HTML gerado com sucesso e aberto no navegador padrão!")
