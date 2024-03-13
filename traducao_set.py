@@ -12,10 +12,10 @@ def download_json(url):
         json_data = response.json()
         return json_data
     elif response.status_code == 404:
-        print("Failed to download JSON. Status code: 404")
+        print("Falha ao baixar JSON. Código de status: 404")
         raise Exception("JSON download failed due to 404 error")
     else:
-        print("Failed to download JSON. Status code:", response.status_code)
+        print("Falha ao baixar JSON. Código de status:", response.status_code)
         return None
 
 
@@ -25,7 +25,7 @@ def process_pages(url):
         if 'object' in json_data and json_data['object'] == 'error':
             print("Error:", json_data["details"])
             return []
-        print("JSON downloaded successfully:")
+        print("JSON baixado com sucesso:")
         card_data = []
         for card in json_data["data"]:
             try:
@@ -36,7 +36,7 @@ def process_pages(url):
                         'oracle_text']
                 except KeyError:
                     oracle_texto = ''
-                    print("Oracle not found. This card might be missing image data.")
+                    print("Oracle não encontrado.")
             card_data.append({
                 "num": card.get("collector_number", ""),
                 "name": card["name"],
@@ -57,7 +57,7 @@ try:
     if set_json and 'search_uri' in set_json:
         url = set_json['search_uri']
     else:
-        raise Exception("Failed to get search URI from set JSON")
+        raise Exception("Falha ao obter o URL de pesquisa do conjunto JSON")
 
     all_card_data = process_pages(url)
 

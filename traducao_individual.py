@@ -10,10 +10,12 @@ def download_json(url):
         return json_data
     elif response.status_code == 404:
         error_data = response.json()
-        print("Error:", error_data["details"])
+        error_t = error_data["details"]
+        error_t = GoogleTranslator(source='auto', target='pt').translate(text=error_t)
+        print("Error:", error_t)
         return None
     else:
-        print("Failed to download JSON. Status code:", response.status_code)
+        print("Falha ao baixar JSON. Código de status:", response.status_code)
         return None
 
 
@@ -25,7 +27,6 @@ original_text = input("Digite a carta desejada: ")
 nome = descapitalize_and_replace(original_text)
 
 url = f"https://api.scryfall.com/cards/named?fuzzy={nome}"
-print(url)
 
 data = download_json(url)
 normal_image_url2 = '0'
@@ -40,7 +41,7 @@ if data is not None:
             normal_image_url2 = data['card_faces'][1]['image_uris']['normal']
         except KeyError:
             normal_image_url = None
-            print("Image URI not found. This card might be missing image data.")
+            print("Image não encontrada")
 
     try:
         oracle_texto = data["oracle_text"]
@@ -50,7 +51,7 @@ if data is not None:
             oracle_texto = oracle_texto + '\n' + '----' + '\n' + data['card_faces'][1]['oracle_text']
         except KeyError:
             oracle_texto = ''
-            print("Oracle not found. This card might be missing image data.")
+            print("Oracle não encontrado.")
 
     try:
         flavor_original = data["flavor_text"]
@@ -59,7 +60,7 @@ if data is not None:
             flavor_original = data['card_faces'][0]['flavor_text']
         except KeyError:
             flavor_original = ''
-            print("Flavour Text not found. This card might be missing image data.")
+            print("Flavour Text não encontrado.")
 
     translated = GoogleTranslator(source='auto', target='pt').translate(text=oracle_texto)
     flavor_translated = GoogleTranslator(source='auto', target='pt').translate(text=flavor_original)
@@ -83,8 +84,6 @@ if data is not None:
         flavor_translated=flavor_translated
     )
 
-    print(translated + '--' + flavor_translated)
-
     # Writing HTML content to a file named 'output.html'
     with open("traducao_carta.html", "w", encoding="utf-8") as file:
         file.write(html_content)
@@ -92,6 +91,6 @@ if data is not None:
     # Automatically open the HTML file in the default web browser
     webbrowser.open("traducao_carta.html")
 
-    print("HTML file generated successfully and opened in the default web browser!")
+    print("Arquivo HTML gerado com sucesso e aberto no navegador padrão!")
 else:
-    print("No data retrieved from the API. Please check the input and try again.")
+    print("Nenhum dado recuperado da API. Verifique o nome da carta e tente novamente.")
