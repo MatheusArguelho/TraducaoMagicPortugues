@@ -61,17 +61,15 @@ if data is not None:
         flavor_original = data["flavor_text"]
     except KeyError:
         try:
+            flavor_original = ''
             if 'card_faces' in data:
-                if isinstance(data['card_faces'], list) and len(data['card_faces']) > 0:
-                    if 'flavor_text' in data['card_faces'][0]:
-                        flavor_original = data['card_faces'][0]['flavor_text']
-                    else:
-                        flavor_original = ''
-                        if len(data['card_faces']) > 1 and 'flavor_text' in data['card_faces'][1]:
-                            flavor_original2 = data['card_faces'][1]['flavor_text']
-                        else:
-                            flavor_original2 = ''
-                flavor_original = flavor_original + '\n' + '-' + '\n' + flavor_original2
+                card_faces = data['card_faces']
+                if isinstance(card_faces, list) and len(card_faces) > 0:
+                    if 'flavor_text' in card_faces[0]:
+                        flavor_original = card_faces[0]['flavor_text']
+                    if len(card_faces) > 1 and 'flavor_text' in card_faces[1]:
+                        flavor_original2 = card_faces[1]['flavor_text']
+                        flavor_original += '\n' + '-' + '\n' + flavor_original2
         except KeyError:
             flavor_original = ''
             print("Flavour Text não encontrado.")
