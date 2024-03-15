@@ -6,8 +6,7 @@ from deep_translator import GoogleTranslator
 def download_json(url):
     response = requests.get(url)
     if response.status_code == 200:
-        json_data = response.json()
-        return json_data
+        return response.json()
     elif response.status_code == 404:
         error_data = response.json()
         error_t = error_data["details"]
@@ -15,7 +14,7 @@ def download_json(url):
         print("Error:", error_t)
         return None
     else:
-        print("Falha ao baixar JSON. Código de status:", response.status_code)
+        print("Erro ao baixar o JSON. Status code:", response.status_code)
         return None
 
 
@@ -23,30 +22,35 @@ def descapitalize_and_replace(text):
     return text.lower().replace(" ", "+").replace("'", "")
 
 
-original_text = input("Digite a carta desejada: ")
-nome = descapitalize_and_replace(original_text)
+def translate_text(text):
+    return GoogleTranslator(source='auto', target='pt').translate(text=text)
 
-url = f"https://api.scryfall.com/cards/named?fuzzy={nome}"
 
-print(url)
+def replace_newline_with_br(text):
+    return text.replace("\n", "<br>")
 
-data = download_json(url)
-normal_image_url2 = '0'
-flavor_original = ''
-flavor_original2 = ''
 
-if data is not None:
-    name = data["name"]
+def fetch_card_data(nome):
+    url = f"https://api.scryfall.com/cards/named?fuzzy={nome}"
+    print(url)
+    return download_json(url)
+
+
+def extract_image_urls(data):
     try:
         normal_image_url = data["image_uris"]["normal"]
+        return normal_image_url, None
     except KeyError:
         try:
             normal_image_url = data['card_faces'][0]['image_uris']['normal']
             normal_image_url2 = data['card_faces'][1]['image_uris']['normal']
+            return normal_image_url, normal_image_url2
         except KeyError:
-            normal_image_url = None
-            print("Image não encontrada")
+            print("Imagem não encontrada")
+            return None, None
 
+
+def extract_oracle_text(data):
     try:
         oracle_texto = data["oracle_text"]
     except KeyError:
@@ -55,8 +59,11 @@ if data is not None:
             oracle_texto = oracle_texto + '\n' + '----' + '\n' + data['card_faces'][1]['oracle_text']
         except KeyError:
             oracle_texto = ''
-            print("Oracle não encontrado.")
+            print("Oraclo não encontrado.")
+    return oracle_texto
 
+
+def extract_flavor_text(data):
     try:
         flavor_original = data["flavor_text"]
     except KeyError:
@@ -72,16 +79,12 @@ if data is not None:
                         flavor_original += '\n' + '-' + '\n' + flavor_original2
         except KeyError:
             flavor_original = ''
-            print("Flavour Text não encontrado.")
+            print("Flavour Text não encontrado")
+    return flavor_original
 
-    translated = GoogleTranslator(source='auto', target='pt').translate(text=oracle_texto)
-    flavor_translated = GoogleTranslator(source='auto', target='pt').translate(text=flavor_original)
-    replace_newline_with_br = lambda text: text.replace("\n", "<br>")
 
-    oracle_texto = replace_newline_with_br(oracle_texto)
-    translated = replace_newline_with_br(translated)
-
-    # Read the content of the HTML file
+def generate_html(original_text, normal_image_url, normal_image_url2, oracle_texto, flavor_original, translated,
+                  flavor_translated):
     with open("pagina_individual.html", "r", encoding="utf-8") as file:
         html_content = file.read()
 
@@ -99,7 +102,34 @@ if data is not None:
         file.write(html_content)
 
     webbrowser.open("traducao_carta.html")
+    print("HTML gerado com sucesso, sua carta está no seu navegador padrão")
 
-    print("Arquivo HTML gerado com sucesso e aberto no navegador padrão!")
-else:
-    print("Nenhum dado recuperado da API. Verifique o nome da carta e tente novamente.")
+
+def process_card(original_text):
+    nome = descapitalize_and_replace(original_text)
+    data = fetch_card_data(nome)
+
+    if data is not None:
+        normal_image_url, normal_image_url2 = extract_image_urls(data)
+        oracle_texto = extract_oracle_text(data)
+        flavor_original = extract_flavor_text(data)
+
+        translated_oracle = translate_text(oracle_texto)
+        translated_flavor = translate_text(flavor_original)
+
+        oracle_texto = replace_newline_with_br(oracle_texto)
+        translated_oracle = replace_newline_with_br(translated_oracle)
+
+        generate_html(original_text, normal_image_url, normal_image_url2, oracle_texto, flavor_original,
+                      translated_oracle, translated_flavor)
+    else:
+        print("Nenhum dado recuperado pela API. Verifique o nome da carta e tente novamente.")
+
+
+def main():
+    original_text = input("Digite o nome da carta:")
+    process_card(original_text)
+
+
+if __name__ == "__main__":
+    main()
