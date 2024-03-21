@@ -126,4 +126,5 @@ def func_traducao():
         print(e)
 
 
-func_traducao()
+if __name__ == "__main__":
+    func_traducao()
