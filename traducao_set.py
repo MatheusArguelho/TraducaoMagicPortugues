@@ -4,7 +4,7 @@ import requests
 import csv
 from tqdm import tqdm
 import webbrowser
-
+import os
 
 def download_json(url):
     response = requests.get(url)
@@ -53,6 +53,18 @@ def process_pages(url):
 def func_traducao():
     try:
         set_code = input("Digite o codigo do set desejado:").lower()
+        folder_name = "Sets"
+        if not os.path.exists(folder_name):
+            os.makedirs(folder_name)
+
+        html_file_path = os.path.join(folder_name, f"set_{set_code}.html")
+
+        # Check if the HTML file already exists
+        if os.path.exists(html_file_path):
+            print(f"O arquivo {html_file_path} já existe. Abrindo o arquivo...")
+            webbrowser.open(html_file_path)
+            return
+
         set_url = f"https://api.scryfall.com/sets/{set_code}"
         set_json = download_json(set_url)
         if set_json and 'search_uri' in set_json:
@@ -118,10 +130,10 @@ def func_traducao():
             html_table=html_table
         )
 
-        with open(f"{set_code}.html", "w", encoding="utf-8") as html_file:
+        with open(html_file_path, "w", encoding="utf-8") as html_file:
             html_file.write(html_content)
 
-        webbrowser.open(f"{set_code}.html")
+        webbrowser.open(html_file_path)
 
     except Exception as e:
         print(e)
