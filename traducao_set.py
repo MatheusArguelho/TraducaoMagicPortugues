@@ -69,10 +69,11 @@ def func_traducao():
             df1['oracle_text'] = df1['oracle_text'].fillna(value='DEBUG', inplace=False)
 
         df1 = df1[~df1['num'].str.contains('z')]
+        names_to_drop = ['Plains', 'Swamp', 'Island', 'Mountain', 'Forest']
+        df1 = df1[~df1['name'].isin(names_to_drop)]
 
         texts = df1['oracle_text'].tolist()
         translated_texts = []
-
         max_char_limit = 5000
 
         for text in tqdm(texts, desc="Translating"):
