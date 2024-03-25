@@ -39,10 +39,10 @@ def filter_card_data(df):
     return df[~df['name'].isin(names_to_drop)]
 
 
-def translate_card_texts(texts):
+def translate_card_texts(texts, set_code):
     translated_texts = []
     max_char_limit = 5000
-    for text in tqdm(texts, desc="Translating"):
+    for text in tqdm(texts, desc=f"Translating {set_code}"):
         if isinstance(text, str) and len(text) > max_char_limit:
             chunks = [text[i:i + max_char_limit] for i in range(0, len(text), max_char_limit)]
             translated_texts_chunk = []
@@ -103,7 +103,7 @@ def func_traducao():
         # Check if the HTML file already exists
         if os.path.exists(html_file_path):
             print(f"O arquivo {html_file_path} já existe. Abrindo o arquivo...")
-            open_html_file(html_file_path)
+            #open_html_file(html_file_path)
             return
 
         set_url = f"https://api.scryfall.com/sets/{set_code}"
@@ -127,7 +127,7 @@ def func_traducao():
 
         df = filter_card_data(df)
 
-        translated_texts = translate_card_texts(df['oracle_text'].tolist())
+        translated_texts = translate_card_texts(df['oracle_text'].tolist(), set_code)
 
         df['traduzido'] = translated_texts
 
@@ -147,7 +147,7 @@ def func_traducao():
 
         save_html_file(html_content, html_file_path)
 
-        open_html_file(html_file_path)
+        #open_html_file(html_file_path)
 
     except Exception as e:
         print(e)
