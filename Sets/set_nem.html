@@ -1,0 +1,894 @@
+<html>
+<head>
+        <meta charset="UTF-8">
+        <title>nem</title>
+        <style>
+            .styled-table {
+                width: 100%;
+                border-collapse: collapse;
+                border: 1px solid #ddd;
+                font-family: Arial, sans-serif;
+            }
+            .styled-table th, .styled-table td {
+                padding: 8px;
+                text-align: left;
+                border-bottom: 1px solid #ddd;
+            }
+            .styled-table tr:nth-child(even) {
+                background-color: #f2f2f2;
+            }
+            .styled-table th {
+                background-color: #4CAF50;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+    <table class="styled-table">
+  <tr>
+    <td>numero</td>
+    <td>nome</td>
+    <td>texto_ingles</td>
+    <td>traduzido</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Angelic Favor</td>
+    <td>If you control a Plains, you may tap an untapped creature you control rather than pay this spell's mana cost.<br>Cast this spell only during combat.<br>Create a 4/4 white Angel creature token with flying. Exile it at the beginning of the next end step.</td>
+    <td>Se você controla uma Planície, você pode virar uma criatura desvirada que você controla em vez de pagar o custo de mana desta mágica.<br>Lance este feitiço apenas durante o combate.<br>Crie uma ficha de criatura branca 4/4 do tipo Anjo com voar. Exile-o no início da próxima etapa final.</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Avenger en-Dal</td>
+    <td>{2}{W}, {T}, Discard a card: Exile target attacking creature. Its controller gains life equal to its toughness.</td>
+    <td>{2}{W}, {T}, Descarte um card: Exile a criatura atacante alvo. Seu controlador ganha vida igual à sua resistência.</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Blinding Angel</td>
+    <td>Flying (This creature can't be blocked except by creatures with flying or reach.)<br>Whenever Blinding Angel deals combat damage to a player, that player skips their next combat phase.</td>
+    <td>Voar (Esta criatura só pode ser bloqueada por criaturas com voar ou alcance.)<br>Sempre que Blinding Angel causa dano de combate a um jogador, esse jogador pula a próxima fase de combate.</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>Chieftain en-Dal</td>
+    <td>Whenever Chieftain en-Dal attacks, attacking creatures gain first strike until end of turn.</td>
+    <td>Sempre que o Chefe en-Dal ataca, as criaturas atacantes ganham Iniciativa até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>Defender en-Vec</td>
+    <td>Fading 4 (This creature enters the battlefield with four fade counters on it. At the beginning of your upkeep, remove a fade counter from it. If you can't, sacrifice it.)<br>Remove a fade counter from Defender en-Vec: Prevent the next 2 damage that would be dealt to any target this turn.</td>
+    <td>Desvanecimento 4 (Esta criatura entra no campo de batalha com quatro marcadores de desaparecimento. No início de sua manutenção, remova um marcador de desaparecimento dela. Se não puder, sacrifique-a.)<br>Remova um contador de fade do Defender en-Vec: Previne os próximos 2 danos que seriam causados ​​a qualquer alvo neste turno.</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>Defiant Falcon</td>
+    <td>Flying<br>{4}, {T}: Search your library for a Rebel permanent card with mana value 3 or less, put it onto the battlefield, then shuffle.</td>
+    <td>Vôo<br>{4}, {T}: Procure em seu grimório por um card de permanente Rebelde com valor de mana igual ou inferior a 3, coloque-o no campo de batalha e depois embaralhe.</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>Defiant Vanguard</td>
+    <td>When Defiant Vanguard blocks, at end of combat, destroy it and all creatures it blocked this turn.<br>{5}, {T}: Search your library for a Rebel permanent card with mana value 4 or less, put it onto the battlefield, then shuffle.</td>
+    <td>Quando Defiant Vanguard bloquear, no final do combate, destrua ele e todas as criaturas que ele bloqueou neste turno.<br>{5}, {T}: Procure em seu grimório por um card de permanente Rebelde com valor de mana igual ou inferior a 4, coloque-o no campo de batalha e depois embaralhe.</td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td>Fanatical Devotion</td>
+    <td>Sacrifice a creature: Regenerate target creature.</td>
+    <td>Sacrifique uma criatura: Regenera a criatura alvo.</td>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td>Lashknife</td>
+    <td>If you control a Plains, you may tap an untapped creature you control rather than pay this spell's mana cost.<br>Enchant creature<br>Enchanted creature has first strike.</td>
+    <td>Se você controla uma Planície, você pode virar uma criatura desvirada que você controla em vez de pagar o custo de mana desta mágica.<br>Encantar criatura<br>A criatura encantada tem iniciativa.</td>
+  </tr>
+  <tr>
+    <td>10</td>
+    <td>Lawbringer</td>
+    <td>{T}, Sacrifice Lawbringer: Exile target red creature.</td>
+    <td>{T}, Sacrifique Legislador: Exile a criatura vermelha alvo.</td>
+  </tr>
+  <tr>
+    <td>11</td>
+    <td>Lightbringer</td>
+    <td>{T}, Sacrifice Lightbringer: Exile target black creature.</td>
+    <td>{T}, Sacrifique Lightbringer: Exile a criatura preta alvo.</td>
+  </tr>
+  <tr>
+    <td>12</td>
+    <td>Lin Sivvi, Defiant Hero</td>
+    <td>{X}, {T}: Search your library for a Rebel permanent card with mana value X or less, put it onto the battlefield, then shuffle.<br>{3}: Put target Rebel card from your graveyard on the bottom of your library.</td>
+    <td>{X}, {T}: Procure em seu grimório por um card de permanente Rebelde com valor de mana igual ou inferior a X, coloque-o no campo de batalha e depois embaralhe.<br>{3}: Coloque o card Rebelde alvo de seu cemitério no fundo de seu grimório.</td>
+  </tr>
+  <tr>
+    <td>13</td>
+    <td>Netter en-Dal</td>
+    <td>{W}, {T}, Discard a card: Target creature can't attack this turn.</td>
+    <td>{W}, {T}, descarte um card: A criatura alvo não pode atacar neste turno.</td>
+  </tr>
+  <tr>
+    <td>14</td>
+    <td>Noble Stand</td>
+    <td>Whenever a creature you control blocks, you gain 2 life.</td>
+    <td>Toda vez que uma criatura que você controla bloqueia, você ganha 2 pontos de vida.</td>
+  </tr>
+  <tr>
+    <td>15</td>
+    <td>Off Balance</td>
+    <td>Target creature can't attack or block this turn.</td>
+    <td>A criatura alvo não pode atacar ou bloquear neste turno.</td>
+  </tr>
+  <tr>
+    <td>16</td>
+    <td>Oracle's Attendants</td>
+    <td>{T}: All damage that would be dealt to target creature this turn by a source of your choice is dealt to Oracle's Attendants instead.</td>
+    <td>{T}: Todo o dano que seria causado à criatura alvo neste turno por uma fonte à sua escolha é causado aos Atendentes do Oráculo.</td>
+  </tr>
+  <tr>
+    <td>17</td>
+    <td>Parallax Wave</td>
+    <td>Fading 5 (This enchantment enters the battlefield with five fade counters on it. At the beginning of your upkeep, remove a fade counter from it. If you can't, sacrifice it.)<br>Remove a fade counter from Parallax Wave: Exile target creature.<br>When Parallax Wave leaves the battlefield, each player returns to the battlefield all cards they own exiled with Parallax Wave.</td>
+    <td>Desvanecimento 5 (Este encantamento entra no campo de batalha com cinco marcadores de desaparecimento. No início de sua manutenção, remova um marcador de desaparecimento dele. Se não puder, sacrifique-o.)<br>Remova um marcador de fade de Parallax Wave: Exile a criatura alvo.<br>Quando Parallax Wave sai do campo de batalha, cada jogador devolve ao campo de batalha todos os cards que possui exilados com Parallax Wave.</td>
+  </tr>
+  <tr>
+    <td>18</td>
+    <td>Seal of Cleansing</td>
+    <td>Sacrifice Seal of Cleansing: Destroy target artifact or enchantment.</td>
+    <td>Sacrifique Seal of Cleansing: Destrua o artefato ou encantamento alvo.</td>
+  </tr>
+  <tr>
+    <td>19</td>
+    <td>Silkenfist Fighter</td>
+    <td>Whenever Silkenfist Fighter becomes blocked, untap it.</td>
+    <td>Sempre que Silkenfist Fighter for bloqueado, desvire-o.</td>
+  </tr>
+  <tr>
+    <td>20</td>
+    <td>Silkenfist Order</td>
+    <td>Whenever Silkenfist Order becomes blocked, untap it.</td>
+    <td>Sempre que Silkenfist Order for bloqueado, desvire-o.</td>
+  </tr>
+  <tr>
+    <td>21</td>
+    <td>Sivvi's Ruse</td>
+    <td>If an opponent controls a Mountain and you control a Plains, you may cast this spell without paying its mana cost.<br>Prevent all damage that would be dealt this turn to creatures you control.</td>
+    <td>Se um oponente controlar uma Montanha e você controlar uma Planície, você poderá conjurar esta mágica sem pagar seu custo de mana.<br>Previna todo o dano que seria causado neste turno às criaturas que você controla.</td>
+  </tr>
+  <tr>
+    <td>22</td>
+    <td>Sivvi's Valor</td>
+    <td>If you control a Plains, you may tap an untapped creature you control rather than pay this spell's mana cost.<br>All damage that would be dealt to target creature this turn is dealt to you instead.</td>
+    <td>Se você controla uma Planície, você pode virar uma criatura desvirada que você controla em vez de pagar o custo de mana desta mágica.<br>Todo o dano que seria causado à criatura alvo neste turno é causado a você.</td>
+  </tr>
+  <tr>
+    <td>23</td>
+    <td>Spiritual Asylum</td>
+    <td>Creatures and lands you control have shroud. (They can't be the targets of spells or abilities.)<br>When a creature you control attacks, sacrifice Spiritual Asylum.</td>
+    <td>As criaturas e os terrenos que você controla possuem mortalha. (Eles não podem ser alvos de mágicas ou habilidades.)<br>Quando uma criatura que você controla atacar, sacrifique Asilo Espiritual.</td>
+  </tr>
+  <tr>
+    <td>24</td>
+    <td>Topple</td>
+    <td>Exile target creature with the greatest power among creatures on the battlefield. (If two or more creatures are tied for greatest power, target any one of them.)</td>
+    <td>Exile a criatura alvo com o maior poder entre as criaturas no campo de batalha. (Se duas ou mais criaturas estiverem empatadas no maior poder, escolha qualquer uma delas.)</td>
+  </tr>
+  <tr>
+    <td>25</td>
+    <td>Voice of Truth</td>
+    <td>Flying, protection from white</td>
+    <td>Voando, proteção contra o branco</td>
+  </tr>
+  <tr>
+    <td>26</td>
+    <td>Accumulated Knowledge</td>
+    <td>Draw a card, then draw cards equal to the number of cards named Accumulated Knowledge in all graveyards.</td>
+    <td>Compre um card e depois compre cards igual ao número de cards denominados Conhecimento Acumulado em todos os cemitérios.</td>
+  </tr>
+  <tr>
+    <td>27</td>
+    <td>Aether Barrier</td>
+    <td>Whenever a player casts a creature spell, that player sacrifices a permanent unless they pay {1}.</td>
+    <td>Toda vez que um jogador conjura uma mágica de criatura, aquele jogador sacrifica uma permanente, a menos que pague {1}.</td>
+  </tr>
+  <tr>
+    <td>28</td>
+    <td>Air Bladder</td>
+    <td>Enchant creature<br>Enchanted creature has flying.<br>Enchanted creature can block only creatures with flying.</td>
+    <td>Encantar criatura<br>A criatura encantada tem voar.<br>A criatura encantada só pode bloquear criaturas com voar.</td>
+  </tr>
+  <tr>
+    <td>29</td>
+    <td>Cloudskate</td>
+    <td>Flying<br>Fading 3 (This creature enters the battlefield with three fade counters on it. At the beginning of your upkeep, remove a fade counter from it. If you can't, sacrifice it.)</td>
+    <td>Vôo<br>Desvanecimento 3 (Esta criatura entra no campo de batalha com três marcadores de desaparecimento. No início de sua manutenção, remova um marcador de desaparecimento dela. Se não puder, sacrifique-a.)</td>
+  </tr>
+  <tr>
+    <td>30</td>
+    <td>Daze</td>
+    <td>You may return an Island you control to its owner's hand rather than pay this spell's mana cost.<br>Counter target spell unless its controller pays {1}.</td>
+    <td>Você pode devolver uma Ilha que você controla para a mão de seu dono em vez de pagar o custo de mana desta mágica.<br>Anula a mágica alvo, a menos que seu controlador pague {1}.</td>
+  </tr>
+  <tr>
+    <td>31</td>
+    <td>Dominate</td>
+    <td>Gain control of target creature with mana value X or less.</td>
+    <td>Ganhe o controle da criatura alvo com custo de mana igual ou inferior a X.</td>
+  </tr>
+  <tr>
+    <td>32</td>
+    <td>Ensnare</td>
+    <td>You may return two Islands you control to their owner's hand rather than pay this spell's mana cost.<br>Tap all creatures.</td>
+    <td>Você pode devolver duas Ilhas que você controla para a mão de seus donos em vez de pagar o custo de mana desta mágica.<br>Toque em todas as criaturas.</td>
+  </tr>
+  <tr>
+    <td>33</td>
+    <td>Infiltrate</td>
+    <td>Target creature can't be blocked this turn.</td>
+    <td>A criatura alvo não pode ser bloqueada neste turno.</td>
+  </tr>
+  <tr>
+    <td>34</td>
+    <td>Jolting Merfolk</td>
+    <td>Fading 4 (This creature enters the battlefield with four fade counters on it. At the beginning of your upkeep, remove a fade counter from it. If you can't, sacrifice it.)<br>Remove a fade counter from Jolting Merfolk: Tap target creature.</td>
+    <td>Desvanecimento 4 (Esta criatura entra no campo de batalha com quatro marcadores de desaparecimento. No início de sua manutenção, remova um marcador de desaparecimento dela. Se não puder, sacrifique-a.)<br>Remova um marcador de fade de Jolting Merfolk: Vire a criatura alvo.</td>
+  </tr>
+  <tr>
+    <td>35</td>
+    <td>Oraxid</td>
+    <td>Protection from red</td>
+    <td>Proteção contra vermelho</td>
+  </tr>
+  <tr>
+    <td>36</td>
+    <td>Pale Moon</td>
+    <td>Until end of turn, if a player taps a nonbasic land for mana, it produces colorless mana instead of any other type.</td>
+    <td>Até o final do turno, se um jogador virar um terreno não básico para obter mana, ele produzirá mana incolor em vez de qualquer outro tipo.</td>
+  </tr>
+  <tr>
+    <td>37</td>
+    <td>Parallax Tide</td>
+    <td>Fading 5 (This enchantment enters the battlefield with five fade counters on it. At the beginning of your upkeep, remove a fade counter from it. If you can't, sacrifice it.)<br>Remove a fade counter from Parallax Tide: Exile target land.<br>When Parallax Tide leaves the battlefield, each player returns to the battlefield all cards they own exiled with Parallax Tide.</td>
+    <td>Desvanecimento 5 (Este encantamento entra no campo de batalha com cinco marcadores de desaparecimento. No início de sua manutenção, remova um marcador de desaparecimento dele. Se não puder, sacrifique-o.)<br>Remova um contador de fade de Parallax Tide: exile o terreno alvo.<br>Quando Parallax Tide sai do campo de batalha, cada jogador devolve ao campo de batalha todos os cards que possui exilados com Parallax Tide.</td>
+  </tr>
+  <tr>
+    <td>38</td>
+    <td>Rising Waters</td>
+    <td>Lands don't untap during their controllers' untap steps.<br>At the beginning of each player's upkeep, that player untaps a land they control.</td>
+    <td>Os terrenos não desviram durante as etapas de desvirar de seus controladores.<br>No início da manutenção de cada jogador, aquele jogador desvira um terreno que controla.</td>
+  </tr>
+  <tr>
+    <td>39</td>
+    <td>Rootwater Commando</td>
+    <td>Islandwalk (This creature can't be blocked as long as defending player controls an Island.)</td>
+    <td>Islandwalk (Esta criatura não pode ser bloqueada enquanto o jogador defensor controlar uma Ilha.)</td>
+  </tr>
+  <tr>
+    <td>40</td>
+    <td>Rootwater Thief</td>
+    <td>{U}: Rootwater Thief gains flying until end of turn.<br>Whenever Rootwater Thief deals combat damage to a player, you may pay {2}. If you do, search that player's library for a card and exile it, then the player shuffles.</td>
+    <td>{U}: Ladrão de Águas Enraizadas ganha voar até o final do turno.<br>Sempre que Ladrão de Rootwater causar dano de combate a um jogador, você poderá pagar {2}. Se fizer isso, procure um card no grimório daquele jogador e exile-o, depois o jogador embaralha.</td>
+  </tr>
+  <tr>
+    <td>41</td>
+    <td>Seahunter</td>
+    <td>{3}, {T}: Search your library for a Merfolk permanent card, put it onto the battlefield, then shuffle.</td>
+    <td>{3}, {T}: Procure em seu grimório um card permanente de Tritão, coloque-o no campo de batalha e depois embaralhe.</td>
+  </tr>
+  <tr>
+    <td>42</td>
+    <td>Seal of Removal</td>
+    <td>Sacrifice Seal of Removal: Return target creature to its owner's hand.</td>
+    <td>Sacrifique Seal of Removal: Devolva a criatura alvo para a mão de seu dono.</td>
+  </tr>
+  <tr>
+    <td>43</td>
+    <td>Sliptide Serpent</td>
+    <td>{3}{U}: Return Sliptide Serpent to its owner's hand.</td>
+    <td>{3}{U}: Devolva Serpente Sliptide para a mão de seu dono.</td>
+  </tr>
+  <tr>
+    <td>44</td>
+    <td>Sneaky Homunculus</td>
+    <td>Sneaky Homunculus can't block or be blocked by creatures with power 2 or greater.</td>
+    <td>Homúnculo Sorrateiro não pode bloquear ou ser bloqueado por criaturas com poder 2 ou superior.</td>
+  </tr>
+  <tr>
+    <td>45</td>
+    <td>Stronghold Biologist</td>
+    <td>{U}{U}, {T}, Discard a card: Counter target creature spell.</td>
+    <td>{U}{U}, {T}, Descarte um card: Anula a mágica de criatura alvo.</td>
+  </tr>
+  <tr>
+    <td>46</td>
+    <td>Stronghold Machinist</td>
+    <td>{U}{U}, {T}, Discard a card: Counter target noncreature spell.</td>
+    <td>{U}{U}, {T}, Descarte um card: Anula a mágica alvo que não seja de criatura.</td>
+  </tr>
+  <tr>
+    <td>47</td>
+    <td>Stronghold Zeppelin</td>
+    <td>Flying<br>Stronghold Zeppelin can block only creatures with flying.</td>
+    <td>Vôo<br>Stronghold Zeppelin pode bloquear apenas criaturas com habilidade de voar.</td>
+  </tr>
+  <tr>
+    <td>48</td>
+    <td>Submerge</td>
+    <td>If an opponent controls a Forest and you control an Island, you may cast this spell without paying its mana cost.<br>Put target creature on top of its owner's library.</td>
+    <td>Se um oponente controlar uma Floresta e você controlar uma Ilha, você poderá conjurar esta mágica sem pagar seu custo de mana.<br>Coloque a criatura alvo no topo do grimório de seu dono.</td>
+  </tr>
+  <tr>
+    <td>49</td>
+    <td>Trickster Mage</td>
+    <td>{U}, {T}, Discard a card: You may tap or untap target artifact, creature, or land.</td>
+    <td>{U}, {T}, Descarte um card: Você pode virar ou desvirar o artefato, criatura ou terreno alvo.</td>
+  </tr>
+  <tr>
+    <td>50</td>
+    <td>Wandering Eye</td>
+    <td>Flying<br>Players play with their hands revealed.</td>
+    <td>Vôo<br>Os jogadores jogam com as mãos reveladas.</td>
+  </tr>
+  <tr>
+    <td>51</td>
+    <td>Ascendant Evincar</td>
+    <td>Flying (This creature can't be blocked except by creatures with flying or reach.)<br>Other black creatures get +1/+1.<br>Nonblack creatures get -1/-1.</td>
+    <td>Voar (Esta criatura só pode ser bloqueada por criaturas com voar ou alcance.)<br>Outras criaturas pretas recebem +1/+1.<br>Criaturas que não sejam pretas recebem -1/-1.</td>
+  </tr>
+  <tr>
+    <td>52</td>
+    <td>Battlefield Percher</td>
+    <td>Flying<br>Battlefield Percher can block only creatures with flying.<br>{1}{B}: Battlefield Percher gets +1/+1 until end of turn.</td>
+    <td>Vôo<br>Battlefield Percher pode bloquear apenas criaturas com habilidade de voar.<br>{1}{B}: Percher no Campo de Batalha recebe +1/+1 até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>53</td>
+    <td>Belbe's Percher</td>
+    <td>Flying<br>Belbe's Percher can block only creatures with flying.</td>
+    <td>Vôo<br>O Poleiro de Belbe pode bloquear apenas criaturas com voar.</td>
+  </tr>
+  <tr>
+    <td>54</td>
+    <td>Carrion Wall</td>
+    <td>Defender (This creature can't attack.)<br>{1}{B}: Regenerate Carrion Wall.</td>
+    <td>Defensor (Esta criatura não pode atacar.)<br>{1}{B}: Regenera Parede de Carniça.</td>
+  </tr>
+  <tr>
+    <td>55</td>
+    <td>Dark Triumph</td>
+    <td>If you control a Swamp, you may sacrifice a creature rather than pay this spell's mana cost.<br>Creatures you control get +2/+0 until end of turn.</td>
+    <td>Se você controlar um Pântano, você poderá sacrificar uma criatura em vez de pagar o custo de mana desta mágica.<br>As criaturas que você controla recebem +2/+0 até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>56</td>
+    <td>Death Pit Offering</td>
+    <td>When Death Pit Offering enters the battlefield, sacrifice all creatures you control.<br>Creatures you control get +2/+2.</td>
+    <td>Quando Oferenda do Poço da Morte entrar no campo de batalha, sacrifique todas as criaturas que você controla.<br>As criaturas que você controla recebem +2/+2.</td>
+  </tr>
+  <tr>
+    <td>57</td>
+    <td>Divining Witch</td>
+    <td>{1}{B}, {T}, Discard a card: Choose a card name. Exile the top six cards of your library, then reveal cards from the top of your library until you reveal a card with the chosen name. Put that card into your hand and exile all other cards revealed this way.</td>
+    <td>{1}{B}, {T}, Descarte um card: Escolha o nome de um card. Exile os seis cards do topo do seu grimório e, em seguida, revele os cards do topo do seu grimório até revelar um card com o nome escolhido. Coloque aquele card em sua mão e exile todos os outros cards revelados desta forma.</td>
+  </tr>
+  <tr>
+    <td>58</td>
+    <td>Massacre</td>
+    <td>If an opponent controls a Plains and you control a Swamp, you may cast this spell without paying its mana cost.<br>All creatures get -2/-2 until end of turn.</td>
+    <td>Se um oponente controlar uma Planície e você controlar um Pântano, você poderá conjurar esta mágica sem pagar seu custo de mana.<br>Todas as criaturas recebem -2/-2 até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>59</td>
+    <td>Mind Slash</td>
+    <td>{B}, Sacrifice a creature: Target opponent reveals their hand. You choose a card from it. That player discards that card. Activate only as a sorcery.</td>
+    <td>{B}, Sacrifique uma criatura: O oponente alvo revela sua mão. Você escolhe uma carta dele. Esse jogador descarta aquela carta. Ative apenas como um feitiço.</td>
+  </tr>
+  <tr>
+    <td>60</td>
+    <td>Mind Swords</td>
+    <td>If you control a Swamp, you may sacrifice a creature rather than pay this spell's mana cost.<br>Each player exiles two cards from their hand.</td>
+    <td>Se você controlar um Pântano, você poderá sacrificar uma criatura em vez de pagar o custo de mana desta mágica.<br>Cada jogador exila duas cartas de sua mão.</td>
+  </tr>
+  <tr>
+    <td>61</td>
+    <td>Murderous Betrayal</td>
+    <td>{B}{B}, Pay half your life, rounded up: Destroy target nonblack creature. It can't be regenerated.</td>
+    <td>{B}{B}, Pague metade de sua vida, arredondado: Destrua a criatura alvo que não seja preta. Não pode ser regenerado.</td>
+  </tr>
+  <tr>
+    <td>62</td>
+    <td>Parallax Dementia</td>
+    <td>Enchant creature<br>Fading 1 (This enchantment enters the battlefield with one fade counter on it. At the beginning of your upkeep, remove a fade counter from it. If you can't, sacrifice it.)<br>Enchanted creature gets +3/+2.<br>When Parallax Dementia leaves the battlefield, destroy enchanted creature. That creature can't be regenerated.</td>
+    <td>Encantar criatura<br>Desvanecimento 1 (Este encantamento entra no campo de batalha com um marcador de desaparecimento. No início de sua manutenção, remova um marcador de desaparecimento dele. Se não puder, sacrifique-o.)<br>A criatura encantada recebe +3/+2.<br>Quando Parallax Dementia sair do campo de batalha, destrua a criatura encantada. Essa criatura não pode ser regenerada.</td>
+  </tr>
+  <tr>
+    <td>63</td>
+    <td>Parallax Nexus</td>
+    <td>Fading 5 (This enchantment enters the battlefield with five fade counters on it. At the beginning of your upkeep, remove a fade counter from it. If you can't, sacrifice it.)<br>Remove a fade counter from Parallax Nexus: Target opponent exiles a card from their hand. Activate only as a sorcery.<br>When Parallax Nexus leaves the battlefield, each player returns to their hand all cards they own exiled with Parallax Nexus.</td>
+    <td>Desvanecimento 5 (Este encantamento entra no campo de batalha com cinco marcadores de desaparecimento. No início de sua manutenção, remova um marcador de desaparecimento dele. Se não puder, sacrifique-o.)<br>Remova um marcador de fade de Parallax Nexus: O oponente alvo exila um card de sua mão. Ative apenas como um feitiço.<br>Quando Parallax Nexus sai do campo de batalha, cada jogador devolve para sua mão todos os cards que possui exilados com Parallax Nexus.</td>
+  </tr>
+  <tr>
+    <td>64</td>
+    <td>Phyrexian Driver</td>
+    <td>When Phyrexian Driver enters the battlefield, other Mercenary creatures get +1/+1 until end of turn.</td>
+    <td>Quando Motorista Phyrexiano entra no campo de batalha, as outras criaturas Mercenárias recebem +1/+1 até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>65</td>
+    <td>Phyrexian Prowler</td>
+    <td>Fading 3 (This creature enters the battlefield with three fade counters on it. At the beginning of your upkeep, remove a fade counter from it. If you can't, sacrifice it.)<br>Remove a fade counter from Phyrexian Prowler: Phyrexian Prowler gets +1/+1 until end of turn.</td>
+    <td>Desvanecimento 3 (Esta criatura entra no campo de batalha com três marcadores de desaparecimento. No início de sua manutenção, remova um marcador de desaparecimento dela. Se não puder, sacrifique-a.)<br>Remova um marcador de desbotamento de Phyrexian Prowler: Phyrexian Prowler recebe +1/+1 até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>66</td>
+    <td>Plague Witch</td>
+    <td>{B}, {T}, Discard a card: Target creature gets -1/-1 until end of turn.</td>
+    <td>{B}, {T}, descarte um card: A criatura alvo recebe -1/-1 até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>67</td>
+    <td>Rathi Assassin</td>
+    <td>{1}{B}{B}, {T}: Destroy target tapped nonblack creature.<br>{3}, {T}: Search your library for a Mercenary permanent card with mana value 3 or less, put it onto the battlefield, then shuffle.</td>
+    <td>{1}{B}{B}, {T}: Destrua a criatura alvo virada que não seja preta.<br>{3}, {T}: Procure em seu grimório um card permanente de Mercenário com valor de mana igual ou inferior a 3, coloque-o no campo de batalha e depois embaralhe.</td>
+  </tr>
+  <tr>
+    <td>68</td>
+    <td>Rathi Fiend</td>
+    <td>When Rathi Fiend enters the battlefield, each player loses 3 life.<br>{3}, {T}: Search your library for a Mercenary permanent card with mana value 3 or less, put it onto the battlefield, then shuffle.</td>
+    <td>Quando Rathi Fiend entra no campo de batalha, cada jogador perde 3 pontos de vida.<br>{3}, {T}: Procure em seu grimório um card permanente de Mercenário com valor de mana igual ou inferior a 3, coloque-o no campo de batalha e depois embaralhe.</td>
+  </tr>
+  <tr>
+    <td>69</td>
+    <td>Rathi Intimidator</td>
+    <td>Fear (This creature can't be blocked except by artifact creatures and/or black creatures.)<br>{2}, {T}: Search your library for a Mercenary permanent card with mana value 2 or less, put it onto the battlefield, then shuffle.</td>
+    <td>Medo (Esta criatura só pode ser bloqueada por criaturas artefato e/ou criaturas pretas.)<br>{2}, {T}: Procure em seu grimório um card permanente de Mercenário com valor de mana igual ou inferior a 2, coloque-o no campo de batalha e depois embaralhe.</td>
+  </tr>
+  <tr>
+    <td>70</td>
+    <td>Seal of Doom</td>
+    <td>Sacrifice Seal of Doom: Destroy target nonblack creature. It can't be regenerated.</td>
+    <td>Sacrifique Seal of Doom: Destrua a criatura alvo que não seja preta. Não pode ser regenerado.</td>
+  </tr>
+  <tr>
+    <td>71</td>
+    <td>Spineless Thug</td>
+    <td>Spineless Thug can't block.</td>
+    <td>Bandido Covarde não consegue bloquear.</td>
+  </tr>
+  <tr>
+    <td>72</td>
+    <td>Spiteful Bully</td>
+    <td>At the beginning of your upkeep, Spiteful Bully deals 3 damage to target creature you control.</td>
+    <td>No início de sua manutenção, Spiteful Bully causa 3 pontos de dano à criatura alvo que você controla.</td>
+  </tr>
+  <tr>
+    <td>73</td>
+    <td>Stronghold Discipline</td>
+    <td>Each player loses 1 life for each creature they control.</td>
+    <td>Cada jogador perde 1 ponto de vida para cada criatura que controla.</td>
+  </tr>
+  <tr>
+    <td>74</td>
+    <td>Vicious Hunger</td>
+    <td>Vicious Hunger deals 2 damage to target creature and you gain 2 life.</td>
+    <td>Fome Vicious causa 2 pontos de dano à criatura alvo e você ganha 2 pontos de vida.</td>
+  </tr>
+  <tr>
+    <td>75</td>
+    <td>Volrath the Fallen</td>
+    <td>{1}{B}, Discard a creature card: Volrath the Fallen gets +X/+X until end of turn, where X is the discarded card's mana value.</td>
+    <td>{1}{B}, Descarte um card de criatura: Volrath, o Caído, recebe +X/+X até o final do turno, sendo X o valor de mana do card descartado.</td>
+  </tr>
+  <tr>
+    <td>76</td>
+    <td>Ancient Hydra</td>
+    <td>Fading 5 (This creature enters the battlefield with five fade counters on it. At the beginning of your upkeep, remove a fade counter from it. If you can't, sacrifice it.)<br>{1}, Remove a fade counter from Ancient Hydra: It deals 1 damage to any target.</td>
+    <td>Desvanecimento 5 (Esta criatura entra no campo de batalha com cinco marcadores de desaparecimento. No início de sua manutenção, remova um marcador de desaparecimento dela. Se não puder, sacrifique-a.)<br>{1}, Remova um marcador de desbotamento da Hidra Antiga: Ela causa 1 ponto de dano a qualquer alvo.</td>
+  </tr>
+  <tr>
+    <td>77</td>
+    <td>Arc Mage</td>
+    <td>{2}{R}, {T}, Discard a card: Arc Mage deals 2 damage divided as you choose among one or two targets.</td>
+    <td>{2}{R}, {T}, Descarte um card: Arc Mage causa 2 pontos de dano divididos conforme você escolher entre um ou dois alvos.</td>
+  </tr>
+  <tr>
+    <td>78</td>
+    <td>Bola Warrior</td>
+    <td>{R}, {T}, Discard a card: Target creature can't block this turn.</td>
+    <td>{R}, {T}, descarte um card: A criatura alvo não pode bloquear neste turno.</td>
+  </tr>
+  <tr>
+    <td>79</td>
+    <td>Downhill Charge</td>
+    <td>You may sacrifice a Mountain rather than pay this spell's mana cost.<br>Target creature gets +X/+0 until end of turn, where X is the number of Mountains you control.</td>
+    <td>Você pode sacrificar uma Montanha em vez de pagar o custo de mana desta mágica.<br>A criatura alvo recebe +X/+0 até o final do turno, sendo X o número de Montanhas que você controla.</td>
+  </tr>
+  <tr>
+    <td>80</td>
+    <td>Flame Rift</td>
+    <td>Flame Rift deals 4 damage to each player.</td>
+    <td>Flame Rift causa 4 pontos de dano a cada jogador.</td>
+  </tr>
+  <tr>
+    <td>81</td>
+    <td>Flowstone Crusher</td>
+    <td>{R}: Flowstone Crusher gets +1/-1 until end of turn.</td>
+    <td>{R}: Triturador de Flowstone recebe +1/-1 até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>82</td>
+    <td>Flowstone Overseer</td>
+    <td>{R}{R}: Target creature gets +1/-1 until end of turn.</td>
+    <td>{R}{R}: A criatura alvo recebe +1/-1 até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>83</td>
+    <td>Flowstone Slide</td>
+    <td>All creatures get +X/-X until end of turn.</td>
+    <td>Todas as criaturas recebem +X/-X até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>84</td>
+    <td>Flowstone Strike</td>
+    <td>Target creature gets +1/-1 and gains haste until end of turn.</td>
+    <td>A criatura alvo recebe +1/-1 e ganha ímpeto até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>85</td>
+    <td>Flowstone Surge</td>
+    <td>Creatures you control get +1/-1.</td>
+    <td>As criaturas que você controla recebem +1/-1.</td>
+  </tr>
+  <tr>
+    <td>86</td>
+    <td>Flowstone Wall</td>
+    <td>Defender (This creature can't attack.)<br>{R}: Flowstone Wall gets +1/-1 until end of turn.</td>
+    <td>Defensor (Esta criatura não pode atacar.)<br>{R}: Parede de Flowstone recebe +1/-1 até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>87</td>
+    <td>Laccolith Grunt</td>
+    <td>Whenever Laccolith Grunt becomes blocked, you may have it deal damage equal to its power to target creature. If you do, Laccolith Grunt assigns no combat damage this turn.</td>
+    <td>Toda vez que Laccolith Grunt for bloqueado, você poderá fazer com que ele cause dano igual ao seu poder à criatura alvo. Se fizer isso, Laccolith Grunt não causará dano de combate neste turno.</td>
+  </tr>
+  <tr>
+    <td>88</td>
+    <td>Laccolith Rig</td>
+    <td>Enchant creature<br>Whenever enchanted creature becomes blocked, you may have it deal damage equal to its power to target creature. If you do, the first creature assigns no combat damage this turn.</td>
+    <td>Encantar criatura<br>Sempre que a criatura encantada for bloqueada, você poderá fazer com que ela cause dano igual ao seu poder à criatura alvo. Se fizer isso, a primeira criatura não causará dano de combate neste turno.</td>
+  </tr>
+  <tr>
+    <td>89</td>
+    <td>Laccolith Titan</td>
+    <td>Whenever Laccolith Titan becomes blocked, you may have it deal damage equal to its power to target creature. If you do, Laccolith Titan assigns no combat damage this turn.</td>
+    <td>Toda vez que Titã Lacólito for bloqueado, você poderá fazer com que ele cause dano igual ao seu poder à criatura alvo. Se fizer isso, Titã Lacólito não causará dano de combate neste turno.</td>
+  </tr>
+  <tr>
+    <td>90</td>
+    <td>Laccolith Warrior</td>
+    <td>Whenever Laccolith Warrior becomes blocked, you may have it deal damage equal to its power to target creature. If you do, Laccolith Warrior assigns no combat damage this turn.</td>
+    <td>Toda vez que Guerreiro Lacólito for bloqueado, você poderá fazer com que ele cause dano igual ao seu poder à criatura alvo. Se fizer isso, Laccolith Warrior não causará dano de combate neste turno.</td>
+  </tr>
+  <tr>
+    <td>91</td>
+    <td>Laccolith Whelp</td>
+    <td>Whenever Laccolith Whelp becomes blocked, you may have it deal damage equal to its power to target creature. If you do, Laccolith Whelp assigns no combat damage this turn.</td>
+    <td>Toda vez que Laccolith Whelp for bloqueado, você poderá fazer com que ele cause dano igual ao seu poder à criatura alvo. Se fizer isso, Laccolith Whelp não causará dano de combate neste turno.</td>
+  </tr>
+  <tr>
+    <td>92</td>
+    <td>Mana Cache</td>
+    <td>At the beginning of each player's end step, put a charge counter on Mana Cache for each untapped land that player controls.<br>Remove a charge counter from Mana Cache: Add {C}. Any player may activate this ability but only during their turn before the end step.</td>
+    <td>No início da etapa final de cada jogador, coloque um marcador de carga no Mana Cache para cada terreno desvirado que aquele jogador controla.<br>Remova um marcador de carga do Reserva de Mana: Adicione {C}. Qualquer jogador pode ativar esta habilidade, mas apenas durante seu turno, antes da etapa final.</td>
+  </tr>
+  <tr>
+    <td>93</td>
+    <td>Mogg Alarm</td>
+    <td>You may sacrifice two Mountains rather than pay this spell's mana cost.<br>Create two 1/1 red Goblin creature tokens.</td>
+    <td>Você pode sacrificar duas Montanhas em vez de pagar o custo de mana desta mágica.<br>Crie duas fichas de criatura vermelha 1/1 do tipo Goblin.</td>
+  </tr>
+  <tr>
+    <td>94</td>
+    <td>Mogg Salvage</td>
+    <td>If an opponent controls an Island and you control a Mountain, you may cast this spell without paying its mana cost.<br>Destroy target artifact.</td>
+    <td>Se um oponente controlar uma Ilha e você controlar uma Montanha, você poderá conjurar esta mágica sem pagar seu custo de mana.<br>Destrua o artefato alvo.</td>
+  </tr>
+  <tr>
+    <td>95</td>
+    <td>Mogg Toady</td>
+    <td>Mogg Toady can't attack unless you control more creatures than defending player.<br>Mogg Toady can't block unless you control more creatures than attacking player.</td>
+    <td>Mogg Toady não pode atacar a menos que você controle mais criaturas que o jogador defensor.<br>Mogg Toady não pode bloquear a menos que você controle mais criaturas que o jogador atacante.</td>
+  </tr>
+  <tr>
+    <td>96</td>
+    <td>Moggcatcher</td>
+    <td>{3}, {T}: Search your library for a Goblin permanent card, put it onto the battlefield, then shuffle.</td>
+    <td>{3}, {T}: Procure em seu grimório um card de permanente de Goblin, coloque-o no campo de batalha e depois embaralhe.</td>
+  </tr>
+  <tr>
+    <td>97</td>
+    <td>Rupture</td>
+    <td>Sacrifice a creature. Rupture deals damage equal to that creature's power to each creature without flying and each player.</td>
+    <td>Sacrifique uma criatura. Ruptura causa dano igual ao poder daquela criatura a cada criatura sem voar e a cada jogador.</td>
+  </tr>
+  <tr>
+    <td>98</td>
+    <td>Seal of Fire</td>
+    <td>Sacrifice Seal of Fire: It deals 2 damage to any target.</td>
+    <td>Sacrifique Seal of Fire: Causa 2 pontos de dano a qualquer alvo.</td>
+  </tr>
+  <tr>
+    <td>99</td>
+    <td>Shrieking Mogg</td>
+    <td>Haste<br>When Shrieking Mogg enters the battlefield, tap all other creatures.</td>
+    <td>Pressa<br>Quando Shrieking Mogg entrar no campo de batalha, vire todas as outras criaturas.</td>
+  </tr>
+  <tr>
+    <td>100</td>
+    <td>Stronghold Gambit</td>
+    <td>Each player chooses a card in their hand. Then each player reveals their chosen card. The owner of each creature card revealed this way with the lowest mana value puts it onto the battlefield.</td>
+    <td>Cada jogador escolhe uma carta da sua mão. Em seguida, cada jogador revela a carta escolhida. O dono de cada card de criatura revelado desta forma com o menor valor de mana o coloca no campo de batalha.</td>
+  </tr>
+  <tr>
+    <td>101</td>
+    <td>Animate Land</td>
+    <td>Until end of turn, target land becomes a 3/3 creature that's still a land.</td>
+    <td>Até o final do turno, o terreno alvo se torna uma criatura 3/3 que ainda é um terreno.</td>
+  </tr>
+  <tr>
+    <td>102</td>
+    <td>Blastoderm</td>
+    <td>Shroud (This creature can't be the target of spells or abilities.)<br>Fading 3 (This creature enters the battlefield with three fade counters on it. At the beginning of your upkeep, remove a fade counter from it. If you can't, sacrifice it.)</td>
+    <td>Mortalha (Esta criatura não pode ser alvo de mágicas ou habilidades.)<br>Desvanecimento 3 (Esta criatura entra no campo de batalha com três marcadores de desaparecimento. No início de sua manutenção, remova um marcador de desaparecimento dela. Se não puder, sacrifique-a.)</td>
+  </tr>
+  <tr>
+    <td>103</td>
+    <td>Coiling Woodworm</td>
+    <td>Coiling Woodworm's power is equal to the number of Forests on the battlefield.</td>
+    <td>O poder do Coiling Woodworm é igual ao número de Florestas no campo de batalha.</td>
+  </tr>
+  <tr>
+    <td>104</td>
+    <td>Fog Patch</td>
+    <td>Cast this spell only during the declare blockers step.<br>Attacking creatures become blocked. (This spell works on creatures that can't be blocked.)</td>
+    <td>Conjure esta mágica somente durante a etapa de declaração de bloqueadores.<br>As criaturas atacantes ficam bloqueadas. (Este feitiço funciona em criaturas que não podem ser bloqueadas.)</td>
+  </tr>
+  <tr>
+    <td>105</td>
+    <td>Harvest Mage</td>
+    <td>{G}, {T}, Discard a card: Until end of turn, if you tap a land for mana, it produces one mana of a color of your choice instead of any other type and amount.</td>
+    <td>{G}, {T}, Descarte um card: Até o final do turno, se você virar um terreno para gerar mana, ele produzirá um mana de uma cor de sua escolha em vez de qualquer outro tipo e quantidade.</td>
+  </tr>
+  <tr>
+    <td>106</td>
+    <td>Mossdog</td>
+    <td>Whenever Mossdog becomes the target of a spell or ability an opponent controls, put a +1/+1 counter on Mossdog.</td>
+    <td>Toda vez que Mossdog se tornar alvo de uma mágica ou habilidade que um oponente controla, coloque um marcador +1/+1 em Mossdog.</td>
+  </tr>
+  <tr>
+    <td>107</td>
+    <td>Nesting Wurm</td>
+    <td>Trample<br>When Nesting Wurm enters the battlefield, you may search your library for up to three cards named Nesting Wurm, reveal them, put them into your hand, then shuffle.</td>
+    <td>Atropelar<br>Quando Nesting Wurm entra no campo de batalha, você pode procurar em seu grimório por até três cards chamados Nesting Wurm, revelá-los, colocá-los em sua mão e depois embaralhar.</td>
+  </tr>
+  <tr>
+    <td>108</td>
+    <td>Overlaid Terrain</td>
+    <td>As Overlaid Terrain enters the battlefield, sacrifice all lands you control.<br>Lands you control have "{T}: Add two mana of any one color."</td>
+    <td>Conforme Overlaid Terrain entra no campo de batalha, sacrifique todos os terrenos que você controla.<br>Os terrenos que você controla têm "{T}: Adicione dois manas de qualquer cor."</td>
+  </tr>
+  <tr>
+    <td>109</td>
+    <td>Pack Hunt</td>
+    <td>Search your library for up to three cards with the same name as target creature, reveal them, put them into your hand, then shuffle.</td>
+    <td>Procure em seu grimório por até três cards com o mesmo nome da criatura alvo, revele-os, coloque-os em sua mão e depois embaralhe.</td>
+  </tr>
+  <tr>
+    <td>110</td>
+    <td>Refreshing Rain</td>
+    <td>If an opponent controls a Swamp and you control a Forest, you may cast this spell without paying its mana cost.<br>Target player gains 6 life.</td>
+    <td>Se um oponente controlar um Pântano e você controlar uma Floresta, você poderá conjurar esta mágica sem pagar seu custo de mana.<br>O jogador alvo ganha 6 pontos de vida.</td>
+  </tr>
+  <tr>
+    <td>111</td>
+    <td>Reverent Silence</td>
+    <td>If you control a Forest, rather than pay this spell's mana cost, you may have each other player gain 6 life.<br>Destroy all enchantments.</td>
+    <td>Se você controlar uma Floresta, em vez de pagar o custo de mana desta mágica, você poderá fazer com que cada outro jogador ganhe 6 pontos de vida.<br>Destrua todos os encantamentos.</td>
+  </tr>
+  <tr>
+    <td>112</td>
+    <td>Rhox</td>
+    <td>You may have Rhox assign its combat damage as though it weren't blocked.<br>{2}{G}: Regenerate Rhox. (The next time this creature would be destroyed this turn, it isn't. Instead tap it, remove all damage from it, and remove it from combat.)</td>
+    <td>Você pode fazer com que Rhox atribua seu dano de combate como se não estivesse bloqueado.<br>{2}{G}: Regenera Rhox. (Na próxima vez que esta criatura seria destruída neste turno, ela não será. Em vez disso, vire-a, remova todo o dano dela e remova-a do combate.)</td>
+  </tr>
+  <tr>
+    <td>113</td>
+    <td>Saproling Burst</td>
+    <td>Fading 7 (This enchantment enters the battlefield with seven fade counters on it. At the beginning of your upkeep, remove a fade counter from it. If you can't, sacrifice it.)<br>Remove a fade counter from Saproling Burst: Create a green Saproling creature token. It has "This creature's power and toughness are each equal to the number of fade counters on Saproling Burst."<br>When Saproling Burst leaves the battlefield, destroy all tokens created with Saproling Burst. They can't be regenerated.</td>
+    <td>Desvanecimento 7 (Este encantamento entra no campo de batalha com sete marcadores de desaparecimento. No início de sua manutenção, remova um marcador de desaparecimento dele. Se não puder, sacrifique-o.)<br>Remova um marcador de desbotamento de Explosão de Saprófita: Crie uma ficha de criatura verde de Saprófita. Tem "O poder e a resistência desta criatura são iguais ao número de contadores de desvanecimento em Saproling Burst."<br>Quando Saproling Burst sair do campo de batalha, destrua todas as fichas criadas com Saproling Burst. Eles não podem ser regenerados.</td>
+  </tr>
+  <tr>
+    <td>114</td>
+    <td>Saproling Cluster</td>
+    <td>{1}, Discard a card: Create a 1/1 green Saproling creature token. Any player may activate this ability.</td>
+    <td>{1}, descarte um card: Crie uma ficha de criatura verde 1/1 do tipo Saprófita. Qualquer jogador pode ativar esta habilidade.</td>
+  </tr>
+  <tr>
+    <td>115</td>
+    <td>Seal of Strength</td>
+    <td>Sacrifice Seal of Strength: Target creature gets +3/+3 until end of turn.</td>
+    <td>Sacrifique Selo de Força: A criatura alvo recebe +3/+3 até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>116</td>
+    <td>Skyshroud Behemoth</td>
+    <td>Fading 2 (This creature enters the battlefield with two fade counters on it. At the beginning of your upkeep, remove a fade counter from it. If you can't, sacrifice it.)<br>Skyshroud Behemoth enters the battlefield tapped.</td>
+    <td>Desvanecimento 2 (Esta criatura entra no campo de batalha com dois marcadores de desaparecimento. No início de sua manutenção, remova um marcador de desaparecimento dela. Se não puder, sacrifique-a.)<br>Skyshroud Behemoth entra no campo de batalha virado.</td>
+  </tr>
+  <tr>
+    <td>117</td>
+    <td>Skyshroud Claim</td>
+    <td>Search your library for up to two Forest cards, put them onto the battlefield, then shuffle.</td>
+    <td>Procure em seu grimório por até dois cards de Floresta, coloque-os no campo de batalha e depois embaralhe.</td>
+  </tr>
+  <tr>
+    <td>118</td>
+    <td>Skyshroud Cutter</td>
+    <td>If you control a Forest, rather than pay this spell's mana cost, you may have each other player gain 5 life.</td>
+    <td>Se você controlar uma Floresta, em vez de pagar o custo de mana desta mágica, você poderá fazer com que cada outro jogador ganhe 5 pontos de vida.</td>
+  </tr>
+  <tr>
+    <td>119</td>
+    <td>Skyshroud Poacher</td>
+    <td>{3}, {T}: Search your library for an Elf permanent card, put it onto the battlefield, then shuffle.</td>
+    <td>{3}, {T}: Procure em seu grimório um card de permanente de Elfo, coloque-o no campo de batalha e depois embaralhe.</td>
+  </tr>
+  <tr>
+    <td>120</td>
+    <td>Skyshroud Ridgeback</td>
+    <td>Fading 2 (This creature enters the battlefield with two fade counters on it. At the beginning of your upkeep, remove a fade counter from it. If you can't, sacrifice it.)</td>
+    <td>Desvanecimento 2 (Esta criatura entra no campo de batalha com dois marcadores de desaparecimento. No início de sua manutenção, remova um marcador de desaparecimento dela. Se não puder, sacrifique-a.)</td>
+  </tr>
+  <tr>
+    <td>121</td>
+    <td>Skyshroud Sentinel</td>
+    <td>When Skyshroud Sentinel enters the battlefield, you may search your library for up to three cards named Skyshroud Sentinel, reveal them, put them into your hand, then shuffle.</td>
+    <td>Quando Sentinela Skyshroud entra no campo de batalha, você pode procurar em seu grimório por até três cards chamados Sentinela Skyshroud, revelá-los, colocá-los em sua mão e depois embaralhar.</td>
+  </tr>
+  <tr>
+    <td>122</td>
+    <td>Stampede Driver</td>
+    <td>{1}{G}, {T}, Discard a card: Creatures you control get +1/+1 and gain trample until end of turn.</td>
+    <td>{1}{G}, {T}, descarte um card: As criaturas que você controla recebem +1/+1 e ganham atropelar até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>123</td>
+    <td>Treetop Bracers</td>
+    <td>Enchant creature (Target a creature as you cast this. This card enters the battlefield attached to that creature.)<br>Enchanted creature gets +1/+1 and can't be blocked except by creatures with flying.</td>
+    <td>Encantar criatura (Escolha uma criatura ao conjurar este card. Este card entra no campo de batalha anexado àquela criatura.)<br>A criatura encantada recebe +1/+1 e só pode ser bloqueada por criaturas com voar.</td>
+  </tr>
+  <tr>
+    <td>124</td>
+    <td>Wild Mammoth</td>
+    <td>At the beginning of your upkeep, if a player controls more creatures than each other player, the player who controls the most creatures gains control of Wild Mammoth.</td>
+    <td>No início de sua manutenção, se um jogador controlar mais criaturas do que qualquer outro jogador, o jogador que controlar o maior número de criaturas ganha o controle de Mamute Selvagem.</td>
+  </tr>
+  <tr>
+    <td>125</td>
+    <td>Woodripper</td>
+    <td>Fading 3 (This creature enters the battlefield with three fade counters on it. At the beginning of your upkeep, remove a fade counter from it. If you can't, sacrifice it.)<br>{1}, Remove a fade counter from Woodripper: Destroy target artifact.</td>
+    <td>Desvanecimento 3 (Esta criatura entra no campo de batalha com três marcadores de desaparecimento. No início de sua manutenção, remova um marcador de desaparecimento dela. Se não puder, sacrifique-a.)<br>{1}, Remova um contador de desbotamento do Woodripper: Destrua o artefato alvo.</td>
+  </tr>
+  <tr>
+    <td>126</td>
+    <td>Belbe's Armor</td>
+    <td>{X}, {T}: Target creature gets -X/+X until end of turn.</td>
+    <td>{X}, {T}: A criatura alvo recebe -X/+X até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>127</td>
+    <td>Belbe's Portal</td>
+    <td>As Belbe's Portal enters the battlefield, choose a creature type.<br>{3}, {T}: You may put a creature card of the chosen type from your hand onto the battlefield.</td>
+    <td>Conforme Portal de Belbe entra no campo de batalha, escolha um tipo de criatura.<br>{3}, {T}: Você pode colocar no campo de batalha um card de criatura do tipo escolhido de sua mão.</td>
+  </tr>
+  <tr>
+    <td>128</td>
+    <td>Complex Automaton</td>
+    <td>At the beginning of your upkeep, if you control seven or more permanents, return Complex Automaton to its owner's hand.</td>
+    <td>No início de sua manutenção, se você controlar sete ou mais permanentes, devolva Complex Automaton para a mão de seu dono.</td>
+  </tr>
+  <tr>
+    <td>129</td>
+    <td>Eye of Yawgmoth</td>
+    <td>{3}, {T}, Sacrifice a creature: Reveal a number of cards from the top of your library equal to the sacrificed creature's power. Put one into your hand and exile the rest.</td>
+    <td>{3}, {T}, Sacrifique uma criatura: Revele um número de cards do topo de seu grimório igual ao poder da criatura sacrificada. Coloque um em sua mão e exile o resto.</td>
+  </tr>
+  <tr>
+    <td>130</td>
+    <td>Flint Golem</td>
+    <td>Whenever Flint Golem becomes blocked, defending player mills three cards.</td>
+    <td>Sempre que Flint Golem é bloqueado, o jogador defensor mói três cartas.</td>
+  </tr>
+  <tr>
+    <td>131</td>
+    <td>Flowstone Armor</td>
+    <td>You may choose not to untap Flowstone Armor during your untap step.<br>{3}, {T}: Target creature gets +1/-1 for as long as Flowstone Armor remains tapped.</td>
+    <td>Você pode optar por não desvirar Flowstone Armor durante sua etapa de desvirar.<br>{3}, {T}: A criatura alvo recebe +1/-1 enquanto a Armadura de Flowstone permanecer virada.</td>
+  </tr>
+  <tr>
+    <td>132</td>
+    <td>Flowstone Thopter</td>
+    <td>{1}: Flowstone Thopter gets +1/-1 and gains flying until end of turn.</td>
+    <td>{1}: Flowstone Thopter recebe +1/-1 e ganha voar até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>133</td>
+    <td>Kill Switch</td>
+    <td>{2}, {T}: Tap all other artifacts. They don't untap during their controllers' untap steps for as long as Kill Switch remains tapped.</td>
+    <td>{2}, {T}: Toque em todos os outros artefatos. Eles não desviram durante as etapas de desvirar de seus controladores enquanto Kill Switch permanecer virado.</td>
+  </tr>
+  <tr>
+    <td>134</td>
+    <td>Parallax Inhibitor</td>
+    <td>{1}, {T}, Sacrifice Parallax Inhibitor: Put a fade counter on each permanent with fading you control.</td>
+    <td>{1}, {T}, Sacrifique Inibidor de Paralaxe: Coloque um marcador de desbotamento em cada permanente com desbotamento que você controla.</td>
+  </tr>
+  <tr>
+    <td>135</td>
+    <td>Predator, Flagship</td>
+    <td>{2}: Target creature gains flying until end of turn.<br>{5}, {T}: Destroy target creature with flying.</td>
+    <td>{2}: A criatura alvo ganha voar até o final do turno.<br>{5}, {T}: Destrua a criatura alvo com voar.</td>
+  </tr>
+  <tr>
+    <td>136</td>
+    <td>Rackling</td>
+    <td>At the beginning of each opponent's upkeep, Rackling deals X damage to that player, where X is 3 minus the number of cards in their hand.</td>
+    <td>No início da manutenção de cada oponente, Rackling causa X pontos de dano àquele jogador, sendo X igual a 3 menos o número de cards em sua mão.</td>
+  </tr>
+  <tr>
+    <td>137</td>
+    <td>Rejuvenation Chamber</td>
+    <td>Fading 2 (This artifact enters the battlefield with two fade counters on it. At the beginning of your upkeep, remove a fade counter from it. If you can't, sacrifice it.)<br>{T}: You gain 2 life.</td>
+    <td>Desvanecimento 2 (Este artefato entra no campo de batalha com dois marcadores de desaparecimento. No início de sua manutenção, remova um marcador de desaparecimento dele. Se não puder, sacrifique-o.)<br>{T}: Você ganha 2 pontos de vida.</td>
+  </tr>
+  <tr>
+    <td>138</td>
+    <td>Rusting Golem</td>
+    <td>Fading 5 (This creature enters the battlefield with five fade counters on it. At the beginning of your upkeep, remove a fade counter from it. If you can't, sacrifice it.)<br>Rusting Golem's power and toughness are each equal to the number of fade counters on it.</td>
+    <td>Desvanecimento 5 (Esta criatura entra no campo de batalha com cinco marcadores de desaparecimento. No início de sua manutenção, remova um marcador de desaparecimento dela. Se não puder, sacrifique-a.)<br>O poder e a resistência do Rusting Golem são iguais ao número de marcadores de fade nele.</td>
+  </tr>
+  <tr>
+    <td>139</td>
+    <td>Tangle Wire</td>
+    <td>Fading 4 (This artifact enters the battlefield with four fade counters on it. At the beginning of your upkeep, remove a fade counter from it. If you can't, sacrifice it.)<br>At the beginning of each player's upkeep, that player taps an untapped artifact, creature, or land they control for each fade counter on Tangle Wire.</td>
+    <td>Desvanecimento 4 (Este artefato entra no campo de batalha com quatro marcadores de desaparecimento. No início de sua manutenção, remova um marcador de desaparecimento dele. Se não puder, sacrifique-o.)<br>No início da manutenção de cada jogador, aquele jogador vira um artefato, criatura ou terreno desvirado que ele controla para cada marcador de desvanecimento em Tangle Wire.</td>
+  </tr>
+  <tr>
+    <td>140</td>
+    <td>Viseling</td>
+    <td>At the beginning of each opponent's upkeep, Viseling deals X damage to that player, where X is the number of cards in their hand minus 4.</td>
+    <td>No início da manutenção de cada oponente, Viseling causa X pontos de dano àquele jogador, sendo X o número de cards em sua mão menos 4.</td>
+  </tr>
+  <tr>
+    <td>141</td>
+    <td>Kor Haven</td>
+    <td>{T}: Add {C}.<br>{1}{W}, {T}: Prevent all combat damage that would be dealt by target attacking creature this turn.</td>
+    <td>{T}: Adicione {C}.<br>{1}{W}, {T}: Previne todo o dano de combate que seria causado pela criatura atacante alvo neste turno.</td>
+  </tr>
+  <tr>
+    <td>142</td>
+    <td>Rath's Edge</td>
+    <td>{T}: Add {C}.<br>{4}, {T}, Sacrifice a land: Rath's Edge deals 1 damage to any target.</td>
+    <td>{T}: Adicione {C}.<br>{4}, {T}, sacrifique um terreno: Rath's Edge causa 1 ponto de dano a qualquer alvo.</td>
+  </tr>
+  <tr>
+    <td>143</td>
+    <td>Terrain Generator</td>
+    <td>{T}: Add {C}.<br>{2}, {T}: You may put a basic land card from your hand onto the battlefield tapped.</td>
+    <td>{T}: Adicione {C}.<br>{2}, {T}: Você pode colocar um card de terreno básico de sua mão no campo de batalha virado.</td>
+  </tr>
+</table>
+    </body>
+</html>

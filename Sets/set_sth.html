@@ -1,0 +1,894 @@
+<html>
+<head>
+        <meta charset="UTF-8">
+        <title>sth</title>
+        <style>
+            .styled-table {
+                width: 100%;
+                border-collapse: collapse;
+                border: 1px solid #ddd;
+                font-family: Arial, sans-serif;
+            }
+            .styled-table th, .styled-table td {
+                padding: 8px;
+                text-align: left;
+                border-bottom: 1px solid #ddd;
+            }
+            .styled-table tr:nth-child(even) {
+                background-color: #f2f2f2;
+            }
+            .styled-table th {
+                background-color: #4CAF50;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+    <table class="styled-table">
+  <tr>
+    <td>numero</td>
+    <td>nome</td>
+    <td>texto_ingles</td>
+    <td>traduzido</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Bandage</td>
+    <td>Prevent the next 1 damage that would be dealt to any target this turn.<br>Draw a card.</td>
+    <td>Previne o próximo 1 dano que seria causado a qualquer alvo neste turno.<br>Compre uma carta.</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Calming Licid</td>
+    <td>{W}, {T}: Calming Licid loses this ability and becomes an Aura enchantment with enchant creature. Attach it to target creature. You may pay {W} to end this effect.<br>Enchanted creature can't attack.</td>
+    <td>{W}, {T}: Calming Licid perde esta habilidade e se torna um encantamento de Aura com criatura encantada. Anexe-o à criatura alvo. Você pode pagar {W} para encerrar este efeito.<br>A criatura encantada não pode atacar.</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Change of Heart</td>
+    <td>Buyback {3} (You may pay an additional {3} as you cast this spell. If you do, put this card into your hand as it resolves.)<br>Target creature can't attack this turn.</td>
+    <td>Recompra {3} (Você pode pagar um custo adicional de {3} ao conjurar esta mágica. Se isso acontecer, coloque este card em sua mão conforme ela for resolvida.)<br>A criatura alvo não pode atacar neste turno.</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>Contemplation</td>
+    <td>Whenever you cast a spell, you gain 1 life.</td>
+    <td>Sempre que você lança um feitiço, você ganha 1 ponto de vida.</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>Conviction</td>
+    <td>Enchant creature<br>Enchanted creature gets +1/+3.<br>{W}: Return Conviction to its owner's hand.</td>
+    <td>Encantar criatura<br>A criatura encantada recebe +1/+3.<br>{W}: Devolva Convicção para a mão de seu dono.</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>Hidden Retreat</td>
+    <td>Put a card from your hand on top of your library: Prevent all damage that would be dealt by target instant or sorcery spell this turn.</td>
+    <td>Coloque um card da sua mão no topo do seu grimório: Previna todo o dano que seria causado pela mágica instantânea ou feitiço alvo neste turno.</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>Honor Guard</td>
+    <td>{W}: Honor Guard gets +0/+1 until end of turn.</td>
+    <td>{W}: Guarda de Honra recebe +0/+1 até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td>Lancers en-Kor</td>
+    <td>Trample<br>{0}: The next 1 damage that would be dealt to Lancers en-Kor this turn is dealt to target creature you control instead.</td>
+    <td>Atropelar<br>{0}: O próximo 1 ponto de dano que seria causado a Lancers en-Kor neste turno é causado à criatura alvo que você controla.</td>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td>Nomads en-Kor</td>
+    <td>{0}: The next 1 damage that would be dealt to Nomads en-Kor this turn is dealt to target creature you control instead.</td>
+    <td>{0}: O próximo 1 ponto de dano que seria causado a Nomads en-Kor neste turno é causado à criatura alvo que você controla.</td>
+  </tr>
+  <tr>
+    <td>10</td>
+    <td>Pursuit of Knowledge</td>
+    <td>If you would draw a card, you may put a study counter on Pursuit of Knowledge instead.<br>Remove three study counters from Pursuit of Knowledge, Sacrifice Pursuit of Knowledge: Draw seven cards.</td>
+    <td>Se você fosse comprar um card, você poderia colocar um marcador de estudo em Busca de Conhecimento.<br>Remova três marcadores de estudo de Busca de Conhecimento, Sacrifique Busca de Conhecimento: Compre sete cartas.</td>
+  </tr>
+  <tr>
+    <td>11</td>
+    <td>Rolling Stones</td>
+    <td>Wall creatures can attack as though they didn't have defender.</td>
+    <td>Criaturas de parede podem atacar como se não tivessem defensor.</td>
+  </tr>
+  <tr>
+    <td>12</td>
+    <td>Sacred Ground</td>
+    <td>Whenever a spell or ability an opponent controls causes a land to be put into your graveyard from the battlefield, return that card to the battlefield.</td>
+    <td>Toda vez que uma mágica ou habilidade que um oponente controla faz com que um terreno seja colocado em seu cemitério vindo do campo de batalha, devolva aquele card para o campo de batalha.</td>
+  </tr>
+  <tr>
+    <td>13</td>
+    <td>Samite Blessing</td>
+    <td>Enchant creature<br>Enchanted creature has "{T}: The next time a source of your choice would deal damage to target creature this turn, prevent that damage."</td>
+    <td>Encantar criatura<br>A criatura encantada tem "{T}: Na próxima vez que uma fonte de sua escolha causaria dano à criatura alvo neste turno, previna aquele dano."</td>
+  </tr>
+  <tr>
+    <td>14</td>
+    <td>Scapegoat</td>
+    <td>As an additional cost to cast this spell, sacrifice a creature.<br>Return any number of target creatures you control to their owner's hand.</td>
+    <td>Como custo adicional para conjurar esta mágica, sacrifique uma criatura.<br>Devolva qualquer número de criaturas alvo que você controla para a mão de seus donos.</td>
+  </tr>
+  <tr>
+    <td>15</td>
+    <td>Shaman en-Kor</td>
+    <td>{0}: The next 1 damage that would be dealt to Shaman en-Kor this turn is dealt to target creature you control instead.<br>{1}{W}: The next time a source of your choice would deal damage to target creature this turn, that damage is dealt to Shaman en-Kor instead.</td>
+    <td>{0}: O próximo 1 ponto de dano que seria causado ao Xamã en-Kor neste turno é causado à criatura alvo que você controla.<br>{1}{W}: Na próxima vez que uma fonte à sua escolha fosse causar dano à criatura alvo neste turno, esse dano será causado ao Xamã en-Kor.</td>
+  </tr>
+  <tr>
+    <td>16</td>
+    <td>Skyshroud Falcon</td>
+    <td>Flying, vigilance</td>
+    <td>Voando, vigilância</td>
+  </tr>
+  <tr>
+    <td>17</td>
+    <td>Smite</td>
+    <td>Destroy target blocked creature.</td>
+    <td>Destrua a criatura alvo bloqueada.</td>
+  </tr>
+  <tr>
+    <td>18</td>
+    <td>Soltari Champion</td>
+    <td>Shadow (This creature can block or be blocked by only creatures with shadow.)<br>Whenever Soltari Champion attacks, other creatures you control get +1/+1 until end of turn.</td>
+    <td>Sombra (Esta criatura pode bloquear ou ser bloqueada apenas por criaturas com sombra.)<br>Toda vez que Campeão Soltari ataca, as outras criaturas que você controla recebem +1/+1 até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>19</td>
+    <td>Spirit en-Kor</td>
+    <td>Flying<br>{0}: The next 1 damage that would be dealt to Spirit en-Kor this turn is dealt to target creature you control instead.</td>
+    <td>Vôo<br>{0}: O próximo 1 ponto de dano que seria causado ao Spirit en-Kor neste turno é causado à criatura alvo que você controla.</td>
+  </tr>
+  <tr>
+    <td>20</td>
+    <td>Temper</td>
+    <td>Prevent the next X damage that would be dealt to target creature this turn. For each 1 damage prevented this way, put a +1/+1 counter on that creature.</td>
+    <td>Previne o próximo X dano que seria causado à criatura alvo neste turno. Para cada 1 dano prevenido desta forma, coloque um marcador +1/+1 naquela criatura.</td>
+  </tr>
+  <tr>
+    <td>21</td>
+    <td>Venerable Monk</td>
+    <td>When Venerable Monk enters the battlefield, you gain 2 life.</td>
+    <td>Quando Venerável Monge entra no campo de batalha, você ganha 2 pontos de vida.</td>
+  </tr>
+  <tr>
+    <td>22</td>
+    <td>Wall of Essence</td>
+    <td>Defender (This creature can't attack.)<br>Whenever Wall of Essence is dealt combat damage, you gain that much life.</td>
+    <td>Defensor (Esta criatura não pode atacar.)<br>Sempre que Wall of Essence sofre dano de combate, você ganha essa mesma quantidade de pontos de vida.</td>
+  </tr>
+  <tr>
+    <td>23</td>
+    <td>Warrior en-Kor</td>
+    <td>{0}: The next 1 damage that would be dealt to Warrior en-Kor this turn is dealt to target creature you control instead.</td>
+    <td>{0}: O próximo 1 ponto de dano que seria causado ao Guerreiro en-Kor neste turno é causado à criatura alvo que você controla.</td>
+  </tr>
+  <tr>
+    <td>24</td>
+    <td>Warrior Angel</td>
+    <td>Flying<br>Whenever Warrior Angel deals damage, you gain that much life.</td>
+    <td>Vôo<br>Sempre que Warrior Angel causa dano, você ganha essa mesma quantidade de pontos de vida.</td>
+  </tr>
+  <tr>
+    <td>25</td>
+    <td>Youthful Knight</td>
+    <td>First strike</td>
+    <td>Primeiro ataque</td>
+  </tr>
+  <tr>
+    <td>26</td>
+    <td>Cloud Spirit</td>
+    <td>Flying<br>Cloud Spirit can block only creatures with flying.</td>
+    <td>Vôo<br>Cloud Spirit pode bloquear apenas criaturas com voar.</td>
+  </tr>
+  <tr>
+    <td>27</td>
+    <td>Contempt</td>
+    <td>Enchant creature<br>When enchanted creature attacks, return it and Contempt to their owners' hands at end of combat.</td>
+    <td>Encantar criatura<br>Quando a criatura encantada atacar, devolva-a e o Desprezo às mãos de seus donos no final do combate.</td>
+  </tr>
+  <tr>
+    <td>28</td>
+    <td>Dream Halls</td>
+    <td>Rather than pay the mana cost for a spell, its controller may discard a card that shares a color with that spell.</td>
+    <td>Em vez de pagar o custo de mana de uma mágica, seu controlador pode descartar um card que compartilhe a mesma cor daquela mágica.</td>
+  </tr>
+  <tr>
+    <td>29</td>
+    <td>Dream Prowler</td>
+    <td>Dream Prowler can't be blocked as long as it's attacking alone.</td>
+    <td>Dream Prowler não pode ser bloqueado enquanto estiver atacando sozinho.</td>
+  </tr>
+  <tr>
+    <td>30</td>
+    <td>Evacuation</td>
+    <td>Return all creatures to their owners' hands.</td>
+    <td>Devolva todas as criaturas para as mãos de seus donos.</td>
+  </tr>
+  <tr>
+    <td>31</td>
+    <td>Gliding Licid</td>
+    <td>{U}, {T}: Gliding Licid loses this ability and becomes an Aura enchantment with enchant creature. Attach it to target creature. You may pay {U} to end this effect.<br>Enchanted creature has flying.</td>
+    <td>{U}, {T}: Gliding Licid perde esta habilidade e se torna um encantamento de Aura com criatura encantada. Anexe-o à criatura alvo. Você pode pagar {U} para encerrar este efeito.<br>A criatura encantada tem voar.</td>
+  </tr>
+  <tr>
+    <td>32</td>
+    <td>Hammerhead Shark</td>
+    <td>Hammerhead Shark can't attack unless defending player controls an Island.</td>
+    <td>O tubarão-martelo não pode atacar a menos que o jogador defensor controle uma ilha.</td>
+  </tr>
+  <tr>
+    <td>33</td>
+    <td>Hesitation</td>
+    <td>When a player casts a spell, sacrifice Hesitation and counter that spell.</td>
+    <td>Quando um jogador conjurar uma mágica, sacrifique Hesitação e anule aquela mágica.</td>
+  </tr>
+  <tr>
+    <td>34</td>
+    <td>Intruder Alarm</td>
+    <td>Creatures don't untap during their controllers' untap steps.<br>Whenever a creature enters the battlefield, untap all creatures.</td>
+    <td>As criaturas não desviram durante as etapas de desvirar de seus controladores.<br>Toda vez que uma criatura entrar no campo de batalha, desvire todas as criaturas.</td>
+  </tr>
+  <tr>
+    <td>35</td>
+    <td>Leap</td>
+    <td>Target creature gains flying until end of turn.<br>Draw a card.</td>
+    <td>A criatura alvo ganha voar até o final do turno.<br>Compre uma carta.</td>
+  </tr>
+  <tr>
+    <td>36</td>
+    <td>Mana Leak</td>
+    <td>Counter target spell unless its controller pays {3}.</td>
+    <td>Anula a mágica alvo, a menos que seu controlador pague {3}.</td>
+  </tr>
+  <tr>
+    <td>37</td>
+    <td>Mask of the Mimic</td>
+    <td>As an additional cost to cast this spell, sacrifice a creature.<br>Search your library for a card with the same name as target nontoken creature, put that card onto the battlefield, then shuffle.</td>
+    <td>Como custo adicional para conjurar esta mágica, sacrifique uma criatura.<br>Procure em seu grimório por um card com o mesmo nome da criatura alvo que não seja uma ficha, coloque aquele card no campo de batalha e depois embaralhe.</td>
+  </tr>
+  <tr>
+    <td>38</td>
+    <td>Mind Games</td>
+    <td>Buyback {2}{U} (You may pay an additional {2}{U} as you cast this spell. If you do, put this card into your hand as it resolves.)<br>Tap target artifact, creature, or land.</td>
+    <td>Recompra {2}{U} (Você pode pagar um custo adicional de {2}{U} ao conjurar esta mágica. Se isso acontecer, coloque este card em sua mão conforme ela for resolvida.)<br>Vire o artefato, criatura ou terreno alvo.</td>
+  </tr>
+  <tr>
+    <td>39</td>
+    <td>Ransack</td>
+    <td>Look at the top five cards of target player's library. Put any number of them on the bottom of that library in any order and the rest on top of the library in any order.</td>
+    <td>Veja os cinco primeiros cards do grimório do jogador alvo. Coloque qualquer número deles no fundo da biblioteca em qualquer ordem e o restante no topo da biblioteca em qualquer ordem.</td>
+  </tr>
+  <tr>
+    <td>40</td>
+    <td>Rebound</td>
+    <td>Change the target of target spell that targets only a player. The new target must be a player.</td>
+    <td>Mude o alvo da mágica alvo que tem como alvo apenas um jogador. O novo alvo deve ser um jogador.</td>
+  </tr>
+  <tr>
+    <td>41</td>
+    <td>Reins of Power</td>
+    <td>Untap all creatures you control and all creatures target opponent controls. You and that opponent each gain control of all creatures the other controls until end of turn. Those creatures gain haste until end of turn.</td>
+    <td>Desvire todas as criaturas que você controla e todas as criaturas alvo que o oponente controla. Você e aquele oponente ganham, cada um, o controle de todas as criaturas que o outro controla até o final do turno. Essas criaturas ganham ímpeto até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>42</td>
+    <td>Sift</td>
+    <td>Draw three cards, then discard a card.</td>
+    <td>Compre três cartas e descarte uma carta.</td>
+  </tr>
+  <tr>
+    <td>43</td>
+    <td>Silver Wyvern</td>
+    <td>Flying<br>{U}: Change the target of target spell or ability that targets only Silver Wyvern. The new target must be a creature.</td>
+    <td>Vôo<br>{U}: Altere o alvo da mágica ou habilidade alvo que tenha como alvo apenas Silver Wyvern. O novo alvo deve ser uma criatura.</td>
+  </tr>
+  <tr>
+    <td>44</td>
+    <td>Spindrift Drake</td>
+    <td>Flying<br>At the beginning of your upkeep, sacrifice Spindrift Drake unless you pay {U}.</td>
+    <td>Vôo<br>No início de sua manutenção, sacrifique Spindrift Drake, a menos que você pague {U}.</td>
+  </tr>
+  <tr>
+    <td>45</td>
+    <td>Thalakos Deceiver</td>
+    <td>Shadow (This creature can block or be blocked by only creatures with shadow.)<br>Whenever Thalakos Deceiver attacks and isn't blocked, you may sacrifice it. If you do, gain control of target creature. (This effect lasts indefinitely.)</td>
+    <td>Sombra (Esta criatura pode bloquear ou ser bloqueada apenas por criaturas com sombra.)<br>Toda vez que Thalakos Deceiver atacar e não for bloqueado, você poderá sacrificá-lo. Se fizer isso, ganhe o controle da criatura alvo. (Este efeito dura indefinidamente.)</td>
+  </tr>
+  <tr>
+    <td>46</td>
+    <td>Tidal Surge</td>
+    <td>Tap up to three target creatures without flying.</td>
+    <td>Vire até três criaturas alvo sem voar.</td>
+  </tr>
+  <tr>
+    <td>47</td>
+    <td>Tidal Warrior</td>
+    <td>{T}: Target land becomes an Island until end of turn.</td>
+    <td>{T}: O terreno alvo se torna uma Ilha até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>48</td>
+    <td>Volrath's Shapeshifter</td>
+    <td>As long as the top card of your graveyard is a creature card, Volrath's Shapeshifter has the full text of that card and has the text "{2}: Discard a card." (Volrath's Shapeshifter has that card's name, mana cost, color, types, abilities, power, and toughness.)<br>{2}: Discard a card.</td>
+    <td>Contanto que o card do topo do seu cemitério seja um card de criatura, Metamorfo de Volrath terá o texto completo daquele card e terá o texto "{2}: Descarte um card." (O Metamorfo de Volrath tem o nome, custo de mana, cor, tipos, habilidades, poder e resistência daquele card.)<br>{2}: Descarte um card.</td>
+  </tr>
+  <tr>
+    <td>49</td>
+    <td>Walking Dream</td>
+    <td>Walking Dream can't be blocked.<br>Walking Dream doesn't untap during your untap step if an opponent controls two or more creatures.</td>
+    <td>Walking Dream não pode ser bloqueado.<br>Walking Dream não desvira durante sua etapa de desvirar se um oponente controlar duas ou mais criaturas.</td>
+  </tr>
+  <tr>
+    <td>50</td>
+    <td>Wall of Tears</td>
+    <td>Defender (This creature can't attack.)<br>Whenever Wall of Tears blocks a creature, return that creature to its owner's hand at end of combat.</td>
+    <td>Defensor (Esta criatura não pode atacar.)<br>Toda vez que Muralha de Lágrimas bloquear uma criatura, devolva aquela criatura para a mão de seu dono no final do combate.</td>
+  </tr>
+  <tr>
+    <td>51</td>
+    <td>Bottomless Pit</td>
+    <td>At the beginning of each player's upkeep, that player discards a card at random.</td>
+    <td>No início da manutenção de cada jogador, aquele jogador descarta um card aleatoriamente.</td>
+  </tr>
+  <tr>
+    <td>52</td>
+    <td>Brush with Death</td>
+    <td>Buyback {2}{B}{B} (You may pay an additional {2}{B}{B} as you cast this spell. If you do, put this card into your hand as it resolves.)<br>Target opponent loses 2 life. You gain 2 life.</td>
+    <td>Recompra {2}{B}{B} (Você pode pagar um custo adicional de {2}{B}{B} ao conjurar esta mágica. Se isso acontecer, coloque este card em sua mão conforme ela for resolvida.)<br>O oponente alvo perde 2 pontos de vida. Você ganha 2 pontos de vida.</td>
+  </tr>
+  <tr>
+    <td>53</td>
+    <td>Cannibalize</td>
+    <td>Choose two target creatures controlled by the same player. Exile one of those creatures and put two +1/+1 counters on the other.</td>
+    <td>Escolha duas criaturas alvo controladas pelo mesmo jogador. Exile uma dessas criaturas e coloque dois marcadores +1/+1 na outra.</td>
+  </tr>
+  <tr>
+    <td>54</td>
+    <td>Corrupting Licid</td>
+    <td>{B}, {T}: Corrupting Licid loses this ability and becomes an Aura enchantment with enchant creature. Attach it to target creature. You may pay {B} to end this effect.<br>Enchanted creature has fear. (It can't be blocked except by artifact creatures and/or black creatures.)</td>
+    <td>{B}, {T}: Corrupting Licid perde esta habilidade e se torna um encantamento de Aura com criatura encantada. Anexe-o à criatura alvo. Você pode pagar {B} para encerrar este efeito.<br>A criatura encantada tem medo. (Ele não pode ser bloqueado exceto por criaturas artefato e/ou criaturas pretas.)</td>
+  </tr>
+  <tr>
+    <td>55</td>
+    <td>Crovax the Cursed</td>
+    <td>Crovax the Cursed enters the battlefield with four +1/+1 counters on it.<br>At the beginning of your upkeep, you may sacrifice a creature. If you do, put a +1/+1 counter on Crovax. If you don't, remove a +1/+1 counter from Crovax.<br>{B}: Crovax gains flying until end of turn.</td>
+    <td>Crovax, o Amaldiçoado, entra no campo de batalha com quatro marcadores +1/+1.<br>No início de sua manutenção, você pode sacrificar uma criatura. Se fizer isso, coloque um marcador +1/+1 em Crovax. Caso contrário, remova um marcador +1/+1 de Crovax.<br>{B}: Crovax ganha voar até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>56</td>
+    <td>Dauthi Trapper</td>
+    <td>{T}: Target creature gains shadow until end of turn. (It can block or be blocked by only creatures with shadow.)</td>
+    <td>{T}: A criatura alvo ganha sombra até o final do turno. (Ele pode bloquear ou ser bloqueado apenas por criaturas com sombra.)</td>
+  </tr>
+  <tr>
+    <td>57</td>
+    <td>Death Stroke</td>
+    <td>Destroy target tapped creature.</td>
+    <td>Destrua a criatura virada alvo.</td>
+  </tr>
+  <tr>
+    <td>58</td>
+    <td>Dungeon Shade</td>
+    <td>Flying<br>{B}: Dungeon Shade gets +1/+1 until end of turn.</td>
+    <td>Vôo<br>{B}: Sombra da Masmorra recebe +1/+1 até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>59</td>
+    <td>Foul Imp</td>
+    <td>Flying<br>When Foul Imp enters the battlefield, you lose 2 life.</td>
+    <td>Vôo<br>Quando Foul Imp entra no campo de batalha, você perde 2 pontos de vida.</td>
+  </tr>
+  <tr>
+    <td>60</td>
+    <td>Grave Pact</td>
+    <td>Whenever a creature you control dies, each other player sacrifices a creature.</td>
+    <td>Sempre que uma criatura que você controla morre, cada outro jogador sacrifica uma criatura.</td>
+  </tr>
+  <tr>
+    <td>61</td>
+    <td>Lab Rats</td>
+    <td>Buyback {4} (You may pay an additional {4} as you cast this spell. If you do, put this card into your hand as it resolves.)<br>Create a 1/1 black Rat creature token.</td>
+    <td>Recompra {4} (Você pode pagar um custo adicional de {4} ao conjurar esta mágica. Se isso acontecer, coloque este card em sua mão conforme ela for resolvida.)<br>Crie uma ficha de criatura preta 1/1 do tipo Rato.</td>
+  </tr>
+  <tr>
+    <td>62</td>
+    <td>Megrim</td>
+    <td>Whenever an opponent discards a card, Megrim deals 2 damage to that player.</td>
+    <td>Sempre que um oponente descarta uma carta, Megrim causa 2 pontos de dano àquele jogador.</td>
+  </tr>
+  <tr>
+    <td>63</td>
+    <td>Mind Peel</td>
+    <td>Buyback {2}{B}{B} (You may pay an additional {2}{B}{B} as you cast this spell. If you do, put this card into your hand as it resolves.)<br>Target player discards a card.</td>
+    <td>Recompra {2}{B}{B} (Você pode pagar um custo adicional de {2}{B}{B} ao conjurar esta mágica. Se isso acontecer, coloque este card em sua mão conforme ela for resolvida.)<br>O jogador alvo descarta uma carta.</td>
+  </tr>
+  <tr>
+    <td>64</td>
+    <td>Mindwarper</td>
+    <td>Mindwarper enters the battlefield with three +1/+1 counters on it.<br>{2}{B}, Remove a +1/+1 counter from Mindwarper: Target player discards a card. Activate only as a sorcery.</td>
+    <td>Mindwarper entra no campo de batalha com três marcadores +1/+1.<br>{2}{B}, Remova um marcador +1/+1 de Mindwarper: O jogador alvo descarta um card. Ative apenas como um feitiço.</td>
+  </tr>
+  <tr>
+    <td>65</td>
+    <td>Morgue Thrull</td>
+    <td>Sacrifice Morgue Thrull: Mill three cards.</td>
+    <td>Sacrifique Morgue Thrull: Moa três cartas.</td>
+  </tr>
+  <tr>
+    <td>66</td>
+    <td>Mortuary</td>
+    <td>Whenever a creature is put into your graveyard from the battlefield, put that card on top of your library.</td>
+    <td>Toda vez que uma criatura for colocada em seu cemitério vinda do campo de batalha, coloque aquele card no topo de seu grimório.</td>
+  </tr>
+  <tr>
+    <td>67</td>
+    <td>Rabid Rats</td>
+    <td>{T}: Target blocking creature gets -1/-1 until end of turn.</td>
+    <td>{T}: A criatura bloqueadora alvo recebe -1/-1 até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>68</td>
+    <td>Revenant</td>
+    <td>Flying<br>Revenant's power and toughness are each equal to the number of creature cards in your graveyard.</td>
+    <td>Vôo<br>O poder e a resistência de Revenant são iguais ao número de cards de criatura em seu cemitério.</td>
+  </tr>
+  <tr>
+    <td>69</td>
+    <td>Serpent Warrior</td>
+    <td>When Serpent Warrior enters the battlefield, you lose 3 life.</td>
+    <td>Quando Guerreiro Serpente entra no campo de batalha, você perde 3 pontos de vida.</td>
+  </tr>
+  <tr>
+    <td>70</td>
+    <td>Skeleton Scavengers</td>
+    <td>Skeleton Scavengers enters the battlefield with a +1/+1 counter on it.<br>Pay {1} for each +1/+1 counter on Skeleton Scavengers: Regenerate Skeleton Scavengers. When it regenerates this way, put a +1/+1 counter on it.</td>
+    <td>Skeleton Scavengers entra no campo de batalha com um marcador +1/+1.<br>Pague {1} para cada marcador +1/+1 em Skeleton Scavengers: Regenere Skeleton Scavengers. Quando ele se regenerar desta forma, coloque um marcador +1/+1 nele.</td>
+  </tr>
+  <tr>
+    <td>71</td>
+    <td>Stronghold Assassin</td>
+    <td>{T}, Sacrifice a creature: Destroy target nonblack creature.</td>
+    <td>{T}, Sacrifique uma criatura: Destrua a criatura alvo que não seja preta.</td>
+  </tr>
+  <tr>
+    <td>72</td>
+    <td>Stronghold Taskmaster</td>
+    <td>Other black creatures get -1/-1.</td>
+    <td>Outras criaturas pretas recebem -1/-1.</td>
+  </tr>
+  <tr>
+    <td>73</td>
+    <td>Torment</td>
+    <td>Enchant creature<br>Enchanted creature gets -3/-0.</td>
+    <td>Encantar criatura<br>A criatura encantada recebe -3/-0.</td>
+  </tr>
+  <tr>
+    <td>74</td>
+    <td>Tortured Existence</td>
+    <td>{B}, Discard a creature card: Return target creature card from your graveyard to your hand.</td>
+    <td>{B}, Descarte um card de criatura: Devolva o card de criatura alvo de seu cemitério para sua mão.</td>
+  </tr>
+  <tr>
+    <td>75</td>
+    <td>Wall of Souls</td>
+    <td>Defender (This creature can't attack.)<br>Whenever Wall of Souls is dealt combat damage, it deals that much damage to target opponent or planeswalker.</td>
+    <td>Defensor (Esta criatura não pode atacar.)<br>Sempre que Wall of Souls sofre dano de combate, ele causa a mesma quantidade de dano ao oponente ou planeswalker alvo.</td>
+  </tr>
+  <tr>
+    <td>76</td>
+    <td>Amok</td>
+    <td>{1}, Discard a card at random: Put a +1/+1 counter on target creature.</td>
+    <td>{1}, Descarte um card aleatoriamente: Coloque um marcador +1/+1 na criatura alvo.</td>
+  </tr>
+  <tr>
+    <td>77</td>
+    <td>Convulsing Licid</td>
+    <td>{R}, {T}: Convulsing Licid loses this ability and becomes an Aura enchantment with enchant creature. Attach it to target creature. You may pay {R} to end this effect.<br>Enchanted creature can't block.</td>
+    <td>{R}, {T}: Convulsing Licid perde esta habilidade e se torna um encantamento de Aura com criatura encantada. Anexe-o à criatura alvo. Você pode pagar {R} para encerrar este efeito.<br>A criatura encantada não pode bloquear.</td>
+  </tr>
+  <tr>
+    <td>78</td>
+    <td>Craven Giant</td>
+    <td>Craven Giant can't block.</td>
+    <td>Craven Giant não pode bloquear.</td>
+  </tr>
+  <tr>
+    <td>79</td>
+    <td>Duct Crawler</td>
+    <td>{1}{R}: Target creature can't block Duct Crawler this turn.</td>
+    <td>{1}{R}: A criatura alvo não pode bloquear Duct Crawler neste turno.</td>
+  </tr>
+  <tr>
+    <td>80</td>
+    <td>Fanning the Flames</td>
+    <td>Buyback {3} (You may pay an additional {3} as you cast this spell. If you do, put this card into your hand as it resolves.)<br>Fanning the Flames deals X damage to any target.</td>
+    <td>Recompra {3} (Você pode pagar um custo adicional de {3} ao conjurar esta mágica. Se isso acontecer, coloque este card em sua mão conforme ela for resolvida.)<br>Atiçar as Chamas causa X de dano a qualquer alvo.</td>
+  </tr>
+  <tr>
+    <td>81</td>
+    <td>Flame Wave</td>
+    <td>Flame Wave deals 4 damage to target player or planeswalker and each creature that player or that planeswalker's controller controls.</td>
+    <td>Onda Flamejante causa 4 pontos de dano ao jogador ou planeswalker alvo e a cada criatura que aquele jogador ou o controlador daquele planeswalker controla.</td>
+  </tr>
+  <tr>
+    <td>82</td>
+    <td>Fling</td>
+    <td>As an additional cost to cast this spell, sacrifice a creature.<br>Fling deals damage equal to the sacrificed creature's power to any target.</td>
+    <td>Como custo adicional para conjurar esta mágica, sacrifique uma criatura.<br>Arremessar causa dano igual ao poder da criatura sacrificada a qualquer alvo.</td>
+  </tr>
+  <tr>
+    <td>83</td>
+    <td>Flowstone Blade</td>
+    <td>Enchant creature<br>{R}: Enchanted creature gets +1/-1 until end of turn.</td>
+    <td>Encantar criatura<br>{R}: A criatura encantada recebe +1/-1 até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>84</td>
+    <td>Flowstone Hellion</td>
+    <td>Haste<br>{0}: Flowstone Hellion gets +1/-1 until end of turn.</td>
+    <td>Pressa<br>{0}: Flowstone Hellion recebe +1/-1 até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>85</td>
+    <td>Flowstone Mauler</td>
+    <td>Trample<br>{R}: Flowstone Mauler gets +1/-1 until end of turn.</td>
+    <td>Atropelar<br>{R}: Flowstone Mauler recebe +1/-1 até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>86</td>
+    <td>Flowstone Shambler</td>
+    <td>{R}: Flowstone Shambler gets +1/-1 until end of turn.</td>
+    <td>{R}: Flowstone Shambler recebe +1/-1 até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>87</td>
+    <td>Furnace Spirit</td>
+    <td>Haste<br>{R}: Furnace Spirit gets +1/+0 until end of turn.</td>
+    <td>Pressa<br>{R}: Espírito da Fornalha recebe +1/+0 até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>88</td>
+    <td>Heat of Battle</td>
+    <td>Whenever a creature blocks, Heat of Battle deals 1 damage to that creature's controller.</td>
+    <td>Toda vez que uma criatura bloqueia, Calor da Batalha causa 1 ponto de dano ao controlador daquela criatura.</td>
+  </tr>
+  <tr>
+    <td>89</td>
+    <td>Invasion Plans</td>
+    <td>All creatures block each combat if able.<br>The attacking player chooses how each creature blocks each combat.</td>
+    <td>Todas as criaturas bloqueiam cada combate se puderem.<br>O jogador atacante escolhe como cada criatura bloqueia cada combate.</td>
+  </tr>
+  <tr>
+    <td>90</td>
+    <td>Mob Justice</td>
+    <td>Mob Justice deals damage to target player or planeswalker equal to the number of creatures you control.</td>
+    <td>Mob Justice causa dano ao jogador ou planeswalker alvo igual ao número de criaturas que você controla.</td>
+  </tr>
+  <tr>
+    <td>91</td>
+    <td>Mogg Bombers</td>
+    <td>When another creature enters the battlefield, sacrifice Mogg Bombers and it deals 3 damage to target player or planeswalker.</td>
+    <td>Quando outra criatura entrar no campo de batalha, sacrifique Mogg Bombers e ela causará 3 pontos de dano ao jogador ou planeswalker alvo.</td>
+  </tr>
+  <tr>
+    <td>92</td>
+    <td>Mogg Flunkies</td>
+    <td>Mogg Flunkies can't attack or block alone.</td>
+    <td>Mogg Flunkies não podem atacar ou bloquear sozinhos.</td>
+  </tr>
+  <tr>
+    <td>93</td>
+    <td>Mogg Infestation</td>
+    <td>Destroy all creatures target player controls. For each creature that died this way, that player creates two 1/1 red Goblin creature tokens.</td>
+    <td>Destrua todas as criaturas que o jogador alvo controla. Para cada criatura que morreu desta forma, aquele jogador cria duas fichas de criatura vermelha 1/1 do tipo Goblin.</td>
+  </tr>
+  <tr>
+    <td>94</td>
+    <td>Mogg Maniac</td>
+    <td>Whenever Mogg Maniac is dealt damage, it deals that much damage to target opponent or planeswalker.</td>
+    <td>Sempre que Mogg Maniac sofre dano, ele causa a mesma quantidade de dano ao oponente ou planeswalker alvo.</td>
+  </tr>
+  <tr>
+    <td>95</td>
+    <td>Ruination</td>
+    <td>Destroy all nonbasic lands.</td>
+    <td>Destrua todos os terrenos não básicos.</td>
+  </tr>
+  <tr>
+    <td>96</td>
+    <td>Seething Anger</td>
+    <td>Buyback {3} (You may pay an additional {3} as you cast this spell. If you do, put this card into your hand as it resolves.)<br>Target creature gets +3/+0 until end of turn.</td>
+    <td>Recompra {3} (Você pode pagar um custo adicional de {3} ao conjurar esta mágica. Se isso acontecer, coloque este card em sua mão conforme ela for resolvida.)<br>A criatura alvo recebe +3/+0 até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>97</td>
+    <td>Shard Phoenix</td>
+    <td>Flying (This creature can't be blocked except by creatures with flying or reach.)<br>Sacrifice Shard Phoenix: It deals 2 damage to each creature without flying.<br>{R}{R}{R}: Return Shard Phoenix from your graveyard to your hand. Activate only during your upkeep.</td>
+    <td>Voar (Esta criatura só pode ser bloqueada por criaturas com voar ou alcance.)<br>Sacrifique Shard Phoenix: Causa 2 pontos de dano a cada criatura sem voar.<br>{R}{R}{R}: Devolva Fragmento de Fênix de seu cemitério para sua mão. Ative apenas durante sua manutenção.</td>
+  </tr>
+  <tr>
+    <td>98</td>
+    <td>Shock</td>
+    <td>Shock deals 2 damage to any target.</td>
+    <td>Choque causa 2 pontos de dano a qualquer alvo.</td>
+  </tr>
+  <tr>
+    <td>99</td>
+    <td>Spitting Hydra</td>
+    <td>Spitting Hydra enters the battlefield with four +1/+1 counters on it.<br>{1}{R}, Remove a +1/+1 counter from Spitting Hydra: It deals 1 damage to target creature.</td>
+    <td>Cuspida Hidra entra no campo de batalha com quatro marcadores +1/+1.<br>{1}{R}, Remova um marcador +1/+1 de Hidra Cuspidora: Ela causa 1 ponto de dano à criatura alvo.</td>
+  </tr>
+  <tr>
+    <td>100</td>
+    <td>Wall of Razors</td>
+    <td>Defender (This creature can't attack.)<br>First strike</td>
+    <td>Defensor (Esta criatura não pode atacar.)<br>Primeiro ataque</td>
+  </tr>
+  <tr>
+    <td>101</td>
+    <td>Awakening</td>
+    <td>At the beginning of each upkeep, untap all creatures and lands.</td>
+    <td>No início de cada manutenção, desvire todas as criaturas e terrenos.</td>
+  </tr>
+  <tr>
+    <td>102</td>
+    <td>Burgeoning</td>
+    <td>Whenever an opponent plays a land, you may put a land card from your hand onto the battlefield.</td>
+    <td>Toda vez que um oponente joga um terreno, você pode colocar um card de terreno de sua mão no campo de batalha.</td>
+  </tr>
+  <tr>
+    <td>103</td>
+    <td>Carnassid</td>
+    <td>Trample<br>{1}{G}: Regenerate Carnassid.</td>
+    <td>Atropelar<br>{1}{G}: Regenera Carnassid.</td>
+  </tr>
+  <tr>
+    <td>104</td>
+    <td>Constant Mists</td>
+    <td>Buyback—Sacrifice a land. (You may sacrifice a land in addition to any other costs as you cast this spell. If you do, put this card into your hand as it resolves.)<br>Prevent all combat damage that would be dealt this turn.</td>
+    <td>Recompra — Sacrifique um terreno. (Você pode sacrificar um terreno além de quaisquer outros custos ao conjurar esta mágica. Se isso acontecer, coloque este card em sua mão conforme ele for resolvido.)<br>Previne todo o dano de combate que seria causado neste turno.</td>
+  </tr>
+  <tr>
+    <td>105</td>
+    <td>Crossbow Ambush</td>
+    <td>Creatures you control gain reach until end of turn. (They can block creatures with flying.)</td>
+    <td>As criaturas que você controla ganham alcance até o final do turno. (Eles podem bloquear criaturas voando.)</td>
+  </tr>
+  <tr>
+    <td>106</td>
+    <td>Elven Rite</td>
+    <td>Distribute two +1/+1 counters among one or two target creatures.</td>
+    <td>Distribua dois marcadores +1/+1 entre uma ou duas criaturas alvo.</td>
+  </tr>
+  <tr>
+    <td>107</td>
+    <td>Endangered Armodon</td>
+    <td>When you control a creature with toughness 2 or less, sacrifice Endangered Armodon.</td>
+    <td>Quando você controla uma criatura com resistência 2 ou menos, sacrifique Endangered Armodon.</td>
+  </tr>
+  <tr>
+    <td>108</td>
+    <td>Hermit Druid</td>
+    <td>{G}, {T}: Reveal cards from the top of your library until you reveal a basic land card. Put that card into your hand and all other cards revealed this way into your graveyard.</td>
+    <td>{G}, {T}: Revele cards do topo de seu grimório até revelar um card de terreno básico. Coloque aquele card em sua mão e todos os outros cards revelados desta forma em seu cemitério.</td>
+  </tr>
+  <tr>
+    <td>109</td>
+    <td>Lowland Basilisk</td>
+    <td>Whenever Lowland Basilisk deals damage to a creature, destroy that creature at end of combat.</td>
+    <td>Toda vez que Basilisco das Terras Baixas causar dano a uma criatura, destrua aquela criatura no final do combate.</td>
+  </tr>
+  <tr>
+    <td>110</td>
+    <td>Mulch</td>
+    <td>Reveal the top four cards of your library. Put all land cards revealed this way into your hand and the rest into your graveyard.</td>
+    <td>Revele os quatro primeiros cards do seu grimório. Coloque todos os cards de terreno revelados desta forma em sua mão e o restante em seu cemitério.</td>
+  </tr>
+  <tr>
+    <td>111</td>
+    <td>Overgrowth</td>
+    <td>Enchant land<br>Whenever enchanted land is tapped for mana, its controller adds an additional {G}{G}.</td>
+    <td>Encantar terra<br>Sempre que o terreno encantado é virado para gerar mana, seu controlador adiciona {G}{G} adicional.</td>
+  </tr>
+  <tr>
+    <td>112</td>
+    <td>Primal Rage</td>
+    <td>Creatures you control have trample. (A creature with trample can deal excess combat damage to the player or planeswalker it's attacking.)</td>
+    <td>As criaturas que você controla têm atropelar. (Uma criatura com atropelar pode causar dano de combate excessivo ao jogador ou planeswalker que está atacando.)</td>
+  </tr>
+  <tr>
+    <td>113</td>
+    <td>Provoke</td>
+    <td>Untap target creature you don't control. That creature blocks this turn if able.<br>Draw a card.</td>
+    <td>Desvire a criatura alvo que você não controla. Aquela criatura bloqueia neste turno se estiver apta.<br>Compre uma carta.</td>
+  </tr>
+  <tr>
+    <td>114</td>
+    <td>Skyshroud Archer</td>
+    <td>{T}: Target creature with flying gets -1/-1 until end of turn.</td>
+    <td>{T}: A criatura alvo com voar recebe -1/-1 até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>115</td>
+    <td>Skyshroud Troopers</td>
+    <td>{T}: Add {G}.</td>
+    <td>{T}: Adicione {G}.</td>
+  </tr>
+  <tr>
+    <td>116</td>
+    <td>Spike Breeder</td>
+    <td>Spike Breeder enters the battlefield with three +1/+1 counters on it.<br>{2}, Remove a +1/+1 counter from Spike Breeder: Put a +1/+1 counter on target creature.<br>{2}, Remove a +1/+1 counter from Spike Breeder: Create a 1/1 green Spike creature token.</td>
+    <td>Spike Breeder entra no campo de batalha com três marcadores +1/+1.<br>{2}, Remova um marcador +1/+1 de Spike Breeder: Coloque um marcador +1/+1 na criatura alvo.<br>{2}, Remova um marcador +1/+1 de Criador de Espigão: Crie uma ficha de criatura Espigão verde 1/1.</td>
+  </tr>
+  <tr>
+    <td>117</td>
+    <td>Spike Colony</td>
+    <td>Spike Colony enters the battlefield with four +1/+1 counters on it.<br>{2}, Remove a +1/+1 counter from Spike Colony: Put a +1/+1 counter on target creature.</td>
+    <td>Colônia de Espinhos entra no campo de batalha com quatro marcadores +1/+1.<br>{2}, Remova um marcador +1/+1 de Spike Colony: Coloque um marcador +1/+1 na criatura alvo.</td>
+  </tr>
+  <tr>
+    <td>118</td>
+    <td>Spike Feeder</td>
+    <td>Spike Feeder enters the battlefield with two +1/+1 counters on it.<br>{2}, Remove a +1/+1 counter from Spike Feeder: Put a +1/+1 counter on target creature.<br>Remove a +1/+1 counter from Spike Feeder: You gain 2 life.</td>
+    <td>Spike Feeder entra no campo de batalha com dois marcadores +1/+1.<br>{2}, Remova um marcador +1/+1 de Spike Feeder: Coloque um marcador +1/+1 na criatura alvo.<br>Remova um marcador +1/+1 de Spike Feeder: você ganha 2 pontos de vida.</td>
+  </tr>
+  <tr>
+    <td>119</td>
+    <td>Spike Soldier</td>
+    <td>Spike Soldier enters the battlefield with three +1/+1 counters on it.<br>{2}, Remove a +1/+1 counter from Spike Soldier: Put a +1/+1 counter on target creature.<br>Remove a +1/+1 counter from Spike Soldier: Spike Soldier gets +2/+2 until end of turn.</td>
+    <td>Spike Soldier entra no campo de batalha com três marcadores +1/+1.<br>{2}, Remova um marcador +1/+1 de Spike Soldier: Coloque um marcador +1/+1 na criatura alvo.<br>Remova um marcador +1/+1 de Spike Soldier: Spike Soldier recebe +2/+2 até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>120</td>
+    <td>Spike Worker</td>
+    <td>Spike Worker enters the battlefield with two +1/+1 counters on it.<br>{2}, Remove a +1/+1 counter from Spike Worker: Put a +1/+1 counter on target creature.</td>
+    <td>Spike Worker entra no campo de batalha com dois marcadores +1/+1.<br>{2}, Remova um marcador +1/+1 de Spike Worker: Coloque um marcador +1/+1 na criatura alvo.</td>
+  </tr>
+  <tr>
+    <td>121</td>
+    <td>Spined Wurm</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>122</td>
+    <td>Tempting Licid</td>
+    <td>{G}, {T}: Tempting Licid loses this ability and becomes an Aura enchantment with enchant creature. Attach it to target creature. You may pay {G} to end this effect.<br>All creatures able to block enchanted creature do so.</td>
+    <td>{G}, {T}: Tempting Licid perde esta habilidade e se torna um encantamento de Aura com criatura encantada. Anexe-o à criatura alvo. Você pode pagar {G} para encerrar este efeito.<br>Todas as criaturas capazes de bloquear a criatura encantada o fazem.</td>
+  </tr>
+  <tr>
+    <td>123</td>
+    <td>Verdant Touch</td>
+    <td>Buyback {3} (You may pay an additional {3} as you cast this spell. If you do, put this card into your hand as it resolves.)<br>Target land becomes a 2/2 creature that's still a land. (This effect lasts indefinitely.)</td>
+    <td>Recompra {3} (Você pode pagar um custo adicional de {3} ao conjurar esta mágica. Se isso acontecer, coloque este card em sua mão conforme ela for resolvida.)<br>O terreno alvo se torna uma criatura 2/2 que ainda é um terreno. (Este efeito dura indefinidamente.)</td>
+  </tr>
+  <tr>
+    <td>124</td>
+    <td>Volrath's Gardens</td>
+    <td>{2}, Tap an untapped creature you control: You gain 2 life. Activate only as a sorcery.</td>
+    <td>{2}, Vire uma criatura desvirada que você controla: Você ganha 2 pontos de vida. Ative apenas como um feitiço.</td>
+  </tr>
+  <tr>
+    <td>125</td>
+    <td>Wall of Blossoms</td>
+    <td>Defender<br>When Wall of Blossoms enters the battlefield, draw a card.</td>
+    <td>Defensor<br>Quando Muralha de Flores entrar no campo de batalha, compre um card.</td>
+  </tr>
+  <tr>
+    <td>126</td>
+    <td>Acidic Sliver</td>
+    <td>All Slivers have "{2}, Sacrifice this permanent: This permanent deals 2 damage to any target."</td>
+    <td>Todos os Fractius têm "{2}, sacrifique esta permanente: Esta permanente causa 2 pontos de dano a qualquer alvo."</td>
+  </tr>
+  <tr>
+    <td>127</td>
+    <td>Crystalline Sliver</td>
+    <td>All Slivers have shroud. (They can't be the targets of spells or abilities.)</td>
+    <td>Todos os Slivers têm mortalha. (Eles não podem ser alvos de mágicas ou habilidades.)</td>
+  </tr>
+  <tr>
+    <td>128</td>
+    <td>Hibernation Sliver</td>
+    <td>All Slivers have "Pay 2 life: Return this permanent to its owner's hand."</td>
+    <td>Todos os Fractius têm “Pague 2 pontos de vida: Devolva esta permanente para a mão de seu dono”.</td>
+  </tr>
+  <tr>
+    <td>129</td>
+    <td>Sliver Queen</td>
+    <td>{2}: Create a 1/1 colorless Sliver creature token.</td>
+    <td>{2}: Crie uma ficha de criatura incolor 1/1 do tipo Fractius.</td>
+  </tr>
+  <tr>
+    <td>130</td>
+    <td>Spined Sliver</td>
+    <td>Whenever a Sliver becomes blocked, that Sliver gets +1/+1 until end of turn for each creature blocking it.</td>
+    <td>Sempre que um Fractius for bloqueado, esse Fractius receberá +1/+1 até o final do turno para cada criatura que o bloquear.</td>
+  </tr>
+  <tr>
+    <td>131</td>
+    <td>Victual Sliver</td>
+    <td>All Slivers have "{2}, Sacrifice this permanent: You gain 4 life."</td>
+    <td>Todos os Fractius têm "{2}, sacrifique esta permanente: Você ganha 4 pontos de vida."</td>
+  </tr>
+  <tr>
+    <td>132</td>
+    <td>Bullwhip</td>
+    <td>{2}, {T}: Bullwhip deals 1 damage to target creature. That creature attacks this turn if able.</td>
+    <td>{2}, {T}: Chicote causa 1 ponto de dano à criatura alvo. Aquela criatura ataca neste turno se estiver apta.</td>
+  </tr>
+  <tr>
+    <td>133</td>
+    <td>Ensnaring Bridge</td>
+    <td>Creatures with power greater than the number of cards in your hand can't attack.</td>
+    <td>Criaturas com poder maior que o número de cartas na sua mão não podem atacar.</td>
+  </tr>
+  <tr>
+    <td>134</td>
+    <td>Heartstone</td>
+    <td>Activated abilities of creatures cost {1} less to activate. This effect can't reduce the mana in that cost to less than one mana.</td>
+    <td>Habilidades ativadas de criaturas custam {1} a menos para serem ativadas. Este efeito não pode reduzir o mana desse custo para menos de um mana.</td>
+  </tr>
+  <tr>
+    <td>135</td>
+    <td>Horn of Greed</td>
+    <td>Whenever a player plays a land, that player draws a card.</td>
+    <td>Sempre que um jogador joga um terreno, aquele jogador compra um card.</td>
+  </tr>
+  <tr>
+    <td>136</td>
+    <td>Hornet Cannon</td>
+    <td>{3}, {T}: Create a 1/1 colorless Insect artifact creature token with flying and haste named Hornet. Destroy it at the beginning of the next end step.</td>
+    <td>{3}, {T}: Crie uma ficha de criatura artefato incolor 1/1 do tipo Inseto com voar e ímpeto chamada Vespa. Destrua-o no início da próxima etapa final.</td>
+  </tr>
+  <tr>
+    <td>137</td>
+    <td>Jinxed Ring</td>
+    <td>Whenever a nontoken permanent is put into your graveyard from the battlefield, Jinxed Ring deals 1 damage to you.<br>Sacrifice a creature: Target opponent gains control of Jinxed Ring. (This effect lasts indefinitely.)</td>
+    <td>Toda vez que uma permanente que não seja uma ficha é colocada em seu cemitério vinda do campo de batalha, Jinxed Ring causa 1 ponto de dano a você.<br>Sacrifique uma criatura: O oponente alvo ganha o controle de Jinxed Ring. (Este efeito dura indefinidamente.)</td>
+  </tr>
+  <tr>
+    <td>138</td>
+    <td>Mox Diamond</td>
+    <td>If Mox Diamond would enter the battlefield, you may discard a land card instead. If you do, put Mox Diamond onto the battlefield. If you don't, put it into its owner's graveyard.<br>{T}: Add one mana of any color.</td>
+    <td>Se Mox Diamond entraria no campo de batalha, você poderá descartar um card de terreno. Se fizer isso, coloque Mox Diamond no campo de batalha. Caso contrário, coloque-o no cemitério de seu dono.<br>{T}: Adicione um mana de qualquer cor.</td>
+  </tr>
+  <tr>
+    <td>139</td>
+    <td>Portcullis</td>
+    <td>Whenever a creature enters the battlefield, if there are two or more other creatures on the battlefield, exile that creature. Return that card to the battlefield under its owner's control when Portcullis leaves the battlefield.</td>
+    <td>Toda vez que uma criatura entrar no campo de batalha, se houver duas ou mais outras criaturas no campo de batalha, exile aquela criatura. Devolva aquele card ao campo de batalha sob o controle de seu dono quando Portcullis deixar o campo de batalha.</td>
+  </tr>
+  <tr>
+    <td>140</td>
+    <td>Shifting Wall</td>
+    <td>Defender (This creature can't attack.)<br>Shifting Wall enters the battlefield with X +1/+1 counters on it.</td>
+    <td>Defensor (Esta criatura não pode atacar.)<br>Muro Mutável entra no campo de batalha com X marcadores +1/+1.</td>
+  </tr>
+  <tr>
+    <td>141</td>
+    <td>Sword of the Chosen</td>
+    <td>{T}: Target legendary creature gets +2/+2 until end of turn.</td>
+    <td>{T}: A criatura lendária alvo recebe +2/+2 até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>142</td>
+    <td>Volrath's Laboratory</td>
+    <td>As Volrath's Laboratory enters the battlefield, choose a color and a creature type.<br>{5}, {T}: Create a 2/2 creature token of the chosen color and type.</td>
+    <td>Conforme Laboratório de Volrath entra no campo de batalha, escolha uma cor e um tipo de criatura.<br>{5}, {T}: Crie uma ficha de criatura 2/2 da cor e tipo escolhidos.</td>
+  </tr>
+  <tr>
+    <td>143</td>
+    <td>Volrath's Stronghold</td>
+    <td>{T}: Add {C}.<br>{1}{B}, {T}: Put target creature card from your graveyard on top of your library.</td>
+    <td>{T}: Adicione {C}.<br>{1}{B}, {T}: Coloque o card de criatura alvo de seu cemitério no topo de seu grimório.</td>
+  </tr>
+</table>
+    </body>
+</html>

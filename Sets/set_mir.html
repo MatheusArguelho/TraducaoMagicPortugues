@@ -1,0 +1,2028 @@
+<html>
+<head>
+        <meta charset="UTF-8">
+        <title>mir</title>
+        <style>
+            .styled-table {
+                width: 100%;
+                border-collapse: collapse;
+                border: 1px solid #ddd;
+                font-family: Arial, sans-serif;
+            }
+            .styled-table th, .styled-table td {
+                padding: 8px;
+                text-align: left;
+                border-bottom: 1px solid #ddd;
+            }
+            .styled-table tr:nth-child(even) {
+                background-color: #f2f2f2;
+            }
+            .styled-table th {
+                background-color: #4CAF50;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+    <table class="styled-table">
+  <tr>
+    <td>numero</td>
+    <td>nome</td>
+    <td>texto_ingles</td>
+    <td>traduzido</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Afterlife</td>
+    <td>Destroy target creature. It can't be regenerated. Its controller creates a 1/1 white Spirit creature token with flying.</td>
+    <td>Destrua a criatura alvo. Não pode ser regenerado. Seu controlador cria uma ficha de criatura branca 1/1 do tipo Espírito com voar.</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Alarum</td>
+    <td>Untap target nonattacking creature. It gets +1/+3 until end of turn.</td>
+    <td>Desvire a criatura alvo não atacante. Recebe +1/+3 até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Auspicious Ancestor</td>
+    <td>When Auspicious Ancestor dies, you gain 3 life.<br>Whenever a player casts a white spell, you may pay {1}. If you do, you gain 1 life.</td>
+    <td>Quando Ancestral Auspicioso morre, você ganha 3 pontos de vida.<br>Sempre que um jogador conjurar uma mágica branca, você poderá pagar {1}. Se fizer isso, você ganha 1 vida.</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>Benevolent Unicorn</td>
+    <td>If a spell would deal damage to a permanent or player, it deals that much damage minus 1 to that permanent or player instead.</td>
+    <td>Se uma mágica fosse causar dano a uma permanente ou jogador, em vez disso ela causa aquela quantidade de dano menos 1 àquela permanente ou jogador.</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>Blinding Light</td>
+    <td>Tap all nonwhite creatures.</td>
+    <td>Vire todas as criaturas que não sejam brancas.</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>Celestial Dawn</td>
+    <td>Lands you control are Plains.<br>Nonland permanents you control are white. The same is true for spells you control and nonland cards you own that aren't on the battlefield.<br>You may spend white mana as though it were mana of any color. You may spend other mana only as though it were colorless mana.</td>
+    <td>As terras que você controla são Planícies.<br>As permanentes que você controla que não sejam terrenos são brancas. O mesmo se aplica às mágicas que você controla e aos cards que não são de terreno e que não estão no campo de batalha.<br>Você pode gastar mana branco como se fosse mana de qualquer cor. Você pode gastar outro mana apenas como se fosse mana incolor.</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>Civic Guildmage</td>
+    <td>{G}, {T}: Target creature gets +0/+1 until end of turn.<br>{U}, {T}: Put target creature you control on top of its owner's library.</td>
+    <td>{G}, {T}: A criatura alvo recebe +0/+1 até o final do turno.<br>{U}, {T}: Coloque a criatura alvo que você controla no topo do grimório de seu dono.</td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td>Dazzling Beauty</td>
+    <td>Cast this spell only during the declare blockers step.<br>Target unblocked attacking creature becomes blocked. (This spell works on creatures that can't be blocked.)<br>Draw a card at the beginning of the next turn's upkeep.</td>
+    <td>Conjure esta mágica somente durante a etapa de declaração de bloqueadores.<br>A criatura atacante alvo desbloqueada fica bloqueada. (Este feitiço funciona em criaturas que não podem ser bloqueadas.)<br>Compre um card no início da manutenção do próximo turno.</td>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td>Disempower</td>
+    <td>Put target artifact or enchantment on top of its owner's library.</td>
+    <td>Coloque o artefato ou encantamento alvo no topo do grimório de seu dono.</td>
+  </tr>
+  <tr>
+    <td>10</td>
+    <td>Disenchant</td>
+    <td>Destroy target artifact or enchantment.</td>
+    <td>Destrua o artefato ou o encantamento alvo.</td>
+  </tr>
+  <tr>
+    <td>11</td>
+    <td>Divine Offering</td>
+    <td>Destroy target artifact. You gain life equal to its mana value.</td>
+    <td>Destrua o artefato alvo. Você ganha pontos de vida iguais ao seu valor de mana.</td>
+  </tr>
+  <tr>
+    <td>12</td>
+    <td>Divine Retribution</td>
+    <td>Divine Retribution deals damage to target attacking creature equal to the number of attacking creatures.</td>
+    <td>Retribuição Divina causa dano à criatura atacante alvo igual ao número de criaturas atacantes.</td>
+  </tr>
+  <tr>
+    <td>13</td>
+    <td>Ekundu Griffin</td>
+    <td>Flying, first strike</td>
+    <td>Voando, primeiro ataque</td>
+  </tr>
+  <tr>
+    <td>14</td>
+    <td>Enlightened Tutor</td>
+    <td>Search your library for an artifact or enchantment card, reveal it, then shuffle and put that card on top.</td>
+    <td>Procure em seu grimório por um card de artefato ou encantamento, revele-o, depois embaralhe e coloque aquele card no topo.</td>
+  </tr>
+  <tr>
+    <td>15</td>
+    <td>Ethereal Champion</td>
+    <td>Pay 1 life: Prevent the next 1 damage that would be dealt to Ethereal Champion this turn.</td>
+    <td>Pague 1 ponto de vida: Previne o próximo 1 dano que seria causado ao Campeão Etéreo neste turno.</td>
+  </tr>
+  <tr>
+    <td>16</td>
+    <td>Favorable Destiny</td>
+    <td>Enchant creature<br>Enchanted creature gets +1/+2 as long as it's white.<br>Enchanted creature has shroud as long as its controller controls another creature. (It can't be the target of spells or abilities.)</td>
+    <td>Encantar criatura<br>A criatura encantada recebe +1/+2 enquanto for branca.<br>A criatura encantada terá mortalha enquanto seu controlador controlar outra criatura. (Não pode ser alvo de mágicas ou habilidades.)</td>
+  </tr>
+  <tr>
+    <td>17</td>
+    <td>Femeref Healer</td>
+    <td>{T}: Prevent the next 1 damage that would be dealt to any target this turn.</td>
+    <td>{T}: Previne o próximo 1 dano que seria causado a qualquer alvo neste turno.</td>
+  </tr>
+  <tr>
+    <td>18</td>
+    <td>Femeref Knight</td>
+    <td>Flanking (Whenever a creature without flanking blocks this creature, the blocking creature gets -1/-1 until end of turn.)<br>{W}: Femeref Knight gains vigilance until end of turn.</td>
+    <td>Flanquear (Toda vez que uma criatura sem flanquear bloqueia esta criatura, a criatura bloqueadora recebe -1/-1 até o final do turno.)<br>{W}: Cavaleiro Femeref ganha vigilância até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>19</td>
+    <td>Femeref Scouts</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>20</td>
+    <td>Healing Salve</td>
+    <td>Choose one —<br>• Target player gains 3 life.<br>• Prevent the next 3 damage that would be dealt to any target this turn.</td>
+    <td>Escolha um -<br>• O jogador alvo ganha 3 pontos de vida.<br>• Previne os próximos 3 danos que seriam causados ​​a qualquer alvo neste turno.</td>
+  </tr>
+  <tr>
+    <td>21</td>
+    <td>Illumination</td>
+    <td>Counter target artifact or enchantment spell. Its controller gains life equal to its mana value.</td>
+    <td>Anula o artefato ou feitiço alvo. Seu controlador ganha vida igual ao seu valor de mana.</td>
+  </tr>
+  <tr>
+    <td>22</td>
+    <td>Iron Tusk Elephant</td>
+    <td>Trample</td>
+    <td>Atropelar</td>
+  </tr>
+  <tr>
+    <td>23</td>
+    <td>Ivory Charm</td>
+    <td>Choose one —<br>• All creatures get -2/-0 until end of turn.<br>• Tap target creature.<br>• Prevent the next 1 damage that would be dealt to any target this turn.</td>
+    <td>Escolha um -<br>• Todas as criaturas recebem -2/-0 até o final do turno.<br>• Toque na criatura alvo.<br>• Previne o próximo 1 dano que seria causado a qualquer alvo neste turno.</td>
+  </tr>
+  <tr>
+    <td>24</td>
+    <td>Jabari's Influence</td>
+    <td>Cast this spell only after combat.<br>Gain control of target nonartifact, nonblack creature that attacked you this turn and put a -1/-0 counter on it.</td>
+    <td>Lance este feitiço somente após o combate.<br>Ganhe o controle da criatura alvo, não-artefato e não-preta, que atacou você neste turno e coloque um marcador -1/-0 nela.</td>
+  </tr>
+  <tr>
+    <td>25</td>
+    <td>Mangara's Blessing</td>
+    <td>You gain 5 life.<br>When a spell or ability an opponent controls causes you to discard Mangara's Blessing, you gain 2 life, and you return Mangara's Blessing from your graveyard to your hand at the beginning of the next end step.</td>
+    <td>Você ganha 5 pontos de vida.<br>Quando uma mágica ou habilidade que um oponente controla faz com que você descarte Bênção de Mangara, você ganha 2 pontos de vida e devolve Bênção de Mangara de seu cemitério para sua mão no início da próxima etapa final.</td>
+  </tr>
+  <tr>
+    <td>26</td>
+    <td>Mangara's Equity</td>
+    <td>As Mangara's Equity enters the battlefield, choose black or red.<br>At the beginning of your upkeep, sacrifice Mangara's Equity unless you pay {1}{W}.<br>Whenever a creature of the chosen color deals damage to you or a white creature you control, Mangara's Equity deals that much damage to that creature.</td>
+    <td>Conforme Mangara's Equity entra no campo de batalha, escolha preto ou vermelho.<br>No início de sua manutenção, sacrifique o Patrimônio de Mangara, a menos que você pague {1}{W}.<br>Toda vez que uma criatura da cor escolhida causar dano a você ou a uma criatura branca que você controla, Mangara's Equity causa aquela quantidade de dano àquela criatura.</td>
+  </tr>
+  <tr>
+    <td>27</td>
+    <td>Melesse Spirit</td>
+    <td>Flying, protection from black</td>
+    <td>Voando, proteção contra o preto</td>
+  </tr>
+  <tr>
+    <td>28</td>
+    <td>Mtenda Griffin</td>
+    <td>Flying<br>{W}, {T}: Return Mtenda Griffin to its owner's hand and return target Griffin card from your graveyard to your hand. Activate only during your upkeep.</td>
+    <td>Vôo<br>{W}, {T}: Devolva Mtenda Griffin para a mão de seu dono e devolva o card alvo de Griffin de seu cemitério para sua mão. Ative apenas durante sua manutenção.</td>
+  </tr>
+  <tr>
+    <td>29</td>
+    <td>Mtenda Herder</td>
+    <td>Flanking (Whenever a creature without flanking blocks this creature, the blocking creature gets -1/-1 until end of turn.)</td>
+    <td>Flanquear (Toda vez que uma criatura sem flanquear bloqueia esta criatura, a criatura bloqueadora recebe -1/-1 até o final do turno.)</td>
+  </tr>
+  <tr>
+    <td>30</td>
+    <td>Noble Elephant</td>
+    <td>Trample; banding (Any creatures with banding, and up to one without, can attack in a band. Bands are blocked as a group. If any creatures with banding you control are blocking or being blocked by a creature, you divide that creature's combat damage, not its controller, among any of the creatures it's being blocked by or is blocking.)</td>
+    <td>Atropelar; bandos (qualquer criatura com bandos, e até uma sem bandos, pode atacar em um bando. Os bandos são bloqueados como um grupo. Se alguma criatura com bandos que você controla estiver bloqueando ou sendo bloqueada por uma criatura, você divide o dano de combate daquela criatura, não seu controlador, entre qualquer uma das criaturas pelas quais ele está sendo bloqueado ou bloqueando.)</td>
+  </tr>
+  <tr>
+    <td>31</td>
+    <td>Null Chamber</td>
+    <td>As Null Chamber enters the battlefield, you and an opponent each choose a card name other than a basic land card name.<br>Spells with the chosen names can't be cast and lands with the chosen names can't be played.</td>
+    <td>Conforme Câmara Nula entra no campo de batalha, você e um oponente escolhem, cada um, um nome de card diferente do nome de um card de terreno básico.<br>As mágicas com os nomes escolhidos não podem ser conjuradas e os terrenos com os nomes escolhidos não podem ser jogados.</td>
+  </tr>
+  <tr>
+    <td>32</td>
+    <td>Pacifism</td>
+    <td>Enchant creature<br>Enchanted creature can't attack or block.</td>
+    <td>Encantar criatura<br>A criatura encantada não pode atacar nem bloquear.</td>
+  </tr>
+  <tr>
+    <td>33</td>
+    <td>Pearl Dragon</td>
+    <td>Flying<br>{1}{W}: Pearl Dragon gets +0/+1 until end of turn.</td>
+    <td>Vôo<br>{1}{W}: Dragão Pérola recebe +0/+1 até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>34</td>
+    <td>Prismatic Circle</td>
+    <td>Cumulative upkeep {1} (At the beginning of your upkeep, put an age counter on this permanent, then sacrifice it unless you pay its upkeep cost for each age counter on it.)<br>As Prismatic Circle enters the battlefield, choose a color.<br>{1}: The next time a source of your choice of the chosen color would deal damage to you this turn, prevent that damage.</td>
+    <td>Manutenção cumulativa {1} (No início de sua manutenção, coloque um marcador de tempo nesta permanente e depois sacrifique-a, a menos que você pague seu custo de manutenção para cada marcador de tempo nela.)<br>Conforme Círculo Prismático entra no campo de batalha, escolha uma cor.<br>{1}: Na próxima vez que uma fonte de sua escolha da cor escolhida for causar dano a você neste turno, previna esse dano.</td>
+  </tr>
+  <tr>
+    <td>35</td>
+    <td>Rashida Scalebane</td>
+    <td>{T}: Destroy target attacking or blocking Dragon. It can't be regenerated. You gain life equal to its power.</td>
+    <td>{T}: Destrua o Dragão alvo que está atacando ou bloqueando. Não pode ser regenerado. Você ganha pontos de vida iguais ao seu poder.</td>
+  </tr>
+  <tr>
+    <td>36</td>
+    <td>Ritual of Steel</td>
+    <td>Enchant creature<br>When Ritual of Steel enters the battlefield, draw a card at the beginning of the next turn's upkeep.<br>Enchanted creature gets +0/+2.</td>
+    <td>Encantar criatura<br>Quando Ritual de Aço entrar no campo de batalha, compre um card no início da manutenção do próximo turno.<br>A criatura encantada recebe +0/+2.</td>
+  </tr>
+  <tr>
+    <td>37</td>
+    <td>Sacred Mesa</td>
+    <td>At the beginning of your upkeep, sacrifice Sacred Mesa unless you sacrifice a Pegasus.<br>{1}{W}: Create a 1/1 white Pegasus creature token with flying.</td>
+    <td>No início de sua manutenção, sacrifique Mesa Sagrada, a menos que você sacrifique um Pégaso.<br>{1}{W}: Crie uma ficha de criatura branca 1/1 do tipo Pégaso com voar.</td>
+  </tr>
+  <tr>
+    <td>38</td>
+    <td>Shadowbane</td>
+    <td>The next time a source of your choice would deal damage to you and/or creatures you control this turn, prevent that damage. If damage from a black source is prevented this way, you gain that much life.</td>
+    <td>Na próxima vez que uma fonte à sua escolha for causar dano a você e/ou às criaturas que você controla neste turno, previna aquele dano. Se o dano de uma fonte negra for evitado dessa forma, você ganha essa mesma quantidade de pontos de vida.</td>
+  </tr>
+  <tr>
+    <td>39</td>
+    <td>Sidar Jabari</td>
+    <td>Flanking (Whenever a creature without flanking blocks this creature, the blocking creature gets -1/-1 until end of turn.)<br>Whenever Sidar Jabari attacks, tap target creature defending player controls.</td>
+    <td>Flanquear (Toda vez que uma criatura sem flanquear bloqueia esta criatura, a criatura bloqueadora recebe -1/-1 até o final do turno.)<br>Sempre que Sidar Jabari atacar, vire a criatura alvo que o jogador defensor controla.</td>
+  </tr>
+  <tr>
+    <td>40</td>
+    <td>Soul Echo</td>
+    <td>Soul Echo enters the battlefield with X echo counters on it.<br>You don't lose the game for having 0 or less life.<br>At the beginning of your upkeep, sacrifice Soul Echo if there are no echo counters on it. Otherwise, target opponent may choose that for each 1 damage that would be dealt to you until your next upkeep, you remove an echo counter from Soul Echo instead.</td>
+    <td>Eco da Alma entra no campo de batalha com X marcadores de eco.<br>Você não perde o jogo por ter 0 ou menos pontos de vida.<br>No início de sua manutenção, sacrifique Soul Echo se não houver marcadores de eco nele. Caso contrário, o oponente alvo pode escolher que para cada 1 de dano que seria causado a você até sua próxima manutenção, você remova um marcador de eco de Soul Echo.</td>
+  </tr>
+  <tr>
+    <td>41</td>
+    <td>Spectral Guardian</td>
+    <td>As long as Spectral Guardian is untapped, noncreature artifacts have shroud. (They can't be the targets of spells or abilities.)</td>
+    <td>Enquanto Spectral Guardian estiver desvirado, os artefatos que não sejam criaturas terão manto. (Eles não podem ser alvos de mágicas ou habilidades.)</td>
+  </tr>
+  <tr>
+    <td>42</td>
+    <td>Sunweb</td>
+    <td>Defender (This creature can't attack.)<br>Flying<br>Sunweb can't block creatures with power 2 or less.</td>
+    <td>Defensor (Esta criatura não pode atacar.)<br>Vôo<br>Sunweb não pode bloquear criaturas com poder 2 ou menos.</td>
+  </tr>
+  <tr>
+    <td>43</td>
+    <td>Teremko Griffin</td>
+    <td>Flying; banding (Any creatures with banding, and up to one without, can attack in a band. Bands are blocked as a group. If any creatures with banding you control are blocking or being blocked by a creature, you divide that creature's combat damage, not its controller, among any of the creatures it's being blocked by or is blocking.)</td>
+    <td>Vôo; bandos (qualquer criatura com bandos, e até uma sem bandos, pode atacar em um bando. Os bandos são bloqueados como um grupo. Se alguma criatura com bandos que você controla estiver bloqueando ou sendo bloqueada por uma criatura, você divide o dano de combate daquela criatura, não seu controlador, entre qualquer uma das criaturas pelas quais ele está sendo bloqueado ou bloqueando.)</td>
+  </tr>
+  <tr>
+    <td>44</td>
+    <td>Unyaro Griffin</td>
+    <td>Flying<br>Sacrifice Unyaro Griffin: Counter target red instant or sorcery spell.</td>
+    <td>Vôo<br>Sacrifique Unyaro Griffin: Anule o feitiço instantâneo ou feitiço vermelho alvo.</td>
+  </tr>
+  <tr>
+    <td>45</td>
+    <td>Vigilant Martyr</td>
+    <td>Sacrifice Vigilant Martyr: Regenerate target creature.<br>{W}{W}, {T}, Sacrifice Vigilant Martyr: Counter target spell that targets an enchantment.</td>
+    <td>Sacrifique Vigilant Martyr: Regenera a criatura alvo.<br>{W}{W}, {T}, Sacrifique Mártir Vigilante: Anula a mágica alvo que tem como alvo um encantamento.</td>
+  </tr>
+  <tr>
+    <td>46</td>
+    <td>Wall of Resistance</td>
+    <td>Defender (This creature can't attack.)<br>Flying<br>At the beginning of each end step, if Wall of Resistance was dealt damage this turn, put a +0/+1 counter on it.</td>
+    <td>Defensor (Esta criatura não pode atacar.)<br>Vôo<br>No início de cada etapa final, se Muralha de Resistência sofreu dano neste turno, coloque um marcador +0/+1 nela.</td>
+  </tr>
+  <tr>
+    <td>47</td>
+    <td>Ward of Lights</td>
+    <td>You may cast Ward of Lights as though it had flash. If you cast it any time a sorcery couldn't have been cast, the controller of the permanent it becomes sacrifices it at the beginning of the next cleanup step.<br>Enchant creature<br>As Ward of Lights enters the battlefield, choose a color.<br>Enchanted creature has protection from the chosen color. This effect doesn't remove Ward of Lights.</td>
+    <td>Você pode lançar Ward of Lights como se tivesse flash. Se você conjurá-lo a qualquer momento em que um feitiço não poderia ter sido conjurado, o controlador da permanente que ele se torna o sacrifica no início da próxima etapa de limpeza.<br>Encantar criatura<br>Conforme Ward of Lights entra no campo de batalha, escolha uma cor.<br>A criatura encantada tem proteção contra a cor escolhida. Este efeito não remove Proteção das Luzes.</td>
+  </tr>
+  <tr>
+    <td>48</td>
+    <td>Yare</td>
+    <td>Target creature defending player controls gets +3/+0 until end of turn. That creature can block up to two additional creatures this turn.</td>
+    <td>A criatura alvo que o jogador defensor controla recebe +3/+0 até o final do turno. Essa criatura pode bloquear até duas criaturas adicionais neste turno.</td>
+  </tr>
+  <tr>
+    <td>49</td>
+    <td>Zhalfirin Commander</td>
+    <td>Flanking (Whenever a creature without flanking blocks this creature, the blocking creature gets -1/-1 until end of turn.)<br>{1}{W}{W}: Target Knight creature gets +1/+1 until end of turn.</td>
+    <td>Flanquear (Toda vez que uma criatura sem flanquear bloqueia esta criatura, a criatura bloqueadora recebe -1/-1 até o final do turno.)<br>{1}{W}{W}: A criatura Cavaleiro alvo recebe +1/+1 até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>50</td>
+    <td>Zhalfirin Knight</td>
+    <td>Flanking (Whenever a creature without flanking blocks this creature, the blocking creature gets -1/-1 until end of turn.)<br>{W}{W}: Zhalfirin Knight gains first strike until end of turn.</td>
+    <td>Flanquear (Toda vez que uma criatura sem flanquear bloqueia esta criatura, a criatura bloqueadora recebe -1/-1 até o final do turno.)<br>{W}{W}: Cavaleiro Zhalfirin ganha iniciativa até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>51</td>
+    <td>Zuberi, Golden Feather</td>
+    <td>Flying<br>Other Griffin creatures get +1/+1.</td>
+    <td>Vôo<br>Outras criaturas Griffin recebem +1/+1.</td>
+  </tr>
+  <tr>
+    <td>52</td>
+    <td>Ancestral Memories</td>
+    <td>Look at the top seven cards of your library. Put two of them into your hand and the rest into your graveyard.</td>
+    <td>Veja os sete cards principais do seu grimório. Coloque dois deles em sua mão e o restante em seu cemitério.</td>
+  </tr>
+  <tr>
+    <td>53</td>
+    <td>Azimaet Drake</td>
+    <td>Flying<br>{U}: Azimaet Drake gets +1/+0 until end of turn. Activate only once each turn.</td>
+    <td>Vôo<br>{U}: Azimaet Drake recebe +1/+0 até o final do turno. Ative apenas uma vez em cada turno.</td>
+  </tr>
+  <tr>
+    <td>54</td>
+    <td>Bay Falcon</td>
+    <td>Flying, vigilance</td>
+    <td>Voando, vigilância</td>
+  </tr>
+  <tr>
+    <td>55</td>
+    <td>Bazaar of Wonders</td>
+    <td>When Bazaar of Wonders enters the battlefield, exile all graveyards.<br>Whenever a player casts a spell, counter it if a card with the same name is in a graveyard or a nontoken permanent with the same name is on the battlefield.</td>
+    <td>Quando Bazar das Maravilhas entrar no campo de batalha, exile todos os cemitérios.<br>Toda vez que um jogador conjurar uma mágica, anule-a se um card com o mesmo nome estiver em um cemitério ou se uma permanente que não seja uma ficha com o mesmo nome estiver no campo de batalha.</td>
+  </tr>
+  <tr>
+    <td>56</td>
+    <td>Boomerang</td>
+    <td>Return target permanent to its owner's hand.</td>
+    <td>Devolva a permanente alvo para a mão de seu dono.</td>
+  </tr>
+  <tr>
+    <td>57</td>
+    <td>Cerulean Wyvern</td>
+    <td>Flying, protection from green</td>
+    <td>Voando, proteção contra o verde</td>
+  </tr>
+  <tr>
+    <td>58</td>
+    <td>Cloak of Invisibility</td>
+    <td>Enchant creature<br>Enchanted creature has phasing and can't be blocked except by Walls. (It phases in or out before its controller untaps during each of their untap steps. While it's phased out, it's treated as though it doesn't exist.)</td>
+    <td>Encantar criatura<br>A criatura encantada tem faseamento e não pode ser bloqueada exceto por Paredes. (Ele entra ou sai gradualmente antes que seu controlador seja desvirado durante cada uma de suas etapas de desvirar. Enquanto estiver fora de fase, ele é tratado como se não existisse.)</td>
+  </tr>
+  <tr>
+    <td>59</td>
+    <td>Coral Fighters</td>
+    <td>Whenever Coral Fighters attacks and isn't blocked, look at the top card of defending player's library. You may put that card on the bottom of that player's library.</td>
+    <td>Sempre que Coral Fighters atacar e não for bloqueado, olhe a carta do topo do grimório do jogador defensor. Você pode colocar aquele card no fundo do grimório daquele jogador.</td>
+  </tr>
+  <tr>
+    <td>60</td>
+    <td>Daring Apprentice</td>
+    <td>{T}, Sacrifice Daring Apprentice: Counter target spell.</td>
+    <td>{T}, Sacrifique Aprendiz Ousado: Anula a mágica alvo.</td>
+  </tr>
+  <tr>
+    <td>61</td>
+    <td>Dissipate</td>
+    <td>Counter target spell. If that spell is countered this way, exile it instead of putting it into its owner's graveyard.</td>
+    <td>Anule a mágica alvo. Se aquela mágica for anulada desta forma, exile-a em vez de colocá-la no cemitério de seu dono.</td>
+  </tr>
+  <tr>
+    <td>62</td>
+    <td>Dream Cache</td>
+    <td>Draw three cards, then put two cards from your hand both on top of your library or both on the bottom of your library.</td>
+    <td>Compre três cards e, em seguida, coloque dois cards da sua mão, ambos no topo do seu grimório ou ambos no fundo do seu grimório.</td>
+  </tr>
+  <tr>
+    <td>63</td>
+    <td>Dream Fighter</td>
+    <td>Whenever Dream Fighter blocks or becomes blocked by a creature, Dream Fighter and that creature phase out. (While they're phased out, they're treated as though they don't exist. Each one phases in before its controller untaps during their next untap step.)</td>
+    <td>Sempre que Dream Fighter bloqueia ou é bloqueado por uma criatura, Dream Fighter e aquela criatura saem de fase. (Enquanto eles são eliminados, eles são tratados como se não existissem. Cada um entra em fase antes que seu controlador seja desvirado durante a próxima etapa de desvirar.)</td>
+  </tr>
+  <tr>
+    <td>64</td>
+    <td>Energy Vortex</td>
+    <td>As Energy Vortex enters the battlefield, choose an opponent.<br>At the beginning of your upkeep, remove all vortex counters from Energy Vortex.<br>At the beginning of the chosen player's upkeep, Energy Vortex deals 3 damage to that player unless they pay {1} for each vortex counter on Energy Vortex.<br>{X}: Put X vortex counters on Energy Vortex. Activate only during your upkeep.</td>
+    <td>Conforme Energy Vortex entra no campo de batalha, escolha um oponente.<br>No início de sua manutenção, remova todos os contadores de vórtice de Energy Vortex.<br>No início da manutenção do jogador escolhido, Vórtice de Energia causa 3 pontos de dano àquele jogador, a menos que ele pague {1} para cada marcador de vórtice em Vórtice de Energia.<br>{X}: Coloque X contadores de vórtice em Vórtice de Energia. Ative apenas durante sua manutenção.</td>
+  </tr>
+  <tr>
+    <td>65</td>
+    <td>Ether Well</td>
+    <td>Put target creature on top of its owner's library. If that creature is red, you may put it on the bottom of its owner's library instead.</td>
+    <td>Coloque a criatura alvo no topo do grimório de seu dono. Se aquela criatura for vermelha, em vez disso, você poderá colocá-la no fundo do grimório de seu dono.</td>
+  </tr>
+  <tr>
+    <td>66</td>
+    <td>Flash</td>
+    <td>You may put a creature card from your hand onto the battlefield. If you do, sacrifice it unless you pay its mana cost reduced by up to {2}.</td>
+    <td>Você pode colocar um card de criatura de sua mão no campo de batalha. Se fizer isso, sacrifique-o, a menos que pague seu custo de mana reduzido em até {2}.</td>
+  </tr>
+  <tr>
+    <td>67</td>
+    <td>Floodgate</td>
+    <td>Defender (This creature can't attack.)<br>When Floodgate has flying, sacrifice it.<br>When Floodgate leaves the battlefield, it deals damage equal to half the number of Islands you control, rounded down, to each nonblue creature without flying.</td>
+    <td>Defensor (Esta criatura não pode atacar.)<br>Quando Floodgate tiver voo, sacrifique-o.<br>Quando Floodgate sai do campo de batalha, ela causa dano igual à metade do número de Ilhas que você controla, arredondado para baixo, a cada criatura que não seja azul e sem voar.</td>
+  </tr>
+  <tr>
+    <td>68</td>
+    <td>Hakim, Loreweaver</td>
+    <td>Flying<br>{U}{U}: Return target Aura card from your graveyard to the battlefield attached to Hakim, Loreweaver. Activate only during your upkeep and only if Hakim isn't enchanted.<br>{U}{U}, {T}: Destroy all Auras attached to Hakim.</td>
+    <td>Vôo<br>{U}{U}: Devolva o card de Aura alvo de seu cemitério para o campo de batalha anexado a Hakim, Tecelão de Histórias. Ative apenas durante sua manutenção e somente se Hakim não estiver encantado.<br>{U}{U}, {T}: Destrua todas as Auras anexadas a Hakim.</td>
+  </tr>
+  <tr>
+    <td>69</td>
+    <td>Harmattan Efreet</td>
+    <td>Flying<br>{1}{U}{U}: Target creature gains flying until end of turn.</td>
+    <td>Vôo<br>{1}{U}{U}: A criatura alvo ganha voar até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>70</td>
+    <td>Jolt</td>
+    <td>You may tap or untap target artifact, creature, or land.<br>Draw a card at the beginning of the next turn's upkeep.</td>
+    <td>Você pode virar ou desvirar o artefato, criatura ou terreno alvo.<br>Compre um card no início da manutenção do próximo turno.</td>
+  </tr>
+  <tr>
+    <td>71</td>
+    <td>Kukemssa Pirates</td>
+    <td>Whenever Kukemssa Pirates attacks and isn't blocked, you may gain control of target artifact defending player controls. If you do, Kukemssa Pirates assigns no combat damage this turn.</td>
+    <td>Sempre que os Piratas Kukemssa atacam e não são bloqueados, você pode ganhar o controle do artefato alvo que o jogador defensor controla. Se fizer isso, Piratas Kukemssa não causará dano de combate neste turno.</td>
+  </tr>
+  <tr>
+    <td>72</td>
+    <td>Kukemssa Serpent</td>
+    <td>Kukemssa Serpent can't attack unless defending player controls an Island.<br>{U}, Sacrifice an Island: Target land an opponent controls becomes an Island until end of turn.<br>When you control no Islands, sacrifice Kukemssa Serpent.</td>
+    <td>A Serpente Kukemssa não pode atacar a menos que o jogador defensor controle uma Ilha.<br>{U}, Sacrifique uma Ilha: O terreno alvo que um oponente controla se torna uma Ilha até o final do turno.<br>Quando você não controlar nenhuma ilha, sacrifique a Serpente Kukemssa.</td>
+  </tr>
+  <tr>
+    <td>73</td>
+    <td>Meddle</td>
+    <td>If target spell has only one target and that target is a creature, change that spell's target to another creature.</td>
+    <td>Se a mágica alvo tiver apenas um alvo e esse alvo for uma criatura, mude o alvo daquela mágica para outra criatura.</td>
+  </tr>
+  <tr>
+    <td>74</td>
+    <td>Memory Lapse</td>
+    <td>Counter target spell. If that spell is countered this way, put it on top of its owner's library instead of into that player's graveyard.</td>
+    <td>Anule a mágica alvo. Se aquela mágica for anulada desta forma, coloque-a no topo do grimório de seu dono em vez de no cemitério daquele jogador.</td>
+  </tr>
+  <tr>
+    <td>75</td>
+    <td>Merfolk Raiders</td>
+    <td>Islandwalk (This creature can't be blocked as long as defending player controls an Island.)<br>Phasing (This phases in or out before you untap during each of your untap steps. While it's phased out, it's treated as though it doesn't exist.)</td>
+    <td>Islandwalk (Esta criatura não pode ser bloqueada enquanto o jogador defensor controlar uma Ilha.)<br>Fase (Isso entra ou sai antes de você desvirar durante cada uma de suas etapas de desvirar. Enquanto é desvirado, é tratado como se não existisse.)</td>
+  </tr>
+  <tr>
+    <td>76</td>
+    <td>Merfolk Seer</td>
+    <td>When Merfolk Seer dies, you may pay {1}{U}. If you do, draw a card.</td>
+    <td>Quando Tritão Vidente morrer, você poderá pagar {1}{U}. Se fizer isso, compre uma carta.</td>
+  </tr>
+  <tr>
+    <td>77</td>
+    <td>Mind Bend</td>
+    <td>Change the text of target permanent by replacing all instances of one color word with another or one basic land type with another. (For example, you may change "nonblack creature" to "nongreen creature" or "forestwalk" to "islandwalk." This effect lasts indefinitely.)</td>
+    <td>Altere o texto da permanente alvo substituindo todas as ocorrências de uma palavra de cor por outra ou um tipo de terreno básico por outro. (Por exemplo, você pode mudar “criatura não-preta” para “criatura não-verde” ou “travessia de floresta” para “travessia de ilha”. Este efeito dura indefinidamente.)</td>
+  </tr>
+  <tr>
+    <td>78</td>
+    <td>Mind Harness</td>
+    <td>Enchant red or green creature<br>Cumulative upkeep {1} (At the beginning of your upkeep, put an age counter on this permanent, then sacrifice it unless you pay its upkeep cost for each age counter on it.)<br>You control enchanted creature.</td>
+    <td>Encantar criatura vermelha ou verde<br>Manutenção cumulativa {1} (No início de sua manutenção, coloque um marcador de tempo nesta permanente e depois sacrifique-a, a menos que você pague seu custo de manutenção para cada marcador de tempo nela.)<br>Você controla a criatura encantada.</td>
+  </tr>
+  <tr>
+    <td>79</td>
+    <td>Mist Dragon</td>
+    <td>{0}: Mist Dragon gains flying. (This effect lasts indefinitely.)<br>{0}: Mist Dragon loses flying. (This effect lasts indefinitely.)<br>{3}{U}{U}: Mist Dragon phases out. (While it's phased out, it's treated as though it doesn't exist. It phases in before you untap during your next untap step.)</td>
+    <td>{0}: Dragão da Névoa ganha voar. (Este efeito dura indefinidamente.)<br>{0}: Dragão da Névoa perde voo. (Este efeito dura indefinidamente.)<br>{3}{U}{U}: Dragão da Névoa desaparece. (Enquanto estiver desvirado, é tratado como se não existisse. Ele entra em fase antes de você desvirar durante sua próxima etapa de desvirar.)</td>
+  </tr>
+  <tr>
+    <td>80</td>
+    <td>Mystical Tutor</td>
+    <td>Search your library for an instant or sorcery card, reveal it, then shuffle and put that card on top.</td>
+    <td>Procure em seu grimório por um card de mágica instantânea ou de feitiço, revele-o, depois embaralhe e coloque aquele card no topo.</td>
+  </tr>
+  <tr>
+    <td>81</td>
+    <td>Political Trickery</td>
+    <td>Exchange control of target land you control and target land an opponent controls. (This effect lasts indefinitely.)</td>
+    <td>Troque o controle do terreno alvo que você controla e do terreno alvo que um oponente controla. (Este efeito dura indefinidamente.)</td>
+  </tr>
+  <tr>
+    <td>82</td>
+    <td>Polymorph</td>
+    <td>Destroy target creature. It can't be regenerated. Its controller reveals cards from the top of their library until they reveal a creature card. The player puts that card onto the battlefield, then shuffles all other cards revealed this way into their library.</td>
+    <td>Destrua a criatura alvo. Não pode ser regenerado. Seu controlador revela cards do topo de seu grimório até revelar um card de criatura. O jogador coloca aquele card no campo de batalha e depois embaralha todos os outros cards revelados dessa forma em seu grimório.</td>
+  </tr>
+  <tr>
+    <td>83</td>
+    <td>Power Sink</td>
+    <td>Counter target spell unless its controller pays {X}. If that player doesn't, they tap all lands with mana abilities they control and lose all unspent mana.</td>
+    <td>Anula a mágica alvo, a menos que seu controlador pague {X}. Caso contrário, aquele jogador vira todos os terrenos com habilidades de mana que controla e perde todo o mana não gasto.</td>
+  </tr>
+  <tr>
+    <td>84</td>
+    <td>Prismatic Lace</td>
+    <td>Target permanent becomes the color or colors of your choice. (This effect lasts indefinitely.)</td>
+    <td>A permanente alvo se torna a cor ou cores de sua escolha. (Este efeito dura indefinidamente.)</td>
+  </tr>
+  <tr>
+    <td>85</td>
+    <td>Psychic Transfer</td>
+    <td>If the difference between your life total and target player's life total is 5 or less, exchange life totals with that player.</td>
+    <td>Se a diferença entre o seu total de pontos de vida e o total de pontos de vida do jogador alvo for 5 ou menos, troque os totais de pontos de vida com aquele jogador.</td>
+  </tr>
+  <tr>
+    <td>86</td>
+    <td>Ray of Command</td>
+    <td>Untap target creature an opponent controls and gain control of it until end of turn. That creature gains haste until end of turn. When you lose control of the creature, tap it.</td>
+    <td>Desvire a criatura alvo que um oponente controla e ganhe o controle dela até o final do turno. Aquela criatura ganha ímpeto até o final do turno. Quando você perder o controle da criatura, toque nela.</td>
+  </tr>
+  <tr>
+    <td>87</td>
+    <td>Reality Ripple</td>
+    <td>Target artifact, creature, or land phases out. (While it's phased out, it's treated as though it doesn't exist. It phases in before its controller untaps during their next untap step.)</td>
+    <td>O artefato, criatura ou terreno alvo é eliminado. (Enquanto estiver desvirado, ele é tratado como se não existisse. Ele entra em fase antes que seu controlador seja desvirado durante a próxima etapa de desvirar.)</td>
+  </tr>
+  <tr>
+    <td>87†</td>
+    <td>Reality Ripple</td>
+    <td>Target artifact, creature, or land phases out. (While it's phased out, it's treated as though it doesn't exist. It phases in before its controller untaps during their next untap step.)</td>
+    <td>O artefato, criatura ou terreno alvo é eliminado. (Enquanto estiver desvirado, ele é tratado como se não existisse. Ele entra em fase antes que seu controlador seja desvirado durante a próxima etapa de desvirar.)</td>
+  </tr>
+  <tr>
+    <td>88</td>
+    <td>Sandbar Crocodile</td>
+    <td>Phasing (This phases in or out before you untap during each of your untap steps. While it's phased out, it's treated as though it doesn't exist.)</td>
+    <td>Fase (Isso entra ou sai antes de você desvirar durante cada uma de suas etapas de desvirar. Enquanto é desvirado, é tratado como se não existisse.)</td>
+  </tr>
+  <tr>
+    <td>89</td>
+    <td>Sapphire Charm</td>
+    <td>Choose one —<br>• Target player draws a card at the beginning of the next turn's upkeep.<br>• Target creature gains flying until end of turn.<br>• Target creature an opponent controls phases out. (While it's phased out, it's treated as though it doesn't exist. It phases in before its controller untaps during their next untap step.)</td>
+    <td>Escolha um -<br>• O jogador alvo compra um card no início da manutenção do próximo turno.<br>• A criatura alvo ganha voar até o final do turno.<br>• A criatura alvo que um oponente controla sai de fase. (Enquanto estiver desvirado, ele é tratado como se não existisse. Ele entra em fase antes que seu controlador seja desvirado durante a próxima etapa de desvirar.)</td>
+  </tr>
+  <tr>
+    <td>90</td>
+    <td>Sea Scryer</td>
+    <td>{T}: Add {C}.<br>{1}, {T}: Add {U}.</td>
+    <td>{T}: Adicione {C}.<br>{1}, {T}: Adicione {U}.</td>
+  </tr>
+  <tr>
+    <td>91</td>
+    <td>Shaper Guildmage</td>
+    <td>{W}, {T}: Target creature gains first strike until end of turn.<br>{B}, {T}: Target creature gets +1/+0 until end of turn.</td>
+    <td>{W}, {T}: A criatura alvo ganha iniciativa até o final do turno.<br>{B}, {T}: A criatura alvo recebe +1/+0 até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>92</td>
+    <td>Shimmer</td>
+    <td>As Shimmer enters the battlefield, choose a land type.<br>Each land of the chosen type has phasing. (It phases in or out before its controller untaps during each of their untap steps. While it's phased out, it's treated as though it doesn't exist.)</td>
+    <td>Conforme Shimmer entra no campo de batalha, escolha um tipo de terreno.<br>Cada terreno do tipo escolhido possui fases. (Ele entra ou sai gradualmente antes que seu controlador seja desvirado durante cada uma de suas etapas de desvirar. Enquanto estiver fora de fase, ele é tratado como se não existisse.)</td>
+  </tr>
+  <tr>
+    <td>93</td>
+    <td>Soar</td>
+    <td>You may cast Soar as though it had flash. If you cast it any time a sorcery couldn't have been cast, the controller of the permanent it becomes sacrifices it at the beginning of the next cleanup step.<br>Enchant creature<br>Enchanted creature gets +0/+1 and has flying.</td>
+    <td>Você pode lançar Soar como se tivesse flash. Se você conjurá-lo a qualquer momento em que um feitiço não poderia ter sido conjurado, o controlador da permanente que ele se torna o sacrifica no início da próxima etapa de limpeza.<br>Encantar criatura<br>A criatura encantada recebe +0/+1 e tem voar.</td>
+  </tr>
+  <tr>
+    <td>94</td>
+    <td>Suq'Ata Firewalker</td>
+    <td>Suq'Ata Firewalker can't be the target of red spells or abilities from red sources.<br>{T}: Suq'Ata Firewalker deals 1 damage to any target.</td>
+    <td>Suq'Ata Firewalker não pode ser alvo de feitiços vermelhos ou habilidades de fontes vermelhas.<br>{T}: Suq'Ata Firewalker causa 1 ponto de dano a qualquer alvo.</td>
+  </tr>
+  <tr>
+    <td>95</td>
+    <td>Taniwha</td>
+    <td>Trample<br>Phasing (This phases in or out before you untap during each of your untap steps. While it's phased out, it's treated as though it doesn't exist.)<br>At the beginning of your upkeep, all lands you control phase out. (They phase in before you untap during your next untap step.)</td>
+    <td>Atropelar<br>Fase (Isso entra ou sai antes de você desvirar durante cada uma de suas etapas de desvirar. Enquanto é desvirado, é tratado como se não existisse.)<br>No início de sua manutenção, todos os terrenos que você controla desaparecem de fase. (Eles entram em fase antes de você desvirar durante sua próxima etapa de desvirar.)</td>
+  </tr>
+  <tr>
+    <td>96</td>
+    <td>Teferi's Curse</td>
+    <td>Enchant artifact or creature<br>Enchanted permanent has phasing. (It phases in or out before its controller untaps during each of their untap steps. While it's phased out, it's treated as though it doesn't exist.)</td>
+    <td>Encantar artefato ou criatura<br>A permanente encantada tem fases. (Ele entra ou sai gradualmente antes que seu controlador seja desvirado durante cada uma de suas etapas de desvirar. Enquanto estiver fora de fase, ele é tratado como se não existisse.)</td>
+  </tr>
+  <tr>
+    <td>97</td>
+    <td>Teferi's Drake</td>
+    <td>Flying<br>Phasing (This phases in or out before you untap during each of your untap steps. While it's phased out, it's treated as though it doesn't exist.)</td>
+    <td>Vôo<br>Fase (Isso entra ou sai antes de você desvirar durante cada uma de suas etapas de desvirar. Enquanto é desvirado, é tratado como se não existisse.)</td>
+  </tr>
+  <tr>
+    <td>98</td>
+    <td>Teferi's Imp</td>
+    <td>Flying<br>Phasing (This phases in or out before you untap during each of your untap steps. While it's phased out, it's treated as though it doesn't exist.)<br>Whenever Teferi's Imp phases out, discard a card.<br>Whenever Teferi's Imp phases in, draw a card.</td>
+    <td>Vôo<br>Fase (Isso entra ou sai antes de você desvirar durante cada uma de suas etapas de desvirar. Enquanto é desvirado, é tratado como se não existisse.)<br>Toda vez que Diabrete de Teferi sair de fase, descarte um card.<br>Toda vez que Diabrete de Teferi entrar em fase, compre um card.</td>
+  </tr>
+  <tr>
+    <td>99</td>
+    <td>Thirst</td>
+    <td>Enchant creature<br>When Thirst enters the battlefield, tap enchanted creature.<br>Enchanted creature doesn't untap during its controller's untap step.<br>At the beginning of your upkeep, sacrifice Thirst unless you pay {U}.</td>
+    <td>Encantar criatura<br>Quando Thirst entrar no campo de batalha, vire a criatura encantada.<br>A criatura encantada não desvira durante a etapa de desvirar de seu controlador.<br>No início de sua manutenção, sacrifique Sede, a menos que você pague {U}.</td>
+  </tr>
+  <tr>
+    <td>100</td>
+    <td>Tidal Wave</td>
+    <td>Create a 5/5 blue Wall creature token with defender. Sacrifice it at the beginning of the next end step.</td>
+    <td>Crie uma ficha de criatura azul 5/5 do tipo Barreira com defensor. Sacrifique-o no início da próxima etapa final.</td>
+  </tr>
+  <tr>
+    <td>101</td>
+    <td>Vaporous Djinn</td>
+    <td>Flying<br>At the beginning of your upkeep, Vaporous Djinn phases out unless you pay {U}{U}. (While it's phased out, it's treated as though it doesn't exist. It phases in before you untap during your next untap step.)</td>
+    <td>Vôo<br>No início de sua manutenção, Vaporous Djinn desaparece a menos que você pague {U}{U}. (Enquanto estiver desvirado, é tratado como se não existisse. Ele entra em fase antes de você desvirar durante sua próxima etapa de desvirar.)</td>
+  </tr>
+  <tr>
+    <td>102</td>
+    <td>Wave Elemental</td>
+    <td>{U}, {T}, Sacrifice Wave Elemental: Tap up to three target creatures without flying.</td>
+    <td>{U}, {T}, sacrifique Wave Elemental: Vire até três criaturas alvo sem voar.</td>
+  </tr>
+  <tr>
+    <td>103</td>
+    <td>Abyssal Hunter</td>
+    <td>{B}, {T}: Tap target creature. Abyssal Hunter deals damage equal to Abyssal Hunter's power to that creature.</td>
+    <td>{B}, {T}: Vire a criatura alvo. Abyssal Hunter causa dano igual ao poder de Abyssal Hunter àquela criatura.</td>
+  </tr>
+  <tr>
+    <td>104</td>
+    <td>Ashen Powder</td>
+    <td>Put target creature card from an opponent's graveyard onto the battlefield under your control.</td>
+    <td>Coloque o card de criatura alvo do cemitério de um oponente no campo de batalha sob seu controle.</td>
+  </tr>
+  <tr>
+    <td>105</td>
+    <td>Barbed-Back Wurm</td>
+    <td>{B}: Target green creature blocking Barbed-Back Wurm gets -1/-1 until end of turn.</td>
+    <td>{B}: A criatura verde alvo que bloqueia Vorme Farpado recebe -1/-1 até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>106</td>
+    <td>Binding Agony</td>
+    <td>Enchant creature<br>Whenever enchanted creature is dealt damage, Binding Agony deals that much damage to that creature's controller.</td>
+    <td>Encantar criatura<br>Sempre que a criatura encantada sofre dano, Binding Agony causa aquela quantidade de dano ao controlador daquela criatura.</td>
+  </tr>
+  <tr>
+    <td>107</td>
+    <td>Blighted Shaman</td>
+    <td>{T}, Sacrifice a Swamp: Target creature gets +1/+1 until end of turn.<br>{T}, Sacrifice a creature: Target creature gets +2/+2 until end of turn.</td>
+    <td>{T}, Sacrifique um Pântano: A criatura alvo recebe +1/+1 até o final do turno.<br>{T}, sacrifique uma criatura: A criatura alvo recebe +2/+2 até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>108</td>
+    <td>Bone Harvest</td>
+    <td>Put any number of target creature cards from your graveyard on top of your library.<br>Draw a card at the beginning of the next turn's upkeep.</td>
+    <td>Coloque qualquer número de cards de criatura alvo de seu cemitério no topo de seu grimório.<br>Compre um card no início da manutenção do próximo turno.</td>
+  </tr>
+  <tr>
+    <td>109</td>
+    <td>Breathstealer</td>
+    <td>{B}: Breathstealer gets +1/-1 until end of turn.</td>
+    <td>{B}: Breathstealer recebe +1/-1 até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>110</td>
+    <td>Cadaverous Knight</td>
+    <td>Flanking (Whenever a creature without flanking blocks this creature, the blocking creature gets -1/-1 until end of turn.)<br>{1}{B}{B}: Regenerate Cadaverous Knight.</td>
+    <td>Flanquear (Toda vez que uma criatura sem flanquear bloqueia esta criatura, a criatura bloqueadora recebe -1/-1 até o final do turno.)<br>{1}{B}{B}: Regenera Cavaleiro Cadavérico.</td>
+  </tr>
+  <tr>
+    <td>111</td>
+    <td>Carrion</td>
+    <td>As an additional cost to cast this spell, sacrifice a creature.<br>Create X 0/1 black Insect creature tokens, where X is the sacrificed creature's power.</td>
+    <td>Como custo adicional para conjurar esta mágica, sacrifique uma criatura.<br>Crie X fichas de criatura preta 0/1 do tipo Inseto, sendo X o poder da criatura sacrificada.</td>
+  </tr>
+  <tr>
+    <td>112</td>
+    <td>Catacomb Dragon</td>
+    <td>Flying<br>Whenever Catacomb Dragon becomes blocked by a nonartifact, non-Dragon creature, that creature gets -X/-0 until end of turn, where X is half the creature's power, rounded down.</td>
+    <td>Vôo<br>Toda vez que Dragão Catacumba for bloqueado por uma criatura que não seja um Dragão e que não seja um artefato, aquela criatura recebe -X/-0 até o final do turno, sendo X igual à metade do poder da criatura, arredondado para baixo.</td>
+  </tr>
+  <tr>
+    <td>113</td>
+    <td>Choking Sands</td>
+    <td>Destroy target non-Swamp land. If that land was nonbasic, Choking Sands deals 2 damage to the land's controller.</td>
+    <td>Destrua o terreno alvo que não seja do Pântano. Se aquele terreno não for básico, Choking Sands causa 2 pontos de dano ao controlador do terreno.</td>
+  </tr>
+  <tr>
+    <td>114</td>
+    <td>Crypt Cobra</td>
+    <td>Whenever Crypt Cobra attacks and isn't blocked, defending player gets a poison counter. (A player with ten or more poison counters loses the game.)</td>
+    <td>Sempre que Crypt Cobra ataca e não é bloqueado, o jogador defensor recebe um marcador de veneno. (Um jogador com dez ou mais marcadores de veneno perde o jogo.)</td>
+  </tr>
+  <tr>
+    <td>115</td>
+    <td>Dark Banishing</td>
+    <td>Destroy target nonblack creature. It can't be regenerated.</td>
+    <td>Destrua a criatura alvo que não seja preta. Não pode ser regenerado.</td>
+  </tr>
+  <tr>
+    <td>116</td>
+    <td>Dark Ritual</td>
+    <td>Add {B}{B}{B}.</td>
+    <td>Adicione {B}{B}{B}.</td>
+  </tr>
+  <tr>
+    <td>117</td>
+    <td>Dirtwater Wraith</td>
+    <td>Swampwalk (This creature can't be blocked as long as defending player controls a Swamp.)<br>{B}: Dirtwater Wraith gets +1/+0 until end of turn.</td>
+    <td>Caminhada no Pântano (Esta criatura não pode ser bloqueada enquanto o jogador defensor controlar um Pântano.)<br>{B}: Espectro da Água Suja recebe +1/+0 até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>118</td>
+    <td>Drain Life</td>
+    <td>Spend only black mana on X.<br>Drain Life deals X damage to any target. You gain life equal to the damage dealt, but not more life than the player's life total before the damage was dealt, the planeswalker's loyalty before the damage was dealt, or the creature's toughness.</td>
+    <td>Gaste apenas mana preta em X.<br>Drenar Vida causa X de dano a qualquer alvo. Você ganha pontos de vida iguais ao dano causado, mas não mais pontos de vida do que o total de pontos de vida do jogador antes do dano ser causado, a lealdade do planeswalker antes do dano ser causado ou a resistência da criatura.</td>
+  </tr>
+  <tr>
+    <td>119</td>
+    <td>Dread Specter</td>
+    <td>Whenever Dread Specter blocks or becomes blocked by a nonblack creature, destroy that creature at end of combat.</td>
+    <td>Toda vez que Dread Spectre bloquear ou for bloqueado por uma criatura que não seja preta, destrua aquela criatura no final do combate.</td>
+  </tr>
+  <tr>
+    <td>120</td>
+    <td>Ebony Charm</td>
+    <td>Choose one —<br>• Target opponent loses 1 life and you gain 1 life.<br>• Exile up to three target cards from a single graveyard.<br>• Target creature gains fear until end of turn. (It can't be blocked except by artifact creatures and/or black creatures.)</td>
+    <td>Escolha um -<br>• O oponente alvo perde 1 ponto de vida e você ganha 1 ponto de vida.<br>• Exile até três cards alvo de um único cemitério.<br>• A criatura alvo ganha medo até o final do turno. (Ele não pode ser bloqueado exceto por criaturas artefato e/ou criaturas pretas.)</td>
+  </tr>
+  <tr>
+    <td>121</td>
+    <td>Enfeeblement</td>
+    <td>Enchant creature (Target a creature as you cast this. This card enters the battlefield attached to that creature.)<br>Enchanted creature gets -2/-2.</td>
+    <td>Encantar criatura (Escolha uma criatura ao conjurar este card. Este card entra no campo de batalha anexado àquela criatura.)<br>A criatura encantada recebe -2/-2.</td>
+  </tr>
+  <tr>
+    <td>122</td>
+    <td>Feral Shadow</td>
+    <td>Flying</td>
+    <td>Vôo</td>
+  </tr>
+  <tr>
+    <td>123</td>
+    <td>Fetid Horror</td>
+    <td>{B}: Fetid Horror gets +1/+1 until end of turn.</td>
+    <td>{B}: Horror Fétido recebe +1/+1 até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>124</td>
+    <td>Forbidden Crypt</td>
+    <td>If you would draw a card, return a card from your graveyard to your hand instead. If you can't, you lose the game.<br>If a card would be put into your graveyard from anywhere, exile that card instead.</td>
+    <td>Se você fosse comprar um card, em vez disso, devolva um card de seu cemitério para sua mão. Se não conseguir, você perde o jogo.<br>Se um card fosse colocado em seu cemitério vindo de qualquer lugar, em vez disso, exile aquele card.</td>
+  </tr>
+  <tr>
+    <td>125</td>
+    <td>Forsaken Wastes</td>
+    <td>Players can't gain life.<br>At the beginning of each player's upkeep, that player loses 1 life.<br>Whenever Forsaken Wastes becomes the target of a spell, that spell's controller loses 5 life.</td>
+    <td>Os jogadores não podem ganhar vida.<br>No início da manutenção de cada jogador, aquele jogador perde 1 ponto de vida.<br>Sempre que Forsaken Wastes se torna alvo de um feitiço, o controlador daquele feitiço perde 5 pontos de vida.</td>
+  </tr>
+  <tr>
+    <td>126</td>
+    <td>Grave Servitude</td>
+    <td>You may cast Grave Servitude as though it had flash. If you cast it any time a sorcery couldn't have been cast, the controller of the permanent it becomes sacrifices it at the beginning of the next cleanup step.<br>Enchant creature<br>Enchanted creature gets +3/-1 and is black.</td>
+    <td>Você pode lançar Grave Servitude como se tivesse flash. Se você conjurá-lo a qualquer momento em que um feitiço não poderia ter sido conjurado, o controlador da permanente que ele se torna o sacrifica no início da próxima etapa de limpeza.<br>Encantar criatura<br>A criatura encantada recebe +3/-1 e é preta.</td>
+  </tr>
+  <tr>
+    <td>127</td>
+    <td>Gravebane Zombie</td>
+    <td>If Gravebane Zombie would die, put Gravebane Zombie on top of its owner's library instead.</td>
+    <td>Se Gravebane Zombie fosse morrer, em vez disso, coloque Gravebane Zombie no topo do grimório de seu dono.</td>
+  </tr>
+  <tr>
+    <td>128</td>
+    <td>Harbinger of Night</td>
+    <td>At the beginning of your upkeep, put a -1/-1 counter on each creature.</td>
+    <td>No início de sua manutenção, coloque um marcador -1/-1 em cada criatura.</td>
+  </tr>
+  <tr>
+    <td>129</td>
+    <td>Infernal Contract</td>
+    <td>Draw four cards. You lose half your life, rounded up.</td>
+    <td>Compre quatro cartas. Você perde metade da sua vida, preso.</td>
+  </tr>
+  <tr>
+    <td>130</td>
+    <td>Kaervek's Hex</td>
+    <td>Kaervek's Hex deals 1 damage to each nonblack creature and an additional 1 damage to each green creature.</td>
+    <td>O Feitiço de Kaervek causa 1 ponto de dano a cada criatura que não seja preta e 1 ponto de dano adicional a cada criatura verde.</td>
+  </tr>
+  <tr>
+    <td>131</td>
+    <td>Mire Shade</td>
+    <td>{B}, Sacrifice a Swamp: Put a +1/+1 counter on Mire Shade. Activate only as a sorcery.</td>
+    <td>{B}, Sacrifique um Pântano: Coloque um marcador +1/+1 em Mire Shade. Ative apenas como um feitiço.</td>
+  </tr>
+  <tr>
+    <td>132</td>
+    <td>Nocturnal Raid</td>
+    <td>Black creatures get +2/+0 until end of turn.</td>
+    <td>As criaturas pretas recebem +2/+0 até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>133</td>
+    <td>Painful Memories</td>
+    <td>Look at target opponent's hand and choose a card from it. Put that card on top of that player's library.</td>
+    <td>Olhe a mão do oponente alvo e escolha uma carta dela. Coloque aquele card no topo do grimório daquele jogador.</td>
+  </tr>
+  <tr>
+    <td>134</td>
+    <td>Phyrexian Tribute</td>
+    <td>As an additional cost to cast this spell, sacrifice two creatures.<br>Destroy target artifact.</td>
+    <td>Como custo adicional para conjurar esta mágica, sacrifique duas criaturas.<br>Destrua o artefato alvo.</td>
+  </tr>
+  <tr>
+    <td>135</td>
+    <td>Purraj of Urborg</td>
+    <td>Purraj of Urborg has first strike as long as it's attacking.<br>Whenever a player casts a black spell, you may pay {B}. If you do, put a +1/+1 counter on Purraj of Urborg.</td>
+    <td>Purraj de Urborg tem o primeiro ataque enquanto estiver atacando.<br>Sempre que um jogador conjurar uma mágica preta, você poderá pagar {B}. Se fizer isso, coloque um marcador +1/+1 em Purraj de Urborg.</td>
+  </tr>
+  <tr>
+    <td>136</td>
+    <td>Ravenous Vampire</td>
+    <td>Flying<br>At the beginning of your upkeep, you may sacrifice a nonartifact creature. If you do, put a +1/+1 counter on Ravenous Vampire. If you don't, tap Ravenous Vampire.</td>
+    <td>Vôo<br>No início de sua manutenção, você pode sacrificar uma criatura que não seja um artefato. Se fizer isso, coloque um marcador +1/+1 em Vampiro Voraz. Caso contrário, toque em Vampiro Voraz.</td>
+  </tr>
+  <tr>
+    <td>137</td>
+    <td>Reign of Terror</td>
+    <td>Destroy all green creatures or all white creatures. They can't be regenerated. You lose 2 life for each creature that died this way.</td>
+    <td>Destrua todas as criaturas verdes ou todas as criaturas brancas. Eles não podem ser regenerados. Você perde 2 pontos de vida para cada criatura que morreu desta forma.</td>
+  </tr>
+  <tr>
+    <td>138</td>
+    <td>Restless Dead</td>
+    <td>{B}: Regenerate Restless Dead.</td>
+    <td>{B}: Regenera Mortos Inquietos.</td>
+  </tr>
+  <tr>
+    <td>139</td>
+    <td>Sewer Rats</td>
+    <td>{B}, Pay 1 life: Sewer Rats gets +1/+0 until end of turn. Activate no more than three times each turn.</td>
+    <td>{B}, pague 1 ponto de vida: Ratos de Esgoto recebem +1/+0 até o final do turno. Ative no máximo três vezes em cada turno.</td>
+  </tr>
+  <tr>
+    <td>140</td>
+    <td>Shadow Guildmage</td>
+    <td>{U}, {T}: Put target creature you control on top of its owner's library.<br>{R}, {T}: Shadow Guildmage deals 1 damage to any target and 1 damage to you.</td>
+    <td>{U}, {T}: Coloque a criatura alvo que você controla no topo do grimório de seu dono.<br>{R}, {T}: Shadow Guildmage causa 1 ponto de dano a qualquer alvo e 1 ponto de dano a você.</td>
+  </tr>
+  <tr>
+    <td>141</td>
+    <td>Shallow Grave</td>
+    <td>Return the top creature card of your graveyard to the battlefield. That creature gains haste until end of turn. Exile it at the beginning of the next end step.</td>
+    <td>Devolva o card de criatura do topo do seu cemitério para o campo de batalha. Aquela criatura ganha ímpeto até o final do turno. Exile-o no início da próxima etapa final.</td>
+  </tr>
+  <tr>
+    <td>142</td>
+    <td>Shauku, Endbringer</td>
+    <td>Flying<br>Shauku, Endbringer can't attack if there's another creature on the battlefield.<br>At the beginning of your upkeep, you lose 3 life.<br>{T}: Exile target creature and put a +1/+1 counter on Shauku.</td>
+    <td>Vôo<br>Shauku, Endbringer, não pode atacar se houver outra criatura no campo de batalha.<br>No início de sua manutenção, você perde 3 pontos de vida.<br>{T}: Exile a criatura alvo e coloque um marcador +1/+1 em Shauku.</td>
+  </tr>
+  <tr>
+    <td>143</td>
+    <td>Skulking Ghost</td>
+    <td>Flying<br>When Skulking Ghost becomes the target of a spell or ability, sacrifice it.</td>
+    <td>Vôo<br>Quando Skulking Ghost se tornar alvo de uma mágica ou habilidade, sacrifique-o.</td>
+  </tr>
+  <tr>
+    <td>144</td>
+    <td>Soul Rend</td>
+    <td>Destroy target creature if it's white. A creature destroyed this way can't be regenerated.<br>Draw a card at the beginning of the next turn's upkeep.</td>
+    <td>Destrua a criatura alvo se ela for branca. Uma criatura destruída desta forma não pode ser regenerada.<br>Compre um card no início da manutenção do próximo turno.</td>
+  </tr>
+  <tr>
+    <td>145</td>
+    <td>Soulshriek</td>
+    <td>Target creature you control gets +X/+0 until end of turn, where X is the number of creature cards in your graveyard. Sacrifice that creature at the beginning of the next end step.</td>
+    <td>A criatura alvo que você controla recebe +X/+0 até o final do turno, sendo X o número de cards de criatura em seu cemitério. Sacrifique aquela criatura no início da próxima etapa final.</td>
+  </tr>
+  <tr>
+    <td>146</td>
+    <td>Spirit of the Night</td>
+    <td>Flying, trample, haste, protection from black<br>Spirit of the Night has first strike as long as it's attacking.</td>
+    <td>Voar, atropelar, pressa, proteção contra o preto<br>Spirit of the Night tem iniciativa enquanto estiver atacando.</td>
+  </tr>
+  <tr>
+    <td>147</td>
+    <td>Stupor</td>
+    <td>Target opponent discards a card at random, then discards a card.</td>
+    <td>O oponente alvo descarta uma carta aleatoriamente e depois descarta uma carta.</td>
+  </tr>
+  <tr>
+    <td>148</td>
+    <td>Tainted Specter</td>
+    <td>Flying<br>{1}{B}{B}, {T}: Target player discards a card unless they put a card from their hand on top of their library. If that player discards a card this way, Tainted Specter deals 1 damage to each creature and each player. Activate only as a sorcery.</td>
+    <td>Vôo<br>{1}{B}{B}, {T}: O jogador alvo descarta um card, a menos que coloque um card de sua mão no topo de seu grimório. Se aquele jogador descartar um card desta forma, Tainted Spectre causa 1 ponto de dano a cada criatura e a cada jogador. Ative apenas como um feitiço.</td>
+  </tr>
+  <tr>
+    <td>149</td>
+    <td>Tombstone Stairwell</td>
+    <td>Cumulative upkeep {1}{B} (At the beginning of your upkeep, put an age counter on this permanent, then sacrifice it unless you pay its upkeep cost for each age counter on it.)<br>At the beginning of each upkeep, if Tombstone Stairwell is on the battlefield, each player creates a 2/2 black Zombie creature token with haste named Tombspawn for each creature card in their graveyard.<br>At the beginning of each end step or when Tombstone Stairwell leaves the battlefield, destroy all tokens created with Tombstone Stairwell. They can't be regenerated.</td>
+    <td>Manutenção cumulativa {1}{B} (No início de sua manutenção, coloque um marcador de tempo nesta permanente e depois sacrifique-a, a menos que você pague seu custo de manutenção para cada marcador de tempo nela.)<br>No início de cada manutenção, se Tombstone Stairwell estiver no campo de batalha, cada jogador cria uma ficha de criatura preta 2/2 do tipo Zumbi com ímpeto chamada Tombstone para cada card de criatura em seu cemitério.<br>No início de cada etapa final ou quando Tombstone Stairwell deixar o campo de batalha, destrua todas as fichas criadas com Tombstone Stairwell. Eles não podem ser regenerados.</td>
+  </tr>
+  <tr>
+    <td>150</td>
+    <td>Urborg Panther</td>
+    <td>{B}, Sacrifice Urborg Panther: Destroy target creature blocking Urborg Panther.<br>Sacrifice a creature named Feral Shadow, a creature named Breathstealer, and Urborg Panther: Search your library for a card named Spirit of the Night, put that card onto the battlefield, then shuffle.</td>
+    <td>{B}, sacrifique Pantera de Urborg: Destrua a criatura alvo que está bloqueando Pantera de Urborg.<br>Sacrifique uma criatura chamada Feral Shadow, uma criatura chamada Breathstealer e Urborg Panther: Procure em seu grimório um card chamado Spirit of the Night, coloque aquele card no campo de batalha e depois embaralhe.</td>
+  </tr>
+  <tr>
+    <td>151</td>
+    <td>Wall of Corpses</td>
+    <td>Defender (This creature can't attack.)<br>{B}, Sacrifice Wall of Corpses: Destroy target creature Wall of Corpses is blocking.</td>
+    <td>Defensor (Esta criatura não pode atacar.)<br>{B}, sacrifique Muralha de Cadáveres: Destrua a criatura alvo que Muralha de Cadáveres está bloqueando.</td>
+  </tr>
+  <tr>
+    <td>152</td>
+    <td>Withering Boon</td>
+    <td>As an additional cost to cast this spell, pay 3 life.<br>Counter target creature spell.</td>
+    <td>Como custo adicional para conjurar esta mágica, pague 3 pontos de vida.<br>Anula a mágica de criatura alvo.</td>
+  </tr>
+  <tr>
+    <td>153</td>
+    <td>Zombie Mob</td>
+    <td>Zombie Mob enters the battlefield with a +1/+1 counter on it for each creature card in your graveyard.<br>When Zombie Mob enters the battlefield, exile all creature cards from your graveyard.</td>
+    <td>Zombie Mob entra no campo de batalha com um marcador +1/+1 para cada card de criatura em seu cemitério.<br>Quando Zombie Mob entrar no campo de batalha, exile todos os cards de criatura de seu cemitério.</td>
+  </tr>
+  <tr>
+    <td>154</td>
+    <td>Agility</td>
+    <td>Enchant creature<br>Enchanted creature gets +1/+1 and has flanking. (Whenever a creature without flanking blocks this creature, the blocking creature gets -1/-1 until end of turn.)</td>
+    <td>Encantar criatura<br>A criatura encantada recebe +1/+1 e tem flanqueamento. (Toda vez que uma criatura sem flanquear bloqueia esta criatura, a criatura bloqueadora recebe -1/-1 até o final do turno.)</td>
+  </tr>
+  <tr>
+    <td>155</td>
+    <td>Aleatory</td>
+    <td>Cast this spell only during combat after blockers are declared.<br>Flip a coin. If you win the flip, target creature gets +1/+1 until end of turn.<br>Draw a card at the beginning of the next turn's upkeep.</td>
+    <td>Lance este feitiço somente durante o combate após os bloqueadores serem declarados.<br>Jogue uma moeda. Se você vencer o turno, a criatura alvo recebe +1/+1 até o final do turno.<br>Compre um card no início da manutenção do próximo turno.</td>
+  </tr>
+  <tr>
+    <td>156</td>
+    <td>Armorer Guildmage</td>
+    <td>{B}, {T}: Target creature gets +1/+0 until end of turn.<br>{G}, {T}: Target creature gets +0/+1 until end of turn.</td>
+    <td>{B}, {T}: A criatura alvo recebe +1/+0 até o final do turno.<br>{G}, {T}: A criatura alvo recebe +0/+1 até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>157</td>
+    <td>Barreling Attack</td>
+    <td>Target creature gains trample until end of turn. When that creature becomes blocked this turn, it gets +1/+1 until end of turn for each creature blocking it.</td>
+    <td>A criatura alvo ganha atropelar até o final do turno. Quando aquela criatura for bloqueada neste turno, ela receberá +1/+1 até o final do turno para cada criatura que a bloquear.</td>
+  </tr>
+  <tr>
+    <td>158</td>
+    <td>Blind Fury</td>
+    <td>All creatures lose trample until end of turn. If a creature would deal combat damage to a creature this turn, it deals double that damage to that creature instead.</td>
+    <td>Todas as criaturas perdem atropelar até o final do turno. Se uma criatura fosse causar dano de combate a uma criatura neste turno, em vez disso, ela causa o dobro desse dano àquela criatura.</td>
+  </tr>
+  <tr>
+    <td>159</td>
+    <td>Blistering Barrier</td>
+    <td>Defender (This creature can't attack.)</td>
+    <td>Defensor (Esta criatura não pode atacar.)</td>
+  </tr>
+  <tr>
+    <td>160</td>
+    <td>Builder's Bane</td>
+    <td>Destroy X target artifacts. Builder's Bane deals damage to each player equal to the number of artifacts they controlled that were put into a graveyard this way.</td>
+    <td>Destrua X artefatos alvo. Builder's Bane causa dano a cada jogador igual ao número de artefatos que ele controlava e que foram colocados em um cemitério dessa forma.</td>
+  </tr>
+  <tr>
+    <td>161</td>
+    <td>Burning Palm Efreet</td>
+    <td>{1}{R}{R}: Burning Palm Efreet deals 2 damage to target creature with flying and that creature loses flying until end of turn.</td>
+    <td>{1}{R}{R}: Burning Palm Efreet causa 2 pontos de dano à criatura alvo com voar e aquela criatura perde voar até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>162</td>
+    <td>Burning Shield Askari</td>
+    <td>Flanking (Whenever a creature without flanking blocks this creature, the blocking creature gets -1/-1 until end of turn.)<br>{R}{R}: Burning Shield Askari gains first strike until end of turn.</td>
+    <td>Flanquear (Toda vez que uma criatura sem flanquear bloqueia esta criatura, a criatura bloqueadora recebe -1/-1 até o final do turno.)<br>{R}{R}: Escudo Ardente Askari ganha iniciativa até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>163</td>
+    <td>Chaos Charm</td>
+    <td>Choose one —<br>• Destroy target Wall.<br>• Chaos Charm deals 1 damage to target creature.<br>• Target creature gains haste until end of turn.</td>
+    <td>Escolha um -<br>• Destrua a Parede alvo.<br>• Chaos Charm causa 1 ponto de dano à criatura alvo.<br>• A criatura alvo ganha ímpeto até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>164</td>
+    <td>Chaosphere</td>
+    <td>Creatures with flying can block only creatures with flying.<br>Creatures without flying have reach. (They can block creatures with flying.)</td>
+    <td>Criaturas com voar podem bloquear apenas criaturas com voar.<br>Criaturas sem voar têm alcance. (Eles podem bloquear criaturas voando.)</td>
+  </tr>
+  <tr>
+    <td>165</td>
+    <td>Cinder Cloud</td>
+    <td>Destroy target creature. If a white creature dies this way, Cinder Cloud deals damage to that creature's controller equal to the creature's power.</td>
+    <td>Destrua a criatura alvo. Se uma criatura branca morrer desta forma, Cinder Cloud causa dano ao controlador daquela criatura igual ao poder da criatura.</td>
+  </tr>
+  <tr>
+    <td>166</td>
+    <td>Consuming Ferocity</td>
+    <td>Enchant non-Wall creature<br>Enchanted creature gets +1/+0.<br>At the beginning of your upkeep, put a +1/+0 counter on enchanted creature. If that creature has three or more +1/+0 counters on it, it deals damage equal to its power to its controller, then destroy that creature and it can't be regenerated.</td>
+    <td>Encantar criatura que não seja da Muralha<br>A criatura encantada recebe +1/+0.<br>No início de sua manutenção, coloque um marcador +1/+0 na criatura encantada. Se aquela criatura tiver três ou mais marcadores +1/+0, ela causa dano igual ao seu poder ao seu controlador e, depois, destrói aquela criatura e ela não pode ser regenerada.</td>
+  </tr>
+  <tr>
+    <td>167</td>
+    <td>Crimson Hellkite</td>
+    <td>Flying<br>{X}, {T}: Crimson Hellkite deals X damage to target creature. Spend only red mana on X.</td>
+    <td>Vôo<br>{X}, {T}: Crimson Hellkite causa X pontos de dano à criatura alvo. Gaste apenas mana vermelho em X.</td>
+  </tr>
+  <tr>
+    <td>168</td>
+    <td>Crimson Roc</td>
+    <td>Flying<br>Whenever Crimson Roc blocks a creature without flying, Crimson Roc gets +1/+0 and gains first strike until end of turn.</td>
+    <td>Vôo<br>Sempre que Crimson Roc bloqueia uma criatura sem voar, Crimson Roc recebe +1/+0 e ganha iniciativa até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>169</td>
+    <td>Dwarven Miner</td>
+    <td>{2}{R}, {T}: Destroy target nonbasic land.</td>
+    <td>{2}{R}, {T}: Destrua o terreno alvo não básico.</td>
+  </tr>
+  <tr>
+    <td>170</td>
+    <td>Dwarven Nomad</td>
+    <td>{T}: Target creature with power 2 or less can't be blocked this turn.</td>
+    <td>{T}: A criatura alvo com poder igual ou inferior a 2 não pode ser bloqueada neste turno.</td>
+  </tr>
+  <tr>
+    <td>171</td>
+    <td>Ekundu Cyclops</td>
+    <td>If a creature you control attacks, Ekundu Cyclops also attacks if able.</td>
+    <td>Se uma criatura que você controla atacar, Ciclope Ekundu também ataca se estiver apto.</td>
+  </tr>
+  <tr>
+    <td>172</td>
+    <td>Emberwilde Djinn</td>
+    <td>Flying<br>At the beginning of each player's upkeep, that player may pay {R}{R} or 2 life. If the player does, they gain control of Emberwilde Djinn.</td>
+    <td>Vôo<br>No início da manutenção de cada jogador, aquele jogador pode pagar {R}{R} ou 2 pontos de vida. Se o jogador fizer isso, ele ganhará o controle de Emberwilde Djinn.</td>
+  </tr>
+  <tr>
+    <td>173</td>
+    <td>Final Fortune</td>
+    <td>Take an extra turn after this one. At the beginning of that turn's end step, you lose the game.</td>
+    <td>Dê uma volta extra depois desta. No início da etapa final daquele turno, você perde o jogo.</td>
+  </tr>
+  <tr>
+    <td>174</td>
+    <td>Firebreathing</td>
+    <td>Enchant creature<br>{R}: Enchanted creature gets +1/+0 until end of turn.</td>
+    <td>Encantar criatura<br>{R}: A criatura encantada recebe +1/+0 até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>175</td>
+    <td>Flame Elemental</td>
+    <td>{R}, {T}, Sacrifice Flame Elemental: It deals damage equal to its power to target creature.</td>
+    <td>{R}, {T}, Sacrifique Elemental da Chama: Ele causa dano igual ao seu poder à criatura alvo.</td>
+  </tr>
+  <tr>
+    <td>176</td>
+    <td>Flare</td>
+    <td>Flare deals 1 damage to any target.<br>Draw a card at the beginning of the next turn's upkeep.</td>
+    <td>Flare causa 1 de dano a qualquer alvo.<br>Compre um card no início da manutenção do próximo turno.</td>
+  </tr>
+  <tr>
+    <td>177</td>
+    <td>Goblin Elite Infantry</td>
+    <td>Whenever Goblin Elite Infantry blocks or becomes blocked, it gets -1/-1 until end of turn.</td>
+    <td>Sempre que a Infantaria de Elite Goblin bloquear ou for bloqueada, ela receberá -1/-1 até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>178</td>
+    <td>Goblin Scouts</td>
+    <td>Create three 1/1 red Goblin Scout creature tokens with mountainwalk. (They can't be blocked as long as defending player controls a Mountain.)</td>
+    <td>Crie três fichas de criatura vermelha 1/1 do tipo Goblin Batedor com travessia de montanha. (Eles não podem ser bloqueados enquanto o jogador defensor controlar uma Montanha.)</td>
+  </tr>
+  <tr>
+    <td>179</td>
+    <td>Goblin Soothsayer</td>
+    <td>{R}, {T}, Sacrifice a Goblin: Red creatures get +1/+1 until end of turn.</td>
+    <td>{R}, {T}, Sacrifique um Goblin: As criaturas vermelhas recebem +1/+1 até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>180</td>
+    <td>Goblin Tinkerer</td>
+    <td>{R}, {T}: Destroy target artifact. That artifact deals damage equal to its mana value to Goblin Tinkerer.</td>
+    <td>{R}, {T}: Destrua o artefato alvo. Esse artefato causa dano igual ao seu valor de mana ao Goblin Tinkerer.</td>
+  </tr>
+  <tr>
+    <td>181</td>
+    <td>Hammer of Bogardan</td>
+    <td>Hammer of Bogardan deals 3 damage to any target.<br>{2}{R}{R}{R}: Return Hammer of Bogardan from your graveyard to your hand. Activate only during your upkeep.</td>
+    <td>Martelo de Bogardan causa 3 pontos de dano a qualquer alvo.<br>{2}{R}{R}{R}: Devolva Martelo de Bogardan de seu cemitério para sua mão. Ative apenas durante sua manutenção.</td>
+  </tr>
+  <tr>
+    <td>182</td>
+    <td>Hivis of the Scale</td>
+    <td>You may choose not to untap Hivis of the Scale during your untap step.<br>{T}: Gain control of target Dragon for as long as you control Hivis and Hivis remains tapped.</td>
+    <td>Você pode optar por não desvirar Hivis of the Scale durante sua etapa de desvirar.<br>{T}: Ganhe o controle do Dragão alvo enquanto você controlar Hivis e Hivis permanecer virado.</td>
+  </tr>
+  <tr>
+    <td>183</td>
+    <td>Illicit Auction</td>
+    <td>Each player may bid life for control of target creature. You start the bidding with a bid of 0. In turn order, each player may top the high bid. The bidding ends if the high bid stands. The high bidder loses life equal to the high bid and gains control of the creature. (This effect lasts indefinitely.)</td>
+    <td>Cada jogador pode oferecer pontos de vida pelo controle da criatura alvo. Você inicia o lance com um lance de 0. Na ordem do turno, cada jogador pode superar o lance mais alto. A licitação termina se o lance mais alto for mantido. O licitante com lance mais alto perde pontos de vida iguais ao lance mais alto e ganha o controle da criatura. (Este efeito dura indefinidamente.)</td>
+  </tr>
+  <tr>
+    <td>184</td>
+    <td>Incinerate</td>
+    <td>Incinerate deals 3 damage to any target. A creature dealt damage this way can't be regenerated this turn.</td>
+    <td>Incinerar causa 3 pontos de dano a qualquer alvo. Uma criatura que sofreu dano desta forma não pode ser regenerada neste turno.</td>
+  </tr>
+  <tr>
+    <td>185</td>
+    <td>Kaervek's Torch</td>
+    <td>As long as Kaervek's Torch is on the stack, spells that target it cost {2} more to cast.<br>Kaervek's Torch deals X damage to any target.</td>
+    <td>Enquanto a Tocha de Kaervek estiver na pilha, as mágicas que a visam custarão {2} a mais para serem conjuradas.<br>A Tocha de Kaervek causa X pontos de dano a qualquer alvo.</td>
+  </tr>
+  <tr>
+    <td>186</td>
+    <td>Lightning Reflexes</td>
+    <td>You may cast Lightning Reflexes as though it had flash. If you cast it any time a sorcery couldn't have been cast, the controller of the permanent it becomes sacrifices it at the beginning of the next cleanup step.<br>Enchant creature<br>Enchanted creature gets +1/+0 and has first strike.</td>
+    <td>Você pode lançar Reflexos Relâmpagos como se tivesse flash. Se você conjurá-lo a qualquer momento em que um feitiço não poderia ter sido conjurado, o controlador da permanente que ele se torna o sacrifica no início da próxima etapa de limpeza.<br>Encantar criatura<br>A criatura encantada recebe +1/+0 e tem iniciativa.</td>
+  </tr>
+  <tr>
+    <td>187</td>
+    <td>Pyric Salamander</td>
+    <td>{R}: Pyric Salamander gets +1/+0 until end of turn. Sacrifice Pyric Salamander at the beginning of the next end step.</td>
+    <td>{R}: Salamandra Pírica recebe +1/+0 até o final do turno. Sacrifique Pyric Salamander no início da próxima etapa final.</td>
+  </tr>
+  <tr>
+    <td>188</td>
+    <td>Raging Spirit</td>
+    <td>{2}: Raging Spirit becomes colorless until end of turn.</td>
+    <td>{2}: Espírito Furioso fica incolor até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>189</td>
+    <td>Reckless Embermage</td>
+    <td>{1}{R}: Reckless Embermage deals 1 damage to any target and 1 damage to itself.</td>
+    <td>{1}{R}: Reckless Embermage causa 1 ponto de dano a qualquer alvo e 1 ponto de dano a si mesmo.</td>
+  </tr>
+  <tr>
+    <td>190</td>
+    <td>Reign of Chaos</td>
+    <td>Choose one —<br>• Destroy target Plains and target white creature.<br>• Destroy target Island and target blue creature.</td>
+    <td>Escolha um -<br>• Destrua as Planícies alvo e a criatura branca alvo.<br>• Destrua a ilha alvo e a criatura azul alvo.</td>
+  </tr>
+  <tr>
+    <td>191</td>
+    <td>Searing Spear Askari</td>
+    <td>Flanking (Whenever a creature without flanking blocks this creature, the blocking creature gets -1/-1 until end of turn.)<br>{1}{R}: Searing Spear Askari gains menace until end of turn. (It can't be blocked except by two or more creatures.)</td>
+    <td>Flanquear (Toda vez que uma criatura sem flanquear bloqueia esta criatura, a criatura bloqueadora recebe -1/-1 até o final do turno.)<br>{1}{R}: Lança Abrasadora Askari ganha ameaça até o final do turno. (Não pode ser bloqueado exceto por duas ou mais criaturas.)</td>
+  </tr>
+  <tr>
+    <td>192</td>
+    <td>Sirocco</td>
+    <td>Target player reveals their hand. For each blue instant card revealed this way, that player discards that card unless they pay 4 life.</td>
+    <td>O jogador alvo revela sua mão. Para cada carta instantânea azul revelada desta forma, aquele jogador descarta aquela carta, a menos que pague 4 pontos de vida.</td>
+  </tr>
+  <tr>
+    <td>193</td>
+    <td>Spitting Earth</td>
+    <td>Spitting Earth deals damage to target creature equal to the number of Mountains you control.</td>
+    <td>Cuspir Terra causa à criatura alvo uma quantidade de dano igual ao número de Montanhas que você controla.</td>
+  </tr>
+  <tr>
+    <td>194</td>
+    <td>Stone Rain</td>
+    <td>Destroy target land.</td>
+    <td>Destrua o terreno alvo.</td>
+  </tr>
+  <tr>
+    <td>195</td>
+    <td>Subterranean Spirit</td>
+    <td>Protection from red<br>{T}: Subterranean Spirit deals 1 damage to each creature without flying.</td>
+    <td>Proteção contra vermelho<br>{T}: Espírito Subterrâneo causa 1 ponto de dano a cada criatura sem voar.</td>
+  </tr>
+  <tr>
+    <td>196</td>
+    <td>Talruum Minotaur</td>
+    <td>Haste</td>
+    <td>Pressa</td>
+  </tr>
+  <tr>
+    <td>197</td>
+    <td>Telim'Tor</td>
+    <td>Flanking (Whenever a creature without flanking blocks this creature, the blocking creature gets -1/-1 until end of turn.)<br>Whenever Telim'Tor attacks, all attacking creatures with flanking get +1/+1 until end of turn.</td>
+    <td>Flanquear (Toda vez que uma criatura sem flanquear bloqueia esta criatura, a criatura bloqueadora recebe -1/-1 até o final do turno.)<br>Sempre que Telim'Tor ataca, todas as criaturas atacantes com flanqueamento recebem +1/+1 até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>198</td>
+    <td>Telim'Tor's Edict</td>
+    <td>Exile target permanent you own or control.<br>Draw a card at the beginning of the next turn's upkeep.</td>
+    <td>Exile a permanente alvo que você possui ou controla.<br>Compre um card no início da manutenção do próximo turno.</td>
+  </tr>
+  <tr>
+    <td>199</td>
+    <td>Torrent of Lava</td>
+    <td>Torrent of Lava deals X damage to each creature without flying.<br>As long as Torrent of Lava is on the stack, each creature has "{T}: Prevent the next 1 damage that would be dealt to this creature by Torrent of Lava this turn."</td>
+    <td>Torrente de Lava causa X pontos de dano a cada criatura sem voar.<br>Enquanto Torrente de Lava estiver na pilha, cada criatura terá "{T}: Previne o próximo 1 ponto de dano que seria causado a esta criatura por Torrente de Lava neste turno."</td>
+  </tr>
+  <tr>
+    <td>200</td>
+    <td>Viashino Warrior</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>201</td>
+    <td>Volcanic Dragon</td>
+    <td>Flying, haste</td>
+    <td>Voando, pressa</td>
+  </tr>
+  <tr>
+    <td>202</td>
+    <td>Volcanic Geyser</td>
+    <td>Volcanic Geyser deals X damage to any target.</td>
+    <td>Gêiser Vulcânico causa X de dano a qualquer alvo.</td>
+  </tr>
+  <tr>
+    <td>203</td>
+    <td>Wildfire Emissary</td>
+    <td>Protection from white<br>{1}{R}: Wildfire Emissary gets +1/+0 until end of turn.</td>
+    <td>Proteção contra branco<br>{1}{R}: Emissário do Fogo Selvagem recebe +1/+0 até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>204</td>
+    <td>Zirilan of the Claw</td>
+    <td>{1}{R}{R}, {T}: Search your library for a Dragon permanent card, put that card onto the battlefield, then shuffle. That Dragon gains haste until end of turn. Exile it at the beginning of the next end step.</td>
+    <td>{1}{R}{R}, {T}: Procure em seu grimório por um card de permanente de Dragão, coloque aquele card no campo de batalha e depois embaralhe. Esse Dragão ganha ímpeto até o final do turno. Exile-o no início da próxima etapa final.</td>
+  </tr>
+  <tr>
+    <td>205</td>
+    <td>Afiya Grove</td>
+    <td>Afiya Grove enters the battlefield with three +1/+1 counters on it.<br>At the beginning of your upkeep, move a +1/+1 counter from Afiya Grove onto target creature.<br>When Afiya Grove has no +1/+1 counters on it, sacrifice it.</td>
+    <td>Afiya Grove entra no campo de batalha com três marcadores +1/+1.<br>No início de sua manutenção, mova um marcador +1/+1 de Afiya Grove para a criatura alvo.<br>Quando Afiya Grove não tiver marcadores +1/+1, sacrifique-o.</td>
+  </tr>
+  <tr>
+    <td>206</td>
+    <td>Armor of Thorns</td>
+    <td>You may cast Armor of Thorns as though it had flash. If you cast it any time a sorcery couldn't have been cast, the controller of the permanent it becomes sacrifices it at the beginning of the next cleanup step.<br>Enchant nonblack creature<br>Enchanted creature gets +2/+2.</td>
+    <td>Você pode lançar Armadura de Espinhos como se ela tivesse flash. Se você conjurá-lo a qualquer momento em que um feitiço não poderia ter sido conjurado, o controlador da permanente que ele se torna o sacrifica no início da próxima etapa de limpeza.<br>Encantar criatura não negra<br>A criatura encantada recebe +2/+2.</td>
+  </tr>
+  <tr>
+    <td>207</td>
+    <td>Barbed Foliage</td>
+    <td>Whenever a creature attacks you, it loses flanking until end of turn.<br>Whenever a creature without flying attacks you, Barbed Foliage deals 1 damage to it.</td>
+    <td>Sempre que uma criatura ataca você, ela perde flanquear até o final do turno.<br>Toda vez que uma criatura sem voar atacar você, Folhagem Farpada causa 1 ponto de dano a ela.</td>
+  </tr>
+  <tr>
+    <td>208</td>
+    <td>Brushwagg</td>
+    <td>Whenever Brushwagg blocks or becomes blocked, it gets -2/+2 until end of turn.</td>
+    <td>Sempre que Brushwagg bloqueia ou é bloqueado, ele recebe -2/+2 até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>209</td>
+    <td>Canopy Dragon</td>
+    <td>Trample<br>{1}{G}: Canopy Dragon gains flying and loses trample until end of turn.</td>
+    <td>Atropelar<br>{1}{G}: Dragão do Dossel ganha voar e perde atropelar até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>210</td>
+    <td>Crash of Rhinos</td>
+    <td>Trample</td>
+    <td>Atropelar</td>
+  </tr>
+  <tr>
+    <td>211</td>
+    <td>Cycle of Life</td>
+    <td>Return Cycle of Life to its owner's hand: Target creature you cast this turn has base power and toughness 0/1 until your next upkeep. At the beginning of your next upkeep, put a +1/+1 counter on that creature.</td>
+    <td>Devolva Ciclo de Vida para a mão de seu dono: A criatura alvo que você conjurou neste turno tem poder e resistência básicos 0/1 até sua próxima manutenção. No início de sua próxima manutenção, coloque um marcador +1/+1 naquela criatura.</td>
+  </tr>
+  <tr>
+    <td>212</td>
+    <td>Decomposition</td>
+    <td>Enchant black creature<br>Enchanted creature has "Cumulative upkeep—Pay 1 life." (At the beginning of its controller's upkeep, that player puts an age counter on it, then sacrifices it unless they pay its upkeep cost for each age counter on it.)<br>When enchanted creature dies, its controller loses 2 life.</td>
+    <td>Encantar criatura negra<br>A criatura encantada tem “Manutenção cumulativa – Pague 1 ponto de vida”. (No início da manutenção de seu controlador, aquele jogador coloca um marcador de idade nele e depois o sacrifica, a menos que pague seu custo de manutenção para cada marcador de idade nele.)<br>Quando a criatura encantada morre, seu controlador perde 2 pontos de vida.</td>
+  </tr>
+  <tr>
+    <td>213</td>
+    <td>Early Harvest</td>
+    <td>Target player untaps all basic lands they control.</td>
+    <td>O jogador alvo desvira todos os terrenos básicos que ele controla.</td>
+  </tr>
+  <tr>
+    <td>214</td>
+    <td>Fallow Earth</td>
+    <td>Put target land on top of its owner's library.</td>
+    <td>Coloque o terreno alvo no topo do grimório de seu dono.</td>
+  </tr>
+  <tr>
+    <td>215</td>
+    <td>Femeref Archers</td>
+    <td>{T}: Femeref Archers deals 4 damage to target attacking creature with flying.</td>
+    <td>{T}: Arqueiros Femeref causam 4 pontos de dano à criatura atacante alvo com voar.</td>
+  </tr>
+  <tr>
+    <td>216</td>
+    <td>Fog</td>
+    <td>Prevent all combat damage that would be dealt this turn.</td>
+    <td>Previne todo o dano de combate que seria causado neste turno.</td>
+  </tr>
+  <tr>
+    <td>217</td>
+    <td>Foratog</td>
+    <td>{G}, Sacrifice a Forest: Foratog gets +2/+2 until end of turn.</td>
+    <td>{G}, Sacrifique uma Floresta: Foratog recebe +2/+2 até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>218</td>
+    <td>Giant Mantis</td>
+    <td>Reach (This creature can block creatures with flying.)</td>
+    <td>Alcance (Esta criatura pode bloquear criaturas com voar.)</td>
+  </tr>
+  <tr>
+    <td>219</td>
+    <td>Gibbering Hyenas</td>
+    <td>Gibbering Hyenas can't block black creatures.</td>
+    <td>Hienas tagarelas não podem bloquear criaturas pretas.</td>
+  </tr>
+  <tr>
+    <td>220</td>
+    <td>Granger Guildmage</td>
+    <td>{R}, {T}: Granger Guildmage deals 1 damage to any target and 1 damage to you.<br>{W}, {T}: Target creature gains first strike until end of turn.</td>
+    <td>{R}, {T}: Granger Guildmage causa 1 ponto de dano a qualquer alvo e 1 ponto de dano a você.<br>{W}, {T}: A criatura alvo ganha iniciativa até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>221</td>
+    <td>Hall of Gemstone</td>
+    <td>At the beginning of each player's upkeep, that player chooses a color. Until end of turn, lands tapped for mana produce mana of the chosen color instead of any other color.</td>
+    <td>No início da manutenção de cada jogador, aquele jogador escolhe uma cor. Até o final do turno, os terrenos virados para gerar mana produzem mana da cor escolhida em vez de qualquer outra cor.</td>
+  </tr>
+  <tr>
+    <td>222</td>
+    <td>Jolrael's Centaur</td>
+    <td>Shroud (This creature can't be the target of spells or abilities.)<br>Flanking (Whenever a creature without flanking blocks this creature, the blocking creature gets -1/-1 until end of turn.)</td>
+    <td>Mortalha (Esta criatura não pode ser alvo de mágicas ou habilidades.)<br>Flanquear (Toda vez que uma criatura sem flanquear bloqueia esta criatura, a criatura bloqueadora recebe -1/-1 até o final do turno.)</td>
+  </tr>
+  <tr>
+    <td>223</td>
+    <td>Jungle Patrol</td>
+    <td>{1}{G}, {T}: Create a 0/1 green Wall creature token with defender named Wood.<br>Sacrifice a token named Wood: Add {R}.</td>
+    <td>{1}{G}, {T}: Crie uma ficha de criatura verde 0/1 do tipo Barreira com defensor chamado Madeira.<br>Sacrifique uma ficha chamada Madeira: Adicione {R}.</td>
+  </tr>
+  <tr>
+    <td>224</td>
+    <td>Jungle Wurm</td>
+    <td>Whenever Jungle Wurm becomes blocked, it gets -1/-1 until end of turn for each creature blocking it beyond the first.</td>
+    <td>Sempre que Jungle Wurm for bloqueado, ele receberá -1/-1 até o final do turno para cada criatura que o bloquear além da primeira.</td>
+  </tr>
+  <tr>
+    <td>225</td>
+    <td>Karoo Meerkat</td>
+    <td>Protection from blue</td>
+    <td>Proteção contra o azul</td>
+  </tr>
+  <tr>
+    <td>226</td>
+    <td>Locust Swarm</td>
+    <td>Flying<br>{G}: Regenerate Locust Swarm.<br>{G}: Untap Locust Swarm. Activate only once each turn.</td>
+    <td>Vôo<br>{G}: Regenera Enxame de Gafanhotos.<br>{G}: Desvire Enxame de Gafanhotos. Ative apenas uma vez em cada turno.</td>
+  </tr>
+  <tr>
+    <td>227</td>
+    <td>Lure of Prey</td>
+    <td>Cast this spell only if an opponent cast a creature spell this turn.<br>You may put a green creature card from your hand onto the battlefield.</td>
+    <td>Conjure esta mágica somente se um oponente conjurar uma mágica de criatura neste turno.<br>Você pode colocar um card de criatura verde de sua mão no campo de batalha.</td>
+  </tr>
+  <tr>
+    <td>228</td>
+    <td>Maro</td>
+    <td>Maro's power and toughness are each equal to the number of cards in your hand.</td>
+    <td>O poder e a resistência de Maro são iguais ao número de cartas em sua mão.</td>
+  </tr>
+  <tr>
+    <td>229</td>
+    <td>Mindbender Spores</td>
+    <td>Defender (This creature can't attack.)<br>Flying<br>Whenever Mindbender Spores blocks a creature, put four fungus counters on that creature. The creature gains "This creature doesn't untap during your untap step if it has a fungus counter on it" and "At the beginning of your upkeep, remove a fungus counter from this creature."</td>
+    <td>Defensor (Esta criatura não pode atacar.)<br>Vôo<br>Toda vez que Mindbender Spores bloquear uma criatura, coloque quatro marcadores de fungo naquela criatura. A criatura ganha “Esta criatura não desvira durante sua etapa de desvirar se tiver um marcador de fungo” e “No início de sua manutenção, remova um marcador de fungo desta criatura”.</td>
+  </tr>
+  <tr>
+    <td>230</td>
+    <td>Mtenda Lion</td>
+    <td>Whenever Mtenda Lion attacks, defending player may pay {U}. If that player does, prevent all combat damage that would be dealt by Mtenda Lion this turn.</td>
+    <td>Sempre que Leão Mtenda atacar, o jogador defensor pode pagar {U}. Se aquele jogador o fizer, previne todo o dano de combate que seria causado por Mtenda Lion neste turno.</td>
+  </tr>
+  <tr>
+    <td>231</td>
+    <td>Natural Balance</td>
+    <td>Each player who controls six or more lands chooses five lands they control and sacrifices the rest. Each player who controls four or fewer lands may search their library for up to X basic land cards and put them onto the battlefield, where X is five minus the number of lands they control. Then each player who searched their library this way shuffles.</td>
+    <td>Cada jogador que controla seis ou mais terrenos escolhe cinco terrenos que controla e sacrifica o restante. Cada jogador que controla quatro ou menos terrenos pode procurar em seu grimório por até X cards de terreno básico e colocá-los no campo de batalha, onde X é cinco menos o número de terrenos que ele controla. Então cada jogador que pesquisou seu grimório dessa forma embaralha.</td>
+  </tr>
+  <tr>
+    <td>232</td>
+    <td>Nettletooth Djinn</td>
+    <td>At the beginning of your upkeep, Nettletooth Djinn deals 1 damage to you.</td>
+    <td>No início de sua manutenção, Nettletooth Djinn causa 1 ponto de dano a você.</td>
+  </tr>
+  <tr>
+    <td>233</td>
+    <td>Preferred Selection</td>
+    <td>At the beginning of your upkeep, look at the top two cards of your library. You may sacrifice Preferred Selection and pay {2}{G}{G}. If you do, put one of those cards into your hand. If you don't, put one of those cards on the bottom of your library.</td>
+    <td>No início de sua manutenção, olhe os dois cards do topo de seu grimório. Você pode sacrificar a Seleção Preferencial e pagar {2}{G}{G}. Se fizer isso, coloque uma dessas cartas em sua mão. Caso contrário, coloque um desses cards no fundo do seu grimório.</td>
+  </tr>
+  <tr>
+    <td>234</td>
+    <td>Quirion Elves</td>
+    <td>As Quirion Elves enters the battlefield, choose a color.<br>{T}: Add {G}.<br>{T}: Add one mana of the chosen color.</td>
+    <td>Conforme Quirion Elves entra no campo de batalha, escolha uma cor.<br>{T}: Adicione {G}.<br>{T}: Adiciona um mana da cor escolhida.</td>
+  </tr>
+  <tr>
+    <td>235</td>
+    <td>Rampant Growth</td>
+    <td>Search your library for a basic land card, put that card onto the battlefield tapped, then shuffle.</td>
+    <td>Procure em seu grimório por um card de terreno básico, coloque-o no campo de batalha virado e depois embaralhe.</td>
+  </tr>
+  <tr>
+    <td>236</td>
+    <td>Regeneration</td>
+    <td>Enchant creature (Target a creature as you cast this. This card enters the battlefield attached to that creature.)<br>{G}: Regenerate enchanted creature. (The next time that creature would be destroyed this turn, it isn't. Instead tap it, remove all damage from it, and remove it from combat.)</td>
+    <td>Encantar criatura (Escolha uma criatura ao conjurar este card. Este card entra no campo de batalha anexado àquela criatura.)<br>{G}: Regenera a criatura encantada. (Na próxima vez que aquela criatura seria destruída neste turno, ela não será. Em vez disso, vire-a, remova todo o dano dela e remova-a do combate.)</td>
+  </tr>
+  <tr>
+    <td>237</td>
+    <td>Roots of Life</td>
+    <td>As Roots of Life enters the battlefield, choose Island or Swamp.<br>Whenever a land of the chosen type an opponent controls becomes tapped, you gain 1 life.</td>
+    <td>Conforme Raízes da Vida entra no campo de batalha, escolha Ilha ou Pântano.<br>Toda vez que um terreno do tipo escolhido que um oponente controla for virado, você ganha 1 ponto de vida.</td>
+  </tr>
+  <tr>
+    <td>238</td>
+    <td>Sabertooth Cobra</td>
+    <td>Whenever Sabertooth Cobra deals damage to a player, that player gets a poison counter. The player gets another poison counter at the beginning of their next upkeep unless they pay {2} before that step. (A player with ten or more poison counters loses the game.)</td>
+    <td>Sempre que Sabertooth Cobra causa dano a um jogador, esse jogador recebe um marcador de veneno. O jogador recebe outro marcador de veneno no início de sua próxima manutenção, a menos que pague {2} antes dessa etapa. (Um jogador com dez ou mais marcadores de veneno perde o jogo.)</td>
+  </tr>
+  <tr>
+    <td>239</td>
+    <td>Sandstorm</td>
+    <td>Sandstorm deals 1 damage to each attacking creature.</td>
+    <td>Tempestade de Areia causa 1 ponto de dano a cada criatura atacante.</td>
+  </tr>
+  <tr>
+    <td>240</td>
+    <td>Seedling Charm</td>
+    <td>Choose one —<br>• Return target Aura attached to a creature to its owner's hand.<br>• Regenerate target green creature.<br>• Target creature gains trample until end of turn.</td>
+    <td>Escolha um -<br>• Devolva a Aura alvo anexada a uma criatura para a mão de seu dono.<br>• Regenere a criatura verde alvo.<br>• A criatura alvo ganha atropelar até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>241</td>
+    <td>Seeds of Innocence</td>
+    <td>Destroy all artifacts. They can't be regenerated. The controller of each of those artifacts gains life equal to its mana value.</td>
+    <td>Destrua todos os artefatos. Eles não podem ser regenerados. O controlador de cada um desses artefatos ganha uma quantidade de pontos de vida igual ao seu valor de mana.</td>
+  </tr>
+  <tr>
+    <td>242</td>
+    <td>Serene Heart</td>
+    <td>Destroy all Auras.</td>
+    <td>Destrua todas as Auras.</td>
+  </tr>
+  <tr>
+    <td>243</td>
+    <td>Stalking Tiger</td>
+    <td>Stalking Tiger can't be blocked by more than one creature.</td>
+    <td>Stalking Tiger não pode ser bloqueado por mais de uma criatura.</td>
+  </tr>
+  <tr>
+    <td>244</td>
+    <td>Superior Numbers</td>
+    <td>Superior Numbers deals damage to target creature equal to the number of creatures you control in excess of the number of creatures target opponent controls.</td>
+    <td>Números Superiores causa dano à criatura alvo igual ao número de criaturas que você controla além do número de criaturas que o oponente alvo controla.</td>
+  </tr>
+  <tr>
+    <td>245</td>
+    <td>Tranquil Domain</td>
+    <td>Destroy all non-Aura enchantments.</td>
+    <td>Destrua todos os encantamentos que não sejam da Aura.</td>
+  </tr>
+  <tr>
+    <td>246</td>
+    <td>Tropical Storm</td>
+    <td>Tropical Storm deals X damage to each creature with flying and 1 additional damage to each blue creature.</td>
+    <td>Tempestade Tropical causa X pontos de dano a cada criatura com voar e 1 dano adicional a cada criatura azul.</td>
+  </tr>
+  <tr>
+    <td>247</td>
+    <td>Uktabi Faerie</td>
+    <td>Flying<br>{3}{G}, Sacrifice Uktabi Faerie: Destroy target artifact.</td>
+    <td>Vôo<br>{3}{G}, Sacrifique Fada Uktabi: Destrua o artefato alvo.</td>
+  </tr>
+  <tr>
+    <td>248</td>
+    <td>Uktabi Wildcats</td>
+    <td>Uktabi Wildcats's power and toughness are each equal to the number of Forests you control.<br>{G}, Sacrifice a Forest: Regenerate Uktabi Wildcats.</td>
+    <td>O poder e a resistência dos Uktabi Wildcats são iguais ao número de Florestas que você controla.<br>{G}, Sacrifique uma Floresta: Regenera Gatos Selvagens Uktabi.</td>
+  </tr>
+  <tr>
+    <td>249</td>
+    <td>Unseen Walker</td>
+    <td>Forestwalk (This creature can't be blocked as long as defending player controls a Forest.)<br>{1}{G}{G}: Target creature gains forestwalk until end of turn.</td>
+    <td>Forestwalk (Esta criatura não pode ser bloqueada enquanto o jogador defensor controlar uma Floresta.)<br>{1}{G}{G}: A criatura alvo ganha travessia na floresta até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>250</td>
+    <td>Unyaro Bee Sting</td>
+    <td>Unyaro Bee Sting deals 2 damage to any target.</td>
+    <td>Unyaro Bee Sting causa 2 pontos de dano a qualquer alvo.</td>
+  </tr>
+  <tr>
+    <td>251</td>
+    <td>Village Elder</td>
+    <td>{G}, {T}, Sacrifice a Forest: Regenerate target creature.</td>
+    <td>{G}, {T}, Sacrifique uma Floresta: Regenera a criatura alvo.</td>
+  </tr>
+  <tr>
+    <td>252</td>
+    <td>Waiting in the Weeds</td>
+    <td>Each player creates a 1/1 green Cat creature token for each untapped Forest they control.</td>
+    <td>Cada jogador cria uma ficha de criatura verde 1/1 do tipo Gato para cada Floresta desvirada que ele controla.</td>
+  </tr>
+  <tr>
+    <td>253</td>
+    <td>Wall of Roots</td>
+    <td>Defender<br>Put a -0/-1 counter on Wall of Roots: Add {G}. Activate only once each turn.</td>
+    <td>Defensor<br>Coloque um marcador -0/-1 em Muralha de Raízes: Adicione {G}. Ative apenas uma vez em cada turno.</td>
+  </tr>
+  <tr>
+    <td>254</td>
+    <td>Wild Elephant</td>
+    <td>Trample</td>
+    <td>Atropelar</td>
+  </tr>
+  <tr>
+    <td>255</td>
+    <td>Worldly Tutor</td>
+    <td>Search your library for a creature card, reveal it, then shuffle and put the card on top.</td>
+    <td>Procure um card de criatura em seu grimório, revele-o, depois embaralhe e coloque o card no topo.</td>
+  </tr>
+  <tr>
+    <td>256</td>
+    <td>Asmira, Holy Avenger</td>
+    <td>Flying<br>At the beginning of each end step, put a +1/+1 counter on Asmira, Holy Avenger for each creature put into your graveyard from the battlefield this turn.</td>
+    <td>Vôo<br>No início de cada etapa final, coloque um marcador +1/+1 em Asmira, Vingadora Sagrada para cada criatura colocada em seu cemitério vinda do campo de batalha neste turno.</td>
+  </tr>
+  <tr>
+    <td>257</td>
+    <td>Benthic Djinn</td>
+    <td>Islandwalk (This creature can't be blocked as long as defending player controls an Island.)<br>At the beginning of your upkeep, you lose 2 life.</td>
+    <td>Islandwalk (Esta criatura não pode ser bloqueada enquanto o jogador defensor controlar uma Ilha.)<br>No início de sua manutenção, você perde 2 pontos de vida.</td>
+  </tr>
+  <tr>
+    <td>258</td>
+    <td>Cadaverous Bloom</td>
+    <td>Exile a card from your hand: Add {B}{B} or {G}{G}.</td>
+    <td>Exile um card da sua mão: Adicione {B}{B} ou {G}{G}.</td>
+  </tr>
+  <tr>
+    <td>259</td>
+    <td>Circle of Despair</td>
+    <td>{1}, Sacrifice a creature: The next time a source of your choice would deal damage to any target this turn, prevent that damage.</td>
+    <td>{1}, Sacrifique uma criatura: Na próxima vez que uma fonte à sua escolha fosse causar dano a qualquer alvo neste turno, previna aquele dano.</td>
+  </tr>
+  <tr>
+    <td>260</td>
+    <td>Delirium</td>
+    <td>Cast this spell only during an opponent's turn.<br>Tap target creature that player controls. That creature deals damage equal to its power to the player. Prevent all combat damage that would be dealt to and dealt by the creature this turn.</td>
+    <td>Lance este feitiço apenas durante o turno de um oponente.<br>Vire a criatura alvo que o jogador controla. Aquela criatura causa dano igual ao seu poder ao jogador. Previne todo o dano de combate que seria causado e causado pela criatura neste turno.</td>
+  </tr>
+  <tr>
+    <td>261</td>
+    <td>Discordant Spirit</td>
+    <td>At the beginning of each end step, if it's an opponent's turn, put a +1/+1 counter on Discordant Spirit for each 1 damage dealt to you this turn.<br>At the beginning of your end step, remove all +1/+1 counters from Discordant Spirit.</td>
+    <td>No início de cada etapa final, se for o turno de um oponente, coloque um marcador +1/+1 em Espírito Discordante para cada 1 de dano causado a você neste turno.<br>No início de sua etapa final, remova todos os marcadores +1/+1 de Discordant Spirit.</td>
+  </tr>
+  <tr>
+    <td>262</td>
+    <td>Emberwilde Caliph</td>
+    <td>Flying, trample<br>Emberwilde Caliph attacks each combat if able.<br>Whenever Emberwilde Caliph deals damage, you lose that much life.</td>
+    <td>Voando, atropelar<br>Califa Emberwilde ataca a cada combate se estiver apto.<br>Sempre que Emberwilde Caliph causa dano, você perde essa mesma quantidade de pontos de vida.</td>
+  </tr>
+  <tr>
+    <td>263</td>
+    <td>Energy Bolt</td>
+    <td>Choose one —<br>• Energy Bolt deals X damage to target player or planeswalker.<br>• Target player gains X life.</td>
+    <td>Escolha um -<br>• Energy Bolt causa X pontos de dano ao jogador ou planeswalker alvo.<br>• O jogador alvo ganha X pontos de vida.</td>
+  </tr>
+  <tr>
+    <td>264</td>
+    <td>Frenetic Efreet</td>
+    <td>Flying<br>{0}: Flip a coin. If you win the flip, Frenetic Efreet phases out. If you lose the flip, sacrifice Frenetic Efreet. (While it's phased out, it's treated as though it doesn't exist. It phases in before you untap during your next untap step.)</td>
+    <td>Vôo<br>{0}: Jogue uma moeda. Se você vencer, Frenetic Efreet desaparece. Se você perder, sacrifique Efreet Frenético. (Enquanto estiver desvirado, é tratado como se não existisse. Ele entra em fase antes de você desvirar durante sua próxima etapa de desvirar.)</td>
+  </tr>
+  <tr>
+    <td>265</td>
+    <td>Grim Feast</td>
+    <td>At the beginning of your upkeep, Grim Feast deals 1 damage to you.<br>Whenever a creature is put into an opponent's graveyard from the battlefield, you gain life equal to its toughness.</td>
+    <td>No início de sua manutenção, Grim Feast causa 1 ponto de dano a você.<br>Toda vez que uma criatura é colocada no cemitério de um oponente vinda do campo de batalha, você ganha pontos de vida iguais à sua resistência.</td>
+  </tr>
+  <tr>
+    <td>266</td>
+    <td>Harbor Guardian</td>
+    <td>Reach (This creature can block creatures with flying.)<br>Whenever Harbor Guardian attacks, defending player may draw a card.</td>
+    <td>Alcance (Esta criatura pode bloquear criaturas com voar.)<br>Sempre que o Guardião do Porto atacar, o jogador defensor pode comprar uma carta.</td>
+  </tr>
+  <tr>
+    <td>267</td>
+    <td>Haunting Apparition</td>
+    <td>Flying<br>As Haunting Apparition enters the battlefield, choose an opponent.<br>Haunting Apparition's power is equal to 1 plus the number of green creature cards in the chosen player's graveyard.</td>
+    <td>Vôo<br>Conforme Haunting Apparition entra no campo de batalha, escolha um oponente.<br>O poder de Haunting Apparition é igual a 1 mais o número de cards de criatura verdes no cemitério do jogador escolhido.</td>
+  </tr>
+  <tr>
+    <td>268</td>
+    <td>Hazerider Drake</td>
+    <td>Flying, protection from red</td>
+    <td>Voando, proteção contra o vermelho</td>
+  </tr>
+  <tr>
+    <td>269</td>
+    <td>Jungle Troll</td>
+    <td>{R}: Regenerate Jungle Troll.<br>{G}: Regenerate Jungle Troll.</td>
+    <td>{R}: Regenera Troll da Selva.<br>{G}: Regenera Troll da Selva.</td>
+  </tr>
+  <tr>
+    <td>270</td>
+    <td>Kaervek's Purge</td>
+    <td>Destroy target creature with mana value X. If that creature dies this way, Kaervek's Purge deals damage equal to the creature's power to the creature's controller.</td>
+    <td>Destrua a criatura alvo com valor de mana X. Se aquela criatura morrer desta forma, a Purificação de Kaervek causa dano igual ao poder da criatura ao controlador da criatura.</td>
+  </tr>
+  <tr>
+    <td>271</td>
+    <td>Leering Gargoyle</td>
+    <td>Flying<br>{T}: Leering Gargoyle gets -2/+2 and loses flying until end of turn.</td>
+    <td>Vôo<br>{T}: Leering Gargoyle recebe -2/+2 e perde voar até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>272</td>
+    <td>Malignant Growth</td>
+    <td>Cumulative upkeep {1} (At the beginning of your upkeep, put an age counter on this permanent, then sacrifice it unless you pay its upkeep cost for each age counter on it.)<br>At the beginning of your upkeep, put a growth counter on Malignant Growth.<br>At the beginning of each opponent's draw step, that player draws an additional card for each growth counter on Malignant Growth, then Malignant Growth deals damage to the player equal to the number of cards they drew this way.</td>
+    <td>Manutenção cumulativa {1} (No início de sua manutenção, coloque um marcador de tempo nesta permanente e depois sacrifique-a, a menos que você pague seu custo de manutenção para cada marcador de tempo nela.)<br>No início de sua manutenção, coloque um marcador de crescimento em Crescimento Maligno.<br>No início da etapa de compra de cada oponente, aquele jogador compra uma carta adicional para cada marcador de crescimento em Crescimento Maligno e, em seguida, Crescimento Maligno causa dano ao jogador igual ao número de cartas que ele comprou dessa forma.</td>
+  </tr>
+  <tr>
+    <td>273</td>
+    <td>Phyrexian Purge</td>
+    <td>This spell costs 3 life more to cast for each target.<br>Destroy any number of target creatures.</td>
+    <td>Este feitiço custa 3 pontos de vida a mais para ser lançado para cada alvo.<br>Destrua qualquer número de criaturas alvo.</td>
+  </tr>
+  <tr>
+    <td>274</td>
+    <td>Prismatic Boon</td>
+    <td>Choose a color. X target creatures gain protection from the chosen color until end of turn.</td>
+    <td>Escolha uma cor. X criaturas alvo ganham proteção contra a cor escolhida até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>275</td>
+    <td>Purgatory</td>
+    <td>Whenever a nontoken creature is put into your graveyard from the battlefield, exile that card.<br>At the beginning of your upkeep, you may pay {4} and 2 life. If you do, return a card exiled with Purgatory to the battlefield.</td>
+    <td>Toda vez que uma criatura que não seja uma ficha for colocada em seu cemitério vinda do campo de batalha, exile aquele card.<br>No início de sua manutenção, você pode pagar {4} e 2 pontos de vida. Se fizer isso, devolva ao campo de batalha um card exilado com Purgatório.</td>
+  </tr>
+  <tr>
+    <td>276</td>
+    <td>Radiant Essence</td>
+    <td>Radiant Essence gets +1/+2 as long as an opponent controls a black permanent.</td>
+    <td>Essência Radiante recebe +1/+2 enquanto um oponente controlar uma permanente preta.</td>
+  </tr>
+  <tr>
+    <td>277</td>
+    <td>Reflect Damage</td>
+    <td>The next time a source of your choice would deal damage this turn, that damage is dealt to that source's controller instead.</td>
+    <td>Na próxima vez que uma fonte de sua escolha fosse causar dano neste turno, esse dano será causado ao controlador daquela fonte.</td>
+  </tr>
+  <tr>
+    <td>278</td>
+    <td>Reparations</td>
+    <td>Whenever an opponent casts a spell that targets you or a creature you control, you may draw a card.</td>
+    <td>Toda vez que um oponente conjurar uma mágica que tenha como alvo você ou uma criatura que você controla, você pode comprar um card.</td>
+  </tr>
+  <tr>
+    <td>279</td>
+    <td>Rock Basilisk</td>
+    <td>Whenever Rock Basilisk blocks or becomes blocked by a non-Wall creature, destroy that creature at end of combat.</td>
+    <td>Toda vez que Rock Basilisk bloquear ou for bloqueado por uma criatura que não seja Muralha, destrua aquela criatura no final do combate.</td>
+  </tr>
+  <tr>
+    <td>280</td>
+    <td>Savage Twister</td>
+    <td>Savage Twister deals X damage to each creature.</td>
+    <td>Savage Twister causa X pontos de dano a cada criatura.</td>
+  </tr>
+  <tr>
+    <td>280†</td>
+    <td>Savage Twister</td>
+    <td>Savage Twister deals X damage to each creature.</td>
+    <td>Savage Twister causa X pontos de dano a cada criatura.</td>
+  </tr>
+  <tr>
+    <td>281</td>
+    <td>Sawback Manticore</td>
+    <td>{4}: Sawback Manticore gains flying until end of turn.<br>{1}: Sawback Manticore deals 2 damage to target attacking or blocking creature. Activate only if Sawback Manticore is attacking or blocking and only once each turn.</td>
+    <td>{4}: Sawback Manticore ganha voar até o final do turno.<br>{1}: Sawback Manticore causa 2 pontos de dano à criatura atacante ou bloqueadora alvo. Ative apenas se Sawback Manticore estiver atacando ou bloqueando e apenas uma vez por turno.</td>
+  </tr>
+  <tr>
+    <td>282</td>
+    <td>Sealed Fate</td>
+    <td>Look at the top X cards of target opponent's library. Exile one of those cards and put the rest back on top of that player's library in any order.</td>
+    <td>Olhe os X cards do topo do grimório do oponente alvo. Exile um desses cards e coloque o restante de volta no topo do grimório daquele jogador em qualquer ordem.</td>
+  </tr>
+  <tr>
+    <td>283</td>
+    <td>Shauku's Minion</td>
+    <td>{B}{R}, {T}: Shauku's Minion deals 2 damage to target white creature.</td>
+    <td>{B}{R}, {T}: O Minion de Shauku causa 2 pontos de dano à criatura branca alvo.</td>
+  </tr>
+  <tr>
+    <td>284</td>
+    <td>Spatial Binding</td>
+    <td>Pay 1 life: Until your next upkeep, target permanent can't phase out.</td>
+    <td>Pague 1 ponto de vida: Até sua próxima manutenção, a permanente alvo não pode ser eliminada.</td>
+  </tr>
+  <tr>
+    <td>285</td>
+    <td>Unfulfilled Desires</td>
+    <td>{1}, Pay 1 life: Draw a card, then discard a card.</td>
+    <td>{1}, pague 1 ponto de vida: Compre um card e depois descarte um card.</td>
+  </tr>
+  <tr>
+    <td>286</td>
+    <td>Vitalizing Cascade</td>
+    <td>You gain X plus 3 life.</td>
+    <td>Você ganha X mais 3 pontos de vida.</td>
+  </tr>
+  <tr>
+    <td>287</td>
+    <td>Warping Wurm</td>
+    <td>Phasing (This phases in or out before you untap during each of your untap steps. While it's phased out, it's treated as though it doesn't exist.)<br>At the beginning of your upkeep, Warping Wurm phases out unless you pay {2}{G}{U}.<br>Whenever Warping Wurm phases in, put a +1/+1 counter on it.</td>
+    <td>Fase (Isso entra ou sai antes de você desvirar durante cada uma de suas etapas de desvirar. Enquanto é desvirado, é tratado como se não existisse.)<br>No início de sua manutenção, Vorme Teleportante desaparece gradualmente, a menos que você pague {2}{G}{U}.<br>Toda vez que Warping Wurm entrar em fase, coloque um marcador +1/+1 nele.</td>
+  </tr>
+  <tr>
+    <td>288</td>
+    <td>Wellspring</td>
+    <td>Enchant land<br>When Wellspring enters the battlefield, gain control of enchanted land until end of turn.<br>At the beginning of your upkeep, untap enchanted land. You gain control of that land until end of turn.</td>
+    <td>Encantar terra<br>Quando Wellspring entrar no campo de batalha, ganhe o controle do terreno encantado até o final do turno.<br>No início de sua manutenção, desvire o terreno encantado. Você ganha o controle daquele terreno até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>289</td>
+    <td>Windreaper Falcon</td>
+    <td>Flying, protection from blue</td>
+    <td>Voando, proteção contra o azul</td>
+  </tr>
+  <tr>
+    <td>290</td>
+    <td>Zebra Unicorn</td>
+    <td>Whenever Zebra Unicorn deals damage, you gain that much life.</td>
+    <td>Sempre que Zebra Unicorn causa dano, você ganha aquela mesma quantidade de pontos de vida.</td>
+  </tr>
+  <tr>
+    <td>291</td>
+    <td>Acidic Dagger</td>
+    <td>{4}, {T}: Whenever target creature deals combat damage to a non-Wall creature this turn, destroy that non-Wall creature. When the targeted creature leaves the battlefield this turn, sacrifice Acidic Dagger. Activate only before blockers are declared.</td>
+    <td>{4}, {T}: Toda vez que a criatura alvo causar dano de combate a uma criatura que não seja Barreira neste turno, destrua aquela criatura que não seja Barreira. Quando a criatura alvo deixar o campo de batalha neste turno, sacrifique Acidic Dagger. Ative somente antes que os bloqueadores sejam declarados.</td>
+  </tr>
+  <tr>
+    <td>292</td>
+    <td>Amber Prison</td>
+    <td>You may choose not to untap Amber Prison during your untap step.<br>{4}, {T}: Tap target artifact, creature, or land. That permanent doesn't untap during its controller's untap step for as long as Amber Prison remains tapped.</td>
+    <td>Você pode optar por não desvirar Amber Prison durante sua etapa de desvirar.<br>{4}, {T}: Vire o artefato, criatura ou terreno alvo. Essa permanente não desvira durante a etapa de desvirar de seu controlador enquanto Amber Prison permanecer virada.</td>
+  </tr>
+  <tr>
+    <td>293</td>
+    <td>Amulet of Unmaking</td>
+    <td>{5}, {T}, Exile Amulet of Unmaking: Exile target artifact, creature, or land. Activate only as a sorcery.</td>
+    <td>{5}, {T}, Exile Amulet of Unmaking: Exile o artefato, a criatura ou o terreno alvo. Ative apenas como um feitiço.</td>
+  </tr>
+  <tr>
+    <td>294</td>
+    <td>Basalt Golem</td>
+    <td>Basalt Golem can't be blocked by artifact creatures.<br>Whenever Basalt Golem becomes blocked by a creature, that creature's controller sacrifices it at end of combat. If the player does, they create a 0/2 colorless Wall artifact creature token with defender.</td>
+    <td>Basalt Golem não pode ser bloqueado por criaturas artefato.<br>Toda vez que Basalt Golem for bloqueado por uma criatura, o controlador daquela criatura o sacrifica no final do combate. Se o jogador fizer isso, ele cria uma ficha de criatura artefato incolor 0/2 do tipo Muralha com defensor.</td>
+  </tr>
+  <tr>
+    <td>295</td>
+    <td>Bone Mask</td>
+    <td>{2}, {T}: The next time a source of your choice would deal damage to you this turn, prevent that damage. Exile cards from the top of your library equal to the damage prevented this way.</td>
+    <td>{2}, {T}: Na próxima vez que uma fonte à sua escolha fosse causar dano a você neste turno, previna aquele dano. Exile cards do topo do seu grimório igual ao dano evitado dessa forma.</td>
+  </tr>
+  <tr>
+    <td>296</td>
+    <td>Charcoal Diamond</td>
+    <td>Charcoal Diamond enters the battlefield tapped.<br>{T}: Add {B}.</td>
+    <td>Charcoal Diamond entra no campo de batalha virado.<br>{T}: Adicione {B}.</td>
+  </tr>
+  <tr>
+    <td>297</td>
+    <td>Chariot of the Sun</td>
+    <td>{2}, {T}: Until end of turn, target creature you control gains flying and has base toughness 1.</td>
+    <td>{2}, {T}: Até o final do turno, a criatura alvo que você controla ganha voar e tem resistência base 1.</td>
+  </tr>
+  <tr>
+    <td>298</td>
+    <td>Crystal Golem</td>
+    <td>At the beginning of your end step, Crystal Golem phases out. (While it's phased out, it's treated as though it doesn't exist. It phases in before you untap during your next untap step.)</td>
+    <td>No início de sua etapa final, Crystal Golem desaparece. (Enquanto estiver desvirado, é tratado como se não existisse. Ele entra em fase antes de você desvirar durante sua próxima etapa de desvirar.)</td>
+  </tr>
+  <tr>
+    <td>299</td>
+    <td>Cursed Totem</td>
+    <td>Activated abilities of creatures can't be activated.</td>
+    <td>Habilidades ativadas de criaturas não podem ser ativadas.</td>
+  </tr>
+  <tr>
+    <td>300</td>
+    <td>Elixir of Vitality</td>
+    <td>Elixir of Vitality enters the battlefield tapped.<br>{T}, Sacrifice Elixir of Vitality: You gain 4 life.<br>{8}, {T}, Sacrifice Elixir of Vitality: You gain 8 life.</td>
+    <td>Elixir da Vitalidade entra no campo de batalha virado.<br>{T}, Sacrifique Elixir de Vitalidade: Você ganha 4 pontos de vida.<br>{8}, {T}, sacrifique Elixir de Vitalidade: Você ganha 8 pontos de vida.</td>
+  </tr>
+  <tr>
+    <td>301</td>
+    <td>Ersatz Gnomes</td>
+    <td>{T}: Target spell becomes colorless.<br>{T}: Target permanent becomes colorless until end of turn.</td>
+    <td>{T}: O feitiço alvo fica incolor.<br>{T}: A permanente alvo fica incolor até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>302</td>
+    <td>Fire Diamond</td>
+    <td>Fire Diamond enters the battlefield tapped.<br>{T}: Add {R}.</td>
+    <td>Fire Diamond entra no campo de batalha virado.<br>{T}: Adicione {R}.</td>
+  </tr>
+  <tr>
+    <td>303</td>
+    <td>Grinning Totem</td>
+    <td>{2}, {T}, Sacrifice Grinning Totem: Search target opponent's library for a card and exile it. Then that player shuffles. Until the beginning of your next upkeep, you may play that card. At the beginning of your next upkeep, if you haven't played it, put it into its owner's graveyard.</td>
+    <td>{2}, {T}, Sacrifique Totem Sorridente: Procure um card no grimório do oponente alvo e exile-o. Então esse jogador embaralha. Até o início de sua próxima manutenção, você pode jogar aquela carta. No início de sua próxima manutenção, se você ainda não o tiver jogado, coloque-o no cemitério de seu dono.</td>
+  </tr>
+  <tr>
+    <td>304</td>
+    <td>Horrible Hordes</td>
+    <td>Rampage 1 (Whenever this creature becomes blocked, it gets +1/+1 until end of turn for each creature blocking it beyond the first.)</td>
+    <td>Fúria 1 (Sempre que esta criatura for bloqueada, ela receberá +1/+1 até o final do turno para cada criatura que a bloquear além da primeira.)</td>
+  </tr>
+  <tr>
+    <td>305</td>
+    <td>Igneous Golem</td>
+    <td>{2}: Igneous Golem gains trample until end of turn.</td>
+    <td>{2}: Golem Ígneo ganha atropelar até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>306</td>
+    <td>Lead Golem</td>
+    <td>Whenever Lead Golem attacks, it doesn't untap during its controller's next untap step.</td>
+    <td>Sempre que o Golem Líder ataca, ele não desvira durante a próxima etapa de desvirar de seu controlador.</td>
+  </tr>
+  <tr>
+    <td>307</td>
+    <td>Lion's Eye Diamond</td>
+    <td>Discard your hand, Sacrifice Lion's Eye Diamond: Add three mana of any one color. Activate only as an instant.</td>
+    <td>Descarte sua mão, Sacrifique Lion's Eye Diamond: Adicione três manas de qualquer cor. Ative apenas instantaneamente.</td>
+  </tr>
+  <tr>
+    <td>308</td>
+    <td>Mana Prism</td>
+    <td>{T}: Add {C}.<br>{1}, {T}: Add one mana of any color.</td>
+    <td>{T}: Adicione {C}.<br>{1}, {T}: Adicione um mana de qualquer cor.</td>
+  </tr>
+  <tr>
+    <td>309</td>
+    <td>Mangara's Tome</td>
+    <td>When Mangara's Tome enters the battlefield, search your library for five cards, exile them in a face-down pile, and shuffle that pile. Then shuffle your library.<br>{2}: The next time you would draw a card this turn, instead put the top card of the exiled pile into its owner's hand.</td>
+    <td>Quando Tomo de Mangara entrar no campo de batalha, procure cinco cards em seu grimório, exile-os em uma pilha com a face voltada para baixo e embaralhe essa pilha. Em seguida, embaralhe seu grimório.<br>{2}: Na próxima vez que você comprar um card neste turno, coloque a carta do topo da pilha exilada na mão de seu dono.</td>
+  </tr>
+  <tr>
+    <td>310</td>
+    <td>Marble Diamond</td>
+    <td>Marble Diamond enters the battlefield tapped.<br>{T}: Add {W}.</td>
+    <td>Marble Diamond entra no campo de batalha virado.<br>{T}: Adicione {W}.</td>
+  </tr>
+  <tr>
+    <td>311</td>
+    <td>Misers' Cage</td>
+    <td>At the beginning of each opponent's upkeep, if that player has five or more cards in hand, Misers' Cage deals 2 damage to that player.</td>
+    <td>No início da manutenção de cada oponente, se aquele jogador tiver cinco ou mais cartas na mão, Misers' Cage causa 2 pontos de dano àquele jogador.</td>
+  </tr>
+  <tr>
+    <td>312</td>
+    <td>Moss Diamond</td>
+    <td>Moss Diamond enters the battlefield tapped.<br>{T}: Add {G}.</td>
+    <td>Moss Diamond entra no campo de batalha virado.<br>{T}: Adicione {G}.</td>
+  </tr>
+  <tr>
+    <td>313</td>
+    <td>Patagia Golem</td>
+    <td>{3}: Patagia Golem gains flying until end of turn.</td>
+    <td>{3}: Patagia Golem ganha voar até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>314</td>
+    <td>Paupers' Cage</td>
+    <td>At the beginning of each opponent's upkeep, if that player has two or fewer cards in hand, Paupers' Cage deals 2 damage to that player.</td>
+    <td>No início da manutenção de cada oponente, se aquele jogador tiver dois ou menos cards na mão, Paupers' Cage causa 2 pontos de dano àquele jogador.</td>
+  </tr>
+  <tr>
+    <td>315</td>
+    <td>Phyrexian Dreadnought</td>
+    <td>Trample<br>When Phyrexian Dreadnought enters the battlefield, sacrifice it unless you sacrifice any number of creatures with total power 12 or greater.</td>
+    <td>Atropelar<br>Quando Dreadnought Phyrexiano entrar no campo de batalha, sacrifique-o, a menos que você sacrifique qualquer número de criaturas com poder total igual ou superior a 12.</td>
+  </tr>
+  <tr>
+    <td>316</td>
+    <td>Phyrexian Vault</td>
+    <td>{2}, {T}, Sacrifice a creature: Draw a card.</td>
+    <td>{2}, {T}, Sacrifique uma criatura: Compre um card.</td>
+  </tr>
+  <tr>
+    <td>317</td>
+    <td>Razor Pendulum</td>
+    <td>At the beginning of each player's end step, if that player has 5 or less life, Razor Pendulum deals 2 damage to that player.</td>
+    <td>No início da etapa final de cada jogador, se aquele jogador tiver 5 ou menos pontos de vida, Razor Pendulum causa 2 pontos de dano àquele jogador.</td>
+  </tr>
+  <tr>
+    <td>318</td>
+    <td>Sand Golem</td>
+    <td>When a spell or ability an opponent controls causes you to discard Sand Golem, return Sand Golem from your graveyard to the battlefield with a +1/+1 counter on it at the beginning of the next end step.</td>
+    <td>Quando uma mágica ou habilidade que um oponente controla fizer com que você descarte Golem de Areia, devolva Golem de Areia de seu cemitério para o campo de batalha com um marcador +1/+1 no início da próxima etapa final.</td>
+  </tr>
+  <tr>
+    <td>319</td>
+    <td>Sky Diamond</td>
+    <td>Sky Diamond enters the battlefield tapped.<br>{T}: Add {U}.</td>
+    <td>Sky Diamond entra no campo de batalha virado.<br>{T}: Adicione {U}.</td>
+  </tr>
+  <tr>
+    <td>320</td>
+    <td>Teeka's Dragon</td>
+    <td>Flying; trample; rampage 4 (Whenever this creature becomes blocked, it gets +4/+4 until end of turn for each creature blocking it beyond the first.)</td>
+    <td>Vôo; atropelar; fúria 4 (Toda vez que esta criatura é bloqueada, ela recebe +4/+4 até o final do turno para cada criatura que a bloqueia além da primeira.)</td>
+  </tr>
+  <tr>
+    <td>321</td>
+    <td>Telim'Tor's Darts</td>
+    <td>{2}, {T}: Telim'Tor's Darts deals 1 damage to target player or planeswalker.</td>
+    <td>{2}, {T}: Os Dardos de Telim'Tor causam 1 ponto de dano ao jogador ou planeswalker alvo.</td>
+  </tr>
+  <tr>
+    <td>322</td>
+    <td>Unerring Sling</td>
+    <td>{3}, {T}, Tap an untapped creature you control: Unerring Sling deals damage equal to the tapped creature's power to target attacking or blocking creature with flying.</td>
+    <td>{3}, {T}, Vire uma criatura desvirada que você controla: Funda Infalível causa dano igual ao poder da criatura virada para atacar ou bloquear a criatura alvo com voar.</td>
+  </tr>
+  <tr>
+    <td>323</td>
+    <td>Ventifact Bottle</td>
+    <td>{X}{1}, {T}: Put X charge counters on Ventifact Bottle. Activate only as a sorcery.<br>At the beginning of your precombat main phase, if Ventifact Bottle has a charge counter on it, tap it and remove all charge counters from it. Add {C} for each charge counter removed this way.</td>
+    <td>{X}{1}, {T}: Coloque X marcadores de carga na Garrafa Ventifact. Ative apenas como um feitiço.<br>No início da fase principal pré-combate, se a Garrafa Ventifact tiver um marcador de carga, vire-a e remova todos os contadores de carga dela. Adicione {C} para cada contador de carga removido desta forma.</td>
+  </tr>
+  <tr>
+    <td>324</td>
+    <td>Bad River</td>
+    <td>Bad River enters the battlefield tapped.<br>{T}, Sacrifice Bad River: Search your library for an Island or Swamp card, put it onto the battlefield, then shuffle.</td>
+    <td>Bad River entra no campo de batalha virado.<br>{T}, Sacrifique Bad River: Procure um card de Ilha ou Pântano em seu grimório, coloque-o no campo de batalha e depois embaralhe.</td>
+  </tr>
+  <tr>
+    <td>325</td>
+    <td>Crystal Vein</td>
+    <td>{T}: Add {C}.<br>{T}, Sacrifice Crystal Vein: Add {C}{C}.</td>
+    <td>{T}: Adicione {C}.<br>{T}, sacrifique Veia de Cristal: Adicione {C}{C}.</td>
+  </tr>
+  <tr>
+    <td>326</td>
+    <td>Flood Plain</td>
+    <td>Flood Plain enters the battlefield tapped.<br>{T}, Sacrifice Flood Plain: Search your library for a Plains or Island card, put it onto the battlefield, then shuffle.</td>
+    <td>Planície Inundada entra no campo de batalha virada.<br>{T}, Sacrifique Planície Inundada: Procure um card de Planície ou Ilha em seu grimório, coloque-o no campo de batalha e depois embaralhe.</td>
+  </tr>
+  <tr>
+    <td>327</td>
+    <td>Grasslands</td>
+    <td>Grasslands enters the battlefield tapped.<br>{T}, Sacrifice Grasslands: Search your library for a Forest or Plains card, put it onto the battlefield, then shuffle.</td>
+    <td>Grasslands entra no campo de batalha virado.<br>{T}, Sacrifique Pradarias: Procure em seu grimório um card de Floresta ou Planície, coloque-o no campo de batalha e depois embaralhe.</td>
+  </tr>
+  <tr>
+    <td>328</td>
+    <td>Mountain Valley</td>
+    <td>Mountain Valley enters the battlefield tapped.<br>{T}, Sacrifice Mountain Valley: Search your library for a Mountain or Forest card, put it onto the battlefield, then shuffle.</td>
+    <td>Mountain Valley entra no campo de batalha virado.<br>{T}, sacrifique Mountain Valley: Procure em seu grimório um card de Montanha ou Floresta, coloque-o no campo de batalha e depois embaralhe.</td>
+  </tr>
+  <tr>
+    <td>329</td>
+    <td>Rocky Tar Pit</td>
+    <td>Rocky Tar Pit enters the battlefield tapped.<br>{T}, Sacrifice Rocky Tar Pit: Search your library for a Swamp or Mountain card, put it onto the battlefield, then shuffle.</td>
+    <td>Rocky Tar Pit entra no campo de batalha virado.<br>{T}, sacrifique Rocky Tar Pit: Procure em seu grimório um card de Pântano ou Montanha, coloque-o no campo de batalha e depois embaralhe.</td>
+  </tr>
+  <tr>
+    <td>330</td>
+    <td>Teferi's Isle</td>
+    <td>Phasing (This phases in or out before you untap during each of your untap steps. While it's phased out, it's treated as though it doesn't exist.)<br>Teferi's Isle enters the battlefield tapped.<br>{T}: Add {U}{U}.</td>
+    <td>Fase (Isso entra ou sai antes de você desvirar durante cada uma de suas etapas de desvirar. Enquanto é desvirado, é tratado como se não existisse.)<br>Ilha de Teferi entra no campo de batalha virada.<br>{T}: Adicione {U}{U}.</td>
+  </tr>
+</table>
+    </body>
+</html>

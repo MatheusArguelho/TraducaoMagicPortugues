@@ -1,0 +1,906 @@
+<html>
+<head>
+        <meta charset="UTF-8">
+        <title>lgn</title>
+        <style>
+            .styled-table {
+                width: 100%;
+                border-collapse: collapse;
+                border: 1px solid #ddd;
+                font-family: Arial, sans-serif;
+            }
+            .styled-table th, .styled-table td {
+                padding: 8px;
+                text-align: left;
+                border-bottom: 1px solid #ddd;
+            }
+            .styled-table tr:nth-child(even) {
+                background-color: #f2f2f2;
+            }
+            .styled-table th {
+                background-color: #4CAF50;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+    <table class="styled-table">
+  <tr>
+    <td>numero</td>
+    <td>nome</td>
+    <td>texto_ingles</td>
+    <td>traduzido</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Akroma, Angel of Wrath</td>
+    <td>Flying, first strike, vigilance, trample, haste, protection from black and from red</td>
+    <td>Voar, iniciativa, vigilância, atropelar, pressa, proteção contra preto e vermelho</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Akroma's Devoted</td>
+    <td>Cleric creatures have vigilance.</td>
+    <td>Criaturas clérigas têm vigilância.</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Aven Redeemer</td>
+    <td>Flying<br>{T}: Prevent the next 2 damage that would be dealt to any target this turn.</td>
+    <td>Vôo<br>{T}: Previne os próximos 2 pontos de dano que seriam causados ​​a qualquer alvo neste turno.</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>Aven Warhawk</td>
+    <td>Amplify 1 (As this creature enters the battlefield, put a +1/+1 counter on it for each Bird and/or Soldier card you reveal in your hand.)<br>Flying</td>
+    <td>Amplificar 1 (Conforme esta criatura entrar no campo de batalha, coloque nela um marcador +1/+1 para cada card de Pássaro e/ou Soldado que você revelar em sua mão.)<br>Vôo</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>Beacon of Destiny</td>
+    <td>{T}: The next time a source of your choice would deal damage to you this turn, that damage is dealt to Beacon of Destiny instead.</td>
+    <td>{T}: Na próxima vez que uma fonte de sua escolha causar dano a você neste turno, esse dano será causado ao Farol do Destino.</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>Celestial Gatekeeper</td>
+    <td>Flying<br>When Celestial Gatekeeper dies, exile it, then return up to two target Bird and/or Cleric permanent cards from your graveyard to the battlefield.</td>
+    <td>Vôo<br>Quando Celestial Gatekeeper morrer, exile-o e, em seguida, devolva até dois cards permanentes de Ave e/ou Clérigo alvo de seu cemitério para o campo de batalha.</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>Cloudreach Cavalry</td>
+    <td>As long as you control a Bird, Cloudreach Cavalry gets +2/+2 and has flying.</td>
+    <td>Enquanto você controlar um Pássaro, Cavalaria Cloudreach receberá +2/+2 e terá voar.</td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td>Daru Mender</td>
+    <td>Morph {W} (You may cast this card face down as a 2/2 creature for {3}. Turn it face up any time for its morph cost.)<br>When Daru Mender is turned face up, regenerate target creature.</td>
+    <td>Metamorfose {W} (Você pode conjurar este card com a face voltada para baixo como uma criatura 2/2 por {3}. Vire-o com a face para cima a qualquer momento pagando seu custo de metamorfose.)<br>Quando Daru Mender estiver voltado para cima, regenere a criatura alvo.</td>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td>Daru Sanctifier</td>
+    <td>Morph {1}{W} (You may cast this card face down as a 2/2 creature for {3}. Turn it face up any time for its morph cost.)<br>When Daru Sanctifier is turned face up, destroy target enchantment.</td>
+    <td>Metamorfose {1}{W} (Você pode conjurar este card com a face voltada para baixo como uma criatura 2/2 por {3}. Vire-o com a face para cima a qualquer momento pagando seu custo de metamorfose.)<br>Quando Daru Sanctifier estiver virado para cima, destrua o encantamento alvo.</td>
+  </tr>
+  <tr>
+    <td>10</td>
+    <td>Daru Stinger</td>
+    <td>Amplify 1 (As this creature enters the battlefield, put a +1/+1 counter on it for each Soldier card you reveal in your hand.)<br>{T}: Daru Stinger deals damage equal to the number of +1/+1 counters on it to target attacking or blocking creature.</td>
+    <td>Amplificar 1 (Conforme esta criatura entrar no campo de batalha, coloque nela um marcador +1/+1 para cada card de Soldado que você revelar em sua mão.)<br>{T}: Daru Stinger causa dano igual ao número de marcadores +1/+1 nele à criatura atacante ou bloqueadora alvo.</td>
+  </tr>
+  <tr>
+    <td>11</td>
+    <td>Defender of the Order</td>
+    <td>Morph {W}{W} (You may cast this card face down as a 2/2 creature for {3}. Turn it face up any time for its morph cost.)<br>When Defender of the Order is turned face up, creatures you control get +0/+2 until end of turn.</td>
+    <td>Metamorfose {W}{W} (Você pode conjurar este card com a face voltada para baixo como uma criatura 2/2 por {3}. Vire-o com a face para cima a qualquer momento pagando seu custo de metamorfose.)<br>Quando Defensor da Ordem é virado para cima, as criaturas que você controla recebem +0/+2 até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>12</td>
+    <td>Deftblade Elite</td>
+    <td>Provoke (Whenever this creature attacks, you may have target creature defending player controls untap and block it if able.)<br>{1}{W}: Prevent all combat damage that would be dealt to and dealt by Deftblade Elite this turn.</td>
+    <td>Provocar (Toda vez que esta criatura atacar, você pode fazer com que a criatura alvo que o jogador defensor controla desvire e bloqueie-a, se possível.)<br>{1}{W}: Previne todo o dano de combate que seria causado e causado por Deftblade Elite neste turno.</td>
+  </tr>
+  <tr>
+    <td>13</td>
+    <td>Essence Sliver</td>
+    <td>Whenever a Sliver deals damage, its controller gains that much life.</td>
+    <td>Sempre que um Sliver causa dano, seu controlador ganha aquela mesma quantidade de pontos de vida.</td>
+  </tr>
+  <tr>
+    <td>14</td>
+    <td>Gempalm Avenger</td>
+    <td>Cycling {2}{W} ({2}{W}, Discard this card: Draw a card.)<br>When you cycle Gempalm Avenger, Soldier creatures get +1/+1 and gain first strike until end of turn.</td>
+    <td>Reciclar {2}{W} ({2}{W}, descarte este card: Compre um card.)<br>Quando você recicla Gempalm Avenger, as criaturas do tipo Soldado recebem +1/+1 e ganham iniciativa até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>15</td>
+    <td>Glowrider</td>
+    <td>Noncreature spells cost {1} more to cast.</td>
+    <td>As mágicas que não são de criatura custam {1} a mais para serem conjuradas.</td>
+  </tr>
+  <tr>
+    <td>16</td>
+    <td>Liege of the Axe</td>
+    <td>Vigilance<br>Morph {1}{W} (You may cast this card face down as a 2/2 creature for {3}. Turn it face up any time for its morph cost.)<br>When Liege of the Axe is turned face up, untap it.</td>
+    <td>Vigilância<br>Metamorfose {1}{W} (Você pode conjurar este card com a face voltada para baixo como uma criatura 2/2 por {3}. Vire-o com a face para cima a qualquer momento pagando seu custo de metamorfose.)<br>Quando Liege of the Axe estiver virado para cima, desvire-o.</td>
+  </tr>
+  <tr>
+    <td>17</td>
+    <td>Lowland Tracker</td>
+    <td>First strike<br>Provoke (Whenever this creature attacks, you may have target creature defending player controls untap and block it if able.)</td>
+    <td>Primeiro ataque<br>Provocar (Toda vez que esta criatura atacar, você pode fazer com que a criatura alvo que o jogador defensor controla desvire e bloqueie-a, se possível.)</td>
+  </tr>
+  <tr>
+    <td>18</td>
+    <td>Planar Guide</td>
+    <td>{3}{W}, Exile Planar Guide: Exile all creatures. At the beginning of the next end step, return those cards to the battlefield under their owners' control.</td>
+    <td>{3}{W}, Exile Guia Planar: Exile todas as criaturas. No início da próxima etapa final, devolva esses cards ao campo de batalha sob o controle de seus donos.</td>
+  </tr>
+  <tr>
+    <td>19</td>
+    <td>Plated Sliver</td>
+    <td>All Sliver creatures get +0/+1.</td>
+    <td>Todas as criaturas Fractius recebem +0/+1.</td>
+  </tr>
+  <tr>
+    <td>20</td>
+    <td>Starlight Invoker</td>
+    <td>{7}{W}: You gain 5 life.</td>
+    <td>{7}{W}: Você ganha 5 pontos de vida.</td>
+  </tr>
+  <tr>
+    <td>21</td>
+    <td>Stoic Champion</td>
+    <td>Whenever a player cycles a card, Stoic Champion gets +2/+2 until end of turn.</td>
+    <td>Sempre que um jogador recicla uma carta, o Campeão Estóico recebe +2/+2 até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>22</td>
+    <td>Sunstrike Legionnaire</td>
+    <td>Sunstrike Legionnaire doesn't untap during your untap step.<br>Whenever another creature enters the battlefield, untap Sunstrike Legionnaire.<br>{T}: Tap target creature with mana value 3 or less.</td>
+    <td>Legionário Sunstrike não desvira durante sua etapa de desvirar.<br>Toda vez que outra criatura entrar no campo de batalha, desvire Legionário Sunstrike.<br>{T}: Vire a criatura alvo com custo de mana igual ou inferior a 3.</td>
+  </tr>
+  <tr>
+    <td>23</td>
+    <td>Swooping Talon</td>
+    <td>Flying<br>{1}: Swooping Talon loses flying until end of turn.<br>Provoke (Whenever this creature attacks, you may have target creature defending player controls untap and block it if able.)</td>
+    <td>Vôo<br>{1}: Swooping Talon perde voar até o final do turno.<br>Provocar (Toda vez que esta criatura atacar, você pode fazer com que a criatura alvo que o jogador defensor controla desvire e bloqueie-a, se possível.)</td>
+  </tr>
+  <tr>
+    <td>24</td>
+    <td>Wall of Hope</td>
+    <td>Defender (This creature can't attack.)<br>Whenever Wall of Hope is dealt damage, you gain that much life.</td>
+    <td>Defensor (Esta criatura não pode atacar.)<br>Sempre que Wall of Hope sofre dano, você ganha essa mesma quantidade de pontos de vida.</td>
+  </tr>
+  <tr>
+    <td>25</td>
+    <td>Ward Sliver</td>
+    <td>As Ward Sliver enters the battlefield, choose a color.<br>All Slivers have protection from the chosen color.</td>
+    <td>Conforme Ward Sliver entra no campo de batalha, escolha uma cor.<br>Todos os Slivers possuem proteção da cor escolhida.</td>
+  </tr>
+  <tr>
+    <td>26</td>
+    <td>Whipgrass Entangler</td>
+    <td>{1}{W}: Until end of turn, target creature gains "This creature can't attack or block unless its controller pays {1} for each Cleric on the battlefield."</td>
+    <td>{1}{W}: Até o final do turno, a criatura alvo ganha "Esta criatura não pode atacar nem bloquear a menos que seu controlador pague {1} para cada Clérigo no campo de batalha."</td>
+  </tr>
+  <tr>
+    <td>27</td>
+    <td>White Knight</td>
+    <td>First strike (This creature deals combat damage before creatures without first strike.)<br>Protection from black (This creature can't be blocked, targeted, dealt damage, or enchanted by anything black.)</td>
+    <td>Iniciativa (Esta criatura causa dano de combate antes das criaturas sem iniciativa.)<br>Proteção contra o preto (Esta criatura não pode ser bloqueada, alvo, sofrer dano ou encantada por nada preto.)</td>
+  </tr>
+  <tr>
+    <td>28</td>
+    <td>Windborn Muse</td>
+    <td>Flying<br>Creatures can't attack you unless their controller pays {2} for each creature they control that's attacking you.</td>
+    <td>Vôo<br>As criaturas não podem atacar você a menos que seu controlador pague {2} para cada criatura que elas controlam que esteja atacando você.</td>
+  </tr>
+  <tr>
+    <td>29</td>
+    <td>Wingbeat Warrior</td>
+    <td>Flying<br>Morph {2}{W} (You may cast this card face down as a 2/2 creature for {3}. Turn it face up any time for its morph cost.)<br>When Wingbeat Warrior is turned face up, target creature gains first strike until end of turn.</td>
+    <td>Vôo<br>Metamorfose {2}{W} (Você pode conjurar este card com a face voltada para baixo como uma criatura 2/2 por {3}. Vire-o com a face para cima a qualquer momento pagando seu custo de metamorfose.)<br>Quando Wingbeat Warrior é virado com a face para cima, a criatura alvo ganha iniciativa até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>30</td>
+    <td>Aven Envoy</td>
+    <td>Flying</td>
+    <td>Vôo</td>
+  </tr>
+  <tr>
+    <td>31</td>
+    <td>Cephalid Pathmage</td>
+    <td>Cephalid Pathmage can't be blocked.<br>{T}, Sacrifice Cephalid Pathmage: Target creature can't be blocked this turn.</td>
+    <td>Cephalid Pathmage não pode ser bloqueado.<br>{T}, sacrifique Cephalid Pathmage: A criatura alvo não pode ser bloqueada neste turno.</td>
+  </tr>
+  <tr>
+    <td>32</td>
+    <td>Chromeshell Crab</td>
+    <td>Morph {4}{U} (You may cast this card face down as a 2/2 creature for {3}. Turn it face up any time for its morph cost.)<br>When Chromeshell Crab is turned face up, you may exchange control of target creature you control and target creature an opponent controls.</td>
+    <td>Metamorfose {4}{U} (Você pode conjurar este card com a face voltada para baixo como uma criatura 2/2 por {3}. Vire-o com a face para cima a qualquer momento pagando seu custo de metamorfose.)<br>Quando Chromeshell Crab é virado para cima, você pode trocar o controle da criatura alvo que você controla e da criatura alvo que um oponente controla.</td>
+  </tr>
+  <tr>
+    <td>33</td>
+    <td>Covert Operative</td>
+    <td>Covert Operative can't be blocked.</td>
+    <td>O Agente Secreto não pode ser bloqueado.</td>
+  </tr>
+  <tr>
+    <td>34</td>
+    <td>Crookclaw Elder</td>
+    <td>Flying<br>Tap two untapped Birds you control: Draw a card.<br>Tap two untapped Wizards you control: Target creature gains flying until end of turn.</td>
+    <td>Vôo<br>Vire duas Aves desviradas que você controla: Compre um card.<br>Vire dois Magos desvirados que você controla: A criatura alvo ganha voar até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>35</td>
+    <td>Dermoplasm</td>
+    <td>Flying<br>Morph {2}{U}{U} (You may cast this card face down as a 2/2 creature for {3}. Turn it face up any time for its morph cost.)<br>When Dermoplasm is turned face up, you may put a creature card with a morph ability from your hand onto the battlefield face up. If you do, return Dermoplasm to its owner's hand.</td>
+    <td>Vôo<br>Metamorfose {2}{U}{U} (Você pode conjurar este card com a face voltada para baixo como uma criatura 2/2 por {3}. Vire-o com a face para cima a qualquer momento pagando seu custo de metamorfose.)<br>Quando Dermoplasma é virado para cima, você pode colocar no campo de batalha um card de criatura com habilidade de metamorfose de sua mão com a face voltada para cima. Se fizer isso, devolva Dermoplasma para a mão de seu dono.</td>
+  </tr>
+  <tr>
+    <td>36</td>
+    <td>Dreamborn Muse</td>
+    <td>At the beginning of each player's upkeep, that player mills X cards, where X is the number of cards in their hand.</td>
+    <td>No início da manutenção de cada jogador, ele mói X cartas, onde X é o número de cartas em sua mão.</td>
+  </tr>
+  <tr>
+    <td>37</td>
+    <td>Echo Tracer</td>
+    <td>Morph {2}{U} (You may cast this card face down as a 2/2 creature for {3}. Turn it face up any time for its morph cost.)<br>When Echo Tracer is turned face up, return target creature to its owner's hand.</td>
+    <td>Metamorfose {2}{U} (Você pode conjurar este card com a face voltada para baixo como uma criatura 2/2 por {3}. Vire-o com a face para cima a qualquer momento pagando seu custo de metamorfose.)<br>Quando Echo Tracer estiver virado para cima, devolva a criatura alvo para a mão de seu dono.</td>
+  </tr>
+  <tr>
+    <td>38</td>
+    <td>Fugitive Wizard</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>39</td>
+    <td>Gempalm Sorcerer</td>
+    <td>Cycling {2}{U} ({2}{U}, Discard this card: Draw a card.)<br>When you cycle Gempalm Sorcerer, Wizard creatures gain flying until end of turn.</td>
+    <td>Reciclar {2}{U} ({2}{U}, descarte este card: Compre um card.)<br>Quando você recicla Gempalm Sorcerer, as criaturas Wizard ganham voar até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>40</td>
+    <td>Glintwing Invoker</td>
+    <td>{7}{U}: Glintwing Invoker gets +3/+3 and gains flying until end of turn.</td>
+    <td>{7}{U}: Invocador da Asa Cintilante recebe +3/+3 e ganha voar até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>41</td>
+    <td>Keeneye Aven</td>
+    <td>Flying<br>Cycling {2} ({2}, Discard this card: Draw a card.)</td>
+    <td>Vôo<br>Reciclar {2} ({2}, Descarte este card: Compre um card.)</td>
+  </tr>
+  <tr>
+    <td>42</td>
+    <td>Keeper of the Nine Gales</td>
+    <td>Flying<br>{T}, Tap two untapped Birds you control: Return target permanent to its owner's hand.</td>
+    <td>Vôo<br>{T}, Vire duas Aves desviradas que você controla: Devolva a permanente alvo para a mão de seu dono.</td>
+  </tr>
+  <tr>
+    <td>43</td>
+    <td>Master of the Veil</td>
+    <td>Morph {2}{U} (You may cast this card face down as a 2/2 creature for {3}. Turn it face up any time for its morph cost.)<br>When Master of the Veil is turned face up, you may turn target creature with a morph ability face down.</td>
+    <td>Metamorfose {2}{U} (Você pode conjurar este card com a face voltada para baixo como uma criatura 2/2 por {3}. Vire-o com a face para cima a qualquer momento pagando seu custo de metamorfose.)<br>Quando Master of the Veil é virado para cima, você pode virar a criatura alvo com uma habilidade de metamorfose voltada para baixo.</td>
+  </tr>
+  <tr>
+    <td>44</td>
+    <td>Merchant of Secrets</td>
+    <td>When Merchant of Secrets enters the battlefield, draw a card.</td>
+    <td>Quando Mercador de Segredos entrar no campo de batalha, compre um card.</td>
+  </tr>
+  <tr>
+    <td>45</td>
+    <td>Mistform Seaswift</td>
+    <td>Flying<br>{1}: Mistform Seaswift becomes the creature type of your choice until end of turn.<br>Morph {1}{U} (You may cast this card face down as a 2/2 creature for {3}. Turn it face up any time for its morph cost.)</td>
+    <td>Vôo<br>{1}: Mistform Seaswift torna-se o tipo de criatura de sua escolha até o final do turno.<br>Metamorfose {1}{U} (Você pode conjurar este card com a face voltada para baixo como uma criatura 2/2 por {3}. Vire-o com a face para cima a qualquer momento pagando seu custo de metamorfose.)</td>
+  </tr>
+  <tr>
+    <td>46</td>
+    <td>Mistform Sliver</td>
+    <td>All Slivers have "{1}: This permanent becomes the creature type of your choice in addition to its other types until end of turn."</td>
+    <td>Todos os Fractius têm "{1}: Esta permanente se torna o tipo de criatura de sua escolha, além de seus outros tipos, até o final do turno."</td>
+  </tr>
+  <tr>
+    <td>47</td>
+    <td>Mistform Ultimus</td>
+    <td>Mistform Ultimus is every creature type (even if this card isn't on the battlefield).</td>
+    <td>Mistform Ultimus é de todos os tipos de criatura (mesmo que este card não esteja no campo de batalha).</td>
+  </tr>
+  <tr>
+    <td>48</td>
+    <td>Mistform Wakecaster</td>
+    <td>Flying<br>{1}: Mistform Wakecaster becomes the creature type of your choice until end of turn.<br>{2}{U}{U}, {T}: Choose a creature type. Each creature you control becomes that type until end of turn.</td>
+    <td>Vôo<br>{1}: Mistform Wakecaster se torna o tipo de criatura de sua escolha até o final do turno.<br>{2}{U}{U}, {T}: Escolha um tipo de criatura. Cada criatura que você controla se torna daquele tipo até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>49</td>
+    <td>Primoc Escapee</td>
+    <td>Flying<br>Cycling {2} ({2}, Discard this card: Draw a card.)</td>
+    <td>Vôo<br>Reciclar {2} ({2}, Descarte este card: Compre um card.)</td>
+  </tr>
+  <tr>
+    <td>50</td>
+    <td>Riptide Director</td>
+    <td>{2}{U}{U}, {T}: Draw a card for each Wizard you control.</td>
+    <td>{2}{U}{U}, {T}: Compre um card para cada Mago que você controla.</td>
+  </tr>
+  <tr>
+    <td>51</td>
+    <td>Riptide Mangler</td>
+    <td>{1}{U}: Change Riptide Mangler's base power to target creature's power. (This effect lasts indefinitely.)</td>
+    <td>{1}{U}: Altere o poder base de Contracorrente Mangler para o poder da criatura alvo. (Este efeito dura indefinidamente.)</td>
+  </tr>
+  <tr>
+    <td>52</td>
+    <td>Shifting Sliver</td>
+    <td>Slivers can't be blocked except by Slivers.</td>
+    <td>Slivers não podem ser bloqueados exceto por Slivers.</td>
+  </tr>
+  <tr>
+    <td>53</td>
+    <td>Synapse Sliver</td>
+    <td>Whenever a Sliver deals combat damage to a player, its controller may draw a card.</td>
+    <td>Sempre que um Fractius causa dano de combate a um jogador, seu controlador pode comprar uma carta.</td>
+  </tr>
+  <tr>
+    <td>54</td>
+    <td>Voidmage Apprentice</td>
+    <td>Morph {2}{U}{U} (You may cast this card face down as a 2/2 creature for {3}. Turn it face up any time for its morph cost.)<br>When Voidmage Apprentice is turned face up, counter target spell.</td>
+    <td>Metamorfose {2}{U}{U} (Você pode conjurar este card com a face voltada para baixo como uma criatura 2/2 por {3}. Vire-o com a face para cima a qualquer momento pagando seu custo de metamorfose.)<br>Quando Voidmage Apprentice for virado para cima, anule a mágica alvo.</td>
+  </tr>
+  <tr>
+    <td>55</td>
+    <td>Wall of Deceit</td>
+    <td>Defender (This creature can't attack.)<br>{3}: Turn Wall of Deceit face down.<br>Morph {U} (You may cast this card face down as a 2/2 creature for {3}. Turn it face up any time for its morph cost.)</td>
+    <td>Defensor (Esta criatura não pode atacar.)<br>{3}: Vire Muralha do Engano para baixo.<br>Metamorfose {U} (Você pode conjurar este card com a face voltada para baixo como uma criatura 2/2 por {3}. Vire-o com a face para cima a qualquer momento pagando seu custo de metamorfose.)</td>
+  </tr>
+  <tr>
+    <td>56</td>
+    <td>Warped Researcher</td>
+    <td>Whenever a player cycles a card, Warped Researcher gains flying and shroud until end of turn. (It can't be the target of spells or abilities.)</td>
+    <td>Sempre que um jogador recicla uma carta, Warped Researcher ganha voar e encobrir até o final do turno. (Não pode ser alvo de mágicas ou habilidades.)</td>
+  </tr>
+  <tr>
+    <td>57</td>
+    <td>Weaver of Lies</td>
+    <td>Morph {4}{U} (You may cast this card face down as a 2/2 creature for {3}. Turn it face up any time for its morph cost.)<br>When Weaver of Lies is turned face up, turn any number of target creatures with morph abilities other than Weaver of Lies face down.</td>
+    <td>Metamorfose {4}{U} (Você pode conjurar este card com a face voltada para baixo como uma criatura 2/2 por {3}. Vire-o com a face para cima a qualquer momento pagando seu custo de metamorfose.)<br>Quando Weaver of Lies for virado para cima, vire qualquer número de criaturas alvo com habilidades de metamorfose diferentes de Weaver of Lies com a face para baixo.</td>
+  </tr>
+  <tr>
+    <td>58</td>
+    <td>Willbender</td>
+    <td>Morph {1}{U} (You may cast this card face down as a 2/2 creature for {3}. Turn it face up any time for its morph cost.)<br>When Willbender is turned face up, change the target of target spell or ability with a single target.</td>
+    <td>Metamorfose {1}{U} (Você pode conjurar este card com a face voltada para baixo como uma criatura 2/2 por {3}. Vire-o com a face para cima a qualquer momento pagando seu custo de metamorfose.)<br>Quando Dobrador de Vontade estiver virado para cima, mude o alvo da mágica ou habilidade alvo com um único alvo.</td>
+  </tr>
+  <tr>
+    <td>59</td>
+    <td>Aphetto Exterminator</td>
+    <td>Morph {3}{B} (You may cast this card face down as a 2/2 creature for {3}. Turn it face up any time for its morph cost.)<br>When Aphetto Exterminator is turned face up, target creature gets -3/-3 until end of turn.</td>
+    <td>Metamorfose {3}{B} (Você pode conjurar este card com a face voltada para baixo como uma criatura 2/2 por {3}. Vire-o com a face para cima a qualquer momento pagando seu custo de metamorfose.)<br>Quando Aphetto Exterminator é virado para cima, a criatura alvo recebe -3/-3 até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>60</td>
+    <td>Bane of the Living</td>
+    <td>Morph {X}{B}{B} (You may cast this card face down as a 2/2 creature for {3}. Turn it face up any time for its morph cost.)<br>When Bane of the Living is turned face up, all creatures get -X/-X until end of turn.</td>
+    <td>Metamorfose {X}{B}{B} (Você pode conjurar este card com a face voltada para baixo como uma criatura 2/2 por {3}. Vire-o com a face para cima a qualquer momento pagando seu custo de metamorfose.)<br>Quando Bane of the Living é virado para cima, todas as criaturas recebem -X/-X até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>61</td>
+    <td>Blood Celebrant</td>
+    <td>{B}, Pay 1 life: Add one mana of any color.</td>
+    <td>{B}, pague 1 ponto de vida: Adicione um mana de qualquer cor.</td>
+  </tr>
+  <tr>
+    <td>62</td>
+    <td>Corpse Harvester</td>
+    <td>{1}{B}, {T}, Sacrifice a creature: Search your library for a Zombie card and a Swamp card, reveal them, put them into your hand, then shuffle.</td>
+    <td>{1}{B}, {T}, Sacrifique uma criatura: Procure em seu grimório um card de Zumbi e um card de Pântano, revele-os, coloque-os em sua mão e depois embaralhe.</td>
+  </tr>
+  <tr>
+    <td>63</td>
+    <td>Crypt Sliver</td>
+    <td>All Slivers have "{T}: Regenerate target Sliver."</td>
+    <td>Todos os Fractius têm "{T}: Regenera o Fractius alvo."</td>
+  </tr>
+  <tr>
+    <td>64</td>
+    <td>Dark Supplicant</td>
+    <td>{T}, Sacrifice three Clerics: Search your graveyard, hand, and/or library for a card named Scion of Darkness and put it onto the battlefield. If you search your library this way, shuffle.</td>
+    <td>{T}, Sacrifique três Clérigos: Procure em seu cemitério, mão e/ou grimório por um card chamado Scion of Darkness e coloque-o no campo de batalha. Se você pesquisar em seu grimório dessa maneira, embaralhe.</td>
+  </tr>
+  <tr>
+    <td>65</td>
+    <td>Deathmark Prelate</td>
+    <td>{2}{B}, {T}, Sacrifice a Zombie: Destroy target non-Zombie creature. It can't be regenerated. Activate only as a sorcery.</td>
+    <td>{2}{B}, {T}, Sacrifique um Zumbi: Destrua a criatura alvo que não seja Zumbi. Não pode ser regenerado. Ative apenas como um feitiço.</td>
+  </tr>
+  <tr>
+    <td>66</td>
+    <td>Drinker of Sorrow</td>
+    <td>Drinker of Sorrow can't block.<br>Whenever Drinker of Sorrow deals combat damage, sacrifice a permanent.</td>
+    <td>Bebedor da Tristeza não pode bloquear.<br>Toda vez que Drinker of Sorrow causar dano de combate, sacrifique uma permanente.</td>
+  </tr>
+  <tr>
+    <td>67</td>
+    <td>Dripping Dead</td>
+    <td>Dripping Dead can't block.<br>Whenever Dripping Dead deals combat damage to a creature, destroy that creature. It can't be regenerated.</td>
+    <td>Dripping Dead não pode bloquear.<br>Toda vez que Dripping Dead causar dano de combate a uma criatura, destrua aquela criatura. Não pode ser regenerado.</td>
+  </tr>
+  <tr>
+    <td>68</td>
+    <td>Earthblighter</td>
+    <td>{2}{B}, {T}, Sacrifice a Goblin: Destroy target land.</td>
+    <td>{2}{B}, {T}, Sacrifique um Goblin: Destrua o terreno alvo.</td>
+  </tr>
+  <tr>
+    <td>69</td>
+    <td>Embalmed Brawler</td>
+    <td>Amplify 1 (As this creature enters the battlefield, put a +1/+1 counter on it for each Zombie card you reveal in your hand.)<br>Whenever Embalmed Brawler attacks or blocks, you lose 1 life for each +1/+1 counter on it.</td>
+    <td>Amplificar 1 (Conforme esta criatura entrar no campo de batalha, coloque nela um marcador +1/+1 para cada card de Zumbi que você revelar em sua mão.)<br>Toda vez que Lutador Embalsamado ataca ou bloqueia, você perde 1 ponto de vida para cada marcador +1/+1 nele.</td>
+  </tr>
+  <tr>
+    <td>70</td>
+    <td>Gempalm Polluter</td>
+    <td>Cycling {B}{B} ({B}{B}, Discard this card: Draw a card.)<br>When you cycle Gempalm Polluter, you may have target player lose life equal to the number of Zombies on the battlefield.</td>
+    <td>Reciclar {B}{B} ({B}{B}, Descarte este card: Compre um card.)<br>Ao reciclar Gempalm Polluter, você pode fazer com que o jogador alvo perca uma quantidade de pontos de vida igual ao número de Zumbis no campo de batalha.</td>
+  </tr>
+  <tr>
+    <td>71</td>
+    <td>Ghastly Remains</td>
+    <td>Amplify 1 (As this creature enters the battlefield, put a +1/+1 counter on it for each Zombie card you reveal in your hand.)<br>At the beginning of your upkeep, if Ghastly Remains is in your graveyard, you may pay {B}{B}{B}. If you do, return Ghastly Remains to your hand.</td>
+    <td>Amplificar 1 (Conforme esta criatura entrar no campo de batalha, coloque nela um marcador +1/+1 para cada card de Zumbi que você revelar em sua mão.)<br>No início de sua manutenção, se Restos Medonhos estiver em seu cemitério, você poderá pagar {B}{B}{B}. Se fizer isso, devolva Restos Medonhos para sua mão.</td>
+  </tr>
+  <tr>
+    <td>72</td>
+    <td>Goblin Turncoat</td>
+    <td>Sacrifice a Goblin: Regenerate Goblin Turncoat.</td>
+    <td>Sacrifique um Goblin: Regenere o Goblin Turncoat.</td>
+  </tr>
+  <tr>
+    <td>73</td>
+    <td>Graveborn Muse</td>
+    <td>At the beginning of your upkeep, you draw X cards and you lose X life, where X is the number of Zombies you control.</td>
+    <td>No início de sua manutenção, você compra X cards e perde X pontos de vida, sendo X o número de Zumbis que você controla.</td>
+  </tr>
+  <tr>
+    <td>74</td>
+    <td>Havoc Demon</td>
+    <td>Flying<br>When Havoc Demon dies, all creatures get -5/-5 until end of turn.</td>
+    <td>Vôo<br>Quando Havoc Demon morre, todas as criaturas recebem -5/-5 até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>75</td>
+    <td>Hollow Specter</td>
+    <td>Flying<br>Whenever Hollow Specter deals combat damage to a player, you may pay {X}. If you do, that player reveals X cards from their hand and you choose one of them. That player discards that card.</td>
+    <td>Vôo<br>Sempre que Hollow Spectre causar dano de combate a um jogador, você poderá pagar {X}. Se fizer isso, aquele jogador revela X cartas de sua mão e você escolhe uma delas. Esse jogador descarta aquela carta.</td>
+  </tr>
+  <tr>
+    <td>76</td>
+    <td>Infernal Caretaker</td>
+    <td>Morph {3}{B} (You may cast this card face down as a 2/2 creature for {3}. Turn it face up any time for its morph cost.)<br>When Infernal Caretaker is turned face up, return all Zombie cards from all graveyards to their owners' hands.</td>
+    <td>Metamorfose {3}{B} (Você pode conjurar este card com a face voltada para baixo como uma criatura 2/2 por {3}. Vire-o com a face para cima a qualquer momento pagando seu custo de metamorfose.)<br>Quando Infernal Caretaker for virado para cima, devolva todos os cards de Zumbi de todos os cemitérios para as mãos de seus donos.</td>
+  </tr>
+  <tr>
+    <td>77</td>
+    <td>Noxious Ghoul</td>
+    <td>Whenever Noxious Ghoul or another Zombie enters the battlefield, all non-Zombie creatures get -1/-1 until end of turn.</td>
+    <td>Toda vez que Carniçal Nocivo ou outro Zumbi entra no campo de batalha, todas as criaturas que não sejam Zumbis recebem -1/-1 até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>78</td>
+    <td>Phage the Untouchable</td>
+    <td>When Phage the Untouchable enters the battlefield, if you didn't cast it from your hand, you lose the game.<br>Whenever Phage deals combat damage to a creature, destroy that creature. It can't be regenerated.<br>Whenever Phage deals combat damage to a player, that player loses the game.</td>
+    <td>Quando Phage, o Intocável, entra no campo de batalha, se você não o conjurou de sua mão, você perde o jogo.<br>Toda vez que Phage causar dano de combate a uma criatura, destrua aquela criatura. Não pode ser regenerado.<br>Sempre que Phage causa dano de combate a um jogador, esse jogador perde o jogo.</td>
+  </tr>
+  <tr>
+    <td>79</td>
+    <td>Scion of Darkness</td>
+    <td>Trample<br>Whenever Scion of Darkness deals combat damage to a player, you may put target creature card from that player's graveyard onto the battlefield under your control.<br>Cycling {3} ({3}, Discard this card: Draw a card.)</td>
+    <td>Atropelar<br>Toda vez que Scion of Darkness causar dano de combate a um jogador, você pode colocar o card de criatura alvo do cemitério daquele jogador no campo de batalha sob seu controle.<br>Reciclar {3} ({3}, Descarte este card: Compre um card.)</td>
+  </tr>
+  <tr>
+    <td>80</td>
+    <td>Skinthinner</td>
+    <td>Morph {3}{B}{B} (You may cast this card face down as a 2/2 creature for {3}. Turn it face up any time for its morph cost.)<br>When Skinthinner is turned face up, destroy target nonblack creature. It can't be regenerated.</td>
+    <td>Metamorfose {3}{B}{B} (Você pode conjurar este card com a face voltada para baixo como uma criatura 2/2 por {3}. Vire-o com a face para cima a qualquer momento pagando seu custo de metamorfose.)<br>Quando Skinthinner for virado para cima, destrua a criatura alvo que não seja preta. Não pode ser regenerado.</td>
+  </tr>
+  <tr>
+    <td>81</td>
+    <td>Smokespew Invoker</td>
+    <td>{7}{B}: Target creature gets -3/-3 until end of turn.</td>
+    <td>{7}{B}: A criatura alvo recebe -3/-3 até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>82</td>
+    <td>Sootfeather Flock</td>
+    <td>Flying<br>Morph {3}{B} (You may cast this card face down as a 2/2 creature for {3}. Turn it face up any time for its morph cost.)</td>
+    <td>Vôo<br>Metamorfose {3}{B} (Você pode conjurar este card com a face voltada para baixo como uma criatura 2/2 por {3}. Vire-o com a face para cima a qualquer momento pagando seu custo de metamorfose.)</td>
+  </tr>
+  <tr>
+    <td>83</td>
+    <td>Spectral Sliver</td>
+    <td>All Sliver creatures have "{2}: This creature gets +1/+1 until end of turn."</td>
+    <td>Todas as criaturas Fractius têm "{2}: Esta criatura recebe +1/+1 até o final do turno."</td>
+  </tr>
+  <tr>
+    <td>84</td>
+    <td>Toxin Sliver</td>
+    <td>Whenever a Sliver deals combat damage to a creature, destroy that creature. It can't be regenerated.</td>
+    <td>Toda vez que um Fractius causar dano de combate a uma criatura, destrua aquela criatura. Não pode ser regenerado.</td>
+  </tr>
+  <tr>
+    <td>85</td>
+    <td>Vile Deacon</td>
+    <td>Whenever Vile Deacon attacks, it gets +X/+X until end of turn, where X is the number of Clerics on the battlefield.</td>
+    <td>Toda vez que Vile Deacon ataca, ele recebe +X/+X até o final do turno, sendo X o número de Clérigos no campo de batalha.</td>
+  </tr>
+  <tr>
+    <td>86</td>
+    <td>Withered Wretch</td>
+    <td>{1}: Exile target card from a graveyard.</td>
+    <td>{1}: Exile o card alvo de um cemitério.</td>
+  </tr>
+  <tr>
+    <td>87</td>
+    <td>Zombie Brute</td>
+    <td>Amplify 1 (As this creature enters the battlefield, put a +1/+1 counter on it for each Zombie card you reveal in your hand.)<br>Trample</td>
+    <td>Amplificar 1 (Conforme esta criatura entrar no campo de batalha, coloque nela um marcador +1/+1 para cada card de Zumbi que você revelar em sua mão.)<br>Atropelar</td>
+  </tr>
+  <tr>
+    <td>88</td>
+    <td>Blade Sliver</td>
+    <td>All Sliver creatures get +1/+0.</td>
+    <td>Todas as criaturas Fractius recebem +1/+0.</td>
+  </tr>
+  <tr>
+    <td>89</td>
+    <td>Bloodstoke Howler</td>
+    <td>Morph {6}{R} (You may cast this card face down as a 2/2 creature for {3}. Turn it face up any time for its morph cost.)<br>When Bloodstoke Howler is turned face up, Beast creatures you control get +3/+0 until end of turn.</td>
+    <td>Metamorfose {6}{R} (Você pode conjurar este card com a face voltada para baixo como uma criatura 2/2 por {3}. Vire-o com a face para cima a qualquer momento pagando seu custo de metamorfose.)<br>Quando Bloodstoke Howler é virado com a face para cima, as criaturas Besta que você controla recebem +3/+0 até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>90</td>
+    <td>Clickslither</td>
+    <td>Haste<br>Sacrifice a Goblin: Clickslither gets +2/+2 and gains trample until end of turn.</td>
+    <td>Pressa<br>Sacrifique um Goblin: Clickslither recebe +2/+2 e ganha atropelar até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>91</td>
+    <td>Crested Craghorn</td>
+    <td>Haste<br>Provoke (Whenever this creature attacks, you may have target creature defending player controls untap and block it if able.)</td>
+    <td>Pressa<br>Provocar (Toda vez que esta criatura atacar, você pode fazer com que a criatura alvo que o jogador defensor controla desvire e bloqueie-a, se possível.)</td>
+  </tr>
+  <tr>
+    <td>92</td>
+    <td>Flamewave Invoker</td>
+    <td>{7}{R}: Flamewave Invoker deals 5 damage to target player or planeswalker.</td>
+    <td>{7}{R}: Flamewave Invoker causa 5 pontos de dano ao jogador ou planeswalker alvo.</td>
+  </tr>
+  <tr>
+    <td>93</td>
+    <td>Frenetic Raptor</td>
+    <td>Beasts can't block.</td>
+    <td>Bestas não podem bloquear.</td>
+  </tr>
+  <tr>
+    <td>94</td>
+    <td>Gempalm Incinerator</td>
+    <td>Cycling {1}{R} ({1}{R}, Discard this card: Draw a card.)<br>When you cycle Gempalm Incinerator, you may have it deal X damage to target creature, where X is the number of Goblins on the battlefield.</td>
+    <td>Reciclar {1}{R} ({1}{R}, descarte este card: Compre um card.)<br>Ao reciclar Gempalm Incinerator, você pode fazer com que ele cause X pontos de dano à criatura alvo, sendo X o número de Goblins no campo de batalha.</td>
+  </tr>
+  <tr>
+    <td>95</td>
+    <td>Goblin Assassin</td>
+    <td>Whenever Goblin Assassin or another Goblin enters the battlefield, each player flips a coin. Each player whose coin comes up tails sacrifices a creature.</td>
+    <td>Sempre que Goblin Assassino ou outro Goblin entra no campo de batalha, cada jogador joga uma moeda. Cada jogador cuja moeda der coroa sacrifica uma criatura.</td>
+  </tr>
+  <tr>
+    <td>96</td>
+    <td>Goblin Clearcutter</td>
+    <td>{T}, Sacrifice a Forest: Add three mana in any combination of {R} and/or {G}.</td>
+    <td>{T}, Sacrifique uma Floresta: Adicione três manas em qualquer combinação de {R} e/ou {G}.</td>
+  </tr>
+  <tr>
+    <td>97</td>
+    <td>Goblin Dynamo</td>
+    <td>{T}: Goblin Dynamo deals 1 damage to any target.<br>{X}{R}, {T}, Sacrifice Goblin Dynamo: It deals X damage to any target.</td>
+    <td>{T}: Dínamo Goblin causa 1 ponto de dano a qualquer alvo.<br>{X}{R}, {T}, Sacrifique Dínamo Goblin: Causa X pontos de dano a qualquer alvo.</td>
+  </tr>
+  <tr>
+    <td>98</td>
+    <td>Goblin Firebug</td>
+    <td>When Goblin Firebug leaves the battlefield, sacrifice a land.</td>
+    <td>Quando Goblin Firebug deixar o campo de batalha, sacrifique um terreno.</td>
+  </tr>
+  <tr>
+    <td>99</td>
+    <td>Goblin Goon</td>
+    <td>Goblin Goon can't attack unless you control more creatures than defending player.<br>Goblin Goon can't block unless you control more creatures than attacking player.</td>
+    <td>Goblin Goon não pode atacar a menos que você controle mais criaturas que o jogador defensor.<br>Goblin Goon não pode bloquear a menos que você controle mais criaturas que o jogador atacante.</td>
+  </tr>
+  <tr>
+    <td>100</td>
+    <td>Goblin Grappler</td>
+    <td>Provoke (Whenever this creature attacks, you may have target creature defending player controls untap and block it if able.)</td>
+    <td>Provocar (Toda vez que esta criatura atacar, você pode fazer com que a criatura alvo que o jogador defensor controla desvire e bloqueie-a, se possível.)</td>
+  </tr>
+  <tr>
+    <td>101</td>
+    <td>Goblin Lookout</td>
+    <td>{T}, Sacrifice a Goblin: Goblin creatures get +2/+0 until end of turn.</td>
+    <td>{T}, Sacrifique um Goblin: As criaturas Goblin recebem +2/+0 até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>102</td>
+    <td>Hunter Sliver</td>
+    <td>All Sliver creatures have provoke. (Whenever a Sliver attacks, its controller may have target creature defending player controls untap and block it if able.)</td>
+    <td>Todas as criaturas Sliver têm provocação. (Sempre que um Fractius ataca, seu controlador pode desvirar a criatura alvo que o jogador defensor controla e bloqueá-la, se possível.)</td>
+  </tr>
+  <tr>
+    <td>103</td>
+    <td>Imperial Hellkite</td>
+    <td>Flying<br>Morph {6}{R}{R} (You may cast this card face down as a 2/2 creature for {3}. Turn it face up any time for its morph cost.)<br>When Imperial Hellkite is turned face up, you may search your library for a Dragon card, reveal it, put it into your hand, then shuffle.</td>
+    <td>Vôo<br>Metamorfose {6}{R}{R} (Você pode conjurar este card com a face voltada para baixo como uma criatura 2/2 por {3}. Vire-o com a face para cima a qualquer momento pagando seu custo de metamorfose.)<br>Quando Imperial Hellkite é virado para cima, você pode procurar um card de Dragão em seu grimório, revelá-lo, colocá-lo em sua mão e depois embaralhar.</td>
+  </tr>
+  <tr>
+    <td>104</td>
+    <td>Kilnmouth Dragon</td>
+    <td>Amplify 3 (As this creature enters the battlefield, put three +1/+1 counters on it for each Dragon card you reveal in your hand.)<br>Flying<br>{T}: Kilnmouth Dragon deals damage equal to the number of +1/+1 counters on it to any target.</td>
+    <td>Amplificar 3 (Conforme esta criatura entrar no campo de batalha, coloque nela três marcadores +1/+1 para cada card de Dragão que você revelar em sua mão.)<br>Vôo<br>{T}: Dragão Boca de Kiln causa dano igual ao número de marcadores +1/+1 nele a qualquer alvo.</td>
+  </tr>
+  <tr>
+    <td>105</td>
+    <td>Lavaborn Muse</td>
+    <td>At the beginning of each opponent's upkeep, if that player has two or fewer cards in hand, Lavaborn Muse deals 3 damage to that player.</td>
+    <td>No início da manutenção de cada oponente, se aquele jogador tiver dois ou menos cards na mão, Lavaborn Muse causa 3 pontos de dano àquele jogador.</td>
+  </tr>
+  <tr>
+    <td>106</td>
+    <td>Macetail Hystrodon</td>
+    <td>First strike, haste<br>Cycling {3} ({3}, Discard this card: Draw a card.)</td>
+    <td>Primeiro ataque, pressa<br>Reciclar {3} ({3}, Descarte este card: Compre um card.)</td>
+  </tr>
+  <tr>
+    <td>107</td>
+    <td>Magma Sliver</td>
+    <td>All Slivers have "{T}: Target Sliver creature gets +X/+0 until end of turn, where X is the number of Slivers on the battlefield."</td>
+    <td>Todos os Fractius têm "{T}: A criatura alvo do Fractius ganha +X/+0 até o final do turno, sendo X o número de Fractius no campo de batalha."</td>
+  </tr>
+  <tr>
+    <td>108</td>
+    <td>Ridgetop Raptor</td>
+    <td>Double strike (This creature deals both first-strike and regular combat damage.)</td>
+    <td>Golpe duplo (Esta criatura causa dano de iniciativa e de combate normal.)</td>
+  </tr>
+  <tr>
+    <td>109</td>
+    <td>Rockshard Elemental</td>
+    <td>Double strike (This creature deals both first-strike and regular combat damage.)<br>Morph {4}{R}{R} (You may cast this card face down as a 2/2 creature for {3}. Turn it face up any time for its morph cost.)</td>
+    <td>Golpe duplo (Esta criatura causa dano de iniciativa e de combate normal.)<br>Metamorfose {4}{R}{R} (Você pode conjurar este card com a face voltada para baixo como uma criatura 2/2 por {3}. Vire-o com a face para cima a qualquer momento pagando seu custo de metamorfose.)</td>
+  </tr>
+  <tr>
+    <td>110</td>
+    <td>Shaleskin Plower</td>
+    <td>Morph {4}{R} (You may cast this card face down as a 2/2 creature for {3}. Turn it face up any time for its morph cost.)<br>When Shaleskin Plower is turned face up, destroy target land.</td>
+    <td>Metamorfose {4}{R} (Você pode conjurar este card com a face voltada para baixo como uma criatura 2/2 por {3}. Vire-o com a face para cima a qualquer momento pagando seu custo de metamorfose.)<br>Quando Shaleskin Plower for virado para cima, destrua o terreno alvo.</td>
+  </tr>
+  <tr>
+    <td>111</td>
+    <td>Skirk Alarmist</td>
+    <td>Haste<br>{T}: Turn target face-down creature you control face up. At the beginning of the next end step, sacrifice it.</td>
+    <td>Pressa<br>{T}: Vire para cima a criatura alvo com a face para baixo que você controla. No início da próxima etapa final, sacrifique-o.</td>
+  </tr>
+  <tr>
+    <td>112</td>
+    <td>Skirk Drill Sergeant</td>
+    <td>Whenever Skirk Drill Sergeant or another Goblin dies, you may pay {2}{R}. If you do, reveal the top card of your library. If it's a Goblin permanent card, put it onto the battlefield. Otherwise, put it into your graveyard.</td>
+    <td>Sempre que Skirk Drill Sergeant ou outro Goblin morrer, você poderá pagar {2}{R}. Se fizer isso, revele o card do topo do seu grimório. Se for um card permanente de Goblin, coloque-o no campo de batalha. Caso contrário, coloque-o em seu cemitério.</td>
+  </tr>
+  <tr>
+    <td>113</td>
+    <td>Skirk Marauder</td>
+    <td>Morph {2}{R} (You may cast this card face down as a 2/2 creature for {3}. Turn it face up any time for its morph cost.)<br>When Skirk Marauder is turned face up, it deals 2 damage to any target.</td>
+    <td>Metamorfose {2}{R} (Você pode conjurar este card com a face voltada para baixo como uma criatura 2/2 por {3}. Vire-o com a face para cima a qualquer momento pagando seu custo de metamorfose.)<br>Quando Skirk Marauder é virado para cima, ele causa 2 pontos de dano a qualquer alvo.</td>
+  </tr>
+  <tr>
+    <td>114</td>
+    <td>Skirk Outrider</td>
+    <td>As long as you control a Beast, Skirk Outrider gets +2/+2 and has trample.</td>
+    <td>Enquanto você controlar uma Besta, Skirk Outrider receberá +2/+2 e terá atropelar.</td>
+  </tr>
+  <tr>
+    <td>115</td>
+    <td>Unstable Hulk</td>
+    <td>Morph {3}{R}{R} (You may cast this card face down as a 2/2 creature for {3}. Turn it face up any time for its morph cost.)<br>When Unstable Hulk is turned face up, it gets +6/+6 and gains trample until end of turn. You skip your next turn.</td>
+    <td>Metamorfose {3}{R}{R} (Você pode conjurar este card com a face voltada para baixo como uma criatura 2/2 por {3}. Vire-o com a face para cima a qualquer momento pagando seu custo de metamorfose.)<br>Quando o Hulk Instável é virado para cima, ele recebe +6/+6 e atropelar até o final do turno. Você pula seu próximo turno.</td>
+  </tr>
+  <tr>
+    <td>116</td>
+    <td>Warbreak Trumpeter</td>
+    <td>Morph {X}{X}{R} (You may cast this card face down as a 2/2 creature for {3}. Turn it face up any time for its morph cost.)<br>When Warbreak Trumpeter is turned face up, create X 1/1 red Goblin creature tokens.</td>
+    <td>Metamorfose {X}{X}{R} (Você pode conjurar este card com a face voltada para baixo como uma criatura 2/2 por {3}. Vire-o com a face para cima a qualquer momento pagando seu custo de metamorfose.)<br>Quando Warbreak Trumpeter for virado para cima, crie X fichas de criatura vermelhas 1/1 do tipo Goblin.</td>
+  </tr>
+  <tr>
+    <td>117</td>
+    <td>Berserk Murlodont</td>
+    <td>Whenever a Beast becomes blocked, it gets +1/+1 until end of turn for each creature blocking it.</td>
+    <td>Sempre que uma Besta é bloqueada, ela recebe +1/+1 até o final do turno para cada criatura que a bloqueia.</td>
+  </tr>
+  <tr>
+    <td>118</td>
+    <td>Branchsnap Lorian</td>
+    <td>Trample<br>Morph {G} (You may cast this card face down as a 2/2 creature for {3}. Turn it face up any time for its morph cost.)</td>
+    <td>Atropelar<br>Metamorfose {G} (Você pode conjurar este card com a face voltada para baixo como uma criatura 2/2 por {3}. Vire-o com a face para cima a qualquer momento pagando seu custo de metamorfose.)</td>
+  </tr>
+  <tr>
+    <td>119</td>
+    <td>Brontotherium</td>
+    <td>Trample<br>Provoke (Whenever this creature attacks, you may have target creature defending player controls untap and block it if able.)</td>
+    <td>Atropelar<br>Provocar (Toda vez que esta criatura atacar, você pode fazer com que a criatura alvo que o jogador defensor controla desvire e bloqueie-a, se possível.)</td>
+  </tr>
+  <tr>
+    <td>120</td>
+    <td>Brood Sliver</td>
+    <td>Whenever a Sliver deals combat damage to a player, its controller may create a 1/1 colorless Sliver creature token.</td>
+    <td>Sempre que um Fractius causa dano de combate a um jogador, seu controlador pode criar uma ficha de criatura Fractius incolor 1/1.</td>
+  </tr>
+  <tr>
+    <td>121</td>
+    <td>Caller of the Claw</td>
+    <td>Flash<br>When Caller of the Claw enters the battlefield, create a 2/2 green Bear creature token for each nontoken creature put into your graveyard from the battlefield this turn.</td>
+    <td>Clarão<br>Quando Invocador da Garra entrar no campo de batalha, crie uma ficha de criatura verde 2/2 do tipo Urso para cada criatura que não seja ficha colocada em seu cemitério vinda do campo de batalha neste turno.</td>
+  </tr>
+  <tr>
+    <td>122</td>
+    <td>Canopy Crawler</td>
+    <td>Amplify 1 (As this creature enters the battlefield, put a +1/+1 counter on it for each Beast card you reveal in your hand.)<br>{T}: Target creature gets +1/+1 until end of turn for each +1/+1 counter on Canopy Crawler.</td>
+    <td>Amplificar 1 (Conforme esta criatura entrar no campo de batalha, coloque nela um marcador +1/+1 para cada card de Besta que você revelar em sua mão.)<br>{T}: A criatura alvo recebe +1/+1 até o final do turno para cada marcador +1/+1 em Canopy Crawler.</td>
+  </tr>
+  <tr>
+    <td>123</td>
+    <td>Defiant Elf</td>
+    <td>Trample</td>
+    <td>Atropelar</td>
+  </tr>
+  <tr>
+    <td>124</td>
+    <td>Elvish Soultiller</td>
+    <td>When Elvish Soultiller dies, choose a creature type. Shuffle all creature cards of that type from your graveyard into your library.</td>
+    <td>Quando Elvish Soultiller morrer, escolha um tipo de criatura. Embaralhe todos os cards de criatura desse tipo de seu cemitério em seu grimório.</td>
+  </tr>
+  <tr>
+    <td>125</td>
+    <td>Enormous Baloth</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>126</td>
+    <td>Feral Throwback</td>
+    <td>Amplify 2 (As this creature enters the battlefield, put two +1/+1 counters on it for each Beast card you reveal in your hand.)<br>Provoke (Whenever this creature attacks, you may have target creature defending player controls untap and block it if able.)</td>
+    <td>Amplificar 2 (Conforme esta criatura entrar no campo de batalha, coloque nela dois marcadores +1/+1 para cada card de Besta que você revelar em sua mão.)<br>Provocar (Toda vez que esta criatura atacar, você pode fazer com que a criatura alvo que o jogador defensor controla desvire e bloqueie-a, se possível.)</td>
+  </tr>
+  <tr>
+    <td>127</td>
+    <td>Gempalm Strider</td>
+    <td>Cycling {2}{G}{G} ({2}{G}{G}, Discard this card: Draw a card.)<br>When you cycle Gempalm Strider, Elf creatures get +2/+2 until end of turn.</td>
+    <td>Reciclar {2}{G}{G} ({2}{G}{G}, Descarte este card: Compre um card.)<br>Quando você recicla Gempalm Strider, as criaturas Elfas recebem +2/+2 até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>128</td>
+    <td>Glowering Rogon</td>
+    <td>Amplify 1 (As this creature enters the battlefield, put a +1/+1 counter on it for each Beast card you reveal in your hand.)</td>
+    <td>Amplificar 1 (Conforme esta criatura entrar no campo de batalha, coloque nela um marcador +1/+1 para cada card de Besta que você revelar em sua mão.)</td>
+  </tr>
+  <tr>
+    <td>129</td>
+    <td>Hundroog</td>
+    <td>Cycling {3} ({3}, Discard this card: Draw a card.)</td>
+    <td>Reciclar {3} ({3}, Descarte este card: Compre um card.)</td>
+  </tr>
+  <tr>
+    <td>130</td>
+    <td>Krosan Cloudscraper</td>
+    <td>At the beginning of your upkeep, sacrifice Krosan Cloudscraper unless you pay {G}{G}.<br>Morph {7}{G}{G} (You may cast this card face down as a 2/2 creature for {3}. Turn it face up any time for its morph cost.)</td>
+    <td>No início de sua manutenção, sacrifique Arranha-nuvens Krosan, a menos que você pague {G}{G}.<br>Metamorfose {7}{G}{G} (Você pode conjurar este card com a face voltada para baixo como uma criatura 2/2 por {3}. Vire-o com a face para cima a qualquer momento pagando seu custo de metamorfose.)</td>
+  </tr>
+  <tr>
+    <td>131</td>
+    <td>Krosan Vorine</td>
+    <td>Provoke (Whenever this creature attacks, you may have target creature defending player controls untap and block it if able.)<br>Krosan Vorine can't be blocked by more than one creature.</td>
+    <td>Provocar (Toda vez que esta criatura atacar, você pode fazer com que a criatura alvo que o jogador defensor controla desvire e bloqueie-a, se possível.)<br>Krosan Vorine não pode ser bloqueado por mais de uma criatura.</td>
+  </tr>
+  <tr>
+    <td>132</td>
+    <td>Nantuko Vigilante</td>
+    <td>Morph {1}{G} (You may cast this card face down as a 2/2 creature for {3}. Turn it face up any time for its morph cost.)<br>When Nantuko Vigilante is turned face up, destroy target artifact or enchantment.</td>
+    <td>Metamorfose {1}{G} (Você pode conjurar este card com a face voltada para baixo como uma criatura 2/2 por {3}. Vire-o com a face para cima a qualquer momento pagando seu custo de metamorfose.)<br>Quando Nantuko Vigilante estiver voltado para cima, destrua o artefato ou encantamento alvo.</td>
+  </tr>
+  <tr>
+    <td>133</td>
+    <td>Needleshot Gourna</td>
+    <td>Reach (This creature can block creatures with flying.)</td>
+    <td>Alcance (Esta criatura pode bloquear criaturas com voar.)</td>
+  </tr>
+  <tr>
+    <td>134</td>
+    <td>Patron of the Wild</td>
+    <td>Morph {2}{G} (You may cast this card face down as a 2/2 creature for {3}. Turn it face up any time for its morph cost.)<br>When Patron of the Wild is turned face up, target creature gets +3/+3 until end of turn.</td>
+    <td>Metamorfose {2}{G} (Você pode conjurar este card com a face voltada para baixo como uma criatura 2/2 por {3}. Vire-o com a face para cima a qualquer momento pagando seu custo de metamorfose.)<br>Quando Patron of the Wild é virado para cima, a criatura alvo recebe +3/+3 até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>135</td>
+    <td>Primal Whisperer</td>
+    <td>Primal Whisperer gets +2/+2 for each face-down creature on the battlefield.<br>Morph {3}{G} (You may cast this card face down as a 2/2 creature for {3}. Turn it face up any time for its morph cost.)</td>
+    <td>Primal Whisperer recebe +2/+2 para cada criatura com a face voltada para baixo no campo de batalha.<br>Metamorfose {3}{G} (Você pode conjurar este card com a face voltada para baixo como uma criatura 2/2 por {3}. Vire-o com a face para cima a qualquer momento pagando seu custo de metamorfose.)</td>
+  </tr>
+  <tr>
+    <td>136</td>
+    <td>Quick Sliver</td>
+    <td>Flash<br>Any player may cast Sliver spells as though they had flash.</td>
+    <td>Clarão<br>Qualquer jogador pode lançar feitiços Sliver como se tivessem flash.</td>
+  </tr>
+  <tr>
+    <td>137</td>
+    <td>Root Sliver</td>
+    <td>This spell can't be countered.<br>Sliver spells can't be countered.</td>
+    <td>Este feitiço não pode ser anulado.<br>Feitiços de Fractius não podem ser anulados.</td>
+  </tr>
+  <tr>
+    <td>138</td>
+    <td>Seedborn Muse</td>
+    <td>Untap all permanents you control during each other player's untap step.</td>
+    <td>Desvire todas as permanentes que você controla durante a etapa de desvirar de cada outro jogador.</td>
+  </tr>
+  <tr>
+    <td>139</td>
+    <td>Stonewood Invoker</td>
+    <td>{7}{G}: Stonewood Invoker gets +5/+5 until end of turn.</td>
+    <td>{7}{G}: Invocador de Stonewood recebe +5/+5 até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>140</td>
+    <td>Timberwatch Elf</td>
+    <td>{T}: Target creature gets +X/+X until end of turn, where X is the number of Elves on the battlefield.</td>
+    <td>{T}: A criatura alvo recebe +X/+X até o final do turno, sendo X o número de Elfos no campo de batalha.</td>
+  </tr>
+  <tr>
+    <td>141</td>
+    <td>Totem Speaker</td>
+    <td>Whenever a Beast enters the battlefield, you may gain 3 life.</td>
+    <td>Toda vez que uma Besta entra no campo de batalha, você pode ganhar 3 pontos de vida.</td>
+  </tr>
+  <tr>
+    <td>142</td>
+    <td>Tribal Forcemage</td>
+    <td>Morph {1}{G} (You may cast this card face down as a 2/2 creature for {3}. Turn it face up any time for its morph cost.)<br>When Tribal Forcemage is turned face up, creatures of the creature type of your choice get +2/+2 and gain trample until end of turn.</td>
+    <td>Metamorfose {1}{G} (Você pode conjurar este card com a face voltada para baixo como uma criatura 2/2 por {3}. Vire-o com a face para cima a qualquer momento pagando seu custo de metamorfose.)<br>Quando Tribal Forcemage é virado para cima, criaturas do tipo de criatura de sua escolha recebem +2/+2 e ganham atropelar até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>143</td>
+    <td>Vexing Beetle</td>
+    <td>This spell can't be countered.<br>Vexing Beetle gets +3/+3 as long as no opponent controls a creature.</td>
+    <td>Este feitiço não pode ser anulado.<br>Besouro Vexing recebe +3/+3 enquanto nenhum oponente controlar uma criatura.</td>
+  </tr>
+  <tr>
+    <td>144</td>
+    <td>Wirewood Channeler</td>
+    <td>{T}: Add X mana of any one color, where X is the number of Elves on the battlefield.</td>
+    <td>{T}: Adicione X mana de qualquer cor, sendo X o número de Elfos no campo de batalha.</td>
+  </tr>
+  <tr>
+    <td>145</td>
+    <td>Wirewood Hivemaster</td>
+    <td>Whenever another nontoken Elf enters the battlefield, you may create a 1/1 green Insect creature token.</td>
+    <td>Toda vez que outro Elfo que não seja uma ficha entra no campo de batalha, você pode criar uma ficha de criatura verde 1/1 do tipo Inseto.</td>
+  </tr>
+</table>
+    </body>
+</html>

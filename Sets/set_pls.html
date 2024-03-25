@@ -1,0 +1,912 @@
+<html>
+<head>
+        <meta charset="UTF-8">
+        <title>pls</title>
+        <style>
+            .styled-table {
+                width: 100%;
+                border-collapse: collapse;
+                border: 1px solid #ddd;
+                font-family: Arial, sans-serif;
+            }
+            .styled-table th, .styled-table td {
+                padding: 8px;
+                text-align: left;
+                border-bottom: 1px solid #ddd;
+            }
+            .styled-table tr:nth-child(even) {
+                background-color: #f2f2f2;
+            }
+            .styled-table th {
+                background-color: #4CAF50;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+    <table class="styled-table">
+  <tr>
+    <td>numero</td>
+    <td>nome</td>
+    <td>texto_ingles</td>
+    <td>traduzido</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Aura Blast</td>
+    <td>Destroy target enchantment.<br>Draw a card.</td>
+    <td>Destrua o encantamento do alvo.<br>Compre uma carta.</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Aurora Griffin</td>
+    <td>Flying<br>{W}: Target permanent becomes white until end of turn.</td>
+    <td>Vôo<br>{W}: A permanente alvo fica branca até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Disciple of Kangee</td>
+    <td>{U}, {T}: Target creature gains flying and becomes blue until end of turn.</td>
+    <td>{U}, {T}: A criatura alvo ganha voar e fica azul até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>Dominaria's Judgment</td>
+    <td>Until end of turn, creatures you control gain protection from white if you control a Plains, from blue if you control an Island, from black if you control a Swamp, from red if you control a Mountain, and from green if you control a Forest.</td>
+    <td>Até o final do turno, as criaturas que você controla ganham proteção do branco se você controlar uma Planície, do azul se você controlar uma Ilha, do preto se você controlar um Pântano, do vermelho se você controlar uma Montanha e do verde se você controlar uma Floresta .</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>Guard Dogs</td>
+    <td>{2}{W}, {T}: Choose a permanent you control. Prevent all combat damage target creature would deal this turn if it shares a color with that permanent.</td>
+    <td>{2}{W}, {T}: Escolha uma permanente que você controla. Previne todo o dano de combate que a criatura alvo causaria neste turno se compartilhasse uma cor com aquela permanente.</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>Heroic Defiance</td>
+    <td>Enchant creature<br>Enchanted creature gets +3/+3 unless it shares a color with the most common color among all permanents or a color tied for most common.</td>
+    <td>Encantar criatura<br>A criatura encantada recebe +3/+3, a menos que compartilhe uma cor com a cor mais comum entre todas as permanentes ou uma cor empatada com a mais comum.</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>Hobble</td>
+    <td>Enchant creature<br>When Hobble enters the battlefield, draw a card.<br>Enchanted creature can't attack.<br>Enchanted creature can't block if it's black.</td>
+    <td>Encantar criatura<br>Quando Hobble entrar no campo de batalha, compre um card.<br>A criatura encantada não pode atacar.<br>A criatura encantada não pode bloquear se for preta.</td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td>Honorable Scout</td>
+    <td>When Honorable Scout enters the battlefield, you gain 2 life for each black and/or red creature target opponent controls.</td>
+    <td>Quando Honorável Batedor entra no campo de batalha, você ganha 2 pontos de vida para cada criatura preta e/ou vermelha que o oponente alvo controla.</td>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td>Lashknife Barrier</td>
+    <td>When Lashknife Barrier enters the battlefield, draw a card.<br>If a source would deal damage to a creature you control, it deals that much damage minus 1 to that creature instead.</td>
+    <td>Quando Barreira Lashknife entrar no campo de batalha, compre um card.<br>Se uma fonte fosse causar dano a uma criatura que você controla, em vez disso, ela causa aquela quantidade de dano menos 1 àquela criatura.</td>
+  </tr>
+  <tr>
+    <td>10</td>
+    <td>March of Souls</td>
+    <td>Destroy all creatures. They can't be regenerated. For each creature destroyed this way, its controller creates a 1/1 white Spirit creature token with flying.</td>
+    <td>Destrua todas as criaturas. Eles não podem ser regenerados. Para cada criatura destruída desta forma, seu controlador cria uma ficha de criatura branca 1/1 do tipo Espírito com voar.</td>
+  </tr>
+  <tr>
+    <td>11</td>
+    <td>Orim's Chant</td>
+    <td>Kicker {W} (You may pay an additional {W} as you cast this spell.)<br>Target player can't cast spells this turn. If this spell was kicked, creatures can't attack this turn.</td>
+    <td>Reforçador {W} (Você pode pagar um custo adicional de {W} ao conjurar esta mágica.)<br>O jogador alvo não pode lançar mágicas neste turno. Se esta mágica foi reforçada, as criaturas não podem atacar neste turno.</td>
+  </tr>
+  <tr>
+    <td>12</td>
+    <td>Planeswalker's Mirth</td>
+    <td>{3}{W}: Target opponent reveals a card at random from their hand. You gain life equal to that card's mana value.</td>
+    <td>{3}{W}: O oponente alvo revela aleatoriamente um card de sua mão. Você ganha uma quantidade de pontos de vida igual ao valor de mana daquele card.</td>
+  </tr>
+  <tr>
+    <td>13</td>
+    <td>Pollen Remedy</td>
+    <td>Kicker—Sacrifice a land. (You may sacrifice a land in addition to any other costs as you cast this spell.)<br>Prevent the next 3 damage that would be dealt this turn to any number of targets, divided as you choose. If this spell was kicked, prevent the next 6 damage this way instead.</td>
+    <td>Kicker — Sacrifique um terreno. (Você pode sacrificar um terreno além de quaisquer outros custos ao conjurar esta mágica.)<br>Previna os próximos 3 pontos de dano que seriam causados ​​neste turno a qualquer número de alvos, divididos como você escolher. Se este feitiço foi reforçado, evite os próximos 6 danos desta forma.</td>
+  </tr>
+  <tr>
+    <td>14</td>
+    <td>Samite Elder</td>
+    <td>{T}: Creatures you control gain protection from the colors of target permanent you control until end of turn.</td>
+    <td>{T}: As criaturas que você controla ganham proteção contra as cores da permanente alvo que você controla até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>15</td>
+    <td>Samite Pilgrim</td>
+    <td>Domain — {T}: Prevent the next X damage that would be dealt to target creature this turn, where X is the number of basic land types among lands you control.</td>
+    <td>Domínio — {T}: Previne o próximo X dano que seria causado à criatura alvo neste turno, sendo X o número de tipos de terreno básicos entre os terrenos que você controla.</td>
+  </tr>
+  <tr>
+    <td>16</td>
+    <td>Sunscape Battlemage</td>
+    <td>Kicker {1}{G} and/or {2}{U} (You may pay an additional {1}{G} and/or {2}{U} as you cast this spell.)<br>When Sunscape Battlemage enters the battlefield, if it was kicked with its {1}{G} kicker, destroy target creature with flying.<br>When Sunscape Battlemage enters the battlefield, if it was kicked with its {2}{U} kicker, draw two cards.</td>
+    <td>Reforçador {1}{G} e/ou {2}{U} (Você pode pagar um valor adicional de {1}{G} e/ou {2}{U} ao conjurar esta mágica.)<br>Quando Sunscape Battlemage entrar no campo de batalha, se ele tiver sido reforçado com seu reforço {1}{G}, destrua a criatura alvo com voar.<br>Quando Sunscape Battlemage entrar no campo de batalha, se ele tiver sido reforçado com seu reforço {2}{U}, compre dois cards.</td>
+  </tr>
+  <tr>
+    <td>17</td>
+    <td>Sunscape Familiar</td>
+    <td>Defender (This creature can't attack.)<br>Green spells and blue spells you cast cost {1} less to cast.</td>
+    <td>Defensor (Esta criatura não pode atacar.)<br>As mágicas verdes e azuis que você conjura custam {1} a menos para serem conjuradas.</td>
+  </tr>
+  <tr>
+    <td>18</td>
+    <td>Surprise Deployment</td>
+    <td>Cast this spell only during combat.<br>You may put a nonwhite creature card from your hand onto the battlefield. At the beginning of the next end step, return that creature to your hand. (Return it only if it's on the battlefield.)</td>
+    <td>Lance este feitiço apenas durante o combate.<br>Você pode colocar no campo de batalha um card de criatura que não seja branco da sua mão. No início da próxima etapa final, devolva aquela criatura para sua mão. (Devolva-o apenas se estiver no campo de batalha.)</td>
+  </tr>
+  <tr>
+    <td>19</td>
+    <td>Voice of All</td>
+    <td>Flying<br>As Voice of All enters the battlefield, choose a color.<br>Voice of All has protection from the chosen color.</td>
+    <td>Vôo<br>Conforme Voz de Todos entra no campo de batalha, escolha uma cor.<br>Voice of All possui proteção da cor escolhida.</td>
+  </tr>
+  <tr>
+    <td>20</td>
+    <td>Allied Strategies</td>
+    <td>Domain — Target player draws a card for each basic land type among lands they control.</td>
+    <td>Domínio — O jogador alvo compra um card para cada tipo de terreno básico entre os terrenos que ele controla.</td>
+  </tr>
+  <tr>
+    <td>21</td>
+    <td>Arctic Merfolk</td>
+    <td>Kicker—Return a creature you control to its owner's hand. (You may return a creature you control to its owner's hand in addition to any other costs as you cast this spell.)<br>If Arctic Merfolk was kicked, it enters the battlefield with a +1/+1 counter on it.</td>
+    <td>Reforçar — Devolva uma criatura que você controla para a mão de seu dono. (Você pode devolver uma criatura que você controla para a mão de seu dono além de quaisquer outros custos ao conjurar esta mágica.)<br>Se Tritão Ártico foi reforçado, ele entra no campo de batalha com um marcador +1/+1.</td>
+  </tr>
+  <tr>
+    <td>22</td>
+    <td>Confound</td>
+    <td>Counter target spell that targets a creature.<br>Draw a card.</td>
+    <td>Anula a mágica alvo que tem como alvo uma criatura.<br>Compre uma carta.</td>
+  </tr>
+  <tr>
+    <td>23</td>
+    <td>Dralnu's Pet</td>
+    <td>Kicker—{2}{B}, Discard a creature card. (You may pay {2}{B} and discard a creature card in addition to any other costs as you cast this spell.)<br>If Dralnu's Pet was kicked, it enters the battlefield with flying and with X +1/+1 counters on it, where X is the discarded card's mana value.</td>
+    <td>Reforçador — {2}{B}, Descarte um card de criatura. (Você pode pagar {2}{B} e descartar um card de criatura além de quaisquer outros custos ao conjurar esta mágica.)<br>Se Dralnu's Pet foi reforçado, ele entra no campo de batalha com voar e com X marcadores +1/+1, sendo X o valor de mana do card descartado.</td>
+  </tr>
+  <tr>
+    <td>24</td>
+    <td>Ertai's Trickery</td>
+    <td>Counter target spell if it was kicked.</td>
+    <td>Anule a mágica alvo se ela tiver sido reforçada.</td>
+  </tr>
+  <tr>
+    <td>25</td>
+    <td>Escape Routes</td>
+    <td>{2}{U}: Return target white or black creature you control to its owner's hand.</td>
+    <td>{2}{U}: Devolva a criatura alvo branca ou preta que você controla para a mão de seu dono.</td>
+  </tr>
+  <tr>
+    <td>26</td>
+    <td>Gainsay</td>
+    <td>Counter target blue spell.</td>
+    <td>Anule a mágica azul alvo.</td>
+  </tr>
+  <tr>
+    <td>27</td>
+    <td>Hunting Drake</td>
+    <td>Flying<br>When Hunting Drake enters the battlefield, put target red or green creature on top of its owner's library.</td>
+    <td>Vôo<br>Quando Hunting Drake entrar no campo de batalha, coloque a criatura alvo vermelha ou verde no topo do grimório de seu dono.</td>
+  </tr>
+  <tr>
+    <td>28</td>
+    <td>Planar Overlay</td>
+    <td>Each player chooses a land they control of each basic land type. Return those lands to their owners' hands.</td>
+    <td>Cada jogador escolhe um terreno que controla de cada tipo de terreno básico. Devolva essas terras às mãos de seus donos.</td>
+  </tr>
+  <tr>
+    <td>29</td>
+    <td>Planeswalker's Mischief</td>
+    <td>{3}{U}: Target opponent reveals a card at random from their hand. If it's an instant or sorcery card, exile it. You may cast it without paying its mana cost for as long as it remains exiled. At the beginning of the next end step, if you haven't cast it, return it to its owner's hand. Activate only as a sorcery.</td>
+    <td>{3}{U}: O oponente alvo revela um card aleatoriamente de sua mão. Se for um card de mágica instantânea ou feitiço, exile-o. Você pode conjurá-lo sem pagar seu custo de mana enquanto ele permanecer exilado. No início da próxima etapa final, se você ainda não o lançou, devolva-o para a mão de seu dono. Ative apenas como um feitiço.</td>
+  </tr>
+  <tr>
+    <td>30</td>
+    <td>Rushing River</td>
+    <td>Kicker—Sacrifice a land. (You may sacrifice a land in addition to any other costs as you cast this spell.)<br>Return target nonland permanent to its owner's hand. If this spell was kicked, return another target nonland permanent to its owner's hand.</td>
+    <td>Kicker — Sacrifique um terreno. (Você pode sacrificar um terreno além de quaisquer outros custos ao conjurar esta mágica.)<br>Devolva a permanente alvo que não seja um terreno para a mão de seu dono. Se esta mágica foi reforçada, devolva outra permanente alvo que não seja um terreno para a mão de seu dono.</td>
+  </tr>
+  <tr>
+    <td>31</td>
+    <td>Sea Snidd</td>
+    <td>{T}: Target land becomes the basic land type of your choice until end of turn.</td>
+    <td>{T}: O terreno alvo se torna o tipo de terreno básico de sua escolha até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>32</td>
+    <td>Shifting Sky</td>
+    <td>As Shifting Sky enters the battlefield, choose a color.<br>All nonland permanents are the chosen color.</td>
+    <td>Conforme Shifting Sky entra no campo de batalha, escolha uma cor.<br>Todas as permanentes que não sejam terrenos são da cor escolhida.</td>
+  </tr>
+  <tr>
+    <td>33</td>
+    <td>Sisay's Ingenuity</td>
+    <td>Enchant creature<br>When Sisay's Ingenuity enters the battlefield, draw a card.<br>Enchanted creature has "{2}{U}: Target creature becomes the color of your choice until end of turn."</td>
+    <td>Encantar criatura<br>Quando Ingenuidade de Sisay entrar no campo de batalha, compre um card.<br>A criatura encantada tem "{2}{U}: A criatura alvo se torna da cor de sua escolha até o final do turno."</td>
+  </tr>
+  <tr>
+    <td>34</td>
+    <td>Sleeping Potion</td>
+    <td>Enchant creature<br>When Sleeping Potion enters the battlefield, tap enchanted creature.<br>Enchanted creature doesn't untap during its controller's untap step.<br>When enchanted creature becomes the target of a spell or ability, sacrifice Sleeping Potion.</td>
+    <td>Encantar criatura<br>Quando Sleeping Potion entrar no campo de batalha, vire a criatura encantada.<br>A criatura encantada não desvira durante a etapa de desvirar de seu controlador.<br>Quando a criatura encantada se tornar alvo de uma mágica ou habilidade, sacrifique Sleeping Potion.</td>
+  </tr>
+  <tr>
+    <td>35</td>
+    <td>Stormscape Battlemage</td>
+    <td>Kicker {W} and/or {2}{B} (You may pay an additional {W} and/or {2}{B} as you cast this spell.)<br>When Stormscape Battlemage enters the battlefield, if it was kicked with its {W} kicker, you gain 3 life.<br>When Stormscape Battlemage enters the battlefield, if it was kicked with its {2}{B} kicker, destroy target nonblack creature. That creature can't be regenerated.</td>
+    <td>Reforçador {W} e/ou {2}{B} (Você pode pagar um valor adicional de {W} e/ou {2}{B} ao conjurar esta mágica.)<br>Quando Stormscape Battlemage entra no campo de batalha, se ele tiver sido reforçado com seu reforço {W}, você ganha 3 pontos de vida.<br>Quando Stormscape Battlemage entrar no campo de batalha, se ele tiver sido reforçado com seu reforço {2}{B}, destrua a criatura alvo que não seja preta. Essa criatura não pode ser regenerada.</td>
+  </tr>
+  <tr>
+    <td>36</td>
+    <td>Stormscape Familiar</td>
+    <td>Flying<br>White spells and black spells you cast cost {1} less to cast.</td>
+    <td>Vôo<br>As mágicas brancas e as mágicas pretas que você conjura custam {1} a menos para serem conjuradas.</td>
+  </tr>
+  <tr>
+    <td>37</td>
+    <td>Sunken Hope</td>
+    <td>At the beginning of each player's upkeep, that player returns a creature they control to its owner's hand.</td>
+    <td>No início da manutenção de cada jogador, aquele jogador devolve uma criatura que ele controla para a mão de seu dono.</td>
+  </tr>
+  <tr>
+    <td>38</td>
+    <td>Waterspout Elemental</td>
+    <td>Kicker {U} (You may pay an additional {U} as you cast this spell.)<br>Flying<br>When Waterspout Elemental enters the battlefield, if it was kicked, return all other creatures to their owners' hands and you skip your next turn.</td>
+    <td>Reforçador {U} (Você pode pagar um custo adicional de {U} ao conjurar esta mágica.)<br>Vôo<br>Quando Waterspout Elemental entrar no campo de batalha, se ele tiver sido reforçado, devolva todas as outras criaturas para as mãos de seus donos e você pula seu próximo turno.</td>
+  </tr>
+  <tr>
+    <td>39</td>
+    <td>Bog Down</td>
+    <td>Kicker—Sacrifice two lands. (You may sacrifice two lands in addition to any other costs as you cast this spell.)<br>Target player discards two cards. If this spell was kicked, that player discards three cards instead.</td>
+    <td>Kicker – Sacrifique dois terrenos. (Você pode sacrificar dois terrenos além de quaisquer outros custos ao conjurar esta mágica.)<br>O jogador alvo descarta duas cartas. Se esta mágica foi reforçada, aquele jogador descarta três cards.</td>
+  </tr>
+  <tr>
+    <td>40</td>
+    <td>Dark Suspicions</td>
+    <td>At the beginning of each opponent's upkeep, that player loses X life, where X is the number of cards in that player's hand minus the number of cards in your hand.</td>
+    <td>No início da manutenção de cada oponente, aquele jogador perde X pontos de vida, onde X é o número de cards na mão daquele jogador menos o número de cards na sua mão.</td>
+  </tr>
+  <tr>
+    <td>41</td>
+    <td>Death Bomb</td>
+    <td>As an additional cost to cast this spell, sacrifice a creature.<br>Destroy target nonblack creature. It can't be regenerated. Its controller loses 2 life.</td>
+    <td>Como custo adicional para conjurar esta mágica, sacrifique uma criatura.<br>Destrua a criatura alvo que não seja preta. Não pode ser regenerado. Seu controlador perde 2 pontos de vida.</td>
+  </tr>
+  <tr>
+    <td>42</td>
+    <td>Diabolic Intent</td>
+    <td>As an additional cost to cast this spell, sacrifice a creature.<br>Search your library for a card, put that card into your hand, then shuffle.</td>
+    <td>Como custo adicional para conjurar esta mágica, sacrifique uma criatura.<br>Procure um card em seu grimório, coloque-o em sua mão e embaralhe.</td>
+  </tr>
+  <tr>
+    <td>43</td>
+    <td>Exotic Disease</td>
+    <td>Domain — Target player loses X life and you gain X life, where X is the number of basic land types among lands you control.</td>
+    <td>Domínio — O jogador alvo perde X pontos de vida e você ganha X pontos de vida, onde X é o número de tipos de terreno básicos entre os terrenos que você controla.</td>
+  </tr>
+  <tr>
+    <td>44</td>
+    <td>Lord of the Undead</td>
+    <td>Other Zombie creatures get +1/+1.<br>{1}{B}, {T}: Return target Zombie card from your graveyard to your hand.</td>
+    <td>Outras criaturas Zumbi recebem +1/+1.<br>{1}{B}, {T}: Devolva o card de Zumbi alvo de seu cemitério para sua mão.</td>
+  </tr>
+  <tr>
+    <td>45</td>
+    <td>Maggot Carrier</td>
+    <td>When Maggot Carrier enters the battlefield, each player loses 1 life.</td>
+    <td>Quando Maggot Carrier entra no campo de batalha, cada jogador perde 1 ponto de vida.</td>
+  </tr>
+  <tr>
+    <td>46</td>
+    <td>Morgue Toad</td>
+    <td>Sacrifice Morgue Toad: Add {U}{R}.</td>
+    <td>Sacrifique Sapo do Morgue: Adicione {U}{R}.</td>
+  </tr>
+  <tr>
+    <td>47</td>
+    <td>Nightscape Battlemage</td>
+    <td>Kicker {2}{U} and/or {2}{R} (You may pay an additional {2}{U} and/or {2}{R} as you cast this spell.)<br>When Nightscape Battlemage enters the battlefield, if it was kicked with its {2}{U} kicker, return up to two target nonblack creatures to their owners' hands.<br>When Nightscape Battlemage enters the battlefield, if it was kicked with its {2}{R} kicker, destroy target land.</td>
+    <td>Reforçador {2}{U} e/ou {2}{R} (Você pode pagar um valor adicional de {2}{U} e/ou {2}{R} ao conjurar esta mágica.)<br>Quando Nightscape Battlemage entrar no campo de batalha, se ele tiver sido reforçado com seu reforço {2}{U}, devolva até duas criaturas alvo que não sejam pretas para as mãos de seus donos.<br>Quando Nightscape Battlemage entrar no campo de batalha, se ele tiver sido reforçado com seu reforço {2}{R}, destrua o terreno alvo.</td>
+  </tr>
+  <tr>
+    <td>48</td>
+    <td>Nightscape Familiar</td>
+    <td>Blue spells and red spells you cast cost {1} less to cast.<br>{1}{B}: Regenerate Nightscape Familiar.</td>
+    <td>As mágicas azuis e as mágicas vermelhas que você conjura custam {1} a menos para serem conjuradas.<br>{1}{B}: Regenera Familiar da Paisagem Noturna.</td>
+  </tr>
+  <tr>
+    <td>49</td>
+    <td>Noxious Vapors</td>
+    <td>Each player reveals their hand, chooses one card of each color from it, then discards all other nonland cards.</td>
+    <td>Cada jogador revela sua mão, escolhe uma carta de cada cor e descarta todas as outras cartas que não sejam terrenos.</td>
+  </tr>
+  <tr>
+    <td>50</td>
+    <td>Phyrexian Bloodstock</td>
+    <td>When Phyrexian Bloodstock leaves the battlefield, destroy target white creature. It can't be regenerated.</td>
+    <td>Quando Phyrexian Bloodstock deixar o campo de batalha, destrua a criatura branca alvo. Não pode ser regenerado.</td>
+  </tr>
+  <tr>
+    <td>51</td>
+    <td>Phyrexian Scuta</td>
+    <td>Kicker—Pay 3 life. (You may pay 3 life in addition to any other costs as you cast this spell.)<br>If Phyrexian Scuta was kicked, it enters the battlefield with two +1/+1 counters on it.</td>
+    <td>Kicker – Pague 3 pontos de vida. (Você pode pagar 3 pontos de vida além de quaisquer outros custos ao conjurar esta mágica.)<br>Se Phyrexian Scuta foi reforçado, ele entra no campo de batalha com dois marcadores +1/+1.</td>
+  </tr>
+  <tr>
+    <td>52</td>
+    <td>Planeswalker's Scorn</td>
+    <td>{3}{B}: Target opponent reveals a card at random from their hand. Target creature gets -X/-X until end of turn, where X is the revealed card's mana value. Activate only as a sorcery.</td>
+    <td>{3}{B}: O oponente alvo revela um card aleatoriamente de sua mão. A criatura alvo recebe -X/-X até o final do turno, sendo X o valor de mana do card revelado. Ative apenas como um feitiço.</td>
+  </tr>
+  <tr>
+    <td>53</td>
+    <td>Shriek of Dread</td>
+    <td>Target creature gains fear until end of turn. (It can't be blocked except by artifact creatures and/or black creatures.)</td>
+    <td>A criatura alvo ganha medo até o final do turno. (Ele não pode ser bloqueado exceto por criaturas artefato e/ou criaturas pretas.)</td>
+  </tr>
+  <tr>
+    <td>54</td>
+    <td>Sinister Strength</td>
+    <td>Enchant creature<br>Enchanted creature gets +3/+1 and is black.</td>
+    <td>Encantar criatura<br>A criatura encantada recebe +3/+1 e é preta.</td>
+  </tr>
+  <tr>
+    <td>55</td>
+    <td>Slay</td>
+    <td>Destroy target green creature. It can't be regenerated.<br>Draw a card.</td>
+    <td>Destrua a criatura verde alvo. Não pode ser regenerado.<br>Compre uma carta.</td>
+  </tr>
+  <tr>
+    <td>56</td>
+    <td>Volcano Imp</td>
+    <td>Flying<br>{1}{R}: Volcano Imp gains first strike until end of turn.</td>
+    <td>Vôo<br>{1}{R}: Diabrete do Vulcão ganha iniciativa até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>57</td>
+    <td>Warped Devotion</td>
+    <td>Whenever a permanent is returned to a player's hand, that player discards a card.</td>
+    <td>Sempre que uma permanente é devolvida à mão de um jogador, aquele jogador descarta um card.</td>
+  </tr>
+  <tr>
+    <td>58</td>
+    <td>Caldera Kavu</td>
+    <td>{1}{B}: Caldera Kavu gets +1/+1 until end of turn.<br>{G}: Caldera Kavu becomes the color of your choice until end of turn.</td>
+    <td>{1}{B}: Caldera Kavu recebe +1/+1 até o final do turno.<br>{G}: Caldera Kavu se torna da cor de sua escolha até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>59</td>
+    <td>Deadapult</td>
+    <td>{R}, Sacrifice a Zombie: Deadapult deals 2 damage to any target.</td>
+    <td>{R}, Sacrifique um Zumbi: Deadapult causa 2 pontos de dano a qualquer alvo.</td>
+  </tr>
+  <tr>
+    <td>60</td>
+    <td>Flametongue Kavu</td>
+    <td>When Flametongue Kavu enters the battlefield, it deals 4 damage to target creature.</td>
+    <td>Quando Flametongue Kavu entra no campo de batalha, ele causa 4 pontos de dano à criatura alvo.</td>
+  </tr>
+  <tr>
+    <td>61</td>
+    <td>Goblin Game</td>
+    <td>Each player hides at least one item, then all players reveal them simultaneously. Each player loses life equal to the number of items they revealed. The player who revealed the fewest items then loses half their life, rounded up. If two or more players are tied for fewest, each loses half their life, rounded up.</td>
+    <td>Cada jogador esconde pelo menos um item e todos os jogadores os revelam simultaneamente. Cada jogador perde pontos de vida iguais ao número de itens que revelou. O jogador que revelou menos itens perde metade da vida, totalizando. Se dois ou mais jogadores empatarem no menor número, cada um perde metade da vida, arredondado para cima.</td>
+  </tr>
+  <tr>
+    <td>62</td>
+    <td>Implode</td>
+    <td>Destroy target land.<br>Draw a card.</td>
+    <td>Destrua o terreno alvo.<br>Compre uma carta.</td>
+  </tr>
+  <tr>
+    <td>63</td>
+    <td>Insolence</td>
+    <td>Enchant creature<br>Whenever enchanted creature becomes tapped, Insolence deals 2 damage to that creature's controller.</td>
+    <td>Encantar criatura<br>Toda vez que a criatura encantada é virada, Insolence causa 2 pontos de dano ao controlador daquela criatura.</td>
+  </tr>
+  <tr>
+    <td>64</td>
+    <td>Kavu Recluse</td>
+    <td>{T}: Target land becomes a Forest until end of turn.</td>
+    <td>{T}: O terreno alvo se torna uma Floresta até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>65</td>
+    <td>Keldon Mantle</td>
+    <td>Enchant creature<br>{B}: Regenerate enchanted creature.<br>{R}: Enchanted creature gets +1/+0 until end of turn.<br>{G}: Enchanted creature gains trample until end of turn.</td>
+    <td>Encantar criatura<br>{B}: Regenera a criatura encantada.<br>{R}: A criatura encantada recebe +1/+0 até o final do turno.<br>{G}: A criatura encantada ganha atropelar até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>66</td>
+    <td>Magma Burst</td>
+    <td>Kicker—Sacrifice two lands. (You may sacrifice two lands in addition to any other costs as you cast this spell.)<br>Magma Burst deals 3 damage to any target. If this spell was kicked, it deals 3 damage to another target.</td>
+    <td>Kicker – Sacrifique dois terrenos. (Você pode sacrificar dois terrenos além de quaisquer outros custos ao conjurar esta mágica.)<br>Magma Burst causa 3 pontos de dano a qualquer alvo. Se este feitiço for reforçado, ele causa 3 pontos de dano a outro alvo.</td>
+  </tr>
+  <tr>
+    <td>67</td>
+    <td>Mire Kavu</td>
+    <td>Mire Kavu gets +1/+1 as long as you control a Swamp.</td>
+    <td>Mire Kavu receberá +1/+1 enquanto você controlar um Pântano.</td>
+  </tr>
+  <tr>
+    <td>68</td>
+    <td>Mogg Jailer</td>
+    <td>Mogg Jailer can't attack if defending player controls an untapped creature with power 2 or less.</td>
+    <td>Mogg Jailer não pode atacar se o jogador defensor controlar uma criatura desvirada com poder 2 ou menos.</td>
+  </tr>
+  <tr>
+    <td>69</td>
+    <td>Mogg Sentry</td>
+    <td>Whenever an opponent casts a spell, Mogg Sentry gets +2/+2 until end of turn.</td>
+    <td>Sempre que um oponente conjura uma mágica, Mogg Sentry recebe +2/+2 até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>70</td>
+    <td>Planeswalker's Fury</td>
+    <td>{3}{R}: Target opponent reveals a card at random from their hand. Planeswalker's Fury deals damage equal to that card's mana value to that player. Activate only as a sorcery.</td>
+    <td>{3}{R}: O oponente alvo revela um card aleatoriamente de sua mão. Fúria do Planeswalker causa dano igual ao valor de mana daquele card àquele jogador. Ative apenas como um feitiço.</td>
+  </tr>
+  <tr>
+    <td>71</td>
+    <td>Singe</td>
+    <td>Singe deals 1 damage to target creature. That creature becomes black until end of turn.</td>
+    <td>Singe causa 1 ponto de dano à criatura alvo. Aquela criatura fica preta até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>72</td>
+    <td>Slingshot Goblin</td>
+    <td>{R}, {T}: Slingshot Goblin deals 2 damage to target blue creature.</td>
+    <td>{R}, {T}: Goblin Estilingue causa 2 pontos de dano à criatura azul alvo.</td>
+  </tr>
+  <tr>
+    <td>73</td>
+    <td>Strafe</td>
+    <td>Strafe deals 3 damage to target nonred creature.</td>
+    <td>Strafe causa 3 pontos de dano à criatura alvo que não seja vermelha.</td>
+  </tr>
+  <tr>
+    <td>74</td>
+    <td>Tahngarth, Talruum Hero</td>
+    <td>Vigilance<br>{1}{R}, {T}: Tahngarth, Talruum Hero deals damage equal to its power to target creature. That creature deals damage equal to its power to Tahngarth.</td>
+    <td>Vigilância<br>{1}{R}, {T}: Tahngarth, Herói de Talruum, causa dano igual ao seu poder à criatura alvo. Aquela criatura causa dano igual ao seu poder a Tahngarth.</td>
+  </tr>
+  <tr>
+    <td>74★</td>
+    <td>Tahngarth, Talruum Hero</td>
+    <td>Vigilance<br>{1}{R}, {T}: Tahngarth, Talruum Hero deals damage equal to its power to target creature. That creature deals damage equal to its power to Tahngarth.</td>
+    <td>Vigilância<br>{1}{R}, {T}: Tahngarth, Herói de Talruum, causa dano igual ao seu poder à criatura alvo. Aquela criatura causa dano igual ao seu poder a Tahngarth.</td>
+  </tr>
+  <tr>
+    <td>75</td>
+    <td>Thunderscape Battlemage</td>
+    <td>Kicker {1}{B} and/or {G} (You may pay an additional {1}{B} and/or {G} as you cast this spell.)<br>When Thunderscape Battlemage enters the battlefield, if it was kicked with its {1}{B} kicker, target player discards two cards.<br>When Thunderscape Battlemage enters the battlefield, if it was kicked with its {G} kicker, destroy target enchantment.</td>
+    <td>Reforçador {1}{B} e/ou {G} (Você pode pagar um valor adicional de {1}{B} e/ou {G} ao conjurar esta mágica.)<br>Quando Thunderscape Battlemage entra no campo de batalha, se ele tiver sido reforçado com seu reforço {1}{B}, o jogador alvo descarta dois cards.<br>Quando Thunderscape Battlemage entrar no campo de batalha, se ele tiver sido reforçado com seu reforço {G}, destrua o encantamento alvo.</td>
+  </tr>
+  <tr>
+    <td>76</td>
+    <td>Thunderscape Familiar</td>
+    <td>First strike<br>Black spells and green spells you cast cost {1} less to cast.</td>
+    <td>Primeiro ataque<br>As mágicas pretas e verdes que você conjura custam {1} a menos para serem conjuradas.</td>
+  </tr>
+  <tr>
+    <td>77</td>
+    <td>Alpha Kavu</td>
+    <td>{1}{G}: Target Kavu creature gets -1/+1 until end of turn.</td>
+    <td>{1}{G}: A criatura Kavu alvo recebe -1/+1 até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>78</td>
+    <td>Amphibious Kavu</td>
+    <td>Whenever Amphibious Kavu blocks or becomes blocked by one or more blue and/or black creatures, Amphibious Kavu gets +3/+3 until end of turn.</td>
+    <td>Sempre que Kavu Anfíbio bloqueia ou é bloqueado por uma ou mais criaturas azuis e/ou pretas, Kavu Anfíbio recebe +3/+3 até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>79</td>
+    <td>Falling Timber</td>
+    <td>Kicker—Sacrifice a land. (You may sacrifice a land in addition to any other costs as you cast this spell.)<br>Prevent all combat damage target creature would deal this turn. If this spell was kicked, prevent all combat damage another target creature would deal this turn.</td>
+    <td>Kicker — Sacrifique um terreno. (Você pode sacrificar um terreno além de quaisquer outros custos ao conjurar esta mágica.)<br>Previne todo o dano de combate que a criatura alvo causaria neste turno. Se este feitiço for reforçado, previne todo o dano de combate que outra criatura alvo causaria neste turno.</td>
+  </tr>
+  <tr>
+    <td>80</td>
+    <td>Gaea's Herald</td>
+    <td>Creature spells can't be countered.</td>
+    <td>Os feitiços de criatura não podem ser anulados.</td>
+  </tr>
+  <tr>
+    <td>81</td>
+    <td>Gaea's Might</td>
+    <td>Domain — Target creature gets +1/+1 until end of turn for each basic land type among lands you control.</td>
+    <td>Domínio — A criatura alvo recebe +1/+1 até o final do turno para cada tipo de terreno básico entre os terrenos que você controla.</td>
+  </tr>
+  <tr>
+    <td>82</td>
+    <td>Magnigoth Treefolk</td>
+    <td>Domain — For each basic land type among lands you control, Magnigoth Treefolk has landwalk of that type. (It can't be blocked as long as defending player controls a land of that type.)</td>
+    <td>Domínio – Para cada tipo de terreno básico entre os terrenos que você controla, o Povo das Árvores Magnigote possui travessia de terreno desse tipo. (Não pode ser bloqueado enquanto o jogador defensor controlar um terreno desse tipo.)</td>
+  </tr>
+  <tr>
+    <td>83</td>
+    <td>Mirrorwood Treefolk</td>
+    <td>{2}{R}{W}: The next time damage would be dealt to Mirrorwood Treefolk this turn, that damage is dealt to any target instead.</td>
+    <td>{2}{R}{W}: Na próxima vez que o dano seria causado ao Povo das Árvores da Floresta Espelhada neste turno, esse dano será causado a qualquer alvo.</td>
+  </tr>
+  <tr>
+    <td>84</td>
+    <td>Multani's Harmony</td>
+    <td>Enchant creature<br>Enchanted creature has "{T}: Add one mana of any color."</td>
+    <td>Encantar criatura<br>A criatura encantada tem "{T}: Adicione um mana de qualquer cor."</td>
+  </tr>
+  <tr>
+    <td>85</td>
+    <td>Nemata, Grove Guardian</td>
+    <td>{2}{G}: Create a 1/1 green Saproling creature token.<br>Sacrifice a Saproling: Saproling creatures get +1/+1 until end of turn.</td>
+    <td>{2}{G}: Crie uma ficha de criatura verde 1/1 do tipo Saprófita.<br>Sacrifique um Saprófita: As criaturas saprófitas recebem +1/+1 até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>86</td>
+    <td>Planeswalker's Favor</td>
+    <td>{3}{G}: Target opponent reveals a card at random from their hand. Target creature gets +X/+X until end of turn, where X is the revealed card's mana value.</td>
+    <td>{3}{G}: O oponente alvo revela um card aleatoriamente de sua mão. A criatura alvo recebe +X/+X até o final do turno, sendo X o valor de mana do card revelado.</td>
+  </tr>
+  <tr>
+    <td>87</td>
+    <td>Primal Growth</td>
+    <td>Kicker—Sacrifice a creature. (You may sacrifice a creature in addition to any other costs as you cast this spell.)<br>Search your library for a basic land card, put that card onto the battlefield, then shuffle. If this spell was kicked, instead search your library for up to two basic land cards, put them onto the battlefield, then shuffle.</td>
+    <td>Kicker – Sacrifique uma criatura. (Você pode sacrificar uma criatura além de quaisquer outros custos ao conjurar esta mágica.)<br>Procure em seu grimório por um card de terreno básico, coloque aquele card no campo de batalha e depois embaralhe. Se esta mágica foi reforçada, em vez disso, procure em seu grimório por até dois cards de terreno básico, coloque-os no campo de batalha e depois embaralhe.</td>
+  </tr>
+  <tr>
+    <td>88</td>
+    <td>Pygmy Kavu</td>
+    <td>When Pygmy Kavu enters the battlefield, draw a card for each black creature your opponents control.</td>
+    <td>Quando Pygmy Kavu entrar no campo de batalha, compre um card para cada criatura preta que seus oponentes controlam.</td>
+  </tr>
+  <tr>
+    <td>89</td>
+    <td>Quirion Dryad</td>
+    <td>Whenever you cast a spell that's white, blue, black, or red, put a +1/+1 counter on Quirion Dryad.</td>
+    <td>Sempre que você lançar uma mágica branca, azul, preta ou vermelha, coloque um marcador +1/+1 em Quirion Dryad.</td>
+  </tr>
+  <tr>
+    <td>90</td>
+    <td>Quirion Explorer</td>
+    <td>{T}: Add one mana of any color that a land an opponent controls could produce.</td>
+    <td>{T}: Adicione um mana de qualquer cor que um terreno que um oponente controla possa produzir.</td>
+  </tr>
+  <tr>
+    <td>91</td>
+    <td>Root Greevil</td>
+    <td>{2}{G}, {T}, Sacrifice Root Greevil: Destroy all enchantments of the color of your choice.</td>
+    <td>{2}{G}, {T}, Sacrifique Root Greevil: Destrua todos os encantamentos da cor de sua escolha.</td>
+  </tr>
+  <tr>
+    <td>92</td>
+    <td>Skyshroud Blessing</td>
+    <td>All lands gain shroud until end of turn. (They can't be the targets of spells or abilities.)<br>Draw a card.</td>
+    <td>Todos os terrenos ganham mortalha até o final do turno. (Eles não podem ser alvos de mágicas ou habilidades.)<br>Compre uma carta.</td>
+  </tr>
+  <tr>
+    <td>93</td>
+    <td>Stone Kavu</td>
+    <td>{R}: Stone Kavu gets +1/+0 until end of turn.<br>{W}: Stone Kavu gets +0/+1 until end of turn.</td>
+    <td>{R}: Stone Kavu recebe +1/+0 até o final do turno.<br>{W}: Stone Kavu recebe +0/+1 até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>94</td>
+    <td>Thornscape Battlemage</td>
+    <td>Kicker {R} and/or {W} (You may pay an additional {R} and/or {W} as you cast this spell.)<br>When Thornscape Battlemage enters the battlefield, if it was kicked with its {R} kicker, it deals 2 damage to any target.<br>When Thornscape Battlemage enters the battlefield, if it was kicked with its {W} kicker, destroy target artifact.</td>
+    <td>Reforçador {R} e/ou {W} (Você pode pagar um valor adicional de {R} e/ou {W} ao conjurar esta mágica.)<br>Quando Thornscape Battlemage entra no campo de batalha, se tiver sido reforçado com seu reforço {R}, ele causa 2 pontos de dano a qualquer alvo.<br>Quando Thornscape Battlemage entrar no campo de batalha, se ele tiver sido reforçado com seu reforço {W}, destrua o artefato alvo.</td>
+  </tr>
+  <tr>
+    <td>95</td>
+    <td>Thornscape Familiar</td>
+    <td>Red spells and white spells you cast cost {1} less to cast.</td>
+    <td>As mágicas vermelhas e as mágicas brancas que você conjura custam {1} a menos para serem conjuradas.</td>
+  </tr>
+  <tr>
+    <td>96</td>
+    <td>Ancient Spider</td>
+    <td>First strike; reach (This creature can block creatures with flying.)</td>
+    <td>Primeiro ataque; alcance (Esta criatura pode bloquear criaturas com voar.)</td>
+  </tr>
+  <tr>
+    <td>97</td>
+    <td>Cavern Harpy</td>
+    <td>Flying<br>When Cavern Harpy enters the battlefield, return a blue or black creature you control to its owner's hand.<br>Pay 1 life: Return Cavern Harpy to its owner's hand.</td>
+    <td>Vôo<br>Quando Cavern Harpy entrar no campo de batalha, devolva uma criatura azul ou preta que você controla para a mão de seu dono.<br>Pague 1 ponto de vida: Devolva Harpia da Caverna para a mão de seu dono.</td>
+  </tr>
+  <tr>
+    <td>98</td>
+    <td>Cloud Cover</td>
+    <td>Whenever another permanent you control becomes the target of a spell or ability an opponent controls, you may return that permanent to its owner's hand.</td>
+    <td>Toda vez que outra permanente que você controla se torna alvo de uma mágica ou habilidade que um oponente controla, você pode devolver aquela permanente para a mão de seu dono.</td>
+  </tr>
+  <tr>
+    <td>99</td>
+    <td>Crosis's Charm</td>
+    <td>Choose one —<br>• Return target permanent to its owner's hand.<br>• Destroy target nonblack creature. It can't be regenerated.<br>• Destroy target artifact.</td>
+    <td>Escolha um -<br>• Devolva a permanente alvo para a mão de seu dono.<br>• Destrua a criatura alvo que não seja preta. Não pode ser regenerado.<br>• Destrua o artefato alvo.</td>
+  </tr>
+  <tr>
+    <td>100</td>
+    <td>Darigaaz's Charm</td>
+    <td>Choose one —<br>• Return target creature card from your graveyard to your hand.<br>• Darigaaz's Charm deals 3 damage to any target.<br>• Target creature gets +3/+3 until end of turn.</td>
+    <td>Escolha um -<br>• Devolva o card de criatura alvo de seu cemitério para sua mão.<br>• O Charme de Darigaaz causa 3 pontos de dano a qualquer alvo.<br>• A criatura alvo recebe +3/+3 até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>101</td>
+    <td>Daring Leap</td>
+    <td>Target creature gets +1/+1 and gains flying and first strike until end of turn.</td>
+    <td>A criatura alvo recebe +1/+1 e ganha voar e iniciativa até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>102</td>
+    <td>Destructive Flow</td>
+    <td>At the beginning of each player's upkeep, that player sacrifices a nonbasic land.</td>
+    <td>No início da manutenção de cada jogador, aquele jogador sacrifica um terreno não básico.</td>
+  </tr>
+  <tr>
+    <td>103</td>
+    <td>Doomsday Specter</td>
+    <td>Flying<br>When Doomsday Specter enters the battlefield, return a blue or black creature you control to its owner's hand.<br>Whenever Doomsday Specter deals combat damage to a player, look at that player's hand and choose a card from it. The player discards that card.</td>
+    <td>Vôo<br>Quando Espectro do Juízo Final entrar no campo de batalha, devolva uma criatura azul ou preta que você controla para a mão de seu dono.<br>Sempre que Doomsday Spectre causar dano de combate a um jogador, olhe a mão daquele jogador e escolha uma carta dela. O jogador descarta aquela carta.</td>
+  </tr>
+  <tr>
+    <td>104</td>
+    <td>Dralnu's Crusade</td>
+    <td>All Goblins get +1/+1.<br>All Goblins are black and are Zombies in addition to their other creature types.</td>
+    <td>Todos os Goblins recebem +1/+1.<br>Todos os Goblins são pretos e são Zumbis, além de seus outros tipos de criaturas.</td>
+  </tr>
+  <tr>
+    <td>105</td>
+    <td>Dromar's Charm</td>
+    <td>Choose one —<br>• You gain 5 life.<br>• Counter target spell.<br>• Target creature gets -2/-2 until end of turn.</td>
+    <td>Escolha um -<br>• Você ganha 5 pontos de vida.<br>• Anule a mágica alvo.<br>• A criatura alvo recebe -2/-2 até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>106</td>
+    <td>Eladamri's Call</td>
+    <td>Search your library for a creature card, reveal that card, put it into your hand, then shuffle.</td>
+    <td>Procure um card de criatura em seu grimório, revele aquele card, coloque-o em sua mão e depois embaralhe.</td>
+  </tr>
+  <tr>
+    <td>107</td>
+    <td>Ertai, the Corrupted</td>
+    <td>{U}, {T}, Sacrifice a creature or enchantment: Counter target spell.</td>
+    <td>{U}, {T}, Sacrifique uma criatura ou encantamento: Anule a mágica alvo.</td>
+  </tr>
+  <tr>
+    <td>107★</td>
+    <td>Ertai, the Corrupted</td>
+    <td>{U}, {T}, Sacrifice a creature or enchantment: Counter target spell.</td>
+    <td>{U}, {T}, Sacrifique uma criatura ou encantamento: Anule a mágica alvo.</td>
+  </tr>
+  <tr>
+    <td>108</td>
+    <td>Fleetfoot Panther</td>
+    <td>Flash<br>When Fleetfoot Panther enters the battlefield, return a green or white creature you control to its owner's hand.</td>
+    <td>Clarão<br>Quando Pantera Fleetfoot entrar no campo de batalha, devolva uma criatura verde ou branca que você controla para a mão de seu dono.</td>
+  </tr>
+  <tr>
+    <td>109</td>
+    <td>Gerrard's Command</td>
+    <td>Untap target creature. It gets +3/+3 until end of turn.</td>
+    <td>Desvire a criatura alvo. Recebe +3/+3 até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>110</td>
+    <td>Horned Kavu</td>
+    <td>When Horned Kavu enters the battlefield, return a red or green creature you control to its owner's hand.</td>
+    <td>Quando Horned Kavu entrar no campo de batalha, devolva uma criatura vermelha ou verde que você controla para a mão de seu dono.</td>
+  </tr>
+  <tr>
+    <td>111</td>
+    <td>Hull Breach</td>
+    <td>Choose one —<br>• Destroy target artifact.<br>• Destroy target enchantment.<br>• Destroy target artifact and target enchantment.</td>
+    <td>Escolha um -<br>• Destrua o artefato alvo.<br>• Destrua o encantamento do alvo.<br>• Destrua o artefato alvo e o encantamento alvo.</td>
+  </tr>
+  <tr>
+    <td>112</td>
+    <td>Keldon Twilight</td>
+    <td>At the beginning of each player's end step, if no creatures attacked this turn, that player sacrifices a creature they controlled since the beginning of the turn.</td>
+    <td>No início da etapa final de cada jogador, se nenhuma criatura atacou neste turno, aquele jogador sacrifica uma criatura que ele controlava desde o início do turno.</td>
+  </tr>
+  <tr>
+    <td>113</td>
+    <td>Lava Zombie</td>
+    <td>When Lava Zombie enters the battlefield, return a black or red creature you control to its owner's hand.<br>{2}: Lava Zombie gets +1/+0 until end of turn.</td>
+    <td>Quando Lava Zombie entrar no campo de batalha, devolva uma criatura preta ou vermelha que você controla para a mão de seu dono.<br>{2}: Zumbi de Lava recebe +1/+0 até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>114</td>
+    <td>Malicious Advice</td>
+    <td>Tap X target artifacts, creatures, and/or lands. You lose X life.</td>
+    <td>Vire X artefatos, criaturas e/ou terrenos alvo. Você perde X pontos de vida.</td>
+  </tr>
+  <tr>
+    <td>115</td>
+    <td>Marsh Crocodile</td>
+    <td>When Marsh Crocodile enters the battlefield, return a blue or black creature you control to its owner's hand.<br>When Marsh Crocodile enters the battlefield, each player discards a card.</td>
+    <td>Quando Marsh Crocodile entrar no campo de batalha, devolva uma criatura azul ou preta que você controla para a mão de seu dono.<br>Quando Marsh Crocodile entra no campo de batalha, cada jogador descarta um card.</td>
+  </tr>
+  <tr>
+    <td>116</td>
+    <td>Meddling Mage</td>
+    <td>As Meddling Mage enters the battlefield, choose a nonland card name.<br>Spells with the chosen name can't be cast.</td>
+    <td>Conforme Meddling Mage entra no campo de batalha, escolha um nome de card que não seja um terreno.<br>Feitiços com o nome escolhido não podem ser lançados.</td>
+  </tr>
+  <tr>
+    <td>117</td>
+    <td>Natural Emergence</td>
+    <td>When Natural Emergence enters the battlefield, return a red or green enchantment you control to its owner's hand.<br>Lands you control are 2/2 creatures with first strike. They're still lands.</td>
+    <td>Quando Emergência Natural entrar no campo de batalha, devolva um encantamento vermelho ou verde que você controla para a mão de seu dono.<br>Os terrenos que você controla são criaturas 2/2 com iniciativa. Eles ainda são terras.</td>
+  </tr>
+  <tr>
+    <td>118</td>
+    <td>Phyrexian Tyranny</td>
+    <td>Whenever a player draws a card, that player loses 2 life unless they pay {2}.</td>
+    <td>Sempre que um jogador compra um card, ele perde 2 pontos de vida, a menos que pague {2}.</td>
+  </tr>
+  <tr>
+    <td>119</td>
+    <td>Questing Phelddagrif</td>
+    <td>{G}: Questing Phelddagrif gets +1/+1 until end of turn. Target opponent creates a 1/1 green Hippo creature token.<br>{W}: Questing Phelddagrif gains protection from black and from red until end of turn. Target opponent gains 2 life.<br>{U}: Questing Phelddagrif gains flying until end of turn. Target opponent may draw a card.</td>
+    <td>{G}: A missão de Phelddagrif recebe +1/+1 até o final do turno. O oponente alvo cria uma ficha de criatura verde 1/1 do tipo Hipopótamo.<br>{W}: Phelddagrif em missão ganha proteção contra o preto e o vermelho até o final do turno. O oponente alvo ganha 2 pontos de vida.<br>{U}: Phelddagrif em missão ganha voar até o final do turno. O oponente alvo pode comprar um card.</td>
+  </tr>
+  <tr>
+    <td>120</td>
+    <td>Radiant Kavu</td>
+    <td>{R}{G}{W}: Prevent all combat damage blue creatures and black creatures would deal this turn.</td>
+    <td>{R}{G}{W}: Previne todo o dano de combate que as criaturas azuis e as criaturas pretas causariam neste turno.</td>
+  </tr>
+  <tr>
+    <td>121</td>
+    <td>Razing Snidd</td>
+    <td>When Razing Snidd enters the battlefield, return a black or red creature you control to its owner's hand.<br>When Razing Snidd enters the battlefield, each player sacrifices a land.</td>
+    <td>Quando Razing Snidd entrar no campo de batalha, devolva uma criatura preta ou vermelha que você controla para a mão de seu dono.<br>Quando Razing Snidd entra no campo de batalha, cada jogador sacrifica um terreno.</td>
+  </tr>
+  <tr>
+    <td>122</td>
+    <td>Rith's Charm</td>
+    <td>Choose one —<br>• Destroy target nonbasic land.<br>• Create three 1/1 green Saproling creature tokens.<br>• Prevent all damage a source of your choice would deal this turn.</td>
+    <td>Escolha um -<br>• Destruir terrenos não básicos alvo.<br>• Crie três fichas de criatura verde 1/1 do tipo Saprófita.<br>• Previne todo o dano que uma fonte de sua escolha causaria neste turno.</td>
+  </tr>
+  <tr>
+    <td>123</td>
+    <td>Sawtooth Loon</td>
+    <td>Flying<br>When Sawtooth Loon enters the battlefield, return a white or blue creature you control to its owner's hand.<br>When Sawtooth Loon enters the battlefield, draw two cards, then put two cards from your hand on the bottom of your library.</td>
+    <td>Vôo<br>Quando Sawtooth Loon entrar no campo de batalha, devolva uma criatura branca ou azul que você controla para a mão de seu dono.<br>Quando Sawtooth Loon entrar no campo de batalha, compre dois cards e depois coloque dois cards da sua mão no fundo do seu grimório.</td>
+  </tr>
+  <tr>
+    <td>124</td>
+    <td>Shivan Wurm</td>
+    <td>Trample<br>When Shivan Wurm enters the battlefield, return a red or green creature you control to its owner's hand.</td>
+    <td>Atropelar<br>Quando Shivan Wurm entrar no campo de batalha, devolva uma criatura vermelha ou verde que você controla para a mão de seu dono.</td>
+  </tr>
+  <tr>
+    <td>125</td>
+    <td>Silver Drake</td>
+    <td>Flying<br>When Silver Drake enters the battlefield, return a white or blue creature you control to its owner's hand.</td>
+    <td>Vôo<br>Quando Silver Drake entrar no campo de batalha, devolva uma criatura branca ou azul que você controla para a mão de seu dono.</td>
+  </tr>
+  <tr>
+    <td>126</td>
+    <td>Sparkcaster</td>
+    <td>When Sparkcaster enters the battlefield, return a red or green creature you control to its owner's hand.<br>When Sparkcaster enters the battlefield, it deals 1 damage to target player or planeswalker.</td>
+    <td>Quando Sparkcaster entrar no campo de batalha, devolva uma criatura vermelha ou verde que você controla para a mão de seu dono.<br>Quando Sparkcaster entra no campo de batalha, ele causa 1 ponto de dano ao jogador ou planeswalker alvo.</td>
+  </tr>
+  <tr>
+    <td>127</td>
+    <td>Steel Leaf Paladin</td>
+    <td>First strike<br>When Steel Leaf Paladin enters the battlefield, return a green or white creature you control to its owner's hand.</td>
+    <td>Primeiro ataque<br>Quando Steel Leaf Paladin entrar no campo de batalha, devolva uma criatura verde ou branca que você controla para a mão de seu dono.</td>
+  </tr>
+  <tr>
+    <td>128</td>
+    <td>Terminate</td>
+    <td>Destroy target creature. It can't be regenerated.</td>
+    <td>Destrua a criatura alvo. Não pode ser regenerado.</td>
+  </tr>
+  <tr>
+    <td>129</td>
+    <td>Treva's Charm</td>
+    <td>Choose one —<br>• Destroy target enchantment.<br>• Exile target attacking creature.<br>• Draw a card, then discard a card.</td>
+    <td>Escolha um -<br>• Destrua o encantamento do alvo.<br>• Exile a criatura atacante alvo.<br>• Compre uma carta e depois descarte uma carta.</td>
+  </tr>
+  <tr>
+    <td>130</td>
+    <td>Urza's Guilt</td>
+    <td>Each player draws two cards, then discards three cards, then loses 4 life.</td>
+    <td>Cada jogador compra duas cartas, depois descarta três cartas e perde 4 pontos de vida.</td>
+  </tr>
+  <tr>
+    <td>131</td>
+    <td>Draco</td>
+    <td>Domain — This spell costs {2} less to cast for each basic land type among lands you control.<br>Flying<br>Domain — At the beginning of your upkeep, sacrifice Draco unless you pay {10}. This cost is reduced by {2} for each basic land type among lands you control.</td>
+    <td>Domínio — Esta mágica custa {2} a menos para ser conjurada para cada tipo de terreno básico entre os terrenos que você controla.<br>Vôo<br>Domínio — No início de sua manutenção, sacrifique Draco, a menos que você pague {10}. Este custo é reduzido em {2} para cada tipo de terreno básico entre os terrenos que você controla.</td>
+  </tr>
+  <tr>
+    <td>132</td>
+    <td>Mana Cylix</td>
+    <td>{1}, {T}: Add one mana of any color.</td>
+    <td>{1}, {T}: Adicione um mana de qualquer cor.</td>
+  </tr>
+  <tr>
+    <td>133</td>
+    <td>Skyship Weatherlight</td>
+    <td>When Skyship Weatherlight enters the battlefield, search your library for any number of artifact and/or creature cards, exile them, then shuffle.<br>{4}, {T}: Choose a card at random that was exiled with Skyship Weatherlight. Put that card into its owner's hand.</td>
+    <td>Quando Skyship Weatherlight entrar no campo de batalha, procure em seu grimório qualquer número de cards de artefato e/ou criatura, exile-os e depois embaralhe.<br>{4}, {T}: Escolha aleatoriamente um card que foi exilado com Skyship Weatherlight. Coloque aquela carta na mão de seu dono.</td>
+  </tr>
+  <tr>
+    <td>133★</td>
+    <td>Skyship Weatherlight</td>
+    <td>When Skyship Weatherlight enters the battlefield, search your library for any number of artifact and/or creature cards, exile them, then shuffle.<br>{4}, {T}: Choose a card at random that was exiled with Skyship Weatherlight. Put that card into its owner's hand.</td>
+    <td>Quando Skyship Weatherlight entrar no campo de batalha, procure em seu grimório qualquer número de cards de artefato e/ou criatura, exile-os e depois embaralhe.<br>{4}, {T}: Escolha aleatoriamente um card que foi exilado com Skyship Weatherlight. Coloque aquela carta na mão de seu dono.</td>
+  </tr>
+  <tr>
+    <td>134</td>
+    <td>Star Compass</td>
+    <td>Star Compass enters the battlefield tapped.<br>{T}: Add one mana of any color that a basic land you control could produce.</td>
+    <td>Star Compass entra no campo de batalha virado.<br>{T}: Adicione um mana de qualquer cor que um terreno básico que você controla possa produzir.</td>
+  </tr>
+  <tr>
+    <td>135</td>
+    <td>Stratadon</td>
+    <td>Domain — This spell costs {1} less to cast for each basic land type among lands you control.<br>Trample</td>
+    <td>Domínio — Esta mágica custa {1} a menos para ser conjurada para cada tipo de terreno básico entre os terrenos que você controla.<br>Atropelar</td>
+  </tr>
+  <tr>
+    <td>136</td>
+    <td>Crosis's Catacombs</td>
+    <td>When Crosis's Catacombs enters the battlefield, sacrifice it unless you return a non-Lair land you control to its owner's hand.<br>{T}: Add {U}, {B}, or {R}.</td>
+    <td>Quando Catacumbas de Crosis entrar no campo de batalha, sacrifique-o, a menos que você devolva um terreno que não seja Covil que você controla para a mão de seu dono.<br>{T}: Adicione {U}, {B} ou {R}.</td>
+  </tr>
+  <tr>
+    <td>137</td>
+    <td>Darigaaz's Caldera</td>
+    <td>When Darigaaz's Caldera enters the battlefield, sacrifice it unless you return a non-Lair land you control to its owner's hand.<br>{T}: Add {B}, {R}, or {G}.</td>
+    <td>Quando Darigaaz's Caldera entrar no campo de batalha, sacrifique-o, a menos que você devolva um terreno que não seja Lair que você controla para a mão de seu dono.<br>{T}: Adicione {B}, {R} ou {G}.</td>
+  </tr>
+  <tr>
+    <td>138</td>
+    <td>Dromar's Cavern</td>
+    <td>When Dromar's Cavern enters the battlefield, sacrifice it unless you return a non-Lair land you control to its owner's hand.<br>{T}: Add {W}, {U}, or {B}.</td>
+    <td>Quando Dromar's Cavern entrar no campo de batalha, sacrifique-o, a menos que você devolva um terreno que não seja Covil que você controla para a mão de seu dono.<br>{T}: Adicione {W}, {U} ou {B}.</td>
+  </tr>
+  <tr>
+    <td>139</td>
+    <td>Forsaken City</td>
+    <td>Forsaken City doesn't untap during your untap step.<br>At the beginning of your upkeep, you may exile a card from your hand. If you do, untap Forsaken City.<br>{T}: Add one mana of any color.</td>
+    <td>Cidade Abandonada não desvira durante sua etapa de desvirar.<br>No início de sua manutenção, você pode exilar um card de sua mão. Se fizer isso, desvire Cidade Abandonada.<br>{T}: Adicione um mana de qualquer cor.</td>
+  </tr>
+  <tr>
+    <td>140</td>
+    <td>Meteor Crater</td>
+    <td>{T}: Choose a color of a permanent you control. Add one mana of that color.</td>
+    <td>{T}: Escolha a cor de uma permanente que você controla. Adicione um mana dessa cor.</td>
+  </tr>
+  <tr>
+    <td>141</td>
+    <td>Rith's Grove</td>
+    <td>When Rith's Grove enters the battlefield, sacrifice it unless you return a non-Lair land you control to its owner's hand.<br>{T}: Add {R}, {G}, or {W}.</td>
+    <td>Quando Rith's Grove entrar no campo de batalha, sacrifique-o, a menos que você devolva um terreno que não seja Covil que você controla para a mão de seu dono.<br>{T}: Adicione {R}, {G} ou {W}.</td>
+  </tr>
+  <tr>
+    <td>142</td>
+    <td>Terminal Moraine</td>
+    <td>{T}: Add {C}.<br>{2}, {T}, Sacrifice Terminal Moraine: Search your library for a basic land card, put that card onto the battlefield tapped, then shuffle.</td>
+    <td>{T}: Adicione {C}.<br>{2}, {T}, Sacrifique Moraine Terminal: Procure um card de terreno básico em seu grimório, coloque-o no campo de batalha virado e depois embaralhe.</td>
+  </tr>
+  <tr>
+    <td>143</td>
+    <td>Treva's Ruins</td>
+    <td>When Treva's Ruins enters the battlefield, sacrifice it unless you return a non-Lair land you control to its owner's hand.<br>{T}: Add {G}, {W}, or {U}.</td>
+    <td>Quando Ruínas de Treva entrar no campo de batalha, sacrifique-o, a menos que você devolva um terreno que não seja Covil que você controla para a mão de seu dono.<br>{T}: Adicione {G}, {W} ou {U}.</td>
+  </tr>
+</table>
+    </body>
+</html>

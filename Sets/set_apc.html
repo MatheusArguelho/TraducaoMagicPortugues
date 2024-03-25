@@ -1,0 +1,894 @@
+<html>
+<head>
+        <meta charset="UTF-8">
+        <title>apc</title>
+        <style>
+            .styled-table {
+                width: 100%;
+                border-collapse: collapse;
+                border: 1px solid #ddd;
+                font-family: Arial, sans-serif;
+            }
+            .styled-table th, .styled-table td {
+                padding: 8px;
+                text-align: left;
+                border-bottom: 1px solid #ddd;
+            }
+            .styled-table tr:nth-child(even) {
+                background-color: #f2f2f2;
+            }
+            .styled-table th {
+                background-color: #4CAF50;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+    <table class="styled-table">
+  <tr>
+    <td>numero</td>
+    <td>nome</td>
+    <td>texto_ingles</td>
+    <td>traduzido</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Angelfire Crusader</td>
+    <td>{R}: Angelfire Crusader gets +1/+0 until end of turn.</td>
+    <td>{R}: Cruzado Angelfire recebe +1/+0 até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Coalition Flag</td>
+    <td>Enchant creature you control<br>Enchanted creature is a Flagbearer.<br>While an opponent is choosing targets as part of casting a spell they control or activating an ability they control, that player must choose at least one Flagbearer on the battlefield if able.</td>
+    <td>Encantar criatura que você controla<br>A criatura encantada é um Porta-bandeira.<br>Enquanto um oponente escolhe alvos como parte do lançamento de uma mágica que ele controla ou da ativação de uma habilidade que ele controla, aquele jogador deve escolher pelo menos um Porta-bandeira no campo de batalha, se estiver apto.</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Coalition Honor Guard</td>
+    <td>While an opponent is choosing targets as part of casting a spell they control or activating an ability they control, that player must choose at least one Flagbearer on the battlefield if able.</td>
+    <td>Enquanto um oponente escolhe alvos como parte do lançamento de uma mágica que ele controla ou da ativação de uma habilidade que ele controla, aquele jogador deve escolher pelo menos um Porta-bandeira no campo de batalha, se estiver apto.</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>Dega Disciple</td>
+    <td>{B}, {T}: Target creature gets -2/-0 until end of turn.<br>{R}, {T}: Target creature gets +2/+0 until end of turn.</td>
+    <td>{B}, {T}: A criatura alvo recebe -2/-0 até o final do turno.<br>{R}, {T}: A criatura alvo recebe +2/+0 até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>Dega Sanctuary</td>
+    <td>At the beginning of your upkeep, if you control a black or red permanent, you gain 2 life. If you control a black permanent and a red permanent, you gain 4 life instead.</td>
+    <td>No início de sua manutenção, se você controlar uma permanente preta ou vermelha, você ganha 2 pontos de vida. Se você controlar uma permanente preta e uma permanente vermelha, em vez disso você ganha 4 pontos de vida.</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>Degavolver</td>
+    <td>Kicker {1}{B} and/or {R} (You may pay an additional {1}{B} and/or {R} as you cast this spell.)<br>If Degavolver was kicked with its {1}{B} kicker, it enters the battlefield with two +1/+1 counters on it and with "Pay 3 life: Regenerate Degavolver."<br>If Degavolver was kicked with its {R} kicker, it enters the battlefield with a +1/+1 counter on it and with first strike.</td>
+    <td>Reforçador {1}{B} e/ou {R} (Você pode pagar um valor adicional de {1}{B} e/ou {R} ao conjurar esta mágica.)<br>Se Degavolver foi reforçado com seu reforço {1}{B}, ele entra no campo de batalha com dois marcadores +1/+1 e com "Pague 3 pontos de vida: Regenerar Degavolver."<br>Se Degavolver foi reforçado com seu reforço {R}, ele entra no campo de batalha com um marcador +1/+1 e com iniciativa.</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>Diversionary Tactics</td>
+    <td>Tap two untapped creatures you control: Tap target creature.</td>
+    <td>Vire duas criaturas desviradas que você controla: Vire a criatura alvo.</td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td>Divine Light</td>
+    <td>Prevent all damage that would be dealt this turn to creatures you control.</td>
+    <td>Previna todo o dano que seria causado neste turno às criaturas que você controla.</td>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td>Enlistment Officer</td>
+    <td>First strike<br>When Enlistment Officer enters the battlefield, reveal the top four cards of your library. Put all Soldier cards revealed this way into your hand and the rest on the bottom of your library in any order.</td>
+    <td>Primeiro ataque<br>Quando Oficial de Alistamento entrar no campo de batalha, revele os quatro cards do topo do seu grimório. Coloque todos os cards de Soldado revelados desta forma em sua mão e o restante no fundo de seu grimório em qualquer ordem.</td>
+  </tr>
+  <tr>
+    <td>10</td>
+    <td>False Dawn</td>
+    <td>Until end of turn, spells and abilities you control that would add colored mana instead add that much white mana. Until end of turn, you may spend white mana as though it were mana of any color.<br>Draw a card.</td>
+    <td>Até o final do turno, as mágicas e habilidades que você controla que adicionariam mana colorida, em vez disso, adicionam aquela quantidade de mana branca. Até o final do turno, você pode gastar mana branco como se fosse mana de qualquer cor.<br>Compre uma carta.</td>
+  </tr>
+  <tr>
+    <td>11</td>
+    <td>Gerrard Capashen</td>
+    <td>At the beginning of your upkeep, you gain 1 life for each card in target opponent's hand.<br>{3}{W}: Tap target creature. Activate only if Gerrard Capashen is attacking.</td>
+    <td>No início de sua manutenção, você ganha 1 ponto de vida para cada card na mão do oponente alvo.<br>{3}{W}: Vire a criatura alvo. Ative apenas se Gerrard Capashen estiver atacando.</td>
+  </tr>
+  <tr>
+    <td>12</td>
+    <td>Haunted Angel</td>
+    <td>Flying<br>When Haunted Angel dies, exile Haunted Angel and each other player creates a 3/3 black Angel creature token with flying.</td>
+    <td>Vôo<br>Quando Haunted Angel morrer, exile Haunted Angel e cada outro jogador cria uma ficha de criatura preta 3/3 do tipo Anjo com voar.</td>
+  </tr>
+  <tr>
+    <td>13</td>
+    <td>Helionaut</td>
+    <td>Flying<br>{1}, {T}: Add one mana of any color.</td>
+    <td>Vôo<br>{1}, {T}: Adicione um mana de qualquer cor.</td>
+  </tr>
+  <tr>
+    <td>14</td>
+    <td>Manacles of Decay</td>
+    <td>Enchant creature<br>Enchanted creature can't attack.<br>{B}: Enchanted creature gets -1/-1 until end of turn.<br>{R}: Enchanted creature can't block this turn.</td>
+    <td>Encantar criatura<br>A criatura encantada não pode atacar.<br>{B}: A criatura encantada recebe -1/-1 até o final do turno.<br>{R}: A criatura encantada não pode bloquear neste turno.</td>
+  </tr>
+  <tr>
+    <td>15</td>
+    <td>Orim's Thunder</td>
+    <td>Kicker {R} (You may pay an additional {R} as you cast this spell.)<br>Destroy target artifact or enchantment. If this spell was kicked, it deals damage equal to that permanent's mana value to target creature.</td>
+    <td>Reforçador {R} (Você pode pagar um custo adicional de {R} ao conjurar esta mágica.)<br>Destrua o artefato ou o encantamento alvo. Se esta mágica foi reforçada, ela causa dano igual ao valor de mana daquela permanente à criatura alvo.</td>
+  </tr>
+  <tr>
+    <td>16</td>
+    <td>Shield of Duty and Reason</td>
+    <td>Enchant creature<br>Enchanted creature has protection from green and from blue.</td>
+    <td>Encantar criatura<br>A criatura encantada tem proteção contra o verde e o azul.</td>
+  </tr>
+  <tr>
+    <td>17</td>
+    <td>Spectral Lynx</td>
+    <td>Protection from green<br>{B}: Regenerate Spectral Lynx.</td>
+    <td>Proteção contra o verde<br>{B}: Regenera Lince Espectral.</td>
+  </tr>
+  <tr>
+    <td>18</td>
+    <td>Standard Bearer</td>
+    <td>While an opponent is choosing targets as part of casting a spell they control or activating an ability they control, that player must choose at least one Flagbearer on the battlefield if able.</td>
+    <td>Enquanto um oponente escolhe alvos como parte do lançamento de uma mágica que ele controla ou da ativação de uma habilidade que ele controla, aquele jogador deve escolher pelo menos um Porta-bandeira no campo de batalha, se estiver apto.</td>
+  </tr>
+  <tr>
+    <td>19</td>
+    <td>Ceta Disciple</td>
+    <td>{R}, {T}: Target creature gets +2/+0 until end of turn.<br>{G}, {T}: Add one mana of any color.</td>
+    <td>{R}, {T}: A criatura alvo recebe +2/+0 até o final do turno.<br>{G}, {T}: Adicione um mana de qualquer cor.</td>
+  </tr>
+  <tr>
+    <td>20</td>
+    <td>Ceta Sanctuary</td>
+    <td>At the beginning of your upkeep, if you control a red or green permanent, draw a card, then discard a card. If you control a red permanent and a green permanent, instead draw two cards, then discard a card.</td>
+    <td>No início de sua manutenção, se você controlar uma permanente vermelha ou verde, compre um card e depois descarte um card. Se você controlar uma permanente vermelha e uma permanente verde, compre dois cards e descarte um card.</td>
+  </tr>
+  <tr>
+    <td>21</td>
+    <td>Cetavolver</td>
+    <td>Kicker {1}{R} and/or {G} (You may pay an additional {1}{R} and/or {G} as you cast this spell.)<br>If Cetavolver was kicked with its {1}{R} kicker, it enters the battlefield with two +1/+1 counters on it and with first strike.<br>If Cetavolver was kicked with its {G} kicker, it enters the battlefield with a +1/+1 counter on it and with trample.</td>
+    <td>Reforçador {1}{R} e/ou {G} (Você pode pagar um custo adicional de {1}{R} e/ou {G} ao conjurar esta mágica.)<br>Se Cetavolver foi reforçado com seu reforço {1}{R}, ele entra no campo de batalha com dois marcadores +1/+1 e com iniciativa.<br>Se Cetavolver foi reforçado com seu reforço {G}, ele entra no campo de batalha com um marcador +1/+1 e com atropelar.</td>
+  </tr>
+  <tr>
+    <td>22</td>
+    <td>Coastal Drake</td>
+    <td>Flying<br>{1}{U}, {T}: Return target Kavu to its owner's hand.</td>
+    <td>Vôo<br>{1}{U}, {T}: Devolva o Kavu alvo para a mão de seu dono.</td>
+  </tr>
+  <tr>
+    <td>23</td>
+    <td>Evasive Action</td>
+    <td>Domain — Counter target spell unless its controller pays {1} for each basic land type among lands you control.</td>
+    <td>Domínio — Anula a mágica alvo, a menos que seu controlador pague {1} para cada tipo de terreno básico entre os terrenos que você controla.</td>
+  </tr>
+  <tr>
+    <td>24</td>
+    <td>Ice Cave</td>
+    <td>Whenever a player casts a spell, any other player may pay that spell's mana cost. If a player does, counter the spell. (Mana cost includes color.)</td>
+    <td>Sempre que um jogador conjura uma mágica, qualquer outro jogador pode pagar o custo de mana daquela mágica. Se um jogador fizer isso, anule a mágica. (O custo de mana inclui a cor.)</td>
+  </tr>
+  <tr>
+    <td>25</td>
+    <td>Index</td>
+    <td>Look at the top five cards of your library, then put them back in any order.</td>
+    <td>Olhe os cinco cards do topo do seu grimório e coloque-os de volta em qualquer ordem.</td>
+  </tr>
+  <tr>
+    <td>26</td>
+    <td>Jaded Response</td>
+    <td>Counter target spell if it shares a color with a creature you control.</td>
+    <td>Anule a mágica alvo se ela compartilhar uma cor com uma criatura que você controla.</td>
+  </tr>
+  <tr>
+    <td>27</td>
+    <td>Jilt</td>
+    <td>Kicker {1}{R} (You may pay an additional {1}{R} as you cast this spell.)<br>Return target creature to its owner's hand. If this spell was kicked, it deals 2 damage to another target creature.</td>
+    <td>Reforço {1}{R} (Você pode pagar um custo adicional de {1}{R} ao conjurar esta mágica.)<br>Devolva a criatura alvo para a mão de seu dono. Se este feitiço for reforçado, ele causa 2 pontos de dano a outra criatura alvo.</td>
+  </tr>
+  <tr>
+    <td>28</td>
+    <td>Living Airship</td>
+    <td>Flying<br>{2}{G}: Regenerate Living Airship.</td>
+    <td>Vôo<br>{2}{G}: Regenera Dirigível Vivo.</td>
+  </tr>
+  <tr>
+    <td>29</td>
+    <td>Reef Shaman</td>
+    <td>{T}: Target land becomes the basic land type of your choice until end of turn.</td>
+    <td>{T}: O terreno alvo se torna o tipo de terreno básico de sua escolha até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>30</td>
+    <td>Shimmering Mirage</td>
+    <td>Target land becomes the basic land type of your choice until end of turn.<br>Draw a card.</td>
+    <td>O terreno alvo se torna o tipo de terreno básico de sua escolha até o final do turno.<br>Compre uma carta.</td>
+  </tr>
+  <tr>
+    <td>31</td>
+    <td>Tidal Courier</td>
+    <td>When Tidal Courier enters the battlefield, reveal the top four cards of your library. Put all Merfolk cards revealed this way into your hand and the rest on the bottom of your library in any order.<br>{3}{U}: Tidal Courier gains flying until end of turn.</td>
+    <td>Quando Tidal Courier entrar no campo de batalha, revele os quatro cards do topo do seu grimório. Coloque todos os cards de Tritão revelados desta forma em sua mão e o restante no fundo de seu grimório em qualquer ordem.<br>{3}{U}: Mensageiro das Marés ganha voar até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>32</td>
+    <td>Unnatural Selection</td>
+    <td>{1}: Choose a creature type other than Wall. Target creature becomes that type until end of turn.</td>
+    <td>{1}: Escolha um tipo de criatura diferente de Muralha. A criatura alvo se torna daquele tipo até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>33</td>
+    <td>Vodalian Mystic</td>
+    <td>{T}: Target instant or sorcery spell becomes the color of your choice.</td>
+    <td>{T}: O feitiço instantâneo ou feitiço alvo torna-se da cor de sua escolha.</td>
+  </tr>
+  <tr>
+    <td>34</td>
+    <td>Whirlpool Drake</td>
+    <td>Flying<br>When Whirlpool Drake enters the battlefield, shuffle the cards from your hand into your library, then draw that many cards.<br>When Whirlpool Drake dies, shuffle the cards from your hand into your library, then draw that many cards.</td>
+    <td>Vôo<br>Quando Whirlpool Drake entrar no campo de batalha, embaralhe os cards de sua mão em seu grimório e depois compre aquela quantidade de cards.<br>Quando Whirlpool Drake morrer, embaralhe os cards de sua mão em seu grimório e compre aquela quantidade de cards.</td>
+  </tr>
+  <tr>
+    <td>35</td>
+    <td>Whirlpool Rider</td>
+    <td>When Whirlpool Rider enters the battlefield, shuffle the cards from your hand into your library, then draw that many cards.</td>
+    <td>Quando Whirlpool Rider entrar no campo de batalha, embaralhe os cards de sua mão em seu grimório e depois compre aquela quantidade de cards.</td>
+  </tr>
+  <tr>
+    <td>36</td>
+    <td>Whirlpool Warrior</td>
+    <td>When Whirlpool Warrior enters the battlefield, shuffle the cards from your hand into your library, then draw that many cards.<br>{R}, Sacrifice Whirlpool Warrior: Each player shuffles the cards from their hand into their library, then draws that many cards.</td>
+    <td>Quando Guerreiro Redemoinho entrar no campo de batalha, embaralhe os cards de sua mão em seu grimório e compre aquela quantidade de cards.<br>{R}, sacrifique Whirlpool Warrior: Cada jogador embaralha os cards de sua mão em seu grimório e depois compra aquela mesma quantidade de cards.</td>
+  </tr>
+  <tr>
+    <td>37</td>
+    <td>Dead Ringers</td>
+    <td>Destroy two target nonblack creatures unless either one is a color the other isn't. They can't be regenerated.</td>
+    <td>Destrua duas criaturas alvo que não sejam pretas, a menos que uma delas seja de uma cor que a outra não seja. Eles não podem ser regenerados.</td>
+  </tr>
+  <tr>
+    <td>38</td>
+    <td>Desolation Angel</td>
+    <td>Kicker {W}{W} (You may pay an additional {W}{W} as you cast this spell.)<br>Flying<br>When Desolation Angel enters the battlefield, destroy all lands you control. If it was kicked, destroy all lands instead.</td>
+    <td>Reforçador {W}{W} (Você pode pagar um valor adicional de {W}{W} ao conjurar esta mágica.)<br>Vôo<br>Quando Desolation Angel entrar no campo de batalha, destrua todos os terrenos que você controla. Se foi reforçado, destrua todos os terrenos.</td>
+  </tr>
+  <tr>
+    <td>39</td>
+    <td>Foul Presence</td>
+    <td>Enchant creature<br>Enchanted creature gets -1/-1 and has "{T}: Target creature gets -1/-1 until end of turn."</td>
+    <td>Encantar criatura<br>A criatura encantada recebe -1/-1 e tem "{T}: A criatura alvo recebe -1/-1 até o final do turno."</td>
+  </tr>
+  <tr>
+    <td>40</td>
+    <td>Grave Defiler</td>
+    <td>When Grave Defiler enters the battlefield, reveal the top four cards of your library. Put all Zombie cards revealed this way into your hand and the rest on the bottom of your library in any order.<br>{1}{B}: Regenerate Grave Defiler.</td>
+    <td>Quando Grave Defiler entrar no campo de batalha, revele os quatro cards do topo do seu grimório. Coloque todos os cards de Zumbi revelados desta forma em sua mão e o restante no fundo de seu grimório em qualquer ordem.<br>{1}{B}: Regenera Profanador de Túmulos.</td>
+  </tr>
+  <tr>
+    <td>41</td>
+    <td>Last Caress</td>
+    <td>Target player loses 1 life and you gain 1 life.<br>Draw a card.</td>
+    <td>O jogador alvo perde 1 vida e você ganha 1 vida.<br>Compre uma carta.</td>
+  </tr>
+  <tr>
+    <td>42</td>
+    <td>Mind Extraction</td>
+    <td>As an additional cost to cast this spell, sacrifice a creature.<br>Target player reveals their hand and discards all cards of each of the sacrificed creature's colors.</td>
+    <td>Como custo adicional para conjurar esta mágica, sacrifique uma criatura.<br>O jogador alvo revela sua mão e descarta todos os cards de cada uma das cores da criatura sacrificada.</td>
+  </tr>
+  <tr>
+    <td>43</td>
+    <td>Mournful Zombie</td>
+    <td>{W}, {T}: Target player gains 1 life.</td>
+    <td>{W}, {T}: O jogador alvo ganha 1 ponto de vida.</td>
+  </tr>
+  <tr>
+    <td>44</td>
+    <td>Necra Disciple</td>
+    <td>{G}, {T}: Add one mana of any color.<br>{W}, {T}: Prevent the next 1 damage that would be dealt to any target this turn.</td>
+    <td>{G}, {T}: Adicione um mana de qualquer cor.<br>{W}, {T}: Previne o próximo 1 dano que seria causado a qualquer alvo neste turno.</td>
+  </tr>
+  <tr>
+    <td>45</td>
+    <td>Necra Sanctuary</td>
+    <td>At the beginning of your upkeep, if you control a green or white permanent, target player loses 1 life. If you control a green permanent and a white permanent, that player loses 3 life instead.</td>
+    <td>No início de sua manutenção, se você controlar uma permanente verde ou branca, o jogador alvo perde 1 ponto de vida. Se você controlar uma permanente verde e uma permanente branca, aquele jogador perde 3 pontos de vida.</td>
+  </tr>
+  <tr>
+    <td>46</td>
+    <td>Necravolver</td>
+    <td>Kicker {1}{G} and/or {W} (You may pay an additional {1}{G} and/or {W} as you cast this spell.)<br>If Necravolver was kicked with its {1}{G} kicker, it enters the battlefield with two +1/+1 counters on it and with trample.<br>If Necravolver was kicked with its {W} kicker, it enters the battlefield with a +1/+1 counter on it and with "Whenever Necravolver deals damage, you gain that much life."</td>
+    <td>Reforçador {1}{G} e/ou {W} (Você pode pagar um custo adicional de {1}{G} e/ou {W} ao conjurar esta mágica.)<br>Se Necravolver foi reforçado com seu reforço {1}{G}, ele entra no campo de batalha com dois marcadores +1/+1 e com atropelar.<br>Se Necravolver foi reforçado com seu reforço {W}, ele entra no campo de batalha com um marcador +1/+1 e com "Toda vez que Necravolver causa dano, você ganha aquela quantidade de pontos de vida."</td>
+  </tr>
+  <tr>
+    <td>47</td>
+    <td>Phyrexian Arena</td>
+    <td>At the beginning of your upkeep, you draw a card and you lose 1 life.</td>
+    <td>No início de sua manutenção, você compra um card e perde 1 ponto de vida.</td>
+  </tr>
+  <tr>
+    <td>48</td>
+    <td>Phyrexian Gargantua</td>
+    <td>When Phyrexian Gargantua enters the battlefield, you draw two cards and you lose 2 life.</td>
+    <td>Quando Phyrexian Gargantua entra no campo de batalha, você compra dois cards e perde 2 pontos de vida.</td>
+  </tr>
+  <tr>
+    <td>49</td>
+    <td>Phyrexian Rager</td>
+    <td>When Phyrexian Rager enters the battlefield, you draw a card and you lose 1 life.</td>
+    <td>Quando Furioso Phyrexiano entra no campo de batalha, você compra um card e perde 1 ponto de vida.</td>
+  </tr>
+  <tr>
+    <td>50</td>
+    <td>Planar Despair</td>
+    <td>Domain — All creatures get -1/-1 until end of turn for each basic land type among lands you control.</td>
+    <td>Domínio — Todas as criaturas recebem -1/-1 até o final do turno para cada tipo de terreno básico entre os terrenos que você controla.</td>
+  </tr>
+  <tr>
+    <td>51</td>
+    <td>Quagmire Druid</td>
+    <td>{G}, {T}, Sacrifice a creature: Destroy target enchantment.</td>
+    <td>{G}, {T}, Sacrifique uma criatura: Destrua o encantamento alvo.</td>
+  </tr>
+  <tr>
+    <td>52</td>
+    <td>Suppress</td>
+    <td>Target player exiles all cards from their hand face down. At the beginning of the end step of that player's next turn, that player returns those cards to their hand.</td>
+    <td>O jogador alvo exila todos os cards de sua mão com a face voltada para baixo. No início da etapa final do próximo turno daquele jogador, ele devolve esses cards para sua mão.</td>
+  </tr>
+  <tr>
+    <td>53</td>
+    <td>Urborg Uprising</td>
+    <td>Return up to two target creature cards from your graveyard to your hand.<br>Draw a card.</td>
+    <td>Devolva até dois cards de criatura alvo de seu cemitério para sua mão.<br>Compre uma carta.</td>
+  </tr>
+  <tr>
+    <td>54</td>
+    <td>Zombie Boa</td>
+    <td>{1}{B}: Choose a color. Whenever Zombie Boa becomes blocked by a creature of that color this turn, destroy that creature. Activate only as a sorcery.</td>
+    <td>{1}{B}: Escolha uma cor. Toda vez que Zombie Boa for bloqueado por uma criatura daquela cor neste turno, destrua aquela criatura. Ative apenas como um feitiço.</td>
+  </tr>
+  <tr>
+    <td>55</td>
+    <td>Bloodfire Colossus</td>
+    <td>{R}, Sacrifice Bloodfire Colossus: It deals 6 damage to each creature and each player.</td>
+    <td>{R}, Sacrifique Bloodfire Colossus: Causa 6 pontos de dano a cada criatura e a cada jogador.</td>
+  </tr>
+  <tr>
+    <td>56</td>
+    <td>Bloodfire Dwarf</td>
+    <td>{R}, Sacrifice Bloodfire Dwarf: It deals 1 damage to each creature without flying.</td>
+    <td>{R}, Sacrifique Anão Fogo Sangrento: Ele causa 1 ponto de dano a cada criatura sem voar.</td>
+  </tr>
+  <tr>
+    <td>57</td>
+    <td>Bloodfire Infusion</td>
+    <td>Enchant creature you control<br>{R}, Sacrifice enchanted creature: Bloodfire Infusion deals damage equal to the sacrificed creature's power to each creature.</td>
+    <td>Encantar criatura que você controla<br>{R}, Sacrifique a criatura encantada: Infusão de Fogo Sangrento causa dano igual ao poder da criatura sacrificada a cada criatura.</td>
+  </tr>
+  <tr>
+    <td>58</td>
+    <td>Bloodfire Kavu</td>
+    <td>{R}, Sacrifice Bloodfire Kavu: It deals 2 damage to each creature.</td>
+    <td>{R}, Sacrifique Bloodfire Kavu: Causa 2 pontos de dano a cada criatura.</td>
+  </tr>
+  <tr>
+    <td>59</td>
+    <td>Desolation Giant</td>
+    <td>Kicker {W}{W} (You may pay an additional {W}{W} as you cast this spell.)<br>When Desolation Giant enters the battlefield, destroy all other creatures you control. If it was kicked, destroy all other creatures instead.</td>
+    <td>Reforçador {W}{W} (Você pode pagar um valor adicional de {W}{W} ao conjurar esta mágica.)<br>Quando Desolation Giant entrar no campo de batalha, destrua todas as outras criaturas que você controla. Se foi reforçado, destrua todas as outras criaturas.</td>
+  </tr>
+  <tr>
+    <td>60</td>
+    <td>Dwarven Landslide</td>
+    <td>Kicker—{2}{R}, Sacrifice a land. (You may pay {2}{R} and sacrifice a land in addition to any other costs as you cast this spell.)<br>Destroy target land. If this spell was kicked, destroy another target land.</td>
+    <td>Kicker — {2}{R}, sacrifique um terreno. (Você pode pagar {2}{R} e sacrificar um terreno além de quaisquer outros custos ao conjurar esta mágica.)<br>Destrua o terreno alvo. Se esta mágica foi reforçada, destrói outro terreno alvo.</td>
+  </tr>
+  <tr>
+    <td>61</td>
+    <td>Dwarven Patrol</td>
+    <td>Dwarven Patrol doesn't untap during your untap step.<br>Whenever you cast a nonred spell, untap Dwarven Patrol.</td>
+    <td>Dwarven Patrol não desvira durante sua etapa de desvirar.<br>Sempre que você lançar um feitiço não vermelho, desvire Dwarven Patrol.</td>
+  </tr>
+  <tr>
+    <td>62</td>
+    <td>Goblin Ringleader</td>
+    <td>Haste (This creature can attack and {T} as soon as it comes under your control.)<br>When Goblin Ringleader enters the battlefield, reveal the top four cards of your library. Put all Goblin cards revealed this way into your hand and the rest on the bottom of your library in any order.</td>
+    <td>Aceleração (Esta criatura pode atacar e {T} assim que ficar sob seu controle.)<br>Quando Líder Goblin entrar no campo de batalha, revele os quatro cards do topo de seu grimório. Coloque todos os cards de Goblin revelados desta forma em sua mão e o restante no fundo de seu grimório em qualquer ordem.</td>
+  </tr>
+  <tr>
+    <td>63</td>
+    <td>Illuminate</td>
+    <td>Kicker {2}{R} and/or {3}{U} (You may pay an additional {2}{R} and/or {3}{U} as you cast this spell.)<br>Illuminate deals X damage to target creature. If this spell was kicked with its {2}{R} kicker, it deals X damage to that creature's controller. If this spell was kicked with its {3}{U} kicker, you draw X cards.</td>
+    <td>Reforçar {2}{R} e/ou {3}{U} (Você pode pagar um valor adicional de {2}{R} e/ou {3}{U} ao conjurar esta mágica.)<br>Illuminate causa X pontos de dano à criatura alvo. Se esta mágica foi reforçada com seu reforço {2}{R}, ela causa X pontos de dano ao controlador daquela criatura. Se esta mágica foi reforçada com seu reforço {3}{U}, você compra X cards.</td>
+  </tr>
+  <tr>
+    <td>64</td>
+    <td>Kavu Glider</td>
+    <td>{W}: Kavu Glider gets +0/+1 until end of turn.<br>{U}: Kavu Glider gains flying until end of turn.</td>
+    <td>{W}: Planador Kavu recebe +0/+1 até o final do turno.<br>{U}: Planador Kavu ganha voar até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>65</td>
+    <td>Minotaur Tactician</td>
+    <td>Haste<br>Minotaur Tactician gets +1/+1 as long as you control a white creature.<br>Minotaur Tactician gets +1/+1 as long as you control a blue creature.</td>
+    <td>Pressa<br>Minotauro Estrategista receberá +1/+1 enquanto você controlar uma criatura branca.<br>Minotauro Estrategista receberá +1/+1 enquanto você controlar uma criatura azul.</td>
+  </tr>
+  <tr>
+    <td>66</td>
+    <td>Raka Disciple</td>
+    <td>{W}, {T}: Prevent the next 1 damage that would be dealt to any target this turn.<br>{U}, {T}: Target creature gains flying until end of turn.</td>
+    <td>{W}, {T}: Previne o próximo 1 dano que seria causado a qualquer alvo neste turno.<br>{U}, {T}: A criatura alvo ganha voar até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>67</td>
+    <td>Raka Sanctuary</td>
+    <td>At the beginning of your upkeep, if you control a white or blue permanent, Raka Sanctuary deals 1 damage to target creature. If you control a white permanent and a blue permanent, Raka Sanctuary deals 3 damage instead.</td>
+    <td>No início de sua manutenção, se você controlar uma permanente branca ou azul, Santuário Raka causa 1 ponto de dano à criatura alvo. Se você controlar uma permanente branca e uma permanente azul, o Santuário Raka causará 3 pontos de dano.</td>
+  </tr>
+  <tr>
+    <td>68</td>
+    <td>Rakavolver</td>
+    <td>Kicker {1}{W} and/or {U} (You may pay an additional {1}{W} and/or {U} as you cast this spell.)<br>If Rakavolver was kicked with its {1}{W} kicker, it enters the battlefield with two +1/+1 counters on it and with "Whenever Rakavolver deals damage, you gain that much life."<br>If Rakavolver was kicked with its {U} kicker, it enters the battlefield with a +1/+1 counter on it and with flying.</td>
+    <td>Reforçador {1}{W} e/ou {U} (Você pode pagar um custo adicional de {1}{W} e/ou {U} ao conjurar esta mágica.)<br>Se Rakavolver foi reforçado com seu reforço {1}{W}, ele entra no campo de batalha com dois marcadores +1/+1 e com "Toda vez que Rakavolver causa dano, você ganha aquela quantidade de pontos de vida."<br>Se Rakavolver foi reforçado com seu reforço {U}, ele entra no campo de batalha com um marcador +1/+1 e com voar.</td>
+  </tr>
+  <tr>
+    <td>69</td>
+    <td>Smash</td>
+    <td>Destroy target artifact.<br>Draw a card.</td>
+    <td>Destrua o artefato alvo.<br>Compre uma carta.</td>
+  </tr>
+  <tr>
+    <td>70</td>
+    <td>Tahngarth's Glare</td>
+    <td>Look at the top three cards of target opponent's library, then put them back in any order. That player looks at the top three cards of your library, then puts them back in any order.</td>
+    <td>Olhe os três cards do topo do grimório do oponente alvo e coloque-os de volta em qualquer ordem. Esse jogador olha os três cards do topo do seu grimório e os coloca de volta em qualquer ordem.</td>
+  </tr>
+  <tr>
+    <td>71</td>
+    <td>Tundra Kavu</td>
+    <td>{T}: Target land becomes a Plains or an Island until end of turn.</td>
+    <td>{T}: O terreno alvo se torna uma Planície ou uma Ilha até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>72</td>
+    <td>Wild Research</td>
+    <td>{1}{W}: Search your library for an enchantment card and reveal that card. Put it into your hand, then discard a card at random. Then shuffle.<br>{1}{U}: Search your library for an instant card and reveal that card. Put it into your hand, then discard a card at random. Then shuffle.</td>
+    <td>{1}{W}: Procure um card de encantamento em seu grimório e revele-o. Coloque-o em sua mão e descarte um card aleatoriamente. Então embaralhe.<br>{1}{U}: Procure um card de mágica instantânea em seu grimório e revele-o. Coloque-o em sua mão e descarte um card aleatoriamente. Então embaralhe.</td>
+  </tr>
+  <tr>
+    <td>73</td>
+    <td>Ana Disciple</td>
+    <td>{U}, {T}: Target creature gains flying until end of turn.<br>{B}, {T}: Target creature gets -2/-0 until end of turn.</td>
+    <td>{U}, {T}: A criatura alvo ganha voar até o final do turno.<br>{B}, {T}: A criatura alvo recebe -2/-0 até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>74</td>
+    <td>Ana Sanctuary</td>
+    <td>At the beginning of your upkeep, if you control a blue or black permanent, target creature gets +1/+1 until end of turn. If you control a blue permanent and a black permanent, that creature gets +5/+5 until end of turn instead.</td>
+    <td>No início de sua manutenção, se você controlar uma permanente azul ou preta, a criatura alvo recebe +1/+1 até o final do turno. Se você controlar uma permanente azul e uma permanente preta, em vez disso, aquela criatura receberá +5/+5 até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>75</td>
+    <td>Anavolver</td>
+    <td>Kicker {1}{U} and/or {B} (You may pay an additional {1}{U} and/or {B} as you cast this spell.)<br>If Anavolver was kicked with its {1}{U} kicker, it enters the battlefield with two +1/+1 counters on it and with flying.<br>If Anavolver was kicked with its {B} kicker, it enters the battlefield with a +1/+1 counter on it and with "Pay 3 life: Regenerate Anavolver."</td>
+    <td>Reforçador {1}{U} e/ou {B} (Você pode pagar um valor adicional de {1}{U} e/ou {B} ao conjurar esta mágica.)<br>Se Anavolver foi reforçado com seu reforço {1}{U}, ele entra no campo de batalha com dois marcadores +1/+1 e com voar.<br>Se Anavolver foi reforçado com seu reforço {B}, ele entra no campo de batalha com um marcador +1/+1 e com “Pague 3 pontos de vida: Regenera Anavolver”.</td>
+  </tr>
+  <tr>
+    <td>76</td>
+    <td>Bog Gnarr</td>
+    <td>Whenever a player casts a black spell, Bog Gnarr gets +2/+2 until end of turn.</td>
+    <td>Sempre que um jogador conjura uma mágica preta, Bog Gnarr recebe +2/+2 até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>77</td>
+    <td>Gaea's Balance</td>
+    <td>As an additional cost to cast this spell, sacrifice five lands.<br>Search your library for a land card of each basic land type, put those cards onto the battlefield, then shuffle.</td>
+    <td>Como custo adicional para conjurar esta mágica, sacrifique cinco terrenos.<br>Procure em seu grimório por um card de terreno de cada tipo de terreno básico, coloque esses cards no campo de batalha e depois embaralhe.</td>
+  </tr>
+  <tr>
+    <td>78</td>
+    <td>Glade Gnarr</td>
+    <td>Whenever a player casts a blue spell, Glade Gnarr gets +2/+2 until end of turn.</td>
+    <td>Sempre que um jogador conjura uma mágica azul, Glade Gnarr recebe +2/+2 até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>79</td>
+    <td>Kavu Howler</td>
+    <td>When Kavu Howler enters the battlefield, reveal the top four cards of your library. Put all Kavu cards revealed this way into your hand and the rest on the bottom of your library in any order.</td>
+    <td>Quando Kavu Howler entrar no campo de batalha, revele os quatro cards do topo do seu grimório. Coloque todos os cards Kavu revelados desta forma em sua mão e o restante no fundo de seu grimório em qualquer ordem.</td>
+  </tr>
+  <tr>
+    <td>80</td>
+    <td>Kavu Mauler</td>
+    <td>Trample<br>Whenever Kavu Mauler attacks, it gets +1/+1 until end of turn for each other attacking Kavu.</td>
+    <td>Atropelar<br>Sempre que Kavu Mauler ataca, ele recebe +1/+1 até o final do turno para cada um dos outros atacando Kavu.</td>
+  </tr>
+  <tr>
+    <td>81</td>
+    <td>Lay of the Land</td>
+    <td>Search your library for a basic land card, reveal it, put it into your hand, then shuffle.</td>
+    <td>Procure em seu grimório por um card de terreno básico, revele-o, coloque-o em sua mão e depois embaralhe.</td>
+  </tr>
+  <tr>
+    <td>82</td>
+    <td>Penumbra Bobcat</td>
+    <td>When Penumbra Bobcat dies, create a 2/1 black Cat creature token.</td>
+    <td>Quando Lince Penumbra morrer, crie uma ficha de criatura preta 2/1 do tipo Gato.</td>
+  </tr>
+  <tr>
+    <td>83</td>
+    <td>Penumbra Kavu</td>
+    <td>When Penumbra Kavu dies, create a 3/3 black Kavu creature token.</td>
+    <td>Quando Penumbra Kavu morrer, crie uma ficha de criatura preta 3/3 do tipo Kavu.</td>
+  </tr>
+  <tr>
+    <td>84</td>
+    <td>Penumbra Wurm</td>
+    <td>Trample<br>When Penumbra Wurm dies, create a 6/6 black Wurm creature token with trample.</td>
+    <td>Atropelar<br>Quando Penumbra Wurm morrer, crie uma ficha de criatura preta 6/6 do tipo Vorme com atropelar.</td>
+  </tr>
+  <tr>
+    <td>85</td>
+    <td>Savage Gorilla</td>
+    <td>{U}{B}, {T}, Sacrifice Savage Gorilla: Target creature gets -3/-3 until end of turn. Draw a card.</td>
+    <td>{U}{B}, {T}, Sacrifique Gorila Selvagem: A criatura alvo recebe -3/-3 até o final do turno. Compre uma carta.</td>
+  </tr>
+  <tr>
+    <td>86</td>
+    <td>Strength of Night</td>
+    <td>Kicker {B} (You may pay an additional {B} as you cast this spell.)<br>Creatures you control get +1/+1 until end of turn. If this spell was kicked, Zombie creatures you control get an additional +2/+2 until end of turn.</td>
+    <td>Reforçador {B} (Você pode pagar um custo adicional de {B} ao conjurar esta mágica.)<br>As criaturas que você controla recebem +1/+1 até o final do turno. Se esta mágica foi reforçada, as criaturas Zumbi que você controla recebem +2/+2 adicionais até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>87</td>
+    <td>Sylvan Messenger</td>
+    <td>Trample (This creature can deal excess combat damage to the player or planeswalker it's attacking.)<br>When Sylvan Messenger enters the battlefield, reveal the top four cards of your library. Put all Elf cards revealed this way into your hand and the rest on the bottom of your library in any order.</td>
+    <td>Atropelar (Esta criatura pode causar dano de combate excessivo ao jogador ou planeswalker que está atacando.)<br>Quando Mensageiro Sylvan entrar no campo de batalha, revele os quatro cards do topo do seu grimório. Coloque todos os cards de Elfo revelados desta forma em sua mão e o restante no fundo de seu grimório em qualquer ordem.</td>
+  </tr>
+  <tr>
+    <td>88</td>
+    <td>Symbiotic Deployment</td>
+    <td>Skip your draw step.<br>{1}, Tap two untapped creatures you control: Draw a card.</td>
+    <td>Pule a etapa de sorteio.<br>{1}, Vire duas criaturas desviradas que você controla: Compre um card.</td>
+  </tr>
+  <tr>
+    <td>89</td>
+    <td>Tranquil Path</td>
+    <td>Destroy all enchantments.<br>Draw a card.</td>
+    <td>Destrua todos os encantamentos.<br>Compre uma carta.</td>
+  </tr>
+  <tr>
+    <td>90</td>
+    <td>Urborg Elf</td>
+    <td>{T}: Add {B}, {G}, or {U}.</td>
+    <td>{T}: Adicione {B}, {G} ou {U}.</td>
+  </tr>
+  <tr>
+    <td>91</td>
+    <td>Aether Mutation</td>
+    <td>Return target creature to its owner's hand. Create X 1/1 green Saproling creature tokens, where X is that creature's mana value.</td>
+    <td>Devolva a criatura alvo para a mão de seu dono. Crie X fichas de criatura verde 1/1 do tipo Saprófita, sendo X o valor de mana daquela criatura.</td>
+  </tr>
+  <tr>
+    <td>92</td>
+    <td>Captain's Maneuver</td>
+    <td>The next X damage that would be dealt to target creature, planeswalker, or player this turn is dealt to another target creature, planeswalker, or player instead.</td>
+    <td>O próximo X dano que seria causado à criatura, planeswalker ou jogador alvo neste turno é causado a outra criatura, planeswalker ou jogador alvo.</td>
+  </tr>
+  <tr>
+    <td>93</td>
+    <td>Consume Strength</td>
+    <td>Target creature gets +2/+2 until end of turn. Another target creature gets -2/-2 until end of turn.</td>
+    <td>A criatura alvo recebe +2/+2 até o final do turno. Outra criatura alvo recebe -2/-2 até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>94</td>
+    <td>Cromat</td>
+    <td>{W}{B}: Destroy target creature blocking or blocked by Cromat.<br>{U}{R}: Cromat gains flying until end of turn.<br>{B}{G}: Regenerate Cromat.<br>{R}{W}: Cromat gets +1/+1 until end of turn.<br>{G}{U}: Put Cromat on top of its owner's library.</td>
+    <td>{W}{B}: Destrói a criatura alvo que está bloqueando ou bloqueada por Cromat.<br>{U}{R}: Cromat ganha voar até o final do turno.<br>{B}{G}: Regenera Cromata.<br>{R}{W}: Cromat recebe +1/+1 até o final do turno.<br>{G}{U}: Coloque Cromat no topo do grimório de seu dono.</td>
+  </tr>
+  <tr>
+    <td>95</td>
+    <td>Death Grasp</td>
+    <td>Death Grasp deals X damage to any target. You gain X life.</td>
+    <td>Death Grasp causa X de dano a qualquer alvo. Você ganha X pontos de vida.</td>
+  </tr>
+  <tr>
+    <td>96</td>
+    <td>Death Mutation</td>
+    <td>Destroy target nonblack creature. It can't be regenerated. Create X 1/1 green Saproling creature tokens, where X is that creature's mana value.</td>
+    <td>Destrua a criatura alvo que não seja preta. Não pode ser regenerado. Crie X fichas de criatura verde 1/1 do tipo Saprófita, sendo X o valor de mana daquela criatura.</td>
+  </tr>
+  <tr>
+    <td>97</td>
+    <td>Ebony Treefolk</td>
+    <td>{B}{G}: Ebony Treefolk gets +1/+1 until end of turn.</td>
+    <td>{B}{G}: O Povo das Árvores de Ébano recebe +1/+1 até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>98</td>
+    <td>Fervent Charge</td>
+    <td>Whenever a creature you control attacks, it gets +2/+2 until end of turn.</td>
+    <td>Toda vez que uma criatura que você controla ataca, ela recebe +2/+2 até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>99</td>
+    <td>Flowstone Charger</td>
+    <td>Whenever Flowstone Charger attacks, it gets +3/-3 until end of turn.</td>
+    <td>Sempre que Flowstone Charger ataca, ele recebe +3/-3 até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>100</td>
+    <td>Fungal Shambler</td>
+    <td>Trample<br>Whenever Fungal Shambler deals damage to an opponent, you draw a card and that opponent discards a card.</td>
+    <td>Atropelar<br>Toda vez que Fungal Shambler causa dano a um oponente, você compra um card e esse oponente descarta um card.</td>
+  </tr>
+  <tr>
+    <td>101</td>
+    <td>Gaea's Skyfolk</td>
+    <td>Flying</td>
+    <td>Vôo</td>
+  </tr>
+  <tr>
+    <td>102</td>
+    <td>Gerrard's Verdict</td>
+    <td>Target player discards two cards. You gain 3 life for each land card discarded this way.</td>
+    <td>O jogador alvo descarta duas cartas. Você ganha 3 pontos de vida para cada carta de terreno descartada dessa forma.</td>
+  </tr>
+  <tr>
+    <td>103</td>
+    <td>Goblin Legionnaire</td>
+    <td>{R}, Sacrifice Goblin Legionnaire: It deals 2 damage to any target.<br>{W}, Sacrifice Goblin Legionnaire: Prevent the next 2 damage that would be dealt to any target this turn.</td>
+    <td>{R}, Sacrifique Legionário Goblin: Causa 2 pontos de dano a qualquer alvo.<br>{W}, Sacrifique Legionário Goblin: Previne os próximos 2 pontos de dano que seriam causados ​​a qualquer alvo neste turno.</td>
+  </tr>
+  <tr>
+    <td>104</td>
+    <td>Goblin Trenches</td>
+    <td>{2}, Sacrifice a land: Create two 1/1 red and white Goblin Soldier creature tokens.</td>
+    <td>{2}, sacrifique um terreno: Crie duas fichas de criatura vermelha e branca 1/1 do tipo Goblin Soldado.</td>
+  </tr>
+  <tr>
+    <td>105</td>
+    <td>Guided Passage</td>
+    <td>Reveal the cards in your library. An opponent chooses from among them a creature card, a land card, and a noncreature, nonland card. You put the chosen cards into your hand. Then shuffle.</td>
+    <td>Revele os cards do seu grimório. Um oponente escolhe entre eles um card de criatura, um card de terreno e um card que não seja de criatura e que não seja de terreno. Você coloca as cartas escolhidas em sua mão. Então embaralhe.</td>
+  </tr>
+  <tr>
+    <td>106</td>
+    <td>Jungle Barrier</td>
+    <td>Defender (This creature can't attack.)<br>When Jungle Barrier enters the battlefield, draw a card.</td>
+    <td>Defensor (Esta criatura não pode atacar.)<br>Quando Barreira da Selva entrar no campo de batalha, compre um card.</td>
+  </tr>
+  <tr>
+    <td>107</td>
+    <td>Last Stand</td>
+    <td>Target opponent loses 2 life for each Swamp you control. Last Stand deals damage to target creature equal to the number of Mountains you control. Create a 1/1 green Saproling creature token for each Forest you control. You gain 2 life for each Plains you control. Draw a card for each Island you control, then discard that many cards.</td>
+    <td>O oponente alvo perde 2 pontos de vida para cada Pântano que você controla. Last Stand causa à criatura alvo uma quantidade de dano igual ao número de Montanhas que você controla. Crie uma ficha de criatura verde 1/1 do tipo Saprófita para cada Floresta que você controla. Você ganha 2 pontos de vida para cada Planície que você controla. Compre um card para cada Ilha que você controla e depois descarte aquela quantidade de cards.</td>
+  </tr>
+  <tr>
+    <td>108</td>
+    <td>Lightning Angel</td>
+    <td>Flying, vigilance, haste</td>
+    <td>Voar, vigilância, pressa</td>
+  </tr>
+  <tr>
+    <td>109</td>
+    <td>Llanowar Dead</td>
+    <td>{T}: Add {B}.</td>
+    <td>{T}: Adicione {B}.</td>
+  </tr>
+  <tr>
+    <td>110</td>
+    <td>Martyrs' Tomb</td>
+    <td>Pay 2 life: Prevent the next 1 damage that would be dealt to target creature this turn.</td>
+    <td>Pague 2 pontos de vida: Previne o próximo 1 ponto de dano que seria causado à criatura alvo neste turno.</td>
+  </tr>
+  <tr>
+    <td>111</td>
+    <td>Minotaur Illusionist</td>
+    <td>{1}{U}: Minotaur Illusionist gains shroud until end of turn. (It can't be the target of spells or abilities.)<br>{R}, Sacrifice Minotaur Illusionist: It deals damage equal to its power to target creature.</td>
+    <td>{1}{U}: Minotauro Ilusionista ganha mortalha até o final do turno. (Não pode ser alvo de mágicas ou habilidades.)<br>{R}, Sacrifique Minotauro Ilusionista: Ele causa dano igual ao seu poder à criatura alvo.</td>
+  </tr>
+  <tr>
+    <td>112</td>
+    <td>Mystic Snake</td>
+    <td>Flash<br>When Mystic Snake enters the battlefield, counter target spell.</td>
+    <td>Clarão<br>Quando Mystic Snake entrar no campo de batalha, anule a mágica alvo.</td>
+  </tr>
+  <tr>
+    <td>113</td>
+    <td>Overgrown Estate</td>
+    <td>Sacrifice a land: You gain 3 life.</td>
+    <td>Sacrifique um terreno: você ganha 3 pontos de vida.</td>
+  </tr>
+  <tr>
+    <td>114</td>
+    <td>Pernicious Deed</td>
+    <td>{X}, Sacrifice Pernicious Deed: Destroy each artifact, creature, and enchantment with mana value X or less.</td>
+    <td>{X}, Sacrifique Ação Perniciosa: Destrua cada artefato, criatura e encantamento com custo de mana igual ou inferior a X.</td>
+  </tr>
+  <tr>
+    <td>115</td>
+    <td>Powerstone Minefield</td>
+    <td>Whenever a creature attacks or blocks, Powerstone Minefield deals 2 damage to it.</td>
+    <td>Sempre que uma criatura ataca ou bloqueia, Powerstone Minefield causa 2 pontos de dano a ela.</td>
+  </tr>
+  <tr>
+    <td>116</td>
+    <td>Prophetic Bolt</td>
+    <td>Prophetic Bolt deals 4 damage to any target. Look at the top four cards of your library. Put one of those cards into your hand and the rest on the bottom of your library in any order.</td>
+    <td>O Raio Profético causa 4 pontos de dano a qualquer alvo. Veja os quatro primeiros cards do seu grimório. Coloque um desses cards em sua mão e o restante no fundo de seu grimório em qualquer ordem.</td>
+  </tr>
+  <tr>
+    <td>117</td>
+    <td>Putrid Warrior</td>
+    <td>Whenever Putrid Warrior deals damage, choose one —<br>• Each player loses 1 life.<br>• Each player gains 1 life.</td>
+    <td>Sempre que Guerreiro Pútrido causar dano, escolha um —<br>• Cada jogador perde 1 vida.<br>• Cada jogador ganha 1 vida.</td>
+  </tr>
+  <tr>
+    <td>118</td>
+    <td>Quicksilver Dagger</td>
+    <td>Enchant creature<br>Enchanted creature has "{T}: This creature deals 1 damage to target player or planeswalker. You draw a card."</td>
+    <td>Encantar criatura<br>A criatura encantada tem "{T}: Esta criatura causa 1 ponto de dano ao jogador ou planeswalker alvo. Você compra um card."</td>
+  </tr>
+  <tr>
+    <td>119</td>
+    <td>Razorfin Hunter</td>
+    <td>{T}: Razorfin Hunter deals 1 damage to any target.</td>
+    <td>{T}: Caçador Barbatana causa 1 ponto de dano a qualquer alvo.</td>
+  </tr>
+  <tr>
+    <td>120</td>
+    <td>Soul Link</td>
+    <td>Enchant creature<br>Whenever enchanted creature deals damage, you gain that much life.<br>Whenever enchanted creature is dealt damage, you gain that much life.</td>
+    <td>Encantar criatura<br>Toda vez que a criatura encantada causa dano, você ganha aquela quantidade de pontos de vida.<br>Sempre que a criatura encantada sofre dano, você ganha aquela quantidade de pontos de vida.</td>
+  </tr>
+  <tr>
+    <td>121</td>
+    <td>Spiritmonger</td>
+    <td>Whenever Spiritmonger deals damage to a creature, put a +1/+1 counter on Spiritmonger.<br>{B}: Regenerate Spiritmonger.<br>{G}: Spiritmonger becomes the color of your choice until end of turn.</td>
+    <td>Toda vez que Spiritmonger causar dano a uma criatura, coloque um marcador +1/+1 em Spiritmonger.<br>{B}: Regenera Spiritmonger.<br>{G}: Spiritmonger se torna da cor de sua escolha até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>122</td>
+    <td>Squee's Embrace</td>
+    <td>Enchant creature<br>Enchanted creature gets +2/+2.<br>When enchanted creature dies, return that card to its owner's hand.</td>
+    <td>Encantar criatura<br>A criatura encantada recebe +2/+2.<br>Quando a criatura encantada morrer, devolva aquele card para a mão de seu dono.</td>
+  </tr>
+  <tr>
+    <td>123</td>
+    <td>Squee's Revenge</td>
+    <td>Choose a number. Flip a coin that many times or until you lose a flip, whichever comes first. If you win all the flips, draw two cards for each flip.</td>
+    <td>Escolha um número. Jogue uma moeda tantas vezes ou até perder, o que ocorrer primeiro. Se você ganhar todas as jogadas, compre duas cartas para cada jogada.</td>
+  </tr>
+  <tr>
+    <td>124</td>
+    <td>Suffocating Blast</td>
+    <td>Counter target spell and Suffocating Blast deals 3 damage to target creature.</td>
+    <td>Anula a mágica alvo e Explosão Sufocante causa 3 pontos de dano à criatura alvo.</td>
+  </tr>
+  <tr>
+    <td>125</td>
+    <td>Temporal Spring</td>
+    <td>Put target permanent on top of its owner's library.</td>
+    <td>Coloque a permanente alvo no topo do grimório de seu dono.</td>
+  </tr>
+  <tr>
+    <td>126</td>
+    <td>Vindicate</td>
+    <td>Destroy target permanent.</td>
+    <td>Destrua a permanente alvo.</td>
+  </tr>
+  <tr>
+    <td>127</td>
+    <td>Yavimaya's Embrace</td>
+    <td>Enchant creature<br>You control enchanted creature.<br>Enchanted creature gets +2/+2 and has trample.</td>
+    <td>Encantar criatura<br>Você controla a criatura encantada.<br>A criatura encantada recebe +2/+2 e tem atropelar.</td>
+  </tr>
+  <tr>
+    <td>128</td>
+    <td>Fire // Ice</td>
+    <td>Fire deals 2 damage divided as you choose among one or two targets.<br>----<br>Tap target permanent.<br>Draw a card.</td>
+    <td>O fogo causa 2 pontos de dano divididos conforme você escolhe entre um ou dois alvos.<br>----<br>Toque no alvo permanente.<br>Compre uma carta.</td>
+  </tr>
+  <tr>
+    <td>129</td>
+    <td>Illusion // Reality</td>
+    <td>Target spell or permanent becomes the color of your choice until end of turn.<br>----<br>Destroy target artifact.</td>
+    <td>A mágica ou permanente alvo torna-se da cor de sua escolha até o final do turno.<br>----<br>Destrua o artefato alvo.</td>
+  </tr>
+  <tr>
+    <td>130</td>
+    <td>Life // Death</td>
+    <td>All lands you control become 1/1 creatures until end of turn. They're still lands.<br>----<br>Return target creature card from your graveyard to the battlefield. You lose life equal to its mana value.</td>
+    <td>Todos os terrenos que você controla tornam-se criaturas 1/1 até o final do turno. Eles ainda são terras.<br>----<br>Devolva o card de criatura alvo de seu cemitério para o campo de batalha. Você perde pontos de vida iguais ao seu valor de mana.</td>
+  </tr>
+  <tr>
+    <td>131</td>
+    <td>Night // Day</td>
+    <td>Target creature gets -1/-1 until end of turn.<br>----<br>Creatures target player controls get +1/+1 until end of turn.</td>
+    <td>A criatura alvo recebe -1/-1 até o final do turno.<br>----<br>As criaturas que o jogador alvo controla recebem +1/+1 até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>132</td>
+    <td>Order // Chaos</td>
+    <td>Exile target attacking creature.<br>----<br>Creatures can't block this turn.</td>
+    <td>Exile a criatura atacante alvo.<br>----<br>As criaturas não podem bloquear neste turno.</td>
+  </tr>
+  <tr>
+    <td>133</td>
+    <td>Brass Herald</td>
+    <td>As Brass Herald enters the battlefield, choose a creature type.<br>When Brass Herald enters the battlefield, reveal the top four cards of your library. Put all creature cards of the chosen type revealed this way into your hand and the rest on the bottom of your library in any order.<br>Creatures of the chosen type get +1/+1.</td>
+    <td>Conforme Brass Herald entra no campo de batalha, escolha um tipo de criatura.<br>Quando Brass Herald entrar no campo de batalha, revele os quatro cards do topo do seu grimório. Coloque todos os cards de criatura do tipo escolhido revelados desta forma em sua mão e o restante no fundo de seu grimório em qualquer ordem.<br>Criaturas do tipo escolhido recebem +1/+1.</td>
+  </tr>
+  <tr>
+    <td>134</td>
+    <td>Dodecapod</td>
+    <td>If a spell or ability an opponent controls causes you to discard Dodecapod, put it onto the battlefield with two +1/+1 counters on it instead of putting it into your graveyard.</td>
+    <td>Se uma mágica ou habilidade que um oponente controla fizer com que você descarte Dodecápode, coloque-a no campo de batalha com dois marcadores +1/+1 em vez de colocá-la em seu cemitério.</td>
+  </tr>
+  <tr>
+    <td>135</td>
+    <td>Dragon Arch</td>
+    <td>{2}, {T}: You may put a multicolored creature card from your hand onto the battlefield.</td>
+    <td>{2}, {T}: Você pode colocar no campo de batalha um card de criatura multicolorida de sua mão.</td>
+  </tr>
+  <tr>
+    <td>136</td>
+    <td>Emblazoned Golem</td>
+    <td>Kicker {X} (You may pay an additional {X} as you cast this spell.)<br>Spend only colored mana on X. No more than one mana of each color may be spent this way.<br>If Emblazoned Golem was kicked, it enters the battlefield with X +1/+1 counters on it.</td>
+    <td>Reforçador {X} (Você pode pagar um custo adicional de {X} ao conjurar esta mágica.)<br>Gaste apenas mana colorido em X. Não mais do que um mana de cada cor pode ser gasto desta forma.<br>Se Golem Brasonado foi reforçado, ele entra no campo de batalha com X marcadores +1/+1.</td>
+  </tr>
+  <tr>
+    <td>137</td>
+    <td>Legacy Weapon</td>
+    <td>{W}{U}{B}{R}{G}: Exile target permanent.<br>If Legacy Weapon would be put into a graveyard from anywhere, reveal Legacy Weapon and shuffle it into its owner's library instead.</td>
+    <td>{W}{U}{B}{R}{G}: Exile a permanente alvo.<br>Se a Arma Legada for colocada em um cemitério vinda de qualquer lugar, revele a Arma Legada e embaralhe-a no grimório de seu dono.</td>
+  </tr>
+  <tr>
+    <td>138</td>
+    <td>Mask of Intolerance</td>
+    <td>At the beginning of each player's upkeep, if there are four or more basic land types among lands that player controls, Mask of Intolerance deals 3 damage to that player.</td>
+    <td>No início da manutenção de cada jogador, se houver quatro ou mais tipos de terrenos básicos entre os terrenos que o jogador controla, Máscara da Intolerância causa 3 pontos de dano àquele jogador.</td>
+  </tr>
+  <tr>
+    <td>139</td>
+    <td>Battlefield Forge</td>
+    <td>{T}: Add {C}.<br>{T}: Add {R} or {W}. Battlefield Forge deals 1 damage to you.</td>
+    <td>{T}: Adicione {C}.<br>{T}: Adicione {R} ou {W}. Battlefield Forge causa 1 ponto de dano a você.</td>
+  </tr>
+  <tr>
+    <td>140</td>
+    <td>Caves of Koilos</td>
+    <td>{T}: Add {C}.<br>{T}: Add {W} or {B}. Caves of Koilos deals 1 damage to you.</td>
+    <td>{T}: Adicione {C}.<br>{T}: Adicione {W} ou {B}. Cavernas de Koilos causa 1 de dano a você.</td>
+  </tr>
+  <tr>
+    <td>141</td>
+    <td>Llanowar Wastes</td>
+    <td>{T}: Add {C}.<br>{T}: Add {B} or {G}. Llanowar Wastes deals 1 damage to you.</td>
+    <td>{T}: Adicione {C}.<br>{T}: Adicione {B} ou {G}. Llanowar Wastes causa 1 ponto de dano a você.</td>
+  </tr>
+  <tr>
+    <td>142</td>
+    <td>Shivan Reef</td>
+    <td>{T}: Add {C}.<br>{T}: Add {U} or {R}. Shivan Reef deals 1 damage to you.</td>
+    <td>{T}: Adicione {C}.<br>{T}: Adicione {U} ou {R}. Recife Shivan causa 1 ponto de dano a você.</td>
+  </tr>
+  <tr>
+    <td>143</td>
+    <td>Yavimaya Coast</td>
+    <td>{T}: Add {C}.<br>{T}: Add {G} or {U}. Yavimaya Coast deals 1 damage to you.</td>
+    <td>{T}: Adicione {C}.<br>{T}: Adicione {G} ou {U}. Costa Yavimaya causa 1 ponto de dano a você.</td>
+  </tr>
+</table>
+    </body>
+</html>

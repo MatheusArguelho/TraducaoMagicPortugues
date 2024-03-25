@@ -1,0 +1,894 @@
+<html>
+<head>
+        <meta charset="UTF-8">
+        <title>scg</title>
+        <style>
+            .styled-table {
+                width: 100%;
+                border-collapse: collapse;
+                border: 1px solid #ddd;
+                font-family: Arial, sans-serif;
+            }
+            .styled-table th, .styled-table td {
+                padding: 8px;
+                text-align: left;
+                border-bottom: 1px solid #ddd;
+            }
+            .styled-table tr:nth-child(even) {
+                background-color: #f2f2f2;
+            }
+            .styled-table th {
+                background-color: #4CAF50;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+    <table class="styled-table">
+  <tr>
+    <td>numero</td>
+    <td>nome</td>
+    <td>texto_ingles</td>
+    <td>traduzido</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Ageless Sentinels</td>
+    <td>Defender (This creature can't attack.)<br>Flying<br>When Ageless Sentinels blocks, it becomes a Bird Giant, and it loses defender. (It's no longer a Wall. This effect lasts indefinitely.)</td>
+    <td>Defensor (Esta criatura não pode atacar.)<br>Vôo<br>Quando Ageless Sentinels bloqueia, ele se torna um Bird Giant e perde o defensor. (Não é mais uma Muralha. Este efeito dura indefinidamente.)</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Astral Steel</td>
+    <td>Target creature gets +1/+2 until end of turn.<br>Storm (When you cast this spell, copy it for each spell cast before it this turn. You may choose new targets for the copies.)</td>
+    <td>A criatura alvo recebe +1/+2 até o final do turno.<br>Tempestade (Quando você conjurar esta mágica, copie-a para cada magia conjurada antes dela neste turno. Você pode escolher novos alvos para as cópias.)</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Aven Farseer</td>
+    <td>Flying<br>Whenever a permanent is turned face up, put a +1/+1 counter on Aven Farseer.</td>
+    <td>Vôo<br>Toda vez que uma permanente for virada para cima, coloque um marcador +1/+1 em Aven Farseer.</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>Aven Liberator</td>
+    <td>Flying<br>Morph {3}{W} (You may cast this card face down as a 2/2 creature for {3}. Turn it face up any time for its morph cost.)<br>When Aven Liberator is turned face up, target creature you control gains protection from the color of your choice until end of turn.</td>
+    <td>Vôo<br>Metamorfose {3}{W} (Você pode conjurar este card com a face voltada para baixo como uma criatura 2/2 por {3}. Vire-o com a face para cima a qualquer momento pagando seu custo de metamorfose.)<br>Quando Aven Liberator é virado com a face para cima, a criatura alvo que você controla ganha proteção contra a cor de sua escolha até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>Daru Spiritualist</td>
+    <td>Whenever a Cleric creature you control becomes the target of a spell or ability, it gets +0/+2 until end of turn.</td>
+    <td>Toda vez que uma criatura Clérigo que você controla se torna alvo de uma mágica ou habilidade, ela recebe +0/+2 até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>Daru Warchief</td>
+    <td>Soldier spells you cast cost {1} less to cast.<br>Soldier creatures you control get +1/+2.</td>
+    <td>As mágicas de soldado que você conjura custam {1} a menos para serem conjuradas.<br>As criaturas Soldados que você controla recebem +1/+2.</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>Dawn Elemental</td>
+    <td>Flying<br>Prevent all damage that would be dealt to Dawn Elemental.</td>
+    <td>Vôo<br>Previne todo o dano que seria causado ao Dawn Elemental.</td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td>Decree of Justice</td>
+    <td>Create X 4/4 white Angel creature tokens with flying.<br>Cycling {2}{W} ({2}{W}, Discard this card: Draw a card.)<br>When you cycle Decree of Justice, you may pay {X}. If you do, create X 1/1 white Soldier creature tokens.</td>
+    <td>Crie X fichas de criatura branca 4/4 do tipo Anjo com voar.<br>Reciclar {2}{W} ({2}{W}, descarte este card: Compre um card.)<br>Ao reciclar Decreto de Justiça, você pode pagar {X}. Se fizer isso, crie X fichas de criatura branca 1/1 do tipo Soldado.</td>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td>Dimensional Breach</td>
+    <td>Exile all permanents. For as long as any of those cards remain exiled, at the beginning of each player's upkeep, that player returns one of the exiled cards they own to the battlefield.</td>
+    <td>Exile todas as permanentes. Enquanto qualquer um desses cards permanecer exilado, no início da manutenção de cada jogador, aquele jogador devolve ao campo de batalha um dos cards exilados que possui.</td>
+  </tr>
+  <tr>
+    <td>10</td>
+    <td>Dragon Scales</td>
+    <td>Enchant creature<br>Enchanted creature gets +1/+2 and has vigilance.<br>When a creature with mana value 6 or greater enters the battlefield, you may return Dragon Scales from your graveyard to the battlefield attached to that creature.</td>
+    <td>Encantar criatura<br>A criatura encantada recebe +1/+2 e tem vigilância.<br>Quando uma criatura com valor de mana igual ou superior a 6 entra no campo de batalha, você pode devolver Escamas de Dragão de seu cemitério para o campo de batalha anexadas àquela criatura.</td>
+  </tr>
+  <tr>
+    <td>11</td>
+    <td>Dragonstalker</td>
+    <td>Flying, protection from Dragons</td>
+    <td>Voar, proteção contra dragões</td>
+  </tr>
+  <tr>
+    <td>12</td>
+    <td>Eternal Dragon</td>
+    <td>Flying<br>{3}{W}{W}: Return Eternal Dragon from your graveyard to your hand. Activate only during your upkeep.<br>Plainscycling {2} ({2}, Discard this card: Search your library for a Plains card, reveal it, put it into your hand, then shuffle.)</td>
+    <td>Vôo<br>{3}{W}{W}: Devolva Dragão Eterno de seu cemitério para sua mão. Ative apenas durante sua manutenção.<br>Reciclagem de Planícies {2} ({2}, Descarte este card: Procure um card de Planície em seu grimório, revele-o, coloque-o em sua mão e depois embaralhe.)</td>
+  </tr>
+  <tr>
+    <td>13</td>
+    <td>Exiled Doomsayer</td>
+    <td>All morph costs cost {2} more. (This doesn't affect the cost to cast creature spells face down.)</td>
+    <td>Todos os custos de transformação custam {2} a mais. (Isso não afeta o custo para conjurar mágicas de criatura voltadas para baixo.)</td>
+  </tr>
+  <tr>
+    <td>14</td>
+    <td>Force Bubble</td>
+    <td>If damage would be dealt to you, put that many depletion counters on Force Bubble instead.<br>When there are four or more depletion counters on Force Bubble, sacrifice it.<br>At the beginning of each end step, remove all depletion counters from Force Bubble.</td>
+    <td>Se algum dano for causado a você, coloque essa quantidade de marcadores de esgotamento em Force Bubble.<br>Quando houver quatro ou mais contadores de esgotamento no Force Bubble, sacrifique-o.<br>No início de cada etapa final, remova todos os contadores de esgotamento do Force Bubble.</td>
+  </tr>
+  <tr>
+    <td>15</td>
+    <td>Frontline Strategist</td>
+    <td>Morph {W} (You may cast this card face down as a 2/2 creature for {3}. Turn it face up any time for its morph cost.)<br>When Frontline Strategist is turned face up, prevent all combat damage non-Soldier creatures would deal this turn.</td>
+    <td>Metamorfose {W} (Você pode conjurar este card com a face voltada para baixo como uma criatura 2/2 por {3}. Vire-o com a face para cima a qualquer momento pagando seu custo de metamorfose.)<br>Quando Estrategista da Linha de Frente é virado para cima, previne todo o dano de combate que criaturas que não sejam Soldados causariam neste turno.</td>
+  </tr>
+  <tr>
+    <td>16</td>
+    <td>Gilded Light</td>
+    <td>You gain shroud until end of turn. (You can't be the target of spells or abilities.)<br>Cycling {2} ({2}, Discard this card: Draw a card.)</td>
+    <td>Você ganha mortalha até o final do turno. (Você não pode ser alvo de mágicas ou habilidades.)<br>Reciclar {2} ({2}, Descarte este card: Compre um card.)</td>
+  </tr>
+  <tr>
+    <td>17</td>
+    <td>Guilty Conscience</td>
+    <td>Enchant creature<br>Whenever enchanted creature deals damage, Guilty Conscience deals that much damage to that creature.</td>
+    <td>Encantar criatura<br>Sempre que a criatura encantada causar dano, Consciência Culpada causará aquela quantidade de dano àquela criatura.</td>
+  </tr>
+  <tr>
+    <td>18</td>
+    <td>Karona's Zealot</td>
+    <td>Morph {3}{W}{W} (You may cast this card face down as a 2/2 creature for {3}. Turn it face up any time for its morph cost.)<br>When Karona's Zealot is turned face up, all damage that would be dealt to it this turn is dealt to target creature instead.</td>
+    <td>Metamorfose {3}{W}{W} (Você pode conjurar este card com a face voltada para baixo como uma criatura 2/2 por {3}. Vire-o com a face para cima a qualquer momento pagando seu custo de metamorfose.)<br>Quando Zealot de Karona é virado para cima, todo o dano que seria causado a ele neste turno é causado à criatura alvo.</td>
+  </tr>
+  <tr>
+    <td>19</td>
+    <td>Noble Templar</td>
+    <td>Vigilance<br>Plainscycling {2} ({2}, Discard this card: Search your library for a Plains card, reveal it, put it into your hand, then shuffle.)</td>
+    <td>Vigilância<br>Reciclagem de Planícies {2} ({2}, Descarte este card: Procure um card de Planície em seu grimório, revele-o, coloque-o em sua mão e depois embaralhe.)</td>
+  </tr>
+  <tr>
+    <td>20</td>
+    <td>Rain of Blades</td>
+    <td>Rain of Blades deals 1 damage to each attacking creature.</td>
+    <td>Chuva de Lâminas causa 1 ponto de dano a cada criatura atacante.</td>
+  </tr>
+  <tr>
+    <td>21</td>
+    <td>Recuperate</td>
+    <td>Choose one —<br>• You gain 6 life.<br>• Prevent the next 6 damage that would be dealt to target creature this turn.</td>
+    <td>Escolha um -<br>• Você ganha 6 pontos de vida.<br>• Previne os próximos 6 pontos de dano que seriam causados ​​à criatura alvo neste turno.</td>
+  </tr>
+  <tr>
+    <td>22</td>
+    <td>Reward the Faithful</td>
+    <td>Any number of target players each gain life equal to the highest mana value among permanents you control.</td>
+    <td>Qualquer número de jogadores alvo ganha cada um pontos de vida igual ao maior valor de mana entre as permanentes que você controla.</td>
+  </tr>
+  <tr>
+    <td>23</td>
+    <td>Silver Knight</td>
+    <td>First strike, protection from red</td>
+    <td>Primeiro ataque, proteção contra o vermelho</td>
+  </tr>
+  <tr>
+    <td>24</td>
+    <td>Trap Digger</td>
+    <td>{2}{W}, {T}: Put a trap counter on target land you control.<br>Sacrifice a land with a trap counter on it: Trap Digger deals 3 damage to target attacking creature without flying.</td>
+    <td>{2}{W}, {T}: Coloque um marcador de armadilha no terreno alvo que você controla.<br>Sacrifique um terreno com um marcador de armadilha: Trap Digger causa 3 pontos de dano à criatura atacante alvo sem voar.</td>
+  </tr>
+  <tr>
+    <td>25</td>
+    <td>Wing Shards</td>
+    <td>Target player sacrifices an attacking creature.<br>Storm (When you cast this spell, copy it for each spell cast before it this turn. You may choose new targets for the copies.)</td>
+    <td>O jogador alvo sacrifica uma criatura atacante.<br>Tempestade (Quando você conjurar esta mágica, copie-a para cada magia conjurada antes dela neste turno. Você pode escolher novos alvos para as cópias.)</td>
+  </tr>
+  <tr>
+    <td>26</td>
+    <td>Wipe Clean</td>
+    <td>Exile target enchantment.<br>Cycling {3} ({3}, Discard this card: Draw a card.)</td>
+    <td>Exile o encantamento do alvo.<br>Reciclar {3} ({3}, Descarte este card: Compre um card.)</td>
+  </tr>
+  <tr>
+    <td>27</td>
+    <td>Zealous Inquisitor</td>
+    <td>{1}{W}: The next 1 damage that would be dealt to Zealous Inquisitor this turn is dealt to target creature instead.</td>
+    <td>{1}{W}: O próximo 1 ponto de dano que seria causado ao Zealous Inquisitor neste turno é causado à criatura alvo.</td>
+  </tr>
+  <tr>
+    <td>28</td>
+    <td>Aphetto Runecaster</td>
+    <td>Whenever a permanent is turned face up, you may draw a card.</td>
+    <td>Sempre que uma permanente é virada para cima, você pode comprar um card.</td>
+  </tr>
+  <tr>
+    <td>29</td>
+    <td>Brain Freeze</td>
+    <td>Target player mills three cards.<br>Storm (When you cast this spell, copy it for each spell cast before it this turn. You may choose new targets for the copies.)</td>
+    <td>O jogador alvo mói três cartas.<br>Tempestade (Quando você conjurar esta mágica, copie-a para cada magia conjurada antes dela neste turno. Você pode escolher novos alvos para as cópias.)</td>
+  </tr>
+  <tr>
+    <td>30</td>
+    <td>Coast Watcher</td>
+    <td>Flying, protection from green</td>
+    <td>Voando, proteção contra o verde</td>
+  </tr>
+  <tr>
+    <td>31</td>
+    <td>Day of the Dragons</td>
+    <td>When Day of the Dragons enters the battlefield, exile all creatures you control. Then create that many 5/5 red Dragon creature tokens with flying.<br>When Day of the Dragons leaves the battlefield, sacrifice all Dragons you control. Then return the exiled cards to the battlefield under your control.</td>
+    <td>Quando Dia dos Dragões entrar no campo de batalha, exile todas as criaturas que você controla. Em seguida, crie aquela quantidade de fichas de criatura vermelha 5/5 do tipo Dragão com voar.<br>Quando Day of the Dragons deixar o campo de batalha, sacrifique todos os Dragões que você controla. Em seguida, devolva os cards exilados ao campo de batalha sob seu controle.</td>
+  </tr>
+  <tr>
+    <td>32</td>
+    <td>Decree of Silence</td>
+    <td>Whenever an opponent casts a spell, counter that spell and put a depletion counter on Decree of Silence. If there are three or more depletion counters on Decree of Silence, sacrifice it.<br>Cycling {4}{U}{U} ({4}{U}{U}, Discard this card: Draw a card.)<br>When you cycle Decree of Silence, you may counter target spell.</td>
+    <td>Sempre que um oponente conjurar uma mágica, anule essa mágica e coloque um marcador de esgotamento em Decreto do Silêncio. Se houver três ou mais marcadores de esgotamento em Decreto do Silêncio, sacrifique-os.<br>Reciclar {4}{U}{U} ({4}{U}{U}, descarte este card: Compre um card.)<br>Ao reciclar Decreto do Silêncio, você pode anular o feitiço alvo.</td>
+  </tr>
+  <tr>
+    <td>33</td>
+    <td>Dispersal Shield</td>
+    <td>Counter target spell if its mana value is less than or equal to the highest mana value among permanents you control.</td>
+    <td>Anule a mágica alvo se seu valor de mana for menor ou igual ao maior valor de mana entre as permanentes que você controla.</td>
+  </tr>
+  <tr>
+    <td>34</td>
+    <td>Dragon Wings</td>
+    <td>Enchant creature<br>Enchanted creature has flying.<br>Cycling {1}{U} ({1}{U}, Discard this card: Draw a card.)<br>When a creature with mana value 6 or greater enters the battlefield, you may return Dragon Wings from your graveyard to the battlefield attached to that creature.</td>
+    <td>Encantar criatura<br>A criatura encantada tem voar.<br>Reciclar {1}{U} ({1}{U}, descarte este card: Compre um card.)<br>Quando uma criatura com valor de mana igual ou superior a 6 entra no campo de batalha, você pode devolver Asas de Dragão de seu cemitério para o campo de batalha anexadas àquela criatura.</td>
+  </tr>
+  <tr>
+    <td>35</td>
+    <td>Faces of the Past</td>
+    <td>Whenever a creature dies, tap all untapped creatures that share a creature type with it or untap all tapped creatures that share a creature type with it.</td>
+    <td>Sempre que uma criatura morrer, vire todas as criaturas desviradas que compartilhem um tipo de criatura com ela ou desvire todas as criaturas viradas que compartilhem um tipo de criatura com ela.</td>
+  </tr>
+  <tr>
+    <td>36</td>
+    <td>Frozen Solid</td>
+    <td>Enchant creature<br>Enchanted creature doesn't untap during its controller's untap step.<br>When enchanted creature is dealt damage, destroy it.</td>
+    <td>Encantar criatura<br>A criatura encantada não desvira durante a etapa de desvirar de seu controlador.<br>Quando a criatura encantada sofrer dano, destrua-a.</td>
+  </tr>
+  <tr>
+    <td>37</td>
+    <td>Hindering Touch</td>
+    <td>Counter target spell unless its controller pays {2}.<br>Storm (When you cast this spell, copy it for each spell cast before it this turn. You may choose new targets for the copies.)</td>
+    <td>Anula a mágica alvo, a menos que seu controlador pague {2}.<br>Tempestade (Quando você conjurar esta mágica, copie-a para cada magia conjurada antes dela neste turno. Você pode escolher novos alvos para as cópias.)</td>
+  </tr>
+  <tr>
+    <td>38</td>
+    <td>Long-Term Plans</td>
+    <td>Search your library for a card, then shuffle and put that card third from the top.</td>
+    <td>Procure um card em seu grimório, embaralhe e coloque esse card no terceiro a partir do topo.</td>
+  </tr>
+  <tr>
+    <td>39</td>
+    <td>Mercurial Kite</td>
+    <td>Flying<br>Whenever Mercurial Kite deals combat damage to a creature, tap that creature. That creature doesn't untap during its controller's next untap step.</td>
+    <td>Vôo<br>Toda vez que Mercurial Kite causar dano de combate a uma criatura, vire aquela criatura. Aquela criatura não desvira durante a próxima etapa de desvirar de seu controlador.</td>
+  </tr>
+  <tr>
+    <td>40</td>
+    <td>Metamorphose</td>
+    <td>Put target permanent an opponent controls on top of its owner's library. That opponent may put an artifact, creature, enchantment, or land card from their hand onto the battlefield.</td>
+    <td>Coloque a permanente alvo que um oponente controla no topo do grimório de seu dono. Esse oponente pode colocar um card de artefato, criatura, encantamento ou terreno de sua mão no campo de batalha.</td>
+  </tr>
+  <tr>
+    <td>41</td>
+    <td>Mind's Desire</td>
+    <td>Shuffle your library. Then exile the top card of your library. Until end of turn, you may play that card without paying its mana cost.<br>Storm (When you cast this spell, copy it for each spell cast before it this turn.)</td>
+    <td>Embaralhe seu grimório. Em seguida, exile o card do topo do seu grimório. Até o final do turno, você pode jogar aquele card sem pagar seu custo de mana.<br>Tempestade (Quando você lançar este feitiço, copie-o para cada feitiço lançado antes dele neste turno.)</td>
+  </tr>
+  <tr>
+    <td>42</td>
+    <td>Mischievous Quanar</td>
+    <td>{3}{U}{U}: Turn Mischievous Quanar face down.<br>Morph {1}{U}{U} (You may cast this card face down as a 2/2 creature for {3}. Turn it face up any time for its morph cost.)<br>When Mischievous Quanar is turned face up, copy target instant or sorcery spell. You may choose new targets for that copy.</td>
+    <td>{3}{U}{U}: Vire Quanar Travesso para baixo.<br>Metamorfose {1}{U}{U} (Você pode conjurar este card com a face voltada para baixo como uma criatura 2/2 por {3}. Vire-o com a face para cima a qualquer momento pagando seu custo de metamorfose.)<br>Quando Quanar Travesso for virado para cima, copie a mágica instantânea ou feitiço alvo. Você pode escolher novos alvos para essa cópia.</td>
+  </tr>
+  <tr>
+    <td>43</td>
+    <td>Mistform Warchief</td>
+    <td>Creature spells you cast that share a creature type with Mistform Warchief cost {1} less to cast.<br>{T}: Mistform Warchief becomes the creature type of your choice until end of turn.</td>
+    <td>As mágicas de criatura que você conjura e que compartilham um tipo de criatura com Chefe Guerreiro Mistform custam {1} a menos para serem conjuradas.<br>{T}: Chefe Guerreiro Nebuloso se torna o tipo de criatura de sua escolha até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>44</td>
+    <td>Parallel Thoughts</td>
+    <td>When Parallel Thoughts enters the battlefield, search your library for seven cards, exile them in a face-down pile, and shuffle that pile. Then shuffle your library.<br>If you would draw a card, you may instead put the top card of the pile you exiled into your hand.</td>
+    <td>Quando Pensamentos Paralelos entrar no campo de batalha, procure sete cards em seu grimório, exile-os em uma pilha com a face para baixo e embaralhe essa pilha. Em seguida, embaralhe seu grimório.<br>Se você fosse comprar uma carta, você pode colocar em sua mão a carta do topo da pilha que você exilou.</td>
+  </tr>
+  <tr>
+    <td>45</td>
+    <td>Pemmin's Aura</td>
+    <td>Enchant creature<br>{U}: Untap enchanted creature.<br>{U}: Enchanted creature gains flying until end of turn.<br>{U}: Enchanted creature gains shroud until end of turn. (It can't be the target of spells or abilities.)<br>{1}: Enchanted creature gets +1/-1 or -1/+1 until end of turn.</td>
+    <td>Encantar criatura<br>{U}: Desvire a criatura encantada.<br>{U}: A criatura encantada ganha voar até o final do turno.<br>{U}: A criatura encantada ganha mortalha até o final do turno. (Não pode ser alvo de mágicas ou habilidades.)<br>{1}: A criatura encantada recebe +1/-1 ou -1/+1 até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>46</td>
+    <td>Raven Guild Initiate</td>
+    <td>Morph—Return a Bird you control to its owner's hand. (You may cast this card face down as a 2/2 creature for {3}. Turn it face up any time for its morph cost.)</td>
+    <td>Morph – Devolva um pássaro que você controla para a mão de seu dono. (Você pode conjurar este card com a face voltada para baixo como uma criatura 2/2 por {3}. Vire-o com a face para cima a qualquer momento pagando seu custo de metamorfose.)</td>
+  </tr>
+  <tr>
+    <td>47</td>
+    <td>Raven Guild Master</td>
+    <td>Whenever Raven Guild Master deals combat damage to a player, that player exiles the top ten cards of their library.<br>Morph {2}{U}{U} (You may cast this card face down as a 2/2 creature for {3}. Turn it face up any time for its morph cost.)</td>
+    <td>Sempre que Raven Guild Master causa dano de combate a um jogador, aquele jogador exila os dez cards do topo de seu grimório.<br>Metamorfose {2}{U}{U} (Você pode conjurar este card com a face voltada para baixo como uma criatura 2/2 por {3}. Vire-o com a face para cima a qualquer momento pagando seu custo de metamorfose.)</td>
+  </tr>
+  <tr>
+    <td>48</td>
+    <td>Riptide Survivor</td>
+    <td>Morph {1}{U}{U} (You may cast this card face down as a 2/2 creature for {3}. Turn it face up any time for its morph cost.)<br>When Riptide Survivor is turned face up, discard two cards, then draw three cards.</td>
+    <td>Metamorfose {1}{U}{U} (Você pode conjurar este card com a face voltada para baixo como uma criatura 2/2 por {3}. Vire-o com a face para cima a qualquer momento pagando seu custo de metamorfose.)<br>Quando Riptide Survivor for virado para cima, descarte duas cartas e compre três cartas.</td>
+  </tr>
+  <tr>
+    <td>49</td>
+    <td>Rush of Knowledge</td>
+    <td>Draw cards equal to the highest mana value among permanents you control.</td>
+    <td>Compre cards iguais ao maior valor de mana entre as permanentes que você controla.</td>
+  </tr>
+  <tr>
+    <td>50</td>
+    <td>Scornful Egotist</td>
+    <td>Morph {U} (You may cast this card face down as a 2/2 creature for {3}. Turn it face up any time for its morph cost.)</td>
+    <td>Metamorfose {U} (Você pode conjurar este card com a face voltada para baixo como uma criatura 2/2 por {3}. Vire-o com a face para cima a qualquer momento pagando seu custo de metamorfose.)</td>
+  </tr>
+  <tr>
+    <td>51</td>
+    <td>Shoreline Ranger</td>
+    <td>Flying<br>Islandcycling {2} ({2}, Discard this card: Search your library for an Island card, reveal it, put it into your hand, then shuffle.)</td>
+    <td>Vôo<br>Reciclagem de Ilhas {2} ({2}, descarte este card: Procure um card de Ilha em seu grimório, revele-o, coloque-o em sua mão e depois embaralhe.)</td>
+  </tr>
+  <tr>
+    <td>52</td>
+    <td>Stifle</td>
+    <td>Counter target activated or triggered ability. (Mana abilities can't be targeted.)</td>
+    <td>Contra-ataque a habilidade ativada ou desencadeada alvo. (Habilidades de mana não podem ser direcionadas.)</td>
+  </tr>
+  <tr>
+    <td>53</td>
+    <td>Temporal Fissure</td>
+    <td>Return target permanent to its owner's hand.<br>Storm (When you cast this spell, copy it for each spell cast before it this turn. You may choose new targets for the copies.)</td>
+    <td>Devolva a permanente alvo para a mão de seu dono.<br>Tempestade (Quando você conjurar esta mágica, copie-a para cada magia conjurada antes dela neste turno. Você pode escolher novos alvos para as cópias.)</td>
+  </tr>
+  <tr>
+    <td>54</td>
+    <td>Thundercloud Elemental</td>
+    <td>Flying<br>{3}{U}: Tap all creatures with toughness 2 or less.<br>{3}{U}: All other creatures lose flying until end of turn.</td>
+    <td>Vôo<br>{3}{U}: Vire todas as criaturas com resistência 2 ou menos.<br>{3}{U}: Todas as outras criaturas perdem voar até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>55</td>
+    <td>Bladewing's Thrall</td>
+    <td>Bladewing's Thrall has flying as long as you control a Dragon.<br>When a Dragon enters the battlefield, you may return Bladewing's Thrall from your graveyard to the battlefield.</td>
+    <td>Thrall de Bladewing poderá voar enquanto você controlar um Dragão.<br>Quando um Dragão entra no campo de batalha, você pode devolver o Escravo de Bladewing de seu cemitério para o campo de batalha.</td>
+  </tr>
+  <tr>
+    <td>56</td>
+    <td>Cabal Conditioning</td>
+    <td>Any number of target players each discard a number of cards equal to the highest mana value among permanents you control.</td>
+    <td>Qualquer número de jogadores alvo descarta, cada um, um número de cards igual ao maior valor de mana entre as permanentes que você controla.</td>
+  </tr>
+  <tr>
+    <td>57</td>
+    <td>Cabal Interrogator</td>
+    <td>{X}{B}, {T}: Target player reveals X cards from their hand and you choose one of them. That player discards that card. Activate only as a sorcery.</td>
+    <td>{X}{B}, {T}: O jogador alvo revela X cartas de sua mão e você escolhe uma delas. Esse jogador descarta aquela carta. Ative apenas como um feitiço.</td>
+  </tr>
+  <tr>
+    <td>58</td>
+    <td>Call to the Grave</td>
+    <td>At the beginning of each player's upkeep, that player sacrifices a non-Zombie creature.<br>At the beginning of the end step, if no creatures are on the battlefield, sacrifice Call to the Grave.</td>
+    <td>No início da manutenção de cada jogador, aquele jogador sacrifica uma criatura que não seja Zumbi.<br>No início da etapa final, se não houver criaturas no campo de batalha, sacrifique Call to the Grave.</td>
+  </tr>
+  <tr>
+    <td>59</td>
+    <td>Carrion Feeder</td>
+    <td>Carrion Feeder can't block.<br>Sacrifice a creature: Put a +1/+1 counter on Carrion Feeder.</td>
+    <td>Carrion Feeder não pode bloquear.<br>Sacrifique uma criatura: Coloque um marcador +1/+1 em Carrion Feeder.</td>
+  </tr>
+  <tr>
+    <td>60</td>
+    <td>Chill Haunting</td>
+    <td>As an additional cost to cast this spell, exile X creature cards from your graveyard.<br>Target creature gets -X/-X until end of turn.</td>
+    <td>Como custo adicional para conjurar esta mágica, exile X cards de criatura de seu cemitério.<br>A criatura alvo recebe -X/-X até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>61</td>
+    <td>Clutch of Undeath</td>
+    <td>Enchant creature<br>Enchanted creature gets +3/+3 as long as it's a Zombie. Otherwise, it gets -3/-3.</td>
+    <td>Encantar criatura<br>A criatura encantada recebe +3/+3 enquanto for um Zumbi. Caso contrário, obtém -3/-3.</td>
+  </tr>
+  <tr>
+    <td>62</td>
+    <td>Consumptive Goo</td>
+    <td>{2}{B}{B}: Target creature gets -1/-1 until end of turn. Put a +1/+1 counter on Consumptive Goo.</td>
+    <td>{2}{B}{B}: A criatura alvo recebe -1/-1 até o final do turno. Coloque um marcador +1/+1 em Consumptive Goo.</td>
+  </tr>
+  <tr>
+    <td>63</td>
+    <td>Death's-Head Buzzard</td>
+    <td>Flying<br>When Death's-Head Buzzard dies, all creatures get -1/-1 until end of turn.</td>
+    <td>Vôo<br>Quando Urubu Cabeça da Morte morre, todas as criaturas recebem -1/-1 até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>64</td>
+    <td>Decree of Pain</td>
+    <td>Destroy all creatures. They can't be regenerated. Draw a card for each creature destroyed this way.<br>Cycling {3}{B}{B} ({3}{B}{B}, Discard this card: Draw a card.)<br>When you cycle Decree of Pain, all creatures get -2/-2 until end of turn.</td>
+    <td>Destrua todas as criaturas. Eles não podem ser regenerados. Compre um card para cada criatura destruída desta forma.<br>Reciclar {3}{B}{B} ({3}{B}{B}, descarte este card: Compre um card.)<br>Quando você recicla Decreto da Dor, todas as criaturas recebem -2/-2 até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>65</td>
+    <td>Dragon Shadow</td>
+    <td>Enchant creature<br>Enchanted creature gets +1/+0 and has fear. (It can't be blocked except by artifact creatures and/or black creatures.)<br>When a creature with mana value 6 or greater enters the battlefield, you may return Dragon Shadow from your graveyard to the battlefield attached to that creature.</td>
+    <td>Encantar criatura<br>A criatura encantada recebe +1/+0 e tem medo. (Ele não pode ser bloqueado exceto por criaturas artefato e/ou criaturas pretas.)<br>Quando uma criatura com valor de mana igual ou superior a 6 entra no campo de batalha, você pode devolver Dragon Shadow de seu cemitério para o campo de batalha anexado àquela criatura.</td>
+  </tr>
+  <tr>
+    <td>66</td>
+    <td>Fatal Mutation</td>
+    <td>Enchant creature<br>When enchanted creature is turned face up, destroy it. It can't be regenerated.</td>
+    <td>Encantar criatura<br>Quando a criatura encantada estiver virada para cima, destrua-a. Não pode ser regenerado.</td>
+  </tr>
+  <tr>
+    <td>67</td>
+    <td>Final Punishment</td>
+    <td>Target player loses life equal to the damage already dealt to that player this turn.</td>
+    <td>O jogador alvo perde uma quantidade de pontos de vida igual ao dano já causado a esse jogador neste turno.</td>
+  </tr>
+  <tr>
+    <td>68</td>
+    <td>Lethal Vapors</td>
+    <td>Whenever a creature enters the battlefield, destroy it.<br>{0}: Destroy Lethal Vapors. You skip your next turn. Any player may activate this ability.</td>
+    <td>Toda vez que uma criatura entrar no campo de batalha, destrua-a.<br>{0}: Destrua Vapores Letais. Você pula seu próximo turno. Qualquer jogador pode ativar esta habilidade.</td>
+  </tr>
+  <tr>
+    <td>69</td>
+    <td>Lingering Death</td>
+    <td>Enchant creature<br>At the beginning of the end step of enchanted creature's controller, that player sacrifices that creature.</td>
+    <td>Encantar criatura<br>No início da etapa final do controlador da criatura encantada, aquele jogador sacrifica aquela criatura.</td>
+  </tr>
+  <tr>
+    <td>70</td>
+    <td>Nefashu</td>
+    <td>Whenever Nefashu attacks, up to five target creatures each get -1/-1 until end of turn.</td>
+    <td>Sempre que Nefashu ataca, até cinco criaturas alvo recebem -1/-1 cada uma até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>71</td>
+    <td>Putrid Raptor</td>
+    <td>Morph—Discard a Zombie card. (You may cast this card face down as a 2/2 creature for {3}. Turn it face up any time for its morph cost.)</td>
+    <td>Morph – Descarte uma carta de Zumbi. (Você pode conjurar este card com a face voltada para baixo como uma criatura 2/2 por {3}. Vire-o com a face para cima a qualquer momento pagando seu custo de metamorfose.)</td>
+  </tr>
+  <tr>
+    <td>72</td>
+    <td>Reaping the Graves</td>
+    <td>Return target creature card from your graveyard to your hand.<br>Storm (When you cast this spell, copy it for each spell cast before it this turn. You may choose new targets for the copies.)</td>
+    <td>Devolva o card de criatura alvo de seu cemitério para sua mão.<br>Tempestade (Quando você conjurar esta mágica, copie-a para cada magia conjurada antes dela neste turno. Você pode escolher novos alvos para as cópias.)</td>
+  </tr>
+  <tr>
+    <td>73</td>
+    <td>Skulltap</td>
+    <td>As an additional cost to cast this spell, sacrifice a creature.<br>Draw two cards.</td>
+    <td>Como custo adicional para conjurar esta mágica, sacrifique uma criatura.<br>Compre duas cartas.</td>
+  </tr>
+  <tr>
+    <td>74</td>
+    <td>Soul Collector</td>
+    <td>Flying<br>Whenever a creature dealt damage by Soul Collector this turn dies, return that card to the battlefield under your control.<br>Morph {B}{B}{B} (You may cast this card face down as a 2/2 creature for {3}. Turn it face up any time for its morph cost.)</td>
+    <td>Vôo<br>Toda vez que uma criatura que sofreu dano de Soul Collector neste turno morrer, devolva aquele card para o campo de batalha sob seu controle.<br>Metamorfose {B}{B}{B} (Você pode lançar este card com a face voltada para baixo como uma criatura 2/2 por {3}. Vire-o com a face para cima a qualquer momento pagando seu custo de metamorfose.)</td>
+  </tr>
+  <tr>
+    <td>75</td>
+    <td>Tendrils of Agony</td>
+    <td>Target player loses 2 life and you gain 2 life.<br>Storm (When you cast this spell, copy it for each spell cast before it this turn. You may choose new targets for the copies.)</td>
+    <td>O jogador alvo perde 2 pontos de vida e você ganha 2 pontos de vida.<br>Tempestade (Quando você conjurar esta mágica, copie-a para cada magia conjurada antes dela neste turno. Você pode escolher novos alvos para as cópias.)</td>
+  </tr>
+  <tr>
+    <td>76</td>
+    <td>Twisted Abomination</td>
+    <td>{B}: Regenerate Twisted Abomination.<br>Swampcycling {2} ({2}, Discard this card: Search your library for a Swamp card, reveal it, put it into your hand, then shuffle.)</td>
+    <td>{B}: Regenera Abominação Distorcida.<br>Ciclo do Pântano {2} ({2}, Descarte este card: Procure um card de Pântano em seu grimório, revele-o, coloque-o em sua mão e depois embaralhe.)</td>
+  </tr>
+  <tr>
+    <td>77</td>
+    <td>Unburden</td>
+    <td>Target player discards two cards.<br>Cycling {2} ({2}, Discard this card: Draw a card.)</td>
+    <td>O jogador alvo descarta duas cartas.<br>Reciclar {2} ({2}, Descarte este card: Compre um card.)</td>
+  </tr>
+  <tr>
+    <td>78</td>
+    <td>Undead Warchief</td>
+    <td>Zombie spells you cast cost {1} less to cast.<br>Zombie creatures you control get +2/+1.</td>
+    <td>As mágicas de zumbi que você conjura custam {1} a menos para serem conjuradas.<br>As criaturas Zumbi que você controla recebem +2/+1.</td>
+  </tr>
+  <tr>
+    <td>79</td>
+    <td>Unspeakable Symbol</td>
+    <td>Pay 3 life: Put a +1/+1 counter on target creature.</td>
+    <td>Pague 3 pontos de vida: Coloque um marcador +1/+1 na criatura alvo.</td>
+  </tr>
+  <tr>
+    <td>80</td>
+    <td>Vengeful Dead</td>
+    <td>Whenever Vengeful Dead or another Zombie dies, each opponent loses 1 life.</td>
+    <td>Sempre que Vengeful Dead ou outro Zumbi morre, cada oponente perde 1 ponto de vida.</td>
+  </tr>
+  <tr>
+    <td>81</td>
+    <td>Zombie Cutthroat</td>
+    <td>Morph—Pay 5 life. (You may cast this card face down as a 2/2 creature for {3}. Turn it face up any time for its morph cost.)</td>
+    <td>Morph – Pague 5 pontos de vida. (Você pode conjurar este card com a face voltada para baixo como uma criatura 2/2 por {3}. Vire-o com a face para cima a qualquer momento pagando seu custo de metamorfose.)</td>
+  </tr>
+  <tr>
+    <td>82</td>
+    <td>Bonethorn Valesk</td>
+    <td>Whenever a permanent is turned face up, Bonethorn Valesk deals 1 damage to any target.</td>
+    <td>Sempre que uma permanente é virada para cima, Bonethorn Valesk causa 1 ponto de dano a qualquer alvo.</td>
+  </tr>
+  <tr>
+    <td>83</td>
+    <td>Carbonize</td>
+    <td>Carbonize deals 3 damage to any target. If it's a creature, it can't be regenerated this turn, and if it would die this turn, exile it instead.</td>
+    <td>Carbonizar causa 3 pontos de dano a qualquer alvo. Se for uma criatura, ela não pode ser regenerada neste turno e, se for morrer neste turno, em vez disso, exile-a.</td>
+  </tr>
+  <tr>
+    <td>84</td>
+    <td>Chartooth Cougar</td>
+    <td>{R}: Chartooth Cougar gets +1/+0 until end of turn.<br>Mountaincycling {2} ({2}, Discard this card: Search your library for a Mountain card, reveal it, put it into your hand, then shuffle.)</td>
+    <td>{R}: Puma Charttooth recebe +1/+0 até o final do turno.<br>Mountaincycling {2} ({2}, descarte este card: Procure um card de Montanha em seu grimório, revele-o, coloque-o em sua mão e depois embaralhe.)</td>
+  </tr>
+  <tr>
+    <td>85</td>
+    <td>Decree of Annihilation</td>
+    <td>Exile all artifacts, creatures, and lands from the battlefield, all cards from all graveyards, and all cards from all hands.<br>Cycling {5}{R}{R} ({5}{R}{R}, Discard this card: Draw a card.)<br>When you cycle Decree of Annihilation, destroy all lands.</td>
+    <td>Exile todos os artefatos, criaturas e terrenos do campo de batalha, todos os cards de todos os cemitérios e todos os cards de todas as mãos.<br>Reciclar {5}{R}{R} ({5}{R}{R}, descarte este card: Compre um card.)<br>Ao reciclar o Decreto de Aniquilação, destrua todos os terrenos.</td>
+  </tr>
+  <tr>
+    <td>86</td>
+    <td>Dragon Breath</td>
+    <td>Enchant creature<br>Enchanted creature has haste.<br>{R}: Enchanted creature gets +1/+0 until end of turn.<br>When a creature with mana value 6 or greater enters the battlefield, you may return Dragon Breath from your graveyard to the battlefield attached to that creature.</td>
+    <td>Encantar criatura<br>A criatura encantada tem ímpeto.<br>{R}: A criatura encantada recebe +1/+0 até o final do turno.<br>Quando uma criatura com valor de mana igual ou superior a 6 entra no campo de batalha, você pode devolver Dragon Breath de seu cemitério para o campo de batalha anexado àquela criatura.</td>
+  </tr>
+  <tr>
+    <td>87</td>
+    <td>Dragon Mage</td>
+    <td>Flying<br>Whenever Dragon Mage deals combat damage to a player, each player discards their hand, then draws seven cards.</td>
+    <td>Vôo<br>Sempre que Dragon Mage causa dano de combate a um jogador, cada jogador descarta sua mão e compra sete cartas.</td>
+  </tr>
+  <tr>
+    <td>88</td>
+    <td>Dragon Tyrant</td>
+    <td>Flying, trample<br>Double strike (This creature deals both first-strike and regular combat damage.)<br>At the beginning of your upkeep, sacrifice Dragon Tyrant unless you pay {R}{R}{R}{R}.<br>{R}: Dragon Tyrant gets +1/+0 until end of turn.</td>
+    <td>Voando, atropelar<br>Golpe duplo (Esta criatura causa dano de iniciativa e de combate normal.)<br>No início de sua manutenção, sacrifique Dragon Tyrant, a menos que você pague {R}{R}{R}{R}.<br>{R}: Dragão Tirano recebe +1/+0 até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>89</td>
+    <td>Dragonspeaker Shaman</td>
+    <td>Dragon spells you cast cost {2} less to cast.</td>
+    <td>As mágicas de dragão que você conjura custam {2} a menos para serem conjuradas.</td>
+  </tr>
+  <tr>
+    <td>90</td>
+    <td>Dragonstorm</td>
+    <td>Search your library for a Dragon permanent card, put it onto the battlefield, then shuffle.<br>Storm (When you cast this spell, copy it for each spell cast before it this turn.)</td>
+    <td>Procure em seu grimório por um card de permanente de Dragão, coloque-o no campo de batalha e depois embaralhe.<br>Tempestade (Quando você lançar este feitiço, copie-o para cada feitiço lançado antes dele neste turno.)</td>
+  </tr>
+  <tr>
+    <td>91</td>
+    <td>Enrage</td>
+    <td>Target creature gets +X/+0 until end of turn.</td>
+    <td>A criatura alvo recebe +X/+0 até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>92</td>
+    <td>Extra Arms</td>
+    <td>Enchant creature<br>Whenever enchanted creature attacks, it deals 2 damage to any target.</td>
+    <td>Encantar criatura<br>Sempre que a criatura encantada ataca, ela causa 2 pontos de dano a qualquer alvo.</td>
+  </tr>
+  <tr>
+    <td>93</td>
+    <td>Form of the Dragon</td>
+    <td>At the beginning of your upkeep, Form of the Dragon deals 5 damage to any target.<br>At the beginning of each end step, your life total becomes 5.<br>Creatures without flying can't attack you.</td>
+    <td>No início de sua manutenção, Forma do Dragão causa 5 pontos de dano a qualquer alvo.<br>No início de cada etapa final, seu total de pontos de vida passa a ser 5.<br>Criaturas sem voar não podem atacar você.</td>
+  </tr>
+  <tr>
+    <td>94</td>
+    <td>Goblin Brigand</td>
+    <td>Goblin Brigand attacks each combat if able.</td>
+    <td>Goblin Brigand ataca a cada combate se estiver apto.</td>
+  </tr>
+  <tr>
+    <td>95</td>
+    <td>Goblin Psychopath</td>
+    <td>Whenever Goblin Psychopath attacks or blocks, flip a coin. If you lose the flip, the next time it would deal combat damage this turn, it deals that damage to you instead.</td>
+    <td>Sempre que o Psicopata Goblin atacar ou bloquear, jogue uma moeda. Se você perder o lance, na próxima vez que ele causar dano de combate neste turno, ele causará esse dano a você.</td>
+  </tr>
+  <tr>
+    <td>96</td>
+    <td>Goblin War Strike</td>
+    <td>Goblin War Strike deals damage to target player or planeswalker equal to the number of Goblins you control.</td>
+    <td>Goblin War Strike causa dano ao jogador ou planeswalker alvo igual ao número de Goblins que você controla.</td>
+  </tr>
+  <tr>
+    <td>97</td>
+    <td>Goblin Warchief</td>
+    <td>Goblin spells you cast cost {1} less to cast.<br>Goblins you control have haste.</td>
+    <td>As mágicas de Goblin que você conjura custam {1} a menos para serem conjuradas.<br>Os goblins que você controla têm pressa.</td>
+  </tr>
+  <tr>
+    <td>98</td>
+    <td>Grip of Chaos</td>
+    <td>Whenever a spell or ability is put onto the stack, if it has a single target, reselect its target at random. (Select from among all legal targets.)</td>
+    <td>Sempre que uma mágica ou habilidade for colocada na pilha, se ela tiver um único alvo, selecione novamente seu alvo aleatoriamente. (Selecione entre todas as metas legais.)</td>
+  </tr>
+  <tr>
+    <td>99</td>
+    <td>Misguided Rage</td>
+    <td>Target player sacrifices a permanent.</td>
+    <td>O jogador alvo sacrifica uma permanente.</td>
+  </tr>
+  <tr>
+    <td>100</td>
+    <td>Pyrostatic Pillar</td>
+    <td>Whenever a player casts a spell with mana value 3 or less, Pyrostatic Pillar deals 2 damage to that player.</td>
+    <td>Sempre que um jogador conjura uma mágica com valor de mana igual ou inferior a 3, Pilar Pirostático causa 2 pontos de dano àquele jogador.</td>
+  </tr>
+  <tr>
+    <td>101</td>
+    <td>Rock Jockey</td>
+    <td>You can't cast this spell if you've played a land this turn.<br>You can't play lands if you've cast Rock Jockey this turn.</td>
+    <td>Você não pode conjurar esta mágica se tiver jogado um terreno neste turno.<br>Você não pode jogar terrenos se tiver conjurado Rock Jockey neste turno.</td>
+  </tr>
+  <tr>
+    <td>102</td>
+    <td>Scattershot</td>
+    <td>Scattershot deals 1 damage to target creature.<br>Storm (When you cast this spell, copy it for each spell cast before it this turn. You may choose new targets for the copies.)</td>
+    <td>Dispersão causa 1 ponto de dano à criatura alvo.<br>Tempestade (Quando você conjurar esta mágica, copie-a para cada magia conjurada antes dela neste turno. Você pode escolher novos alvos para as cópias.)</td>
+  </tr>
+  <tr>
+    <td>103</td>
+    <td>Siege-Gang Commander</td>
+    <td>When Siege-Gang Commander enters the battlefield, create three 1/1 red Goblin creature tokens.<br>{1}{R}, Sacrifice a Goblin: Siege-Gang Commander deals 2 damage to any target.</td>
+    <td>Quando Siege-Gang Commander entrar no campo de batalha, crie três fichas de criatura vermelhas 1/1 do tipo Goblin.<br>{1}{R}, Sacrifique um Goblin: Comandante da Gangue de Cerco causa 2 pontos de dano a qualquer alvo.</td>
+  </tr>
+  <tr>
+    <td>104</td>
+    <td>Skirk Volcanist</td>
+    <td>Morph—Sacrifice two Mountains. (You may cast this card face down as a 2/2 creature for {3}. Turn it face up any time for its morph cost.)<br>When Skirk Volcanist is turned face up, it deals 3 damage divided as you choose among one, two, or three target creatures.</td>
+    <td>Morph – Sacrifique duas montanhas. (Você pode conjurar este card com a face voltada para baixo como uma criatura 2/2 por {3}. Vire-o com a face para cima a qualquer momento pagando seu custo de metamorfose.)<br>Quando Skirk Volcanist é virado para cima, ele causa 3 pontos de dano divididos como você escolher entre uma, duas ou três criaturas alvo.</td>
+  </tr>
+  <tr>
+    <td>105</td>
+    <td>Spark Spray</td>
+    <td>Spark Spray deals 1 damage to any target.<br>Cycling {R} ({R}, Discard this card: Draw a card.)</td>
+    <td>Spark Spray causa 1 de dano a qualquer alvo.<br>Reciclar {R} ({R}, descarte este card: Compre um card.)</td>
+  </tr>
+  <tr>
+    <td>106</td>
+    <td>Sulfuric Vortex</td>
+    <td>At the beginning of each player's upkeep, Sulfuric Vortex deals 2 damage to that player.<br>If a player would gain life, that player gains no life instead.</td>
+    <td>No início da manutenção de cada jogador, Vórtice Sulfúrico causa 2 pontos de dano àquele jogador.<br>Se um jogador fosse ganhar vida, esse jogador não ganha vida.</td>
+  </tr>
+  <tr>
+    <td>107</td>
+    <td>Torrent of Fire</td>
+    <td>Torrent of Fire deals damage to any target equal to the highest mana value among permanents you control.</td>
+    <td>Torrente de Fogo causa dano a qualquer alvo igual ao maior valor de mana entre as permanentes que você controla.</td>
+  </tr>
+  <tr>
+    <td>108</td>
+    <td>Uncontrolled Infestation</td>
+    <td>Enchant nonbasic land<br>When enchanted land becomes tapped, destroy it.</td>
+    <td>Encantar terreno não básico<br>Quando o terreno encantado for virado, destrua-o.</td>
+  </tr>
+  <tr>
+    <td>109</td>
+    <td>Accelerated Mutation</td>
+    <td>Target creature gets +X/+X until end of turn, where X is the highest mana value among permanents you control.</td>
+    <td>A criatura alvo recebe +X/+X até o final do turno, sendo X o maior valor de mana entre as permanentes que você controla.</td>
+  </tr>
+  <tr>
+    <td>110</td>
+    <td>Alpha Status</td>
+    <td>Enchant creature<br>Enchanted creature gets +2/+2 for each other creature on the battlefield that shares a creature type with it.</td>
+    <td>Encantar criatura<br>A criatura encantada recebe +2/+2 para cada outra criatura no campo de batalha que compartilhe um tipo de criatura com ela.</td>
+  </tr>
+  <tr>
+    <td>111</td>
+    <td>Ambush Commander</td>
+    <td>Forests you control are 1/1 green Elf creatures that are still lands.<br>{1}{G}, Sacrifice an Elf: Target creature gets +3/+3 until end of turn.</td>
+    <td>As florestas que você controla são criaturas Elfas verdes 1/1 que ainda são terrenos.<br>{1}{G}, Sacrifique um Elfo: A criatura alvo recebe +3/+3 até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>112</td>
+    <td>Ancient Ooze</td>
+    <td>Ancient Ooze's power and toughness are each equal to the total mana value of other creatures you control.</td>
+    <td>O poder e a resistência de Ancient Ooze são iguais ao valor total de mana das outras criaturas que você controla.</td>
+  </tr>
+  <tr>
+    <td>113</td>
+    <td>Break Asunder</td>
+    <td>Destroy target artifact or enchantment.<br>Cycling {2} ({2}, Discard this card: Draw a card.)</td>
+    <td>Destrua o artefato ou o encantamento alvo.<br>Reciclar {2} ({2}, Descarte este card: Compre um card.)</td>
+  </tr>
+  <tr>
+    <td>114</td>
+    <td>Claws of Wirewood</td>
+    <td>Claws of Wirewood deals 3 damage to each creature with flying and each player.<br>Cycling {2} ({2}, Discard this card: Draw a card.)</td>
+    <td>Garras de Arame causa 3 pontos de dano a cada criatura com voar e a cada jogador.<br>Reciclar {2} ({2}, Descarte este card: Compre um card.)</td>
+  </tr>
+  <tr>
+    <td>115</td>
+    <td>Decree of Savagery</td>
+    <td>Put four +1/+1 counters on each creature you control.<br>Cycling {4}{G}{G} ({4}{G}{G}, Discard this card: Draw a card.)<br>When you cycle Decree of Savagery, you may put four +1/+1 counters on target creature.</td>
+    <td>Coloque quatro marcadores +1/+1 em cada criatura que você controla.<br>Reciclar {4}{G}{G} ({4}{G}{G}, Descarte este card: Compre um card.)<br>Ao reciclar Decreto de Selvageria, você pode colocar quatro marcadores +1/+1 na criatura alvo.</td>
+  </tr>
+  <tr>
+    <td>116</td>
+    <td>Divergent Growth</td>
+    <td>Until end of turn, lands you control gain "{T}: Add one mana of any color."</td>
+    <td>Até o final do turno, os terrenos que você controla ganham "{T}: Adicione um mana de qualquer cor."</td>
+  </tr>
+  <tr>
+    <td>117</td>
+    <td>Dragon Fangs</td>
+    <td>Enchant creature<br>Enchanted creature gets +1/+1 and has trample.<br>When a creature with mana value 6 or greater enters the battlefield, you may return Dragon Fangs from your graveyard to the battlefield attached to that creature.</td>
+    <td>Encantar criatura<br>A criatura encantada recebe +1/+1 e tem atropelar.<br>Quando uma criatura com valor de mana igual ou superior a 6 entra no campo de batalha, você pode devolver Presas Dracônicas de seu cemitério para o campo de batalha anexadas àquela criatura.</td>
+  </tr>
+  <tr>
+    <td>118</td>
+    <td>Elvish Aberration</td>
+    <td>{T}: Add {G}{G}{G}.<br>Forestcycling {2} ({2}, Discard this card: Search your library for a Forest card, reveal it, put it into your hand, then shuffle.)</td>
+    <td>{T}: Adicione {G}{G}{G}.<br>Ciclismo Florestal {2} ({2}, Descarte este card: Procure um card de Floresta em seu grimório, revele-o, coloque-o em sua mão e depois embaralhe.)</td>
+  </tr>
+  <tr>
+    <td>119</td>
+    <td>Fierce Empath</td>
+    <td>When Fierce Empath enters the battlefield, you may search your library for a creature card with mana value 6 or greater, reveal it, put it into your hand, then shuffle.</td>
+    <td>Quando Empata Feroz entra no campo de batalha, você pode procurar em seu grimório um card de criatura com valor de mana igual ou superior a 6, revelá-lo, colocá-lo em sua mão e depois embaralhar.</td>
+  </tr>
+  <tr>
+    <td>120</td>
+    <td>Forgotten Ancient</td>
+    <td>Whenever a player casts a spell, you may put a +1/+1 counter on Forgotten Ancient.<br>At the beginning of your upkeep, you may move any number of +1/+1 counters from Forgotten Ancient onto other creatures.</td>
+    <td>Sempre que um jogador conjurar uma mágica, você pode colocar um marcador +1/+1 em Forgotten Ancient.<br>No início de sua manutenção, você pode mover qualquer número de marcadores +1/+1 de Forgotten Ancient para outras criaturas.</td>
+  </tr>
+  <tr>
+    <td>121</td>
+    <td>Hunting Pack</td>
+    <td>Create a 4/4 green Beast creature token.<br>Storm (When you cast this spell, copy it for each spell cast before it this turn.)</td>
+    <td>Crie uma ficha de criatura verde 4/4 do tipo Besta.<br>Tempestade (Quando você lançar este feitiço, copie-o para cada feitiço lançado antes dele neste turno.)</td>
+  </tr>
+  <tr>
+    <td>122</td>
+    <td>Krosan Drover</td>
+    <td>Creature spells you cast with mana value 6 or greater cost {2} less to cast.</td>
+    <td>As mágicas de criatura que você conjura com custo de mana igual ou superior a 6 custam {2} a menos para serem conjuradas.</td>
+  </tr>
+  <tr>
+    <td>123</td>
+    <td>Krosan Warchief</td>
+    <td>Beast spells you cast cost {1} less to cast.<br>{1}{G}: Regenerate target Beast.</td>
+    <td>As mágicas de besta que você conjura custam {1} a menos para serem conjuradas.<br>{1}{G}: Regenera a Besta alvo.</td>
+  </tr>
+  <tr>
+    <td>124</td>
+    <td>Kurgadon</td>
+    <td>Whenever you cast a creature spell with mana value 6 or greater, put three +1/+1 counters on Kurgadon.</td>
+    <td>Toda vez que você conjurar uma mágica de criatura com valor de mana igual ou superior a 6, coloque três marcadores +1/+1 em Kurgadon.</td>
+  </tr>
+  <tr>
+    <td>125</td>
+    <td>One with Nature</td>
+    <td>Enchant creature<br>Whenever enchanted creature deals combat damage to a player, you may search your library for a basic land card, put that card onto the battlefield tapped, then shuffle.</td>
+    <td>Encantar criatura<br>Toda vez que a criatura encantada causar dano de combate a um jogador, você pode procurar em seu grimório um card de terreno básico, colocar aquele card no campo de batalha virado e depois embaralhar.</td>
+  </tr>
+  <tr>
+    <td>126</td>
+    <td>Primitive Etchings</td>
+    <td>Reveal the first card you draw each turn. Whenever you reveal a creature card this way, draw a card.</td>
+    <td>Revele a primeira carta que você compra em cada turno. Toda vez que você revelar um card de criatura dessa maneira, compre um card.</td>
+  </tr>
+  <tr>
+    <td>127</td>
+    <td>Root Elemental</td>
+    <td>Morph {5}{G}{G} (You may cast this card face down as a 2/2 creature for {3}. Turn it face up any time for its morph cost.)<br>When Root Elemental is turned face up, you may put a creature card from your hand onto the battlefield.</td>
+    <td>Metamorfose {5}{G}{G} (Você pode conjurar este card com a face voltada para baixo como uma criatura 2/2 por {3}. Vire-o com a face para cima a qualquer momento pagando seu custo de metamorfose.)<br>Quando Root Elemental é virado para cima, você pode colocar um card de criatura de sua mão no campo de batalha.</td>
+  </tr>
+  <tr>
+    <td>128</td>
+    <td>Sprouting Vines</td>
+    <td>Search your library for a basic land card, reveal that card, put it into your hand, then shuffle.<br>Storm (When you cast this spell, copy it for each spell cast before it this turn.)</td>
+    <td>Procure em seu grimório por um card de terreno básico, revele aquele card, coloque-o em sua mão e depois embaralhe.<br>Tempestade (Quando você lançar este feitiço, copie-o para cada feitiço lançado antes dele neste turno.)</td>
+  </tr>
+  <tr>
+    <td>129</td>
+    <td>Titanic Bulvox</td>
+    <td>Trample<br>Morph {4}{G}{G}{G} (You may cast this card face down as a 2/2 creature for {3}. Turn it face up any time for its morph cost.)</td>
+    <td>Atropelar<br>Metamorfose {4}{G}{G}{G} (Você pode lançar este card com a face voltada para baixo como uma criatura 2/2 por {3}. Vire-o com a face para cima a qualquer momento pagando seu custo de metamorfose.)</td>
+  </tr>
+  <tr>
+    <td>130</td>
+    <td>Treetop Scout</td>
+    <td>Treetop Scout can't be blocked except by creatures with flying.</td>
+    <td>Treetop Scout não pode ser bloqueado exceto por criaturas com voar.</td>
+  </tr>
+  <tr>
+    <td>131</td>
+    <td>Upwelling</td>
+    <td>Players don't lose unspent mana as steps and phases end.</td>
+    <td>Os jogadores não perdem mana não gasta conforme as etapas e fases terminam.</td>
+  </tr>
+  <tr>
+    <td>132</td>
+    <td>Wirewood Guardian</td>
+    <td>Forestcycling {2} ({2}, Discard this card: Search your library for a Forest card, reveal it, put it into your hand, then shuffle.)</td>
+    <td>Ciclismo Florestal {2} ({2}, Descarte este card: Procure um card de Floresta em seu grimório, revele-o, coloque-o em sua mão e depois embaralhe.)</td>
+  </tr>
+  <tr>
+    <td>133</td>
+    <td>Wirewood Symbiote</td>
+    <td>Return an Elf you control to its owner's hand: Untap target creature. Activate only once each turn.</td>
+    <td>Devolva um Elfo que você controla para a mão de seu dono: desvire a criatura alvo. Ative apenas uma vez em cada turno.</td>
+  </tr>
+  <tr>
+    <td>134</td>
+    <td>Woodcloaker</td>
+    <td>Morph {2}{G}{G} (You may cast this card face down as a 2/2 creature for {3}. Turn it face up any time for its morph cost.)<br>When Woodcloaker is turned face up, target creature gains trample until end of turn.</td>
+    <td>Metamorfose {2}{G}{G} (Você pode conjurar este card com a face voltada para baixo como uma criatura 2/2 por {3}. Vire-o com a face para cima a qualquer momento pagando seu custo de metamorfose.)<br>Quando Woodcloaker é virado para cima, a criatura alvo ganha atropelar até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>135</td>
+    <td>Xantid Swarm</td>
+    <td>Flying<br>Whenever Xantid Swarm attacks, defending player can't cast spells this turn.</td>
+    <td>Vôo<br>Sempre que Xantid Swarm ataca, o jogador defensor não pode lançar mágicas neste turno.</td>
+  </tr>
+  <tr>
+    <td>136</td>
+    <td>Bladewing the Risen</td>
+    <td>Flying<br>When Bladewing the Risen enters the battlefield, you may return target Dragon permanent card from your graveyard to the battlefield.<br>{B}{R}: Dragon creatures get +1/+1 until end of turn.</td>
+    <td>Vôo<br>Quando Bladewing, o Ressuscitado, entra no campo de batalha, você pode devolver o card de permanente alvo do Dragão de seu cemitério para o campo de batalha.<br>{B}{R}: As criaturas do tipo Dragão recebem +1/+1 até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>137</td>
+    <td>Edgewalker</td>
+    <td>Cleric spells you cast cost {W}{B} less to cast. This effect reduces only the amount of colored mana you pay. (For example, if you cast a Cleric spell with mana cost {1}{W}, it costs {1} to cast.)</td>
+    <td>As mágicas de clérigo que você conjura custam {W}{B} a menos para serem conjuradas. Este efeito reduz apenas a quantidade de mana colorida que você paga. (Por exemplo, se você conjurar uma mágica de Clérigo com custo de mana {1}{W}, ela custará {1} para ser conjurada.)</td>
+  </tr>
+  <tr>
+    <td>138</td>
+    <td>Karona, False God</td>
+    <td>Haste<br>At the beginning of each player's upkeep, that player untaps Karona, False God and gains control of it.<br>Whenever Karona attacks, creatures of the creature type of your choice get +3/+3 until end of turn.</td>
+    <td>Pressa<br>No início da manutenção de cada jogador, aquele jogador desvira Karona, False God e ganha o controle dele.<br>Toda vez que Karona ataca, as criaturas do tipo de criatura à sua escolha recebem +3/+3 até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>139</td>
+    <td>Sliver Overlord</td>
+    <td>{3}: Search your library for a Sliver card, reveal that card, put it into your hand, then shuffle.<br>{3}: Gain control of target Sliver. (This effect lasts indefinitely.)</td>
+    <td>{3}: Procure um card Fractius em seu grimório, revele aquele card, coloque-o em sua mão e depois embaralhe.<br>{3}: Ganhe o controle do Sliver alvo. (Este efeito dura indefinidamente.)</td>
+  </tr>
+  <tr>
+    <td>140</td>
+    <td>Ark of Blight</td>
+    <td>{3}, {T}, Sacrifice Ark of Blight: Destroy target land.</td>
+    <td>{3}, {T}, sacrifique Ark of Blight: Destrua o terreno alvo.</td>
+  </tr>
+  <tr>
+    <td>141</td>
+    <td>Proteus Machine</td>
+    <td>Morph {0} (You may cast this card face down as a 2/2 creature for {3}. Turn it face up any time for its morph cost.)<br>When Proteus Machine is turned face up, it becomes the creature type of your choice. (This effect lasts indefinitely.)</td>
+    <td>Metamorfose {0} (Você pode conjurar este card com a face voltada para baixo como uma criatura 2/2 por {3}. Vire-o com a face para cima a qualquer momento pagando seu custo de metamorfose.)<br>Quando Proteus Machine é virado para cima, ele se torna o tipo de criatura de sua escolha. (Este efeito dura indefinidamente.)</td>
+  </tr>
+  <tr>
+    <td>142</td>
+    <td>Stabilizer</td>
+    <td>Players can't cycle cards.</td>
+    <td>Os jogadores não podem reciclar cartas.</td>
+  </tr>
+  <tr>
+    <td>143</td>
+    <td>Temple of the False God</td>
+    <td>{T}: Add {C}{C}. Activate only if you control five or more lands.</td>
+    <td>{T}: Adicione {C}{C}. Ative apenas se você controlar cinco ou mais terrenos.</td>
+  </tr>
+</table>
+    </body>
+</html>

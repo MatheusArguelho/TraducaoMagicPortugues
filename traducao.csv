@@ -1,0 +1,509 @@
+numero,nome,texto_ingles,traduzido
+1,Aurora Eidolon,"{W}, Sacrifice Aurora Eidolon: Prevent the next 3 damage that would be dealt to any target this turn.
+Whenever you cast a multicolored spell, you may return Aurora Eidolon from your graveyard to your hand.","{W}, Sacrifique Aurora Eidolon: Previne os próximos 3 pontos de dano que seriam causados ​​a qualquer alvo neste turno.
+Sempre que você conjurar uma mágica multicolorida, você poderá devolver Aurora Eidolon de seu cemitério para sua mão."
+2,Azorius Herald,"Azorius Herald can't be blocked.
+When Azorius Herald enters the battlefield, you gain 4 life.
+When Azorius Herald enters the battlefield, sacrifice it unless {U} was spent to cast it.","Azorius Herald não pode ser bloqueado.
+Quando Azorius Herald entra no campo de batalha, você ganha 4 pontos de vida.
+Quando Azorius Herald entrar no campo de batalha, sacrifique-o, a menos que {U} tenha sido gasto para conjurá-lo."
+3,Beacon Hawk,"Flying
+Whenever Beacon Hawk deals combat damage to a player, you may untap target creature.
+{W}: Beacon Hawk gets +0/+1 until end of turn.","Vôo
+Toda vez que Beacon Hawk causar dano de combate a um jogador, você poderá desvirar a criatura alvo.
+{W}: Falcão Farol recebe +0/+1 até o final do turno."
+4,Blessing of the Nephilim,"Enchant creature
+Enchanted creature gets +1/+1 for each of its colors.","Encantar criatura
+A criatura encantada recebe +1/+1 para cada uma de suas cores."
+5,Brace for Impact,"Prevent all damage that would be dealt to target multicolored creature this turn. For each 1 damage prevented this way, put a +1/+1 counter on that creature.","Previne todo o dano que seria causado à criatura multicolorida alvo neste turno. Para cada 1 dano prevenido desta forma, coloque um marcador +1/+1 naquela criatura."
+6,Carom,"The next 1 damage that would be dealt to target creature this turn is dealt to another target creature instead.
+Draw a card.","O próximo 1 ponto de dano que seria causado à criatura alvo neste turno é causado a outra criatura alvo.
+Compre uma carta."
+7,Celestial Ancient,"Flying
+Whenever you cast an enchantment spell, put a +1/+1 counter on each creature you control.","Vôo
+Toda vez que você conjurar uma mágica de encantamento, coloque um marcador +1/+1 em cada criatura que você controla."
+8,Condemn,Put target attacking creature on the bottom of its owner's library. Its controller gains life equal to its toughness.,Coloque a criatura atacante alvo no fundo do grimório de seu dono. Seu controlador ganha vida igual à sua resistência.
+9,Freewind Equenaut,"Flying
+As long as Freewind Equenaut is enchanted, it has ""{T}: Freewind Equenaut deals 2 damage to target attacking or blocking creature.""","Vôo
+Enquanto Freewind Equenaut estiver encantado, ele terá ""{T}: Freewind Equenaut causa 2 pontos de dano à criatura atacante ou bloqueadora alvo."""
+10,Guardian of the Guildpact,Protection from monocolored,Proteção contra monocolor
+11,Haazda Exonerator,"{T}, Sacrifice Haazda Exonerator: Destroy target Aura.","{T}, Sacrifique Haazda Exonerator: Destrua a Aura alvo."
+12,Haazda Shield Mate,"At the beginning of your upkeep, sacrifice Haazda Shield Mate unless you pay {W}{W}.
+{W}: The next time a source of your choice would deal damage to you this turn, prevent that damage.","No início de sua manutenção, sacrifique Haazda Shield Mate, a menos que você pague {W}{W}.
+{W}: Na próxima vez que uma fonte à sua escolha for causar dano a você neste turno, previna aquele dano."
+13,Mistral Charger,Flying,Vôo
+14,Paladin of Prahv,"Whenever Paladin of Prahv deals damage, you gain that much life.
+Forecast — {1}{W}, Reveal Paladin of Prahv from your hand: Whenever target creature deals damage this turn, you gain that much life. (Activate only during your upkeep and only once each turn.)","Sempre que Paladino de Prahv causa dano, você ganha aquela quantidade de pontos de vida.
+Previsão — {1}{W}, Revele Paladino de Prahv de sua mão: Toda vez que a criatura alvo causar dano neste turno, você ganha aquela quantidade de pontos de vida. (Ative apenas durante sua manutenção e apenas uma vez em cada turno.)"
+15,Proclamation of Rebirth,"Return up to three target creature cards with mana value 1 or less from your graveyard to the battlefield.
+Forecast — {5}{W}, Reveal Proclamation of Rebirth from your hand: Return target creature card with mana value 1 or less from your graveyard to the battlefield. (Activate only during your upkeep and only once each turn.)","Devolva até três cards de criatura alvo com valor de mana igual ou inferior a 1 de seu cemitério para o campo de batalha.
+Previsão — {5}{W}, Revele Proclamação de Renascimento de sua mão: Devolva o card de criatura alvo com valor de mana igual ou inferior a 1 de seu cemitério para o campo de batalha. (Ative apenas durante sua manutenção e apenas uma vez em cada turno.)"
+16,Proper Burial,"Whenever a creature you control dies, you gain life equal to that creature's toughness.","Toda vez que uma criatura que você controla morre, você ganha uma quantidade de pontos de vida igual à resistência daquela criatura."
+17,Soulsworn Jury,"Defender (This creature can't attack.)
+{1}{U}, Sacrifice Soulsworn Jury: Counter target creature spell.","Defensor (Esta criatura não pode atacar.)
+{1}{U}, sacrifique Soulsworn Jury: Anule a mágica de criatura alvo."
+18,Steeling Stance,"Creatures you control get +1/+1 until end of turn.
+Forecast — {W}, Reveal Steeling Stance from your hand: Target creature gets +1/+1 until end of turn. (Activate only during your upkeep and only once each turn.)","As criaturas que você controla recebem +1/+1 até o final do turno.
+Previsão — {W}, Revele Postura de Aço de sua mão: A criatura alvo recebe +1/+1 até o final do turno. (Ative apenas durante sua manutenção e apenas uma vez em cada turno.)"
+19,Stoic Ephemera,"Defender (This creature can't attack.)
+Flying
+When Stoic Ephemera blocks, sacrifice it at end of combat.","Defensor (Esta criatura não pode atacar.)
+Vôo
+Quando Stoic Ephemera bloquear, sacrifique-o no final do combate."
+20,Valor Made Real,Target creature can block any number of creatures this turn.,A criatura alvo pode bloquear qualquer número de criaturas neste turno.
+21,Wakestone Gargoyle,"Defender, flying
+{1}{W}: Creatures you control with defender can attack this turn as though they didn't have defender.","Defensor, voando
+{1}{W}: As criaturas que você controla com defensor podem atacar neste turno como se não tivessem defensor."
+22,Court Hussar,"Vigilance
+When Court Hussar enters the battlefield, look at the top three cards of your library, then put one of them into your hand and the rest on the bottom of your library in any order.
+When Court Hussar enters the battlefield, sacrifice it unless {W} was spent to cast it.","Vigilância
+Quando Hussardo da Corte entrar no campo de batalha, olhe os três cards do topo de seu grimório, depois coloque um deles em sua mão e o restante no fundo de seu grimório em qualquer ordem.
+Quando Hussardo da Corte entrar no campo de batalha, sacrifique-o, a menos que {W} tenha sido gasto para conjurá-lo."
+23,Cytoplast Manipulator,"Graft 2 (This creature enters the battlefield with two +1/+1 counters on it. Whenever another creature enters the battlefield, you may move a +1/+1 counter from this creature onto it.)
+{U}, {T}: Gain control of target creature with a +1/+1 counter on it for as long as Cytoplast Manipulator remains on the battlefield.","Enxerto 2 (Esta criatura entra no campo de batalha com dois marcadores +1/+1. Sempre que outra criatura entra no campo de batalha, você pode mover um marcador +1/+1 desta criatura para ela.)
+{U}, {T}: Ganhe o controle da criatura alvo com um marcador +1/+1 enquanto Manipulador de Citoplasto permanecer no campo de batalha."
+24,Enigma Eidolon,"{U}, Sacrifice Enigma Eidolon: Target player mills three cards.
+Whenever you cast a multicolored spell, you may return Enigma Eidolon from your graveyard to your hand.","{U}, Sacrifique Enigma Eidolon: O jogador alvo mói três cartas.
+Sempre que você conjurar uma mágica multicolorida, você poderá devolver Enigma Eidolon de seu cemitério para sua mão."
+25,Govern the Guildless,"Gain control of target monocolored creature.
+Forecast — {1}{U}, Reveal Govern the Guildless from your hand: Target creature becomes the color or colors of your choice until end of turn. (Activate only during your upkeep and only once each turn.)","Ganhe o controle da criatura monocolor alvo.
+Previsão — {1}{U}, Revelar Governe os Sem Guilda de sua mão: A criatura alvo se torna da cor ou cores de sua escolha até o final do turno. (Ative apenas durante sua manutenção e apenas uma vez em cada turno.)"
+26,Helium Squirter,"Graft 3 (This creature enters the battlefield with three +1/+1 counters on it. Whenever another creature enters the battlefield, you may move a +1/+1 counter from this creature onto it.)
+{1}: Target creature with a +1/+1 counter on it gains flying until end of turn.","Enxerto 3 (Esta criatura entra no campo de batalha com três marcadores +1/+1. Sempre que outra criatura entra no campo de batalha, você pode mover um marcador +1/+1 desta criatura para ela.)
+{1}: A criatura alvo com um marcador +1/+1 ganha voar até o final do turno."
+27,Novijen Sages,"Graft 4 (This creature enters the battlefield with four +1/+1 counters on it. Whenever another creature enters the battlefield, you may move a +1/+1 counter from this creature onto it.)
+{1}, Remove two +1/+1 counters from among creatures you control: Draw a card.","Enxerto 4 (Esta criatura entra no campo de batalha com quatro marcadores +1/+1. Sempre que outra criatura entra no campo de batalha, você pode mover um marcador +1/+1 desta criatura para ela.)
+{1}, Remova dois marcadores +1/+1 dentre as criaturas que você controla: Compre um card."
+28,Ocular Halo,"Enchant creature
+Enchanted creature has ""{T}: Draw a card.""
+{W}: Enchanted creature gains vigilance until end of turn.","Encantar criatura
+A criatura encantada tem ""{T}: Compre um card.""
+{W}: A criatura encantada ganha vigilância até o final do turno."
+29,Plaxmanta,"Flash
+When Plaxmanta enters the battlefield, creatures you control gain shroud until end of turn. (They can't be the targets of spells or abilities.)
+When Plaxmanta enters the battlefield, sacrifice it unless {G} was spent to cast it.","Clarão
+Quando Plaxmanta entra no campo de batalha, as criaturas que você controla ganham mortalha até o final do turno. (Eles não podem ser alvos de mágicas ou habilidades.)
+Quando Plaxmanta entrar no campo de batalha, sacrifique-o, a menos que {G} tenha sido gasto para conjurá-lo."
+30,Psychic Possession,"Enchant opponent
+Skip your draw step.
+Whenever enchanted opponent draws a card, you may draw a card.","Encantar oponente
+Pule a etapa de sorteio.
+Sempre que o oponente encantado comprar uma carta, você poderá comprar uma carta."
+31,Silkwing Scout,"Flying
+{G}, Sacrifice Silkwing Scout: Search your library for a basic land card, put that card onto the battlefield tapped, then shuffle.","Vôo
+{G}, sacrifique Silkwing Scout: Procure em seu grimório por um card de terreno básico, coloque aquele card no campo de batalha virado e depois embaralhe."
+32,Skyscribing,"Each player draws X cards.
+Forecast — {2}{U}, Reveal Skyscribing from your hand: Each player draws a card. (Activate only during your upkeep and only once each turn.)","Cada jogador compra X cartas.
+Previsão — {2}{U}, Revele Skyscribe da sua mão: Cada jogador compra um card. (Ative apenas durante sua manutenção e apenas uma vez em cada turno.)"
+33,Spell Snare,Counter target spell with mana value 2.,Anula a mágica alvo com valor de mana 2.
+34,Tidespout Tyrant,"Flying
+Whenever you cast a spell, return target permanent to its owner's hand.","Vôo
+Toda vez que você conjurar uma mágica, devolva a permanente alvo para a mão de seu dono."
+35,Vigean Graftmage,"Graft 2 (This creature enters the battlefield with two +1/+1 counters on it. Whenever another creature enters the battlefield, you may move a +1/+1 counter from this creature onto it.)
+{1}{U}: Untap target creature with a +1/+1 counter on it.","Enxerto 2 (Esta criatura entra no campo de batalha com dois marcadores +1/+1. Sempre que outra criatura entra no campo de batalha, você pode mover um marcador +1/+1 desta criatura para ela.)
+{1}{U}: Desvire a criatura alvo com um marcador +1/+1."
+36,Vision Skeins,Each player draws two cards.,Cada jogador compra duas cartas.
+37,Writ of Passage,"Enchant creature
+Whenever enchanted creature attacks, if its power is 2 or less, it can't be blocked this turn.
+Forecast — {1}{U}, Reveal Writ of Passage from your hand: Target creature with power 2 or less can't be blocked this turn. (Activate only during your upkeep and only once each turn.)","Encantar criatura
+Sempre que a criatura encantada atacar, se seu poder for 2 ou menos, ela não poderá ser bloqueada neste turno.
+Previsão — {1}{U}, Revele Mandado de Passagem de sua mão: A criatura alvo com poder igual ou inferior a 2 não pode ser bloqueada neste turno. (Ative apenas durante sua manutenção e apenas uma vez em cada turno.)"
+38,Bond of Agony,"As an additional cost to cast this spell, pay X life.
+Each other player loses X life.","Como custo adicional para conjurar esta mágica, pague X pontos de vida.
+Cada outro jogador perde X pontos de vida."
+39,Brain Pry,"Choose a nonland card name. Target player reveals their hand. That player discards a card with that name. If they can't, you draw a card.","Escolha um nome de card que não seja um terreno. O jogador alvo revela sua mão. Esse jogador descarta uma carta com esse nome. Se eles não puderem, você compra uma carta."
+40,Crypt Champion,"Double strike
+When Crypt Champion enters the battlefield, each player puts a creature card with mana value 3 or less from their graveyard onto the battlefield.
+When Crypt Champion enters the battlefield, sacrifice it unless {R} was spent to cast it.","Golpe duplo
+Quando Campeão da Cripta entra no campo de batalha, cada jogador coloca no campo de batalha um card de criatura com valor de mana igual ou inferior a 3 de seu cemitério.
+Quando Campeão da Cripta entrar no campo de batalha, sacrifique-o, a menos que {R} tenha sido gasto para conjurá-lo."
+41,Delirium Skeins,Each player discards three cards.,Cada jogador descarta três cartas.
+42,Demon's Jester,"Flying
+Hellbent — Demon's Jester gets +2/+1 as long as you have no cards in hand.","Vôo
+Hellbent – ​​Demon's Jester recebe +2/+1 enquanto você não tiver cartas em mãos."
+43,Drekavac,"When Drekavac enters the battlefield, sacrifice it unless you discard a noncreature card.","Quando Drekavac entrar no campo de batalha, sacrifique-o, a menos que você descarte um card que não seja de criatura."
+44,Enemy of the Guildpact,Protection from multicolored,Proteção contra multicolorido
+45,Entropic Eidolon,"{B}, Sacrifice Entropic Eidolon: Target player loses 1 life and you gain 1 life.
+Whenever you cast a multicolored spell, you may return Entropic Eidolon from your graveyard to your hand.","{B}, sacrifique Entropic Eidolon: O jogador alvo perde 1 ponto de vida e você ganha 1 ponto de vida.
+Sempre que você conjurar uma mágica multicolorida, você poderá devolver Eidolon Entrópico de seu cemitério para sua mão."
+46,Infernal Tutor,"Reveal a card from your hand. Search your library for a card with the same name as that card, reveal it, put it into your hand, then shuffle.
+Hellbent — If you have no cards in hand, instead search your library for a card, put it into your hand, then shuffle.","Revele uma carta da sua mão. Procure em seu grimório por um card com o mesmo nome daquele card, revele-o, coloque-o em sua mão e depois embaralhe.
+Hellbent — Se você não tiver nenhum card em mão, procure um card em seu grimório, coloque-o em sua mão e embaralhe."
+47,Macabre Waltz,"Return up to two target creature cards from your graveyard to your hand, then discard a card.",Devolva até dois cards de criatura alvo de seu cemitério para sua mão e depois descarte um card.
+48,Nettling Curse,"Enchant creature
+Whenever enchanted creature attacks or blocks, its controller loses 3 life.
+{1}{R}: Enchanted creature attacks this turn if able.","Encantar criatura
+Toda vez que a criatura encantada ataca ou bloqueia, seu controlador perde 3 pontos de vida.
+{1}{R}: A criatura encantada ataca neste turno se estiver apta."
+49,Nightcreep,"Until end of turn, all creatures become black and all lands become Swamps.","Até o final do turno, todas as criaturas ficam pretas e todos os terrenos se tornam Pântanos."
+50,Nihilistic Glee,"{2}{B}, Discard a card: Target opponent loses 1 life and you gain 1 life.
+Hellbent — {1}, Pay 2 life: Draw a card. Activate only if you have no cards in hand.","{2}{B}, Descarte um card: O oponente alvo perde 1 ponto de vida e você ganha 1 ponto de vida.
+Hellbent — {1}, Pague 2 pontos de vida: Compre um card. Ative apenas se você não tiver cartas em mãos."
+51,Ragamuffyn,"Hellbent — {T}, Sacrifice a creature or land: Draw a card. Activate only if you have no cards in hand.","Hellbent — {T}, Sacrifique uma criatura ou terreno: Compre um card. Ative apenas se você não tiver cartas em mãos."
+52,Ratcatcher,"Fear (This creature can't be blocked except by artifact creatures and/or black creatures.)
+At the beginning of your upkeep, you may search your library for a Rat card, reveal it, put it into your hand, then shuffle.","Medo (Esta criatura só pode ser bloqueada por criaturas artefato e/ou criaturas pretas.)
+No início de sua manutenção, você pode procurar um card de Rato em seu grimório, revelá-lo, colocá-lo em sua mão e depois embaralhar."
+53,Seal of Doom,Sacrifice Seal of Doom: Destroy target nonblack creature. It can't be regenerated.,Sacrifique Seal of Doom: Destrua a criatura alvo que não seja preta. Não pode ser regenerado.
+54,Slaughterhouse Bouncer,"Hellbent — When Slaughterhouse Bouncer dies, if you have no cards in hand, target creature gets -3/-3 until end of turn.","Hellbent – ​​Quando Slaughterhouse Bouncer morre, se você não tiver cards em mão, a criatura alvo recebe -3/-3 até o final do turno."
+55,Slithering Shade,"Defender (This creature can't attack.)
+{B}: Slithering Shade gets +1/+1 until end of turn.
+Hellbent — Slithering Shade can attack as though it didn't have defender as long as you have no cards in hand.","Defensor (Esta criatura não pode atacar.)
+{B}: Sombra Deslizante recebe +1/+1 até o final do turno.
+Hellbent – ​​Slithering Shade pode atacar como se não tivesse defensor, desde que você não tenha cartas em mãos."
+56,Unliving Psychopath,"{B}: Unliving Psychopath gets +1/-1 until end of turn.
+{B}, {T}: Destroy target creature with power less than Unliving Psychopath's power.","{B}: Psicopata Não-Vivo recebe +1/-1 até o final do turno.
+{B}, {T}: Destrua a criatura alvo com poder menor que o poder do Psicopata Não-Vivo."
+57,Vesper Ghoul,"{T}, Pay 1 life: Add one mana of any color.","{T}, pague 1 ponto de vida: Adicione um mana de qualquer cor."
+58,Wit's End,Target player discards their hand.,O jogador alvo descarta sua mão.
+59,Cackling Flames,"Cackling Flames deals 3 damage to any target.
+Hellbent — Cackling Flames deals 5 damage instead if you have no cards in hand.","Cackling Flames causa 3 pontos de dano a qualquer alvo.
+Hellbent – ​​Cackling Flames causa 5 pontos de dano se você não tiver cartas em mãos."
+60,Demonfire,"Demonfire deals X damage to any target. If a creature dealt damage this way would die this turn, exile it instead.
+Hellbent — If you have no cards in hand, this spell can't be countered and the damage can't be prevented.","Demonfire causa X de dano a qualquer alvo. Se uma criatura que sofreu dano desta forma morreria neste turno, em vez disso, exile-a.
+Hellbent – ​​Se você não tiver cartas em mãos, este feitiço não pode ser anulado e o dano não pode ser evitado."
+61,Flame-Kin War Scout,"When another creature enters the battlefield, sacrifice Flame-Kin War Scout. If you do, Flame-Kin War Scout deals 4 damage to that creature.","Quando outra criatura entrar no campo de batalha, sacrifique Flame-Kin War Scout. Se fizer isso, Flame-Kin War Scout causará 4 pontos de dano àquela criatura."
+62,Flaring Flame-Kin,"As long as Flaring Flame-Kin is enchanted, it gets +2/+2, has trample, and has ""{R}: Flaring Flame-Kin gets +1/+0 until end of turn.""","Enquanto Flaring Flame-Kin estiver encantado, ele receberá +2/+2, terá atropelar e terá ""{R}: Flaring Flame-Kin receberá +1/+0 até o final do turno."""
+63,Gnat Alley Creeper,Gnat Alley Creeper can't be blocked by creatures with flying.,Gnat Alley Creeper não pode ser bloqueado por criaturas com voar.
+64,Ignorant Bliss,"Exile all cards from your hand face down. At the beginning of the next end step, return those cards to your hand, then draw a card.","Exile todas as cartas da sua mão viradas para baixo. No início da próxima etapa final, devolva essas cartas para sua mão e compre uma carta."
+65,Kill-Suit Cultist,"Kill-Suit Cultist attacks each combat if able.
+{B}, Sacrifice Kill-Suit Cultist: The next time damage would be dealt to target creature this turn, destroy that creature instead.","Kill-Suit Cultist ataca a cada combate se puder.
+{B}, sacrifique Cultista Kill-Suit: Na próxima vez que o dano seria causado à criatura alvo neste turno, em vez disso, destrua aquela criatura."
+66,Kindle the Carnage,"Discard a card at random. If you do, Kindle the Carnage deals damage equal to that card's mana value to each creature. You may repeat this process any number of times.","Descarte uma carta aleatoriamente. Se fizer isso, Kindle the Carnage causa dano igual ao valor de mana daquele card a cada criatura. Você pode repetir esse processo quantas vezes quiser."
+67,Ogre Gatecrasher,"When Ogre Gatecrasher enters the battlefield, destroy target creature with defender.","Quando Ogre Gatecrasher entrar no campo de batalha, destrua a criatura alvo com defensor."
+68,Psychotic Fury,"Target multicolored creature gains double strike until end of turn.
+Draw a card.","A criatura multicolorida alvo ganha golpe duplo até o final do turno.
+Compre uma carta."
+69,Rakdos Pit Dragon,"{R}{R}: Rakdos Pit Dragon gains flying until end of turn.
+{R}: Rakdos Pit Dragon gets +1/+0 until end of turn.
+Hellbent — Rakdos Pit Dragon has double strike as long as you have no cards in hand.","{R}{R}: Rakdos Pit Dragon ganha voar até o final do turno.
+{R}: Rakdos Pit Dragon recebe +1/+0 até o final do turno.
+Hellbent – ​​Rakdos Pit Dragon tem golpe duplo desde que você não tenha cartas em mãos."
+70,Sandstorm Eidolon,"{R}, Sacrifice Sandstorm Eidolon: Target creature can't block this turn.
+Whenever you cast a multicolored spell, you may return Sandstorm Eidolon from your graveyard to your hand.","{R}, Sacrifique Sandstorm Eidolon: A criatura alvo não pode bloquear neste turno.
+Sempre que você conjurar uma mágica multicolorida, você poderá devolver Sandstorm Eidolon de seu cemitério para sua mão."
+71,Seal of Fire,Sacrifice Seal of Fire: It deals 2 damage to any target.,Sacrifique Seal of Fire: Causa 2 pontos de dano a qualquer alvo.
+72,Squealing Devil,"Fear (This creature can't be blocked except by artifact creatures and/or black creatures.)
+When Squealing Devil enters the battlefield, you may pay {X}. If you do, target creature gets +X/+0 until end of turn.
+When Squealing Devil enters the battlefield, sacrifice it unless {B} was spent to cast it.","Medo (Esta criatura só pode ser bloqueada por criaturas artefato e/ou criaturas pretas.)
+Quando Diabo Guinchador entra no campo de batalha, você pode pagar {X}. Se fizer isso, a criatura alvo recebe +X/+0 até o final do turno.
+Quando Squealing Devil entrar no campo de batalha, sacrifique-o, a menos que {B} tenha sido gasto para conjurá-lo."
+73,Stalking Vengeance,"Haste
+Whenever another creature you control dies, it deals damage equal to its power to target player or planeswalker.","Pressa
+Toda vez que outra criatura que você controla morre, ela causa dano igual ao seu poder ao jogador ou planeswalker alvo."
+74,Stormscale Anarch,"{2}{R}, Discard a card at random: Stormscale Anarch deals 2 damage to any target. If the discarded card was multicolored, Stormscale Anarch deals 4 damage instead.","{2}{R}, Descarte um card aleatoriamente: Anarquista de Escala Tempestuosa causa 2 pontos de dano a qualquer alvo. Se a carta descartada for multicolorida, Stormscale Anarch causa 4 pontos de dano."
+75,Taste for Mayhem,"Enchant creature
+Enchanted creature gets +2/+0.
+Hellbent — Enchanted creature gets an additional +2/+0 as long as you have no cards in hand.","Encantar criatura
+A criatura encantada recebe +2/+0.
+Hellbent – ​​A criatura encantada recebe +2/+0 adicional enquanto você não tiver cartas em mãos."
+76,Utvara Scalper,"Flying
+Utvara Scalper attacks each combat if able.","Vôo
+Utvara Scalper ataca a cada combate se estiver apto."
+77,War's Toll,"Whenever an opponent taps a land for mana, tap all lands that player controls.
+If a creature an opponent controls attacks, all creatures that opponent controls attack if able.","Sempre que um oponente virar um terreno para obter mana, vire todos os terrenos que aquele jogador controla.
+Se uma criatura que um oponente controla ataca, todas as criaturas que o oponente controla atacam se estiverem aptas."
+78,Weight of Spires,Weight of Spires deals damage to target creature equal to the number of nonbasic lands that creature's controller controls.,Peso das Agulhas causa dano à criatura alvo igual ao número de terrenos não básicos que o controlador daquela criatura controla.
+79,Whiptail Moloch,"When Whiptail Moloch enters the battlefield, it deals 3 damage to target creature you control.","Quando Whiptail Moloch entra no campo de batalha, ele causa 3 pontos de dano à criatura alvo que você controla."
+80,Aquastrand Spider,"Graft 2 (This creature enters the battlefield with two +1/+1 counters on it. Whenever another creature enters the battlefield, you may move a +1/+1 counter from this creature onto it.)
+{G}: Target creature with a +1/+1 counter on it gains reach until end of turn. (It can block creatures with flying.)","Enxerto 2 (Esta criatura entra no campo de batalha com dois marcadores +1/+1. Sempre que outra criatura entra no campo de batalha, você pode mover um marcador +1/+1 desta criatura para ela.)
+{G}: A criatura alvo com um marcador +1/+1 ganha alcance até o final do turno. (Ele pode bloquear criaturas voando.)"
+81,Cytoplast Root-Kin,"Graft 4 (This creature enters the battlefield with four +1/+1 counters on it. Whenever another creature enters the battlefield, you may move a +1/+1 counter from this creature onto it.)
+When Cytoplast Root-Kin enters the battlefield, put a +1/+1 counter on each other creature you control with a +1/+1 counter on it.
+{2}: Move a +1/+1 counter from target creature you control onto Cytoplast Root-Kin.","Enxerto 4 (Esta criatura entra no campo de batalha com quatro marcadores +1/+1. Sempre que outra criatura entra no campo de batalha, você pode mover um marcador +1/+1 desta criatura para ela.)
+Quando Cytoplast Root-Kin entrar no campo de batalha, coloque um marcador +1/+1 em cada outra criatura que você controla com um marcador +1/+1.
+{2}: Mova um marcador +1/+1 da criatura alvo que você controla para Cytoplast Root-Kin."
+82,Cytospawn Shambler,"Graft 6 (This creature enters the battlefield with six +1/+1 counters on it. Whenever another creature enters the battlefield, you may move a +1/+1 counter from this creature onto it.)
+{G}: Target creature with a +1/+1 counter on it gains trample until end of turn.","Enxerto 6 (Esta criatura entra no campo de batalha com seis marcadores +1/+1. Sempre que outra criatura entra no campo de batalha, você pode mover um marcador +1/+1 desta criatura para ela.)
+{G}: A criatura alvo com um marcador +1/+1 ganha atropelar até o final do turno."
+83,Elemental Resonance,"Enchant permanent
+At the beginning of your precombat main phase, add mana equal to enchanted permanent's mana cost. (Mana cost includes color. If a mana symbol has multiple colors, choose one.)","Encantar permanente
+No início de sua fase principal pré-combate, adicione mana igual ao custo de mana da permanente encantada. (O custo de mana inclui a cor. Se um símbolo de mana tiver várias cores, escolha uma.)"
+84,Fertile Imagination,"Choose a card type. Target opponent reveals their hand. Create two 1/1 green Saproling creature tokens for each card of the chosen type revealed this way. (Artifact, creature, enchantment, instant, land, planeswalker, sorcery, and tribal are card types.)","Escolha um tipo de cartão. O oponente alvo revela sua mão. Crie duas fichas de criatura verde 1/1 do tipo Saprófita para cada card do tipo escolhido revelado desta forma. (Artefato, criatura, encantamento, mágica instantânea, terreno, planeswalker, feitiço e tribal são tipos de card.)"
+85,Flash Foliage,"Cast this spell only during combat after blockers are declared.
+Create a 1/1 green Saproling creature token that's blocking target creature attacking you.
+Draw a card.","Lance este feitiço somente durante o combate após os bloqueadores serem declarados.
+Crie uma ficha de criatura verde 1/1 do tipo Saprófita que esteja bloqueando a criatura alvo que ataca você.
+Compre uma carta."
+86,Indrik Stomphowler,"When Indrik Stomphowler enters the battlefield, destroy target artifact or enchantment.","Quando Indrik Stomphowler entrar no campo de batalha, destrua o artefato ou encantamento alvo."
+87,Loaming Shaman,"When Loaming Shaman enters the battlefield, target player shuffles any number of target cards from their graveyard into their library.","Quando Loaming Shaman entra no campo de batalha, o jogador alvo embaralha qualquer número de cards alvo de seu cemitério em seu grimório."
+88,Might of the Nephilim,Target creature gets +2/+2 until end of turn for each of its colors.,A criatura alvo recebe +2/+2 até o final do turno para cada uma de suas cores.
+89,Patagia Viper,"Flying
+When Patagia Viper enters the battlefield, create two 1/1 green and blue Snake creature tokens.
+When Patagia Viper enters the battlefield, sacrifice it unless {U} was spent to cast it.","Vôo
+Quando Víbora Patagia entrar no campo de batalha, crie duas fichas de criatura verde e azul 1/1 do tipo Cobra.
+Quando Víbora Patagia entrar no campo de batalha, sacrifique-a, a menos que {U} tenha sido gasto para conjurá-la."
+90,Protean Hulk,"When Protean Hulk dies, search your library for any number of creature cards with total mana value 6 or less, put them onto the battlefield, then shuffle.","Quando Protean Hulk morrer, procure em seu grimório por qualquer número de cards de criatura com valor de mana total igual ou inferior a 6, coloque-os no campo de batalha e depois embaralhe."
+91,Simic Basilisk,"Graft 3 (This creature enters the battlefield with three +1/+1 counters on it. Whenever another creature enters the battlefield, you may move a +1/+1 counter from this creature onto it.)
+{1}{G}: Until end of turn, target creature with a +1/+1 counter on it gains ""Whenever this creature deals combat damage to a creature, destroy that creature at end of combat.""","Enxerto 3 (Esta criatura entra no campo de batalha com três marcadores +1/+1. Sempre que outra criatura entra no campo de batalha, você pode mover um marcador +1/+1 desta criatura para ela.)
+{1}{G}: Até o final do turno, a criatura alvo com um marcador +1/+1 ganha ""Toda vez que esta criatura causar dano de combate a uma criatura, destrua aquela criatura no final do combate."""
+92,Simic Initiate,"Graft 1 (This creature enters the battlefield with a +1/+1 counter on it. Whenever another creature enters the battlefield, you may move a +1/+1 counter from this creature onto it.)","Enxerto 1 (Esta criatura entra no campo de batalha com um marcador +1/+1. Sempre que outra criatura entra no campo de batalha, você pode mover um marcador +1/+1 desta criatura para ela.)"
+93,Simic Ragworm,{U}: Untap Simic Ragworm.,{U}: Desvire Simic Ragworm.
+94,Sporeback Troll,"Graft 2 (This creature enters the battlefield with two +1/+1 counters on it. Whenever another creature enters the battlefield, you may move a +1/+1 counter from this creature onto it.)
+{1}{G}: Regenerate target creature with a +1/+1 counter on it.","Enxerto 2 (Esta criatura entra no campo de batalha com dois marcadores +1/+1. Sempre que outra criatura entra no campo de batalha, você pode mover um marcador +1/+1 desta criatura para ela.)
+{1}{G}: Regenera a criatura alvo com um marcador +1/+1."
+95,Sprouting Phytohydra,"Defender (This creature can't attack.)
+Whenever Sprouting Phytohydra is dealt damage, you may create a token that's a copy of Sprouting Phytohydra.","Defensor (Esta criatura não pode atacar.)
+Sempre que Sprouting Phytohydra sofre dano, você pode criar uma ficha que é uma cópia de Sprouting Phytohydra."
+96,Stomp and Howl,Destroy target artifact and target enchantment.,Destrua o artefato alvo e o encantamento alvo.
+97,Street Savvy,"Enchant creature
+Enchanted creature gets +0/+2 and can block creatures with landwalk abilities as though they didn't have those abilities.","Encantar criatura
+A criatura encantada recebe +0/+2 e pode bloquear criaturas com habilidades de travessia terrestre como se elas não tivessem essas habilidades."
+98,Thrive,Put a +1/+1 counter on each of X target creatures.,Coloque um marcador +1/+1 em cada uma das X criaturas alvo.
+99,Utopia Sprawl,"Enchant Forest
+As Utopia Sprawl enters the battlefield, choose a color.
+Whenever enchanted Forest is tapped for mana, its controller adds an additional one mana of the chosen color.","Encantar Floresta
+Conforme Utopia Sprawl entra no campo de batalha, escolha uma cor.
+Sempre que a Floresta encantada é virada para gerar mana, seu controlador adiciona um mana adicional da cor escolhida."
+100,Verdant Eidolon,"{G}, Sacrifice Verdant Eidolon: Add three mana of any one color.
+Whenever you cast a multicolored spell, you may return Verdant Eidolon from your graveyard to your hand.","{G}, Sacrifique Verdant Eidolon: Adicione três manas de qualquer cor.
+Sempre que você conjurar uma mágica multicolorida, você poderá devolver Eidolon Verdejante de seu cemitério para sua mão."
+101,Aethermage's Touch,"Reveal the top four cards of your library. You may put a creature card from among them onto the battlefield. It gains ""At the beginning of your end step, return this creature to its owner's hand."" Then put the rest of the cards revealed this way on the bottom of your library in any order.","Revele os quatro primeiros cards do seu grimório. Você pode colocar no campo de batalha um card de criatura dentre eles. Ela ganha “No início de sua etapa final, devolva esta criatura para a mão de seu dono”. Em seguida, coloque o restante dos cards revelados desta forma no fundo do seu grimório em qualquer ordem."
+102,Anthem of Rakdos,"Whenever a creature you control attacks, it gets +2/+0 until end of turn and Anthem of Rakdos deals 1 damage to you.
+Hellbent — As long as you have no cards in hand, if a source you control would deal damage to a permanent or player, it deals double that damage to that permanent or player instead.","Toda vez que uma criatura que você controla ataca, ela recebe +2/+0 até o final do turno e Anthem of Rakdos causa 1 ponto de dano a você.
+Infernal — Contanto que você não tenha cards em mãos, se uma fonte que você controla fosse causar dano a uma permanente ou jogador, ela causa o dobro desse dano àquela permanente ou jogador."
+103,Assault Zeppelid,"Flying, trample","Voando, atropelar"
+104,Azorius Aethermage,"Whenever a permanent is returned to your hand, you may pay {1}. If you do, draw a card.","Sempre que uma permanente for devolvida para sua mão, você poderá pagar {1}. Se fizer isso, compre uma carta."
+105,Azorius First-Wing,"Flying, protection from enchantments","Voar, proteção contra encantamentos"
+106,Azorius Ploy,"Prevent all combat damage target creature would deal this turn.
+Prevent all combat damage that would be dealt to target creature this turn.","Previne todo o dano de combate que a criatura alvo causaria neste turno.
+Previne todo o dano de combate que seria causado à criatura alvo neste turno."
+107,Coiling Oracle,"When Coiling Oracle enters the battlefield, reveal the top card of your library. If it's a land card, put it onto the battlefield. Otherwise, put that card into your hand.","Quando Oráculo Espiral entrar no campo de batalha, revele o card do topo de seu grimório. Se for um card de terreno, coloque-o no campo de batalha. Caso contrário, coloque aquela carta em sua mão."
+108,Cytoshape,Choose a nonlegendary creature on the battlefield. Target creature becomes a copy of that creature until end of turn.,Escolha uma criatura não lendária no campo de batalha. A criatura alvo torna-se uma cópia daquela criatura até o final do turno.
+109,Dread Slag,"Trample
+Dread Slag gets -4/-4 for each card in your hand.","Atropelar
+Dread Slag recebe -4/-4 para cada carta em sua mão."
+110,Experiment Kraj,"Experiment Kraj has all activated abilities of each other creature with a +1/+1 counter on it.
+{T}: Put a +1/+1 counter on target creature.","Experiment Kraj tem todas as habilidades ativadas de cada outra criatura com um marcador +1/+1.
+{T}: Coloque um marcador +1/+1 na criatura alvo."
+111,Gobhobbler Rats,"Hellbent — As long as you have no cards in hand, Gobhobbler Rats gets +1/+0 and has ""{B}: Regenerate Gobhobbler Rats."" (The next time it would be destroyed, instead tap it, remove it from combat, and heal all damage on it.)","Hellbent — Enquanto você não tiver cartas em mãos, Gobhobbler Rats recebe +1/+0 e tem ""{B}: Regenerar Gobhobbler Rats."" (Na próxima vez que ele for destruído, vire-o, remova-o do combate e cure todo o dano causado nele.)"
+112,Grand Arbiter Augustin IV,"White spells you cast cost {1} less to cast.
+Blue spells you cast cost {1} less to cast.
+Spells your opponents cast cost {1} more to cast.","As mágicas brancas que você conjura custam {1} a menos para serem conjuradas.
+As mágicas azuis que você conjura custam {1} a menos para serem conjuradas.
+Os feitiços lançados por seus oponentes custam {1} a mais para serem lançados."
+113,Hellhole Rats,"Haste
+When Hellhole Rats enters the battlefield, target player discards a card. Hellhole Rats deals damage to that player equal to that card's mana value.","Pressa
+Quando Hellhole Rats entra no campo de batalha, o jogador alvo descarta um card. Hellhole Rats causa dano àquele jogador igual ao valor de mana daquele card."
+114,Isperia the Inscrutable,"Flying
+Whenever Isperia the Inscrutable deals combat damage to a player, choose a card name. That player reveals their hand. If a card with the chosen name is revealed this way, search your library for a creature card with flying, reveal it, put it into your hand, then shuffle.","Vôo
+Sempre que Isperia, a Inescrutável, causar dano de combate a um jogador, escolha um nome de card. Esse jogador revela sua mão. Se um card com o nome escolhido for revelado desta forma, procure em seu grimório por um card de criatura com voar, revele-o, coloque-o em sua mão e depois embaralhe."
+115,Jagged Poppet,"Whenever Jagged Poppet is dealt damage, discard that many cards.
+Hellbent — Whenever Jagged Poppet deals combat damage to a player, if you have no cards in hand, that player discards cards equal to the damage.","Sempre que Jagged Poppet sofrer dano, descarte aquela mesma quantidade de cards.
+Hellbent – ​​Sempre que Jagged Poppet causa dano de combate a um jogador, se você não tiver cartas em mãos, aquele jogador descarta cartas iguais ao dano."
+116,Leafdrake Roost,"Enchant land
+Enchanted land has ""{G}{U}, {T}: Create a 2/2 green and blue Drake creature token with flying.""","Encantar terra
+O terreno encantado tem ""{G}{U}, {T}: Crie uma ficha de criatura Drake verde e azul 2/2 com voar."""
+117,"Lyzolda, the Blood Witch","{2}, Sacrifice a creature: Lyzolda, the Blood Witch deals 2 damage to any target if the sacrificed creature was red. Draw a card if the sacrificed creature was black.","{2}, sacrifique uma criatura: Lyzolda, a Bruxa Sangrenta, causa 2 pontos de dano a qualquer alvo se a criatura sacrificada for vermelha. Compre um card se a criatura sacrificada for preta."
+118,"Momir Vig, Simic Visionary","Whenever you cast a green creature spell, you may search your library for a creature card, reveal it, then shuffle and put that card on top.
+Whenever you cast a blue creature spell, reveal the top card of your library. If it's a creature card, put that card into your hand.","Sempre que você conjurar uma mágica de criatura verde, você pode procurar um card de criatura em seu grimório, revelá-lo, depois embaralhar e colocar aquele card no topo.
+Sempre que você conjurar uma mágica de criatura azul, revele o card do topo do seu grimório. Se for um card de criatura, coloque-o em sua mão."
+119,Omnibian,{T}: Target creature becomes a Frog with base power and toughness 3/3 until end of turn.,{T}: A criatura alvo se torna um Sapo com poder e resistência básicos 3/3 até o final do turno.
+120,Overrule,Counter target spell unless its controller pays {X}. You gain X life.,"Anula a mágica alvo, a menos que seu controlador pague {X}. Você ganha X pontos de vida."
+121,Pain Magnification,"Whenever an opponent is dealt 3 or more damage by a single source, that player discards a card.","Sempre que um oponente sofre 3 ou mais pontos de dano de uma única fonte, aquele jogador descarta uma carta."
+122,Palliation Accord,"Whenever a creature an opponent controls becomes tapped, put a palliation counter on Palliation Accord.
+Remove a palliation counter from Palliation Accord: Prevent the next 1 damage that would be dealt to you this turn.","Toda vez que uma criatura que um oponente controla for virada, coloque um marcador de paliação em Acordo de Paliação.
+Remova um marcador de paliação do Acordo de Paliação: Previna o próximo 1 dano que seria causado a você neste turno."
+123,Plaxcaster Frogling,"Graft 3 (This creature enters the battlefield with three +1/+1 counters on it. Whenever another creature enters the battlefield, you may move a +1/+1 counter from this creature onto it.)
+{2}: Target creature with a +1/+1 counter on it gains shroud until end of turn. (It can't be the target of spells or abilities.)","Enxerto 3 (Esta criatura entra no campo de batalha com três marcadores +1/+1. Sempre que outra criatura entra no campo de batalha, você pode mover um marcador +1/+1 desta criatura para ela.)
+{2}: A criatura alvo com um marcador +1/+1 ganha mortalha até o final do turno. (Não pode ser alvo de mágicas ou habilidades.)"
+124,Plumes of Peace,"Enchant creature
+Enchanted creature doesn't untap during its controller's untap step.
+Forecast — {W}{U}, Reveal Plumes of Peace from your hand: Tap target creature. (Activate only during your upkeep and only once each turn.)","Encantar criatura
+A criatura encantada não desvira durante a etapa de desvirar de seu controlador.
+Previsão — {W}{U}, Revele Plumas da Paz da sua mão: Vire a criatura alvo. (Ative apenas durante sua manutenção e apenas uma vez em cada turno.)"
+125,Pride of the Clouds,"Flying
+Pride of the Clouds gets +1/+1 for each other creature with flying on the battlefield.
+Forecast — {2}{W}{U}, Reveal Pride of the Clouds from your hand: Create a 1/1 white and blue Bird creature token with flying. (Activate only during your upkeep and only once each turn.)","Vôo
+Orgulho das Nuvens recebe +1/+1 para cada outra criatura com voar no campo de batalha.
+Previsão — {2}{W}{U}, Revele Orgulho das Nuvens da sua mão: Crie uma ficha de criatura branca e azul 1/1 do tipo Ave com voar. (Ative apenas durante sua manutenção e apenas uma vez em cada turno.)"
+126,Rain of Gore,"If a spell or ability would cause its controller to gain life, that player loses that much life instead.","Se uma mágica ou habilidade fizer com que seu controlador ganhe pontos de vida, aquele jogador perde aquela quantidade de pontos de vida."
+127,Rakdos Augermage,"First strike
+{T}: Reveal your hand and discard a card of target opponent's choice. Then that player reveals their hand and discards a card of your choice. Activate only as a sorcery.","Primeiro ataque
+{T}: Revele sua mão e descarte um card à escolha do oponente alvo. Então aquele jogador revela sua mão e descarta uma carta de sua escolha. Ative apenas como um feitiço."
+128,Rakdos Ickspitter,{T}: Rakdos Ickspitter deals 1 damage to target creature and that creature's controller loses 1 life.,{T}: Rakdos Ickspitter causa 1 ponto de dano à criatura alvo e o controlador daquela criatura perde 1 ponto de vida.
+129,Rakdos the Defiler,"Flying, trample
+Whenever Rakdos the Defiler attacks, sacrifice half the non-Demon permanents you control, rounded up.
+Whenever Rakdos deals combat damage to a player, that player sacrifices half the non-Demon permanents they control, rounded up.","Voando, atropelar
+Toda vez que Rakdos, o Profanador, atacar, sacrifique metade das permanentes não-Demônios que você controla, arredondadas para cima.
+Sempre que Rakdos causa dano de combate a um jogador, aquele jogador sacrifica metade das permanentes não-Demônios que ele controla, arredondadas para cima."
+130,Simic Sky Swallower,"Flying, trample
+Shroud (This creature can't be the target of spells or abilities.)","Voando, atropelar
+Mortalha (Esta criatura não pode ser alvo de mágicas ou habilidades.)"
+131,Sky Hussar,"Flying
+When Sky Hussar enters the battlefield, untap all creatures you control.
+Forecast — Tap two untapped white and/or blue creatures you control, Reveal Sky Hussar from your hand: Draw a card. (Activate only during your upkeep and only once each turn.)","Vôo
+Quando Sky Hussar entrar no campo de batalha, desvire todas as criaturas que você controla.
+Previsão — Vire duas criaturas brancas e/ou azuis desviradas que você controla. Revele Sky Hussar da sua mão: Compre um card. (Ative apenas durante sua manutenção e apenas uma vez em cada turno.)"
+132,Swift Silence,Counter all other spells. Draw a card for each spell countered this way.,Anule todos os outros feitiços. Compre um card para cada mágica anulada dessa maneira.
+133,Trygon Predator,"Flying
+Whenever Trygon Predator deals combat damage to a player, you may destroy target artifact or enchantment that player controls.","Vôo
+Sempre que Trygon Predator causar dano de combate a um jogador, você poderá destruir o artefato ou encantamento alvo que aquele jogador controla."
+134,Twinstrike,"Twinstrike deals 2 damage to each of two target creatures.
+Hellbent — Destroy those creatures instead if you have no cards in hand.","Twinstrike causa 2 pontos de dano a cada uma das duas criaturas alvo.
+Hellbent – ​​Em vez disso, destrua essas criaturas se você não tiver cartas na mão."
+135,Vigean Hydropon,"Graft 5 (This creature enters the battlefield with five +1/+1 counters on it. Whenever another creature enters the battlefield, you may move a +1/+1 counter from this creature onto it.)
+Vigean Hydropon can't attack or block.","Enxerto 5 (Esta criatura entra no campo de batalha com cinco marcadores +1/+1. Toda vez que outra criatura entra no campo de batalha, você pode mover um marcador +1/+1 desta criatura para ela.)
+Vigean Hydropon não pode atacar ou bloquear."
+136,Vigean Intuition,"Choose a card type, then reveal the top four cards of your library. Put all cards of the chosen type revealed this way into your hand and the rest into your graveyard. (Artifact, creature, enchantment, instant, land, planeswalker, sorcery, and tribal are card types.)","Escolha um tipo de card e revele os quatro cards do topo do seu grimório. Coloque todos os cards do tipo escolhido revelados desta forma em sua mão e o restante em seu cemitério. (Artefato, criatura, encantamento, mágica instantânea, terreno, planeswalker, feitiço e tribal são tipos de card.)"
+137,Voidslime,"Counter target spell, activated ability, or triggered ability. (Mana abilities can't be targeted.)","Anula a mágica, habilidade ativada ou habilidade desencadeada alvo. (Habilidades de mana não podem ser direcionadas.)"
+138,Windreaver,"Flying
+{W}: Windreaver gains vigilance until end of turn.
+{W}: Windreaver gets +0/+1 until end of turn.
+{U}: Switch Windreaver's power and toughness until end of turn.
+{U}: Return Windreaver to its owner's hand.","Vôo
+{W}: Windreaver ganha vigilância até o final do turno.
+{W}: Windreaver recebe +0/+1 até o final do turno.
+{U}: Altera o poder e a resistência de Windreaver até o final do turno.
+{U}: Devolva Windreaver para a mão de seu dono."
+139,Wrecking Ball,Destroy target creature or land.,Destrua a criatura ou terreno alvo.
+140,Avatar of Discord,"({B/R} can be paid with either {B} or {R}.)
+Flying
+When Avatar of Discord enters the battlefield, sacrifice it unless you discard two cards.","({B/R} pode ser pago com {B} ou {R}.)
+Vôo
+Quando Avatar da Discórdia entrar no campo de batalha, sacrifique-o, a menos que você descarte dois cards."
+141,Azorius Guildmage,"{2}{W}: Tap target creature.
+{2}{U}: Counter target activated ability. (Mana abilities can't be targeted.)","{2}{W}: Vire a criatura alvo.
+{2}{U}: Anula a habilidade ativada alvo. (Habilidades de mana não podem ser direcionadas.)"
+142,Biomantic Mastery,"Draw a card for each creature target player controls, then draw a card for each creature another target player controls.","Compre um card para cada criatura que o jogador alvo controla e, em seguida, compre um card para cada criatura que outro jogador alvo controla."
+143,Dovescape,"({W/U} can be paid with either {W} or {U}.)
+Whenever a player casts a noncreature spell, counter that spell. That player creates X 1/1 white and blue Bird creature tokens with flying, where X is the spell's mana value.","({W/U} pode ser pago com {W} ou {U}.)
+Toda vez que um jogador conjurar uma mágica que não seja de criatura, anule aquela mágica. Aquele jogador cria X fichas de criatura branca e azul 1/1 do tipo Ave com voar, sendo X o valor de mana da mágica."
+144,Minister of Impediments,"({W/U} can be paid with either {W} or {U}.)
+{T}: Tap target creature.","({W/U} pode ser pago com {W} ou {U}.)
+{T}: Vire a criatura alvo."
+145,Rakdos Guildmage,"({B/R} can be paid with either {B} or {R}.)
+{3}{B}, Discard a card: Target creature gets -2/-2 until end of turn.
+{3}{R}: Create a 2/1 red Goblin creature token with haste. Exile it at the beginning of the next end step.","({B/R} pode ser pago com {B} ou {R}.)
+{3}{B}, Descarte um card: A criatura alvo recebe -2/-2 até o final do turno.
+{3}{R}: Crie uma ficha de criatura vermelha 2/1 do tipo Goblin com ímpeto. Exile-o no início da próxima etapa final."
+146,Riot Spikes,"({B/R} can be paid with either {B} or {R}.)
+Enchant creature
+Enchanted creature gets +2/-1.","({B/R} pode ser pago com {B} ou {R}.)
+Encantar criatura
+A criatura encantada recebe +2/-1."
+147,Shielding Plax,"({G/U} can be paid with either {G} or {U}.)
+Enchant creature
+When Shielding Plax enters the battlefield, draw a card.
+Enchanted creature can't be the target of spells or abilities your opponents control.","({G/U} pode ser pago com {G} ou {U}.)
+Encantar criatura
+Quando Shielding Plax entrar no campo de batalha, compre um card.
+A criatura encantada não pode ser alvo de mágicas ou habilidades que seus oponentes controlam."
+148,Simic Guildmage,"({G/U} can be paid with either {G} or {U}.)
+{1}{G}: Move a +1/+1 counter from target creature onto another target creature with the same controller.
+{1}{U}: Attach target Aura attached to a permanent to another permanent with the same controller.","({G/U} pode ser pago com {G} ou {U}.)
+{1}{G}: Mova um marcador +1/+1 da criatura alvo para outra criatura alvo com o mesmo controlador.
+{1}{U}: Anexa a Aura alvo anexada a uma permanente a outra permanente com o mesmo controlador."
+149,Bound // Determined,"Sacrifice a creature. Return up to X cards from your graveyard to your hand, where X is the number of colors that creature was. Exile this card.
+----
+Other spells you control can't be countered this turn.
+Draw a card.","Sacrifique uma criatura. Devolva até X cards de seu cemitério para sua mão, sendo X o número de cores daquela criatura. Exile este card.
+----
+Outras mágicas que você controla não podem ser anuladas neste turno.
+Compre uma carta."
+150,Crime // Punishment,"Put target creature or enchantment card from an opponent's graveyard onto the battlefield under your control.
+----
+Destroy each artifact, creature, and enchantment with mana value X.","Coloque a criatura alvo ou o card de encantamento alvo do cemitério de um oponente no campo de batalha sob seu controle.
+----
+Destrua cada artefato, criatura e encantamento com valor de mana X."
+151,Hide // Seek,"Put target artifact or enchantment on the bottom of its owner's library.
+----
+Search target opponent's library for a card and exile it. You gain life equal to its mana value. Then that player shuffles.","Coloque o artefato ou encantamento alvo no fundo do grimório de seu dono.
+----
+Procure um card no grimório do oponente alvo e exile-o. Você ganha pontos de vida iguais ao seu valor de mana. Então esse jogador embaralha."
+152,Hit // Run,"Target player sacrifices an artifact or creature. Hit deals damage to that player equal to that permanent's mana value.
+----
+Attacking creatures you control get +1/+0 until end of turn for each other attacking creature.","O jogador alvo sacrifica um artefato ou criatura. Acertar causa dano a esse jogador igual ao valor de mana daquela permanente.
+----
+As criaturas atacantes que você controla recebem +1/+0 até o final do turno para cada outra criatura atacante."
+153,Odds // Ends,"Flip a coin. If it comes up heads, counter target instant or sorcery spell. If it comes up tails, copy that spell and you may choose new targets for the copy.
+----
+Target player sacrifices two attacking creatures.","Jogue uma moeda. Se der cara, anule a mágica instantânea ou feitiço alvo. Se der coroa, copie aquela mágica e você poderá escolher novos alvos para a cópia.
+----
+O jogador alvo sacrifica duas criaturas atacantes."
+154,Pure // Simple,"Destroy target multicolored permanent.
+----
+Destroy all Auras and Equipment.","Destrua a permanente multicolorida alvo.
+----
+Destrua todas as Auras e Equipamentos."
+155,Research // Development,"Shuffle up to four cards you own from outside the game into your library.
+----
+Create a 3/1 red Elemental creature token unless any opponent has you draw a card. Repeat this process two more times.","Embaralhe até quatro cards que você possui de fora do jogo em seu grimório.
+----
+Crie uma ficha de criatura Elemental vermelha 3/1, a menos que algum oponente faça com que você compre um card. Repita esse processo mais duas vezes."
+156,Rise // Fall,"Return target creature card from a graveyard and target creature on the battlefield to their owners' hands.
+----
+Target player reveals two cards at random from their hand, then discards each nonland card revealed this way.","Devolva o card de criatura alvo de um cemitério e a criatura alvo no campo de batalha para as mãos de seus donos.
+----
+O jogador alvo revela dois cards aleatoriamente de sua mão e depois descarta cada card que não seja um terreno revelado dessa forma."
+157,Supply // Demand,"Create X 1/1 green Saproling creature tokens.
+----
+Search your library for a multicolored card, reveal it, put it into your hand, then shuffle.","Crie X fichas de criatura verde 1/1 do tipo Saprófita.
+----
+Procure um card multicolorido em seu grimório, revele-o, coloque-o em sua mão e embaralhe-o."
+158,Trial // Error,"Return all creatures blocking or blocked by target creature to their owner's hand.
+----
+Counter target multicolored spell.","Devolva todas as criaturas bloqueadoras ou bloqueadas pela criatura alvo para a mão de seu dono.
+----
+Anule o feitiço multicolorido alvo."
+159,Azorius Signet,"{1}, {T}: Add {W}{U}.","{1}, {T}: Adicione {W}{U}."
+160,Bronze Bombshell,"When a player other than Bronze Bombshell's owner controls it, that player sacrifices it. If the player does, Bronze Bombshell deals 7 damage to the player.","Quando um jogador que não seja o proprietário do Bronze Bombshell o controla, esse jogador o sacrifica. Se o jogador fizer isso, Bronze Bombshell causa 7 de dano ao jogador."
+161,Evolution Vat,"{3}, {T}: Tap target creature and put a +1/+1 counter on it. Until end of turn, that creature gains ""{2}{G}{U}: Double the number of +1/+1 counters on this creature.""","{3}, {T}: Vire a criatura alvo e coloque um marcador +1/+1 nela. Até o final do turno, aquela criatura ganha ""{2}{G}{U}: Dobre o número de marcadores +1/+1 nesta criatura."""
+162,Magewright's Stone,"{1}, {T}: Untap target creature that has an activated ability with {T} in its cost.","{1}, {T}: Desvire a criatura alvo que tem uma habilidade ativada com {T} em seu custo."
+163,Muse Vessel,"{3}, {T}: Target player exiles a card from their hand. Activate only as a sorcery.
+{1}: Choose a card exiled with Muse Vessel. You may play that card this turn.","{3}, {T}: O jogador alvo exila um card de sua mão. Ative apenas como um feitiço.
+{1}: Escolha um card exilado com Recipiente Muse. Você pode jogar aquela carta neste turno."
+164,Rakdos Riteknife,"Equipped creature gets +1/+0 for each blood counter on Rakdos Riteknife and has ""{T}, Sacrifice a creature: Put a blood counter on Rakdos Riteknife.""
+{B}{R}, Sacrifice Rakdos Riteknife: Target player sacrifices a permanent for each blood counter on Rakdos Riteknife.
+Equip {2}","A criatura equipada recebe +1/+0 para cada marcador de sangue em Rakdos Riteknife e tem ""{T}, Sacrifique uma criatura: Coloque um marcador de sangue em Rakdos Riteknife.""
+{B}{R}, sacrifique Rakdos Riteknife: O jogador alvo sacrifica uma permanente para cada marcador de sangue em Rakdos Riteknife.
+Equipar {2}"
+165,Rakdos Signet,"{1}, {T}: Add {B}{R}.","{1}, {T}: Adicione {B}{R}."
+166,Simic Signet,"{1}, {T}: Add {G}{U}.","{1}, {T}: Adicione {G}{U}."
+167,Skullmead Cauldron,"{T}: You gain 1 life.
+{T}, Discard a card: You gain 3 life.","{T}: Você ganha 1 ponto de vida.
+{T}, Descarte um card: Você ganha 3 pontos de vida."
+168,Transguild Courier,Transguild Courier is all colors.,Transguild Courier é de todas as cores.
+169,Walking Archive,"Defender (This creature can't attack.)
+Walking Archive enters the battlefield with a +1/+1 counter on it.
+At the beginning of each player's upkeep, that player draws a card for each +1/+1 counter on Walking Archive.
+{2}{W}{U}: Put a +1/+1 counter on Walking Archive.","Defensor (Esta criatura não pode atacar.)
+Arquivo Ambulante entra no campo de batalha com um marcador +1/+1.
+No início da manutenção de cada jogador, aquele jogador compra um card para cada marcador +1/+1 no Arquivo Ambulante.
+{2}{W}{U}: Coloque um marcador +1/+1 em Arquivo Ambulante."
+170,Azorius Chancery,"Azorius Chancery enters the battlefield tapped.
+When Azorius Chancery enters the battlefield, return a land you control to its owner's hand.
+{T}: Add {W}{U}.","Chancelaria Azorius entra no campo de batalha virada.
+Quando Chancelaria Azorius entrar no campo de batalha, devolva um terreno que você controla para a mão de seu dono.
+{T}: Adicione {W}{U}."
+171,Blood Crypt,"({T}: Add {B} or {R}.)
+As Blood Crypt enters the battlefield, you may pay 2 life. If you don't, it enters the battlefield tapped.","({T}: Adicione {B} ou {R}.)
+Conforme Blood Crypt entra no campo de batalha, você pode pagar 2 pontos de vida. Caso contrário, ele entra no campo de batalha virado."
+172,Breeding Pool,"({T}: Add {G} or {U}.)
+As Breeding Pool enters the battlefield, you may pay 2 life. If you don't, it enters the battlefield tapped.","({T}: Adicione {G} ou {U}.)
+Conforme Breeding Pool entra no campo de batalha, você pode pagar 2 pontos de vida. Caso contrário, ele entra no campo de batalha virado."
+173,Ghost Quarter,"{T}: Add {C}.
+{T}, Sacrifice Ghost Quarter: Destroy target land. Its controller may search their library for a basic land card, put it onto the battlefield, then shuffle.","{T}: Adicione {C}.
+{T}, sacrifique Ghost Quarter: Destrua o terreno alvo. Seu controlador pode procurar em seu grimório um card de terreno básico, colocá-lo no campo de batalha e depois embaralhar."
+174,Hallowed Fountain,"({T}: Add {W} or {U}.)
+As Hallowed Fountain enters the battlefield, you may pay 2 life. If you don't, it enters the battlefield tapped.","({T}: Adicione {W} ou {U}.)
+Conforme Fonte Sagrada entra no campo de batalha, você pode pagar 2 pontos de vida. Caso contrário, ele entra no campo de batalha virado."
+175,"Novijen, Heart of Progress","{T}: Add {C}.
+{G}{U}, {T}: Put a +1/+1 counter on each creature that entered the battlefield this turn.","{T}: Adicione {C}.
+{G}{U}, {T}: Coloque um marcador +1/+1 em cada criatura que entrou no campo de batalha neste turno."
+176,Pillar of the Paruns,{T}: Add one mana of any color. Spend this mana only to cast a multicolored spell.,{T}: Adicione um mana de qualquer cor. Gaste este mana apenas para lançar um feitiço multicolorido.
+177,"Prahv, Spires of Order","{T}: Add {C}.
+{4}{W}{U}, {T}: Prevent all damage a source of your choice would deal this turn.","{T}: Adicione {C}.
+{4}{W}{U}, {T}: Previne todo o dano que uma fonte à sua escolha causaria neste turno."
+178,Rakdos Carnarium,"Rakdos Carnarium enters the battlefield tapped.
+When Rakdos Carnarium enters the battlefield, return a land you control to its owner's hand.
+{T}: Add {B}{R}.","Rakdos Carnarium entra no campo de batalha virado.
+Quando Rakdos Carnarium entrar no campo de batalha, devolva um terreno que você controla para a mão de seu dono.
+{T}: Adicione {B}{R}."
+179,"Rix Maadi, Dungeon Palace","{T}: Add {C}.
+{1}{B}{R}, {T}: Each player discards a card. Activate only as a sorcery.","{T}: Adicione {C}.
+{1}{B}{R}, {T}: Cada jogador descarta um card. Ative apenas como um feitiço."
+180,Simic Growth Chamber,"Simic Growth Chamber enters the battlefield tapped.
+When Simic Growth Chamber enters the battlefield, return a land you control to its owner's hand.
+{T}: Add {G}{U}.","Câmara de Crescimento Simic entra no campo de batalha virada.
+Quando Simic Growth Chamber entrar no campo de batalha, devolva um terreno que você controla para a mão de seu dono.
+{T}: Adicione {G}{U}."

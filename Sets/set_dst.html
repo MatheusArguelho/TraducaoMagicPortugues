@@ -1,0 +1,1026 @@
+<html>
+<head>
+        <meta charset="UTF-8">
+        <title>dst</title>
+        <style>
+            .styled-table {
+                width: 100%;
+                border-collapse: collapse;
+                border: 1px solid #ddd;
+                font-family: Arial, sans-serif;
+            }
+            .styled-table th, .styled-table td {
+                padding: 8px;
+                text-align: left;
+                border-bottom: 1px solid #ddd;
+            }
+            .styled-table tr:nth-child(even) {
+                background-color: #f2f2f2;
+            }
+            .styled-table th {
+                background-color: #4CAF50;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+    <table class="styled-table">
+  <tr>
+    <td>numero</td>
+    <td>nome</td>
+    <td>texto_ingles</td>
+    <td>traduzido</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Auriok Glaivemaster</td>
+    <td>As long as Auriok Glaivemaster is equipped, it gets +1/+1 and has first strike.</td>
+    <td>Enquanto Auriok Glaivemaster estiver equipado, ele receberá +1/+1 e terá iniciativa.</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Echoing Calm</td>
+    <td>Destroy target enchantment and all other enchantments with the same name as that enchantment.</td>
+    <td>Destrua o encantamento alvo e todos os outros encantamentos com o mesmo nome desse encantamento.</td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>Emissary of Hope</td>
+    <td>Flying<br>Whenever Emissary of Hope deals combat damage to a player, you gain 1 life for each artifact that player controls.</td>
+    <td>Vôo<br>Sempre que Emissário da Esperança causa dano de combate a um jogador, você ganha 1 ponto de vida para cada artefato que aquele jogador controla.</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>Hallow</td>
+    <td>Prevent all damage target spell would deal this turn. You gain life equal to the damage prevented this way.</td>
+    <td>Previne todo o dano que o feitiço alvo causaria neste turno. Você ganha pontos de vida iguais ao dano evitado dessa forma.</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>Leonin Battlemage</td>
+    <td>{T}: Target creature gets +1/+1 until end of turn.<br>Whenever you cast a spell, you may untap Leonin Battlemage.</td>
+    <td>{T}: A criatura alvo recebe +1/+1 até o final do turno.<br>Sempre que você lançar um feitiço, você pode desvirar Leonin Battlemage.</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>Leonin Shikari</td>
+    <td>You may activate equip abilities any time you could cast an instant.</td>
+    <td>Você pode ativar habilidades de equipamento a qualquer momento em que puder lançar uma mágica instantânea.</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>Loxodon Mystic</td>
+    <td>{W}, {T}: Tap target creature.</td>
+    <td>{W}, {T}: Vire a criatura alvo.</td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td>Metal Fatigue</td>
+    <td>Tap all artifacts.</td>
+    <td>Toque em todos os artefatos.</td>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td>Pristine Angel</td>
+    <td>Flying<br>As long as Pristine Angel is untapped, it has protection from artifacts and from all colors.<br>Whenever you cast a spell, you may untap Pristine Angel.</td>
+    <td>Vôo<br>Enquanto Pristine Angel estiver desvirado, ele terá proteção contra artefatos e contra todas as cores.<br>Sempre que você lançar uma mágica, você pode desvirar Pristine Angel.</td>
+  </tr>
+  <tr>
+    <td>10</td>
+    <td>Pteron Ghost</td>
+    <td>Flying<br>Sacrifice Pteron Ghost: Regenerate target artifact.</td>
+    <td>Vôo<br>Sacrifique Pteron Ghost: Regenera o artefato alvo.</td>
+  </tr>
+  <tr>
+    <td>11</td>
+    <td>Pulse of the Fields</td>
+    <td>You gain 4 life. Then if an opponent has more life than you, return Pulse of the Fields to its owner's hand.</td>
+    <td>Você ganha 4 pontos de vida. Então, se um oponente tiver mais pontos de vida que você, devolva Pulse of the Fields para a mão de seu dono.</td>
+  </tr>
+  <tr>
+    <td>12</td>
+    <td>Purge</td>
+    <td>Destroy target artifact creature or black creature. It can't be regenerated.</td>
+    <td>Destrua a criatura artefato alvo ou a criatura preta alvo. Não pode ser regenerado.</td>
+  </tr>
+  <tr>
+    <td>13</td>
+    <td>Ritual of Restoration</td>
+    <td>Return target artifact card from your graveyard to your hand.</td>
+    <td>Devolva o card de artefato alvo de seu cemitério para sua mão.</td>
+  </tr>
+  <tr>
+    <td>14</td>
+    <td>Soulscour</td>
+    <td>Destroy all nonartifact permanents.</td>
+    <td>Destrua todas as permanentes que não sejam artefatos.</td>
+  </tr>
+  <tr>
+    <td>15</td>
+    <td>Steelshaper Apprentice</td>
+    <td>{W}, {T}, Return Steelshaper Apprentice to its owner's hand: Search your library for an Equipment card, reveal that card, put it into your hand, then shuffle.</td>
+    <td>{W}, {T}, Devolva Steelshaper Apprentice para a mão de seu dono: Procure em seu grimório por um card de Equipamento, revele aquele card, coloque-o em sua mão e depois embaralhe.</td>
+  </tr>
+  <tr>
+    <td>16</td>
+    <td>Stir the Pride</td>
+    <td>Choose one —<br>• Creatures you control get +2/+2 until end of turn.<br>• Until end of turn, creatures you control gain "Whenever this creature deals damage, you gain that much life."<br>Entwine {1}{W} (Choose both if you pay the entwine cost.)</td>
+    <td>Escolha um -<br>• As criaturas que você controla recebem +2/+2 até o final do turno.<br>• Até o final do turno, as criaturas que você controla ganham "Toda vez que esta criatura causa dano, você ganha aquela quantidade de pontos de vida."<br>Entrelaçamento {1}{W} (Escolha ambos se pagar o custo do entrelaçamento.)</td>
+  </tr>
+  <tr>
+    <td>17</td>
+    <td>Test of Faith</td>
+    <td>Prevent the next 3 damage that would be dealt to target creature this turn. For each 1 damage prevented this way, put a +1/+1 counter on that creature.</td>
+    <td>Previne os próximos 3 pontos de dano que seriam causados ​​à criatura alvo neste turno. Para cada 1 dano prevenido desta forma, coloque um marcador +1/+1 naquela criatura.</td>
+  </tr>
+  <tr>
+    <td>18</td>
+    <td>Turn the Tables</td>
+    <td>All combat damage that would be dealt to you this turn is dealt to target attacking creature instead.</td>
+    <td>Todo o dano de combate que seria causado a você neste turno é causado à criatura atacante alvo.</td>
+  </tr>
+  <tr>
+    <td>19</td>
+    <td>Carry Away</td>
+    <td>Enchant Equipment<br>When Carry Away enters the battlefield, unattach enchanted Equipment.<br>You control enchanted Equipment.</td>
+    <td>Encantar Equipamento<br>Quando Carry Away entrar no campo de batalha, desvincule o Equipamento encantado.<br>Você controla Equipamento encantado.</td>
+  </tr>
+  <tr>
+    <td>20</td>
+    <td>Chromescale Drake</td>
+    <td>Affinity for artifacts (This spell costs {1} less to cast for each artifact you control.)<br>Flying<br>When Chromescale Drake enters the battlefield, reveal the top three cards of your library. Put all artifact cards revealed this way into your hand and the rest into your graveyard.</td>
+    <td>Afinidade com artefatos (Este feitiço custa {1} a menos para ser lançado para cada artefato que você controla.)<br>Vôo<br>Quando Drakeescala Cromo entrar no campo de batalha, revele os três cards do topo de seu grimório. Coloque todos os cards de artefato revelados desta forma em sua mão e o restante em seu cemitério.</td>
+  </tr>
+  <tr>
+    <td>21</td>
+    <td>Echoing Truth</td>
+    <td>Return target nonland permanent and all other permanents with the same name as that permanent to their owners' hands.</td>
+    <td>Devolva a permanente alvo que não seja um terreno e todas as outras permanentes com o mesmo nome daquela permanente para as mãos de seus donos.</td>
+  </tr>
+  <tr>
+    <td>22</td>
+    <td>Hoverguard Observer</td>
+    <td>Flying<br>Hoverguard Observer can block only creatures with flying.</td>
+    <td>Vôo<br>Hoverguard Observer pode bloquear apenas criaturas com voar.</td>
+  </tr>
+  <tr>
+    <td>23</td>
+    <td>Last Word</td>
+    <td>This spell can't be countered.<br>Counter target spell.</td>
+    <td>Este feitiço não pode ser anulado.<br>Anule a mágica alvo.</td>
+  </tr>
+  <tr>
+    <td>24</td>
+    <td>Machinate</td>
+    <td>Look at the top X cards of your library, where X is the number of artifacts you control. Put one of those cards into your hand and the rest on the bottom of your library in any order.</td>
+    <td>Olhe os X cards do topo do seu grimório, onde X é o número de artefatos que você controla. Coloque um desses cards em sua mão e o restante no fundo de seu grimório em qualquer ordem.</td>
+  </tr>
+  <tr>
+    <td>25</td>
+    <td>Magnetic Flux</td>
+    <td>Artifact creatures you control gain flying until end of turn.</td>
+    <td>As criaturas artefato que você controla ganham voar até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>26</td>
+    <td>Neurok Prodigy</td>
+    <td>Flying<br>Discard an artifact card: Return Neurok Prodigy to its owner's hand.</td>
+    <td>Vôo<br>Descarte uma carta de artefato: Devolva Neurok Prodigy para a mão de seu dono.</td>
+  </tr>
+  <tr>
+    <td>27</td>
+    <td>Neurok Transmuter</td>
+    <td>{U}: Target creature becomes an artifact in addition to its other types until end of turn.<br>{U}: Until end of turn, target artifact creature becomes blue and isn't an artifact.</td>
+    <td>{U}: A criatura alvo se torna um artefato além de seus outros tipos até o final do turno.<br>{U}: Até o final do turno, a criatura artefato alvo fica azul e não é um artefato.</td>
+  </tr>
+  <tr>
+    <td>28</td>
+    <td>Psychic Overload</td>
+    <td>Enchant permanent<br>When Psychic Overload enters the battlefield, tap enchanted permanent.<br>Enchanted permanent doesn't untap during its controller's untap step.<br>Enchanted permanent has "Discard two artifact cards: Untap this permanent."</td>
+    <td>Encantar permanente<br>Quando Sobrecarga Psíquica entrar no campo de batalha, vire a permanente encantada.<br>A permanente encantada não desvira durante a etapa de desvirar de seu controlador.<br>A permanente encantada tem "Descarte dois cards de artefato: desvire esta permanente."</td>
+  </tr>
+  <tr>
+    <td>29</td>
+    <td>Pulse of the Grid</td>
+    <td>Draw two cards, then discard a card. Then if an opponent has more cards in hand than you, return Pulse of the Grid to its owner's hand.</td>
+    <td>Compre duas cartas e descarte uma carta. Então, se um oponente tiver mais cartas na mão do que você, devolva Pulse of the Grid para a mão de seu dono.</td>
+  </tr>
+  <tr>
+    <td>30</td>
+    <td>Quicksilver Behemoth</td>
+    <td>Affinity for artifacts (This spell costs {1} less to cast for each artifact you control.)<br>When Quicksilver Behemoth attacks or blocks, return it to its owner's hand at end of combat. (Return it only if it's on the battlefield.)</td>
+    <td>Afinidade com artefatos (Este feitiço custa {1} a menos para ser lançado para cada artefato que você controla.)<br>Quando Quicksilver Behemoth atacar ou bloquear, devolva-o para a mão de seu dono no final do combate. (Devolva-o apenas se estiver no campo de batalha.)</td>
+  </tr>
+  <tr>
+    <td>31</td>
+    <td>Reshape</td>
+    <td>As an additional cost to cast this spell, sacrifice an artifact.<br>Search your library for an artifact card with mana value X or less, put it onto the battlefield, then shuffle.</td>
+    <td>Como custo adicional para conjurar esta mágica, sacrifique um artefato.<br>Procure em seu grimório por um card de artefato com valor de mana igual ou inferior a X, coloque-o no campo de batalha e depois embaralhe.</td>
+  </tr>
+  <tr>
+    <td>32</td>
+    <td>Retract</td>
+    <td>Return all artifacts you control to their owner's hand.</td>
+    <td>Devolva todos os artefatos que você controla para a mão de seus donos.</td>
+  </tr>
+  <tr>
+    <td>33</td>
+    <td>Second Sight</td>
+    <td>Choose one —<br>• Look at the top five cards of target opponent's library, then put them back in any order.<br>• Look at the top five cards of your library, then put them back in any order.<br>Entwine {U} (Choose both if you pay the entwine cost.)</td>
+    <td>Escolha um -<br>• Olhe os cinco cards do topo do grimório do oponente alvo e coloque-os de volta em qualquer ordem.<br>• Olhe os cinco cards do topo do seu grimório e coloque-os de volta em qualquer ordem.<br>Entrelaçar {U} (Escolha ambos se pagar o custo do entrelaçar.)</td>
+  </tr>
+  <tr>
+    <td>34</td>
+    <td>Synod Artificer</td>
+    <td>{X}, {T}: Tap X target noncreature artifacts.<br>{X}, {T}: Untap X target noncreature artifacts.</td>
+    <td>{X}, {T}: Toque em X artefatos alvo que não sejam criaturas.<br>{X}, {T}: Desvire X artefatos alvo que não sejam criaturas.</td>
+  </tr>
+  <tr>
+    <td>35</td>
+    <td>Vedalken Engineer</td>
+    <td>{T}: Add two mana of any one color. Spend this mana only to cast artifact spells or activate abilities of artifacts.</td>
+    <td>{T}: Adicione dois manas de qualquer cor. Gaste este mana apenas para conjurar mágicas de artefato ou ativar habilidades de artefatos.</td>
+  </tr>
+  <tr>
+    <td>36</td>
+    <td>Vex</td>
+    <td>Counter target spell. That spell's controller may draw a card.</td>
+    <td>Anule a mágica alvo. O controlador daquela mágica pode comprar um card.</td>
+  </tr>
+  <tr>
+    <td>37</td>
+    <td>Aether Snap</td>
+    <td>Remove all counters from all permanents and exile all tokens.</td>
+    <td>Remova todos os marcadores de todas as permanentes e exile todas as fichas.</td>
+  </tr>
+  <tr>
+    <td>38</td>
+    <td>Burden of Greed</td>
+    <td>Target player loses 1 life for each tapped artifact they control.</td>
+    <td>O jogador alvo perde 1 ponto de vida para cada artefato virado que ele controla.</td>
+  </tr>
+  <tr>
+    <td>39</td>
+    <td>Chittering Rats</td>
+    <td>When Chittering Rats enters the battlefield, target opponent puts a card from their hand on top of their library.</td>
+    <td>Quando Chittering Rats entra no campo de batalha, o oponente alvo coloca um card de sua mão no topo de seu grimório.</td>
+  </tr>
+  <tr>
+    <td>40</td>
+    <td>Death Cloud</td>
+    <td>Each player loses X life, discards X cards, sacrifices X creatures, then sacrifices X lands.</td>
+    <td>Cada jogador perde X pontos de vida, descarta X cards, sacrifica X criaturas e depois sacrifica X terrenos.</td>
+  </tr>
+  <tr>
+    <td>41</td>
+    <td>Echoing Decay</td>
+    <td>Target creature and all other creatures with the same name as that creature get -2/-2 until end of turn.</td>
+    <td>A criatura alvo e todas as outras criaturas com o mesmo nome daquela criatura recebem -2/-2 até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>42</td>
+    <td>Emissary of Despair</td>
+    <td>Flying<br>Whenever Emissary of Despair deals combat damage to a player, that player loses 1 life for each artifact they control.</td>
+    <td>Vôo<br>Sempre que Emissário do Desespero causa dano de combate a um jogador, aquele jogador perde 1 ponto de vida para cada artefato que controla.</td>
+  </tr>
+  <tr>
+    <td>43</td>
+    <td>Essence Drain</td>
+    <td>Essence Drain deals 3 damage to any target and you gain 3 life.</td>
+    <td>Essence Drain causa 3 pontos de dano a qualquer alvo e você ganha 3 pontos de vida.</td>
+  </tr>
+  <tr>
+    <td>44</td>
+    <td>Greater Harvester</td>
+    <td>At the beginning of your upkeep, sacrifice a permanent.<br>Whenever Greater Harvester deals combat damage to a player, that player sacrifices two permanents.</td>
+    <td>No início de sua manutenção, sacrifique uma permanente.<br>Sempre que Greater Harvester causa dano de combate a um jogador, aquele jogador sacrifica duas permanentes.</td>
+  </tr>
+  <tr>
+    <td>45</td>
+    <td>Grimclaw Bats</td>
+    <td>Flying<br>{B}, Pay 1 life: Grimclaw Bats gets +1/+1 until end of turn.</td>
+    <td>Vôo<br>{B}, pague 1 ponto de vida: Morcegos Grimclaw recebem +1/+1 até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>46</td>
+    <td>Hunger of the Nim</td>
+    <td>Target creature gets +1/+0 until end of turn for each artifact you control.</td>
+    <td>A criatura alvo recebe +1/+0 até o final do turno para cada artefato que você controla.</td>
+  </tr>
+  <tr>
+    <td>47</td>
+    <td>Mephitic Ooze</td>
+    <td>Mephitic Ooze gets +1/+0 for each artifact you control.<br>Whenever Mephitic Ooze deals combat damage to a creature, destroy that creature. The creature can't be regenerated.</td>
+    <td>Lodo Mefítico recebe +1/+0 para cada artefato que você controla.<br>Toda vez que Mephitic Ooze causar dano de combate a uma criatura, destrua aquela criatura. A criatura não pode ser regenerada.</td>
+  </tr>
+  <tr>
+    <td>48</td>
+    <td>Murderous Spoils</td>
+    <td>Destroy target nonblack creature. It can't be regenerated. You gain control of all Equipment that were attached to it. (This effect lasts indefinitely.)</td>
+    <td>Destrua a criatura alvo que não seja preta. Não pode ser regenerado. Você ganha o controle de todos os Equipamentos anexados a ele. (Este efeito dura indefinidamente.)</td>
+  </tr>
+  <tr>
+    <td>49</td>
+    <td>Nim Abomination</td>
+    <td>At the beginning of your end step, if Nim Abomination is untapped, you lose 3 life.</td>
+    <td>No início de sua etapa final, se Nim Abomination estiver desvirado, você perde 3 pontos de vida.</td>
+  </tr>
+  <tr>
+    <td>50</td>
+    <td>Pulse of the Dross</td>
+    <td>Target player reveals three cards from their hand and you choose one of them. That player discards that card. Then if that player has more cards in hand than you, return Pulse of the Dross to its owner's hand.</td>
+    <td>O jogador alvo revela três cartas de sua mão e você escolhe uma delas. Esse jogador descarta aquela carta. Então, se aquele jogador tiver mais cartas na mão do que você, devolva Pulse of the Dross para a mão de seu dono.</td>
+  </tr>
+  <tr>
+    <td>51</td>
+    <td>Scavenging Scarab</td>
+    <td>Scavenging Scarab can't block.</td>
+    <td>Escaravelho Scavenging não pode bloquear.</td>
+  </tr>
+  <tr>
+    <td>52</td>
+    <td>Screams from Within</td>
+    <td>Enchant creature<br>Enchanted creature gets -1/-1.<br>When enchanted creature dies, return Screams from Within from your graveyard to the battlefield.</td>
+    <td>Encantar criatura<br>A criatura encantada recebe -1/-1.<br>Quando a criatura encantada morrer, devolva Screams from Within de seu cemitério para o campo de batalha.</td>
+  </tr>
+  <tr>
+    <td>53</td>
+    <td>Scrounge</td>
+    <td>Target opponent chooses an artifact card in their graveyard. Put that card onto the battlefield under your control.</td>
+    <td>O oponente alvo escolhe um card de artefato em seu cemitério. Coloque aquele card no campo de batalha sob seu controle.</td>
+  </tr>
+  <tr>
+    <td>54</td>
+    <td>Shriveling Rot</td>
+    <td>Choose one —<br>• Until end of turn, whenever a creature is dealt damage, destroy it.<br>• Until end of turn, whenever a creature dies, that creature's controller loses life equal to its toughness.<br>Entwine {2}{B} (Choose both if you pay the entwine cost.)</td>
+    <td>Escolha um -<br>• Até o final do turno, sempre que uma criatura sofrer dano, destrua-a.<br>• Até o final do turno, sempre que uma criatura morre, o controlador daquela criatura perde uma quantidade de pontos de vida igual à sua resistência.<br>Entrelaçamento {2}{B} (Escolha ambos se pagar o custo do entrelaçamento.)</td>
+  </tr>
+  <tr>
+    <td>55</td>
+    <td>Barbed Lightning</td>
+    <td>Choose one —<br>• Barbed Lightning deals 3 damage to target creature.<br>• Barbed Lightning deals 3 damage to target player or planeswalker.<br>Entwine {2} (Choose both if you pay the entwine cost.)</td>
+    <td>Escolha um -<br>• Raio Farpado causa 3 pontos de dano à criatura alvo.<br>• Farpado Relâmpago causa 3 pontos de dano ao jogador ou planeswalker alvo.<br>Entrelaçamento {2} (Escolha ambos se pagar o custo do entrelaçamento.)</td>
+  </tr>
+  <tr>
+    <td>56</td>
+    <td>Crazed Goblin</td>
+    <td>Crazed Goblin attacks each combat if able.</td>
+    <td>O Goblin Enlouquecido ataca a cada combate se estiver apto.</td>
+  </tr>
+  <tr>
+    <td>57</td>
+    <td>Dismantle</td>
+    <td>Destroy target artifact. If that artifact had counters on it, put that many +1/+1 counters or charge counters on an artifact you control.</td>
+    <td>Destrua o artefato alvo. Se aquele artefato tinha marcadores, coloque aquela quantidade de marcadores +1/+1 ou marcadores de carga em um artefato que você controla.</td>
+  </tr>
+  <tr>
+    <td>58</td>
+    <td>Drooling Ogre</td>
+    <td>Whenever a player casts an artifact spell, that player gains control of Drooling Ogre. (This effect lasts indefinitely.)</td>
+    <td>Sempre que um jogador conjura uma mágica de artefato, aquele jogador ganha o controle de Drooling Ogre. (Este efeito dura indefinidamente.)</td>
+  </tr>
+  <tr>
+    <td>59</td>
+    <td>Echoing Ruin</td>
+    <td>Destroy target artifact and all other artifacts with the same name as that artifact.</td>
+    <td>Destrua o artefato alvo e todos os outros artefatos com o mesmo nome desse artefato.</td>
+  </tr>
+  <tr>
+    <td>60</td>
+    <td>Fireball</td>
+    <td>This spell costs {1} more to cast for each target beyond the first.<br>Fireball deals X damage divided evenly, rounded down, among any number of targets.</td>
+    <td>Este feitiço custa {1} a mais para ser lançado para cada alvo além do primeiro.<br>Bola de Fogo causa X dano dividido igualmente, arredondado para baixo, entre qualquer número de alvos.</td>
+  </tr>
+  <tr>
+    <td>61</td>
+    <td>Flamebreak</td>
+    <td>Flamebreak deals 3 damage to each creature without flying and each player. Creatures dealt damage this way can't be regenerated this turn.</td>
+    <td>Flamebreak causa 3 pontos de dano a cada criatura sem voar e a cada jogador. As criaturas que sofreram dano desta forma não podem ser regeneradas neste turno.</td>
+  </tr>
+  <tr>
+    <td>62</td>
+    <td>Furnace Dragon</td>
+    <td>Affinity for artifacts (This spell costs {1} less to cast for each artifact you control.)<br>Flying<br>When Furnace Dragon enters the battlefield, if you cast it from your hand, exile all artifacts.</td>
+    <td>Afinidade com artefatos (Este feitiço custa {1} a menos para ser lançado para cada artefato que você controla.)<br>Vôo<br>Quando Dragão da Fornalha entrar no campo de batalha, se você conjurá-lo de sua mão, exile todos os artefatos.</td>
+  </tr>
+  <tr>
+    <td>63</td>
+    <td>Goblin Archaeologist</td>
+    <td>{R}, {T}: Flip a coin. If you win the flip, destroy target artifact and untap Goblin Archaeologist. If you lose the flip, sacrifice Goblin Archaeologist.</td>
+    <td>{R}, {T}: Jogue uma moeda. Se você vencer, destrua o artefato alvo e desvire Goblin Archaeologist. Se você perder, sacrifique Arqueólogo Goblin.</td>
+  </tr>
+  <tr>
+    <td>64</td>
+    <td>Inflame</td>
+    <td>Inflame deals 2 damage to each creature dealt damage this turn.</td>
+    <td>Inflame causa 2 pontos de dano a cada criatura que sofreu dano neste turno.</td>
+  </tr>
+  <tr>
+    <td>65</td>
+    <td>Krark-Clan Stoker</td>
+    <td>{T}, Sacrifice an artifact: Add {R}{R}.</td>
+    <td>{T}, sacrifique um artefato: Adicione {R}{R}.</td>
+  </tr>
+  <tr>
+    <td>66</td>
+    <td>Pulse of the Forge</td>
+    <td>Pulse of the Forge deals 4 damage to target player or planeswalker. Then if that player or that planeswalker's controller has more life than you, return Pulse of the Forge to its owner's hand.</td>
+    <td>Pulso da Forja causa 4 pontos de dano ao jogador ou planeswalker alvo. Então, se aquele jogador ou o controlador daquele planeswalker tiver mais pontos de vida que você, devolva Pulse of the Forge para a mão de seu dono.</td>
+  </tr>
+  <tr>
+    <td>67</td>
+    <td>Savage Beating</td>
+    <td>Cast this spell only during your turn and only during combat.<br>Choose one —<br>• Creatures you control gain double strike until end of turn.<br>• Untap all creatures you control. After this phase, there is an additional combat phase.<br>Entwine {1}{R} (Choose both if you pay the entwine cost.)</td>
+    <td>Lance este feitiço somente durante o seu turno e somente durante o combate.<br>Escolha um -<br>• As criaturas que você controla ganham golpe duplo até o final do turno.<br>• Desvire todas as criaturas que você controla. Após esta fase, há uma fase adicional de combate.<br>Entrelaçamento {1}{R} (Escolha ambos se pagar o custo do entrelaçamento.)</td>
+  </tr>
+  <tr>
+    <td>68</td>
+    <td>Shunt</td>
+    <td>Change the target of target spell with a single target.</td>
+    <td>Mude o alvo do feitiço alvo com um único alvo.</td>
+  </tr>
+  <tr>
+    <td>69</td>
+    <td>Slobad, Goblin Tinkerer</td>
+    <td>Sacrifice an artifact: Target artifact gains indestructible until end of turn.</td>
+    <td>Sacrifique um artefato: O artefato alvo ganha indestrutível até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>70</td>
+    <td>Tears of Rage</td>
+    <td>Cast this spell only during the declare attackers step.<br>Attacking creatures you control get +X/+0 until end of turn, where X is the number of attacking creatures. Sacrifice those creatures at the beginning of the next end step.</td>
+    <td>Conjure esta magia somente durante a etapa de declaração de atacantes.<br>As criaturas atacantes que você controla recebem +X/+0 até o final do turno, sendo X o número de criaturas atacantes. Sacrifique essas criaturas no início da próxima etapa final.</td>
+  </tr>
+  <tr>
+    <td>71</td>
+    <td>Unforge</td>
+    <td>Destroy target Equipment. If that Equipment was attached to a creature, Unforge deals 2 damage to that creature.</td>
+    <td>Destrua o equipamento alvo. Se aquele Equipamento foi anexado a uma criatura, Unforge causa 2 pontos de dano àquela criatura.</td>
+  </tr>
+  <tr>
+    <td>72</td>
+    <td>Vulshok War Boar</td>
+    <td>When Vulshok War Boar enters the battlefield, sacrifice it unless you sacrifice an artifact.</td>
+    <td>Quando Javali de Guerra Vulshok entrar no campo de batalha, sacrifique-o, a menos que você sacrifique um artefato.</td>
+  </tr>
+  <tr>
+    <td>73</td>
+    <td>Ageless Entity</td>
+    <td>Whenever you gain life, put that many +1/+1 counters on Ageless Entity.</td>
+    <td>Sempre que você ganhar pontos de vida, coloque aquela mesma quantidade de marcadores +1/+1 em Ageless Entity.</td>
+  </tr>
+  <tr>
+    <td>74</td>
+    <td>Echoing Courage</td>
+    <td>Target creature and all other creatures with the same name as that creature get +2/+2 until end of turn.</td>
+    <td>A criatura alvo e todas as outras criaturas com o mesmo nome daquela criatura recebem +2/+2 até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>75</td>
+    <td>Fangren Firstborn</td>
+    <td>Whenever Fangren Firstborn attacks, put a +1/+1 counter on each attacking creature.</td>
+    <td>Toda vez que Fangren Firstborn atacar, coloque um marcador +1/+1 em cada criatura atacante.</td>
+  </tr>
+  <tr>
+    <td>76</td>
+    <td>Infested Roothold</td>
+    <td>Defender (This creature can't attack.)<br>Protection from artifacts<br>Whenever an opponent casts an artifact spell, you may create a 1/1 green Insect creature token.</td>
+    <td>Defensor (Esta criatura não pode atacar.)<br>Proteção contra artefatos<br>Toda vez que um oponente conjurar uma mágica de artefato, você pode criar uma ficha de criatura verde 1/1 do tipo Inseto.</td>
+  </tr>
+  <tr>
+    <td>77</td>
+    <td>Karstoderm</td>
+    <td>Karstoderm enters the battlefield with five +1/+1 counters on it.<br>Whenever an artifact enters the battlefield, remove a +1/+1 counter from Karstoderm.</td>
+    <td>Karstoderm entra no campo de batalha com cinco marcadores +1/+1.<br>Toda vez que um artefato entrar no campo de batalha, remova um marcador +1/+1 de Karstoderm.</td>
+  </tr>
+  <tr>
+    <td>78</td>
+    <td>Nourish</td>
+    <td>You gain 6 life.</td>
+    <td>Você ganha 6 pontos de vida.</td>
+  </tr>
+  <tr>
+    <td>79</td>
+    <td>Oxidize</td>
+    <td>Destroy target artifact. It can't be regenerated.</td>
+    <td>Destrua o artefato alvo. Não pode ser regenerado.</td>
+  </tr>
+  <tr>
+    <td>80</td>
+    <td>Pulse of the Tangle</td>
+    <td>Create a 3/3 green Beast creature token. Then if an opponent controls more creatures than you, return Pulse of the Tangle to its owner's hand.</td>
+    <td>Crie uma ficha de criatura verde 3/3 do tipo Besta. Então, se um oponente controlar mais criaturas que você, devolva Pulse of the Tangle para a mão de seu dono.</td>
+  </tr>
+  <tr>
+    <td>81</td>
+    <td>Reap and Sow</td>
+    <td>Choose one —<br>• Destroy target land.<br>• Search your library for a land card, put that card onto the battlefield, then shuffle.<br>Entwine {1}{G} (Choose both if you pay the entwine cost.)</td>
+    <td>Escolha um -<br>• Destrua o terreno alvo.<br>• Procure um card de terreno em seu grimório, coloque-o no campo de batalha e depois embaralhe.<br>Entrelaçamento {1}{G} (Escolha ambos se pagar o custo do entrelaçamento.)</td>
+  </tr>
+  <tr>
+    <td>82</td>
+    <td>Rebuking Ceremony</td>
+    <td>Put two target artifacts on top of their owners' libraries.</td>
+    <td>Coloque dois artefatos alvo no topo dos grimórios de seus proprietários.</td>
+  </tr>
+  <tr>
+    <td>83</td>
+    <td>Roaring Slagwurm</td>
+    <td>Whenever Roaring Slagwurm attacks, tap all artifacts.</td>
+    <td>Sempre que Roaring Slagwurm atacar, vire todos os artefatos.</td>
+  </tr>
+  <tr>
+    <td>84</td>
+    <td>Stand Together</td>
+    <td>Put two +1/+1 counters on target creature and two +1/+1 counters on another target creature.</td>
+    <td>Coloque dois marcadores +1/+1 na criatura alvo e dois marcadores +1/+1 em outra criatura alvo.</td>
+  </tr>
+  <tr>
+    <td>85</td>
+    <td>Tangle Spider</td>
+    <td>Flash (You may cast this spell any time you could cast an instant.)<br>Reach (This creature can block creatures with flying.)</td>
+    <td>Flash (Você pode lançar esta mágica a qualquer momento em que puder lançar uma mágica instantânea.)<br>Alcance (Esta criatura pode bloquear criaturas com voar.)</td>
+  </tr>
+  <tr>
+    <td>86</td>
+    <td>Tanglewalker</td>
+    <td>Each creature you control can't be blocked as long as defending player controls an artifact land.</td>
+    <td>Cada criatura que você controla não pode ser bloqueada enquanto o jogador defensor controlar um terreno artefato.</td>
+  </tr>
+  <tr>
+    <td>87</td>
+    <td>Tel-Jilad Outrider</td>
+    <td>Protection from artifacts</td>
+    <td>Proteção contra artefatos</td>
+  </tr>
+  <tr>
+    <td>88</td>
+    <td>Tel-Jilad Wolf</td>
+    <td>Whenever Tel-Jilad Wolf becomes blocked by an artifact creature, Tel-Jilad Wolf gets +3/+3 until end of turn.</td>
+    <td>Toda vez que Tel-Jilad Wolf é bloqueado por uma criatura artefato, Tel-Jilad Wolf recebe +3/+3 até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>89</td>
+    <td>Viridian Acolyte</td>
+    <td>{1}, {T}: Add one mana of any color.</td>
+    <td>{1}, {T}: Adicione um mana de qualquer cor.</td>
+  </tr>
+  <tr>
+    <td>90</td>
+    <td>Viridian Zealot</td>
+    <td>{1}{G}, Sacrifice Viridian Zealot: Destroy target artifact or enchantment.</td>
+    <td>{1}{G}, Sacrifique Zelote Viridiano: Destrua o artefato ou encantamento alvo.</td>
+  </tr>
+  <tr>
+    <td>91</td>
+    <td>Aether Vial</td>
+    <td>At the beginning of your upkeep, you may put a charge counter on Aether Vial.<br>{T}: You may put a creature card with mana value equal to the number of charge counters on Aether Vial from your hand onto the battlefield.</td>
+    <td>No início de sua manutenção, você pode colocar um marcador de carga no Frasco de Éter.<br>{T}: Você pode colocar no campo de batalha um card de criatura com valor de mana igual ao número de marcadores de carga em Aether Vial de sua mão.</td>
+  </tr>
+  <tr>
+    <td>92</td>
+    <td>Angel's Feather</td>
+    <td>Whenever a player casts a white spell, you may gain 1 life.</td>
+    <td>Sempre que um jogador conjura uma mágica branca, você pode ganhar 1 ponto de vida.</td>
+  </tr>
+  <tr>
+    <td>93</td>
+    <td>Arcane Spyglass</td>
+    <td>{2}, {T}, Sacrifice a land: Draw a card and put a charge counter on Arcane Spyglass.<br>Remove three charge counters from Arcane Spyglass: Draw a card.</td>
+    <td>{2}, {T}, sacrifique um terreno: Compre um card e coloque um marcador de carga na Luneta Arcana.<br>Remova três marcadores de carga da Luneta Arcana: Compre uma carta.</td>
+  </tr>
+  <tr>
+    <td>94</td>
+    <td>Arcbound Bruiser</td>
+    <td>Modular 3 (This creature enters the battlefield with three +1/+1 counters on it. When it dies, you may put its +1/+1 counters on target artifact creature.)</td>
+    <td>Modular 3 (Esta criatura entra no campo de batalha com três marcadores +1/+1. Quando ela morrer, você pode colocar seus marcadores +1/+1 na criatura artefato alvo.)</td>
+  </tr>
+  <tr>
+    <td>95</td>
+    <td>Arcbound Crusher</td>
+    <td>Trample<br>Whenever another artifact enters the battlefield, put a +1/+1 counter on Arcbound Crusher.<br>Modular 1 (This creature enters the battlefield with a +1/+1 counter on it. When it dies, you may put its +1/+1 counters on target artifact creature.)</td>
+    <td>Atropelar<br>Toda vez que outro artefato entrar no campo de batalha, coloque um marcador +1/+1 em Arcbound Crusher.<br>Modular 1 (Esta criatura entra no campo de batalha com um marcador +1/+1. Quando ela morrer, você pode colocar seus marcadores +1/+1 na criatura artefato alvo.)</td>
+  </tr>
+  <tr>
+    <td>96</td>
+    <td>Arcbound Fiend</td>
+    <td>Fear (This creature can't be blocked except by artifact creatures and/or black creatures.)<br>At the beginning of your upkeep, you may move a +1/+1 counter from target creature onto Arcbound Fiend.<br>Modular 3 (This creature enters the battlefield with three +1/+1 counters on it. When it dies, you may put its +1/+1 counters on target artifact creature.)</td>
+    <td>Medo (Esta criatura só pode ser bloqueada por criaturas artefato e/ou criaturas pretas.)<br>No início de sua manutenção, você pode mover um marcador +1/+1 da criatura alvo para Arcbound Fiend.<br>Modular 3 (Esta criatura entra no campo de batalha com três marcadores +1/+1. Quando ela morrer, você pode colocar seus marcadores +1/+1 na criatura artefato alvo.)</td>
+  </tr>
+  <tr>
+    <td>97</td>
+    <td>Arcbound Hybrid</td>
+    <td>Haste<br>Modular 2 (This creature enters the battlefield with two +1/+1 counters on it. When it dies, you may put its +1/+1 counters on target artifact creature.)</td>
+    <td>Pressa<br>Modular 2 (Esta criatura entra no campo de batalha com dois marcadores +1/+1. Quando ela morrer, você pode colocar seus marcadores +1/+1 na criatura artefato alvo.)</td>
+  </tr>
+  <tr>
+    <td>98</td>
+    <td>Arcbound Lancer</td>
+    <td>First strike<br>Modular 4 (This creature enters the battlefield with four +1/+1 counters on it. When it dies, you may put its +1/+1 counters on target artifact creature.)</td>
+    <td>Primeiro ataque<br>Modular 4 (Esta criatura entra no campo de batalha com quatro marcadores +1/+1. Quando ela morrer, você pode colocar seus marcadores +1/+1 na criatura artefato alvo.)</td>
+  </tr>
+  <tr>
+    <td>99</td>
+    <td>Arcbound Overseer</td>
+    <td>At the beginning of your upkeep, put a +1/+1 counter on each creature with modular you control.<br>Modular 6 (This creature enters the battlefield with six +1/+1 counters on it. When it dies, you may put its +1/+1 counters on target artifact creature.)</td>
+    <td>No início de sua manutenção, coloque um marcador +1/+1 em cada criatura com modular que você controla.<br>Modular 6 (Esta criatura entra no campo de batalha com seis marcadores +1/+1. Quando ela morrer, você pode colocar seus marcadores +1/+1 na criatura artefato alvo.)</td>
+  </tr>
+  <tr>
+    <td>100</td>
+    <td>Arcbound Ravager</td>
+    <td>Sacrifice an artifact: Put a +1/+1 counter on Arcbound Ravager.<br>Modular 1 (This creature enters the battlefield with a +1/+1 counter on it. When it dies, you may put its +1/+1 counters on target artifact creature.)</td>
+    <td>Sacrifique um artefato: Coloque um marcador +1/+1 em Arcbound Ravager.<br>Modular 1 (Esta criatura entra no campo de batalha com um marcador +1/+1. Quando ela morrer, você pode colocar seus marcadores +1/+1 na criatura artefato alvo.)</td>
+  </tr>
+  <tr>
+    <td>101</td>
+    <td>Arcbound Reclaimer</td>
+    <td>Remove a +1/+1 counter from Arcbound Reclaimer: Put target artifact card from your graveyard on top of your library.<br>Modular 2 (This creature enters the battlefield with two +1/+1 counters on it. When it dies, you may put its +1/+1 counters on target artifact creature.)</td>
+    <td>Remova um marcador +1/+1 de Arcbound Reclaimer: Coloque o card de artefato alvo de seu cemitério no topo de seu grimório.<br>Modular 2 (Esta criatura entra no campo de batalha com dois marcadores +1/+1. Quando ela morrer, você pode colocar seus marcadores +1/+1 na criatura artefato alvo.)</td>
+  </tr>
+  <tr>
+    <td>102</td>
+    <td>Arcbound Slith</td>
+    <td>Whenever Arcbound Slith deals combat damage to a player, put a +1/+1 counter on it.<br>Modular 1 (This creature enters the battlefield with a +1/+1 counter on it. When it dies, you may put its +1/+1 counters on target artifact creature.)</td>
+    <td>Toda vez que Arcbound Slith causar dano de combate a um jogador, coloque um marcador +1/+1 nele.<br>Modular 1 (Esta criatura entra no campo de batalha com um marcador +1/+1. Quando ela morrer, você pode colocar seus marcadores +1/+1 na criatura artefato alvo.)</td>
+  </tr>
+  <tr>
+    <td>103</td>
+    <td>Arcbound Stinger</td>
+    <td>Flying<br>Modular 1 (This creature enters the battlefield with a +1/+1 counter on it. When it dies, you may put its +1/+1 counters on target artifact creature.)</td>
+    <td>Vôo<br>Modular 1 (Esta criatura entra no campo de batalha com um marcador +1/+1. Quando ela morrer, você pode colocar seus marcadores +1/+1 na criatura artefato alvo.)</td>
+  </tr>
+  <tr>
+    <td>104</td>
+    <td>Arcbound Worker</td>
+    <td>Modular 1 (This creature enters the battlefield with a +1/+1 counter on it. When it dies, you may put its +1/+1 counters on target artifact creature.)</td>
+    <td>Modular 1 (Esta criatura entra no campo de batalha com um marcador +1/+1. Quando ela morrer, você pode colocar seus marcadores +1/+1 na criatura artefato alvo.)</td>
+  </tr>
+  <tr>
+    <td>105</td>
+    <td>Auriok Siege Sled</td>
+    <td>{1}: Target artifact creature blocks Auriok Siege Sled this turn if able.<br>{1}: Target artifact creature can't block Auriok Siege Sled this turn.</td>
+    <td>{1}: A criatura artefato alvo bloqueia Auriok Siege Sled neste turno, se estiver apta.<br>{1}: A criatura artefato alvo não pode bloquear Auriok Siege Sled neste turno.</td>
+  </tr>
+  <tr>
+    <td>106</td>
+    <td>Chimeric Egg</td>
+    <td>Whenever an opponent casts a nonartifact spell, put a charge counter on Chimeric Egg.<br>Remove three charge counters from Chimeric Egg: Chimeric Egg becomes a 6/6 Construct artifact creature with trample until end of turn.</td>
+    <td>Sempre que um oponente conjurar uma mágica que não seja artefato, coloque um marcador de carga em Ovo Quimérico.<br>Remova três marcadores de carga de Ovo Quimérico: Ovo Quimérico torna-se uma criatura artefato 6/6 do tipo Constructo com atropelar até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>107</td>
+    <td>Coretapper</td>
+    <td>{T}: Put a charge counter on target artifact.<br>Sacrifice Coretapper: Put two charge counters on target artifact.</td>
+    <td>{T}: Coloque um marcador de carga no artefato alvo.<br>Sacrifique Coretapper: Coloque dois marcadores de carga no artefato alvo.</td>
+  </tr>
+  <tr>
+    <td>108</td>
+    <td>Darksteel Brute</td>
+    <td>Indestructible (Damage and effects that say "destroy" don't destroy this artifact.)<br>{3}: Darksteel Brute becomes a 2/2 Beast artifact creature until end of turn.</td>
+    <td>Indestrutível (danos e efeitos que dizem “destruir” não destroem este artefato.)<br>{3}: Darksteel Brute torna-se uma criatura artefato 2/2 do tipo Besta até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>109</td>
+    <td>Darksteel Colossus</td>
+    <td>Trample, indestructible<br>If Darksteel Colossus would be put into a graveyard from anywhere, reveal Darksteel Colossus and shuffle it into its owner's library instead.</td>
+    <td>Atropelar, indestrutível<br>Se Darksteel Colossus seria colocado em um cemitério vindo de qualquer lugar, em vez disso, revele Darksteel Colossus e embaralhe-o no grimório de seu dono.</td>
+  </tr>
+  <tr>
+    <td>110</td>
+    <td>Darksteel Forge</td>
+    <td>Artifacts you control have indestructible. (Effects that say "destroy" don't destroy them. Artifact creatures with indestructible can't be destroyed by damage.)</td>
+    <td>Os artefatos que você controla são indestrutíveis. (Efeitos que dizem “destruir” não os destroem. Criaturas artefato com indestrutível não podem ser destruídas por dano.)</td>
+  </tr>
+  <tr>
+    <td>111</td>
+    <td>Darksteel Gargoyle</td>
+    <td>Flying<br>Indestructible (Damage and effects that say "destroy" don't destroy this creature.)</td>
+    <td>Vôo<br>Indestrutível (danos e efeitos que dizem “destruir” não destroem esta criatura.)</td>
+  </tr>
+  <tr>
+    <td>112</td>
+    <td>Darksteel Ingot</td>
+    <td>Indestructible<br>{T}: Add one mana of any color.</td>
+    <td>Indestrutível<br>{T}: Adicione um mana de qualquer cor.</td>
+  </tr>
+  <tr>
+    <td>113</td>
+    <td>Darksteel Pendant</td>
+    <td>Indestructible (Effects that say "destroy" don't destroy this artifact.)<br>{1}, {T}: Scry 1. (Look at the top card of your library. You may put that card on the bottom of your library.)</td>
+    <td>Indestrutível (Efeitos que dizem “destruir” não destroem este artefato.)<br>{1}, {T}: Vidência 1. (Olhe o card do topo do seu grimório. Você pode colocar esse card no fundo do seu grimório.)</td>
+  </tr>
+  <tr>
+    <td>114</td>
+    <td>Darksteel Reactor</td>
+    <td>Indestructible (Effects that say "destroy" don't destroy this artifact.)<br>At the beginning of your upkeep, you may put a charge counter on Darksteel Reactor.<br>When Darksteel Reactor has twenty or more charge counters on it, you win the game.</td>
+    <td>Indestrutível (Efeitos que dizem “destruir” não destroem este artefato.)<br>No início de sua manutenção, você pode colocar um marcador de carga no Darksteel Reactor.<br>Quando Darksteel Reactor tiver vinte ou mais contadores de carga, você ganha o jogo.</td>
+  </tr>
+  <tr>
+    <td>115</td>
+    <td>Death-Mask Duplicant</td>
+    <td>Imprint — {1}: Exile target creature card from your graveyard.<br>As long as a card exiled with Death-Mask Duplicant has flying, Death-Mask Duplicant has flying. The same is true for fear, first strike, double strike, haste, landwalk, protection, and trample.</td>
+    <td>Estampar — {1}: Exile o card de criatura alvo de seu cemitério.<br>Enquanto um card exilado com Death-Mask Duplicant tiver voar, Death-Mask Duplicant terá voar. O mesmo se aplica a medo, iniciativa, ataque duplo, aceleração, travessia terrestre, proteção e atropelamento.</td>
+  </tr>
+  <tr>
+    <td>116</td>
+    <td>Demon's Horn</td>
+    <td>Whenever a player casts a black spell, you may gain 1 life.</td>
+    <td>Sempre que um jogador conjura uma mágica preta, você pode ganhar 1 ponto de vida.</td>
+  </tr>
+  <tr>
+    <td>117</td>
+    <td>Dragon's Claw</td>
+    <td>Whenever a player casts a red spell, you may gain 1 life.</td>
+    <td>Sempre que um jogador lançar um feitiço vermelho, você poderá ganhar 1 ponto de vida.</td>
+  </tr>
+  <tr>
+    <td>118</td>
+    <td>Drill-Skimmer</td>
+    <td>Flying<br>Drill-Skimmer has shroud as long as you control another artifact creature. (It can't be the target of spells or abilities.)</td>
+    <td>Vôo<br>Drill-Skimmer terá mortalha enquanto você controlar outra criatura artefato. (Não pode ser alvo de mágicas ou habilidades.)</td>
+  </tr>
+  <tr>
+    <td>119</td>
+    <td>Dross Golem</td>
+    <td>Affinity for Swamps (This spell costs {1} less to cast for each Swamp you control.)<br>Fear (This creature can't be blocked except by artifact creatures and/or black creatures.)</td>
+    <td>Afinidade com Pântanos (Este feitiço custa {1} a menos para ser lançado para cada Pântano que você controla.)<br>Medo (Esta criatura só pode ser bloqueada por criaturas artefato e/ou criaturas pretas.)</td>
+  </tr>
+  <tr>
+    <td>120</td>
+    <td>Eater of Days</td>
+    <td>Flying, trample<br>When Eater of Days enters the battlefield, you skip your next two turns.</td>
+    <td>Voando, atropelar<br>Quando Eater of Days entra no campo de batalha, você pula seus próximos dois turnos.</td>
+  </tr>
+  <tr>
+    <td>121</td>
+    <td>Gemini Engine</td>
+    <td>Whenever Gemini Engine attacks, create a colorless Construct artifact creature token named Twin that's attacking. Its power is equal to Gemini Engine's power and its toughness is equal to Gemini Engine's toughness. Sacrifice the token at end of combat.</td>
+    <td>Toda vez que Gemini Engine atacar, crie uma ficha de criatura artefato incolor do tipo Constructo chamada Gêmeo que esteja atacando. Seu poder é igual ao poder do Gemini Engine e sua resistência é igual à resistência do Gemini Engine. Sacrifique a ficha no final do combate.</td>
+  </tr>
+  <tr>
+    <td>122</td>
+    <td>Genesis Chamber</td>
+    <td>Whenever a nontoken creature enters the battlefield, if Genesis Chamber is untapped, that creature's controller creates a 1/1 colorless Myr artifact creature token.</td>
+    <td>Toda vez que uma criatura que não seja uma ficha entra no campo de batalha, se Câmara de Gênesis estiver desvirada, o controlador daquela criatura cria uma ficha de criatura artefato incolor 1/1 do tipo Myr.</td>
+  </tr>
+  <tr>
+    <td>123</td>
+    <td>Geth's Grimoire</td>
+    <td>Whenever an opponent discards a card, you may draw a card.</td>
+    <td>Sempre que um oponente descarta uma carta, você pode comprar uma carta.</td>
+  </tr>
+  <tr>
+    <td>124</td>
+    <td>Heartseeker</td>
+    <td>Equipped creature gets +2/+1 and has "{T}, Unattach Heartseeker: Destroy target creature."<br>Equip {5} ({5}: Attach to target creature you control. Equip only as a sorcery. This card enters the battlefield unattached and stays on the battlefield if the creature leaves.)</td>
+    <td>A criatura equipada recebe +2/+1 e tem "{T}, Unattach Heartseeker: Destrua a criatura alvo."<br>Equipar {5} ({5}: Anexe à criatura alvo que você controla. Equipe apenas como um feitiço. Este card entra no campo de batalha desanexado e permanece no campo de batalha se a criatura sair.)</td>
+  </tr>
+  <tr>
+    <td>125</td>
+    <td>Juggernaut</td>
+    <td>Juggernaut attacks each combat if able.<br>Juggernaut can't be blocked by Walls.</td>
+    <td>Juggernaut ataca a cada combate se estiver apto.<br>Juggernaut não pode ser bloqueado por Paredes.</td>
+  </tr>
+  <tr>
+    <td>126</td>
+    <td>Kraken's Eye</td>
+    <td>Whenever a player casts a blue spell, you may gain 1 life.</td>
+    <td>Sempre que um jogador conjurar uma mágica azul, você poderá ganhar 1 ponto de vida.</td>
+  </tr>
+  <tr>
+    <td>127</td>
+    <td>Leonin Bola</td>
+    <td>Equipped creature has "{T}, Unattach Leonin Bola: Tap target creature."<br>Equip {1} ({1}: Attach to target creature you control. Equip only as a sorcery. This card enters the battlefield unattached and stays on the battlefield if the creature leaves.)</td>
+    <td>A criatura equipada tem "{T}, Solte Leonin Bola: Vire a criatura alvo."<br>Equipar {1} ({1}: Anexe à criatura alvo que você controla. Equipe apenas como um feitiço. Este card entra no campo de batalha desanexado e permanece no campo de batalha se a criatura sair.)</td>
+  </tr>
+  <tr>
+    <td>128</td>
+    <td>Lich's Tomb</td>
+    <td>You don't lose the game for having 0 or less life.<br>Whenever you lose life, sacrifice a permanent for each 1 life you lost. (Damage causes loss of life.)</td>
+    <td>Você não perde o jogo por ter 0 ou menos pontos de vida.<br>Sempre que você perder vida, sacrifique uma permanente para cada 1 vida perdida. (Danos causam perda de vidas.)</td>
+  </tr>
+  <tr>
+    <td>129</td>
+    <td>Memnarch</td>
+    <td>{1}{U}{U}: Target permanent becomes an artifact in addition to its other types. (This effect lasts indefinitely.)<br>{3}{U}: Gain control of target artifact. (This effect lasts indefinitely.)</td>
+    <td>{1}{U}{U}: A permanente alvo se torna um artefato além de seus outros tipos. (Este efeito dura indefinidamente.)<br>{3}{U}: Ganhe o controle do artefato alvo. (Este efeito dura indefinidamente.)</td>
+  </tr>
+  <tr>
+    <td>130</td>
+    <td>Mycosynth Lattice</td>
+    <td>All permanents are artifacts in addition to their other types.<br>All cards that aren't on the battlefield, spells, and permanents are colorless.<br>Players may spend mana as though it were mana of any color.</td>
+    <td>Todas as permanentes são artefatos além de seus outros tipos.<br>Todos os cards que não estão no campo de batalha, mágicas e permanentes são incolores.<br>Os jogadores podem gastar mana como se fosse mana de qualquer cor.</td>
+  </tr>
+  <tr>
+    <td>131</td>
+    <td>Myr Landshaper</td>
+    <td>{T}: Target land becomes an artifact in addition to its other types until end of turn.</td>
+    <td>{T}: O terreno alvo se torna um artefato além de seus outros tipos até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>132</td>
+    <td>Myr Matrix</td>
+    <td>Indestructible (Effects that say "destroy" don't destroy this artifact.)<br>Myr creatures get +1/+1.<br>{5}: Create a 1/1 colorless Myr artifact creature token.</td>
+    <td>Indestrutível (Efeitos que dizem “destruir” não destroem este artefato.)<br>Minhas criaturas recebem +1/+1.<br>{5}: Crie uma ficha de criatura artefato incolor 1/1 do tipo Myr.</td>
+  </tr>
+  <tr>
+    <td>133</td>
+    <td>Myr Moonvessel</td>
+    <td>When Myr Moonvessel dies, add {C}.</td>
+    <td>Quando Myr Moonvessel morrer, adicione {C}.</td>
+  </tr>
+  <tr>
+    <td>134</td>
+    <td>Nemesis Mask</td>
+    <td>All creatures able to block equipped creature do so.<br>Equip {3} ({3}: Attach to target creature you control. Equip only as a sorcery. This card enters the battlefield unattached and stays on the battlefield if the creature leaves.)</td>
+    <td>Todas as criaturas capazes de bloquear criaturas equipadas o fazem.<br>Equipar {3} ({3}: Anexe à criatura alvo que você controla. Equipe apenas como um feitiço. Este card entra no campo de batalha desanexado e permanece no campo de batalha se a criatura sair.)</td>
+  </tr>
+  <tr>
+    <td>135</td>
+    <td>Oxidda Golem</td>
+    <td>Affinity for Mountains (This spell costs {1} less to cast for each Mountain you control.)<br>Haste</td>
+    <td>Afinidade com Montanhas (Este feitiço custa {1} a menos para ser lançado para cada Montanha que você controla.)<br>Pressa</td>
+  </tr>
+  <tr>
+    <td>136</td>
+    <td>Panoptic Mirror</td>
+    <td>Imprint — {X}, {T}: You may exile an instant or sorcery card with mana value X from your hand.<br>At the beginning of your upkeep, you may copy a card exiled with Panoptic Mirror. If you do, you may cast the copy without paying its mana cost.</td>
+    <td>Imprint — {X}, {T}: Você pode exilar um card de mágica instantânea ou de feitiço com custo de mana X de sua mão.<br>No início de sua manutenção, você pode copiar um card exilado com Espelho Panóptico. Se fizer isso, você poderá conjurar a cópia sem pagar seu custo de mana.</td>
+  </tr>
+  <tr>
+    <td>137</td>
+    <td>Razor Golem</td>
+    <td>Affinity for Plains (This spell costs {1} less to cast for each Plains you control.)<br>Vigilance</td>
+    <td>Afinidade com Planícies (Este feitiço custa {1} a menos para ser lançado para cada Planície que você controla.)<br>Vigilância</td>
+  </tr>
+  <tr>
+    <td>138</td>
+    <td>Serum Powder</td>
+    <td>{T}: Add {C}.<br>Any time you could mulligan and Serum Powder is in your hand, you may exile all the cards from your hand, then draw that many cards. (You can do this in addition to taking mulligans.)</td>
+    <td>{T}: Adicione {C}.<br>Sempre que você puder fazer mulligan e o Pó de Soro estiver em sua mão, você poderá exilar todos os cards de sua mão e, em seguida, comprar aquela quantidade de cards. (Você pode fazer isso além de fazer mulligans.)</td>
+  </tr>
+  <tr>
+    <td>139</td>
+    <td>Shield of Kaldra</td>
+    <td>Equipment named Sword of Kaldra, Shield of Kaldra, and Helm of Kaldra have indestructible.<br>Equipped creature has indestructible. (Damage and effects that say "destroy" don't destroy it.)<br>Equip {4}</td>
+    <td>Equipamentos chamados Espada de Kaldra, Escudo de Kaldra e Elmo de Kaldra são indestrutíveis.<br>A criatura equipada tem indestrutível. (Dano e efeitos que dizem “destruir” não o destroem.)<br>Equipar {4}</td>
+  </tr>
+  <tr>
+    <td>140</td>
+    <td>Skullclamp</td>
+    <td>Equipped creature gets +1/-1.<br>Whenever equipped creature dies, draw two cards.<br>Equip {1}</td>
+    <td>A criatura equipada recebe +1/-1.<br>Toda vez que a criatura equipada morrer, compre dois cards.<br>Equipar {1}</td>
+  </tr>
+  <tr>
+    <td>141</td>
+    <td>Spawning Pit</td>
+    <td>Sacrifice a creature: Put a charge counter on Spawning Pit.<br>{1}, Remove two charge counters from Spawning Pit: Create a 2/2 colorless Spawn artifact creature token.</td>
+    <td>Sacrifique uma criatura: Coloque um marcador de carga em Spawning Pit.<br>{1}, Remova dois marcadores de carga de Poço de Geração: Crie uma ficha de criatura artefato incolor 2/2 do tipo Spawn.</td>
+  </tr>
+  <tr>
+    <td>142</td>
+    <td>Specter's Shroud</td>
+    <td>Equipped creature gets +1/+0.<br>Whenever equipped creature deals combat damage to a player, that player discards a card.<br>Equip {1} ({1}: Attach to target creature you control. Equip only as a sorcery. This card enters the battlefield unattached and stays on the battlefield if the creature leaves.)</td>
+    <td>A criatura equipada recebe +1/+0.<br>Toda vez que a criatura equipada causa dano de combate a um jogador, aquele jogador descarta um card.<br>Equipar {1} ({1}: Anexe à criatura alvo que você controla. Equipe apenas como um feitiço. Este card entra no campo de batalha desanexado e permanece no campo de batalha se a criatura sair.)</td>
+  </tr>
+  <tr>
+    <td>143</td>
+    <td>Spellbinder</td>
+    <td>Imprint — When Spellbinder enters the battlefield, you may exile an instant card from your hand.<br>Whenever equipped creature deals combat damage to a player, you may copy the exiled card. If you do, you may cast the copy without paying its mana cost.<br>Equip {4}</td>
+    <td>Imprint – Quando Spellbinder entra no campo de batalha, você pode exilar um card de mágica instantânea de sua mão.<br>Sempre que a criatura equipada causar dano de combate a um jogador, você poderá copiar o card exilado. Se fizer isso, você poderá conjurar a cópia sem pagar seu custo de mana.<br>Equipar {4}</td>
+  </tr>
+  <tr>
+    <td>144</td>
+    <td>Spincrusher</td>
+    <td>Whenever Spincrusher blocks, put a +1/+1 counter on it.<br>Remove a +1/+1 counter from Spincrusher: Spincrusher can't be blocked this turn.</td>
+    <td>Sempre que Spincrusher bloquear, coloque um marcador +1/+1 nele.<br>Remova um marcador +1/+1 de Spincrusher: Spincrusher não pode ser bloqueado neste turno.</td>
+  </tr>
+  <tr>
+    <td>145</td>
+    <td>Spire Golem</td>
+    <td>Affinity for Islands (This spell costs {1} less to cast for each Island you control.)<br>Flying</td>
+    <td>Afinidade com Ilhas (Este feitiço custa {1} a menos para ser lançado para cada Ilha que você controla.)<br>Vôo</td>
+  </tr>
+  <tr>
+    <td>146</td>
+    <td>Sundering Titan</td>
+    <td>When Sundering Titan enters or leaves the battlefield, choose a land of each basic land type, then destroy those lands.</td>
+    <td>Quando Sundering Titan entrar ou sair do campo de batalha, escolha um terreno de cada tipo de terreno básico e, em seguida, destrua esses terrenos.</td>
+  </tr>
+  <tr>
+    <td>147</td>
+    <td>Surestrike Trident</td>
+    <td>Equipped creature has first strike and "{T}, Unattach Surestrike Trident: This creature deals damage equal to its power to target player or planeswalker."<br>Equip {4} ({4}: Attach to target creature you control. Equip only as a sorcery. This card enters the battlefield unattached and stays on the battlefield if the creature leaves.)</td>
+    <td>A criatura equipada tem iniciativa e "{T}, Desattach Surestrike Trident: Esta criatura causa dano igual ao seu poder ao jogador ou planeswalker alvo."<br>Equipar {4} ({4}: Anexe à criatura alvo que você controla. Equipe apenas como um feitiço. Este card entra no campo de batalha desanexado e permanece no campo de batalha se a criatura sair.)</td>
+  </tr>
+  <tr>
+    <td>148</td>
+    <td>Sword of Fire and Ice</td>
+    <td>Equipped creature gets +2/+2 and has protection from red and from blue.<br>Whenever equipped creature deals combat damage to a player, Sword of Fire and Ice deals 2 damage to any target and you draw a card.<br>Equip {2}</td>
+    <td>A criatura equipada recebe +2/+2 e tem proteção contra vermelho e azul.<br>Toda vez que a criatura equipada causa dano de combate a um jogador, Espada de Fogo e Gelo causa 2 pontos de dano a qualquer alvo e você compra um card.<br>Equipar {2}</td>
+  </tr>
+  <tr>
+    <td>149</td>
+    <td>Sword of Light and Shadow</td>
+    <td>Equipped creature gets +2/+2 and has protection from white and from black.<br>Whenever equipped creature deals combat damage to a player, you gain 3 life and you may return up to one target creature card from your graveyard to your hand.<br>Equip {2}</td>
+    <td>A criatura equipada recebe +2/+2 e tem proteção contra o branco e o preto.<br>Toda vez que a criatura equipada causar dano de combate a um jogador, você ganha 3 pontos de vida e pode devolver até um card de criatura alvo de seu cemitério para sua mão.<br>Equipar {2}</td>
+  </tr>
+  <tr>
+    <td>150</td>
+    <td>Talon of Pain</td>
+    <td>Whenever a source you control other than Talon of Pain deals damage to an opponent, put a charge counter on Talon of Pain.<br>{X}, {T}, Remove X charge counters from Talon of Pain: It deals X damage to any target.</td>
+    <td>Sempre que uma fonte que você controla que não seja Talon of Pain causar dano a um oponente, coloque um marcador de carga em Talon of Pain.<br>{X}, {T}, Remova X marcadores de carga de Talon of Pain: Ele causa X pontos de dano a qualquer alvo.</td>
+  </tr>
+  <tr>
+    <td>151</td>
+    <td>Tangle Golem</td>
+    <td>Affinity for Forests (This spell costs {1} less to cast for each Forest you control.)</td>
+    <td>Afinidade com Florestas (Este feitiço custa {1} a menos para ser lançado para cada Floresta que você controla.)</td>
+  </tr>
+  <tr>
+    <td>152</td>
+    <td>Thought Dissector</td>
+    <td>{X}, {T}: Target opponent reveals cards from the top of their library until an artifact card or X cards are revealed, whichever comes first. If an artifact card is revealed this way, put it onto the battlefield under your control and sacrifice Thought Dissector. Put the rest of the revealed cards into that player's graveyard.</td>
+    <td>{X}, {T}: O oponente alvo revela cards do topo do próprio grimório até que um card de artefato ou X cards sejam revelados, o que ocorrer primeiro. Se uma carta de artefato for revelada desta forma, coloque-a no campo de batalha sob seu controle e sacrifique Dissecador de Pensamentos. Coloque o restante dos cards revelados no cemitério daquele jogador.</td>
+  </tr>
+  <tr>
+    <td>153</td>
+    <td>Thunderstaff</td>
+    <td>As long as Thunderstaff is untapped, if a creature would deal combat damage to you, prevent 1 of that damage.<br>{2}, {T}: Attacking creatures get +1/+0 until end of turn.</td>
+    <td>Enquanto Cajado do Trovão estiver desvirado, se uma criatura fosse causar dano de combate a você, previna 1 desse dano.<br>{2}, {T}: As criaturas atacantes recebem +1/+0 até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>154</td>
+    <td>Trinisphere</td>
+    <td>As long as Trinisphere is untapped, each spell that would cost less than three mana to cast costs three mana to cast. (Additional mana in the cost may be paid with any color of mana or colorless mana. For example, a spell that would cost {1}{B} to cast costs {2}{B} to cast instead.)</td>
+    <td>Enquanto Trinisphere estiver desvirado, cada mágica que custaria menos de três de mana para ser conjurada custará três de mana para ser conjurada. (O mana adicional no custo pode ser pago com qualquer cor de mana ou com mana incolor. Por exemplo, uma mágica que custaria {1}{B} para ser lançada custa {2}{B} para ser lançada.)</td>
+  </tr>
+  <tr>
+    <td>155</td>
+    <td>Ur-Golem's Eye</td>
+    <td>{T}: Add {C}{C}.</td>
+    <td>{T}: Adicione {C}{C}.</td>
+  </tr>
+  <tr>
+    <td>156</td>
+    <td>Voltaic Construct</td>
+    <td>{2}: Untap target artifact creature.</td>
+    <td>{2}: Desvire a criatura artefato alvo.</td>
+  </tr>
+  <tr>
+    <td>157</td>
+    <td>Vulshok Morningstar</td>
+    <td>Equipped creature gets +2/+2.<br>Equip {2} ({2}: Attach to target creature you control. Equip only as a sorcery.)</td>
+    <td>A criatura equipada recebe +2/+2.<br>Equipar {2} ({2}: Anexe à criatura alvo que você controla. Equipe somente como um feitiço.)</td>
+  </tr>
+  <tr>
+    <td>158</td>
+    <td>Wand of the Elements</td>
+    <td>{T}, Sacrifice an Island: Create a 2/2 blue Elemental creature token with flying.<br>{T}, Sacrifice a Mountain: Create a 3/3 red Elemental creature token.</td>
+    <td>{T}, Sacrifique uma Ilha: Crie uma ficha de criatura azul 2/2 do tipo Elemental com voar.<br>{T}, Sacrifique uma Montanha: Crie uma ficha de criatura vermelha 3/3 do tipo Elemental.</td>
+  </tr>
+  <tr>
+    <td>159</td>
+    <td>Well of Lost Dreams</td>
+    <td>Whenever you gain life, you may pay {X}, where X is less than or equal to the amount of life you gained. If you do, draw X cards.</td>
+    <td>Sempre que ganhar pontos de vida, você poderá pagar {X}, sendo X menor ou igual à quantidade de pontos de vida que você ganhou. Se fizer isso, compre X cartas.</td>
+  </tr>
+  <tr>
+    <td>160</td>
+    <td>Whispersilk Cloak</td>
+    <td>Equipped creature can't be blocked and has shroud. (It can't be the target of spells or abilities.)<br>Equip {2}</td>
+    <td>A criatura equipada não pode ser bloqueada e possui mortalha. (Não pode ser alvo de mágicas ou habilidades.)<br>Equipar {2}</td>
+  </tr>
+  <tr>
+    <td>161</td>
+    <td>Wirefly Hive</td>
+    <td>{3}, {T}: Flip a coin. If you win the flip, create a 2/2 colorless Insect artifact creature token with flying named Wirefly. If you lose the flip, destroy all permanents named Wirefly.</td>
+    <td>{3}, {T}: Jogue uma moeda. Se você vencer o turno, crie uma ficha de criatura artefato incolor 2/2 do tipo Inseto com voar chamada Wirefly. Se você perder, destrua todas as permanentes chamadas Wirefly.</td>
+  </tr>
+  <tr>
+    <td>162</td>
+    <td>Wurm's Tooth</td>
+    <td>Whenever a player casts a green spell, you may gain 1 life.</td>
+    <td>Sempre que um jogador lançar uma mágica verde, você poderá ganhar 1 ponto de vida.</td>
+  </tr>
+  <tr>
+    <td>163</td>
+    <td>Blinkmoth Nexus</td>
+    <td>{T}: Add {C}.<br>{1}: Blinkmoth Nexus becomes a 1/1 Blinkmoth artifact creature with flying until end of turn. It's still a land.<br>{1}, {T}: Target Blinkmoth creature gets +1/+1 until end of turn.</td>
+    <td>{T}: Adicione {C}.<br>{1}: Blinkmoth Nexus torna-se uma criatura artefato 1/1 Blinkmoth com voar até o final do turno. Ainda é uma terra.<br>{1}, {T}: A criatura alvo Blinkmoth recebe +1/+1 até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>164</td>
+    <td>Darksteel Citadel</td>
+    <td>Indestructible<br>{T}: Add {C}.</td>
+    <td>Indestrutível<br>{T}: Adicione {C}.</td>
+  </tr>
+  <tr>
+    <td>165</td>
+    <td>Mirrodin's Core</td>
+    <td>{T}: Add {C}.<br>{T}: Put a charge counter on Mirrodin's Core.<br>{T}, Remove a charge counter from Mirrodin's Core: Add one mana of any color.</td>
+    <td>{T}: Adicione {C}.<br>{T}: Coloque um marcador de carga no Núcleo de Mirrodin.<br>{T}, Remova um marcador de carga do Núcleo de Mirrodin: Adicione um mana de qualquer cor.</td>
+  </tr>
+</table>
+    </body>
+</html>
