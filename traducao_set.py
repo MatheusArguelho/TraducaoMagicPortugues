@@ -118,10 +118,10 @@ def func_traducao():
             html_table=html_table
         )
 
-        with open("traducao_set.html", "w", encoding="utf-8") as html_file:
+        with open(f"{set_code}.html", "w", encoding="utf-8") as html_file:
             html_file.write(html_content)
 
-        webbrowser.open("traducao_set.html")
+        webbrowser.open(f"{set_code}.html")
 
     except Exception as e:
         print(e)
