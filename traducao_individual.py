@@ -110,28 +110,27 @@ def process_card(original_text):
     nome = descapitalize_and_replace(original_text)
     data = fetch_card_data(nome)
 
-    if data is not None:
-        normal_image_url, normal_image_url2 = extract_image_urls(data)
-        oracle_texto = extract_oracle_text(data)
-        flavor_original = extract_flavor_text(data)
-
-        print("Translated Oracle before replacement:", oracle_texto)
-
-        for term, translation in translation_dict.items():
-            print("Replacing:", term, "with", translation)
-            oracle_texto = oracle_texto.replace(term, translation)
-
-        translated_oracle = translate_text(oracle_texto)
-        translated_flavor = translate_text(flavor_original)
-
-        oracle_texto = replace_newline_with_br(oracle_texto)
-        translated_oracle = replace_newline_with_br(translated_oracle)
-
-
-        generate_html(original_text, normal_image_url, normal_image_url2, oracle_texto, flavor_original,
-                      translated_oracle, translated_flavor)
-    else:
+    if data is None:
         print("Nenhum dado recuperado pela API. Verifique o nome da carta e tente novamente.")
+        return
+
+    normal_image_url, normal_image_url2 = extract_image_urls(data)
+    oracle_texto = extract_oracle_text(data)
+    flavor_original = extract_flavor_text(data)
+
+    translated_oracle = translate_and_format_text(oracle_texto)
+    translated_flavor = translate_and_format_text(flavor_original)
+
+    generate_html(original_text, normal_image_url, normal_image_url2, oracle_texto, flavor_original,
+                  translated_oracle, translated_flavor)
+
+
+def translate_and_format_text(text):
+    for term, translation in translation_dict.items():
+        text = text.replace(term, translation)
+    text = translate_text(text)
+    return replace_newline_with_br(text)
+
 
 
 def main():
