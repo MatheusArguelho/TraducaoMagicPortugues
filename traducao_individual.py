@@ -1,6 +1,7 @@
 import webbrowser
 import requests
 from deep_translator import GoogleTranslator
+from dicionario import translation_dict
 
 
 def download_json(url):
@@ -114,11 +115,18 @@ def process_card(original_text):
         oracle_texto = extract_oracle_text(data)
         flavor_original = extract_flavor_text(data)
 
+        print("Translated Oracle before replacement:", oracle_texto)
+
+        for term, translation in translation_dict.items():
+            print("Replacing:", term, "with", translation)
+            oracle_texto = oracle_texto.replace(term, translation)
+
         translated_oracle = translate_text(oracle_texto)
         translated_flavor = translate_text(flavor_original)
 
         oracle_texto = replace_newline_with_br(oracle_texto)
         translated_oracle = replace_newline_with_br(translated_oracle)
+
 
         generate_html(original_text, normal_image_url, normal_image_url2, oracle_texto, flavor_original,
                       translated_oracle, translated_flavor)
