@@ -3,3 +3,5 @@ translation_dict = {
     "escape": "escapatória",
     "Escape": "Escapatória",
 }
+
+print('a')
