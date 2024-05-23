@@ -33,7 +33,6 @@ def replace_newline_with_br(text):
 
 def fetch_card_data(nome):
     url = f"https://api.scryfall.com/cards/named?fuzzy={nome}"
-    print(url)
     return download_json(url)
 
 
@@ -89,6 +88,11 @@ def generate_html(original_text, normal_image_url, normal_image_url2, oracle_tex
     with open("pagina_individual.html", "r", encoding="utf-8") as file:
         html_content = file.read()
 
+    oracle_texto = replace_newline_with_br(oracle_texto)
+    flavor_original = replace_newline_with_br(flavor_original)
+    translated = replace_newline_with_br(translated)
+    flavor_translated = replace_newline_with_br(flavor_translated)
+
     html_content = html_content.format(
         original_text=original_text,
         normal_image_url=normal_image_url,
@@ -130,7 +134,6 @@ def translate_and_format_text(text):
         text = text.replace(term, translation)
     text = translate_text(text)
     return replace_newline_with_br(text)
-
 
 
 def main():
