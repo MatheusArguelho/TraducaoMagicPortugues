@@ -5,5 +5,8 @@ translation_dict = {
     "Escape": "Escapatória",
     "mills": "tritura",
     "Mills": "Tritura",
-
+    "Flying": "Voar",
+    "flying": "voar",
+    "Cast": "Conjurar",
+    "cast": "conjurar"
 }
