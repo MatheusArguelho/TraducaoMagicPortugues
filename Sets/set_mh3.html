@@ -1,0 +1,1488 @@
+<html>
+<head>
+        <meta charset="UTF-8">
+        <title>mh3</title>
+        <style>
+            .styled-table {
+                width: 100%;
+                border-collapse: collapse;
+                border: 1px solid #ddd;
+                font-family: Arial, sans-serif;
+            }
+            .styled-table th, .styled-table td {
+                padding: 8px;
+                text-align: left;
+                border-bottom: 1px solid #ddd;
+            }
+            .styled-table tr:nth-child(even) {
+                background-color: #f2f2f2;
+            }
+            .styled-table th {
+                background-color: #4CAF50;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+    <table class="styled-table">
+  <tr>
+    <td>numero</td>
+    <td>nome</td>
+    <td>texto_ingles</td>
+    <td>traduzido</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Breaker of Creation</td>
+    <td>When you cast this spell, you gain 1 life for each colorless permanent you control.<br>Hexproof from each color<br>Annihilator 2 (Whenever this creature attacks, defending player sacrifices two permanents.)</td>
+    <td>Ao conjurar esta mágica, você ganha 1 ponto de vida para cada permanente incolor que você controla.<br>À prova de magia de cada cor<br>Aniquilador 2 (Toda vez que esta criatura ataca, o jogador defensor sacrifica duas permanentes.)</td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>Devourer of Destiny</td>
+    <td>You may reveal this card from your opening hand. If you do, at the beginning of your first upkeep, look at the top four cards of your library. You may put one of those cards back on top of your library. Exile the rest.<br>When you cast this spell, exile target permanent that's one or more colors.</td>
+    <td>Você pode revelar esta carta da sua mão inicial. Se fizer isso, no início de sua primeira manutenção, olhe os quatro cards do topo de seu grimório. Você pode colocar um desses cards de volta no topo do seu grimório. Exile o resto.<br>Quando você conjurar esta mágica, exile a permanente alvo que tenha uma ou mais cores.</td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>Echoes of Eternity</td>
+    <td>If a triggered ability of a colorless spell you control or another colorless permanent you control triggers, that ability triggers an additional time.<br>Whenever you cast a colorless spell, copy it. You may choose new targets for the copy. (A copy of a permanent spell becomes a token.)</td>
+    <td>Se uma habilidade desencadeada de uma mágica incolor que você controla ou outra permanente incolor que você controla for desencadeada, essa habilidade será desencadeada uma vez adicional.<br>Sempre que você conjurar um feitiço incolor, copie-o. Você pode escolher novos alvos para a cópia. (Uma cópia de uma mágica permanente torna-se uma ficha.)</td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td>Eldrazi Ravager</td>
+    <td>Annihilator 1 (Whenever this creature attacks, defending player sacrifices a permanent.)<br>Sacrifice two Eldrazi: Return Eldrazi Ravager from your graveyard to your hand.<br>Cycling {2} ({2}, Discard this card: Draw a card.)</td>
+    <td>Aniquilador 1 (Toda vez que esta criatura ataca, o jogador defensor sacrifica uma permanente.)<br>Sacrifique dois Eldrazi: Devolva Eldrazi Devastador de seu cemitério para sua mão.<br>Reciclar {2} ({2}, Descarte este card: Compre um card.)</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>Emrakul, the World Anew</td>
+    <td>When you cast this spell, gain control of all creatures target player controls.<br>Flying, protection from spells and from permanents that were cast this turn<br>When Emrakul, the World Anew leaves the battlefield, sacrifice all creatures you control.<br>Madness—Pay six {C}.</td>
+    <td>Ao conjurar esta mágica, você ganha o controle de todas as criaturas que o jogador alvo controla.<br>Voar, proteção contra mágicas e permanentes que foram conjuradas neste turno<br>Quando Emrakul, the World Anew sair do campo de batalha, sacrifique todas as criaturas que você controla.<br>Loucura – Pague seis {C}.</td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td>Herigast, Erupting Nullkite</td>
+    <td>Emerge {6}{R}{R} (You may cast this spell by sacrificing a creature and paying the emerge cost reduced by that creature's mana value.)<br>When you cast this spell, you may exile your hand. If you do, draw three cards.<br>Flying<br>Each creature spell you cast has emerge. The emerge cost is equal to its mana cost.</td>
+    <td>Emergir {6}{R}{R} (Você pode conjurar esta mágica sacrificando uma criatura e pagando o custo de emergir reduzido pelo valor de mana daquela criatura.)<br>Ao conjurar esta magia, você pode exilar sua mão. Se fizer isso, compre três cartas.<br>Voar<br>Cada feitiço de criatura que você conjurou emerge. O custo de emergência é igual ao seu custo de mana.</td>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td>It That Heralds the End</td>
+    <td>Colorless spells you cast with mana value 7 or greater cost {1} less to cast.<br>Other colorless creatures you control get +1/+1.</td>
+    <td>As mágicas incolores que você conjura com custo de mana igual ou superior a 7 custam {1} a menos para serem conjuradas.<br>As outras criaturas incolores que você controla recebem +1/+1.</td>
+  </tr>
+  <tr>
+    <td>10</td>
+    <td>Kozilek, the Broken Reality</td>
+    <td>When you cast this spell, up to two target players each manifest two cards from their hands. For each card manifested this way, you draw a card. (To manifest a card, put it onto the battlefield face down as a 2/2 creature. Turn it face up any time for its mana cost if it's a creature card.)<br>Other colorless creatures you control get +3/+2.</td>
+    <td>Quando você conjura esta mágica, até dois jogadores alvo manifestam, cada um, duas cartas de suas mãos. Para cada carta manifestada desta forma, você compra uma carta. (Para manifestar um card, coloque-o no campo de batalha com a face voltada para baixo como uma criatura 2/2. Vire-o com a face para cima a qualquer momento pagando seu custo de mana se for um card de criatura.)<br>As outras criaturas incolores que você controla recebem +3/+2.</td>
+  </tr>
+  <tr>
+    <td>12</td>
+    <td>Null Elemental Blast</td>
+    <td>Choose one —<br>• Counter target multicolored spell.<br>• Destroy target multicolored permanent.</td>
+    <td>Escolha um -<br>• Anule o feitiço multicolorido alvo.<br>• Destrua a permanente alvo multicolorida.</td>
+  </tr>
+  <tr>
+    <td>13</td>
+    <td>Nulldrifter</td>
+    <td>When you cast this spell, draw two cards.<br>Flying<br>Annihilator 1 (Whenever this creature attacks, defending player sacrifices a permanent.)<br>Evoke {2}{U} (You may cast this spell for its evoke cost. If you do, it's sacrificed when it enters the battlefield.)</td>
+    <td>Ao conjurar esta mágica, compre duas cartas.<br>Voar<br>Aniquilador 1 (Toda vez que esta criatura ataca, o jogador defensor sacrifica uma permanente.)<br>Evocar {2}{U} (Você pode conjurar esta mágica pagando seu custo de evocar. Se isso acontecer, ela será sacrificada ao entrar no campo de batalha.)</td>
+  </tr>
+  <tr>
+    <td>15</td>
+    <td>Ulamog, the Defiler</td>
+    <td>When you cast this spell, target opponent exiles half their library, rounded up.<br>Ward—Sacrifice two permanents.<br>Ulamog, the Defiler enters the battlefield with a number of +1/+1 counters on it equal to the greatest mana value among cards in exile.<br>Ulamog has annihilator X, where X is the number of +1/+1 counters on it.</td>
+    <td>Quando você conjura esta mágica, o oponente alvo exila metade de seu grimório, arredondado para cima.<br>Ward – Sacrifique duas permanentes.<br>Ulamog, o Profanador, entra no campo de batalha com um número de marcadores +1/+1 igual ao maior valor de mana entre os cards no exílio.<br>Ulamog tem o aniquilador X, onde X é o número de marcadores +1/+1 nele.</td>
+  </tr>
+  <tr>
+    <td>20</td>
+    <td>Argent Dais</td>
+    <td>Argent Dais enters the battlefield with two oil counters on it.<br>Whenever two or more creatures attack, put an oil counter on Argent Dais.<br>{2}, {T}, Remove two oil counters from Argent Dais: Exile another target nonland permanent. Its controller draws two cards.</td>
+    <td>Argent Dais entra no campo de batalha com dois marcadores de óleo.<br>Sempre que duas ou mais criaturas atacarem, coloque um marcador de óleo em Argent Dais.<br>{2}, {T}, Remova dois marcadores de óleo de Argent Dais: Exile outra permanente alvo que não seja um terreno. Seu controlador compra duas cartas.</td>
+  </tr>
+  <tr>
+    <td>22</td>
+    <td>Dog Umbra</td>
+    <td>Flash<br>Enchant creature<br>As long as another player controls enchanted creature, it can't attack or block. Otherwise, Dog Umbra has umbra armor. (If enchanted creature would be destroyed, instead remove all damage from it and destroy this Aura.)</td>
+    <td>Clarão<br>Encantar criatura<br>Enquanto outro jogador controlar a criatura encantada, ela não poderá atacar ou bloquear. Caso contrário, Dog Umbra possui armadura umbra. (Se a criatura encantada for destruída, em vez disso, remova todo o dano dela e destrua esta Aura.)</td>
+  </tr>
+  <tr>
+    <td>24</td>
+    <td>Essence Reliquary</td>
+    <td>{T}: Return another target permanent you control and all Auras you control attached to it to their owner's hand. Activate only during your turn.</td>
+    <td>{T}: Devolva outra permanente alvo que você controla e todas as Auras que você controla anexadas a ela para a mão de seu dono. Ative apenas durante o seu turno.</td>
+  </tr>
+  <tr>
+    <td>26</td>
+    <td>Flare of Fortitude</td>
+    <td>You may sacrifice a nontoken white creature rather than pay this spell's mana cost.<br>Until end of turn, your life total can't change, and permanents you control gain hexproof and indestructible.</td>
+    <td>Você pode sacrificar uma criatura branca que não seja uma ficha em vez de pagar o custo de mana desta mágica.<br>Até o final do turno, seu total de pontos de vida não pode mudar e as permanentes que você controla ganham resistência à magia e indestrutíveis.</td>
+  </tr>
+  <tr>
+    <td>39</td>
+    <td>Pearl-Ear, Imperial Advisor</td>
+    <td>Lifelink<br>Enchantment spells you cast have affinity for Auras. (They cost {1} less to cast for each Aura you control.)<br>Whenever you cast an Aura spell that targets a modified permanent you control, draw a card. (Equipment, Auras you control, and counters are modifications.)</td>
+    <td>Vínculo com a vida<br>Os feitiços de encantamento que você conjura têm afinidade com Auras. (Eles custam {1} a menos para serem conjurados para cada Aura que você controla.)<br>Toda vez que você conjurar uma mágica de Aura que tenha como alvo uma permanente modificada que você controla, compre um card. (Equipamentos, Auras que você controla e contadores são modificações.)</td>
+  </tr>
+  <tr>
+    <td>40</td>
+    <td>Phelia, Exuberant Shepherd</td>
+    <td>Flash<br>Whenever Phelia, Exuberant Shepherd attacks, exile up to one other target nonland permanent. At the beginning of the next end step, return that card to the battlefield under its owner's control. If it entered under your control, put a +1/+1 counter on Phelia.</td>
+    <td>Clarão<br>Toda vez que Phelia, Pastor Exuberante, atacar, exile até uma outra permanente alvo que não seja um terreno. No início da próxima etapa final, devolva aquele card ao campo de batalha sob o controle de seu dono. Se ele entrou sob seu controle, coloque um marcador +1/+1 em Phelia.</td>
+  </tr>
+  <tr>
+    <td>45</td>
+    <td>Thraben Charm</td>
+    <td>Choose one —<br>• Thraben Charm deals damage equal to twice the number of creatures you control to target creature.<br>• Destroy target enchantment.<br>• Exile any number of target players' graveyards.</td>
+    <td>Escolha um -<br>• Thraben Charm causa dano igual ao dobro do número de criaturas que você controla à criatura alvo.<br>• Destrua o encantamento do alvo.<br>• Exile qualquer número de cemitérios dos jogadores alvo.</td>
+  </tr>
+  <tr>
+    <td>46</td>
+    <td>Voltstorm Angel</td>
+    <td>Flying<br>When Voltstorm Angel enters the battlefield, you get {E}{E}{E} (three energy counters).<br>At the beginning of combat on your turn, you may pay {E}{E}. When you do, choose one —<br>• Voltstorm Angel gains vigilance and lifelink until end of turn.<br>• Other creatures you control get +1/+1 until end of turn.</td>
+    <td>Voar<br>Quando Voltstorm Angel entra no campo de batalha, você recebe {E}{E}{E} (três marcadores de energia).<br>No início do combate no seu turno, você pode pagar {E}{E}. Ao fazer isso, escolha um -<br>• Anjo Voltstorm ganha vigilância e vínculo com a vida até o final do turno.<br>• As outras criaturas que você controla recebem +1/+1 até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>47</td>
+    <td>White Orchid Phantom</td>
+    <td>Flying, first strike<br>When White Orchid Phantom enters the battlefield, destroy up to one target nonbasic land. Its controller may search their library for a basic land card, put it onto the battlefield tapped, then shuffle.</td>
+    <td>Voar, primeiro ataque<br>Quando White Orchid Phantom entrar no campo de batalha, destrua até um terreno alvo não básico. Seu controlador pode procurar em seu grimório um card de terreno básico, colocá-lo no campo de batalha virado e depois embaralhar.</td>
+  </tr>
+  <tr>
+    <td>49</td>
+    <td>Wrath of the Skies</td>
+    <td>You get X {E} (energy counters), then you may pay any amount of {E}. Destroy each artifact, creature, and enchantment with mana value less than or equal to the amount of {E} paid this way.</td>
+    <td>Você recebe X {E} (contadores de energia) e pode pagar qualquer quantia de {E}. Destrua cada artefato, criatura e encantamento com valor de mana menor ou igual à quantidade de {E} pago desta forma.</td>
+  </tr>
+  <tr>
+    <td>53</td>
+    <td>Brainsurge</td>
+    <td>Draw four cards, then put two cards from your hand on top of your library in any order.</td>
+    <td>Compre quatro cards e depois coloque dois cards de sua mão no topo de seu grimório em qualquer ordem.</td>
+  </tr>
+  <tr>
+    <td>56</td>
+    <td>Corrupted Shapeshifter</td>
+    <td>Devoid (This card has no color.)<br>As Corrupted Shapeshifter enters the battlefield, it becomes your choice of a 3/3 creature with flying, a 2/5 creature with vigilance, or a 0/12 creature with defender.</td>
+    <td>Desprovido (Este card não tem cor.)<br>Conforme Corrupted Shapeshifter entra no campo de batalha, ele se torna, à sua escolha, uma criatura 3/3 com voar, uma criatura 2/5 com vigilância ou uma criatura 0/12 com defensor.</td>
+  </tr>
+  <tr>
+    <td>62</td>
+    <td>Flare of Denial</td>
+    <td>You may sacrifice a nontoken blue creature rather than pay this spell's mana cost.<br>Counter target spell.</td>
+    <td>Você pode sacrificar uma criatura azul que não seja uma ficha em vez de pagar o custo de mana desta mágica.<br>Anule a mágica alvo.</td>
+  </tr>
+  <tr>
+    <td>63</td>
+    <td>Harbinger of the Seas</td>
+    <td>Nonbasic lands are Islands.</td>
+    <td>As terras não básicas são ilhas.</td>
+  </tr>
+  <tr>
+    <td>65</td>
+    <td>Kozilek's Unsealing</td>
+    <td>Devoid (This card has no color.)<br>Whenever you cast a creature spell with mana value 4, 5, or 6, create two 0/1 colorless Eldrazi Spawn creature tokens with "Sacrifice this creature: Add {C}."<br>Whenever you cast a creature spell with mana value 7 or greater, draw three cards.</td>
+    <td>Desprovido (Este card não tem cor.)<br>Toda vez que você conjurar uma mágica de criatura com valor de mana 4, 5 ou 6, crie duas fichas de criatura incolor 0/1 do tipo Prole Eldrazi com "Sacrifique esta criatura: Adicione {C}."<br>Toda vez que você conjurar uma mágica de criatura com custo de mana igual ou superior a 7, compre três cards.</td>
+  </tr>
+  <tr>
+    <td>66</td>
+    <td>Petrifying Meddler</td>
+    <td>Devoid (This card has no color.)<br>When you cast this spell, tap up to one target creature and put a stun counter on it. (If a permanent with a stun counter would become untapped, remove one from it instead.)<br>Reach</td>
+    <td>Desprovido (Este card não tem cor.)<br>Ao conjurar esta mágica, vire até uma criatura alvo e coloque um marcador de atordoamento nela. (Se uma permanente com um marcador de atordoamento ficar desvirada, em vez disso, remova um dela.)<br>Alcançar</td>
+  </tr>
+  <tr>
+    <td>69</td>
+    <td>Serum Visionary</td>
+    <td>When Serum Visionary enters the battlefield, draw a card, then scry 2.</td>
+    <td>Quando Visionário do Soro entrar no campo de batalha, compre um card e depois use vidência 2.</td>
+  </tr>
+  <tr>
+    <td>70</td>
+    <td>Shadow of the Second Sun</td>
+    <td>Enchant player<br>At the beginning of enchanted player's postcombat main phase, there is an additional beginning phase after this phase. (The end step happens after the added untap, upkeep, and draw steps.)</td>
+    <td>Encantar jogador<br>No início da fase principal pós-combate do jogador encantado, há uma fase inicial adicional após esta fase. (A etapa final acontece após as etapas adicionadas de desvirar, manter e comprar.)</td>
+  </tr>
+  <tr>
+    <td>71</td>
+    <td>Strix Serenade</td>
+    <td>Counter target artifact, creature, or planeswalker spell. Its controller creates a 2/2 blue Bird creature token with flying.</td>
+    <td>Anula a mágica de artefato, criatura ou planeswalker alvo. Seu controlador cria uma ficha de criatura azul 2/2 do tipo Ave com voar.</td>
+  </tr>
+  <tr>
+    <td>72</td>
+    <td>Tamiyo Meets the Story Circle</td>
+    <td>(As this Saga enters and after your draw step, add a lore counter. Sacrifice after III.)<br>I — Until your next turn, whenever a creature attacks you or a planeswalker you control, it gets -2/-0 until end of turn.<br>II — Discard any number of cards, then investigate twice for each card discarded this way.<br>III — Shuffle up to three target cards from your graveyard into your library.</td>
+    <td>(Conforme esta Saga entra e após sua etapa de compra, adicione um marcador de conhecimento. Sacrifique após III.)<br>I — Até o seu próximo turno, sempre que uma criatura atacar você ou um planeswalker que você controla, ela receberá -2/-0 até o final do turno.<br>II — Descarte qualquer número de cartas e depois investigue duas vezes para cada carta descartada desta forma.<br>III — Embaralhe até três cards alvo de seu cemitério em seu grimório.</td>
+  </tr>
+  <tr>
+    <td>75</td>
+    <td>Tune the Narrative</td>
+    <td>Draw a card. You get {E}{E} (two energy counters).</td>
+    <td>Compre uma carta. Você recebe {E}{E} (dois marcadores de energia).</td>
+  </tr>
+  <tr>
+    <td>79</td>
+    <td>Volatile Stormdrake</td>
+    <td>Flying, hexproof from activated and triggered abilities<br>When Volatile Stormdrake enters the battlefield, exchange control of Volatile Stormdrake and target creature an opponent controls. If you do, you get {E}{E}{E}{E}, then sacrifice that creature unless you pay an amount of {E} equal to its mana value.</td>
+    <td>Voar, resistência à magia de habilidades ativadas e desencadeadas<br>Quando Stormdrake Volátil entrar no campo de batalha, troque o controle de Stormdrake Volátil e da criatura alvo que um oponente controla. Se fizer isso, você receberá {E}{E}{E}{E} e depois sacrificará aquela criatura, a menos que pague uma quantia de {E} igual ao seu valor de mana.</td>
+  </tr>
+  <tr>
+    <td>83</td>
+    <td>Chthonian Nightmare</td>
+    <td>When Chthonian Nightmare enters the battlefield, you get {E}{E}{E} (three energy counters).<br>Pay X {E}, Sacrifice a creature, Return Chthonian Nightmare to its owner's hand: Return target creature card with mana value X from your graveyard to the battlefield. Activate only as a sorcery.</td>
+    <td>Quando Pesadelo Chthoniano entra no campo de batalha, você recebe {E}{E}{E} (três marcadores de energia).<br>Pague X {E}, sacrifique uma criatura, devolva Pesadelo Chthoniano para a mão de seu dono: Devolva o card de criatura alvo com valor de mana X de seu cemitério para o campo de batalha. Ative apenas como um feitiço.</td>
+  </tr>
+  <tr>
+    <td>89</td>
+    <td>Drossclaw</td>
+    <td>Living weapon (When this Equipment enters the battlefield, create a 0/0 black Phyrexian Germ creature token, then attach this to it.)<br>Equipped creature gets +1/+1.<br>Whenever equipped creature attacks, each opponent loses 1 life.<br>Equip {2}</td>
+    <td>Arma viva (Quando este Equipamento entrar no campo de batalha, crie uma ficha de criatura preta 0/0 do tipo Germe Phyrexiano e anexe-a a ele.)<br>A criatura equipada recebe +1/+1.<br>Sempre que a criatura equipada ataca, cada oponente perde 1 ponto de vida.<br>Equipar {2}</td>
+  </tr>
+  <tr>
+    <td>90</td>
+    <td>Emperor of Bones</td>
+    <td>At the beginning of combat on your turn, exile up to one target card from a graveyard.<br>{1}{B}: Adapt 2.<br>Whenever one or more +1/+1 counters are put on Emperor of Bones, put a creature card exiled with Emperor of Bones onto the battlefield under your control with a finality counter on it. It gains haste. Sacrifice it at the beginning of the next end step.</td>
+    <td>No início do combate no seu turno, exile até um card alvo de um cemitério.<br>{1}{B}: Adaptação 2.<br>Toda vez que um ou mais marcadores +1/+1 forem colocados em Imperador dos Ossos, coloque no campo de batalha sob seu controle um card de criatura exilado com Imperador dos Ossos com um marcador de finalidade. Ganha ímpeto. Sacrifique-o no início da próxima etapa final.</td>
+  </tr>
+  <tr>
+    <td>95</td>
+    <td>Flare of Malice</td>
+    <td>You may sacrifice a nontoken black creature rather than pay this spell's mana cost.<br>Each opponent sacrifices a creature or planeswalker with the greatest mana value among creatures and planeswalkers they control.</td>
+    <td>Você pode sacrificar uma criatura preta que não seja uma ficha em vez de pagar o custo de mana desta mágica.<br>Cada oponente sacrifica uma criatura ou planeswalker com o maior valor de mana entre as criaturas e planeswalkers que ele controla.</td>
+  </tr>
+  <tr>
+    <td>97</td>
+    <td>Grim Servant</td>
+    <td>Menace<br>When Grim Servant enters the battlefield, search your library for a card with mana value less than or equal to your devotion to black, reveal it, put it into your hand, then shuffle. You lose 3 life. (Each {B} in the mana costs of permanents you control counts toward your devotion to black.)</td>
+    <td>Ameaça<br>Quando Grim Servant entrar no campo de batalha, procure em seu grimório por um card com valor de mana menor ou igual à sua devoção ao preto, revele-o, coloque-o em sua mão e depois embaralhe. Você perde 3 pontos de vida. (Cada {B} nos custos de mana das permanentes que você controla conta para sua devoção ao preto.)</td>
+  </tr>
+  <tr>
+    <td>98</td>
+    <td>Kami of Jealous Thirst</td>
+    <td>Deathtouch<br>{4}{B}: Each opponent loses 2 life and you gain 2 life. This ability costs {4}{B} less to activate if you've drawn three or more cards this turn. Activate only once each turn.</td>
+    <td>Toque da morte<br>{4}{B}: Cada oponente perde 2 pontos de vida e você ganha 2 pontos de vida. Esta habilidade custa {4}{B} a menos para ser ativada se você tiver comprado três ou mais cards neste turno. Ative apenas uma vez em cada turno.</td>
+  </tr>
+  <tr>
+    <td>100</td>
+    <td>Marionette Apprentice</td>
+    <td>Fabricate 1 (When this creature enters the battlefield, put a +1/+1 counter on it or create a 1/1 colorless Servo artifact creature token.)<br>Whenever another creature or artifact you control is put into a graveyard from the battlefield, each opponent loses 1 life.</td>
+    <td>Fabricar 1 (Quando esta criatura entrar no campo de batalha, coloque um marcador +1/+1 nela ou crie uma ficha de criatura artefato incolor 1/1 do tipo Servo.)<br>Toda vez que outra criatura ou artefato que você controla é colocado num cemitério vindo do campo de batalha, cada oponente perde 1 ponto de vida.</td>
+  </tr>
+  <tr>
+    <td>103</td>
+    <td>Nethergoyf</td>
+    <td>Nethergoyf's power is equal to the number of card types among cards in your graveyard and its toughness is equal to that number plus 1.<br>Escape—{2}{B}, Exile any number of other cards from your graveyard with four or more card types among them. (You may cast this card from your graveyard for its escape cost.)</td>
+    <td>O poder de Nethergoyf é igual ao número de tipos de card entre os cards em seu cemitério e sua resistência é igual a esse número mais 1.<br>Escapatória — {2}{B}, Exile qualquer número de outros cards de seu cemitério com quatro ou mais tipos de card entre eles. (Você pode conjurar este card de seu cemitério pagando seu custo de escapatória.)</td>
+  </tr>
+  <tr>
+    <td>108</td>
+    <td>Scurrilous Sentry</td>
+    <td>Menace<br>Whenever Scurrilous Sentry enters the battlefield or attacks, it connives. (Draw a card, then discard a card. If you discarded a nonland card, put a +1/+1 counter on this creature.)</td>
+    <td>Ameaça<br>Sempre que Sentinela Scurrilous entra no campo de batalha ou ataca, ela é conivente. (Compre um card e depois descarte um card. Se você descartou um card que não seja um terreno, coloque um marcador +1/+1 nesta criatura.)</td>
+  </tr>
+  <tr>
+    <td>110</td>
+    <td>Warren Soultrader</td>
+    <td>Pay 1 life, Sacrifice another creature: Create a Treasure token. (It's an artifact with "{T}, Sacrifice this artifact: Add one mana of any color.")</td>
+    <td>Pague 1 ponto de vida, sacrifique outra criatura: Crie uma ficha de Tesouro. (É um artefato com "{T}, sacrifique este artefato: Adicione um mana de qualquer cor.")</td>
+  </tr>
+  <tr>
+    <td>112</td>
+    <td>Wurmcoil Larva</td>
+    <td>Deathtouch, lifelink<br>When Wurmcoil Larva dies, create a 1/2 black Phyrexian Wurm artifact creature token with deathtouch and a 2/1 black Phyrexian Wurm artifact creature token with lifelink.</td>
+    <td>Toque mortífero, vínculo com a vida<br>Quando Larva Espiral de Wurm morrer, crie uma ficha de criatura artefato preta 1/2 do tipo Vorme Phyrexiano com toque mortífero e uma ficha de criatura artefato preta 2/1 do tipo Vorme Phyrexiano com vínculo com a vida.</td>
+  </tr>
+  <tr>
+    <td>114</td>
+    <td>Amped Raptor</td>
+    <td>First strike<br>When Amped Raptor enters the battlefield, you get {E}{E} (two energy counters). Then if you cast it from your hand, exile cards from the top of your library until you exile a nonland card. You may cast that card by paying an amount of {E} equal to its mana value rather than paying its mana cost.</td>
+    <td>Primeiro ataque<br>Quando Amped Raptor entra no campo de batalha, você recebe {E}{E} (dois marcadores de energia). Então, se você conjurá-lo de sua mão, exile cards do topo de seu grimório até exilar um card que não seja um terreno. Você pode conjurar aquele card pagando uma quantia de {E} igual ao seu valor de mana em vez de pagar seu custo de mana.</td>
+  </tr>
+  <tr>
+    <td>116</td>
+    <td>Detective's Phoenix</td>
+    <td>Bestow—{R}, Collect evidence 6. (To pay this bestow cost, pay {R} and exile cards with total mana value 6 or greater from your graveyard.)<br>Flying, haste<br>Enchanted creature gets +2/+2 and has flying and haste.<br>You may cast Detective's Phoenix from your graveyard using its bestow ability.</td>
+    <td>Agraciar — {R}, Colete evidências 6. (Para pagar este custo de agraciar, pague {R} e exile cards com valor de mana total igual ou superior a 6 de seu cemitério.)<br>Voar, impeto<br>A criatura encantada recebe +2/+2 e tem voar e impeto.<br>Você pode conjurar a Fênix do Detetive de seu cemitério usando sua habilidade de conceder.</td>
+  </tr>
+  <tr>
+    <td>119</td>
+    <td>Flare of Duplication</td>
+    <td>You may sacrifice a nontoken red creature rather than pay this spell's mana cost.<br>Copy target instant or sorcery spell. You may choose new targets for the copy.</td>
+    <td>Você pode sacrificar uma criatura vermelha que não seja uma ficha em vez de pagar o custo de mana desta mágica.<br>Copie a mágica instantânea ou feitiço alvo. Você pode escolher novos alvos para a cópia.</td>
+  </tr>
+  <tr>
+    <td>120</td>
+    <td>Frogmyr Enforcer</td>
+    <td>Prototype {3}{R} — 2/2 (You may cast this spell with different mana cost, color, and size. It keeps its abilities and types.)<br>Affinity for artifacts (This spell costs {1} less to cast for each artifact you control.)</td>
+    <td>Protótipo {3}{R} — 2/2 (Você pode conjurar esta mágica com custo de mana, cor e tamanho diferentes. Ela mantém suas habilidades e tipos.)<br>Afinidade com artefatos (Este feitiço custa {1} a menos para ser conjurado para cada artefato que você controla.)</td>
+  </tr>
+  <tr>
+    <td>124</td>
+    <td>Glimpse the Impossible</td>
+    <td>Exile the top three cards of your library. You may play those cards this turn. At the beginning of the next end step, if any of those cards remain exiled, put them into your graveyard, then create a 0/1 colorless Eldrazi Spawn creature token for each card put into your graveyard this way. Those tokens have "Sacrifice this creature: Add {C}."</td>
+    <td>Exile os três cards do topo do seu grimório. Você pode jogar essas cartas neste turno. No início da próxima etapa final, se algum desses cards permanecer exilado, coloque-o em seu cemitério e, em seguida, crie uma ficha de criatura incolor 0/1 do tipo Prole Eldrazi para cada card colocado em seu cemitério dessa forma. Essas fichas têm “Sacrifique esta criatura: Adicione {C}”.</td>
+  </tr>
+  <tr>
+    <td>127</td>
+    <td>Mogg Mob</td>
+    <td>Sacrifice Mogg Mob: It deals 3 damage divided as you choose among one, two, or three targets.</td>
+    <td>Sacrifique Mogg Mob: Causa 3 pontos de dano divididos conforme você escolhe entre um, dois ou três alvos.</td>
+  </tr>
+  <tr>
+    <td>131</td>
+    <td>Powerbalance</td>
+    <td>Whenever an opponent casts a spell, you may reveal the top card of your library. If you do, you may cast that card without paying its mana cost if the two spells have the same mana value.</td>
+    <td>Sempre que um oponente conjurar uma mágica, você poderá revelar o card do topo do seu grimório. Se fizer isso, você poderá conjurar aquele card sem pagar seu custo de mana se as duas mágicas tiverem o mesmo valor de mana.</td>
+  </tr>
+  <tr>
+    <td>138</td>
+    <td>Skoa, Embermage</td>
+    <td>When Skoa, Embermage enters the battlefield, deals 4 damage to any target.<br>Grandeur — Discard another card named Skoa, Embermage, Sacrifice two Mountains: Skoa deals 4 damage to any target.</td>
+    <td>Quando Skoa, Embermage, entra no campo de batalha, causa 4 pontos de dano a qualquer alvo.<br>Grandeza – Descarte outra carta chamada Skoa, Embermage, sacrifique duas montanhas: Skoa causa 4 pontos de dano a qualquer alvo.</td>
+  </tr>
+  <tr>
+    <td>140</td>
+    <td>Spawn-Gang Commander</td>
+    <td>Devoid (This card has no color.)<br>When you cast this spell, create three 0/1 colorless Eldrazi Spawn creature tokens with "Sacrifice this creature: Add {C}."<br>{1}{C}, Sacrifice an Eldrazi: Spawn-Gang Commander deals 2 damage to any target.</td>
+    <td>Desprovido (Este card não tem cor.)<br>Quando você conjurar esta mágica, crie três fichas de criatura incolor 0/1 do tipo Prole Eldrazi com "Sacrifique esta criatura: Adicione {C}."<br>{1}{C}, sacrifique um Eldrazi: Spawn-Gang Commander causa 2 pontos de dano a qualquer alvo.</td>
+  </tr>
+  <tr>
+    <td>144</td>
+    <td>Wheel of Potential</td>
+    <td>You get {E}{E}{E} (three energy counters), then you may pay X {E}.<br>Each player may exile their hand and draw X cards. If X is 7 or more, you may play cards you own exiled this way until the end of your next turn.</td>
+    <td>Você recebe {E}{E}{E} (três marcadores de energia) e pode pagar X {E}.<br>Cada jogador pode exilar sua mão e comprar X cartas. Se X for 7 ou mais, você poderá jogar cartas que você possui exiladas desta forma até o final do seu próximo turno.</td>
+  </tr>
+  <tr>
+    <td>145</td>
+    <td>Basking Broodscale</td>
+    <td>Devoid (This card has no color.)<br>{1}{G}: Adapt 1. (If this creature has no +1/+1 counters on it, put a +1/+1 counter on it.)<br>Whenever one or more +1/+1 counters are put on Basking Broodscale, you may create a 0/1 colorless Eldrazi Spawn creature token with "Sacrifice this creature: Add {C}."</td>
+    <td>Desprovido (Este card não tem cor.)<br>{1}{G}: Adaptação 1. (Se esta criatura não tiver marcadores +1/+1, coloque um marcador +1/+1 nela.)<br>Toda vez que um ou mais marcadores +1/+1 forem colocados em Basking Broodscale, você pode criar uma ficha de criatura incolor 0/1 do tipo Prole Eldrazi com "Sacrifique esta criatura: Adicione {C}."</td>
+  </tr>
+  <tr>
+    <td>147</td>
+    <td>Collective Resistance</td>
+    <td>Escalate {G} (Pay this cost for each mode chosen beyond the first.)<br>Choose one or more —<br>• Destroy target artifact.<br>• Destroy target enchantment.<br>• Target creature gains hexproof and indestructible until end of turn.</td>
+    <td>Escalar {G} (Pague este custo para cada modo escolhido além do primeiro.)<br>Escolha um ou mais -<br>• Destrua o artefato alvo.<br>• Destrua o encantamento do alvo.<br>• A criatura alvo ganha resistência à magia e indestrutível até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>149</td>
+    <td>Eladamri, Korvecdal</td>
+    <td>You may look at the top card of your library any time.<br>You may cast creature spells from the top of your library.<br>{G}, {T}, Tap two untapped creatures you control: Reveal a card from your hand or the top card of your library. If you reveal a creature card this way, put it onto the battlefield. Activate only during your turn.</td>
+    <td>Você pode olhar o card do topo do seu grimório a qualquer momento.<br>Você pode conjurar mágicas de criatura do topo de seu grimório.<br>{G}, {T}, Vire duas criaturas desviradas que você controla: Revele um card de sua mão ou o card do topo de seu grimório. Se você revelar um card de criatura desta forma, coloque-o no campo de batalha. Ative apenas durante o seu turno.</td>
+  </tr>
+  <tr>
+    <td>151</td>
+    <td>Evolution Witness</td>
+    <td>{1}{G}: Adapt 2. (If this creature has no +1/+1 counters on it, put two +1/+1 counters on it.)<br>Whenever one or more +1/+1 counters are put on Evolution Witness, return target permanent card from your graveyard to your hand.</td>
+    <td>{1}{G}: Adaptação 2. (Se esta criatura não tiver marcadores +1/+1, coloque dois marcadores +1/+1 nela.)<br>Toda vez que um ou mais marcadores +1/+1 forem colocados em Evolution Witness, devolva o card permanente alvo de seu cemitério para sua mão.</td>
+  </tr>
+  <tr>
+    <td>154</td>
+    <td>Flare of Cultivation</td>
+    <td>You may sacrifice a nontoken green creature rather than pay this spell's mana cost.<br>Search your library for up to two basic land cards, reveal those cards, put one onto the battlefield tapped and the other into your hand, then shuffle.</td>
+    <td>Você pode sacrificar uma criatura verde que não seja uma ficha em vez de pagar o custo de mana desta mágica.<br>Procure em seu grimório por até dois cards de terreno básico, revele esses cards, coloque um no campo de batalha virado e o outro em sua mão e depois embaralhe.</td>
+  </tr>
+  <tr>
+    <td>165</td>
+    <td>Path of Annihilation</td>
+    <td>Devoid (This card has no color.)<br>When Path of Annihilation enters the battlefield, create two 0/1 colorless Eldrazi Spawn creature tokens with "Sacrifice this creature: Add {C}."<br>Eldrazi you control have "{T}: Add one mana of any color."<br>Whenever you cast a creature spell with mana value 7 or greater, you gain 4 life.</td>
+    <td>Desprovido (Este card não tem cor.)<br>Quando Caminho da Aniquilação entrar no campo de batalha, crie duas fichas de criatura incolor 0/1 do tipo Prole Eldrazi com "Sacrifique esta criatura: Adicione {C}."<br>Os Eldrazi que você controla têm "{T}: Adicione um mana de qualquer cor."<br>Sempre que você conjurar uma mágica de criatura com valor de mana igual ou superior a 7, você ganha 4 pontos de vida.</td>
+  </tr>
+  <tr>
+    <td>169</td>
+    <td>Six</td>
+    <td>Reach<br>Whenever Six attacks, mill three cards. You may put a land card from among them into your hand.<br>As long as it's your turn, nonland permanent cards in your graveyard have retrace. (You may cast permanent cards from your graveyard by discarding a land card in addition to paying their other costs.)</td>
+    <td>Alcançar<br>Sempre que Seis atacar, moa três cartas. Você pode colocar um card de terreno dentre eles em sua mão.<br>Enquanto for o seu turno, os cards permanentes que não sejam terrenos em seu cemitério poderão ser retraçados. (Você pode conjurar cards permanentes de seu cemitério descartando um card de terreno além de pagar seus outros custos.)</td>
+  </tr>
+  <tr>
+    <td>174</td>
+    <td>Thief of Existence</td>
+    <td>Devoid (This card has no color.)<br>When you cast this spell, exile up to one target noncreature, nonland permanent an opponent controls with mana value 4 or less. If you do, Thief of Existence gains "When this creature leaves the battlefield, target opponent draws a card."</td>
+    <td>Desprovido (Este card não tem cor.)<br>Quando você conjurar esta mágica, exile até uma permanente alvo que não seja uma criatura e que não seja um terreno que um oponente controla com valor de mana igual ou inferior a 4. Se fizer isso, Ladrão da Existência ganha “Quando esta criatura sai do campo de batalha, o oponente alvo compra um card”.</td>
+  </tr>
+  <tr>
+    <td>175</td>
+    <td>Trickster's Elk</td>
+    <td>Bestow {1}{G} (If you cast this card for its bestow cost, it's an Aura spell with enchant creature. It becomes a creature again if it's not attached.)<br>Enchanted creature loses all abilities and is a green Elk creature with base power and toughness 3/3.</td>
+    <td>Agraciar {1}{G} (Se você conjurar este card pagando seu custo de agraciar, ele será uma mágica de Aura com encantar criatura. Ele se tornará uma criatura novamente se não for anexado.)<br>A criatura encantada perde todas as habilidades e é uma criatura Alce verde com poder básico e resistência 3/3.</td>
+  </tr>
+  <tr>
+    <td>176</td>
+    <td>Wumpus Aberration</td>
+    <td>Devoid (This card has no color.)<br>When you cast this spell, if {C} wasn't spent to cast it, target opponent may put a creature card from their hand onto the battlefield.<br>Trample</td>
+    <td>Desprovido (Este card não tem cor.)<br>Quando você conjurar esta mágica, se {C} não tiver sido gasto para conjurá-la, o oponente alvo poderá colocar um card de criatura de sua mão no campo de batalha.<br>Atropelar</td>
+  </tr>
+  <tr>
+    <td>178</td>
+    <td>Arna Kennerüd, Skycaptain</td>
+    <td>Flying, lifelink<br>Ward—Discard a card.<br>Whenever a modified creature you control attacks, double the number of each kind of counter on it. Then for each nontoken permanent attached to it, create a token that's a copy of that permanent attached to that creature.</td>
+    <td>Voar, vínculo vitalício<br>Ward – Descarte uma carta.<br>Toda vez que uma criatura modificada que você controla atacar, dobre o número de cada tipo de marcador nela. Então, para cada permanente que não seja uma ficha anexada a ela, crie uma ficha que seja uma cópia daquela permanente anexada àquela criatura.</td>
+  </tr>
+  <tr>
+    <td>179</td>
+    <td>Conduit Goblin</td>
+    <td>When Conduit Goblin enters the battlefield, you get {E}{E} (two energy counters).<br>At the beginning of combat on your turn, you may pay {E}. If you do, another target creature you control gets +1/+0 and gains haste until end of turn.</td>
+    <td>Quando Goblin Conduíte entra no campo de batalha, você recebe {E}{E} (dois marcadores de energia).<br>No início do combate no seu turno, você pode pagar {E}. Se fizer isso, outra criatura alvo que você controla recebe +1/+0 e ganha impeto até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>186</td>
+    <td>Genku, Future Shaper</td>
+    <td>Whenever another nontoken permanent you control leaves the battlefield, choose one that hasn't been chosen this turn. Create a creature token with those characteristics.<br>• 2/2 white Fox with vigilance.<br>• 1/2 blue Moonfolk with flying.<br>• 1/1 black Rat with lifelink.<br>{3}{W}{U}: Put a +1/+1 counter on each creature you control.</td>
+    <td>Toda vez que outra permanente que você controla que não seja uma ficha deixar o campo de batalha, escolha uma que não tenha sido escolhida neste turno. Crie uma ficha de criatura com essas características.<br>• 2/2 Raposa branca com vigilância.<br>• 1/2 Moonfolk azul com voar.<br>• 1/1 Rato preto com vínculo com a vida.<br>{3}{W}{U}: Coloque um marcador +1/+1 em cada criatura que você controla.</td>
+  </tr>
+  <tr>
+    <td>191</td>
+    <td>Izzet Generatorium</td>
+    <td>If you would get one or more {E} (energy counters), you get that many plus one {E} instead.<br>{T}: Draw a card. Activate only if you've paid or lost four or more {E} this turn.</td>
+    <td>Se você obtivesse um ou mais {E} (contadores de energia), você obteria essa quantidade mais um {E}.<br>{T}: Compre um card. Ative apenas se você pagou ou perdeu quatro ou mais {E} neste turno.</td>
+  </tr>
+  <tr>
+    <td>192</td>
+    <td>Kudo, King Among Bears</td>
+    <td>Other creatures have base power and toughness 2/2 and are Bears in addition to their other types.</td>
+    <td>Outras criaturas têm poder e resistência básicos 2/2 e são Ursos além de seus outros tipos.</td>
+  </tr>
+  <tr>
+    <td>194</td>
+    <td>The Necrobloom</td>
+    <td>Landfall — Whenever a land enters the battlefield under your control, create a 0/1 green Plant creature token. If you control seven or more lands with different names, create a 2/2 black Zombie creature token instead.<br>Land cards in your graveyard have dredge 2. (You may return a land card from your graveyard to your hand and mill two cards instead of drawing a card.)</td>
+    <td>Landfall — Toda vez que um terreno entrar no campo de batalha sob seu controle, crie uma ficha de criatura verde 0/1 do tipo Planta. Se você controlar sete ou mais terrenos com nomes diferentes, em vez disso, crie uma ficha de criatura preta 2/2 do tipo Zumbi.<br>Os cards de terreno em seu cemitério têm dragagem 2. (Você pode devolver um card de terreno de seu cemitério para sua mão e moer dois cards em vez de comprar um card.)</td>
+  </tr>
+  <tr>
+    <td>199</td>
+    <td>Psychic Frog</td>
+    <td>Whenever Psychic Frog deals combat damage to a player or planeswalker, draw a card.<br>Discard a card: Put a +1/+1 counter on Psychic Frog.<br>Exile three cards from your graveyard: Psychic Frog gains flying until end of turn.</td>
+    <td>Toda vez que Sapo Psíquico causar dano de combate a um jogador ou planeswalker, compre um card.<br>Descarte um card: Coloque um marcador +1/+1 em Psychic Frog.<br>Exile três cards de seu cemitério: Sapo Psíquico ganha voar até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>203</td>
+    <td>Scurry of Gremlins</td>
+    <td>When Scurry of Gremlins enters the battlefield, create two 1/1 red Gremlin creature tokens. Then you get an amount of {E} (energy counters) equal to the number of creatures you control.<br>Pay {E}{E}{E}{E}: Creatures you control get +1/+0 and gain haste until end of turn.</td>
+    <td>Quando Scurry of Gremlins entrar no campo de batalha, crie duas fichas de criatura vermelhas 1/1 do tipo Gremlin. Então você recebe uma quantidade de {E} (contadores de energia) igual ao número de criaturas que você controla.<br>Pague {E}{E}{E}{E}: As criaturas que você controla recebem +1/+0 e ganham ímpeto até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>207</td>
+    <td>Wight of the Reliquary</td>
+    <td>Vigilance<br>Wight of the Reliquary gets +1/+1 for each creature card in your graveyard.<br>{T}, Sacrifice another creature: Search your library for a land card, put it onto the battlefield tapped, then shuffle.</td>
+    <td>Vigilância<br>Wight of the Relicary recebe +1/+1 para cada card de criatura em seu cemitério.<br>{T}, Sacrifique outra criatura: Procure um card de terreno em seu grimório, coloque-o no campo de batalha virado e depois embaralhe.</td>
+  </tr>
+  <tr>
+    <td>208</td>
+    <td>Writhing Chrysalis</td>
+    <td>Devoid (This card has no color.)<br>When you cast this spell, create two 0/1 colorless Eldrazi Spawn creature tokens with "Sacrifice this creature: Add {C}."<br>Reach<br>Whenever you sacrifice another Eldrazi, put a +1/+1 counter on Writhing Chrysalis.</td>
+    <td>Desprovido (Este card não tem cor.)<br>Quando você conjurar esta mágica, crie duas fichas de criatura incolor 0/1 do tipo Prole Eldrazi com "Sacrifique esta criatura: Adicione {C}."<br>Alcançar<br>Sempre que você sacrificar outro Eldrazi, coloque um marcador +1/+1 em Crisálida Contorcida.</td>
+  </tr>
+  <tr>
+    <td>213</td>
+    <td>Winter Moon</td>
+    <td>Players can't untap more than one nonbasic land during their untap steps.</td>
+    <td>Os jogadores não podem desvirar mais de um terreno não básico durante suas etapas de desvirar.</td>
+  </tr>
+  <tr>
+    <td>216</td>
+    <td>Bloodstained Mire</td>
+    <td>{T}, Pay 1 life, Sacrifice Bloodstained Mire: Search your library for a Swamp or Mountain card, put it onto the battlefield, then shuffle.</td>
+    <td>{T}, Pague 1 ponto de vida, Sacrifique Pântano Manchado de Sangue: Procure um card de Pântano ou Montanha em seu grimório, coloque-o no campo de batalha e depois embaralhe.</td>
+  </tr>
+  <tr>
+    <td>220</td>
+    <td>Flooded Strand</td>
+    <td>{T}, Pay 1 life, Sacrifice Flooded Strand: Search your library for a Plains or Island card, put it onto the battlefield, then shuffle.</td>
+    <td>{T}, pague 1 ponto de vida, sacrifique Praia Inundada: Procure um card de Planície ou Ilha em seu grimório, coloque-o no campo de batalha e depois embaralhe.</td>
+  </tr>
+  <tr>
+    <td>224</td>
+    <td>Polluted Delta</td>
+    <td>{T}, Pay 1 life, Sacrifice Polluted Delta: Search your library for an Island or Swamp card, put it onto the battlefield, then shuffle.</td>
+    <td>{T}, pague 1 ponto de vida, sacrifique Polluted Delta: Procure em seu grimório por um card de Ilha ou Pântano, coloque-o no campo de batalha e depois embaralhe.</td>
+  </tr>
+  <tr>
+    <td>229</td>
+    <td>Snow-Covered Wastes</td>
+    <td>{T}: Add {C}.</td>
+    <td>{T}: Adicione {C}.</td>
+  </tr>
+  <tr>
+    <td>230</td>
+    <td>Spymaster's Vault</td>
+    <td>Spymaster's Vault enters the battlefield tapped unless you control a Swamp.<br>{T}: Add {B}.<br>{B}, {T}: Target creature you control connives X, where X is the number of creatures that died this turn. (Draw X cards, then discard X cards. Put a +1/+1 counter on that creature for each nonland card discarded this way.)</td>
+    <td>Cofre do Spymaster entra no campo de batalha virado, a menos que você controle um Pântano.<br>{T}: Adicione {B}.<br>{B}, {T}: A criatura alvo que você controla é conivente com X, onde X é o número de criaturas que morreram neste turno. (Compre X cards e depois descarte X cards. Coloque um marcador +1/+1 naquela criatura para cada card que não seja um terreno descartado dessa forma.)</td>
+  </tr>
+  <tr>
+    <td>233</td>
+    <td>Ugin's Labyrinth</td>
+    <td>Imprint — When Ugin's Labyrinth enters the battlefield, you may exile a colorless card with mana value 7 or greater from your hand.<br>{T}: Add {C}. If a card is exiled with Ugin's Labyrinth, add {C}{C} instead.<br>{T}: Return the exiled card to its owner's hand.</td>
+    <td>Estampar — Quando Labirinto de Ugin entra no campo de batalha, você pode exilar um card incolor com valor de mana igual ou superior a 7 de sua mão.<br>{T}: Adicione {C}. Se um card for exilado com o Labirinto de Ugin, adicione {C}{C} em vez disso.<br>{T}: Devolva o card exilado para a mão de seu dono.</td>
+  </tr>
+  <tr>
+    <td>234</td>
+    <td>Urza's Cave</td>
+    <td>{T}: Add {C}.<br>{3}, {T}, Sacrifice Urza's Cave: Search your library for a land card, put it onto the battlefield tapped, then shuffle.</td>
+    <td>{T}: Adicione {C}.<br>{3}, {T}, Sacrifique Caverna de Urza: Procure um card de terreno em seu grimório, coloque-o no campo de batalha virado e depois embaralhe.</td>
+  </tr>
+  <tr>
+    <td>235</td>
+    <td>Windswept Heath</td>
+    <td>{T}, Pay 1 life, Sacrifice Windswept Heath: Search your library for a Forest or Plains card, put it onto the battlefield, then shuffle.</td>
+    <td>{T}, pague 1 ponto de vida, sacrifique Windswept Heath: Procure em seu grimório por um card de Floresta ou Planície, coloque-o no campo de batalha e depois embaralhe.</td>
+  </tr>
+  <tr>
+    <td>236</td>
+    <td>Wooded Foothills</td>
+    <td>{T}, Pay 1 life, Sacrifice Wooded Foothills: Search your library for a Mountain or Forest card, put it onto the battlefield, then shuffle.</td>
+    <td>{T}, pague 1 ponto de vida, sacrifique Contrafortes Arborizados: Procure um card de Montanha ou Floresta em seu grimório, coloque-o no campo de batalha e depois embaralhe.</td>
+  </tr>
+  <tr>
+    <td>237</td>
+    <td>Ajani, Nacatl Pariah // Ajani, Nacatl Avenger</td>
+    <td>When Ajani, Nacatl Pariah enters the battlefield, create a 2/1 white Cat Warrior creature token.<br>Whenever one or more other Cats you control die, you may exile Ajani, then return him to the battlefield transformed under his owner's control.<br>----<br>+2: Put a +1/+1 counter on each Cat you control.<br>0: Create a 2/1 white Cat Warrior creature token. When you do, if you control a red permanent other than Ajani, Nacatl Avenger, he deals damage equal to the number of creatures you control to any target.<br>−4: Each opponent chooses an artifact, a creature, an enchantment and a planeswalker from among the nonland permanents they control, then sacrifices the rest.</td>
+    <td>Quando Ajani, Nacatl Pariah, entrar no campo de batalha, crie uma ficha de criatura branca 2/1 do tipo Gato Guerreiro.<br>Sempre que um ou mais Gatos que você controla morrem, você pode exilar Ajani e depois devolvê-lo ao campo de batalha transformado sob o controle de seu dono.<br>----<br>+2: Coloque um marcador +1/+1 em cada Gato que você controla.<br>0: Crie uma ficha de criatura branca 2/1 do tipo Gato Guerreiro. Ao fazer isso, se você controlar uma permanente vermelha que não seja Ajani, Nacatl Avenger, ela causará dano igual ao número de criaturas que você controla a qualquer alvo.<br>−4: Cada oponente escolhe um artefato, uma criatura, um encantamento e um planeswalker dentre as permanentes que não sejam terrenos que ele controla e depois sacrifica o resto.</td>
+  </tr>
+  <tr>
+    <td>239</td>
+    <td>Witch Enchanter // Witch-Blessed Meadow</td>
+    <td>When Witch Enchanter enters the battlefield, destroy target artifact or enchantment an opponent controls.<br>----<br>As Witch-Blessed Meadow enters the battlefield, you may pay 3 life. If you don't, it enters the battlefield tapped.<br>{T}: Add {W}.</td>
+    <td>Quando Witch Enchanter entrar no campo de batalha, destrua o artefato ou encantamento alvo que um oponente controla.<br>----<br>Conforme Prado Abençoado pela Bruxa entra no campo de batalha, você pode pagar 3 pontos de vida. Caso contrário, ele entra no campo de batalha virado.<br>{T}: Adicione {W}.</td>
+  </tr>
+  <tr>
+    <td>242</td>
+    <td>Tamiyo, Inquisitive Student // Tamiyo, Seasoned Scholar</td>
+    <td>Flying<br>Whenever Tamiyo, Inquisitive Student attacks, investigate. (Create a Clue token. It's an artifact with "{2}, Sacrifice this artifact: Draw a card.")<br>When you draw your third card in a turn, exile Tamiyo, then return her to the battlefield transformed under her owner's control.<br>----<br>+2: Until your next turn, whenever a creature attacks you or a planeswalker you control, it gets -1/-0 until end of turn.<br>−3: Return target instant or sorcery card from your graveyard to your hand. If it's a green card, add one mana of any color.<br>−7: Draw cards equal to half the number of cards in your library, rounded up. You get an emblem with "You have no maximum hand size."</td>
+    <td>Voar<br>Sempre que Tamiyo, Estudante Inquisitivo, atacar, investigue. (Crie uma ficha de Pista. É um artefato com "{2}, Sacrifique este artefato: Compre um card.")<br>Quando você comprar sua terceira carta em um turno, exile Tamiyo e depois devolva-a ao campo de batalha transformada sob o controle de seu dono.<br>----<br>+2: Até seu próximo turno, sempre que uma criatura atacar você ou um planeswalker que você controla, ela receberá -1/-0 até o final do turno.<br>−3: Devolva o card de mágica instantânea ou feitiço alvo de seu cemitério para sua mão. Se for um green card, adicione um mana de qualquer cor.<br>−7: Compre cards iguais à metade do número de cards em seu grimório, arredondado para cima. Você recebe um emblema com "Você não tem tamanho máximo de mão".</td>
+  </tr>
+  <tr>
+    <td>245</td>
+    <td>Sorin of House Markov // Sorin, Ravenous Neonate</td>
+    <td>Lifelink<br>Extort (Whenever you cast a spell, you may pay {W/B}. If you do, each opponent loses 1 life and you gain that much life.)<br>At the beginning of your postcombat main phase, if you gained 3 or more life this turn, exile Sorin of House Markov, then him to the battlefield transformed under his owner's control.<br>----<br>Extort (Whenever you cast a spell, you may pay {W/B}. If you do, each opponent loses 1 life and you gain that much life.)<br>+2: Create a Food token.<br>−1: Sorin, Ravenous Neonate deals damage equal to the amount of life you gained this turn to any target.<br>−6: Gain control of target creature. It becomes a Vampire in addition to its other types. Put a lifelink counter on it if you control a white permanent other than that creature or Sorin.</td>
+    <td>Vínculo com a vida<br>Extorquir (Sempre que você conjurar uma mágica, você pode pagar {W/B}. Se isso acontecer, cada oponente perde 1 ponto de vida e você ganha essa mesma quantidade de pontos de vida.)<br>No início de sua fase principal pós-combate, se você ganhou 3 ou mais pontos de vida neste turno, exile Sorin da Casa Markov e, em seguida, ele para o campo de batalha transformado sob o controle de seu dono.<br>----<br>Extorquir (Sempre que você conjurar uma mágica, você pode pagar {W/B}. Se isso acontecer, cada oponente perde 1 ponto de vida e você ganha essa mesma quantidade de pontos de vida.)<br>+2: Crie uma ficha de Comida.<br>−1: Sorin, Ravenous Neonate, causa dano igual à quantidade de pontos de vida que você ganhou neste turno a qualquer alvo.<br>−6: Ganhe o controle da criatura alvo. Torna-se um Vampiro além de seus outros tipos. Coloque nela um marcador de vínculo com a vida se você controlar uma permanente branca que não seja aquela criatura ou Sorin.</td>
+  </tr>
+  <tr>
+    <td>247</td>
+    <td>Ral, Monsoon Mage // Ral, Leyline Prodigy</td>
+    <td>Instant and sorcery spells you cast cost {1} less to cast.<br>Whenever you cast an instant or sorcery spell during your turn, flip a coin. If you lose the flip, Ral, Monsoon Mage deals 1 damage to you. If you win the flip, you may exile Ral. If you do, return him to the battlefield transformed under his owner's control.<br>----<br>Ral, Leyline Prodigy enters the battlefield with an additional loyalty counter on him for each instant and sorcery spell you've cast this turn.<br>+1: Until your next turn, instant and sorcery spells you cast cost {1} less to cast.<br>−2: Ral deals 2 damage divided as you choose among one or two targets. Draw a card if you control a blue permanent other than Ral.<br>−8: Exile the top eight cards of your library. You may cast instant and sorcery spells from among them this turn without paying their mana costs.</td>
+    <td>As mágicas instantâneas e os feitiços que você conjura custam {1} a menos para conjurar.<br>Sempre que você conjurar uma mágica instantânea ou feitiço durante seu turno, jogue uma moeda. Se você perder o turno, Ral, Monsoon Mage, causará 1 de dano a você. Se você vencer, poderá exilar Ral. Se fizer isso, devolva-o ao campo de batalha transformado sob o controle de seu dono.<br>----<br>Ral, Prodígio da Linha de Ley, entra no campo de batalha com um marcador de lealdade adicional para cada mágica instantânea e feitiço que você conjurou neste turno.<br>+1: Até seu próximo turno, os feitiços instantâneos e os feitiços que você conjurar custam {1} a menos para serem conjurados.<br>−2: Ral causa 2 pontos de dano divididos conforme você escolher entre um ou dois alvos. Compre um card se você controlar uma permanente azul que não seja Ral.<br>−8: Exile os oito cards do topo do seu grimório. Você pode conjurar mágicas instantâneas e feitiços dentre eles neste turno sem pagar seus custos de mana.</td>
+  </tr>
+  <tr>
+    <td>250</td>
+    <td>Disciple of Freyalise // Garden of Freyalise</td>
+    <td>When Disciple of Freyalise enters the battlefield, you may sacrifice another creature. If you do, you gain X life and draw X cards, where X is that creature's power.<br>----<br>As Garden of Freyalise enters the battlefield, you may pay 3 life. If you don't, it enters the battlefield tapped.<br>{T}: Add {G}.</td>
+    <td>Quando Discípulo de Freyalise entra no campo de batalha, você pode sacrificar outra criatura. Se fizer isso, você ganha X pontos de vida e compra X cards, sendo X o poder daquela criatura.<br>----<br>Conforme Garden of Freyalise entra no campo de batalha, você pode pagar 3 pontos de vida. Caso contrário, ele entra no campo de batalha virado.<br>{T}: Adicione {G}.</td>
+  </tr>
+  <tr>
+    <td>251</td>
+    <td>Grist, Voracious Larva // Grist, the Plague Swarm</td>
+    <td>Deathtouch<br>Whenever Grist, Voracious Larva or another creature enters the battlefield under your control, if it entered from your graveyard or you cast it from your graveyard, you may pay {G}. If you do, exile Grist, then return it to the battlefield transformed under its owner's control.<br>----<br>+1: Create a 1/1 black and green Insect creature token, then mill two cards. Put a deathtouch counter on the token if a black card was milled this way.<br>−2: Destroy target artifact or enchantment.<br>−6: For each creature card in your graveyard, create a token that's a copy of it, except it's a 1/1 black and green Insect.</td>
+    <td>Toque da morte<br>Toda vez que Grist, Voracious Larva ou outra criatura entrar no campo de batalha sob seu controle, se ela entrou de seu cemitério ou se você a conjurar de seu cemitério, você poderá pagar {G}. Se fizer isso, exile Grist e devolva-o ao campo de batalha transformado sob o controle de seu dono.<br>----<br>+1: Crie uma ficha de criatura preta e verde 1/1 do tipo Inseto e, em seguida, moa dois cards. Coloque um marcador de toque mortífero na ficha se uma carta preta tiver sido moída dessa maneira.<br>−2: Destrua o artefato ou encantamento alvo.<br>−6: Para cada card de criatura em seu cemitério, crie uma ficha que seja uma cópia dele, exceto que é um Inseto preto e verde 1/1.</td>
+  </tr>
+  <tr>
+    <td>252</td>
+    <td>Bloodsoaked Insight // Sanguine Morass</td>
+    <td>This spell costs 1 less to cast for each 1 life your opponents have lost this turn.<br>Target opponent exiles the top three cards of their library. Until the end of your next turn, you may play those cards. If you cast a spell this way, mana of any type can be spent to cast it.<br>----<br>Sanguine Morass enters the battlefield tapped.<br>{T}: Add {B} or {R}.</td>
+    <td>Este feitiço custa 1 a menos para ser conjurado para cada 1 ponto de vida que seus oponentes perderam neste turno.<br>O oponente alvo exila os três cards do topo do seu grimório. Até o final do seu próximo turno, você pode jogar essas cartas. Se você conjurar uma mágica dessa maneira, qualquer tipo de mana poderá ser gasto para conjurá-la.<br>----<br>Lamaçal Sanguíneo entra no campo de batalha virado.<br>{T}: Adicione {B} ou {R}.</td>
+  </tr>
+  <tr>
+    <td>253</td>
+    <td>Drowner of Truth // Drowned Jungle</td>
+    <td>Devoid (This card has no color.)<br>When you cast this spell, if {C} was spent to cast it, create two 0/1 colorless Eldrazi Spawn creature tokens with "Sacrifice this creature: Add {C}."<br>----<br>Drowned Jungle enters the battlefield tapped.<br>{T}: Add {G} or {U}.</td>
+    <td>Desprovido (Este card não tem cor.)<br>Quando você conjurar esta mágica, se {C} foi gasto para conjurá-la, crie duas fichas de criatura incolor 0/1 do tipo Prole Eldrazi com "Sacrifique esta criatura: Adicione {C}."<br>----<br>Selva Afogada entra no campo de batalha virado.<br>{T}: Adicione {G} ou {U}.</td>
+  </tr>
+  <tr>
+    <td>254</td>
+    <td>Glasswing Grace // Age-Graced Chapel</td>
+    <td>Enchant creature<br>Enchanted creature gets +2/+2 and has flying and lifelink.<br>----<br>Age-Graced Chapel enters the battlefield tapped.<br>{T}: Add or {W} or {B}.</td>
+    <td>Encantar criatura<br>A criatura encantada recebe +2/+2 e tem voar e vínculo com a vida.<br>----<br>Capela Agraciada pela Idade entra no campo de batalha virada.<br>{T}: Adicione ou {W} ou {B}.</td>
+  </tr>
+  <tr>
+    <td>255</td>
+    <td>Legion Leadership // Legion Stronghold</td>
+    <td>Until end of turn, double target creature's power and it gains first strike.<br>----<br>Legion Stronghold enters the battlefield tapped.<br>{T}: Add {R} or {W}.</td>
+    <td>Até o final do turno, dobre o poder da criatura alvo e ela ganha iniciativa.<br>----<br>Fortaleza da Legião entra no campo de batalha virada.<br>{T}: Adicione {R} ou {W}.</td>
+  </tr>
+  <tr>
+    <td>256</td>
+    <td>Revitalizing Repast // Old-Growth Grove</td>
+    <td>Put a +1/+1 counter on target creature. It gains indestructible until end of turn.<br>----<br>Old-Growth Grove enters the battlefield tapped.<br>{T}: Add {B} or {G}.</td>
+    <td>Coloque um marcador +1/+1 na criatura alvo. Ele ganha indestrutível até o final do turno.<br>----<br>Bosque Antigo entra no campo de batalha virado.<br>{T}: Adicione {B} ou {G}.</td>
+  </tr>
+  <tr>
+    <td>257</td>
+    <td>Rush of Inspiration // Crackling Falls</td>
+    <td>Draw two cards. Then discard a card at random unless you pay {E}{E} (two energy counters).<br>----<br>Crackling Falls enters the battlefield tapped.<br>{T}: Add {U} or {R}.</td>
+    <td>Compre duas cartas. Em seguida, descarte uma carta aleatoriamente, a menos que você pague {E}{E} (dois marcadores de energia).<br>----<br>Crackling Falls entra no campo de batalha virado.<br>{T}: Adicione {U} ou {R}.</td>
+  </tr>
+  <tr>
+    <td>258</td>
+    <td>Strength of the Harvest // Haven of the Harvest</td>
+    <td>Enchant creature<br>Enchanted creature gets +1/+1 for each creature and/or enchantment you control.<br>----<br>Haven of the Harvest enters the battlefield tapped.<br>{T}: {G} or {W}.</td>
+    <td>Encantar criatura<br>A criatura encantada recebe +1/+1 para cada criatura e/ou encantamento que você controla.<br>----<br>Haven of the Harvest entra no campo de batalha virado.<br>{T}: {G} ou {W}.</td>
+  </tr>
+  <tr>
+    <td>259</td>
+    <td>Stump Stomp // Burnwillow Clearing</td>
+    <td>Target creature you control deals damage equal to its power to target creature or planeswalker you don't control.<br>----<br>Burnwillow Clearing enters the battlefield tapped.<br>{T}: Add {R} or {G}.</td>
+    <td>A criatura alvo que você controla causa dano igual ao seu poder à criatura ou planeswalker alvo que você não controla.<br>----<br>Clareira Burnwillow entra no campo de batalha virada.<br>{T}: Adicione {R} ou {G}.</td>
+  </tr>
+  <tr>
+    <td>260</td>
+    <td>Suppression Ray // Orderly Plaza</td>
+    <td>Tap all creatures target player controls. You may pay X {E}, then choose up to X creatures tapped this way. Put a stun counter on each of them. (If a permanent with a stun counter would become untapped, remove one from it instead.)<br>----<br>Orderly Plaza enters the battlefield tapped.<br>{T}: Add {W} or {U}.</td>
+    <td>Toque em todas as criaturas que o jogador alvo controla. Você pode pagar X {E} e depois escolher até X criaturas viradas desta forma. Coloque um contador de atordoamento em cada um deles. (Se uma permanente com um marcador de atordoamento ficar desvirada, em vez disso, remova um dela.)<br>----<br>Praça Ordenada entra no campo de batalha virada.<br>{T}: Adicione {W} ou {U}.</td>
+  </tr>
+  <tr>
+    <td>261</td>
+    <td>Waterlogged Teachings // Inundated Archive</td>
+    <td>Search your library for an instant card or a card with flash, reveal it, put it into your hand, then shuffle.<br>----<br>Inundated Archive enters the battlefield tapped.<br>{T}: Add {U} or {B}.</td>
+    <td>Procure em seu grimório um card de mágica instantânea ou um card com flash, revele-o, coloque-o em sua mão e depois embaralhe.<br>----<br>Arquivo Inundado entra no campo de batalha virado.<br>{T}: Adicione {U} ou {B}.</td>
+  </tr>
+  <tr>
+    <td>265</td>
+    <td>Orim's Chant</td>
+    <td>Kicker {W} (You may pay an additional {W} as you cast this spell.)<br>Target player can't cast spells this turn. If this spell was kicked, creatures can't attack this turn.</td>
+    <td>Reforçador {W} (Você pode pagar um valor adicional de {W} ao conjurar esta mágica.)<br>O jogador alvo não pode conjurar mágicas neste turno. Se esta mágica foi reforçada, as criaturas não podem atacar neste turno.</td>
+  </tr>
+  <tr>
+    <td>268</td>
+    <td>Deep Analysis</td>
+    <td>Target player draws two cards.<br>Flashback—{1}{U}, Pay 3 life. (You may cast this card from your graveyard for its flashback cost. Then exile it.)</td>
+    <td>O jogador alvo compra duas cartas.<br>Flashback — {1}{U}, pague 3 pontos de vida. (Você pode conjurar este card de seu cemitério pagando seu custo de flashback. Depois exile-o.)</td>
+  </tr>
+  <tr>
+    <td>270</td>
+    <td>Kappa Cannoneer</td>
+    <td>Improvise (Your artifacts can help cast this spell. Each artifact you tap after you're done activating mana abilities pays for {1}.)<br>Ward {4}<br>Whenever an artifact enters the battlefield under your control, put a +1/+1 counter on Kappa Cannoneer and it can't be blocked this turn.</td>
+    <td>Improvisar (Seus artefatos podem ajudar a conjurar esta mágica. Cada artefato que você vira depois de ativar as habilidades de mana paga {1}.)<br>Ala {4}<br>Toda vez que um artefato entrar no campo de batalha sob seu controle, coloque um marcador +1/+1 em Kappa Cannoneer e ele não poderá ser bloqueado neste turno.</td>
+  </tr>
+  <tr>
+    <td>274</td>
+    <td>K'rrik, Son of Yawgmoth</td>
+    <td>({B/P} can be paid with either {B} or 2 life.)<br>Lifelink<br>For each {B} in a cost, you may pay 2 life rather than pay that mana.<br>Whenever you cast a black spell, put a +1/+1 counter on K'rrik, Son of Yawgmoth.</td>
+    <td>({B/P} pode ser pago com {B} ou 2 pontos de vida.)<br>Vínculo com a vida<br>Para cada {B} em um custo, você pode pagar 2 pontos de vida em vez de pagar aquele mana.<br>Toda vez que você conjurar uma mágica negra, coloque um marcador +1/+1 em K'rrik, Filho de Yawgmoth.</td>
+  </tr>
+  <tr>
+    <td>276</td>
+    <td>Ophiomancer</td>
+    <td>At the beginning of each upkeep, if you control no Snakes, create a 1/1 black Snake creature token with deathtouch.</td>
+    <td>No início de cada manutenção, se você não controlar nenhuma Cobra, crie uma ficha de criatura preta 1/1 do tipo Cobra com toque mortífero.</td>
+  </tr>
+  <tr>
+    <td>278</td>
+    <td>Victimize</td>
+    <td>Choose two target creature cards in your graveyard. Sacrifice a creature. If you do, return the chosen cards to the battlefield tapped.</td>
+    <td>Escolha dois cards de criatura alvo em seu cemitério. Sacrifique uma criatura. Se fizer isso, devolva os cards escolhidos ao campo de batalha virados.</td>
+  </tr>
+  <tr>
+    <td>279</td>
+    <td>Cursed Mirror</td>
+    <td>{T}: Add {R}.<br>As Cursed Mirror enters the battlefield, you may have it become a copy of any creature on the battlefield until end of turn, except it has haste.</td>
+    <td>{T}: Adicione {R}.<br>Conforme Cursed Mirror entra no campo de batalha, você pode fazer com que ele se torne uma cópia de qualquer criatura no campo de batalha até o final do turno, exceto que ele tem impeto.</td>
+  </tr>
+  <tr>
+    <td>281</td>
+    <td>Laelia, the Blade Reforged</td>
+    <td>Haste<br>Whenever Laelia, the Blade Reforged attacks, exile the top card of your library. You may play that card this turn.<br>Whenever one or more cards are put into exile from your library and/or your graveyard, put a +1/+1 counter on Laelia.</td>
+    <td>Impeto<br>Sempre que Laelia, a Lâmina Reforjada, atacar, exile o card do topo do seu grimório. Você pode jogar aquela carta neste turno.<br>Toda vez que um ou mais cards forem exilados de seu grimório e/ou cemitério, coloque um marcador +1/+1 em Laelia.</td>
+  </tr>
+  <tr>
+    <td>282</td>
+    <td>Meltdown</td>
+    <td>Destroy each artifact with mana value X or less.</td>
+    <td>Destrua cada artefato com valor de mana X ou menos.</td>
+  </tr>
+  <tr>
+    <td>286</td>
+    <td>Priest of Titania</td>
+    <td>{T}: Add {G} for each Elf on the battlefield.</td>
+    <td>{T}: Adicione {G} para cada Elfo no campo de batalha.</td>
+  </tr>
+  <tr>
+    <td>287</td>
+    <td>Sylvan Safekeeper</td>
+    <td>Sacrifice a land: Target creature you control gains shroud until end of turn. (It can't be the target of spells or abilities.)</td>
+    <td>Sacrifique um terreno: A criatura alvo que você controla ganha mortalha até o final do turno. (Não pode ser alvo de mágicas ou habilidades.)</td>
+  </tr>
+  <tr>
+    <td>288</td>
+    <td>Wirewood Symbiote</td>
+    <td>Return an Elf you control to its owner's hand: Untap target creature. Activate only once each turn.</td>
+    <td>Devolva um Elfo que você controla para a mão de seu dono: desvire a criatura alvo. Ative apenas uma vez em cada turno.</td>
+  </tr>
+  <tr>
+    <td>289</td>
+    <td>Breya, Etherium Shaper</td>
+    <td>When Breya, Etherium Shaper enters the battlefield, create two 1/1 blue Thopter artifact creature tokens with flying.<br>{2}, Sacrifice two artifacts: Choose one —<br>• Breya deals 3 damage to target player or planeswalker.<br>• Target creature gets -4/-4 until end of turn.<br>• You gain 5 life.</td>
+    <td>Quando Breya, Moldadora de Etherium, entrar no campo de batalha, crie duas fichas de criatura artefato azuis 1/1 do tipo Tóptero com voar.<br>{2}, Sacrifique dois artefatos: Escolha um —<br>• Breya causa 3 pontos de dano ao jogador ou planeswalker alvo.<br>• A criatura alvo recebe -4/-4 até o final do turno.<br>• Você ganha 5 pontos de vida.</td>
+  </tr>
+  <tr>
+    <td>290</td>
+    <td>Kaalia of the Vast</td>
+    <td>Flying<br>Whenever Kaalia of the Vast attacks an opponent, you may put an Angel, Demon, or Dragon creature card from your hand onto the battlefield tapped and attacking that opponent.</td>
+    <td>Voar<br>Toda vez que Kaalia of the Vast ataca um oponente, você pode colocar no campo de batalha um card de criatura Anjo, Demônio ou Dragão de sua mão virado e atacando aquele oponente.</td>
+  </tr>
+  <tr>
+    <td>291</td>
+    <td>Emerald Medallion</td>
+    <td>Green spells you cast cost {1} less to cast.</td>
+    <td>As mágicas verdes que você conjura custam {1} a menos para conjurar.</td>
+  </tr>
+  <tr>
+    <td>292</td>
+    <td>Jet Medallion</td>
+    <td>Black spells you cast cost {1} less to cast.</td>
+    <td>As mágicas pretas que você conjura custam {1} a menos para conjurar.</td>
+  </tr>
+  <tr>
+    <td>294</td>
+    <td>Pearl Medallion</td>
+    <td>White spells you cast cost {1} less to cast.</td>
+    <td>As mágicas brancas que você conjura custam {1} a menos para conjurar.</td>
+  </tr>
+  <tr>
+    <td>295</td>
+    <td>Ruby Medallion</td>
+    <td>Red spells you cast cost {1} less to cast.</td>
+    <td>As mágicas vermelhas que você conjura custam {1} a menos para conjurar.</td>
+  </tr>
+  <tr>
+    <td>296</td>
+    <td>Sapphire Medallion</td>
+    <td>Blue spells you cast cost {1} less to cast.</td>
+    <td>As mágicas azuis que você conjura custam {1} a menos para conjurar.</td>
+  </tr>
+  <tr>
+    <td>298</td>
+    <td>Worn Powerstone</td>
+    <td>Worn Powerstone enters the battlefield tapped.<br>{T}: Add {C}{C}.</td>
+    <td>Pedra de Energia Desgastada entra no campo de batalha virada.<br>{T}: Adicione {C}{C}.</td>
+  </tr>
+  <tr>
+    <td>299</td>
+    <td>Barbarian Ring</td>
+    <td>{T}: Add {R}. Barbarian Ring deals 1 damage to you.<br>Threshold — {R}, {T}, Sacrifice Barbarian Ring: It deals 2 damage to any target. Activate only if seven or more cards are in your graveyard.</td>
+    <td>{T}: Adicione {R}. Anel Bárbaro causa 1 ponto de dano a você.<br>Limiar — {R}, {T}, Sacrifique Anel Bárbaro: Causa 2 pontos de dano a qualquer alvo. Ative apenas se houver sete ou mais cards em seu cemitério.</td>
+  </tr>
+  <tr>
+    <td>300</td>
+    <td>Cephalid Coliseum</td>
+    <td>{T}: Add {U}. Cephalid Coliseum deals 1 damage to you.<br>Threshold — {U}, {T}, Sacrifice Cephalid Coliseum: Target player draws three cards, then discards three cards. Activate only if seven or more cards are in your graveyard.</td>
+    <td>{T}: Adicione {U}. Cephalid Coliseum causa 1 ponto de dano a você.<br>Limiar — {U}, {T}, sacrifique Cephalid Coliseum: O jogador alvo compra três cartas e depois descarta três cartas. Ative apenas se houver sete ou mais cards em seu cemitério.</td>
+  </tr>
+  <tr>
+    <td>301</td>
+    <td>Deserted Temple</td>
+    <td>{T}: Add {C}.<br>{1}, {T}: Untap target land.</td>
+    <td>{T}: Adicione {C}.<br>{1}, {T}: Desvire o terreno alvo.</td>
+  </tr>
+  <tr>
+    <td>309</td>
+    <td>Snow-Covered Wastes</td>
+    <td>{T}: Add {C}.</td>
+    <td>{T}: Adicione {C}.</td>
+  </tr>
+  <tr>
+    <td>320</td>
+    <td>Echoes of Eternity</td>
+    <td>If a triggered ability of a colorless spell you control or another colorless permanent you control triggers, that ability triggers an additional time.<br>Whenever you cast a colorless spell, copy it. You may choose new targets for the copy. (A copy of a permanent spell becomes a token.)</td>
+    <td>Se uma habilidade desencadeada de uma mágica incolor que você controla ou outra permanente incolor que você controla for desencadeada, essa habilidade será desencadeada uma vez adicional.<br>Sempre que você conjurar um feitiço incolor, copie-o. Você pode escolher novos alvos para a cópia. (Uma cópia de uma mágica permanente torna-se uma ficha.)</td>
+  </tr>
+  <tr>
+    <td>321</td>
+    <td>Flare of Fortitude</td>
+    <td>You may sacrifice a nontoken white creature rather than pay this spell's mana cost.<br>Until end of turn, your life total can't change, and permanents you control gain hexproof and indestructible.</td>
+    <td>Você pode sacrificar uma criatura branca que não seja uma ficha em vez de pagar o custo de mana desta mágica.<br>Até o final do turno, seu total de pontos de vida não pode mudar e as permanentes que você controla ganham resistência à magia e indestrutíveis.</td>
+  </tr>
+  <tr>
+    <td>323</td>
+    <td>Orim's Chant</td>
+    <td>Kicker {W} (You may pay an additional {W} as you cast this spell.)<br>Target player can't cast spells this turn. If this spell was kicked, creatures can't attack this turn.</td>
+    <td>Reforçador {W} (Você pode pagar um valor adicional de {W} ao conjurar esta mágica.)<br>O jogador alvo não pode conjurar mágicas neste turno. Se esta mágica foi reforçada, as criaturas não podem atacar neste turno.</td>
+  </tr>
+  <tr>
+    <td>324</td>
+    <td>White Orchid Phantom</td>
+    <td>Flying, first strike<br>When White Orchid Phantom enters the battlefield, destroy up to one target nonbasic land. Its controller may search their library for a basic land card, put it onto the battlefield tapped, then shuffle.</td>
+    <td>Voar, primeiro ataque<br>Quando White Orchid Phantom entrar no campo de batalha, destrua até um terreno alvo não básico. Seu controlador pode procurar em seu grimório um card de terreno básico, colocá-lo no campo de batalha virado e depois embaralhar.</td>
+  </tr>
+  <tr>
+    <td>326</td>
+    <td>Flare of Denial</td>
+    <td>You may sacrifice a nontoken blue creature rather than pay this spell's mana cost.<br>Counter target spell.</td>
+    <td>Você pode sacrificar uma criatura azul que não seja uma ficha em vez de pagar o custo de mana desta mágica.<br>Anule a mágica alvo.</td>
+  </tr>
+  <tr>
+    <td>327</td>
+    <td>Strix Serenade</td>
+    <td>Counter target artifact, creature, or planeswalker spell. Its controller creates a 2/2 blue Bird creature token with flying.</td>
+    <td>Anula a mágica de artefato, criatura ou planeswalker alvo. Seu controlador cria uma ficha de criatura azul 2/2 do tipo Ave com voar.</td>
+  </tr>
+  <tr>
+    <td>329</td>
+    <td>Volatile Stormdrake</td>
+    <td>Flying, hexproof from activated and triggered abilities<br>When Volatile Stormdrake enters the battlefield, exchange control of Volatile Stormdrake and target creature an opponent controls. If you do, you get {E}{E}{E}{E}, then sacrifice that creature unless you pay an amount of {E} equal to its mana value.</td>
+    <td>Voar, resistência à magia de habilidades ativadas e desencadeadas<br>Quando Stormdrake Volátil entrar no campo de batalha, troque o controle de Stormdrake Volátil e da criatura alvo que um oponente controla. Se fizer isso, você receberá {E}{E}{E}{E} e depois sacrificará aquela criatura, a menos que pague uma quantia de {E} igual ao seu valor de mana.</td>
+  </tr>
+  <tr>
+    <td>330</td>
+    <td>Chthonian Nightmare</td>
+    <td>When Chthonian Nightmare enters the battlefield, you get {E}{E}{E} (three energy counters).<br>Pay X {E}, Sacrifice a creature, Return Chthonian Nightmare to its owner's hand: Return target creature card with mana value X from your graveyard to the battlefield. Activate only as a sorcery.</td>
+    <td>Quando Pesadelo Chthoniano entra no campo de batalha, você recebe {E}{E}{E} (três marcadores de energia).<br>Pague X {E}, sacrifique uma criatura, devolva Pesadelo Chthoniano para a mão de seu dono: Devolva o card de criatura alvo com valor de mana X de seu cemitério para o campo de batalha. Ative apenas como um feitiço.</td>
+  </tr>
+  <tr>
+    <td>331</td>
+    <td>Flare of Malice</td>
+    <td>You may sacrifice a nontoken black creature rather than pay this spell's mana cost.<br>Each opponent sacrifices a creature or planeswalker with the greatest mana value among creatures and planeswalkers they control.</td>
+    <td>Você pode sacrificar uma criatura preta que não seja uma ficha em vez de pagar o custo de mana desta mágica.<br>Cada oponente sacrifica uma criatura ou planeswalker com o maior valor de mana entre as criaturas e planeswalkers que ele controla.</td>
+  </tr>
+  <tr>
+    <td>333</td>
+    <td>Flare of Duplication</td>
+    <td>You may sacrifice a nontoken red creature rather than pay this spell's mana cost.<br>Copy target instant or sorcery spell. You may choose new targets for the copy.</td>
+    <td>Você pode sacrificar uma criatura vermelha que não seja uma ficha em vez de pagar o custo de mana desta mágica.<br>Copie a mágica instantânea ou feitiço alvo. Você pode escolher novos alvos para a cópia.</td>
+  </tr>
+  <tr>
+    <td>335</td>
+    <td>Powerbalance</td>
+    <td>Whenever an opponent casts a spell, you may reveal the top card of your library. If you do, you may cast that card without paying its mana cost if the two spells have the same mana value.</td>
+    <td>Sempre que um oponente conjurar uma mágica, você poderá revelar o card do topo do seu grimório. Se fizer isso, você poderá conjurar aquele card sem pagar seu custo de mana se as duas mágicas tiverem o mesmo valor de mana.</td>
+  </tr>
+  <tr>
+    <td>336</td>
+    <td>Wheel of Potential</td>
+    <td>You get {E}{E}{E} (three energy counters), then you may pay X {E}.<br>Each player may exile their hand and draw X cards. If X is 7 or more, you may play cards you own exiled this way until the end of your next turn.</td>
+    <td>Você recebe {E}{E}{E} (três marcadores de energia) e pode pagar X {E}.<br>Cada jogador pode exilar sua mão e comprar X cartas. Se X for 7 ou mais, você poderá jogar cartas que você possui exiladas desta forma até o final do seu próximo turno.</td>
+  </tr>
+  <tr>
+    <td>338</td>
+    <td>Flare of Cultivation</td>
+    <td>You may sacrifice a nontoken green creature rather than pay this spell's mana cost.<br>Search your library for up to two basic land cards, reveal those cards, put one onto the battlefield tapped and the other into your hand, then shuffle.</td>
+    <td>Você pode sacrificar uma criatura verde que não seja uma ficha em vez de pagar o custo de mana desta mágica.<br>Procure em seu grimório por até dois cards de terreno básico, revele esses cards, coloque um no campo de batalha virado e o outro em sua mão e depois embaralhe.</td>
+  </tr>
+  <tr>
+    <td>343</td>
+    <td>Kaalia of the Vast</td>
+    <td>Flying<br>Whenever Kaalia of the Vast attacks an opponent, you may put an Angel, Demon, or Dragon creature card from your hand onto the battlefield tapped and attacking that opponent.</td>
+    <td>Voar<br>Toda vez que Kaalia of the Vast ataca um oponente, você pode colocar no campo de batalha um card de criatura Anjo, Demônio ou Dragão de sua mão virado e atacando aquele oponente.</td>
+  </tr>
+  <tr>
+    <td>344</td>
+    <td>Psychic Frog</td>
+    <td>Whenever Psychic Frog deals combat damage to a player or planeswalker, draw a card.<br>Discard a card: Put a +1/+1 counter on Psychic Frog.<br>Exile three cards from your graveyard: Psychic Frog gains flying until end of turn.</td>
+    <td>Toda vez que Sapo Psíquico causar dano de combate a um jogador ou planeswalker, compre um card.<br>Descarte um card: Coloque um marcador +1/+1 em Psychic Frog.<br>Exile três cards de seu cemitério: Sapo Psíquico ganha voar até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>345</td>
+    <td>Emerald Medallion</td>
+    <td>Green spells you cast cost {1} less to cast.</td>
+    <td>As mágicas verdes que você conjura custam {1} a menos para conjurar.</td>
+  </tr>
+  <tr>
+    <td>346</td>
+    <td>Jet Medallion</td>
+    <td>Black spells you cast cost {1} less to cast.</td>
+    <td>As mágicas pretas que você conjura custam {1} a menos para conjurar.</td>
+  </tr>
+  <tr>
+    <td>347</td>
+    <td>Pearl Medallion</td>
+    <td>White spells you cast cost {1} less to cast.</td>
+    <td>As mágicas brancas que você conjura custam {1} a menos para conjurar.</td>
+  </tr>
+  <tr>
+    <td>348</td>
+    <td>Ruby Medallion</td>
+    <td>Red spells you cast cost {1} less to cast.</td>
+    <td>As mágicas vermelhas que você conjura custam {1} a menos para conjurar.</td>
+  </tr>
+  <tr>
+    <td>349</td>
+    <td>Sapphire Medallion</td>
+    <td>Blue spells you cast cost {1} less to cast.</td>
+    <td>As mágicas azuis que você conjura custam {1} a menos para conjurar.</td>
+  </tr>
+  <tr>
+    <td>352</td>
+    <td>Bloodstained Mire</td>
+    <td>{T}, Pay 1 life, Sacrifice Bloodstained Mire: Search your library for a Swamp or Mountain card, put it onto the battlefield, then shuffle.</td>
+    <td>{T}, Pague 1 ponto de vida, Sacrifique Pântano Manchado de Sangue: Procure um card de Pântano ou Montanha em seu grimório, coloque-o no campo de batalha e depois embaralhe.</td>
+  </tr>
+  <tr>
+    <td>353</td>
+    <td>Flooded Strand</td>
+    <td>{T}, Pay 1 life, Sacrifice Flooded Strand: Search your library for a Plains or Island card, put it onto the battlefield, then shuffle.</td>
+    <td>{T}, pague 1 ponto de vida, sacrifique Praia Inundada: Procure um card de Planície ou Ilha em seu grimório, coloque-o no campo de batalha e depois embaralhe.</td>
+  </tr>
+  <tr>
+    <td>356</td>
+    <td>Polluted Delta</td>
+    <td>{T}, Pay 1 life, Sacrifice Polluted Delta: Search your library for an Island or Swamp card, put it onto the battlefield, then shuffle.</td>
+    <td>{T}, pague 1 ponto de vida, sacrifique Polluted Delta: Procure em seu grimório por um card de Ilha ou Pântano, coloque-o no campo de batalha e depois embaralhe.</td>
+  </tr>
+  <tr>
+    <td>358</td>
+    <td>Spymaster's Vault</td>
+    <td>Spymaster's Vault enters the battlefield tapped unless you control a Swamp.<br>{T}: Add {B}.<br>{B}, {T}: Target creature you control connives X, where X is the number of creatures that died this turn. (Draw X cards, then discard X cards. Put a +1/+1 counter on that creature for each nonland card discarded this way.)</td>
+    <td>Cofre do Spymaster entra no campo de batalha virado, a menos que você controle um Pântano.<br>{T}: Adicione {B}.<br>{B}, {T}: A criatura alvo que você controla é conivente com X, onde X é o número de criaturas que morreram neste turno. (Compre X cards e depois descarte X cards. Coloque um marcador +1/+1 naquela criatura para cada card que não seja um terreno descartado dessa forma.)</td>
+  </tr>
+  <tr>
+    <td>359</td>
+    <td>Ugin's Labyrinth</td>
+    <td>Imprint — When Ugin's Labyrinth enters the battlefield, you may exile a colorless card with mana value 7 or greater from your hand.<br>{T}: Add {C}. If a card is exiled with Ugin's Labyrinth, add {C}{C} instead.<br>{T}: Return the exiled card to its owner's hand.</td>
+    <td>Estampar — Quando Labirinto de Ugin entra no campo de batalha, você pode exilar um card incolor com valor de mana igual ou superior a 7 de sua mão.<br>{T}: Adicione {C}. Se um card for exilado com o Labirinto de Ugin, adicione {C}{C} em vez disso.<br>{T}: Devolva o card exilado para a mão de seu dono.</td>
+  </tr>
+  <tr>
+    <td>360</td>
+    <td>Windswept Heath</td>
+    <td>{T}, Pay 1 life, Sacrifice Windswept Heath: Search your library for a Forest or Plains card, put it onto the battlefield, then shuffle.</td>
+    <td>{T}, pague 1 ponto de vida, sacrifique Windswept Heath: Procure em seu grimório por um card de Floresta ou Planície, coloque-o no campo de batalha e depois embaralhe.</td>
+  </tr>
+  <tr>
+    <td>361</td>
+    <td>Wooded Foothills</td>
+    <td>{T}, Pay 1 life, Sacrifice Wooded Foothills: Search your library for a Mountain or Forest card, put it onto the battlefield, then shuffle.</td>
+    <td>{T}, pague 1 ponto de vida, sacrifique Contrafortes Arborizados: Procure um card de Montanha ou Floresta em seu grimório, coloque-o no campo de batalha e depois embaralhe.</td>
+  </tr>
+  <tr>
+    <td>362</td>
+    <td>Herigast, Erupting Nullkite</td>
+    <td>Emerge {6}{R}{R} (You may cast this spell by sacrificing a creature and paying the emerge cost reduced by that creature's mana value.)<br>When you cast this spell, you may exile your hand. If you do, draw three cards.<br>Flying<br>Each creature spell you cast has emerge. The emerge cost is equal to its mana cost.</td>
+    <td>Emergir {6}{R}{R} (Você pode conjurar esta mágica sacrificando uma criatura e pagando o custo de emergir reduzido pelo valor de mana daquela criatura.)<br>Ao conjurar esta magia, você pode exilar sua mão. Se fizer isso, compre três cartas.<br>Voar<br>Cada feitiço de criatura que você conjurou emerge. O custo de emergência é igual ao seu custo de mana.</td>
+  </tr>
+  <tr>
+    <td>363</td>
+    <td>Pearl-Ear, Imperial Advisor</td>
+    <td>Lifelink<br>Enchantment spells you cast have affinity for Auras. (They cost {1} less to cast for each Aura you control.)<br>Whenever you cast an Aura spell that targets a modified permanent you control, draw a card. (Equipment, Auras you control, and counters are modifications.)</td>
+    <td>Vínculo com a vida<br>Os feitiços de encantamento que você conjura têm afinidade com Auras. (Eles custam {1} a menos para serem conjurados para cada Aura que você controla.)<br>Toda vez que você conjurar uma mágica de Aura que tenha como alvo uma permanente modificada que você controla, compre um card. (Equipamentos, Auras que você controla e contadores são modificações.)</td>
+  </tr>
+  <tr>
+    <td>364</td>
+    <td>Phelia, Exuberant Shepherd</td>
+    <td>Flash<br>Whenever Phelia, Exuberant Shepherd attacks, exile up to one other target nonland permanent. At the beginning of the next end step, return that card to the battlefield under its owner's control. If it entered under your control, put a +1/+1 counter on Phelia.</td>
+    <td>Clarão<br>Toda vez que Phelia, Pastor Exuberante, atacar, exile até uma outra permanente alvo que não seja um terreno. No início da próxima etapa final, devolva aquele card ao campo de batalha sob o controle de seu dono. Se ele entrou sob seu controle, coloque um marcador +1/+1 em Phelia.</td>
+  </tr>
+  <tr>
+    <td>365</td>
+    <td>K'rrik, Son of Yawgmoth</td>
+    <td>({B/P} can be paid with either {B} or 2 life.)<br>Lifelink<br>For each {B} in a cost, you may pay 2 life rather than pay that mana.<br>Whenever you cast a black spell, put a +1/+1 counter on K'rrik, Son of Yawgmoth.</td>
+    <td>({B/P} pode ser pago com {B} ou 2 pontos de vida.)<br>Vínculo com a vida<br>Para cada {B} em um custo, você pode pagar 2 pontos de vida em vez de pagar aquele mana.<br>Toda vez que você conjurar uma mágica negra, coloque um marcador +1/+1 em K'rrik, Filho de Yawgmoth.</td>
+  </tr>
+  <tr>
+    <td>368</td>
+    <td>Laelia, the Blade Reforged</td>
+    <td>Haste<br>Whenever Laelia, the Blade Reforged attacks, exile the top card of your library. You may play that card this turn.<br>Whenever one or more cards are put into exile from your library and/or your graveyard, put a +1/+1 counter on Laelia.</td>
+    <td>Impeto<br>Sempre que Laelia, a Lâmina Reforjada, atacar, exile o card do topo do seu grimório. Você pode jogar aquela carta neste turno.<br>Toda vez que um ou mais cards forem exilados de seu grimório e/ou cemitério, coloque um marcador +1/+1 em Laelia.</td>
+  </tr>
+  <tr>
+    <td>369</td>
+    <td>Eladamri, Korvecdal</td>
+    <td>You may look at the top card of your library any time.<br>You may cast creature spells from the top of your library.<br>{G}, {T}, Tap two untapped creatures you control: Reveal a card from your hand or the top card of your library. If you reveal a creature card this way, put it onto the battlefield. Activate only during your turn.</td>
+    <td>Você pode olhar o card do topo do seu grimório a qualquer momento.<br>Você pode conjurar mágicas de criatura do topo de seu grimório.<br>{G}, {T}, Vire duas criaturas desviradas que você controla: Revele um card de sua mão ou o card do topo de seu grimório. Se você revelar um card de criatura desta forma, coloque-o no campo de batalha. Ative apenas durante o seu turno.</td>
+  </tr>
+  <tr>
+    <td>370</td>
+    <td>Six</td>
+    <td>Reach<br>Whenever Six attacks, mill three cards. You may put a land card from among them into your hand.<br>As long as it's your turn, nonland permanent cards in your graveyard have retrace. (You may cast permanent cards from your graveyard by discarding a land card in addition to paying their other costs.)</td>
+    <td>Alcançar<br>Sempre que Seis atacar, moa três cartas. Você pode colocar um card de terreno dentre eles em sua mão.<br>Enquanto for o seu turno, os cards permanentes que não sejam terrenos em seu cemitério poderão ser retraçados. (Você pode conjurar cards permanentes de seu cemitério descartando um card de terreno além de pagar seus outros custos.)</td>
+  </tr>
+  <tr>
+    <td>371</td>
+    <td>Arna Kennerüd, Skycaptain</td>
+    <td>Flying, lifelink<br>Ward—Discard a card.<br>Whenever a modified creature you control attacks, double the number of each kind of counter on it. Then for each nontoken permanent attached to it, create a token that's a copy of that permanent attached to that creature.</td>
+    <td>Voar, vínculo vitalício<br>Ward – Descarte uma carta.<br>Toda vez que uma criatura modificada que você controla atacar, dobre o número de cada tipo de marcador nela. Então, para cada permanente que não seja uma ficha anexada a ela, crie uma ficha que seja uma cópia daquela permanente anexada àquela criatura.</td>
+  </tr>
+  <tr>
+    <td>372</td>
+    <td>Breya, Etherium Shaper</td>
+    <td>When Breya, Etherium Shaper enters the battlefield, create two 1/1 blue Thopter artifact creature tokens with flying.<br>{2}, Sacrifice two artifacts: Choose one —<br>• Breya deals 3 damage to target player or planeswalker.<br>• Target creature gets -4/-4 until end of turn.<br>• You gain 5 life.</td>
+    <td>Quando Breya, Moldadora de Etherium, entrar no campo de batalha, crie duas fichas de criatura artefato azuis 1/1 do tipo Tóptero com voar.<br>{2}, Sacrifique dois artefatos: Escolha um —<br>• Breya causa 3 pontos de dano ao jogador ou planeswalker alvo.<br>• A criatura alvo recebe -4/-4 até o final do turno.<br>• Você ganha 5 pontos de vida.</td>
+  </tr>
+  <tr>
+    <td>373</td>
+    <td>Genku, Future Shaper</td>
+    <td>Whenever another nontoken permanent you control leaves the battlefield, choose one that hasn't been chosen this turn. Create a creature token with those characteristics.<br>• 2/2 white Fox with vigilance.<br>• 1/2 blue Moonfolk with flying.<br>• 1/1 black Rat with lifelink.<br>{3}{W}{U}: Put a +1/+1 counter on each creature you control.</td>
+    <td>Toda vez que outra permanente que você controla que não seja uma ficha deixar o campo de batalha, escolha uma que não tenha sido escolhida neste turno. Crie uma ficha de criatura com essas características.<br>• 2/2 Raposa branca com vigilância.<br>• 1/2 Moonfolk azul com voar.<br>• 1/1 Rato preto com vínculo com a vida.<br>{3}{W}{U}: Coloque um marcador +1/+1 em cada criatura que você controla.</td>
+  </tr>
+  <tr>
+    <td>375</td>
+    <td>Kaalia of the Vast</td>
+    <td>Flying<br>Whenever Kaalia of the Vast attacks an opponent, you may put an Angel, Demon, or Dragon creature card from your hand onto the battlefield tapped and attacking that opponent.</td>
+    <td>Voar<br>Toda vez que Kaalia of the Vast ataca um oponente, você pode colocar no campo de batalha um card de criatura Anjo, Demônio ou Dragão de sua mão virado e atacando aquele oponente.</td>
+  </tr>
+  <tr>
+    <td>376</td>
+    <td>Kudo, King Among Bears</td>
+    <td>Other creatures have base power and toughness 2/2 and are Bears in addition to their other types.</td>
+    <td>Outras criaturas têm poder e resistência básicos 2/2 e são Ursos além de seus outros tipos.</td>
+  </tr>
+  <tr>
+    <td>378</td>
+    <td>The Necrobloom</td>
+    <td>Landfall — Whenever a land enters the battlefield under your control, create a 0/1 green Plant creature token. If you control seven or more lands with different names, create a 2/2 black Zombie creature token instead.<br>Land cards in your graveyard have dredge 2. (You may return a land card from your graveyard to your hand and mill two cards instead of drawing a card.)</td>
+    <td>Landfall — Toda vez que um terreno entrar no campo de batalha sob seu controle, crie uma ficha de criatura verde 0/1 do tipo Planta. Se você controlar sete ou mais terrenos com nomes diferentes, em vez disso, crie uma ficha de criatura preta 2/2 do tipo Zumbi.<br>Os cards de terreno em seu cemitério têm dragagem 2. (Você pode devolver um card de terreno de seu cemitério para sua mão e moer dois cards em vez de comprar um card.)</td>
+  </tr>
+  <tr>
+    <td>379</td>
+    <td>Phlage, Titan of Fire's Fury</td>
+    <td>When Phlage enters the battlefield, sacrifice it unless it escaped.<br>Whenever Phlage enters the battlefield or attacks, it deals 3 damage to any target and you gain 3 life.<br>Escape—{R}{R}{W}{W}, Exile five other cards from your graveyard.</td>
+    <td>Quando Phlage entrar no campo de batalha, sacrifique-o a menos que ele escape.<br>Sempre que Phlage entra no campo de batalha ou ataca, ele causa 3 pontos de dano a qualquer alvo e você ganha 3 pontos de vida.<br>Escapatória — {R}{R}{W}{W}, Exile outros cinco cards de seu cemitério.</td>
+  </tr>
+  <tr>
+    <td>381</td>
+    <td>Emrakul, the World Anew</td>
+    <td>When you cast this spell, gain control of all creatures target player controls.<br>Flying, protection from spells and from permanents that were cast this turn<br>When Emrakul, the World Anew leaves the battlefield, sacrifice all creatures you control.<br>Madness—Pay six {C}.</td>
+    <td>Ao conjurar esta mágica, você ganha o controle de todas as criaturas que o jogador alvo controla.<br>Voar, proteção contra mágicas e permanentes que foram conjuradas neste turno<br>Quando Emrakul, the World Anew sair do campo de batalha, sacrifique todas as criaturas que você controla.<br>Loucura – Pague seis {C}.</td>
+  </tr>
+  <tr>
+    <td>382</td>
+    <td>Kozilek, the Broken Reality</td>
+    <td>When you cast this spell, up to two target players each manifest two cards from their hands. For each card manifested this way, you draw a card. (To manifest a card, put it onto the battlefield face down as a 2/2 creature. Turn it face up any time for its mana cost if it's a creature card.)<br>Other colorless creatures you control get +3/+2.</td>
+    <td>Quando você conjura esta mágica, até dois jogadores alvo manifestam, cada um, duas cartas de suas mãos. Para cada carta manifestada desta forma, você compra uma carta. (Para manifestar um card, coloque-o no campo de batalha com a face voltada para baixo como uma criatura 2/2. Vire-o com a face para cima a qualquer momento pagando seu custo de mana se for um card de criatura.)<br>As outras criaturas incolores que você controla recebem +3/+2.</td>
+  </tr>
+  <tr>
+    <td>383</td>
+    <td>Ulamog, the Defiler</td>
+    <td>When you cast this spell, target opponent exiles half their library, rounded up.<br>Ward—Sacrifice two permanents.<br>Ulamog, the Defiler enters the battlefield with a number of +1/+1 counters on it equal to the greatest mana value among cards in exile.<br>Ulamog has annihilator X, where X is the number of +1/+1 counters on it.</td>
+    <td>Quando você conjura esta mágica, o oponente alvo exila metade de seu grimório, arredondado para cima.<br>Ward – Sacrifique duas permanentes.<br>Ulamog, o Profanador, entra no campo de batalha com um número de marcadores +1/+1 igual ao maior valor de mana entre os cards no exílio.<br>Ulamog tem o aniquilador X, onde X é o número de marcadores +1/+1 nele.</td>
+  </tr>
+  <tr>
+    <td>384</td>
+    <td>Emrakul, the World Anew</td>
+    <td>When you cast this spell, gain control of all creatures target player controls.<br>Flying, protection from spells and from permanents that were cast this turn<br>When Emrakul, the World Anew leaves the battlefield, sacrifice all creatures you control.<br>Madness—Pay six {C}.</td>
+    <td>Ao conjurar esta mágica, você ganha o controle de todas as criaturas que o jogador alvo controla.<br>Voar, proteção contra mágicas e permanentes que foram conjuradas neste turno<br>Quando Emrakul, the World Anew sair do campo de batalha, sacrifique todas as criaturas que você controla.<br>Loucura – Pague seis {C}.</td>
+  </tr>
+  <tr>
+    <td>385</td>
+    <td>It That Heralds the End</td>
+    <td>Colorless spells you cast with mana value 7 or greater cost {1} less to cast.<br>Other colorless creatures you control get +1/+1.</td>
+    <td>As mágicas incolores que você conjura com custo de mana igual ou superior a 7 custam {1} a menos para serem conjuradas.<br>As outras criaturas incolores que você controla recebem +1/+1.</td>
+  </tr>
+  <tr>
+    <td>386</td>
+    <td>Kozilek, the Broken Reality</td>
+    <td>When you cast this spell, up to two target players each manifest two cards from their hands. For each card manifested this way, you draw a card. (To manifest a card, put it onto the battlefield face down as a 2/2 creature. Turn it face up any time for its mana cost if it's a creature card.)<br>Other colorless creatures you control get +3/+2.</td>
+    <td>Quando você conjura esta mágica, até dois jogadores alvo manifestam, cada um, duas cartas de suas mãos. Para cada carta manifestada desta forma, você compra uma carta. (Para manifestar um card, coloque-o no campo de batalha com a face voltada para baixo como uma criatura 2/2. Vire-o com a face para cima a qualquer momento pagando seu custo de mana se for um card de criatura.)<br>As outras criaturas incolores que você controla recebem +3/+2.</td>
+  </tr>
+  <tr>
+    <td>387</td>
+    <td>Null Elemental Blast</td>
+    <td>Choose one —<br>• Counter target multicolored spell.<br>• Destroy target multicolored permanent.</td>
+    <td>Escolha um -<br>• Anule o feitiço multicolorido alvo.<br>• Destrua a permanente alvo multicolorida.</td>
+  </tr>
+  <tr>
+    <td>388</td>
+    <td>Nulldrifter</td>
+    <td>When you cast this spell, draw two cards.<br>Flying<br>Annihilator 1 (Whenever this creature attacks, defending player sacrifices a permanent.)<br>Evoke {2}{U} (You may cast this spell for its evoke cost. If you do, it's sacrificed when it enters the battlefield.)</td>
+    <td>Ao conjurar esta mágica, compre duas cartas.<br>Voar<br>Aniquilador 1 (Toda vez que esta criatura ataca, o jogador defensor sacrifica uma permanente.)<br>Evocar {2}{U} (Você pode conjurar esta mágica pagando seu custo de evocar. Se isso acontecer, ela será sacrificada ao entrar no campo de batalha.)</td>
+  </tr>
+  <tr>
+    <td>389</td>
+    <td>Ulamog, the Defiler</td>
+    <td>When you cast this spell, target opponent exiles half their library, rounded up.<br>Ward—Sacrifice two permanents.<br>Ulamog, the Defiler enters the battlefield with a number of +1/+1 counters on it equal to the greatest mana value among cards in exile.<br>Ulamog has annihilator X, where X is the number of +1/+1 counters on it.</td>
+    <td>Quando você conjura esta mágica, o oponente alvo exila metade de seu grimório, arredondado para cima.<br>Ward – Sacrifique duas permanentes.<br>Ulamog, o Profanador, entra no campo de batalha com um número de marcadores +1/+1 igual ao maior valor de mana entre os cards no exílio.<br>Ulamog tem o aniquilador X, onde X é o número de marcadores +1/+1 nele.</td>
+  </tr>
+  <tr>
+    <td>391</td>
+    <td>Flare of Fortitude</td>
+    <td>You may sacrifice a nontoken white creature rather than pay this spell's mana cost.<br>Until end of turn, your life total can't change, and permanents you control gain hexproof and indestructible.</td>
+    <td>Você pode sacrificar uma criatura branca que não seja uma ficha em vez de pagar o custo de mana desta mágica.<br>Até o final do turno, seu total de pontos de vida não pode mudar e as permanentes que você controla ganham resistência à magia e indestrutíveis.</td>
+  </tr>
+  <tr>
+    <td>396</td>
+    <td>White Orchid Phantom</td>
+    <td>Flying, first strike<br>When White Orchid Phantom enters the battlefield, destroy up to one target nonbasic land. Its controller may search their library for a basic land card, put it onto the battlefield tapped, then shuffle.</td>
+    <td>Voar, primeiro ataque<br>Quando White Orchid Phantom entrar no campo de batalha, destrua até um terreno alvo não básico. Seu controlador pode procurar em seu grimório um card de terreno básico, colocá-lo no campo de batalha virado e depois embaralhar.</td>
+  </tr>
+  <tr>
+    <td>399</td>
+    <td>Brainsurge</td>
+    <td>Draw four cards, then put two cards from your hand on top of your library in any order.</td>
+    <td>Compre quatro cards e depois coloque dois cards de sua mão no topo de seu grimório em qualquer ordem.</td>
+  </tr>
+  <tr>
+    <td>400</td>
+    <td>Flare of Denial</td>
+    <td>You may sacrifice a nontoken blue creature rather than pay this spell's mana cost.<br>Counter target spell.</td>
+    <td>Você pode sacrificar uma criatura azul que não seja uma ficha em vez de pagar o custo de mana desta mágica.<br>Anule a mágica alvo.</td>
+  </tr>
+  <tr>
+    <td>401</td>
+    <td>Kappa Cannoneer</td>
+    <td>Improvise (Your artifacts can help cast this spell. Each artifact you tap after you're done activating mana abilities pays for {1}.)<br>Ward {4}<br>Whenever an artifact enters the battlefield under your control, put a +1/+1 counter on Kappa Cannoneer and it can't be blocked this turn.</td>
+    <td>Improvisar (Seus artefatos podem ajudar a conjurar esta mágica. Cada artefato que você vira depois de ativar as habilidades de mana paga {1}.)<br>Ala {4}<br>Toda vez que um artefato entrar no campo de batalha sob seu controle, coloque um marcador +1/+1 em Kappa Cannoneer e ele não poderá ser bloqueado neste turno.</td>
+  </tr>
+  <tr>
+    <td>402</td>
+    <td>Shadow of the Second Sun</td>
+    <td>Enchant player<br>At the beginning of enchanted player's postcombat main phase, there is an additional beginning phase after this phase. (The end step happens after the added untap, upkeep, and draw steps.)</td>
+    <td>Encantar jogador<br>No início da fase principal pós-combate do jogador encantado, há uma fase inicial adicional após esta fase. (A etapa final acontece após as etapas adicionadas de desvirar, manter e comprar.)</td>
+  </tr>
+  <tr>
+    <td>404</td>
+    <td>Volatile Stormdrake</td>
+    <td>Flying, hexproof from activated and triggered abilities<br>When Volatile Stormdrake enters the battlefield, exchange control of Volatile Stormdrake and target creature an opponent controls. If you do, you get {E}{E}{E}{E}, then sacrifice that creature unless you pay an amount of {E} equal to its mana value.</td>
+    <td>Voar, resistência à magia de habilidades ativadas e desencadeadas<br>Quando Stormdrake Volátil entrar no campo de batalha, troque o controle de Stormdrake Volátil e da criatura alvo que um oponente controla. Se fizer isso, você receberá {E}{E}{E}{E} e depois sacrificará aquela criatura, a menos que pague uma quantia de {E} igual ao seu valor de mana.</td>
+  </tr>
+  <tr>
+    <td>406</td>
+    <td>Chthonian Nightmare</td>
+    <td>When Chthonian Nightmare enters the battlefield, you get {E}{E}{E} (three energy counters).<br>Pay X {E}, Sacrifice a creature, Return Chthonian Nightmare to its owner's hand: Return target creature card with mana value X from your graveyard to the battlefield. Activate only as a sorcery.</td>
+    <td>Quando Pesadelo Chthoniano entra no campo de batalha, você recebe {E}{E}{E} (três marcadores de energia).<br>Pague X {E}, sacrifique uma criatura, devolva Pesadelo Chthoniano para a mão de seu dono: Devolva o card de criatura alvo com valor de mana X de seu cemitério para o campo de batalha. Ative apenas como um feitiço.</td>
+  </tr>
+  <tr>
+    <td>408</td>
+    <td>Flare of Malice</td>
+    <td>You may sacrifice a nontoken black creature rather than pay this spell's mana cost.<br>Each opponent sacrifices a creature or planeswalker with the greatest mana value among creatures and planeswalkers they control.</td>
+    <td>Você pode sacrificar uma criatura preta que não seja uma ficha em vez de pagar o custo de mana desta mágica.<br>Cada oponente sacrifica uma criatura ou planeswalker com o maior valor de mana entre as criaturas e planeswalkers que ele controla.</td>
+  </tr>
+  <tr>
+    <td>409</td>
+    <td>Grim Servant</td>
+    <td>Menace<br>When Grim Servant enters the battlefield, search your library for a card with mana value less than or equal to your devotion to black, reveal it, put it into your hand, then shuffle. You lose 3 life. (Each {B} in the mana costs of permanents you control counts toward your devotion to black.)</td>
+    <td>Ameaça<br>Quando Grim Servant entrar no campo de batalha, procure em seu grimório por um card com valor de mana menor ou igual à sua devoção ao preto, revele-o, coloque-o em sua mão e depois embaralhe. Você perde 3 pontos de vida. (Cada {B} nos custos de mana das permanentes que você controla conta para sua devoção ao preto.)</td>
+  </tr>
+  <tr>
+    <td>410</td>
+    <td>Marionette Apprentice</td>
+    <td>Fabricate 1 (When this creature enters the battlefield, put a +1/+1 counter on it or create a 1/1 colorless Servo artifact creature token.)<br>Whenever another creature or artifact you control is put into a graveyard from the battlefield, each opponent loses 1 life.</td>
+    <td>Fabricar 1 (Quando esta criatura entrar no campo de batalha, coloque um marcador +1/+1 nela ou crie uma ficha de criatura artefato incolor 1/1 do tipo Servo.)<br>Toda vez que outra criatura ou artefato que você controla é colocado num cemitério vindo do campo de batalha, cada oponente perde 1 ponto de vida.</td>
+  </tr>
+  <tr>
+    <td>418</td>
+    <td>Meltdown</td>
+    <td>Destroy each artifact with mana value X or less.</td>
+    <td>Destrua cada artefato com valor de mana X ou menos.</td>
+  </tr>
+  <tr>
+    <td>421</td>
+    <td>Unstable Amulet</td>
+    <td>When Unstable Amulet enters the battlefield, you get {E}{E} (two energy counters).<br>Whenever you cast a spell from anywhere other than your hand, Unstable Amulet deals 1 damage to each opponent.<br>{T}, Pay {C}{C}: Exile the top card of your library. You may play it until you exile another card with Unstable Amulet.</td>
+    <td>Quando Amuleto Instável entra no campo de batalha, você recebe {E}{E} (dois marcadores de energia).<br>Sempre que você conjurar um feitiço de qualquer lugar que não seja sua mão, Amuleto Instável causa 1 ponto de dano a cada oponente.<br>{T}, Pague {C}{C}: Exile o card do topo de seu grimório. Você pode jogá-la até exilar outra carta com Amuleto Instável.</td>
+  </tr>
+  <tr>
+    <td>422</td>
+    <td>Wheel of Potential</td>
+    <td>You get {E}{E}{E} (three energy counters), then you may pay X {E}.<br>Each player may exile their hand and draw X cards. If X is 7 or more, you may play cards you own exiled this way until the end of your next turn.</td>
+    <td>Você recebe {E}{E}{E} (três marcadores de energia) e pode pagar X {E}.<br>Cada jogador pode exilar sua mão e comprar X cartas. Se X for 7 ou mais, você poderá jogar cartas que você possui exiladas desta forma até o final do seu próximo turno.</td>
+  </tr>
+  <tr>
+    <td>423</td>
+    <td>Eladamri, Korvecdal</td>
+    <td>You may look at the top card of your library any time.<br>You may cast creature spells from the top of your library.<br>{G}, {T}, Tap two untapped creatures you control: Reveal a card from your hand or the top card of your library. If you reveal a creature card this way, put it onto the battlefield. Activate only during your turn.</td>
+    <td>Você pode olhar o card do topo do seu grimório a qualquer momento.<br>Você pode conjurar mágicas de criatura do topo de seu grimório.<br>{G}, {T}, Vire duas criaturas desviradas que você controla: Revele um card de sua mão ou o card do topo de seu grimório. Se você revelar um card de criatura desta forma, coloque-o no campo de batalha. Ative apenas durante o seu turno.</td>
+  </tr>
+  <tr>
+    <td>424</td>
+    <td>Evolution Witness</td>
+    <td>{1}{G}: Adapt 2. (If this creature has no +1/+1 counters on it, put two +1/+1 counters on it.)<br>Whenever one or more +1/+1 counters are put on Evolution Witness, return target permanent card from your graveyard to your hand.</td>
+    <td>{1}{G}: Adaptação 2. (Se esta criatura não tiver marcadores +1/+1, coloque dois marcadores +1/+1 nela.)<br>Toda vez que um ou mais marcadores +1/+1 forem colocados em Evolution Witness, devolva o card permanente alvo de seu cemitério para sua mão.</td>
+  </tr>
+  <tr>
+    <td>425</td>
+    <td>Flare of Cultivation</td>
+    <td>You may sacrifice a nontoken green creature rather than pay this spell's mana cost.<br>Search your library for up to two basic land cards, reveal those cards, put one onto the battlefield tapped and the other into your hand, then shuffle.</td>
+    <td>Você pode sacrificar uma criatura verde que não seja uma ficha em vez de pagar o custo de mana desta mágica.<br>Procure em seu grimório por até dois cards de terreno básico, revele esses cards, coloque um no campo de batalha virado e o outro em sua mão e depois embaralhe.</td>
+  </tr>
+  <tr>
+    <td>428</td>
+    <td>Priest of Titania</td>
+    <td>{T}: Add {G} for each Elf on the battlefield.</td>
+    <td>{T}: Adicione {G} para cada Elfo no campo de batalha.</td>
+  </tr>
+  <tr>
+    <td>432</td>
+    <td>Kudo, King Among Bears</td>
+    <td>Other creatures have base power and toughness 2/2 and are Bears in addition to their other types.</td>
+    <td>Outras criaturas têm poder e resistência básicos 2/2 e são Ursos além de seus outros tipos.</td>
+  </tr>
+  <tr>
+    <td>433</td>
+    <td>Psychic Frog</td>
+    <td>Whenever Psychic Frog deals combat damage to a player or planeswalker, draw a card.<br>Discard a card: Put a +1/+1 counter on Psychic Frog.<br>Exile three cards from your graveyard: Psychic Frog gains flying until end of turn.</td>
+    <td>Toda vez que Sapo Psíquico causar dano de combate a um jogador ou planeswalker, compre um card.<br>Descarte um card: Coloque um marcador +1/+1 em Psychic Frog.<br>Exile três cards de seu cemitério: Sapo Psíquico ganha voar até o final do turno.</td>
+  </tr>
+  <tr>
+    <td>435</td>
+    <td>Bloodstained Mire</td>
+    <td>{T}, Pay 1 life, Sacrifice Bloodstained Mire: Search your library for a Swamp or Mountain card, put it onto the battlefield, then shuffle.</td>
+    <td>{T}, Pague 1 ponto de vida, Sacrifique Pântano Manchado de Sangue: Procure um card de Pântano ou Montanha em seu grimório, coloque-o no campo de batalha e depois embaralhe.</td>
+  </tr>
+  <tr>
+    <td>436</td>
+    <td>Flooded Strand</td>
+    <td>{T}, Pay 1 life, Sacrifice Flooded Strand: Search your library for a Plains or Island card, put it onto the battlefield, then shuffle.</td>
+    <td>{T}, pague 1 ponto de vida, sacrifique Praia Inundada: Procure um card de Planície ou Ilha em seu grimório, coloque-o no campo de batalha e depois embaralhe.</td>
+  </tr>
+  <tr>
+    <td>438</td>
+    <td>Polluted Delta</td>
+    <td>{T}, Pay 1 life, Sacrifice Polluted Delta: Search your library for an Island or Swamp card, put it onto the battlefield, then shuffle.</td>
+    <td>{T}, pague 1 ponto de vida, sacrifique Polluted Delta: Procure em seu grimório por um card de Ilha ou Pântano, coloque-o no campo de batalha e depois embaralhe.</td>
+  </tr>
+  <tr>
+    <td>439</td>
+    <td>Snow-Covered Wastes</td>
+    <td>{T}: Add {C}.</td>
+    <td>{T}: Adicione {C}.</td>
+  </tr>
+  <tr>
+    <td>440</td>
+    <td>Windswept Heath</td>
+    <td>{T}, Pay 1 life, Sacrifice Windswept Heath: Search your library for a Forest or Plains card, put it onto the battlefield, then shuffle.</td>
+    <td>{T}, pague 1 ponto de vida, sacrifique Windswept Heath: Procure em seu grimório por um card de Floresta ou Planície, coloque-o no campo de batalha e depois embaralhe.</td>
+  </tr>
+  <tr>
+    <td>441</td>
+    <td>Wooded Foothills</td>
+    <td>{T}, Pay 1 life, Sacrifice Wooded Foothills: Search your library for a Mountain or Forest card, put it onto the battlefield, then shuffle.</td>
+    <td>{T}, pague 1 ponto de vida, sacrifique Contrafortes Arborizados: Procure um card de Montanha ou Floresta em seu grimório, coloque-o no campo de batalha e depois embaralhe.</td>
+  </tr>
+  <tr>
+    <td>442</td>
+    <td>Ajani, Nacatl Pariah // Ajani, Nacatl Avenger</td>
+    <td>When Ajani, Nacatl Pariah enters the battlefield, create a 2/1 white Cat Warrior creature token.<br>Whenever one or more other Cats you control die, you may exile Ajani, then return him to the battlefield transformed under his owner's control.<br>----<br>+2: Put a +1/+1 counter on each Cat you control.<br>0: Create a 2/1 white Cat Warrior creature token. When you do, if you control a red permanent other than Ajani, Nacatl Avenger, he deals damage equal to the number of creatures you control to any target.<br>−4: Each opponent chooses an artifact, a creature, an enchantment and a planeswalker from among the nonland permanents they control, then sacrifices the rest.</td>
+    <td>Quando Ajani, Nacatl Pariah, entrar no campo de batalha, crie uma ficha de criatura branca 2/1 do tipo Gato Guerreiro.<br>Sempre que um ou mais Gatos que você controla morrem, você pode exilar Ajani e depois devolvê-lo ao campo de batalha transformado sob o controle de seu dono.<br>----<br>+2: Coloque um marcador +1/+1 em cada Gato que você controla.<br>0: Crie uma ficha de criatura branca 2/1 do tipo Gato Guerreiro. Ao fazer isso, se você controlar uma permanente vermelha que não seja Ajani, Nacatl Avenger, ela causará dano igual ao número de criaturas que você controla a qualquer alvo.<br>−4: Cada oponente escolhe um artefato, uma criatura, um encantamento e um planeswalker dentre as permanentes que não sejam terrenos que ele controla e depois sacrifica o resto.</td>
+  </tr>
+  <tr>
+    <td>443</td>
+    <td>Tamiyo, Inquisitive Student // Tamiyo, Seasoned Scholar</td>
+    <td>Flying<br>Whenever Tamiyo, Inquisitive Student attacks, investigate. (Create a Clue token. It's an artifact with "{2}, Sacrifice this artifact: Draw a card.")<br>When you draw your third card in a turn, exile Tamiyo, then return her to the battlefield transformed under her owner's control.<br>----<br>+2: Until your next turn, whenever a creature attacks you or a planeswalker you control, it gets -1/-0 until end of turn.<br>−3: Return target instant or sorcery card from your graveyard to your hand. If it's a green card, add one mana of any color.<br>−7: Draw cards equal to half the number of cards in your library, rounded up. You get an emblem with "You have no maximum hand size."</td>
+    <td>Voar<br>Sempre que Tamiyo, Estudante Inquisitivo, atacar, investigue. (Crie uma ficha de Pista. É um artefato com "{2}, Sacrifique este artefato: Compre um card.")<br>Quando você comprar sua terceira carta em um turno, exile Tamiyo e depois devolva-a ao campo de batalha transformada sob o controle de seu dono.<br>----<br>+2: Até seu próximo turno, sempre que uma criatura atacar você ou um planeswalker que você controla, ela receberá -1/-0 até o final do turno.<br>−3: Devolva o card de mágica instantânea ou feitiço alvo de seu cemitério para sua mão. Se for um green card, adicione um mana de qualquer cor.<br>−7: Compre cards iguais à metade do número de cards em seu grimório, arredondado para cima. Você recebe um emblema com "Você não tem tamanho máximo de mão".</td>
+  </tr>
+  <tr>
+    <td>444</td>
+    <td>Sorin of House Markov // Sorin, Ravenous Neonate</td>
+    <td>Lifelink<br>Extort (Whenever you cast a spell, you may pay {W/B}. If you do, each opponent loses 1 life and you gain that much life.)<br>At the beginning of your postcombat main phase, if you gained 3 or more life this turn, exile Sorin of House Markov, then him to the battlefield transformed under his owner's control.<br>----<br>Extort (Whenever you cast a spell, you may pay {W/B}. If you do, each opponent loses 1 life and you gain that much life.)<br>+2: Create a Food token.<br>−1: Sorin, Ravenous Neonate deals damage equal to the amount of life you gained this turn to any target.<br>−6: Gain control of target creature. It becomes a Vampire in addition to its other types. Put a lifelink counter on it if you control a white permanent other than that creature or Sorin.</td>
+    <td>Vínculo com a vida<br>Extorquir (Sempre que você conjurar uma mágica, você pode pagar {W/B}. Se isso acontecer, cada oponente perde 1 ponto de vida e você ganha essa mesma quantidade de pontos de vida.)<br>No início de sua fase principal pós-combate, se você ganhou 3 ou mais pontos de vida neste turno, exile Sorin da Casa Markov e, em seguida, ele para o campo de batalha transformado sob o controle de seu dono.<br>----<br>Extorquir (Sempre que você conjurar uma mágica, você pode pagar {W/B}. Se isso acontecer, cada oponente perde 1 ponto de vida e você ganha essa mesma quantidade de pontos de vida.)<br>+2: Crie uma ficha de Comida.<br>−1: Sorin, Ravenous Neonate, causa dano igual à quantidade de pontos de vida que você ganhou neste turno a qualquer alvo.<br>−6: Ganhe o controle da criatura alvo. Torna-se um Vampiro além de seus outros tipos. Coloque nela um marcador de vínculo com a vida se você controlar uma permanente branca que não seja aquela criatura ou Sorin.</td>
+  </tr>
+  <tr>
+    <td>445</td>
+    <td>Ral, Monsoon Mage // Ral, Leyline Prodigy</td>
+    <td>Instant and sorcery spells you cast cost {1} less to cast.<br>Whenever you cast an instant or sorcery spell during your turn, flip a coin. If you lose the flip, Ral, Monsoon Mage deals 1 damage to you. If you win the flip, you may exile Ral. If you do, return him to the battlefield transformed under his owner's control.<br>----<br>Ral, Leyline Prodigy enters the battlefield with an additional loyalty counter on him for each instant and sorcery spell you've cast this turn.<br>+1: Until your next turn, instant and sorcery spells you cast cost {1} less to cast.<br>−2: Ral deals 2 damage divided as you choose among one or two targets. Draw a card if you control a blue permanent other than Ral.<br>−8: Exile the top eight cards of your library. You may cast instant and sorcery spells from among them this turn without paying their mana costs.</td>
+    <td>As mágicas instantâneas e os feitiços que você conjura custam {1} a menos para conjurar.<br>Sempre que você conjurar uma mágica instantânea ou feitiço durante seu turno, jogue uma moeda. Se você perder o turno, Ral, Monsoon Mage, causará 1 de dano a você. Se você vencer, poderá exilar Ral. Se fizer isso, devolva-o ao campo de batalha transformado sob o controle de seu dono.<br>----<br>Ral, Prodígio da Linha de Ley, entra no campo de batalha com um marcador de lealdade adicional para cada mágica instantânea e feitiço que você conjurou neste turno.<br>+1: Até seu próximo turno, os feitiços instantâneos e os feitiços que você conjurar custam {1} a menos para serem conjurados.<br>−2: Ral causa 2 pontos de dano divididos conforme você escolher entre um ou dois alvos. Compre um card se você controlar uma permanente azul que não seja Ral.<br>−8: Exile os oito cards do topo do seu grimório. Você pode conjurar mágicas instantâneas e feitiços dentre eles neste turno sem pagar seus custos de mana.</td>
+  </tr>
+  <tr>
+    <td>446</td>
+    <td>Grist, Voracious Larva // Grist, the Plague Swarm</td>
+    <td>Deathtouch<br>Whenever Grist, Voracious Larva or another creature enters the battlefield under your control, if it entered from your graveyard or you cast it from your graveyard, you may pay {G}. If you do, exile Grist, then return it to the battlefield transformed under its owner's control.<br>----<br>+1: Create a 1/1 black and green Insect creature token, then mill two cards. Put a deathtouch counter on the token if a black card was milled this way.<br>−2: Destroy target artifact or enchantment.<br>−6: For each creature card in your graveyard, create a token that's a copy of it, except it's a 1/1 black and green Insect.</td>
+    <td>Toque da morte<br>Toda vez que Grist, Voracious Larva ou outra criatura entrar no campo de batalha sob seu controle, se ela entrou de seu cemitério ou se você a conjurar de seu cemitério, você poderá pagar {G}. Se fizer isso, exile Grist e devolva-o ao campo de batalha transformado sob o controle de seu dono.<br>----<br>+1: Crie uma ficha de criatura preta e verde 1/1 do tipo Inseto e, em seguida, moa dois cards. Coloque um marcador de toque mortífero na ficha se uma carta preta tiver sido moída dessa maneira.<br>−2: Destrua o artefato ou encantamento alvo.<br>−6: Para cada card de criatura em seu cemitério, crie uma ficha que seja uma cópia dele, exceto que é um Inseto preto e verde 1/1.</td>
+  </tr>
+  <tr>
+    <td>447</td>
+    <td>Argent Dais</td>
+    <td>Argent Dais enters the battlefield with two oil counters on it.<br>Whenever two or more creatures attack, put an oil counter on Argent Dais.<br>{2}, {T}, Remove two oil counters from Argent Dais: Exile another target nonland permanent. Its controller draws two cards.</td>
+    <td>Argent Dais entra no campo de batalha com dois marcadores de óleo.<br>Sempre que duas ou mais criaturas atacarem, coloque um marcador de óleo em Argent Dais.<br>{2}, {T}, Remova dois marcadores de óleo de Argent Dais: Exile outra permanente alvo que não seja um terreno. Seu controlador compra duas cartas.</td>
+  </tr>
+  <tr>
+    <td>454</td>
+    <td>Nethergoyf</td>
+    <td>Nethergoyf's power is equal to the number of card types among cards in your graveyard and its toughness is equal to that number plus 1.<br>Escape—{2}{B}, Exile any number of other cards from your graveyard with four or more card types among them. (You may cast this card from your graveyard for its escape cost.)</td>
+    <td>O poder de Nethergoyf é igual ao número de tipos de card entre os cards em seu cemitério e sua resistência é igual a esse número mais 1.<br>Escapatória — {2}{B}, Exile qualquer número de outros cards de seu cemitério com quatro ou mais tipos de card entre eles. (Você pode conjurar este card de seu cemitério pagando seu custo de escapatória.)</td>
+  </tr>
+  <tr>
+    <td>457</td>
+    <td>Detective's Phoenix</td>
+    <td>Bestow—{R}, Collect evidence 6. (To pay this bestow cost, pay {R} and exile cards with total mana value 6 or greater from your graveyard.)<br>Flying, haste<br>Enchanted creature gets +2/+2 and has flying and haste.<br>You may cast Detective's Phoenix from your graveyard using its bestow ability.</td>
+    <td>Agraciar — {R}, Colete evidências 6. (Para pagar este custo de agraciar, pague {R} e exile cards com valor de mana total igual ou superior a 6 de seu cemitério.)<br>Voar, impeto<br>A criatura encantada recebe +2/+2 e tem voar e impeto.<br>Você pode conjurar a Fênix do Detetive de seu cemitério usando sua habilidade de conceder.</td>
+  </tr>
+  <tr>
+    <td>460</td>
+    <td>Wight of the Reliquary</td>
+    <td>Vigilance<br>Wight of the Reliquary gets +1/+1 for each creature card in your graveyard.<br>{T}, Sacrifice another creature: Search your library for a land card, put it onto the battlefield tapped, then shuffle.</td>
+    <td>Vigilância<br>Wight of the Relicary recebe +1/+1 para cada card de criatura em seu cemitério.<br>{T}, Sacrifique outra criatura: Procure um card de terreno em seu grimório, coloque-o no campo de batalha virado e depois embaralhe.</td>
+  </tr>
+  <tr>
+    <td>462</td>
+    <td>Winter Moon</td>
+    <td>Players can't untap more than one nonbasic land during their untap steps.</td>
+    <td>Os jogadores não podem desvirar mais de um terreno não básico durante suas etapas de desvirar.</td>
+  </tr>
+  <tr>
+    <td>463</td>
+    <td>Bloodstained Mire</td>
+    <td>{T}, Pay 1 life, Sacrifice Bloodstained Mire: Search your library for a Swamp or Mountain card, put it onto the battlefield, then shuffle.</td>
+    <td>{T}, Pague 1 ponto de vida, Sacrifique Pântano Manchado de Sangue: Procure um card de Pântano ou Montanha em seu grimório, coloque-o no campo de batalha e depois embaralhe.</td>
+  </tr>
+  <tr>
+    <td>464</td>
+    <td>Flooded Strand</td>
+    <td>{T}, Pay 1 life, Sacrifice Flooded Strand: Search your library for a Plains or Island card, put it onto the battlefield, then shuffle.</td>
+    <td>{T}, pague 1 ponto de vida, sacrifique Praia Inundada: Procure um card de Planície ou Ilha em seu grimório, coloque-o no campo de batalha e depois embaralhe.</td>
+  </tr>
+  <tr>
+    <td>465</td>
+    <td>Polluted Delta</td>
+    <td>{T}, Pay 1 life, Sacrifice Polluted Delta: Search your library for an Island or Swamp card, put it onto the battlefield, then shuffle.</td>
+    <td>{T}, pague 1 ponto de vida, sacrifique Polluted Delta: Procure em seu grimório por um card de Ilha ou Pântano, coloque-o no campo de batalha e depois embaralhe.</td>
+  </tr>
+  <tr>
+    <td>466</td>
+    <td>Windswept Heath</td>
+    <td>{T}, Pay 1 life, Sacrifice Windswept Heath: Search your library for a Forest or Plains card, put it onto the battlefield, then shuffle.</td>
+    <td>{T}, pague 1 ponto de vida, sacrifique Windswept Heath: Procure em seu grimório por um card de Floresta ou Planície, coloque-o no campo de batalha e depois embaralhe.</td>
+  </tr>
+  <tr>
+    <td>467</td>
+    <td>Wooded Foothills</td>
+    <td>{T}, Pay 1 life, Sacrifice Wooded Foothills: Search your library for a Mountain or Forest card, put it onto the battlefield, then shuffle.</td>
+    <td>{T}, pague 1 ponto de vida, sacrifique Contrafortes Arborizados: Procure um card de Montanha ou Floresta em seu grimório, coloque-o no campo de batalha e depois embaralhe.</td>
+  </tr>
+  <tr>
+    <td>468</td>
+    <td>Ajani, Nacatl Pariah // Ajani, Nacatl Avenger</td>
+    <td>When Ajani, Nacatl Pariah enters the battlefield, create a 2/1 white Cat Warrior creature token.<br>Whenever one or more other Cats you control die, you may exile Ajani, then return him to the battlefield transformed under his owner's control.<br>----<br>+2: Put a +1/+1 counter on each Cat you control.<br>0: Create a 2/1 white Cat Warrior creature token. When you do, if you control a red permanent other than Ajani, Nacatl Avenger, he deals damage equal to the number of creatures you control to any target.<br>−4: Each opponent chooses an artifact, a creature, an enchantment and a planeswalker from among the nonland permanents they control, then sacrifices the rest.</td>
+    <td>Quando Ajani, Nacatl Pariah, entrar no campo de batalha, crie uma ficha de criatura branca 2/1 do tipo Gato Guerreiro.<br>Sempre que um ou mais Gatos que você controla morrem, você pode exilar Ajani e depois devolvê-lo ao campo de batalha transformado sob o controle de seu dono.<br>----<br>+2: Coloque um marcador +1/+1 em cada Gato que você controla.<br>0: Crie uma ficha de criatura branca 2/1 do tipo Gato Guerreiro. Ao fazer isso, se você controlar uma permanente vermelha que não seja Ajani, Nacatl Avenger, ela causará dano igual ao número de criaturas que você controla a qualquer alvo.<br>−4: Cada oponente escolhe um artefato, uma criatura, um encantamento e um planeswalker dentre as permanentes que não sejam terrenos que ele controla e depois sacrifica o resto.</td>
+  </tr>
+  <tr>
+    <td>469</td>
+    <td>Tamiyo, Inquisitive Student // Tamiyo, Seasoned Scholar</td>
+    <td>Flying<br>Whenever Tamiyo, Inquisitive Student attacks, investigate. (Create a Clue token. It's an artifact with "{2}, Sacrifice this artifact: Draw a card.")<br>When you draw your third card in a turn, exile Tamiyo, then return her to the battlefield transformed under her owner's control.<br>----<br>+2: Until your next turn, whenever a creature attacks you or a planeswalker you control, it gets -1/-0 until end of turn.<br>−3: Return target instant or sorcery card from your graveyard to your hand. If it's a green card, add one mana of any color.<br>−7: Draw cards equal to half the number of cards in your library, rounded up. You get an emblem with "You have no maximum hand size."</td>
+    <td>Voar<br>Sempre que Tamiyo, Estudante Inquisitivo, atacar, investigue. (Crie uma ficha de Pista. É um artefato com "{2}, Sacrifique este artefato: Compre um card.")<br>Quando você comprar sua terceira carta em um turno, exile Tamiyo e depois devolva-a ao campo de batalha transformada sob o controle de seu dono.<br>----<br>+2: Até seu próximo turno, sempre que uma criatura atacar você ou um planeswalker que você controla, ela receberá -1/-0 até o final do turno.<br>−3: Devolva o card de mágica instantânea ou feitiço alvo de seu cemitério para sua mão. Se for um green card, adicione um mana de qualquer cor.<br>−7: Compre cards iguais à metade do número de cards em seu grimório, arredondado para cima. Você recebe um emblema com "Você não tem tamanho máximo de mão".</td>
+  </tr>
+  <tr>
+    <td>470</td>
+    <td>Sorin of House Markov // Sorin, Ravenous Neonate</td>
+    <td>Lifelink<br>Extort (Whenever you cast a spell, you may pay {W/B}. If you do, each opponent loses 1 life and you gain that much life.)<br>At the beginning of your postcombat main phase, if you gained 3 or more life this turn, exile Sorin of House Markov, then him to the battlefield transformed under his owner's control.<br>----<br>Extort (Whenever you cast a spell, you may pay {W/B}. If you do, each opponent loses 1 life and you gain that much life.)<br>+2: Create a Food token.<br>−1: Sorin, Ravenous Neonate deals damage equal to the amount of life you gained this turn to any target.<br>−6: Gain control of target creature. It becomes a Vampire in addition to its other types. Put a lifelink counter on it if you control a white permanent other than that creature or Sorin.</td>
+    <td>Vínculo com a vida<br>Extorquir (Sempre que você conjurar uma mágica, você pode pagar {W/B}. Se isso acontecer, cada oponente perde 1 ponto de vida e você ganha essa mesma quantidade de pontos de vida.)<br>No início de sua fase principal pós-combate, se você ganhou 3 ou mais pontos de vida neste turno, exile Sorin da Casa Markov e, em seguida, ele para o campo de batalha transformado sob o controle de seu dono.<br>----<br>Extorquir (Sempre que você conjurar uma mágica, você pode pagar {W/B}. Se isso acontecer, cada oponente perde 1 ponto de vida e você ganha essa mesma quantidade de pontos de vida.)<br>+2: Crie uma ficha de Comida.<br>−1: Sorin, Ravenous Neonate, causa dano igual à quantidade de pontos de vida que você ganhou neste turno a qualquer alvo.<br>−6: Ganhe o controle da criatura alvo. Torna-se um Vampiro além de seus outros tipos. Coloque nela um marcador de vínculo com a vida se você controlar uma permanente branca que não seja aquela criatura ou Sorin.</td>
+  </tr>
+  <tr>
+    <td>471</td>
+    <td>Ral, Monsoon Mage // Ral, Leyline Prodigy</td>
+    <td>Instant and sorcery spells you cast cost {1} less to cast.<br>Whenever you cast an instant or sorcery spell during your turn, flip a coin. If you lose the flip, Ral, Monsoon Mage deals 1 damage to you. If you win the flip, you may exile Ral. If you do, return him to the battlefield transformed under his owner's control.<br>----<br>Ral, Leyline Prodigy enters the battlefield with an additional loyalty counter on him for each instant and sorcery spell you've cast this turn.<br>+1: Until your next turn, instant and sorcery spells you cast cost {1} less to cast.<br>−2: Ral deals 2 damage divided as you choose among one or two targets. Draw a card if you control a blue permanent other than Ral.<br>−8: Exile the top eight cards of your library. You may cast instant and sorcery spells from among them this turn without paying their mana costs.</td>
+    <td>As mágicas instantâneas e os feitiços que você conjura custam {1} a menos para conjurar.<br>Sempre que você conjurar uma mágica instantânea ou feitiço durante seu turno, jogue uma moeda. Se você perder o turno, Ral, Monsoon Mage, causará 1 de dano a você. Se você vencer, poderá exilar Ral. Se fizer isso, devolva-o ao campo de batalha transformado sob o controle de seu dono.<br>----<br>Ral, Prodígio da Linha de Ley, entra no campo de batalha com um marcador de lealdade adicional para cada mágica instantânea e feitiço que você conjurou neste turno.<br>+1: Até seu próximo turno, os feitiços instantâneos e os feitiços que você conjurar custam {1} a menos para serem conjurados.<br>−2: Ral causa 2 pontos de dano divididos conforme você escolher entre um ou dois alvos. Compre um card se você controlar uma permanente azul que não seja Ral.<br>−8: Exile os oito cards do topo do seu grimório. Você pode conjurar mágicas instantâneas e feitiços dentre eles neste turno sem pagar seus custos de mana.</td>
+  </tr>
+  <tr>
+    <td>472</td>
+    <td>Grist, Voracious Larva // Grist, the Plague Swarm</td>
+    <td>Deathtouch<br>Whenever Grist, Voracious Larva or another creature enters the battlefield under your control, if it entered from your graveyard or you cast it from your graveyard, you may pay {G}. If you do, exile Grist, then return it to the battlefield transformed under its owner's control.<br>----<br>+1: Create a 1/1 black and green Insect creature token, then mill two cards. Put a deathtouch counter on the token if a black card was milled this way.<br>−2: Destroy target artifact or enchantment.<br>−6: For each creature card in your graveyard, create a token that's a copy of it, except it's a 1/1 black and green Insect.</td>
+    <td>Toque da morte<br>Toda vez que Grist, Voracious Larva ou outra criatura entrar no campo de batalha sob seu controle, se ela entrou de seu cemitério ou se você a conjurar de seu cemitério, você poderá pagar {G}. Se fizer isso, exile Grist e devolva-o ao campo de batalha transformado sob o controle de seu dono.<br>----<br>+1: Crie uma ficha de criatura preta e verde 1/1 do tipo Inseto e, em seguida, moa dois cards. Coloque um marcador de toque mortífero na ficha se uma carta preta tiver sido moída dessa maneira.<br>−2: Destrua o artefato ou encantamento alvo.<br>−6: Para cada card de criatura em seu cemitério, crie uma ficha que seja uma cópia dele, exceto que é um Inseto preto e verde 1/1.</td>
+  </tr>
+  <tr>
+    <td>473</td>
+    <td>Emrakul, the World Anew</td>
+    <td>When you cast this spell, gain control of all creatures target player controls.<br>Flying, protection from spells and from permanents that were cast this turn<br>When Emrakul, the World Anew leaves the battlefield, sacrifice all creatures you control.<br>Madness—Pay six {C}.</td>
+    <td>Ao conjurar esta mágica, você ganha o controle de todas as criaturas que o jogador alvo controla.<br>Voar, proteção contra mágicas e permanentes que foram conjuradas neste turno<br>Quando Emrakul, the World Anew sair do campo de batalha, sacrifique todas as criaturas que você controla.<br>Loucura – Pague seis {C}.</td>
+  </tr>
+  <tr>
+    <td>474</td>
+    <td>Herigast, Erupting Nullkite</td>
+    <td>Emerge {6}{R}{R} (You may cast this spell by sacrificing a creature and paying the emerge cost reduced by that creature's mana value.)<br>When you cast this spell, you may exile your hand. If you do, draw three cards.<br>Flying<br>Each creature spell you cast has emerge. The emerge cost is equal to its mana cost.</td>
+    <td>Emergir {6}{R}{R} (Você pode conjurar esta mágica sacrificando uma criatura e pagando o custo de emergir reduzido pelo valor de mana daquela criatura.)<br>Ao conjurar esta magia, você pode exilar sua mão. Se fizer isso, compre três cartas.<br>Voar<br>Cada feitiço de criatura que você conjurou emerge. O custo de emergência é igual ao seu custo de mana.</td>
+  </tr>
+  <tr>
+    <td>475</td>
+    <td>Kozilek, the Broken Reality</td>
+    <td>When you cast this spell, up to two target players each manifest two cards from their hands. For each card manifested this way, you draw a card. (To manifest a card, put it onto the battlefield face down as a 2/2 creature. Turn it face up any time for its mana cost if it's a creature card.)<br>Other colorless creatures you control get +3/+2.</td>
+    <td>Quando você conjura esta mágica, até dois jogadores alvo manifestam, cada um, duas cartas de suas mãos. Para cada carta manifestada desta forma, você compra uma carta. (Para manifestar um card, coloque-o no campo de batalha com a face voltada para baixo como uma criatura 2/2. Vire-o com a face para cima a qualquer momento pagando seu custo de mana se for um card de criatura.)<br>As outras criaturas incolores que você controla recebem +3/+2.</td>
+  </tr>
+  <tr>
+    <td>476</td>
+    <td>Ulamog, the Defiler</td>
+    <td>When you cast this spell, target opponent exiles half their library, rounded up.<br>Ward—Sacrifice two permanents.<br>Ulamog, the Defiler enters the battlefield with a number of +1/+1 counters on it equal to the greatest mana value among cards in exile.<br>Ulamog has annihilator X, where X is the number of +1/+1 counters on it.</td>
+    <td>Quando você conjura esta mágica, o oponente alvo exila metade de seu grimório, arredondado para cima.<br>Ward – Sacrifique duas permanentes.<br>Ulamog, o Profanador, entra no campo de batalha com um número de marcadores +1/+1 igual ao maior valor de mana entre os cards no exílio.<br>Ulamog tem o aniquilador X, onde X é o número de marcadores +1/+1 nele.</td>
+  </tr>
+  <tr>
+    <td>477</td>
+    <td>Pearl-Ear, Imperial Advisor</td>
+    <td>Lifelink<br>Enchantment spells you cast have affinity for Auras. (They cost {1} less to cast for each Aura you control.)<br>Whenever you cast an Aura spell that targets a modified permanent you control, draw a card. (Equipment, Auras you control, and counters are modifications.)</td>
+    <td>Vínculo com a vida<br>Os feitiços de encantamento que você conjura têm afinidade com Auras. (Eles custam {1} a menos para serem conjurados para cada Aura que você controla.)<br>Toda vez que você conjurar uma mágica de Aura que tenha como alvo uma permanente modificada que você controla, compre um card. (Equipamentos, Auras que você controla e contadores são modificações.)</td>
+  </tr>
+  <tr>
+    <td>478</td>
+    <td>Phelia, Exuberant Shepherd</td>
+    <td>Flash<br>Whenever Phelia, Exuberant Shepherd attacks, exile up to one other target nonland permanent. At the beginning of the next end step, return that card to the battlefield under its owner's control. If it entered under your control, put a +1/+1 counter on Phelia.</td>
+    <td>Clarão<br>Toda vez que Phelia, Pastor Exuberante, atacar, exile até uma outra permanente alvo que não seja um terreno. No início da próxima etapa final, devolva aquele card ao campo de batalha sob o controle de seu dono. Se ele entrou sob seu controle, coloque um marcador +1/+1 em Phelia.</td>
+  </tr>
+  <tr>
+    <td>479</td>
+    <td>K'rrik, Son of Yawgmoth</td>
+    <td>({B/P} can be paid with either {B} or 2 life.)<br>Lifelink<br>For each {B} in a cost, you may pay 2 life rather than pay that mana.<br>Whenever you cast a black spell, put a +1/+1 counter on K'rrik, Son of Yawgmoth.</td>
+    <td>({B/P} pode ser pago com {B} ou 2 pontos de vida.)<br>Vínculo com a vida<br>Para cada {B} em um custo, você pode pagar 2 pontos de vida em vez de pagar aquele mana.<br>Toda vez que você conjurar uma mágica negra, coloque um marcador +1/+1 em K'rrik, Filho de Yawgmoth.</td>
+  </tr>
+  <tr>
+    <td>482</td>
+    <td>Laelia, the Blade Reforged</td>
+    <td>Haste<br>Whenever Laelia, the Blade Reforged attacks, exile the top card of your library. You may play that card this turn.<br>Whenever one or more cards are put into exile from your library and/or your graveyard, put a +1/+1 counter on Laelia.</td>
+    <td>Impeto<br>Sempre que Laelia, a Lâmina Reforjada, atacar, exile o card do topo do seu grimório. Você pode jogar aquela carta neste turno.<br>Toda vez que um ou mais cards forem exilados de seu grimório e/ou cemitério, coloque um marcador +1/+1 em Laelia.</td>
+  </tr>
+  <tr>
+    <td>483</td>
+    <td>Eladamri, Korvecdal</td>
+    <td>You may look at the top card of your library any time.<br>You may cast creature spells from the top of your library.<br>{G}, {T}, Tap two untapped creatures you control: Reveal a card from your hand or the top card of your library. If you reveal a creature card this way, put it onto the battlefield. Activate only during your turn.</td>
+    <td>Você pode olhar o card do topo do seu grimório a qualquer momento.<br>Você pode conjurar mágicas de criatura do topo de seu grimório.<br>{G}, {T}, Vire duas criaturas desviradas que você controla: Revele um card de sua mão ou o card do topo de seu grimório. Se você revelar um card de criatura desta forma, coloque-o no campo de batalha. Ative apenas durante o seu turno.</td>
+  </tr>
+  <tr>
+    <td>484</td>
+    <td>Six</td>
+    <td>Reach<br>Whenever Six attacks, mill three cards. You may put a land card from among them into your hand.<br>As long as it's your turn, nonland permanent cards in your graveyard have retrace. (You may cast permanent cards from your graveyard by discarding a land card in addition to paying their other costs.)</td>
+    <td>Alcançar<br>Sempre que Seis atacar, moa três cartas. Você pode colocar um card de terreno dentre eles em sua mão.<br>Enquanto for o seu turno, os cards permanentes que não sejam terrenos em seu cemitério poderão ser retraçados. (Você pode conjurar cards permanentes de seu cemitério descartando um card de terreno além de pagar seus outros custos.)</td>
+  </tr>
+  <tr>
+    <td>485</td>
+    <td>Arna Kennerüd, Skycaptain</td>
+    <td>Flying, lifelink<br>Ward—Discard a card.<br>Whenever a modified creature you control attacks, double the number of each kind of counter on it. Then for each nontoken permanent attached to it, create a token that's a copy of that permanent attached to that creature.</td>
+    <td>Voar, vínculo vitalício<br>Ward – Descarte uma carta.<br>Toda vez que uma criatura modificada que você controla atacar, dobre o número de cada tipo de marcador nela. Então, para cada permanente que não seja uma ficha anexada a ela, crie uma ficha que seja uma cópia daquela permanente anexada àquela criatura.</td>
+  </tr>
+  <tr>
+    <td>486</td>
+    <td>Breya, Etherium Shaper</td>
+    <td>When Breya, Etherium Shaper enters the battlefield, create two 1/1 blue Thopter artifact creature tokens with flying.<br>{2}, Sacrifice two artifacts: Choose one —<br>• Breya deals 3 damage to target player or planeswalker.<br>• Target creature gets -4/-4 until end of turn.<br>• You gain 5 life.</td>
+    <td>Quando Breya, Moldadora de Etherium, entrar no campo de batalha, crie duas fichas de criatura artefato azuis 1/1 do tipo Tóptero com voar.<br>{2}, Sacrifique dois artefatos: Escolha um —<br>• Breya causa 3 pontos de dano ao jogador ou planeswalker alvo.<br>• A criatura alvo recebe -4/-4 até o final do turno.<br>• Você ganha 5 pontos de vida.</td>
+  </tr>
+  <tr>
+    <td>487</td>
+    <td>Genku, Future Shaper</td>
+    <td>Whenever another nontoken permanent you control leaves the battlefield, choose one that hasn't been chosen this turn. Create a creature token with those characteristics.<br>• 2/2 white Fox with vigilance.<br>• 1/2 blue Moonfolk with flying.<br>• 1/1 black Rat with lifelink.<br>{3}{W}{U}: Put a +1/+1 counter on each creature you control.</td>
+    <td>Toda vez que outra permanente que você controla que não seja uma ficha deixar o campo de batalha, escolha uma que não tenha sido escolhida neste turno. Crie uma ficha de criatura com essas características.<br>• 2/2 Raposa branca com vigilância.<br>• 1/2 Moonfolk azul com voar.<br>• 1/1 Rato preto com vínculo com a vida.<br>{3}{W}{U}: Coloque um marcador +1/+1 em cada criatura que você controla.</td>
+  </tr>
+  <tr>
+    <td>489</td>
+    <td>Kaalia of the Vast</td>
+    <td>Flying<br>Whenever Kaalia of the Vast attacks an opponent, you may put an Angel, Demon, or Dragon creature card from your hand onto the battlefield tapped and attacking that opponent.</td>
+    <td>Voar<br>Toda vez que Kaalia of the Vast ataca um oponente, você pode colocar no campo de batalha um card de criatura Anjo, Demônio ou Dragão de sua mão virado e atacando aquele oponente.</td>
+  </tr>
+  <tr>
+    <td>490</td>
+    <td>Kudo, King Among Bears</td>
+    <td>Other creatures have base power and toughness 2/2 and are Bears in addition to their other types.</td>
+    <td>Outras criaturas têm poder e resistência básicos 2/2 e são Ursos além de seus outros tipos.</td>
+  </tr>
+  <tr>
+    <td>492</td>
+    <td>The Necrobloom</td>
+    <td>Landfall — Whenever a land enters the battlefield under your control, create a 0/1 green Plant creature token. If you control seven or more lands with different names, create a 2/2 black Zombie creature token instead.<br>Land cards in your graveyard have dredge 2. (You may return a land card from your graveyard to your hand and mill two cards instead of drawing a card.)</td>
+    <td>Landfall — Toda vez que um terreno entrar no campo de batalha sob seu controle, crie uma ficha de criatura verde 0/1 do tipo Planta. Se você controlar sete ou mais terrenos com nomes diferentes, em vez disso, crie uma ficha de criatura preta 2/2 do tipo Zumbi.<br>Os cards de terreno em seu cemitério têm dragagem 2. (Você pode devolver um card de terreno de seu cemitério para sua mão e moer dois cards em vez de comprar um card.)</td>
+  </tr>
+  <tr>
+    <td>493</td>
+    <td>Phlage, Titan of Fire's Fury</td>
+    <td>When Phlage enters the battlefield, sacrifice it unless it escaped.<br>Whenever Phlage enters the battlefield or attacks, it deals 3 damage to any target and you gain 3 life.<br>Escape—{R}{R}{W}{W}, Exile five other cards from your graveyard.</td>
+    <td>Quando Phlage entrar no campo de batalha, sacrifique-o a menos que ele escape.<br>Sempre que Phlage entra no campo de batalha ou ataca, ele causa 3 pontos de dano a qualquer alvo e você ganha 3 pontos de vida.<br>Escapatória — {R}{R}{W}{W}, Exile outros cinco cards de seu cemitério.</td>
+  </tr>
+  <tr>
+    <td>495</td>
+    <td>Powerbalance</td>
+    <td>Whenever an opponent casts a spell, you may reveal the top card of your library. If you do, you may cast that card without paying its mana cost if the two spells have the same mana value.</td>
+    <td>Sempre que um oponente conjurar uma mágica, você poderá revelar o card do topo do seu grimório. Se fizer isso, você poderá conjurar aquele card sem pagar seu custo de mana se as duas mágicas tiverem o mesmo valor de mana.</td>
+  </tr>
+  <tr>
+    <td>496</td>
+    <td>Flusterstorm</td>
+    <td>Counter target instant or sorcery spell unless its controller pays {1}.<br>Storm (When you cast this spell, copy it for each spell cast before it this turn. You may choose new targets for the copies.)</td>
+    <td>Anula a mágica instantânea ou feitiço alvo, a menos que seu controlador pague {1}.<br>Tempestade (Quando você conjurar esta mágica, copie-a para cada magia conjurada antes dela neste turno. Você pode escolher novos alvos para as cópias.)</td>
+  </tr>
+  <tr>
+    <td>514</td>
+    <td>Unstable Amulet</td>
+    <td>When Unstable Amulet enters the battlefield, you get {E}{E} (two energy counters).<br>Whenever you cast a spell from anywhere other than your hand, Unstable Amulet deals 1 damage to each opponent.<br>{T}, Pay {C}{C}: Exile the top card of your library. You may play it until you exile another card with Unstable Amulet.</td>
+    <td>Quando Amuleto Instável entra no campo de batalha, você recebe {E}{E} (dois marcadores de energia).<br>Sempre que você conjurar um feitiço de qualquer lugar que não seja sua mão, Amuleto Instável causa 1 ponto de dano a cada oponente.<br>{T}, Pague {C}{C}: Exile o card do topo de seu grimório. Você pode jogá-la até exilar outra carta com Amuleto Instável.</td>
+  </tr>
+  <tr>
+    <td>516</td>
+    <td>Scurry of Gremlins</td>
+    <td>When Scurry of Gremlins enters the battlefield, create two 1/1 red Gremlin creature tokens. Then you get an amount of {E} (energy counters) equal to the number of creatures you control.<br>Pay {E}{E}{E}{E}: Creatures you control get +1/+0 and gain haste until end of turn.</td>
+    <td>Quando Scurry of Gremlins entrar no campo de batalha, crie duas fichas de criatura vermelhas 1/1 do tipo Gremlin. Então você recebe uma quantidade de {E} (contadores de energia) igual ao número de criaturas que você controla.<br>Pague {E}{E}{E}{E}: As criaturas que você controla recebem +1/+0 e ganham ímpeto até o final do turno.</td>
+  </tr>
+</table>
+    </body>
+</html>
